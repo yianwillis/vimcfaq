@@ -13,7 +13,7 @@ FAQ 提供的信息和链接来探索其它的方法。本 FAQ 的答案归功�
 Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
 https://vimhelp.appspot.com/vim_faq.txt.html。
 								*faq-index*
-索引 ~
+索引~
                                                 *faq-general-information*
 第一节 - 通用信息~
 |faq-1.1|   什么是 Vim？
@@ -36,20 +36,19 @@ https://vimhelp.appspot.com/vim_faq.txt.html。
 |faq-2.10|  我有 Vim 的小窍门或开发了新的 Vim 语法/缩进/文件类型/编译器插件或
 	  开发了新脚本或色彩方案。有没有公共网站可以上传这些？
                                                         *faq-availability*
-SECTION 3 - AVAILABILITY ~
-|faq-3.1|   What is the latest version of Vim?
-|faq-3.2|   Where can I find the latest version of Vim?
-|faq-3.3|   What platforms does it run on?
-|faq-3.4|   Where can I download the latest version of the Vim runtime files?
+第三节 - 如何获取~
+|faq-3.1|   Vim 的最新版本是什么？
+|faq-3.2|   哪里可以找到最新的 Vim 版本？
+|faq-3.3|   它在什么平台上运行？
+|faq-3.4|   哪里可以下载最新版本的 Vim 的运行时文件？
                                                                 *faq-help*
-SECTION 4 - HELP ~
-|faq-4.1|   How do I use the help files?
-|faq-4.2|   How do I search for a keyword in the Vim help files?
-|faq-4.3|   I am getting an error message E123, what did I do wrong?
-|faq-4.4|   Where can I read about the various modes in Vim?
-|faq-4.5|   How do I generate the Vim help tags file after adding a new Vim
-	  help file?
-|faq-4.6|   Can I use compressed versions of the help files?
+第四节 - 帮助~
+|faq-4.1|   如何使用帮助文件？
+|faq-4.2|   如果在 Vim 帮助文件中搜索某关键字？
+|faq-4.3|   我得到了错误信息 E123，我做错什么了？
+|faq-4.4|   在哪里可以了解 Vim 的各种模式？
+|faq-4.5|   加入新 Vim 帮助文件后，如何生成 Vim 帮助标签文件呢？
+|faq-4.6|   可以用帮助文件的压缩版本吗？
                                                         *faq-editing-a-file*
 SECTION 5 - EDITING A FILE ~
 |faq-5.1|   How do I load a file in Vim for editing?
@@ -1220,56 +1219,55 @@ https://www.vim.org
 
 =============================================================================
  								*faq-3*
-SECTION 3 - AVAILABILITY ~
+第三节 - 如何获取 ~
 
  								*faq-3.1*
-3.1. What is the latest version of Vim?
+3.1. Vim 的最新版本是什么？
 
-The latest version of Vim is 8.2 released on 12th December 2019.
+Vim 的最新版本是 8.2，2019 年 12 月 12 日发布。
 
-The release history of different versions of Vim is below:
+Vim 不同版本的发布历史见下:
 
-    VERSION         RELEASE DATE ~
+    版 本           发 布 日 期 ~
     --------------  -------------------- ~
-    Version 8.2     12th December, 2019
-    Version 8.1     17th May, 2018
-    Version 8.0     12th September, 2016
-    Version 7.4     10th August, 2013
-    Version 7.3     15th August, 2010
-    Version 7.2     9th August, 2008
-    Version 7.1     12th May, 2007
-    Version 7.0     8th May, 2006
-    Version 6.4     15th October, 2005
-    Version 6.3     8th June, 2004
-    Version 6.2     1st June, 2003
-    Version 6.1     24th March, 2002
-    Version 6.0     27th September, 2001
-    Version 5.8     31st May, 2001
-    Version 5.7     24th June, 2000
-    Version 5.6     16th January, 2000
-    Version 5.5     21st September, 1999
-    Version 5.4     26th July, 1999
-    Version 5.3     31st August, 1998
-    Version 5.2     24th August, 1998
-    Version 5.1     7th April, 1998
-    Version 5.0     19th February, 1998
-    Version 4.6     13th March, 1997
-    Version 4.5     17th October, 1996
-    Version 4.2     5th July, 1996
-    Version 4.0     29th May, 1996
-    Version 3.0     12th August, 1994
-    Version 2.0     21st December, 1993
-    Version 1.27    23rd April, 1993
-    Version 1.17    21st April, 1992
-    Version 1.14    2nd November, 1991
+    8.2 版本        2019 年 12 月 2 日
+    8.1 版本        2018 年  5 月 7 日
+    8.0 版本        2016 年  9 月 2 日
+    7.4 版本        2013 年  8 月 0 日
+    7.3 版本        2010 年  8 月 5 日
+    7.2 版本        2008 年  8 月 9 日
+    7.1 版本        2007 年  5 月 2 日
+    7.0 版本        2006 年  5 月 8 日
+    6.4 版本        2005 年 10 月 5 日
+    6.3 版本        2004 年  6 月 8 日
+    6.2 版本        2003 年  6 月 1 日
+    6.1 版本        2002 年  3 月 4 日
+    6.0 版本        2001 年  9 月 7 日
+    5.8 版本        2001 年  5 月 1 日
+    5.7 版本        2000 年  6 月 4 日
+    5.6 版本        2000 年  1 月 6 日
+    5.5 版本        1999 年  9 月 1 日
+    5.4 版本        1999 年  7 月 6 日
+    5.3 版本        1998 年  8 月 1 日
+    5.2 版本        1998 年  8 月 4 日
+    5.1 版本        1998 年  4 月 7 日
+    5.0 版本        1998 年  2 月 9 日
+    4.6 版本        1997 年  3 月 3 日
+    4.5 版本        1996 年 10 月 7 日
+    4.2 版本        1996 年  7 月 5 日
+    4.0 版本        1996 年  5 月 9 日
+    3.0 版本        1994 年  8 月 2 日
+    2.0 版本        1993 年 12 月 1 日
+    1.27 版本       1993 年  4 月 3 日
+    1.17 版本       1992 年  4 月 1 日
+    1.14 版本       1991 年 11 月 2 日
 
-If you are interested in the old release history, check out the
-vim-history git repository:
+如果你对旧发布历史感兴趣，请查看 vim-history git 库:
 https://github.com/vim/vim-history
-and especially for the release history:
+特别是发布历史:
 https://github.com/vim/vim-history#release-history
 
-For more information, read:
+更多详情请阅读:
 
     |new-8|
     |new-7|
@@ -1283,117 +1281,102 @@ For more information, read:
     |changed-7.1|
 
  								*faq-3.2*
-3.2. Where can I find the latest version of Vim?
+3.2. 哪里可以找到最新的 Vim 版本？
 
-You can download the sources for the latest version of Vim from the
-Github repository. The URL for this site is
+可以从 Github 库中下载 Vim 最新版的源码。该站的 URL 是
 
     https://github.com/vim/vim
 
-A mercurial mirror is also available:
+也有 mercurial 镜像:
 
     https://bitbucket.org/vim-mirror/vim
     http://hg.256bit.org/vim/
     https://hg.osdn.net/view/vim/vim
 
-Some users keep updated repositories for distributing latest binary
-versions of Vim. You can find those repositories here:
+有些用户维护用于发布最新 Vim 执行程序的更新库。可以从此找到这些库:
 
     http://vim.wikia.com/wiki/Where_to_download_Vim
 
  								*faq-3.3*
-3.3. What platforms does it run on?
+3.3. 它在什么平台上运行？
 
-All Unix platforms.
-All Windows platforms (XP and later).
-Amiga, Atari, BeOS, Macintosh, MachTen, OS/2, RiscOS, VMS, IBM z/OS.
+所有的 Unix 平台。
+所有的 Windows 平台 (XP 和之后)。
+Amiga、Atari、BeOS、Macintosh、MachTen、OS/2、RiscOS、VMS、IBM z/OS。
 
-For MS-DOS support has been removed with the latest releases of Vim.
-16-bit DOS: latest supported version 7.1
-32-bit DOS: latest supported version 7.3
+最新发布的 Vim 已经删除了 MS-DOS 的支持。
+16-位 DOS: 最后的支持版本是 7.1
+32-位 DOS: 最后的支持版本是 7.3
 
  								*faq-3.4*
-3.4. Where can I download the latest version of the Vim runtime files?
+3.4. 哪里可以下载最新版本的 Vim 的运行时文件？
 
-You can download the latest version of the Vim runtime files (syntax files,
-filetype plugins, compiler files, color schemes, documentation, indentation
-files and keymaps) from the Vim github repository
+可以从 Vim github 库下载最新版本的 Vim 运行时文件 (语法文件、文件类型插件、编
+译器文件、色彩方案、文档、缩进文件和键盘映射)
 
     https://github.com/vim/vim/tree/master/runtime
 
-Another way of downloading the runtime files is this: >
+另一个下载运行时文件的方法是: >
 
     wget https://github.com/vim/vim/archive/master.tar.gz -O- |
     tar zfx - vim-master/runtime/ --strip-components=1
 <
-See also:
+另见:
 
     https://www.vim.org/runtime.php
 
 =============================================================================
  								*faq-4*
-SECTION 4 - HELP ~
+第四节 - 帮助~
 
  								*faq-4.1*
-4.1. How do I use the help files?
+4.1. 如何使用帮助文件？
 
-Help can be found for all functions of Vim. In order to use it, use the
-`:help` command.  This will bring you to the main help page. On that first
-page, you will find explanations on how to move around. Basically, you move
-around in the help pages the same way you would in a read-only document.
-You can jump to specific subjects by using tags. This can be done in two
-ways:
+Vim 所有的功能都能找到帮助。要得到帮助，可用 `:help` 命令。这会把你带到主帮助
+页面。在该首页上，可以找到如何到处移动的说明。基本上，帮助页相当于在只读文档上
+的移动。可以使用标签跳转到指定主题上。有两种方法:
 
-   * Use the CTRL-] command while standing on the name of a command
-     or option. This only works when the tag is a keyword.
-     <Ctrl-LeftMouse> and g<LeftMouse> work just like CTRL-].
+   * 在命令或选项名之上用 CTRL-] 命令。只有标签为关键字时才可以用。
+     <Ctrl-LeftMouse> 和 g<LeftMouse> 相当于 CTRL-]。
 
-   * use the `:tag <subject>` command. This works with all characters.
+   * 使用 `:tag <subject>` 命令。可用于所有字符。
 
-Use CTRL-T to jump back to previous positions in the help files. Use
-`:q` to close the help window.
+CTRL-T 跳回帮助文件中的原来的地方。`:q` 关闭帮助窗口。
 
-If you want to jump to a specific subject on the help pages, use
-`:help {subject}` . If you don't know what to look for, try `:help index`
-to get a list of all available subjects. Use the standard search keys to
-locate the information you want.
-You can abbreviate the `:help` command as `:h`.
+如果你要跳转到帮助页上的特定主题，可用 `:help {subject}`。如果不知道找什么，试
+试 `:help index` 来得到所有可用主题的列表。标准的搜索键可用于定位要找的信息。
+`:help` 命令可简化为 `:h`。
 
-For searching the help, see the next Question 4.2. |faq-4.2|
+要搜索帮助，见下个问题 4.2。|faq-4.2|
 
-For more information, read:
+更多详情请阅读:
 
     |online-help|
 
  								*faq-4.2*
-4.2. How do I search for a keyword in the Vim help files?
+4.2. 如果在 Vim 帮助文件中搜索某关键字？
 
-a)  You can press the CTRL-D key after typing the help keyword to get a
-    list of all the help keywords containing the supplied pattern. You can
-    also use the meta characters like *, \+, etc to specify the help
-    search pattern: >
+a)  在输入 help 关键字后按 CTRL-D 键可以得到包含指定模式的所有帮助关键字的列
+    表。可用元字符如 *、\+ 等来指定帮助搜索模式: >
 
     :help init<C-D>
     :help str*()<C-D>
     :help '*indent<C-D>
 <
-b)  You can press the <Tab> key after typing a partial help keyword to expand
-    to the matching keyword. You can continue to press the <Tab> key to see
-    other keyword matches.
+b)  在输入部分的帮助关键字后按 <Tab> 键可扩展匹配的关键字。继续按 <Tab> 键可以
+    得到其它的关键字匹配。
 
-c)  From the help window, you can use the `:tag` command to search for
-    keywords. For example, >
+c)  从帮助窗口，用 `:tag` 命令可以搜索关键字。例如， >
 
     :tselect /window
 <
-    This command will list all the help keywords containing the text
-    "window". You can select one from the list and jump to it.
+    此命令会列出所有包含文本 "windows" 的帮助关键字。从列表中可以选择一个并跳
+    转过去。
 
-d)  You can use the `:helpgrep` command to search for the given text in
-    all the help files. The quickfix window will be opened with all the
-    matching lines.
+d)  可用 `:helpgrep` 命令在所有帮助文件中搜索给定文本。打开快速修复窗口显示所
+    有匹配行。
 
-For more information, read:
+更多详情请阅读:
 
     |help-summary|
     |c_CTRL-D|
@@ -1403,66 +1386,61 @@ For more information, read:
     |:helpgrep|
 
  								*faq-4.3*
-4.3. I am getting an error message E123, what did I do wrong?
+4.3. 我得到了错误信息 E123，我做错什么了？
 
-You can get more information about the error and the error message using:
+可以用下面的帮助链接了解错误的相关情况和错误信息:
 
     |E123|
 
-For more information, read:
+更多详情请阅读:
 
     |error-messages|
 
  								*faq-4.4*
-4.4. Where can I read about the various modes in Vim?
+4.4. 在哪里可以了解 Vim 的各种模式？
 
-You can get information about the different modes in Vim by reading
+通过阅读下面的帮助链接可以了解 Vim 中不同模式的信息
 
     |vim-modes|
 
  								*faq-4.5*
-4.5. How do I generate the Vim help tags file after adding a new Vim help
-     file?
+4.5. 加入新 Vim 帮助文件后，如何生成 Vim 帮助标签文件呢？
 
-You can use the `:helptags` command to regenerate the Vim help tag file
-from within Vim. For example: >
+可在 Vim 内部用 `:helptags` 命令来重新生成 Vim 帮助标签文件。例如: >
 
     :cd $VIMRUNTIME/doc
     :helptags .
 <
-To update all "doc" directories in your 'runtimepath', you can use
+要刷新所有 'runtimepath' 下的 "doc" 目录，可用 >
 
     :helptags ALL
 
-For more information, read:
+更多详情请阅读:
 
     |:helptags|
     |add-local-help|
 
  								*faq-4.6*
-4.6. Can I use compressed versions of the help files?
+4.6. 可以用帮助文件的压缩版本吗？
 
-Yes. You can compress the help files and still be able to view them with
-Vim.  This makes accessing the help files a bit slower and requires the
-"gzip" utility. Follow these steps to compress and use the Vim help files:
+可以。可以压缩帮助文件，然后在 Vim 中还可以阅读。帮助文件的访问会稍慢一些，也
+需要 "gzip" 工具。以下步骤可以压缩并使用 Vim 帮助文件:
 
-- Compress all the help files using "gzip doc/*.txt".
+- 用 "gzip doc/*.txt" 压缩所有帮助文件。
 
-- Edit the "doc/tags" file and change the ".txt" to ".txt.gz" using
+- 编辑 "doc/tags" 文件，这样来把 ".txt" 改成 ".txt.gz" >
         :%s=\(\t.*\.txt\)\t=\1.gz\t=
 
-- Add the following line to your vimrc:
+- 在 vimrc 中加入下行: >
         set helpfile={dirname}/help.txt.gz
 
-Where {dirname} is the directory where the help files are.  The gzip.vim
-plugin supplied with the standard Vim distribution will take care of
-decompressing the files.  You must make sure that $VIMRUNTIME is set to
-where the other Vim files are, when they are not in the same location as
-the compressed "doc" directory.
+其中 {dirname} 是帮助文件所在的目录。Vim 标准发布自带的 gzip.vim 插件会处理文
+件的解压。要确保设好 $VIMRUNTIME 以指向那些和经压缩的 "doc" 目录不在相同位置的
+其它 Vim 文件。
 
-Note, that the `:helpgrep` command does not work with compressed help pages.
+注意，`:helpgrep` 命令不支持压缩帮助页。
 
-For more information, read:
+更多详情请阅读:
 
     |gzip-helpfile|
     |'helpfile'|
