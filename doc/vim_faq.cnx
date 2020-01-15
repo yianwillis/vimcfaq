@@ -72,43 +72,32 @@ https://vimhelp.appspot.com/vim_faq.txt.html。
 |faq-6.4|   如何配置 Vim 可以一次自动载入若干文件，类似于 "工作集" 或 "项目"？
 |faq-6.5|   可以打开在单个 Vim 实例中打开多个顶层窗口，就像 Nedit 或 emacs 那样
 	  吗？
-|faq-6.6|   如果在 Vim 内浏览/探索目录？
+|faq-6.6|   如何在 Vim 内浏览/探索目录？
 |faq-6.7|   如何用 ftp/scp/rcp/http 通过网络编辑文件？
                                                                 *faq-backup*
-SECTION 7 - BACKUP ~
-|faq-7.1|   When I edit and save files, Vim creates a file with the same name
-	  as the original file and a "~" character at the end. How do I stop
-	  Vim from creating this file (or) How do I disable the Vim backup
-	  file feature?
-|faq-7.2|   When I edit and save files, Vim creates a file with the same name
-	  as the original file and a ".un~" extension at the end. How do I
-	  stop Vim from creating this file (or) How do I disable the Vim
-	  undofile feature.
-|faq-7.3|   How do I configure Vim to store all the backup files in a
-	  particular directory?
-|faq-7.4|   When I save a file with Vim, the file permissions are changed.
-	  How do I configure Vim to save a file without changing the file
-	  permissions?
+第七节 - 备份~
+|faq-7.1|   我在编辑和保存文件的时候，Vim 创建了和原先文件名字相同但尾部附加了
+	  "~" 字符的文件。我怎么能不让 Vim 建立这个文件 (或) 我怎样能关闭 Vim
+	  的备份文件功能？
+|faq-7.2|   我在编辑和保存文件的时候，Vim 创建了和原先文件名字相同但尾部附加了
+	  ".un~" 扩展名的文件。我怎么能不让 Vim 建立这个文件 (或) 我怎样能关闭
+	  Vim 的撤销文件功能？
+|faq-7.3|   如果配置 Vim 在指定目录保存所有的备份文件？
+|faq-7.4|   Vim 保存文件时，文件的权限被改变了。如果配置 Vim 在文件保存时不改
+	  变文件权限？
                                                                 *faq-buffers*
-SECTION 8 - BUFFERS ~
-|faq-8.1|   I have made some modifications to a buffer. How do I edit another
-	  buffer without saving the modified buffer and also without losing
-	  the modifications?
-|faq-8.2|   How do I configure Vim to auto-save a modified buffer when
-	  switching to another buffer?
-|faq-8.3|   How do I replace the buffer in the current window with a blank
-	  buffer?
-|faq-8.4|   Is there a keyboard shortcut to load a buffer by the buffer
-	  number?
-|faq-8.5|   How do I open all the current buffers in separate windows?
-|faq-8.6|   How do I close (delete) a buffer without exiting Vim?
-|faq-8.7|   When I use the command `:%bd` to delete all the buffers, not all
-	  the buffers are deleted. Why?
-|faq-8.8|   How do I display the buffer number of the current buffer/file?
-|faq-8.9|   How do I delete a buffer without closing the window in which the
-	  buffer is displayed?
-|faq-8.10|  How do I map the <Tab> key to cycle through and open all the
-	  buffers?
+第八节 - 缓冲区~
+|faq-8.1|   我在缓冲区上做了修改。如何才能编辑另一个缓冲区而无需保存修改过的缓
+	  冲区也不会丢失我的改动？
+|faq-8.2|   如何配置 Vim 在切换到其它缓冲区时自动保存修改过的缓冲区？
+|faq-8.3|   如何用空缓冲区来替换当前窗口的缓冲区？
+|faq-8.4|   有没有用缓冲区号载入缓冲区的快捷键？
+|faq-8.5|   如何在不同的窗口分别打开当前所有的缓冲区？
+|faq-8.6|   如何关闭 (删除) 缓冲区而不退出 Vim？
+|faq-8.7|   用命令 `:%bd` 删除所有缓冲区时，不是所有的缓冲区都删除了。为什么？
+|faq-8.8|   如何显示当前缓冲区/文件的缓冲区号？
+|faq-8.9|   如何删除缓冲区而不关闭显示该缓冲区的窗口？
+|faq-8.10|  如何映射 <Tab> 键来循环并打开所有缓冲区？
                                                                 *faq-windows*
 SECTION 9 - WINDOWS ~
 |faq-9.1|   What is the difference between a Vim window and a buffer?
@@ -1822,7 +1811,7 @@ Vim 不支持周期性地自动保存文件。
 不行。目前不可能在单个 Vim 实例中打开多个顶层窗口。此功能还在待开发列表中。
 
  								*faq-6.6*
-6.6. 如果在 Vim 内浏览/探索目录？
+6.6. 如何在 Vim 内浏览/探索目录？
 
 在 Vim 内，可用标准 Vim 安装提供的 netrw.vim 插件来浏览/探索目录。可用以下命令
 之一来启动文件探索器: >
@@ -1855,27 +1844,24 @@ Vim 不支持周期性地自动保存文件。
 
 =============================================================================
  								*faq-7*
-SECTION 7 - BACKUP ~
+第七节 - 备份~
 
  								*faq-7.1*
-7.1. When I edit and save files, Vim creates a file with the same name as
-     the original file and a "~" character at the end. How do I stop Vim
-     from creating this file? (or) How do I disable the Vim backup file
-     feature?
+7.1. 我在编辑和保存文件的时候，Vim 创建了和原先文件名字相同但尾部附加了 "~" 字
+     符的文件。我怎么能不让 Vim 建立这个文件 (或) 我怎样能关闭 Vim 的备份文件
+     功能？
 
-You have set the 'backup' option, so Vim creates a backup file when saving
-the original file. You can stop Vim from creating the backup file, by
-clearing the option: >
+你置位了 'backup' 选项，因而 Vim 在保存原始文件的同时创建了备份文件。要让 Vim
+不再创建备份文件，清除该选项: >
 
     :set nobackup
 <
-Note that, by default this option is turned off. You have explicitly
-enabled the 'backup' option in one of the initialization files. You may
-also have to turn off the 'writebackup' option: >
+注意 缺省此选项是关闭的。你一定在某个初始化文件中打开了 'backup' 选项。可能也
+需要关闭 'writebackup' 选项: >
 
     :set nowritebackup
 <
-For more information, read:
+更多详情请阅读:
 
     |07.4|
     |backup-table|
@@ -1888,63 +1874,54 @@ For more information, read:
     |backup|
 
  								*faq-7.2*
-7.2. When I edit and save files, Vim creates a file with the same name as
-     the original file and a "un~" extension at the end. How do I stop Vim
-     from creating this file (or) How do I disable the Vim undofile feature?
+7.2. 我在编辑和保存文件的时候，Vim 创建了和原先文件名字相同但尾部附加了 ".un~"
+     扩展名的文件。我怎么能不让 Vim 建立这个文件 (或) 我怎样能关闭 Vim 的撤销
+     文件功能？
 
-Vim 7.3 contains as new feature persistent undo, that is, undo information
-won't be lost when quitting Vim and be stored in a file that ends with
-".un~" You have set the 'undofile' option, so Vim creates an undo file when
-saving the original file. You can stop Vim from creating the backup file,
-by clearing the option: >
+Vim 7.3 包含了持续撤销的新功能，也就是说，撤销信息在 Vim 退出后不会丢失，而是
+保存在了 ".un~" 结尾的文件中。你一定置位了 'undofile' 选项，因而 Vim 在保存原
+始文件的同时创建了撤销文件。要让 Vim 不再创建撤销文件，清除该选项: >
 
     :set noundofile
 <
-Note that, by default this option is turned off. You have explicitly
-enabled the 'undofile' option in one of the initialization files. If you
-want your undofiles to be stored only in a particular directory, you can
-point the 'undodir' option to a directory that will contain all your
-aggregated undofiles.
+注意 缺省此选项是关闭的。你一定在某个初始化文件中打开了 'undofile' 选项。如果
+希望你的撤销文件保存在指定的目录里，可以把 'undodir' 选项指向到一个目录，里面
+会包含所有你的放在一起的撤销文件。
 
-For more information, read:
+更多详情请阅读:
 
     |'undodir'|
     |'undofile'|
     |undo-persistence|
 
  								*faq-7.3*
-7.3. How do I configure Vim to store all the backup files in a particular
-     directory?
+7.3. 如果配置 Vim 在指定目录保存所有的备份文件？
 
-You can configure Vim to store all the backup files in a particular
-directory using the 'backupdir' option. For example, to store all the
-backup files in the ~/backup directory, you can use the following command: >
+可用 'backupdir' 选项配置 Vim 在指定目录保存所有的备份文件。例如，要把所有的备
+份文件保存到 ~/backup 目录，可用以下命令: >
 
     :set backupdir=~/backup
 <
-For more information, read:
+更多详情请阅读:
 
     |07.4|
     |'backupdir'|
     |backup|
 
  								*faq-7.4*
-7.4. When I save a file with Vim, the file permissions are changed.
-     How do I configure Vim to save a file without changing the file
-     permissions?
+7.4. Vim 保存文件时，文件的权限被改变了。如果配置 Vim 在文件保存时不改变文件权
+     限？
 
-This may happen, if the 'backupcopy' option is set to "no" or "auto". Note
-that the default value for this option is set in such a way that this will
-correctly work in most of the cases. If the default doesn't work for you,
-try setting the 'backupcopy' option to "yes" to keep the file permission
-when saving a file: >
+这可能发生在 'backupcopy' 选项设为 "no" 或 "auto" 的时候。注意 此选项的缺省值
+设置在多数情况下会正确工作。如果缺省对你不够用，试试设置 'backupcopy' 选项为
+"yes" 以在保存文件时保留文件权限: >
 
     :set backupcopy=yes
 <
-This applies, only if you have configured Vim to make a backup whenever
-overwriting a file. By default, Vim will not backup files.
+仅当 Vim 的配置是无论何时覆盖文件都会建立备份文件的时候，此选项才有用。缺省，
+Vim 并不备份文件。
 
-For more information, read:
+更多详情请阅读:
 
     |'backupcopy'|
     |backup|
@@ -1953,126 +1930,111 @@ For more information, read:
 
 =============================================================================
  								*faq-8*
-SECTION 8 - BUFFERS ~
+第八节 - 缓冲区~
 
  								*faq-8.1*
-8.1. I have made some modifications to a buffer. How do I edit another
-     buffer without saving the modified buffer and also without losing the
-     modifications?
+8.1. 我在缓冲区上做了修改。如何才能编辑另一个缓冲区而无需保存修改过的缓冲区也
+     不会丢失我的改动？
 
-You can set the 'hidden' option to edit a file without losing modifications
-to the current file: >
+可置位 'hidden' 选项来编辑文件而不会丢失当前文件上的修改: >
 
     :set hidden
 <
-By setting the 'hidden' option, you can also save the modification history
-(undo-history) for the buffer. Otherwise, as you switch between files, the
-undo-history will be lost (unless you use persistent undofiles).
+通过置位 'hidden' 选项，你也继续保存缓冲区的修改历史 (撤销历史)。否则，文件间
+切换时会丢失撤销历史 (除非使用了持续撤销文件)。
 
-For more information, read:
+更多详情请阅读:
 
     |'hidden'|
     |hidden-quit|
     |:hide|
 
  								*faq-8.2*
-8.2. How do I configure Vim to auto-save a modified buffer when switching
-     to another buffer?
+8.2. 如何配置 Vim 在切换到其它缓冲区时自动保存修改过的缓冲区？
 
-You can set the 'autowrite' option to auto-save a modified buffer when
-switching to another buffer: >
+可置位 'autowrite' 选项，在切换到其它缓冲区时自动保存修改过的缓冲区: >
 
     :set autowrite
 <
-For more information, read:
+更多详情请阅读:
 
     |'autowrite'|
     |'autowriteall'|
     |'hidden'|
 
  								*faq-8.3*
-8.3. How do I replace the buffer in the current window with a blank buffer?
+8.3. 如何用空缓冲区来替换当前窗口的缓冲区？
 
-You can use the `:enew` command to load an empty buffer in place of the
-buffer in the current window.
+可用 `:enew` 命令来载入空缓冲区以替换当前窗口的缓冲区。
 
-For more information, read:
+更多详情请阅读:
 
     |:enew|
 
  								*faq-8.4*
-8.4. Is there a keyboard shortcut to load a buffer by the buffer number?
+8.4. 有没有用缓冲区号载入缓冲区的快捷键？
 
-You can use the CTRL-^ command to load a buffer by specifying the buffer
-number. For example, to load buffer number 5, you have to use the 5 CTRL-^
-command.
+可用 CTRL-^ 命令来通过指定缓冲区号载入缓冲区。例如，要载入缓冲区号 5，要用 5
+CTRL-^ 命令。
 
-For more information, read:
+更多详情请阅读:
 
     |CTRL-^|
 
  								*faq-8.5*
-8.5. How do I open all the current buffers in separate windows?
+8.5. 如何在不同的窗口分别打开当前所有的缓冲区？
 
-You can use the `:ball` or `:sball` commands to open all the buffers
-in the buffer list: >
+可用 `:ball` 或 `:sball` 命令来打开缓冲区列表中的所有列表: >
 
     :ball
 <
-If you want all buffers to be opened in new tabs, simply prefix the `:tab`
-command: >
+如果想所有的缓冲区在新标签页中打开，简单加上 `:tab` 命令前缀: >
 
     :tab :sball
 <
-For more information, read:
+更多详情请阅读:
 
     |:ball|
 
  								*faq-8.6*
-8.6. How do I close (delete) a buffer without exiting Vim?
+8.6. 如何关闭 (删除) 缓冲区而不退出 Vim？
 
-You can use any of `:bdelete`, `:bwipeout` or `:bunload` commands to
-delete a buffer without exiting Vim. For example: >
+可用 `:bdelete`、`:bwipeout` 或 `:bunload` 命令中的一个来删除缓冲区而不退出
+Vim。例如: >
 
     :bdelete file1
 <
-For more information, read:
+更多详情请阅读:
 
     |:bdelete|
     |:bwipeout|
     |:bunload|
 
  								*faq-8.7*
-8.7. When I use the command `:%bd` to delete all the buffers, not all the
-     buffers are deleted. Why?
+8.7. 用命令 `:%bd` 删除所有缓冲区时，不是所有的缓冲区都删除了。为什么？
 
-In the `:%bd` command, the "%" range will be replaced with the starting and
-ending line numbers in the current buffer. Instead of using "%" as the
-range, you should specify numbers for the range. For example, to delete all
-the buffers, you can use the command `:1,9999bd`.
+用 `:%bd` 命令时，"%" 范围会被当前缓冲区的起末行号代替。不要用 "%" 作为范围，
+而应该指定数值作为范围。例如，要删除所有的缓冲区，可用命令 `:1,9999bd`。
 
-For more information, read:
+更多详情请阅读:
 
     |:bd|
 
-(This behaviour has been fixed with patch 7.4.530)
+(7.4.530 补丁修正了此行为)
 
  								*faq-8.8*
-8.8. How do I display the buffer number of the current buffer/file?
+8.8. 如何显示当前缓冲区/文件的缓冲区号？
 
-You can use 2<CTRL-G> command to display the buffer number for the current
-file/buffer. Note the use of count before the CTRL-G command. If the count
-is greater than 1, then Vim will display the buffer number.
+可用 2<CTRL-G> 命令来显示当前文件/缓冲区的缓冲区号。注意 CTRL-G 命令计数的使
+用。如果计数大于 1，Vim 会显示缓冲区号。
 
-You can also use the following command to display the current buffer
-number: >
+也可用下列命令来显示当前缓冲区号: >
 
     :echo bufnr("%")
 <
-You can also include the "%n" field to the 'statusline' option to display
-the current buffer number on the statusline.
+也可在 'statusline' 选项中加入 "%n" 域来在状态行上显示当前缓冲区号。
 
-For more information, read:
+更多详情请阅读:
 
     |CTRL-G|
     |bufnr()|
@@ -2080,32 +2042,30 @@ For more information, read:
     |'statusline'|
 
  								*faq-8.9*
-8.9. How do I delete a buffer without closing the window in which the
-     buffer is displayed?
+8.9. 如何删除缓冲区而不关闭显示该缓冲区的窗口？
 
-You can use the following command to open the next buffer and delete
-the current buffer. >
+可用下列命令来打开下个缓冲区并删除当前缓冲区。 >
 
     :bnext | bdelete #
 <
-For more information, read:
+更多详情请阅读:
 
     |:bnext|
     |:bdelete|
     |:buffers|
 
  								*faq-8.10*
-8.10. How do I map the <Tab> key to cycle through and open all the buffers?
+8.10. 如何映射 <Tab> 键来循环并打开所有缓冲区？
 
-You can use the following two map commands, to map the <Ctrl-Tab> key to open
-the next buffer and the <Ctrl-Shift-Tab> key to open the previous buffer: >
+可用下列两个映射命令来映射 <Ctrl-Tab> 键来打开后一个缓冲区，<Ctrl-Shift-Tab>
+键来打开前一个缓冲区: >
 
     :nnoremap <C-Tab> :bnext<CR>
     :nnoremap <S-C-Tab> :bprevious<CR>
 <
-Note, this might not work in the terminal version of Vim.
+注意，这不能用于 Vim 终端版本。
 
-For more information, read:
+更多详情请阅读:
 
     |:bnext|
     |:bprevious|
