@@ -50,37 +50,30 @@ https://vimhelp.appspot.com/vim_faq.txt.html。
 |faq-4.5|   加入新 Vim 帮助文件后，如何生成 Vim 帮助标签文件呢？
 |faq-4.6|   可以用帮助文件的压缩版本吗？
                                                         *faq-editing-a-file*
-SECTION 5 - EDITING A FILE ~
-|faq-5.1|   How do I load a file in Vim for editing?
-|faq-5.2|   How do I save the current file in another name (save as) and edit
-	  a new file?
-|faq-5.3|   How do I change the current directory to the directory of the
-	  current file?
-|faq-5.4|   How do I write a file without the line feed (EOL) at the end of
-	  the file?
-|faq-5.5|   How do I configure Vim to open a file at the last edited location?
-|faq-5.6|   When editing a file in Vim, which is being changed by an external
-	  application, Vim opens a warning window (like the confirm dialog)
-	  each time a change is detected. How do I disable this warning?
-|faq-5.7|   How do I edit a file whose name is under the cursor?
-|faq-5.8|   How do I reload/re-edit the current file?
-|faq-5.9|   How do I autosave a file periodically?
-|faq-5.10|  How do I open a file in read-only mode?
-|faq-5.11|  How do I open a file for editing without saving the modifications
-	  to the current file?
-|faq-5.12|  How do I reduce the loading time for very large files in Vim?
+第五节 - 编辑文件~
+|faq-5.1|   如何在 Vim 中载入文件用于编辑？
+|faq-5.2|   如何把当前文件丰用其它名字保存 (另存为) 并编辑新文件？
+|faq-5.3|   如何改变当前目录为当前文件的目录？
+|faq-5.4|   如何在写入文件时不在文件尾加上换行符 (EOL)？
+|faq-5.5|   如何配置 Vim 打开文件时回到之前编辑所在的位置？
+|faq-5.6|   在 Vim 中编辑文件时，文件被外部应用修改了，每次检测到改变发生时，
+	  Vim 都会弹出警告窗口 (像确认对话框)。如果屏蔽此警告？
+|faq-5.7|   如何编辑光标所在的文件名对应的文件？
+|faq-5.8|   如何重载/重新编辑当前文件？
+|faq-5.9|   如何周期性地自动保存文件？
+|faq-5.10|  如何以只读方式打开文件？
+|faq-5.11|  如何打开文件用于编辑而不保存当前文件的修改？
+|faq-5.12|  如何减少 Vim 中超大文件的载入时间？
                                                 *faq-editing-multiple-files*
-SECTION 6 - EDITING MULTIPLE FILES ~
-|faq-6.1|   How do I open multiple files at once from within Vim?
-|faq-6.2|   How do I switch between multiple files/buffers in Vim?
-|faq-6.3|   How do I open several files in Vim, with each file in a separate
-	  window/tabpage?
-|faq-6.4|   How do I configure Vim to autoload several files at once similar
-	  to "work-sets" or "projects"?
-|faq-6.5|   Is it possible to open multiple top level windows in a single
-	  instance of Vim similar to Nedit or emacs?
-|faq-6.6|   How do I browse/explore directories from within Vim?
-|faq-6.7|   How do I edit files over a network using ftp/scp/rcp/http?
+第六节 - 编辑多个文件~
+|faq-6.1|   在 Vim 里如何一次打开多个文件？
+|faq-6.2|   在 Vim 里如何在多个文件/缓冲区间切换？
+|faq-6.3|   在 Vim 里如何件在单独的窗口/标签页打开多个文件？
+|faq-6.4|   如何配置 Vim 可以一次自动载入若干文件，类似于 "工作集" 或 "项目"？
+|faq-6.5|   可以打开在单个 Vim 实例中打开多个顶层窗口，就像 Nedit 或 emacs 那样
+	  吗？
+|faq-6.6|   如果在 Vim 内浏览/探索目录？
+|faq-6.7|   如何用 ftp/scp/rcp/http 通过网络编辑文件？
                                                                 *faq-backup*
 SECTION 7 - BACKUP ~
 |faq-7.1|   When I edit and save files, Vim creates a file with the same name
@@ -1230,37 +1223,37 @@ Vim 不同版本的发布历史见下:
 
     版 本           发 布 日 期 ~
     --------------  -------------------- ~
-    8.2 版本        2019 年 12 月 2 日
-    8.1 版本        2018 年  5 月 7 日
-    8.0 版本        2016 年  9 月 2 日
-    7.4 版本        2013 年  8 月 0 日
-    7.3 版本        2010 年  8 月 5 日
-    7.2 版本        2008 年  8 月 9 日
-    7.1 版本        2007 年  5 月 2 日
-    7.0 版本        2006 年  5 月 8 日
-    6.4 版本        2005 年 10 月 5 日
-    6.3 版本        2004 年  6 月 8 日
-    6.2 版本        2003 年  6 月 1 日
-    6.1 版本        2002 年  3 月 4 日
-    6.0 版本        2001 年  9 月 7 日
-    5.8 版本        2001 年  5 月 1 日
-    5.7 版本        2000 年  6 月 4 日
-    5.6 版本        2000 年  1 月 6 日
-    5.5 版本        1999 年  9 月 1 日
-    5.4 版本        1999 年  7 月 6 日
-    5.3 版本        1998 年  8 月 1 日
-    5.2 版本        1998 年  8 月 4 日
-    5.1 版本        1998 年  4 月 7 日
-    5.0 版本        1998 年  2 月 9 日
-    4.6 版本        1997 年  3 月 3 日
-    4.5 版本        1996 年 10 月 7 日
-    4.2 版本        1996 年  7 月 5 日
-    4.0 版本        1996 年  5 月 9 日
-    3.0 版本        1994 年  8 月 2 日
-    2.0 版本        1993 年 12 月 1 日
-    1.27 版本       1993 年  4 月 3 日
-    1.17 版本       1992 年  4 月 1 日
-    1.14 版本       1991 年 11 月 2 日
+    8.2 版本        2019 年 12 月 12 日
+    8.1 版本        2018 年  5 月 17 日
+    8.0 版本        2016 年  9 月 12 日
+    7.4 版本        2013 年  8 月 10 日
+    7.3 版本        2010 年  8 月 15 日
+    7.2 版本        2008 年  8 月  9 日
+    7.1 版本        2007 年  5 月 12 日
+    7.0 版本        2006 年  5 月  8 日
+    6.4 版本        2005 年 10 月 15 日
+    6.3 版本        2004 年  6 月  8 日
+    6.2 版本        2003 年  6 月  1 日
+    6.1 版本        2002 年  3 月 24 日
+    6.0 版本        2001 年  9 月 27 日
+    5.8 版本        2001 年  5 月 31 日
+    5.7 版本        2000 年  6 月 24 日
+    5.6 版本        2000 年  1 月 16 日
+    5.5 版本        1999 年  9 月 21 日
+    5.4 版本        1999 年  7 月 26 日
+    5.3 版本        1998 年  8 月 31 日
+    5.2 版本        1998 年  8 月 24 日
+    5.1 版本        1998 年  4 月  7 日
+    5.0 版本        1998 年  2 月 19 日
+    4.6 版本        1997 年  3 月 13 日
+    4.5 版本        1996 年 10 月 17 日
+    4.2 版本        1996 年  7 月  5 日
+    4.0 版本        1996 年  5 月 29 日
+    3.0 版本        1994 年  8 月 12 日
+    2.0 版本        1993 年 12 月 21 日
+    1.27 版本       1993 年  4 月 23 日
+    1.17 版本       1992 年  4 月 21 日
+    1.14 版本       1991 年 11 月  2 日
 
 如果你对旧发布历史感兴趣，请查看 vim-history git 库:
 https://github.com/vim/vim-history
@@ -1449,25 +1442,24 @@ d)  可用 `:helpgrep` 命令在所有帮助文件中搜索给定文本。打开
 
 =============================================================================
  								*faq-5*
-SECTION 5 - EDITING A FILE ~
+第五节 - 编辑文件~
 
  								*faq-5.1*
-5.1. How do I load a file in Vim for editing?
+5.1. 如何在 Vim 中载入文件用于编辑？
 
-There are several ways to load a file for editing. The simplest is to
-use the `:e` (:edit) command: >
+有几种载入文件用于编辑的方法。最简单的方法是用 `:e` (:edit) 命令: >
 
     :e <filename>
 <
-You can also use the `:n` (:next) command to load files into Vim: >
+也可用 `:n` (:next) 命令来载入文件到 Vim 里: >
 
     :n <filename(s)>
 <
-You can also use the `:args` command to load files into Vim: >
+也可用 `:args` 命令来载入文件到 Vim 里: >
 
     :args <filename(s)>
 <
-For more information, read:
+更多详情请阅读:
 
     |usr_07.txt|
     |edit-files|
@@ -1476,24 +1468,23 @@ For more information, read:
     |:args_f|
 
  								*faq-5.2*
-5.2. How do I save the current file in another name (save as) and edit a
-     new file?
+5.2. 如何把当前文件丰用其它名字保存 (另存为) 并编辑新文件？
 
-You can use the `:saveas` command to save the current file in another name: >
+`:saveas` 命令可用其它名字来保存当前文件: >
 
     :saveas <newfilename>
 <
-Alternatively, you can also use the following commands: >
+此外，也可用以下命令: >
 
     :w <newfilename>
     :edit #
 <
-You can also use the `:file` command, followed by `:w` command: >
+也可用 `:file` 命令，后面跟 `:w` 命令: >
 
     :file <newfilename>
     :w
 <
-For more information, read:
+更多详情请阅读:
 
     |07.7|
     |:saveas|
@@ -1501,20 +1492,17 @@ For more information, read:
     |:w|
 
  								*faq-5.3*
-5.3. How do I change the current directory to the directory of the current
-     file?
+5.3. 如何改变当前目录为当前文件的目录？
 
-You can use the following command to change the current directory to the
-directory of the current file: >
+可以用下列命令来改变当前目录为当前文件的目录: >
 
     :cd %:p:h
 <
-To automatically change the current directory to the directory of the
-current file, simply set the option 'autochdir'. >
+要自动改变当前目录为当前文件的目录，简单地置位选项 'autochdir'。 >
 
     :set autochdir
 <
-For more information, read:
+更多详情请阅读:
 
     |:cd|
     |:lcd|
@@ -1524,33 +1512,30 @@ For more information, read:
     |getcwd()|
 
  								*faq-5.4*
-5.4. How do I write a file without the line feed (EOL) at the end of the
-     file?
+5.4. 如何在写入文件时不在文件尾加上换行符 (EOL)？
 
-You can turn off the 'eol' option and turn on the 'binary' option to write
-a file without the EOL at the end of the file: >
+可以关闭 'eol' 选项并打开  'binary' 选项来，这样在写入文件时就不会在文件尾加上
+EOL: >
 
     :set binary
     :set noeol
     :w
 <
-Alternatively, you can use: >
+此外，可用: >
 
     :set noeol
     :w ++bin
 <
-If you rather only like Vim not to write missing EOLs, you can reset the
-'fixeol' option. This needs a Vim newer 7.4.785, so you should wrap this
-in an if condition in your .vimrc like this: >
+如果你宁可 Vim 不写入缺少的 EOL，可以复位 'fixeol' 选项。这需要 Vim 版本新过
+7.4.785，所以可以这样在 .vimrc 里把它包装在 if 条件句里: >
 
     if exists('+fixeol')
         set nofixeol
     endif
 <
-This has the advantage of avoiding the many side effects that the
-'binary' option has.
+这样做还有避免 'binary' 选项许多副作用的好处。
 
-For more information, read:
+更多详情请阅读:
 
     |'endofline'|
     |'fixeol'|
@@ -1558,42 +1543,38 @@ For more information, read:
     |23.4|
 
  								*faq-5.5*
-5.5. How do I configure Vim to open a file at the last edited location?
+5.5. 如何配置 Vim 打开文件时回到之前编辑所在的位置？
 
-Vim stores the cursor position of the last edited location for each buffer
-in the '"' register. You can use the following autocmd in your .vimrc or
-.gvimrc file to open a file at the last edited location: >
+Vim 在 '"' 寄存器中保存每个缓冲区上次编辑所在的光标位置。可以在 .vimrc 或
+.gvimrc 文件中使用以下自动命令，在之前绞架所在的位置上打开文件: >
 
     au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
                          \ exe "normal! g`\"" | endif
 <
-Alternatively, you can simply source the vimrc_example.vim file, which is
-distributed with Vim.
+此外，也可以简单地执行随 Vim 发布的 vimrc_example.vim 文件。
 
-For more information, read:
+更多详情请阅读:
 
     |'quote|
     |last-position-jump|
     |vimrc_example.vim|
 
  								*faq-5.6*
-5.6. When editing a file in Vim, which is being changed by an external
-     application, Vim opens a warning window (like the confirm dialog) each
-     time a change is detected. How do I disable this warning?
+5.6. 在 Vim 中编辑文件时，文件被外部应用修改了，每次检测到改变发生时， Vim 都
+     会弹出警告窗口 (像确认对话框)。如果屏蔽此警告？
 
-You can set the Vim 'autoread' option to automatically read the file again
-when it is changed outside of Vim: >
+可用 Vim 的 'autoread' 选项来在 Vim 之外改动了文件后自动重新读入文件: >
 
     :set autoread
 <
-You can also use the following autocommand: >
+也可用以下自动命令: >
 
     autocmd FileChangedShell *
           \ echohl WarningMsg |
-          \ echo "File has been changed outside of vim." |
+          \ echo "文件在 vim 之外被修改了。" |
           \ echohl None
 <
-For more information, read:
+更多详情请阅读:
 
     |'autoread'|
     |FileChangedShell|
@@ -1601,14 +1582,13 @@ For more information, read:
     |:checktime|
 
  								*faq-5.7*
-5.7. How do I edit a file whose name is under the cursor?
+5.7. 如何编辑光标所在的文件名对应的文件？
 
-You can use the gf command to edit a file whose name is under the cursor.
-You can use the CTRL-W f command to edit the file in a new window and
-finally you can use CTRL-W gf top open a new tab page that contains the
-file name under the cursor.
+可用 gf 命令来编辑光标所在的名字对应的文件。
+可用 CTRL-W f 命令来在新窗口中编辑文件，
+最后可用 CTRL-W gf 来打开新标签页以包含光标所在的文件名。
 
-For more information, read:
+更多详情请阅读:
 
     |gf|
     |CTRL-W_f|
@@ -1619,15 +1599,13 @@ For more information, read:
     |'includeexpr'|
 
  								*faq-5.8*
-5.8. How do I reload/re-edit the current file?
+5.8. 如何重载/重新编辑当前文件？
 
-You can use the `:edit` command, without specifying a file name, to reload
-the current file.  If you have made modifications to the file, you can use
-`:edit!` to force the reload of the current file (you will lose your
-modifications, but depending on your 'undoreload' settings, those
-changes might be saved into the undo history).
+你可以使用不指定文件名的  `:edit` 命令来重载当前文件。如果此文件有修改，可用
+`:edit!` 来强制当前文件的重载 (会丢失你的修改，但取决于你的 'undoreload' 设
+置，这些修改可能已经在撤销历史中保存)。
 
-For more information, read:
+更多详情请阅读:
 
     |:edit|
     |:edit!|
@@ -1635,34 +1613,33 @@ For more information, read:
     |'undoreload'|
 
  								*faq-5.9*
-5.9. How do I autosave a file periodically?
+5.9. 如何周期性地自动保存文件？
 
-Vim doesn't support auto-saving a file periodically.
+Vim 不支持周期性地自动保存文件。
 
-For more information, read:
+更多详情请阅读:
 
     |'updatetime'|
     |CursorHold|
     |swap-file|
 
  								*faq-5.10*
-5.10. How do I open a file in read-only mode?
+5.10. 如何以只读方式打开文件？
 
-You can open a file in read-only mode using the `:view` command: >
+可用 `:view` 命令以只读方式打开文件: >
 
     :view <filename>
 <
-This command sets the 'readonly' option for the opened buffer. You can also
-use the "-R" command-line option to open a file in read-only mode: >
+此命令为打开的缓冲区置位 'readonly' 选项。也可用 "-R" 命令行选项来以只读方式打
+开文件: >
 
     $ vim -R <filename>
 <
-You can also use the symbolic link executable "view" to open a file in
-read-only mode from the command-line: >
+也可用符号链接可行程序 "view" 来从命令行以只读方式打开文件: >
 
     $ view <filename>
 <
-For more information, read:
+更多详情请阅读:
 
     |07.6|
     |'readonly'|
@@ -1674,27 +1651,23 @@ For more information, read:
     |-M|
 
  								*faq-5.11*
-5.11. How do I open a file for editing without saving the modifications to
-      the current file?
+5.11. 如何打开文件用于编辑而不保存当前文件的修改？
 
-You can open a file for editing without saving the modifications to the
-current file and without losing the changes using one of the following
-methods: >
+可用以下方法之一来打开文件用于编辑而不保存当前文件的修改也不会丢失改动: >
 
     :split <new_filename>
     :new <new_filename>
 <
-You can also set the 'hidden' option and edit a new file: >
+也可置位 'hidden' 选项并编辑新文件: >
 
     :set hidden
     :e <new_filename>
 <
-If you want to discard the changes made to the current file and load
-another file for editing, then you can use the following command: >
+如果你要放弃当前文件所作的改动并载入另一个文件用于编辑，可用以下命令: >
 
     :e! <new_filename>
 <
-For more information, read:
+更多详情请阅读:
 
     |:edit!_f|
     |'hidden'|
@@ -1702,10 +1675,9 @@ For more information, read:
     |:new|
 
  								*faq-5.12*
-5.12. How do I reduce the loading time for very large files in Vim?
+5.12. 如何减少 Vim 中超大文件的载入时间？
 
-You can use the following settings to reduce the loading time for
-very large files in Vim: >
+可用以下设置来减少 Vim 中超大文件的载入时间: >
 
     :set lazyredraw
     :set noswapfile
@@ -1714,49 +1686,42 @@ very large files in Vim: >
     :set nohidden
     :set syntax=off
 <
-Note that the above settings will disable many Vim features including the
-following: Swap files support for crash recovery, undo support, syntax
-highlighting, filetype detection and other autocommand based features.
+注意 上述设置会关闭许多 Vim 特性，包含以下这些: 用于从崩溃中恢复的交换文件支
+持，撤销支持，语法高亮、文件类型检测和其它基于自动命令的特性。
 
-There is also the LargeFile plugin available at
+也有一个 LargeFile 插件，可在这里找到
 
     https://www.vim.org/scripts/script.php?script_id=1506
 
-which automatically sets these options, when working with large files
-(it is configurable, what is considered to be a large file, by default,
-it is 100MB).
+它会自动在处理大文件 (可配置多大算做大文件，缺省是 100MB) 时设置这些选项。
 
 =============================================================================
  								*faq-6*
-SECTION 6 - EDITING MULTIPLE FILES ~
+第六节 - 编辑多个文件~
 
  								*faq-6.1*
-6.1. How do I open multiple files at once from within Vim?
+6.1. 在 Vim 里如何一次打开多个文件？
 
-Make a difference between args, buffers, tabs and windows. They are all
-different things in VIM.
+先区别一下参数、缓冲区、标签页和窗口。Vim 里这些是不同的概念。
 
-args is a list of arguments. Buffers are place to edit text, almost
-always attached to a file but not necessarily. Window is a place for a
-buffer and tab is set of windows, better name would be "layout".
+参数是命令行参数的列表。缓冲区是编辑文本的地方，几乎总是和文件捆绑在一起，但也
+不一定。窗口是缓冲区放置的地方而标签页是一组窗口，"布局" 可能是更好的名字。
 
-There are several ways to open multiple files at once from within Vim. You
-can use the `:next` command to specify a group of files: >
+有几个方法可以在 Vim 里一次打开多个文件。可用 `:next` 命令来指定一组文件: >
 
     :next f1.txt f2.txt
     :next *.c
 <
-You can use the `:args` command to specify a group of files as arguments: >
+可用 `:args` 命令来指定一组文件作为参数: >
 
     :args f1.txt f2.txt
     :args *.c
 <
-After loading the files, you can use the `:next` and `:prev` command to
-switch between the files.
+载入文件后，可用 `:next` 和 `:prev` 命令在文件间切换。
 
-To execute command for all files in argument-list use `:argdo`
+要为参数列表中的所有文件执行命令，可用 `:argdo`
 
-For more information, read:
+更多详情请阅读:
 
     |07.2|
     |:next|
@@ -1764,37 +1729,33 @@ For more information, read:
     |argument-list|
 
  								*faq-6.2*
-6.2. How do I switch between multiple files/buffers in Vim?
+6.2. 在 Vim 里如何在多个文件/缓冲区间切换？
 
-To list all buffers use `:ls`, to list buffers without file attached to
-(also known as unlisted buffers, ex. scratch buffer and help-window) use
-`:ls!`
+用 `:ls` 列出所有的缓冲区，用 `:ls!` 列出没有相关联文件的缓冲区 (亦: 列表外缓
+冲区，如草稿缓冲区和帮助窗口)。
 
-There are several ways to switch between multiple files. You can use the
-`:buffer` command to switch between multiple files. You can also shorten
-command as `:b` and use only part of the filename. For example, >
+有几种方法可以在多个文件中切换。用 `:buffer` 命令来在多个文件间切换。也可简写
+为 `:b` 并只用部分文件名。例如 >
 
     :buffer file1
     :buffer file2
     :b e2
 <
-You can also use <TAB> after `:b` for autocompletion. Try also `:b`
-followed by CTRL-D to see all available buffers. This works also for
-`:e`.
+也可在 `:b` 后用 <TAB> 自动补全。也试试 `:b` 后跟 CTRL-D 也看到所有可用的缓冲
+区。这也适用于 `:e`。
 
-You can also use the CTRL-^ key to switch between buffers. By specifying a
-count before pressing the key, you can edit the buffer with that number.
-Without the count, you can edit the alternate buffer by pressing CTRL-^
+也可用 CTRL-^ 键在缓冲区间切换。按此键前如指定计数，可编辑带此号码的缓冲区。如
+果没有计数，CTRL-^ 可用来编辑轮换缓冲区。
 
-You can also use the `:e #` command to edit a particular buffer: >
+也可用 `:e #` 命令来编辑特定缓冲区: >
 
     :e #5
 <
-To close a buffer use `:bd` -command.
+用 `:bd ` 命令来关闭缓冲区。
 
-To execute command for all files in buffer-list use `:bufdo`
+可用 `:bufdo` 来为缓冲区列表中的所有文件执行命令。
 
-For more information, read:
+更多详情请阅读:
 
     |edit-files|
     |:buffer|
@@ -1804,29 +1765,25 @@ For more information, read:
     |07.3|
 
  								*faq-6.3*
-6.3. How do I open several files in Vim, with each file in a separate
-     window/tab?
+6.3. 在 Vim 里如何件在单独的窗口/标签页打开多个文件？
 
-You can use the -o and -O Vim command line arguments to open multiple files
-in separate horizontally or vertically split Vim windows. For example: >
+可用 -o 和 -O 命令行参数来在水平或垂直分割的 Vim 窗口中分别打开多个文件。例
+如: >
 
     $ vim -o3 f1.txt f2.txt f3.txt
 <
-The above command will open the files f1.txt, f2.txt and f3.txt in three
-separate horizontally split Vim windows. >
+上述命令会在三个水平分割的 Vim 窗口中分别打开文件 f1.txt、f2.txt 和 f3.txt。 >
 
     $ vim -O3 f1.txt f2.txt f3.txt
 <
-The above command will open the files f1.txt, f2.txt and f3.txt in three
-separate vertically split Vim windows. >
+上述命令会在三个垂直分割的 Vim 窗口中分别打开文件 f1.txt、f2.txt 和 f3.txt。 >
 
     $ vim -p f1.txt f2.txt f3.txt
 <
-The above command will open the files f1.txt, f2.txt and f3.txt in three
-separate tab windows. The option 'tabpagemax' defines, how many tabpages
-can be opened at the same time, by default it is set to 10.
+上述命令会在三个标签页中分别打开文件 f1.txt、f2.txt 和 f3.txt。 'tabpagemax'
+选项定义一次最多能打开多少个标签页，缺省是 10 个。
 
-For more information, read:
+更多详情请阅读:
 
     |-o|
     |-O|
@@ -1835,21 +1792,17 @@ For more information, read:
     |'tabpagemax'|
 
  								*faq-6.4*
-6.4. How do I configure Vim to autoload several files at once similar to
-     "work-sets" or "projects"?
+6.4. 如何配置 Vim 可以一次自动载入若干文件，类似于 "工作集" 或 "项目"？
 
-You can use the `:mksession` and the `:mkview` commands to autoload several
-files in Vim.
+可用 `:mksession` 和 `:mkview` 命令在 Vim 里自动载入若干文件。
 
-The `:mksession` command creates a Vim script that restores the current
-editing session. You can use the `:source` command to source the file
-produced by the mksession command.
+`:mksession` 命令创建 Vim 脚本用来恢复当前编辑的会话。可用 `:source` 命令来执
+行 mksession 命令生成的文件。
 
-The `:mkview` command creates a Vim script that restores the contents of
-the current window. You can use the `:loadview` command to load the view
-for the current file.
+`:mkview` 命令创建 Vim 脚本用来恢复当前窗口的内容。可用 `:loadview` 命令来载入
+当前文件的视图。
 
-For more information, read:
+更多详情请阅读:
 
     |21.4|
     |21.5|
@@ -1864,18 +1817,15 @@ For more information, read:
     |buffers|
 
  								*faq-6.5*
-6.5. Is it possible to open multiple top level windows in a single instance
-     of Vim similar to Nedit or Emacs?
+6.5. 可以打开在单个 Vim 实例中打开多个顶层窗口，就像 Nedit 或 emacs 那样吗？
 
-No. It is currently not possible to open multiple top-level windows in a
-single instance of Vim. This feature is in the todo list.
+不行。目前不可能在单个 Vim 实例中打开多个顶层窗口。此功能还在待开发列表中。
 
  								*faq-6.6*
-6.6. How do I browse/explore directories from within Vim?
+6.6. 如果在 Vim 内浏览/探索目录？
 
-You can use the netrw.vim plugin, supplied with the standard Vim
-installation, to browse/explore directories from within Vim. You can start
-the file explorer using one of the following commands: >
+在 Vim 内，可用标准 Vim 安装提供的 netrw.vim 插件来浏览/探索目录。可用以下命令
+之一来启动文件探索器: >
 
     :e <directory>
     :Explore
@@ -1883,25 +1833,23 @@ the file explorer using one of the following commands: >
     :Vexplore
     :Texplore
 <
-From the file explorer, you can browse through directories, rename, delete
-and edit files.
+从文件探索器出发，可以浏览目录，换名、删除和编辑文件。
 
-For more information, read:
+更多详情请阅读:
 
     |netrw.vim|
     |22.1|
 
  								*faq-6.7*
-6.7. How do I edit files over a network using ftp/scp/rcp/http?
+6.7. 如何用 ftp/scp/rcp/http 通过网络编辑文件？
 
-You can use the netrw.vim plugin, supplied with the standard Vim package,
-to edit files over a network using ftp/scp/rcp/http. Using this plugin, Vim
-will transparently load and save the files over ftp/scp/rcp/http. For
-example, to edit a file over ftp, you can use the following command: >
+标准 Vim 软件包提供的 netrw.vim 插件来用 ftp/scp/rcp/http 通过网络编辑文件。使
+用此插件，Vim 会自己用 ftp/scp/rcp/http 透明地载入和保存文件。例如，要通过 ftp
+编辑文件，可用以下命令: >
 
     $ vim ftp://machine/path
 <
-For more information, read:
+更多详情请阅读:
 
     |netrw.vim|
 
