@@ -99,8 +99,8 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-6.2">faq-6.2</a>    在 Vim 里如何在多个文件/缓冲区间切换？
  <a href="vim_faq.html#faq-6.3">faq-6.3</a>    在 Vim 里如何件在单独的窗口/标签页打开多个文件？
  <a href="vim_faq.html#faq-6.4">faq-6.4</a>    如何配置 Vim 可以一次自动载入若干文件，类似于 "工作集" 或 "项目"？
- <a href="vim_faq.html#faq-6.5">faq-6.5</a>    可以打开在单个 Vim 实例中打开多个顶层窗口，就像 Nedit 或 emacs 那样
-          吗？
+ <a href="vim_faq.html#faq-6.5">faq-6.5</a>    可以打开在单个 Vim 实例中打开多个顶层窗口，就像 Nedit 或 emacs 那
+          样吗？
  <a href="vim_faq.html#faq-6.6">faq-6.6</a>    如何在 Vim 内浏览/探索目录？
  <a href="vim_faq.html#faq-6.7">faq-6.7</a>    如何用 ftp/scp/rcp/http 通过网络编辑文件？
                                                                 <b class="vimtag"> <a name="faq-backup">faq-backup</a> </b>
@@ -128,45 +128,32 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-8.9">faq-8.9</a>    如何删除缓冲区而不关闭显示该缓冲区的窗口？
  <a href="vim_faq.html#faq-8.10">faq-8.10</a>   如何映射 <code class="special">&lt;Tab&gt;</code> 键来循环并打开所有缓冲区？
                                                                 <b class="vimtag"> <a name="faq-windows">faq-windows</a> </b>
-<code class="section">SECTION 9 - WINDOWS </code>
- <a href="vim_faq.html#faq-9.1">faq-9.1</a>    What is the difference between a Vim window and a buffer?
- <a href="vim_faq.html#faq-9.2">faq-9.2</a>    How do I increase the width of a Vim window?
- <a href="vim_faq.html#faq-9.3">faq-9.3</a>    How do I zoom into or out of a window?
- <a href="vim_faq.html#faq-9.4">faq-9.4</a>    How do I execute an ex command on all the open buffers or open
-          windows or all the files in the argument list?
+<code class="section">第九节 - 窗口</code>
+ <a href="vim_faq.html#faq-9.1">faq-9.1</a>    Vim 窗口和缓冲区的区别是什么？
+ <a href="vim_faq.html#faq-9.2">faq-9.2</a>    如何增加 Vim 窗口的宽度？
+ <a href="vim_faq.html#faq-9.3">faq-9.3</a>    如何放大或缩小窗口？
+ <a href="vim_faq.html#faq-9.4">faq-9.4</a>    如何在所有打开的缓冲区或打开的窗口或参数列表的所有文件上执行 ex 命
+          令？
                                                                 <b class="vimtag"> <a name="faq-motion">faq-motion</a> </b>
-<code class="section">SECTION 10 - MOTION </code>
- <a href="vim_faq.html#faq-10.1">faq-10.1</a>   How do I jump to the beginning (first line) or end (last line) of
-          a file?
- <a href="vim_faq.html#faq-10.2">faq-10.2</a>   In insert mode, when I press the <code class="special">&lt;Esc&gt;</code> key to go to command mode,
-          the cursor moves one character to the left (except when the
-          cursor is on the first character of the line). Is it possible to
-          change this behavior to keep the cursor at the same column?
- <a href="vim_faq.html#faq-10.3">faq-10.3</a>   How do I configure Vim to maintain the horizontal cursor position
-          when scrolling with the &lt;Page Up&gt;, &lt;Page Down&gt;, etc keys?
- <a href="vim_faq.html#faq-10.4">faq-10.4</a>   Some lines in a file are more than the screen width and they are
-          all wrapped. When I use the j, k keys to move from one line to
-          the next, the cursor is moved to the next line in the file
-          instead of the next line on the screen. How do I move from one
-          screen line to the next?
- <a href="vim_faq.html#faq-10.5">faq-10.5</a>   What is the definition of a sentence, paragraph and section in
-          Vim?
- <a href="vim_faq.html#faq-10.6">faq-10.6</a>   How do I jump to beginning or end of a sentence, paragraph or a
-          section?
- <a href="vim_faq.html#faq-10.7">faq-10.7</a>   I have lines in a file that extends beyond the right extent of the
-          screen. How do I move the Vim view to the right to see the text
-          off the screen?
- <a href="vim_faq.html#faq-10.8">faq-10.8</a>   How do I scroll two or more buffers simultaneously?
- <a href="vim_faq.html#faq-10.9">faq-10.9</a>   When I use my arrow keys, Vim changes modes, inserts weird
-          characters in my document but doesn't move the cursor properly.
-          What's going on?
- <a href="vim_faq.html#faq-10.10">faq-10.10</a>  How do I configure Vim to move the cursor to the end of the
-          previous line, when the left arrow key is pressed and the cursor
-          is currently at the beginning of a line?
- <a href="vim_faq.html#faq-10.11">faq-10.11</a>  How do I configure Vim to stay only in insert mode (modeless
-          editing)?
- <a href="vim_faq.html#faq-10.12">faq-10.12</a>  How do I display some context lines when scrolling text?
- <a href="vim_faq.html#faq-10.13">faq-10.13</a>  How do I go back to previous cursor locations?
+<code class="section">第十节 - 动作</code>
+ <a href="vim_faq.html#faq-10.1">faq-10.1</a>   如何跳到文件的开头 (首行) 或 尾部 (末行)？
+ <a href="vim_faq.html#faq-10.2">faq-10.2</a>   插入模式下，按 <code class="special">&lt;Esc&gt;</code> 键回到命令模式时，光标向左移了一个字符 (除了
+          光标在行首以外)。可以改变此行为来保持光标在同一列上吗？
+ <a href="vim_faq.html#faq-10.3">faq-10.3</a>   如何配置 Vim 在用 &lt;Page Up&gt;、&lt;Page Down&gt; 等键滚动时保持水平光标位
+          置？
+ <a href="vim_faq.html#faq-10.4">faq-10.4</a>   文件中的有些行超过屏幕宽度而被回绕。用 j、k 键从一行移到下一行时光
+          标移动到文件的下一行而不是屏幕的下一行。如何才能移动到下一屏幕行？
+ <a href="vim_faq.html#faq-10.5">faq-10.5</a>   句子、段落和小节的定义是什么？
+ <a href="vim_faq.html#faq-10.6">faq-10.6</a>   如何跳转到句子、段落或小节的头部或尾部？
+ <a href="vim_faq.html#faq-10.7">faq-10.7</a>   我有延伸到屏幕右端之外的文件行。如何往右移动 Vim 视图来看到原来不
+          在屏幕上的文本？
+ <a href="vim_faq.html#faq-10.8">faq-10.8</a>   如何同时滚动两或多个缓冲区？
+ <a href="vim_faq.html#faq-10.9">faq-10.9</a>   用光标键时，Vim 改变了模式，在文档中插入奇怪的字符，但不正确地移动
+          光标。怎么啦？
+ <a href="vim_faq.html#faq-10.10">faq-10.10</a>  如何配置 Vim 当光标在行首而按左键时，移动光标到前行的行尾？
+ <a href="vim_faq.html#faq-10.11">faq-10.11</a>  如何配置 Vim 只留在插入模式 (无模式编辑)？
+ <a href="vim_faq.html#faq-10.12">faq-10.12</a>  滚动文本时如何显示若干上下文？
+ <a href="vim_faq.html#faq-10.13">faq-10.13</a>  如何回到之前的光标位置？
                                                         <b class="vimtag"> <a name="faq-searching-text">faq-searching-text</a> </b>
 <code class="section">SECTION 11 - SEARCHING TEXT </code>
  <a href="vim_faq.html#faq-11.1">faq-11.1</a>   After I searched for a text with a pattern, all the matched text
@@ -2092,17 +2079,16 @@ Vim。例如:
      <code class="badlink">:bprevious</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-9">faq-9</a> </b></h4><code class="section">SECTION 9 - WINDOWS </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-9">faq-9</a> </b></h4><code class="section">第九节 - 窗口</code>
 
                                                                 <b class="vimtag"> <a name="faq-9.1">faq-9.1</a> </b>
-9.1. What is the difference between a Vim window and a buffer?
+9.1. Vim 窗口和缓冲区的区别是什么？
 
-A Vim buffer is a file loaded into memory for editing. The original file
-remains unchanged until you write the buffer to the file. A Vim window is a
-viewport onto a buffer. You can use multiple windows on one buffer or
-several windows on different buffers.
+Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，直到你把缓冲区写回文件为
+止。Vim 窗口是缓冲区的投影视窗。同一个缓冲区可用多个窗口，也可为不同缓冲区用多
+个窗口。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">usr_08.txt</code> 
      <code class="badlink">22.4</code> 
@@ -2110,18 +2096,17 @@ For more information, read:
      <code class="badlink">Q_wi</code> 
 
                                                                 <b class="vimtag"> <a name="faq-9.2">faq-9.2</a> </b>
-9.2. How do I increase the width of a Vim window?
+9.2. 如何增加 Vim 窗口的宽度？
 
-You can increase the width of a Vim window using one of the following
-commands: 
+用下列命令之一可增加 Vim 窗口的宽度: 
 <code class="example"></code>
 <code class="example">    :vert resize +N</code>
 <code class="example">    :vert resize -N</code>
 <code class="example">    :vert resize N</code>
 
-You can also use <code class="keystroke">CTRL-W</code> &lt; or <code class="keystroke">CTRL-W</code> &gt; or <code class="keystroke">CTRL-W</code> | commands.
+也可用 <code class="keystroke">CTRL-W</code> &lt; 或 <code class="keystroke">CTRL-W</code> &gt; 或 <code class="keystroke">CTRL-W</code> | 命令。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:vertical-resize</code> 
      <code class="badlink">CTRL-W_&gt;</code> 
@@ -2129,53 +2114,44 @@ For more information, read:
      <code class="badlink">window-resize</code> 
 
                                                                 <b class="vimtag"> <a name="faq-9.3">faq-9.3</a> </b>
-9.3. How do I zoom into or out of a window?
+9.3. 如何放大或缩小窗口？
 
-You can zoom into a window (close all the windows except the current
-window) using the "&lt;<code class="keystroke">CTRL-W</code>&gt;o" command or the  <code class="badlink">:only</code>  ex command.
+可用 "&lt;<code class="keystroke">CTRL-W</code>&gt;o" 命令或  <code class="badlink">:only</code>  ex 命令来放大窗口 (关闭除了当前窗口以外的其它
+窗口)。
 
-You can use the "&lt;<code class="keystroke">CTRL-W</code>&gt;_" command or the  <code class="badlink">:resize</code>  ex command to increase
-the current window height to the highest possible without closing other
-windows.
+可用 "&lt;<code class="keystroke">CTRL-W</code>&gt;_" 命令或  <code class="badlink">:resize</code>  ex 命令来在不关闭其它窗口的前提下尽量增加当
+前窗口的高度。
 
-You can use the "&lt;<code class="keystroke">CTRL-W</code>&gt;|" command or the `:vertical resize` ex command to
-increase the current window width to the highest possible without closing
-other windows.
+可用 "&lt;<code class="keystroke">CTRL-W</code>&gt;|" 命令或 `:vertical resize` ex 命令来在不关闭其它窗口的前提下尽
+量增加当前窗口的宽度。
 
-You can use the "&lt;<code class="keystroke">CTRL-W</code>&gt;=" command to make the height and width of all the
-windows equal.
+可用 "&lt;<code class="keystroke">CTRL-W</code>&gt;=" 命令使所有窗口等高等宽。
 
-You can also set the following options to get better results with the above
-commands:
+可设置下列选项来使上述命令的效果更佳:
 
-Method 1:
-Set the <code class="badlink">'winminheight'</code> option to 0: 
+方法 1:
+设置 <code class="badlink">'winminheight'</code> 选项为 0: 
 <code class="example"></code>
 <code class="example">    :set winminheight=0</code>
 
-By default, this option is set to 1.
-This option controls the minimum height of an inactive window (when it is
-not the current window).  When the <code class="badlink">'winminheight'</code> option is set to 0, only
-the status line will be displayed for inactive windows.
+缺省，此选项设为 1。
+此选项控制非激活窗口 (亦即非当前窗口) 的最小高度。<code class="badlink">'winminheight'</code> 选项设为 0
+时，非激活窗口仅显示状态行。
 
-Method 2:
-Set the <code class="badlink">'noequalalways'</code> option and set the <code class="badlink">'winheight'</code> option to a large
-value (like 99999): 
+方法 2:
+设置 <code class="badlink">'noequalalways'</code> 选项并设 <code class="badlink">'winheight'</code> 选项为很大的值 (比如 99999): 
 <code class="example"></code>
 <code class="example">    :set noequalalways</code>
 <code class="example">    :set winheight=99999</code>
 
-Now, the active window will always open to its maximum size, while the
-other windows will stay present, but shrunken to just a status line.
+现在，激活的窗口会打开到最大尺寸，而其它窗口保持可见但缩小到只有状态行。
 
-With any of the above mentioned methods, you cannot restore the window
-layout after zooming into a window.  If you want to restore the Vim window
-layout after zooming into a window, you can use the ZoomWin plugin. You can
-download this plugin from the Vim online website at:
+使用上面提到的一个方法放大窗口后不能恢复窗口布局。如果在放大窗口后还想恢复 Vim
+的窗口布局，可用 ZoomWin 插件。可从 Vim online 网站下载此插件:
 
     <a href="https://www.vim.org/scripts/script.php?script_id=508">https://www.vim.org/scripts/script.php?script_id=508</a>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">CTRL-W_o</code> 
      <code class="badlink">window-resize</code> 
@@ -2185,16 +2161,13 @@ For more information, read:
      <code class="badlink">08.3</code> 
 
                                                                 <b class="vimtag"> <a name="faq-9.4">faq-9.4</a> </b>
-9.4. How do I execute an ex command on all the open buffers or open windows
-     or all the files in the argument list?
+9.4. 如何在所有打开的缓冲区或打开的窗口或参数列表的所有文件上执行 ex 命令？
 
-You can use the  <code class="badlink">:bufdo</code>  command to execute an ex command on all the open
-buffers.  You can use the  <code class="badlink">:windo</code>  command to execute an ex command on all
-the open windows.  You can use the  <code class="badlink">:argdo</code>  command to execute an ex
-command on all the files specified in the argument list. And finally you
-can use the  <code class="badlink">:tabdo</code>  command to execute an ex command in all open tab pages.
+可用  <code class="badlink">:bufdo</code>  命令为所有打开的缓冲区执行 ex 命令。可用  <code class="badlink">:windo</code>  命令为所有打开
+的窗口执行 ex 命令。可用  <code class="badlink">:argdo</code>  命令为参数列表指定的所有文件执行 ex 命令。最
+后，可用  <code class="badlink">:tabdo</code>  命令为所有打开的标签页执行 ex 命令。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:windo</code> 
      <code class="badlink">:bufdo</code> 
@@ -2203,76 +2176,62 @@ For more information, read:
      <code class="badlink">26.3</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-10">faq-10</a> </b></h4><code class="section">SECTION 10 - MOTION </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-10">faq-10</a> </b></h4><code class="section">第十节 - 动作</code>
 
                                                                 <b class="vimtag"> <a name="faq-10.1">faq-10.1</a> </b>
-10.1. How do I jump to the beginning (first line) or end (last line) of a
-     file?
+10.1. 如何跳到文件的开头 (首行) 或 尾部 (末行)？
 
-You can use "G" command to jump to the last line in the file and the "gg"
-command to jump to the first line in the file.
+可用 "G" 命令来跳转到文件的末行，而用 "gg" 命令来跳转到文件的首行。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">G</code> 
      <code class="badlink">gg</code> 
 
                                                                 <b class="vimtag"> <a name="faq-10.2">faq-10.2</a> </b>
-10.2. In insert mode, when I press the <code class="special">&lt;Esc&gt;</code> key to go to command mode, the
-     cursor moves one character to the left (except when the cursor is on
-     the first character of the line). Is it possible to change this
-     behavior to keep the cursor at the same column?
+10.2. 插入模式下，按 <code class="special">&lt;Esc&gt;</code> 键回到命令模式时，光标向左移了一个字符 (除了光标在
+      行首以外)。可以改变此行为来保持光标在同一列上吗？
 
-No. It is not possible to change this behavior. The cursor is always
-positioned on a valid character (unless you have virtual-edit mode
-enabled). So, if you are appending text to the end of a line, when you
-return to command mode the cursor _must_ drop back onto the last character
-you typed. For consistency sake, the cursor drops back everywhere, even if
-you are in the middle of a line.
+不行。不能改变此行为。光标总是留在合法的字符上 (除非打开了虚拟编辑模式)。所
+以，如果在行尾附加文本，返回命令模式时光标 <code class="emphasis">必须</code> 退回到输入的末字符上。为统一起
+见，光标不管在哪里，即使你在行的中间，都会退回。
 
-You can use the <code class="keystroke">CTRL-O</code> or <code class="keystroke">CTRL-\</code> <code class="keystroke">CTRL-O</code> command in insert mode to execute a
-single ex command and return back to insert mode without moving the cursor
-column.
+插入模式下，可用 <code class="keystroke">CTRL-O</code> 或 <code class="keystroke">CTRL-\</code> <code class="keystroke">CTRL-O</code> 命令执行单个 ex 命令并返回到插入模式
+而不移动光标列。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'virtualedit'</code> 
      <code class="badlink">i_CTRL-O</code> 
      <code class="badlink">i_CTRL-\_CTRL-O</code> 
 
                                                                 <b class="vimtag"> <a name="faq-10.3">faq-10.3</a> </b>
-10.3. How do I configure Vim to maintain the horizontal cursor position when
-     scrolling with the &lt;Page Up&gt;, &lt;Page Down&gt;, etc keys?
+10.3. 如何配置 Vim 在用 &lt;Page Up&gt;、&lt;Page Down&gt; 等键滚动时保持水平光标位置？
 
-You can reset the <code class="badlink">'startofline'</code> option to keep the cursor at the same
-horizontal location when scrolling text: 
+可复位 <code class="badlink">'startofline'</code> 选项来使文本滚动时保持光标水平位置不变: 
 <code class="example"></code>
 <code class="example">    :set nostartofline</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'startofline'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-10.4">faq-10.4</a> </b>
-10.4. Some lines in a file are more than the screen width and they are all
-     wrapped. When I use the j, k keys to move from one line to the next,
-     the cursor is moved to the next line in the file instead of the next
-     line on the screen. How do I move from one screen line to the next?
+10.4. 文件中的有些行超过屏幕宽度而被回绕。用 j、k 键从一行移到下一行时光标移动
+      到文件的下一行而不是屏幕的下一行。如何才能移动到下一屏幕行？
 
-You can use the gj and gk commands to move from one screen line to the
-next/previous screen line. The j and k commands move the cursor from one
-file line to the next file line. You can also avoid the line wrapping by
-resetting the <code class="badlink">'wrap'</code> option: 
+可用 gj 和 gk 命令来从一屏幕行移到后/前一个屏幕行。j 和 k 命令移动光标从一文件
+行到后/前一个文件行。复位 <code class="badlink">'wrap'</code> 选项可避免行回绕: 
 <code class="example"></code>
 <code class="example">    :set nowrap</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">gj</code> 
      <code class="badlink">gk</code> 
      <code class="badlink">'wrap'</code> 
 
-You can use the following mappings: 
+可用以下映射: 
 <code class="example"></code>
 <code class="example">    :map &lt;Up&gt; gk</code>
 <code class="example">    :imap &lt;Up&gt; &lt;C-o&gt;gk</code>
@@ -2282,22 +2241,18 @@ You can use the following mappings:
 <code class="example">    :noremap k gk</code>
 
                                                                 <b class="vimtag"> <a name="faq-10.5">faq-10.5</a> </b>
-10.5. What is the definition of a sentence, paragraph and section in Vim?
+10.5. 句子、段落和小节的定义是什么？
 
-A sentence is defined as ending at a ".", "!" or "?" followed by either the
-end of a line, or by a space (or two) or tab. Which characters and the
-number of spaces needed to constitute a sentence ending is determined by
-the <code class="badlink">'joinspaces'</code> and <code class="badlink">'cpoptions'</code> options.
+一个句子以 '.'、'!' 或者 '?' 结尾并紧随着一个换行符、一个空格 (或两个) 或者制
+表符。哪个字符和几个空格算作句尾由 <code class="badlink">'joinspaces'</code> 和 <code class="badlink">'cpoptions'</code> 选项。
 
-A paragraph begins after each empty line, and also at each of a set of
-paragraph macros, specified by the pairs of characters in the <code class="badlink">'paragraphs'</code>
-option.
+一个段落以每个空行或段落宏命令开始，段落宏由 <code class="badlink">'paragraphs'</code> 选项里成对出现的字符
+所定义。
 
-A section begins after a form-feed (<code class="special">&lt;C-L&gt;</code>) in the first column and at each
-of a set of section macros, specified by the pairs of characters in the
-<code class="badlink">'sections'</code> option.
+一个小节以每个首列出现的换页符 (<code class="special">&lt;C-L&gt;</code>) 或小节宏命令开始。小节宏由 <code class="badlink">'sections'</code>
+选项里成对出现的字符所定义。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">sentence</code> 
      <code class="badlink">'joinspaces'</code> 
@@ -2307,62 +2262,55 @@ For more information, read:
      <code class="badlink">word</code> 
 
                                                                 <b class="vimtag"> <a name="faq-10.6">faq-10.6</a> </b>
-10.6. How do I jump to beginning or end of a sentence, paragraph or a
-     section?
+10.6. 如何跳转到句子、段落或小节的头部或尾部？
 
-You can use the following motion commands to jump to the beginning or end
-of a sentence or a paragraph or a section:
+用下列动作命令跳转到句子、段落或小节的头部或尾部:
 
-<code class="section">      motion  position    where </code>
+<code class="section">      动作    位置        哪里 </code>
 <code class="section">      ------  ---------   ----------------- </code>
-      (       beginning   current sentence
-      )       end         current sentence
-      {       beginning   current paragraph
-      }       end         current paragraph
-      []      end         previous section
-      [[      beginning   current section
-      ][      end         current section
-      ]]      beginning   next section
+      (       头部        当前句子
+      )       尾部        当前句子
+      {       头部        当前段落
+      }       尾部        当然段落
+      []      尾部        前一小节
+      [[      头部        当前小节
+      ][      尾部        当前小节
+      ]]      头部        后一小节
 
-Each of these motions can be preceded by a number which will extend the
-jump forward (or backward).
+每个动作可以前导一个数值，会延展往前或往后的跳转。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">object-motions</code> 
 
                                                                 <b class="vimtag"> <a name="faq-10.7">faq-10.7</a> </b>
-10.7. I have lines in a file that extends beyond the right extent of the
-     screen. How do I move the Vim view to the right to see the text off
-     the screen?
+10.7. 我有延伸到屏幕右端之外的文件行。如何往右移动 Vim 视图来看到原来不在屏幕
+      上的文本？
 
-You can use one of the following commands to horizontally scroll the screen
-to the left or right:
+可用下列命令之一来横向往左或右滚动屏幕:
 
-<code class="section">    cmd  scroll to </code>
+<code class="section">    命令 滚动到</code>
 <code class="section">    ---  -------------------------- </code>
-    zl   scroll to the left
-    zh   scroll to the right
-    zL   scroll half a screenwidth to the left
-    zH   scroll half a screenwidth to the right
-    zs   scroll to position the cursor at the start of the screen
-    ze   scroll to position the cursor at the end of the screen
+    zl   往左滚动
+    zh   往右滚动
+    zL   往左半个屏幕宽度
+    zH   往右半个屏幕宽度
+    zs   滚动使光标位于屏幕开始的开始位置
+    ze   滚动使光标位于屏幕开始的结束位置
 
-You can use the g0 command to move the cursor to the first character of the
-screen line and the g$ command to move the cursor to the last character of
-the screen line without scrolling the screen.
+可用 g0 命令移动光标到屏幕行的首个字符，而 g$ 命令移动光标到屏幕行的末个字符。
+两者都不滚动屏幕。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">scroll-horizontal</code> 
 
                                                                 <b class="vimtag"> <a name="faq-10.8">faq-10.8</a> </b>
-10.8. How do I scroll two or more buffers simultaneously?
+10.8. 如何同时滚动两或多个缓冲区？
 
-You can set the <code class="badlink">'scrollbind'</code> option for each of the buffers to scroll them
-simultaneously.
+可为每个缓冲区置位 <code class="badlink">'scrollbind'</code> 选项来同时滚动这些缓冲区。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'scrollbind'</code> 
      <code class="badlink">scroll-binding</code> 
@@ -2370,24 +2318,19 @@ For more information, read:
      <code class="badlink">'cursorbind'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-10.9">faq-10.9</a> </b>
-10.9. When I use my arrow keys, Vim changes modes, inserts weird characters
-     in my document but doesn't move the cursor properly. What's going on?
+10.9. 用光标键时，Vim 改变了模式，在文档中插入奇怪的字符，但不正确地移动光标。
+      怎么啦？
 
-There are a couple of things that could be going on: either you are using
-Vim over a slow connection or Vim doesn't understand the key sequence that
-your keyboard is generating.
+有几个可能性: 或者你在慢速连接上使用 Vim，或者 Vim 不识别你键盘生成的键序列。
 
-If you are working over a slow connection (such as a 2400 bps modem), you
-can try to set the <code class="badlink">'timeout'</code> or <code class="badlink">'ttimeout'</code> option. These options, combined
-with the <code class="badlink">'timeoutlen'</code> and <code class="badlink">'ttimeoutlen'</code> options, may fix the problem.
+如果你在用慢速连接 (例如 2400 bps modem)，可以试试置位 <code class="badlink">'timeout'</code> 或 <code class="badlink">'ttimeout'</code>
+选项。这些选项加上 <code class="badlink">'timeoutlen'</code> 和 <code class="badlink">'ttimeoutlen'</code> 选项可能可以解决问题。
 
-The preceding procedure will not work correctly if your terminal sends key
-codes that Vim does not understand. In this situation, your best option is
-to map your key sequence to a matching cursor movement command and save
-these mappings in a file. You can then  <code class="badlink">:source</code>  the file whenever you work
-from that terminal.
+如果 Vim 不能识别你的终端发送的键代码，上面的步骤可能没用。为此，最好的选择是
+把你的键序列映射到对应的光标移动命令上，并把这些映射保存到某个文件。每次使用该
+终端时用  <code class="badlink">:source</code>  这个文件。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'timeout'</code> 
      <code class="badlink">'ttimeout'</code> 
@@ -2397,54 +2340,45 @@ For more information, read:
      <code class="badlink">vt100-cursor-keys</code> 
 
                                                                 <b class="vimtag"> <a name="faq-10.10">faq-10.10</a> </b>
-10.10. How do I configure Vim to move the cursor to the end of the previous
-      line, when the left arrow key is pressed and the cursor is currently
-      at the beginning of a line?
+10.10. 如何配置 Vim 当光标在行首而按左键时，移动光标到前行的行尾？
 
-You can add the "&lt;" flag to the <code class="badlink">'whichwrap'</code> option to configure Vim to move
-the cursor to the end of the previous line, when the left arrow key is
-pressed and the cursor is currently at the beginning of a line: 
+可为 <code class="badlink">'whichwrap'</code> 选项加上 "&lt;" 标志位，来配置 Vim 当光标在行首而按左键时，移动
+光标到前行的行尾: 
 <code class="example"></code>
 <code class="example">    :set whichwrap+=&lt;</code>
 
-Similarly, to move the cursor the beginning of the next line, when the
-right arrow key is  pressed and the cursor is currently at the end of a
-line, add the "&gt;" flag to the <code class="badlink">'whichwrap'</code> option: 
+类似地，当光标在行尾而按右键时，要移动光标到后行的行首，可为 <code class="badlink">'whichwrap'</code> 选项
+加上 "&gt;" 标志位: 
 <code class="example"></code>
 <code class="example">    :set whichwrap+=&gt;</code>
 
-The above will work only in normal and visual modes. To use this in insert
-and replace modes, add the "[" and "]" flags respectively.
+上述设定只可用于普通和可视模式。要在插入和替换模式下也如此，分别加入 "[" 和
+"]" 标志位。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'whichwrap'</code> 
      <code class="badlink">05.7</code> 
 
                                                                 <b class="vimtag"> <a name="faq-10.11">faq-10.11</a> </b>
-10.11. How do I configure Vim to stay only in insert mode (modeless
-      editing)?
+10.11. 如何配置 Vim 只留在插入模式 (无模式编辑)？
 
-You can set the <code class="badlink">'insertmode'</code> option to configure Vim to stay only in insert
-mode: 
+可置位 <code class="badlink">'insertmode'</code> 选项来配置 Vim 只留在插入模式: 
 <code class="example"></code>
 <code class="example">    :set insertmode</code>
 
-By setting this option, you can use Vim as a modeless editor. If you press
-the <code class="special">&lt;Esc&gt;</code> key, Vim will not go to the normal mode. To execute a single
-normal mode command, you can press <code class="keystroke">CTRL-O</code> followed by the normal mode
-command.  To execute more than one normal command, you can use <code class="keystroke">CTRL-L</code>
-followed by the commands. To return to insert mode, press the <code class="special">&lt;Esc&gt;</code> key. To
-disable this option, reset the <code class="badlink">'insertmode'</code> option: 
+置位该选项可把 Vim 作为无模式的编辑器来使用。如果按了 <code class="special">&lt;Esc&gt;</code> 键，Vim 不会转入普
+通模式。要执行单个普通模式命令，可按 <code class="keystroke">CTRL-O</code> 后跟普通模式命令。可执行多于一个普
+通模式命令，可用 <code class="keystroke">CTRL-L</code> 后跟那些命令。然后用 <code class="special">&lt;Esc&gt;</code> 键返回插入模式。要关闭此选
+项，复位 <code class="badlink">'insertmode'</code> 选项: 
 <code class="example"></code>
 <code class="example">    :set noinsertmode</code>
 
-You can also start vim using the "evim" command or you can use "vim -y" to
-use Vim as a modeless editor.
+也可用 "evim" 命令或 "vim -y" 来作为无模式编辑器启动 Vim。
 
-You can also start Vim in insert mode using the  <code class="badlink">:startinsert</code>  ex command.
+也可用  <code class="badlink">:startinsert</code>  ex 命令以插入模式启动 Vim。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'insertmode'</code> 
      <code class="badlink">:startinsert</code> 
@@ -2455,27 +2389,24 @@ For more information, read:
      <code class="badlink">evim-keys</code> 
 
                                                                 <b class="vimtag"> <a name="faq-10.12">faq-10.12</a> </b>
-10.12. How do I display some context lines when scrolling text?
+10.12. 滚动文本时如何显示若干上下文？
 
-You can set the <code class="badlink">'scrolloff'</code> option to display a minimal number of screen
-lines (context) above and below the cursor. 
+可设置 <code class="badlink">'scrolloff'</code> 选项来控制在光标上方和下方显示的最少的屏幕行数 (上下文)。 
 <code class="example"></code>
 <code class="example">    :set scrolloff=10</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'scrolloff'</code> 
      <code class="badlink">'sidescrolloff'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-10.13">faq-10.13</a> </b>
-10.13. How do I go back to previous cursor locations?
+10.13. 如何回到之前的光标位置？
 
-You can go back to the cursor location before the latest jump using the ''
-or `` command. You can use the <code class="keystroke">CTRL-O</code> command to go back to older cursor
-positions and the <code class="keystroke">CTRL-I</code> command to go to the newer cursor positions in the
-jump list.
+可用 '' 或 `` 命令回到上次跳转之前的光标位置。<code class="keystroke">CTRL-O</code> 命令会回到跳转列表中更老
+的光标位置，而 <code class="keystroke">CTRL-I</code> 命令会跳到跳转列表中更新的光标位置。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">03.10</code> 
      <code class="badlink">mark-motions</code> 
