@@ -136,7 +136,7 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
           令？
                                                                 <b class="vimtag"> <a name="faq-motion">faq-motion</a> </b>
 <code class="section">第十节 - 动作</code>
- <a href="vim_faq.html#faq-10.1">faq-10.1</a>   如何跳到文件的开头 (首行) 或 尾部 (末行)？
+ <a href="vim_faq.html#faq-10.1">faq-10.1</a>   如何跳到文件的开头 (首行) 或尾部 (末行)？
  <a href="vim_faq.html#faq-10.2">faq-10.2</a>   插入模式下，按 <code class="special">&lt;Esc&gt;</code> 键回到命令模式时，光标向左移了一个字符 (除了
           光标在行首以外)。可以改变此行为来保持光标在同一列上吗？
  <a href="vim_faq.html#faq-10.3">faq-10.3</a>   如何配置 Vim 在用 &lt;Page Up&gt;、&lt;Page Down&gt; 等键滚动时保持水平光标位
@@ -155,110 +155,73 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-10.12">faq-10.12</a>  滚动文本时如何显示若干上下文？
  <a href="vim_faq.html#faq-10.13">faq-10.13</a>  如何回到之前的光标位置？
                                                         <b class="vimtag"> <a name="faq-searching-text">faq-searching-text</a> </b>
-<code class="section">SECTION 11 - SEARCHING TEXT </code>
- <a href="vim_faq.html#faq-11.1">faq-11.1</a>   After I searched for a text with a pattern, all the matched text
-          stays highlighted. How do I turn off the highlighting
-          temporarily/permanently?
- <a href="vim_faq.html#faq-11.2">faq-11.2</a>   How do I enter a carriage return character in a search pattern?
- <a href="vim_faq.html#faq-11.3">faq-11.3</a>   How do I search for the character "^M"?
- <a href="vim_faq.html#faq-11.4">faq-11.4</a>   How can I search/replace characters that display as "~R", "~S",
-          etc.?
- <a href="vim_faq.html#faq-11.5">faq-11.5</a>   How do I highlight all the non-printable characters in a file?
- <a href="vim_faq.html#faq-11.6">faq-11.6</a>   How do I search for whole words in a file?
- <a href="vim_faq.html#faq-11.7">faq-11.7</a>   How do I search for the current word under the cursor?
- <a href="vim_faq.html#faq-11.8">faq-11.8</a>   How do I search for a word without regard to the case (uppercase
-          or lowercase)?
- <a href="vim_faq.html#faq-11.9">faq-11.9</a>   How do I search for words that occur twice consecutively?
- <a href="vim_faq.html#faq-11.10">faq-11.10</a>  How do I count the number of times a particular word occurs in a
-          buffer?
- <a href="vim_faq.html#faq-11.11">faq-11.11</a>  How do I place the cursor at the end of the matched word when
-          searching for a pattern?
- <a href="vim_faq.html#faq-11.12">faq-11.12</a>  How do I search for an empty line?
- <a href="vim_faq.html#faq-11.13">faq-11.13</a>  How do I search for a line containing only a single character?
- <a href="vim_faq.html#faq-11.14">faq-11.14</a>  How do I search and replace a string in multiple files?
- <a href="vim_faq.html#faq-11.15">faq-11.15</a>  I am using the  <code class="badlink">:s</code>  substitute command in a mapping. When a
-          search for a pattern fails, the map terminates. I would like the
-          map to continue processing the next command, even if the
-          substitute command fails. How do I do this?
- <a href="vim_faq.html#faq-11.16">faq-11.16</a>  How do I search for the n-th occurrence of a character in a
-          line?
- <a href="vim_faq.html#faq-11.17">faq-11.17</a>  How do I replace a tab (or any other character) with a hard
-          return (newline) character?
- <a href="vim_faq.html#faq-11.18">faq-11.18</a>  How do I search for a character by its ASCII value?
- <a href="vim_faq.html#faq-11.19">faq-11.19</a>  How do I search for long lines?
- <a href="vim_faq.html#faq-11.20">faq-11.20</a>  How do I display all the lines in the current buffer that
-          contain a specified pattern?
- <a href="vim_faq.html#faq-11.21">faq-11.21</a>  How do I search for a text string that spans multiple lines?
- <a href="vim_faq.html#faq-11.22">faq-11.22</a>  How do I search for a pattern only within a range of lines
-          in a buffer?
- <a href="vim_faq.html#faq-11.23">faq-11.23</a>  How do I clear the last searched pattern?
- <a href="vim_faq.html#faq-11.24">faq-11.24</a>  Why does this pattern "a.\<code class="special">{-}</code>p\@!" not match?
- <a href="vim_faq.html#faq-11.25">faq-11.25</a>  How can I use "/" within a pattern, without escaping it?
- <a href="vim_faq.html#faq-11.26">faq-11.26</a>  How can I operate on a search match?
+<code class="section">第十一节 - 搜索文本</code>
+ <a href="vim_faq.html#faq-11.1">faq-11.1</a>   用模式搜索文本后，所有匹配的文本保持高亮。如何临时/永久关闭高亮？
+ <a href="vim_faq.html#faq-11.2">faq-11.2</a>   如何在搜索模式中输入回车字符？
+ <a href="vim_faq.html#faq-11.3">faq-11.3</a>   如何搜索字符 "^M"？
+ <a href="vim_faq.html#faq-11.4">faq-11.4</a>   如何搜索/替代显示为 "~R"、"~S" 等的字符？
+ <a href="vim_faq.html#faq-11.5">faq-11.5</a>   如何高亮文件中所有的不可打印字符？
+ <a href="vim_faq.html#faq-11.6">faq-11.6</a>   如何在文件中搜索整词？
+ <a href="vim_faq.html#faq-11.7">faq-11.7</a>   如何搜索光标下的当前单词？
+ <a href="vim_faq.html#faq-11.8">faq-11.8</a>   如何在搜索单词时忽略大小写？
+ <a href="vim_faq.html#faq-11.9">faq-11.9</a>   如何搜索连续两次出现的单词？
+ <a href="vim_faq.html#faq-11.10">faq-11.10</a>  如何统计缓冲区中特定单词出现的次数？
+ <a href="vim_faq.html#faq-11.11">faq-11.11</a>  如何在搜索模式时把光标放置在匹配单词的尾部？
+ <a href="vim_faq.html#faq-11.12">faq-11.12</a>  如何搜索空行？
+ <a href="vim_faq.html#faq-11.13">faq-11.13</a>  如何搜索只有一个字符的行？
+ <a href="vim_faq.html#faq-11.14">faq-11.14</a>  如何搜索和替代多个文件中的字符串？
+ <a href="vim_faq.html#faq-11.15">faq-11.15</a>  我在映射中使用了  <code class="badlink">:s</code>  替代命令。如果模式的搜索失败，映射被终止。我
+          想要即使替代命令失败时，映射还继续处理下个命令。该如何做呢？
+ <a href="vim_faq.html#faq-11.16">faq-11.16</a>  如何搜索一行中某字符的第 n 次出现？
+ <a href="vim_faq.html#faq-11.17">faq-11.17</a>  如何用硬回车 (换行) 字符来替代制表符 (或任何字符)？
+ <a href="vim_faq.html#faq-11.18">faq-11.18</a>  如何用字符的 ASCII 值来搜索字符？
+ <a href="vim_faq.html#faq-11.19">faq-11.19</a>  如何搜索长行？
+ <a href="vim_faq.html#faq-11.20">faq-11.20</a>  如何在当前缓冲区中显示包含特定模式的所有行？
+ <a href="vim_faq.html#faq-11.21">faq-11.21</a>  如何搜索跨越多行的文本字符串？
+ <a href="vim_faq.html#faq-11.22">faq-11.22</a>  如何只在缓冲区中给定行范围内搜索模式？
+ <a href="vim_faq.html#faq-11.23">faq-11.23</a>  如何清除前次搜索模式？
+ <a href="vim_faq.html#faq-11.24">faq-11.24</a>  为什么模式 "a.\<code class="special">{-}</code>p\@!" 不能匹配？
+ <a href="vim_faq.html#faq-11.25">faq-11.25</a>  如何在模式中使用 "/" 时不用对它转义？
+ <a href="vim_faq.html#faq-11.26">faq-11.26</a>  如何操作搜索的匹配？
                                                         <b class="vimtag"> <a name="faq-changing-text">faq-changing-text</a> </b>
-<code class="section">SECTION 12 - CHANGING TEXT </code>
- <a href="vim_faq.html#faq-12.1">faq-12.1</a>   How do I delete all the trailing white space characters (SPACE
-          and TAB) at the end of all the lines in a file?
- <a href="vim_faq.html#faq-12.2">faq-12.2</a>   How do I replace all the occurrences of multiple consecutive
-          space characters to a single space?
- <a href="vim_faq.html#faq-12.3">faq-12.3</a>   How do I reduce a range of empty lines into one line only?
- <a href="vim_faq.html#faq-12.4">faq-12.4</a>   How do I delete all blank lines in a file? How do I remove all
-          the lines containing only space characters?
- <a href="vim_faq.html#faq-12.5">faq-12.5</a>   How do I copy/yank the current word?
- <a href="vim_faq.html#faq-12.6">faq-12.6</a>   How do I yank text from one position to another position within a
-          line, without yanking the entire line?
- <a href="vim_faq.html#faq-12.7">faq-12.7</a>   When I yank some text into a register, how do I append the text
-          to the current contents of the register?
- <a href="vim_faq.html#faq-12.8">faq-12.8</a>   How do I yank a complete sentence that spans over more than one
-          line?
- <a href="vim_faq.html#faq-12.9">faq-12.9</a>   How do I yank all the lines containing a pattern into a buffer?
- <a href="vim_faq.html#faq-12.10">faq-12.10</a>  How do I delete all the lines in a file that do not contain a
-          pattern?
- <a href="vim_faq.html#faq-12.11">faq-12.11</a>  How do I add a line before each line with "pattern" in it?
- <a href="vim_faq.html#faq-12.12">faq-12.12</a>  Is there a way to operate on a line if the previous line
-          contains a particular pattern?
- <a href="vim_faq.html#faq-12.13">faq-12.13</a>  How do I execute a command on all the lines containing a
-          pattern?
- <a href="vim_faq.html#faq-12.14">faq-12.14</a>  Can I copy the character above the cursor to the current cursor
-          position?
- <a href="vim_faq.html#faq-12.15">faq-12.15</a>  How do I insert a blank line above/below the current line
-          without entering insert mode?
- <a href="vim_faq.html#faq-12.16">faq-12.16</a>  How do I insert the name of the current file into the current
-          buffer?
- <a href="vim_faq.html#faq-12.17">faq-12.17</a>  How do I insert the contents of a Vim register into the current
-          buffer?
- <a href="vim_faq.html#faq-12.18">faq-12.18</a>  How do I move the cursor past the end of line and insert some
-          characters at some columns after the end of the line?
- <a href="vim_faq.html#faq-12.19">faq-12.19</a>  How to replace the word under the cursor (say: junk) with
-          "foojunkbar" in Vim?
- <a href="vim_faq.html#faq-12.20">faq-12.20</a>  How do I replace a particular text in all the files in a
-          directory?
- <a href="vim_faq.html#faq-12.21">faq-12.21</a>  I have some numbers in a file. How do I increment or decrement
-          the numbers in the file?
- <a href="vim_faq.html#faq-12.22">faq-12.22</a>  How do I reuse the last used search pattern in a  <code class="badlink">:substitute</code> 
-          command?
- <a href="vim_faq.html#faq-12.23">faq-12.23</a>  How do I change the case of a string using the  <code class="badlink">:substitute</code> 
-          command?
- <a href="vim_faq.html#faq-12.24">faq-12.24</a>  How do I enter characters that are not present in the keyboard?
- <a href="vim_faq.html#faq-12.25">faq-12.25</a>  Is there a command to remove any or all digraphs?
- <a href="vim_faq.html#faq-12.26">faq-12.26</a>  In insert mode, when I press the backspace key, it erases only
-          the characters entered in this instance of insert mode. How do I
-          erase previously entered characters in insert mode using the
-          backspace key?
- <a href="vim_faq.html#faq-12.27">faq-12.27</a>  I have a file which has lines longer than 72 characters
-          terminated with "+" and wrapped to the next line. How can I
-          quickly join the lines?
- <a href="vim_faq.html#faq-12.28">faq-12.28</a>  How do I paste characterwise yanked text into separate lines?
- <a href="vim_faq.html#faq-12.29">faq-12.29</a>  How do I change the case (uppercase, lowercase) of a word or
-          a character or a block of text?
- <a href="vim_faq.html#faq-12.30">faq-12.30</a>  How do I enter ASCII characters that are not present in the
-          keyboard?
- <a href="vim_faq.html#faq-12.31">faq-12.31</a>  How do I replace non-printable characters in a file?
- <a href="vim_faq.html#faq-12.32">faq-12.32</a>  How do I remove duplicate lines from a buffer?
- <a href="vim_faq.html#faq-12.33">faq-12.33</a>  How do I prefix all the lines in a file with the corresponding
-          line numbers?
- <a href="vim_faq.html#faq-12.34">faq-12.34</a>  How do I exchange (swap) two characters or words or lines?
- <a href="vim_faq.html#faq-12.35">faq-12.35</a>  How do I change the characters used as word delimiters?
+<code class="section">第十二节 - 修改文本</code>
+ <a href="vim_faq.html#faq-12.1">faq-12.1</a>   如何删除文件中所有行的拖尾空白字符 (空格和制表)？
+ <a href="vim_faq.html#faq-12.2">faq-12.2</a>   如何把所有的多个连续出现的空格字符替代把单个空格？
+ <a href="vim_faq.html#faq-12.3">faq-12.3</a>   如何把一串空行缩减成一行？
+ <a href="vim_faq.html#faq-12.4">faq-12.4</a>   如何删除文件中的全部空行？如何删除全部只有空白字符的行？
+ <a href="vim_faq.html#faq-12.5">faq-12.5</a>   如何复制/抽出当前单词？
+ <a href="vim_faq.html#faq-12.6">faq-12.6</a>   如何从一行中抽出一个位置到另一个位置的文本而不是抽出整行？
+ <a href="vim_faq.html#faq-12.7">faq-12.7</a>   抽出文本到寄存器时，如何附加文本到当前寄存器的内容上？
+ <a href="vim_faq.html#faq-12.8">faq-12.8</a>   如何抽出跨越多行的完整句子？
+ <a href="vim_faq.html#faq-12.9">faq-12.9</a>   如何抽出所有包含一个模式的行到一个缓冲区？
+ <a href="vim_faq.html#faq-12.10">faq-12.10</a>  如何删除文件中所有不包含特定模式的行？
+ <a href="vim_faq.html#faq-12.11">faq-12.11</a>  如何在每个带 "pattern" 的行之前加上一行？
+ <a href="vim_faq.html#faq-12.12">faq-12.12</a>  有没有办法在前行包含指定模式的行上操作？
+ <a href="vim_faq.html#faq-12.13">faq-12.13</a>  如何在所有包含指定模式的行上执行命令？
+ <a href="vim_faq.html#faq-12.14">faq-12.14</a>  可以复制光标上方的字符到当前光标位置吗？
+ <a href="vim_faq.html#faq-12.15">faq-12.15</a>  如何在当前行上方/下方插入空行而无需进入插入模式？
+ <a href="vim_faq.html#faq-12.16">faq-12.16</a>  如何插入当前文件名到当前缓冲区？
+ <a href="vim_faq.html#faq-12.17">faq-12.17</a>  如何插入 Vim 寄存器的内容到当前缓冲区？
+ <a href="vim_faq.html#faq-12.18">faq-12.18</a>  如何移动光标跨过行尾并在行尾之后的列插入字符？
+ <a href="vim_faq.html#faq-12.19">faq-12.19</a>  Vim 如何把光标所在的单词 (比如说: junk) 替代为 "foojunkbar"？
+ <a href="vim_faq.html#faq-12.20">faq-12.20</a>  如何对一个目录里所有文件里的特定文本进行替代？
+ <a href="vim_faq.html#faq-12.21">faq-12.21</a>  文件中有若干数值。如何为文件中的数值增量或减量？
+ <a href="vim_faq.html#faq-12.22">faq-12.22</a>  如何在  <code class="badlink">:substitute</code>  命令中重用前次搜索模式？
+ <a href="vim_faq.html#faq-12.23">faq-12.23</a>  如何用  <code class="badlink">:substitute</code>  改变字符串的大小写？
+ <a href="vim_faq.html#faq-12.24">faq-12.24</a>  如何键入键盘上没有的字符？
+ <a href="vim_faq.html#faq-12.25">faq-12.25</a>  有没有命令删除任何或所有的二合字母？
+ <a href="vim_faq.html#faq-12.26">faq-12.26</a>  插入模式下，按退格键时，只删除这次在插入模式中键入的字符。如何能用
+          退格键删除在之前的插入模式中键入的字符？
+ <a href="vim_faq.html#faq-12.27">faq-12.27</a>  文件有长于 72 字符的行，以 "+" 终止并回绕到下一行。如何快速连接这
+          些行？
+ <a href="vim_faq.html#faq-12.28">faq-12.28</a>  如何把抽出的面向字符的文本粘贴到单独的行上？
+ <a href="vim_faq.html#faq-12.29">faq-12.29</a>  如何改变单词或字符或文本块的大小写？
+ <a href="vim_faq.html#faq-12.30">faq-12.30</a>  如何键入键盘上没有的 ASCII 字符？
+ <a href="vim_faq.html#faq-12.31">faq-12.31</a>  如何替代文件中的不可打印字符？
+ <a href="vim_faq.html#faq-12.32">faq-12.32</a>  如何删除缓冲区中的重复行？
+ <a href="vim_faq.html#faq-12.33">faq-12.33</a>  如何给文件中的所有行加上对应行号前缀？
+ <a href="vim_faq.html#faq-12.34">faq-12.34</a>  如何交换两个字符或单词或行？
+ <a href="vim_faq.html#faq-12.35">faq-12.35</a>  如何改变用作单词定界的字符？
                                         <b class="vimtag"> <a name="faq-completion-in-insert-mode">faq-completion-in-insert-mode</a> </b>
 <code class="section">SECTION 13 - COMPLETION IN INSERT MODE </code>
  <a href="vim_faq.html#faq-13.1">faq-13.1</a>   How do I complete words or lines in insert mode?
@@ -2179,7 +2142,7 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
 <h4>                                                                <b class="vimtag"> <a name="faq-10">faq-10</a> </b></h4><code class="section">第十节 - 动作</code>
 
                                                                 <b class="vimtag"> <a name="faq-10.1">faq-10.1</a> </b>
-10.1. 如何跳到文件的开头 (首行) 或 尾部 (末行)？
+10.1. 如何跳到文件的开头 (首行) 或尾部 (末行)？
 
 可用 "G" 命令来跳转到文件的末行，而用 "gg" 命令来跳转到文件的首行。
 
@@ -2413,91 +2376,81 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
      <code class="badlink">jump-motions</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-11">faq-11</a> </b></h4><code class="section">SECTION 11 - SEARCHING TEXT </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-11">faq-11</a> </b></h4><code class="section">第十一节 - 搜索文本</code>
 
                                                                 <b class="vimtag"> <a name="faq-11.1">faq-11.1</a> </b>
-11.1. After I searched for a text with a pattern, all the matched text
-      stays highlighted. How do I turn off the highlighting
-      temporarily/permanently?
+11.1. 用模式搜索文本后，所有匹配的文本保持高亮。如何临时/永久关闭高亮？
 
-The <code class="badlink">'hlsearch'</code> option controls whether all the matches for the last
-searched pattern are highlighted or not. By default, this option is not
-enabled. If this option is set in a system-wide vimrc file, then you can
-turn off the search highlighting by using the following command: 
+<code class="badlink">'hlsearch'</code> 选项控制是否高亮前次搜索模式所有的匹配。缺省，此选项不打开。如果系
+统范围的 vimrc 文件置位了此选项，可用以下命令关闭搜索高亮: 
 <code class="example"></code>
 <code class="example">    :set nohlsearch</code>
 
-To temporarily turn off the search highlighting, use 
+要临时关闭搜索高亮，可用 
 <code class="example"></code>
 <code class="example">    :nohlsearch</code>
 
-You can also clear the search highlighting, by searching for a pattern that
-is not in the current file (for example, search for the pattern "asdf").
+也可用搜索当前文件不存在的模式来清除搜索高亮 (例如，搜索模式 "asdf")。
 
-You can use this mapping, to clear the search highlighting when
-redrawing the window pressing <code class="keystroke">CTRL-L</code> 
+用下面的映射在 <code class="keystroke">CTRL-L</code> 重画窗口时同时会清除搜索高亮 
 <code class="example"></code>
 <code class="example">    :nnoremap &lt;silent&gt; &lt;C-L&gt; &lt;C-L&gt;:nohls&lt;CR&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'hlsearch'</code> 
      <code class="badlink">:nohlsearch</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.2">faq-11.2</a> </b>
-11.2. How do I enter a carriage return character in a search pattern?
+11.2. 如何在搜索模式中输入回车字符？
 
-You can either use "\r" or &lt;<code class="keystroke">CTRL-V</code>&gt;&lt;<code class="keystroke">CTRL-M</code>&gt; to enter a carriage return
-character in a pattern. In Vim scripts, it is better to use "\r" for the
-carriage return character.
+可用 "\r" 或 &lt;<code class="keystroke">CTRL-V</code>&gt;&lt;<code class="keystroke">CTRL-M</code>&gt; 来在模式中输入回车。在 Vim 脚本里，用 "\r" 代表
+回车字符更好。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">sub-replace-special</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.3">faq-11.3</a> </b>
-11.3. How do I search for the character ^M?
+11.3. 如何搜索字符 "^M"？
 
-You can enter the ^M character in a search command by first pressing the
-<code class="keystroke">CTRL-V</code> key and then pressing the <code class="keystroke">CTRL-M</code> key. 
+在搜索命令中可先按 <code class="keystroke">CTRL-V</code> 键再按 <code class="keystroke">CTRL-M</code> 键来输入 ^M 字符。 
 <code class="example"></code>
 <code class="example">    /^V^M</code>
 
-You can also use the "\r" character. In Vim scripts, "\r" is preferred.
+也可用 "\r" 字符。在 Vim 脚本 里，建议使用 "\r"。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">c_CTRL-V</code> 
      <code class="badlink">using_CTRL-V</code> 
      <code class="badlink">/\r</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.4">faq-11.4</a> </b>
-11.4. How can I search/replace characters that display as "~R", "~S", etc.?
+11.4. 如何搜索/替代显示为 "~R"、"~S" 等的字符？
 
-You can use the "ga" command to display the ASCII value/code for the
-special character. For example, let us say the ASCII value is 142. Then you
-can use the following command to search for the special character: 
+可用 "ga" 命令来显示特殊字符的 ASCII 值/代码。例如，假定 ASCII 值是 142。可用
+下列命令来搜索此特殊字符: 
 <code class="example"></code>
 <code class="example">    /^V142</code>
 
-where, ^V is entered by pressing <code class="keystroke">CTRL-V</code>.
+这里，^V 用 <code class="keystroke">CTRL-V</code> 输入。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">ga</code> 
      <code class="badlink">using_CTRL_V</code> 
      <code class="badlink">24.8</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.5">faq-11.5</a> </b>
-11.5. How do I highlight all the non-printable characters in a file?
+11.5. 如何高亮文件中所有的不可打印字符？
 
-You can use the following commands and search pattern to highlight all the
-non-printable characters in a file: 
+可用下列命令和搜索模式来高亮文件中所有的不可打印字符: 
 <code class="example"></code>
 <code class="example">    :set hlsearch</code>
 <code class="example">    /\(\p\|$\)\@!.</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">/\p</code> 
      <code class="badlink">/bar</code> 
@@ -2507,29 +2460,26 @@ For more information, read:
      <code class="badlink">'hlsearch'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.6">faq-11.6</a> </b>
-11.6. How do I search for whole words in a file?
+11.6. 如何在文件中搜索整词？
 
-You can search for whole words in a file using the \&lt; and \&gt; atoms. For
-example: 
+在文件中可用 \&lt; 和 \&gt; 匹配原来搜索整词。例如: 
 <code class="example"></code>
 <code class="example">    /\&lt;myword\&gt;</code>
 
-The \&lt; atom matches the beginning of the word and the \&gt; atom matches the
-end of the word.
+\&lt; 匹配原匹配单词开始，而 \&gt; 匹配原匹配单词结尾。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">/\&lt;</code> 
      <code class="badlink">/\&gt;</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.7">faq-11.7</a> </b>
-11.7. How do I search for the current word under the cursor?
+11.7. 如何搜索光标下的当前单词？
 
-You can press the * key to search forward for the current word under the
-cursor.  To search backward, you can press the # key. <code class="note">Note </code>that only whole
-keywords will be searched using these commands.
+按 * 键可正向搜索光标下的当前单词。# 键进行反向搜索。<code class="note">注意</code> 这些命令只搜索完整的
+关键字。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">star</code> 
      <code class="badlink">#</code> 
@@ -2539,39 +2489,34 @@ For more information, read:
      <code class="badlink">search-commands</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.8">faq-11.8</a> </b>
-11.8. How do I search for a word without regard to the case (uppercase or
-      lowercase)?
+11.8. 如何在搜索单词时忽略大小写？
 
-To always ignore case while searching for a pattern, set the <code class="badlink">'ignorecase'</code>
-option: 
+要在搜索模式时忽略大小写，置位 <code class="badlink">'ignorecase'</code> 选项: 
 <code class="example"></code>
 <code class="example">    :set ignorecase</code>
 
-To ignore case only when searching a particular pattern, use the special \c
-directive: 
+要仅在搜索特定模式时忽略大小写，使用特殊的 \c 指令: 
 <code class="example"></code>
 <code class="example">    /\c&lt;pattern&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'ignorecase'</code> 
      <code class="badlink">/ignorecase</code> 
      <code class="badlink">/\c</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.9">faq-11.9</a> </b>
-11.9. How do I search for words that occur twice consecutively?
+11.9. 如何搜索连续两次出现的单词？
 
-You can use one of the following search commands to locate words that occur
-twice consecutively: 
+可用下面的搜索命令来定位连续两次出现的单词: 
 <code class="example"></code>
 <code class="example">     /\(\&lt;\w\+\)\_s\+\1\&gt;</code>
 <code class="example">     /\(\&lt;\k\+\)\_s\+\1\&gt;</code>
 
-The main difference is the use of "\w" and "\k", where the latter is based
-on the <code class="badlink">'iskeyword'</code> option which may include accented and other language
-specific characters.
+"\w" 和 "\k" 的主要区别是后者基于 <code class="badlink">'iskeyword'</code> 选项，此选项可包含重音和其它语言
+特定的字符。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">/\1</code> 
      <code class="badlink">/\(</code> 
@@ -2585,30 +2530,27 @@ For more information, read:
      <code class="badlink">'iskeyword'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.10">faq-11.10</a> </b>
-11.10. How do I count the number of times a particular word occurs in a
-       buffer?
+11.10. 如何统计缓冲区中特定单词出现的次数？
 
-You can use the following set of commands to count the number of times a
-particular word occurs in a buffer: 
+可用下面一组命令来编译缓冲区中特定单词出现的次数: 
 <code class="example"></code>
 <code class="example">    :let cnt=0</code>
 <code class="example">    :g/\&lt;your_word\&gt;/let cnt=cnt+1</code>
 <code class="example">    :echo cnt</code>
 
-This only counts the number of lines where the word occurs. You can also
-use the following command: 
+这只统计单词出现的行数。也可用下面的命令: 
 <code class="example"></code>
 <code class="example">    :%s/\&lt;word\&gt;/&amp;/gn</code>
 
-To count the number of alphabetic words in a file, you can use 
+要统计文件中字母单词的个数，可用 
 <code class="example"></code>
 <code class="example">    :%s/\a\+/&amp;/gn</code>
 
-To count the number of words made up of non-space characters, you can use 
+要统计非空白字符构成的单词的个数，可用 
 <code class="example"></code>
 <code class="example">    :%s/\S\+/&amp;/gn</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">count-items</code> 
      <code class="badlink">word-count</code> 
@@ -2617,32 +2559,29 @@ For more information, read:
      <code class="badlink">:s_flags</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.11">faq-11.11</a> </b>
-11.11. How do I place the cursor at the end of the matched word when
-       searching for a pattern?
+11.11. 如何在搜索模式时把光标放置在匹配单词的尾部？
 
-You can use the "e" offset to the search command to place the cursor at the
-end of the matched word. For example 
+可用搜索命令的 "e" 偏移来把光标放置在匹配单词的尾部。例如 
 <code class="example"></code>
 <code class="example">    /mypattern/e</code>
 
-For more information about search offsets, read:
+关于搜索位移的更多详情请阅读:
 
      <code class="badlink">search-offset</code> 
      <code class="badlink">/</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.12">faq-11.12</a> </b>
-11.12. How do I search for an empty line?
+11.12. 如何搜索空行？
 
-You can search for an empty line using: 
+可如此搜索空行: 
 <code class="example"></code>
 <code class="example">    /^$</code>
 
-    or 
+    或 
 <code class="example"></code>
 <code class="example">    /^\s*$</code>
 
-The latter also matches lines, that consist only of white space, while the
-former only matches true empty lines. For more information, read:
+后者也匹配只由空白构成的行，而前者只匹配真正的空行。更多详情请阅读:
 
      <code class="badlink">/^</code> 
      <code class="badlink">/$</code> 
@@ -2651,13 +2590,13 @@ former only matches true empty lines. For more information, read:
      <code class="badlink">search-commands</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.13">faq-11.13</a> </b>
-11.13. How do I search for a line containing only a single character?
+11.13. 如何搜索只有一个字符的行？
 
-You can search for a line containing only a single character using: 
+可如此搜索只有一个字符的行: 
 <code class="example"></code>
 <code class="example">    /^\s*\a\s*$</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">/^</code> 
      <code class="badlink">/\a</code> 
@@ -2666,14 +2605,14 @@ For more information, read:
      <code class="badlink">/$</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.14">faq-11.14</a> </b>
-11.14. How do I search and replace a string in multiple files?
+11.14. 如何搜索和替代多个文件中的字符串？
 
-You can use the  <code class="badlink">:argdo</code> ,  <code class="badlink">:bufdo</code> ,  <code class="badlink">:windo</code>  or  <code class="badlink">:tabdo</code>  commands to execute
-an ex command on multiple files. For example: 
+可用  <code class="badlink">:argdo</code> 、 <code class="badlink">:bufdo</code> 、 <code class="badlink">:windo</code>  或  <code class="badlink">:tabdo</code>  命令来在多个文件中执行 ex 命令。
+例如: 
 <code class="example"></code>
 <code class="example">    :argdo %s/foo/bar/g|upd</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:argdo</code> 
      <code class="badlink">:bufdo</code> 
@@ -2681,28 +2620,23 @@ For more information, read:
      <code class="badlink">:tabdo</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.15">faq-11.15</a> </b>
-11.15. I am using the  <code class="badlink">:s</code>  substitute command in a mapping. When a search
-       for a pattern fails, the map terminates. I would like the map to
-       continue processing the next command, even if the substitute command
-       fails. How do I do this?
+11.15. 我在映射中使用了  <code class="badlink">:s</code>  替代命令。如果模式的搜索失败，映射被终止。我想要
+       即使替代命令失败时，映射还继续处理下个命令。该如何做呢？
 
-You can use the "e" flag to the substitute command to continue processing
-other commands in a map, when a pattern is not found.
+可用替代命令的 "e" 标志位，即使模式没找到，也让映射继续处理其它命令。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:s_flags</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.16">faq-11.16</a> </b>
-11.16. How do I search for the n-th occurrence of a character in a line?
+11.16. 如何搜索一行中某字符的第 n 次出现？
 
-To search for the n-th occurrence of a character in a line, you can prefix
-the "f" command with a number. For example, to search for the 5th
-occurrence of the character @ in a line, you can use the command 5f@. This
-assumes the cursor is at the beginning of the line - and that this first
-character is not the one your are looking for.
+要搜索一行中某字符的第 n 次出现，可为 "f" 命令加上数值前缀。例如，要搜索一行中
+@ 字符的第 5 次出现，可用命令 5f@。这假定光标在行首 - 而且首字符不是你要寻找的
+那个字符。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">f</code> 
      <code class="badlink">F</code> 
@@ -2712,61 +2646,54 @@ For more information, read:
      <code class="badlink">,</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.17">faq-11.17</a> </b>
-11.17. How do I replace a tab (or any other character) with a hard return
-       (newline) character?
+11.17. 如何用硬回车 (换行) 字符来替代制表符 (或任何字符)？
 
-You can replace a tab (or any other character) with a hard return (newline)
-character using the following command: 
+可用下列命令来用硬回车 (换行) 字符来替代制表符 (或任何字符): 
 <code class="example"></code>
 <code class="example">    :s/\t/\r/</code>
 
-<code class="note">Note </code>that in the above command, if you use \n instead of \r, then the tab
-characters will not be replaced by a new-line character.
+<code class="note">注意</code> 上述命令中，如果用 \n 代替\r，制表符并不会被换行符所代替。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">sub-replace-special</code> 
      <code class="badlink">NL-used-for-Nul</code> 
      <code class="badlink">CR-used-for-NL</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.18">faq-11.18</a> </b>
-11.18. How do I search for a character by its ASCII value?
+11.18. 如何用字符的 ASCII 值来搜索字符？
 
-You can search for a character by its ASCII value by pressing <code class="keystroke">CTRL-V</code>
-followed by the decimal or hexadecimal or octal value of that character in
-the search "/" command.  To determine the ASCII value of a character you
-can use the  <code class="badlink">:ascii</code>  or the "ga" command.
+在搜索 "/" 命令中，可用 <code class="keystroke">CTRL-V</code> 后跟字符的十进制或十六进制或八进制值来用 ASCII
+值搜索字符。要确定字符的 ASCII 值，可用  <code class="badlink">:ascii</code>  或 "ga" 命令。
 
-For example, to search for the ASCII character with value 188 (¼), you can
-use one of the following search commands: 
+例如，要搜索 ASCII 字符值 188 (¼)，可用以下搜索命令之一: 
 <code class="example"></code>
 <code class="example">    /&lt;CTRL-V&gt;188</code>
 <code class="example">    /&lt;CTRL-V&gt;o274</code>
 <code class="example">    /&lt;CTRL-V&gt;xBC</code>
 <code class="example">    /&lt;CTRL-V&gt;u00bc</code>
 
-You can also search for the character with the decimal/octal/hex number
-using a collation [] like this: 
+也可用排序规则元素 [] 来用十进/八进/十六进数值搜索字符: 
 <code class="example"></code>
 <code class="example">    /[\d188]</code>
 <code class="example">    /[\o274]</code>
 <code class="example">    /[\xbc]</code>
 <code class="example">    /[\u00bc]</code>
 
-Alternatively, you can use the special atom \%d \%o \%x \%u: 
+此外，也可用特定匹配原 \%d \%o \%x \%u: 
 <code class="example"></code>
 <code class="example">    /\%d188</code>
 <code class="example">    /\%o274</code>
 <code class="example">    /\%xbc</code>
 <code class="example">    /\%u00bc</code>
 
-Or you use digraphs to enter the character. For example enter: 
+也可用二合字母来输入字符。例如输入: 
 <code class="example"></code>
 <code class="example">    /CTRL-K14</code>
 
-to search for the above character.
+来搜索上述字符。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">i_CTRL-V_digit</code> 
      <code class="badlink">:ascii</code> 
@@ -2776,72 +2703,62 @@ For more information, read:
      <code class="badlink">digraphs</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.19">faq-11.19</a> </b>
-11.19. How do I search for long lines?
+11.19. 如何搜索长行？
 
-You can search for long lines or lines containing more than a specific
-number of characters using the Vim regular-expressions in the search
-command. For example, to search for all the lines containing more than 80
-characters, you can use one of the following commands: 
+可用搜索命令中的 Vim 正规表达式来搜索长行或超过一定数目字符的行。例如，要搜索
+所有超过 80 个字符的行，可用以下之一的命令: 
 <code class="example"></code>
 <code class="example">    /^.\{80}.\+$</code>
 <code class="example">    /^.*\%&gt;80c.*$</code>
 <code class="example">    /^.*\%&gt;80v.*$</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">/\{</code> 
      <code class="badlink">/\%c</code> 
      <code class="badlink">/\%v</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.20">faq-11.20</a> </b>
-11.20. How do I display all the lines in the current buffer that contain a
-       specified pattern?
+11.20. 如何在当前缓冲区中显示包含特定模式的所有行？
 
-You can use the following command to display all the lines in the current
-buffer that contain a specified pattern: 
+可用以下命令来在当前缓冲区中显示包含特定模式的所有行: 
 <code class="example"></code>
 <code class="example">    :g/&lt;pattern&gt;/p</code>
 
-For example, the following command will display all the lines in the
-current buffer that contain "vim": 
+例如，下列命令会在当前缓冲区中显示包含 "vim" 的所有行: 
 <code class="example"></code>
 <code class="example">    :g/vim/p</code>
 
-Since  <code class="badlink">:p</code>  is the default command to be executed for the ex command  <code class="badlink">:g</code> , you
-can also use: 
+因为  <code class="badlink">:p</code>  是 ex 命令  <code class="badlink">:g</code>  执行的缺省命令，也可用: 
 <code class="example"></code>
 <code class="example">    :g/vim</code>
 
-If you also want the corresponding line numbers, then you can use the
-following command: 
+如果也想要对应的行号，可用以下的命令: 
 <code class="example"></code>
 <code class="example">    :g/&lt;pattern&gt;/#</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:global</code> 
      <code class="badlink">:print</code> 
      <code class="badlink">:number</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.21">faq-11.21</a> </b>
-11.21. How do I search for a text string that spans multiple lines?
+11.21. 如何搜索跨越多行的文本字符串？
 
-You can search for a text string that spans multiple lines using the \_x
-regular expression atom. For example, to search for the text string "Hello
-World", you can use the following search command: 
+可用 \_x 正规表达式匹配原来搜索跨越多行的文本客串。例如，要搜索文件字符串
+"Hello
+World", 可用下列搜索命令: 
 <code class="example"></code>
 <code class="example">    /Hello\_sWorld</code>
 
-This will match the word "Hello" followed by a newline character and then
-the word "World" at the beginning of the next line. This will also match
-the word "Hello" immediately followed by a space character and then the
-word "World". When searching for the "Hello World" string, to include the
-space characters at the end and beginning of the line, you can use the
-following search command: 
+这会匹配单词 "Hello" 后跟换行符然后跟着从下一行开始的单词 "World"。它也会匹配
+单词 "Hello" 后跟空格符然后跟着单词 "World"。要搜索 "Hello World" 字符串并包括
+行尾和行首的任意个空白字符，可用以下的搜索命令: 
 <code class="example"></code>
 <code class="example">    /Hello\_s\+World</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">27.8</code> 
      <code class="badlink">pattern-atoms</code> 
@@ -2849,35 +2766,29 @@ For more information, read:
      <code class="badlink">pattern-searches</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.22">faq-11.22</a> </b>
-11.22. How do I search for a pattern within the specified range of lines
-       in a buffer?
+11.22. 如何只在缓冲区中给定行范围内搜索模式？
 
-You can search for a pattern within a range of lines using the \%&gt;l
-and \%&lt;l regular expression atoms.
-
-For example, to search for the word "white" between the lines 10 and 30 in
-a buffer, you can use the following command: 
+可以用 \%&gt;l 和 \%&lt;l 正规表达式匹配原来在给定行范围内搜索模式。例如，要在缓冲
+区第 10 到 30 行间搜索单词 "white"，可用下列命令: 
 <code class="example"></code>
 <code class="example">    /white\%&gt;9l\%&lt;31l</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">/\%l</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.23">faq-11.23</a> </b>
-11.23. How do I clear the last searched pattern?
+11.23. 如何清除前次搜索模式？
 
-The last searched pattern is stored in the "/" register. You can clear
-this register using the following command: 
+前次搜索模式存在 "/" 寄存器里。可用下列命令清除此寄存器: 
 <code class="example"></code>
 <code class="example">    :let @/=""</code>
 
-To clear the last search pattern whenever a buffer is unloaded, you can use
-the following command: 
+要在缓冲区卸载时清除前次搜索模式，可用下列命令: 
 <code class="example"></code>
 <code class="example">    :autocmd BufUnload * let @/ = ""</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">@/</code> 
      <code class="badlink">:let-@</code> 
@@ -2885,90 +2796,72 @@ For more information, read:
      <code class="badlink">last-pattern</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.24">faq-11.24</a> </b>
-11.24. Why does this pattern "a.\<code class="special">{-}</code>p\@!" not match?
+11.24. 为什么模式 "a.\<code class="special">{-}</code>p\@!" 不能匹配？
 
-"\<code class="special">{-}</code>" doesn't just mean "as few as possible", it means "as few as
-possible to make the whole pattern succeed". If it didn't match the "p",
-the whole pattern would fail (because of the "p\@!") so it does match
-the "p". It is a longer match, but it is the shortest match that makes
-the whole pattern succeed.
+"\<code class="special">{-}</code>" 不意味着 "越少越好"，它的含义是 "越少越好使整个模式匹配"。如果它不匹配
+"p"，整个模式会失败 (因为有 "p\@!")，所以它必须匹配 "p"。这确实是一个更长的匹
+配，但它是最短的能使整个模式成功的匹配。
 
-If you wanted "as few as possible regardless" you would use "\@&gt;", which
-basically divides a pattern up so that the pieces either side behave
-independently. If the pattern were "a.\<code class="special">{-}</code>\@&gt;p\@!" then ".\<code class="special">{-}</code>" would
-always match nothing because that's the smallest match that can succeed
-when there are not other restrictions. The whole pattern then would
-behave the same as "ap\@!", i.e. it would match any "a" not followed by
-a "p").
+如果你想要 "无论如何也越少越好"，可用 "\@&gt;"，它基本上把一个模式分成两部分，每
+部分相互独立。如果模式是 "a.\<code class="special">{-}</code>\@&gt;p\@!"，那么 ".\<code class="special">{-}</code>" 总是匹配空串，因为在没
+有其它限制的情况下这是最短能成功的匹配。整个模式此时相当于 "ap\@!"，也就是匹配
+任何后面不跟 "p" 的 "a"。
 
-This means, it matches as few as possible "a"s without trying to keep
-going until Vim finds the longest match. This means, it will still match
-"ap".
+这意味着，它会匹配尽量少的 "a" 而不会继续试下去，直到 Vim 找到最长的匹配为止。
+这也意味着，它还是会匹配 "ap"。
 
                                                                 <b class="vimtag"> <a name="faq-11.25">faq-11.25</a> </b>
-11.25. How can I use "/" within a pattern, without escaping it?
+11.25. 如何在模式中使用 "/" 时不用对它转义？
 
-When using / to search for a pattern, you need to escape all "/" within
-the pattern, because they would otherwise terminate the pattern. So you
-can't directly search for /usr/share/doc/ but need to search for
-\/usr\/share\/doc\/
+用 / 搜索模式时，需要转义模式中所有的 "/"，不然它们会终止模式。因此，你不能直
+接搜索 /usr/share/doc/，而必须搜索 \/usr\/share\/doc\/
 
-The easiest solution around that, would be to use "?" to start a
-backward search and afterwards use /<code class="special">&lt;CR&gt;</code> to use the last search-pattern
-in forward direction.
+最简单的解决方法是用 "?" 来进行反向搜索，然后用 /<code class="special">&lt;CR&gt;</code> 来使用前次搜索模式进行正
+向搜索。
 
-If you have a Vim, that has the eval-feature built in (which needs at
-least a normal built or higher), you can also directly paste the pattern
-into the search register:
+如果有内建 eval 特性的 Vim (至少要 normal 版本或更高)，也可直接粘贴模式到搜索
+寄存器:
 
 :let @/ = '/usr/share/doc/'
 
-Then use "n" to jump to the next occurrence.
+然后用 "n" 跳转到下个它的出现。
 
-See also the help at
+另见以下相关帮助
 
      <code class="badlink">@/</code> 
      <code class="badlink">/&lt;CR&gt;</code> 
 
                                                                 <b class="vimtag"> <a name="faq-11.26">faq-11.26</a> </b>
-11.26. How can I operate on a search match?
+11.26. 如何操作搜索的匹配？
 
-The "gn" command makes it easy to operate on regions of text that match
-the current search pattern. By default, it will search forward for the
-last used search pattern and visually select the match. If the cursor is
-already on the match, it will be visually selected. If you used the "gn"
-command after an operator (e.g. "c" to change text), it will be applied
-on the match.
+"gn" 命令很容易地在匹配当前搜索模式的文本区域中操作。缺省，正向搜索前次搜索模
+式并可视选择此匹配。如果光标已经在匹配上，就对它可视选择。如果在操作符后使用
+"gn" 命令 (如 "c" 来修改文本)，此操作符会适用于匹配上。
 
-If Visual mode is active before using gn, the visual selection will be
-extended until the end of the next match.
+如果使用 gn 之前激活了可视模式，可视选择区会延伸到下个匹配的结尾。
 
-The "gN" commands works similar but searches backwards.
+"gN" 命令类似，但用于反向搜索。
 
-This allows to repeat simple operations on each match. For example, you
-might want to change each occurence of apples by peaches. So you search
-using "/apple" then you can use "cgnpeach<code class="special">&lt;Esc&gt;</code>" to replace the current
-match by peach. Now you can use the dot "." command to redo the
-replacement for the rest of the buffer.
+此命令可用于为每个匹配重复一些简单操作。例如，要把所有的 apple 换成 peach。先
+用 "/apple" 开始搜索，然后用 "cgnpeach<code class="special">&lt;Esc&gt;</code>" 把当前匹配替代成 peach。现在用句
+号 "." 命令就可为缓冲区其余部分重做替代操作。
 
-See also the help at
+另见以下相关帮助
 
      <code class="badlink">gn</code> 
      <code class="badlink">gN</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-12">faq-12</a> </b></h4><code class="section">SECTION 12 - CHANGING TEXT </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-12">faq-12</a> </b></h4><code class="section">第十二节 - 修改文本</code>
 
                                                                 <b class="vimtag"> <a name="faq-12.1">faq-12.1</a> </b>
-12.1. How do I delete all the trailing white space characters (SPACE and
-      TAB) at the end of all the lines in a file?
+12.1. 如何删除文件中所有行的拖尾空白字符 (空格和制表)？
 
-You can use the  <code class="badlink">:substitute</code>  command on the entire file to search and
-remove all the trailing white space characters: 
+可用  <code class="badlink">:substitute</code>  命令在整个文件上搜索和删除所有的拖尾空白字符: 
 <code class="example"></code>
 <code class="example">    :%s/\s\+$//</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:%</code> 
      <code class="badlink">:s</code> 
@@ -2977,19 +2870,17 @@ For more information, read:
      <code class="badlink">/$</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.2">faq-12.2</a> </b>
-12.2. How do I replace all the occurrences of multiple consecutive space
-      characters to a single space?
+12.2. 如何把所有的多个连续出现的空格字符替代把单个空格？
 
-You can use the following command to replace all the occurrences of
-multiple consecutive space characters to a single space: 
+可用以下命令来把所有的多个连续出现的空格字符替代把单个空格: 
 <code class="example"></code>
 <code class="example">    :%s/ \{2,}/ /g</code>
 
-Alternatively use: 
+也可用: 
 <code class="example"></code>
 <code class="example">    :%s/  \+/ /g</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:%</code> 
      <code class="badlink">:s</code> 
@@ -2997,31 +2888,26 @@ For more information, read:
      <code class="badlink">:s_flags</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.3">faq-12.3</a> </b>
-12.3. How do I reduce a range of empty lines into one line only?
+12.3. 如何把一串空行缩减成一行？
 
-You can use the following command to reduce a range of empty lines into one
-line only: 
+可用下列命令来把一串空行缩减成一行: 
 <code class="example"></code>
 <code class="example">    :v/./.,/./-1join</code>
 
-The explanation for this command is below:
+此命令的解释如下:
 
-<code class="section">    part            description </code>
+<code class="section">    部分            描述</code>
 <code class="section">    -----           -------------------------- </code>
-    :v/./           Execute the following command for all lines not
-                    containing a character (empty lines).
-     .,             Use the current line as the start of the range of
-                    lines.
-     /./            Use the line containing a character as the last line.
-     -1             Adjust the range of lines to end with the line before
-                    the last line.
-     j              Join the lines in the range.
+    :v/./           为所有不包含一个字符的行 (也就是空行) 执行下列命令。
+     .,             使用当前行作为行范围的开始行。
+     /./            使用包含一个字符的行作为结束行。
+     -1             调整行范围，使结束行变成原来结束行的前一行。
+     j              连接范围中的所有行。
 
-<code class="note">Note </code>that this will give an error message if the empty lines are at the end
-of the file. To correct this, you have to add a temporary line at the end
-of the file, execute the command and then remove the temporary line.
+<code class="note">备注</code> 如果文件末有空行这会报错。要改正这个问题，在文件末加一行临时行，执行本命
+令，然后再删除临时行。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:v</code> 
      <code class="badlink">:join</code> 
@@ -3029,31 +2915,27 @@ For more information, read:
      <code class="badlink">collapse</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.4">faq-12.4</a> </b>
-12.4. How do I delete all blank lines in a file? How do I remove all the
-      lines containing only space characters?
+12.4. 如何删除文件中的全部空行？如何删除全部只有空白字符的行？
 
-To remove all blank lines, use the following command: 
+要删除全部空行，使用下列命令: 
 <code class="example"></code>
 <code class="example">    :g/^$/d</code>
 
-To remove all lines with only whitespace (spaces or tabs) in them, use the
-following command: 
+要删除全部只有空白字符 (空格或制表) 的行，使用下列命令: 
 <code class="example"></code>
 <code class="example">    :g/^\s\+$/d</code>
 
-To remove all the lines with only whitespace, if anything, use the
-following command: 
+要删除全部如果有的话只有空白字符的行，使用下列命令: 
 <code class="example"></code>
 <code class="example">    :g/^\s*$/d</code>
 
                                                                 <b class="vimtag"> <a name="faq-12.5">faq-12.5</a> </b>
-12.5. How do I copy/yank the current word?
+12.5. 如何复制/抽出当前单词？
 
-You can use the "yiw" (yank inner word without whitespace) command or the
-"yaw" (yank a word with whitespace) command to copy/yank the current
-word.
+可用 "yiw" (抽出内含单词，不带空白) 命令或 "yaw" (抽出一个单词，带空白) 命令来
+复制/抽出当前单词。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">04.6</code> 
      <code class="badlink">04.8</code> 
@@ -3063,52 +2945,43 @@ For more information, read:
      <code class="badlink">objects</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.6">faq-12.6</a> </b>
-12.6. How do I yank text from one position to another position within a
-      line, without yanking the entire line?
+12.6. 如何从一行中抽出一个位置到另一个位置的文本而不是抽出整行？
 
-You can specify a motion command with the yank operator (y) to yank text
-from one position to another position within a line. For example, to yank
-from the current cursor position till the next letter x, use yfx or Fx or
-tx or Tx. To yank till the nth column, use n|. To yank till the next
-occurrence of a "word", use /word. To do a yank till the nth column on
-another line, first mark the position using the "ma" command, go to the
-start of the yank position, and then yank till the mark using y`a (<code class="note">note </code>the
-direction of the quote)
+可用动作命令带抽出操作符 (y) 来从一行中抽出一个位置到另一个位置的文本。例如，
+要抽出当前光标位置到下个 x 字符的文本，用 yfx 或 Fx 和 tx 或 Tx。要抽出直到第
+n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 /word。要抽出直到另
+一行第 n 列的文本，先用 "ma" 命令标记该位置，再转到抽出开始的位置，然后用 y`a
+来抽出直到标记所在的文本 (<code class="note">注意</code> 引号的方向)
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">yank</code> 
      <code class="badlink">motion.txt</code> 
      <code class="badlink">04.6</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.7">faq-12.7</a> </b>
-12.7. When I yank some text into a register, how do I append the text to
-      the current contents of the register?
+12.7. 抽出文本到寄存器时，如何附加文本到当前寄存器的内容上？
 
-When you specify the register for some operation, if you use the upper-case
-for the register name, then the new text will be appended to the existing
-contents. For example, if you have some text in the register "a". If you
-want to append some new text to this, you have to use the "A" register
-name. If you use the lowercase register name, then the contents of the
-register will be overwritten with the new text.
+指定一些操作的寄存器时，如果使用了寄存器名的大写形式，则新的文本会附加到已有的
+内容上。例如，假定寄存器 "a" 有些文本，如果想附加新文本于其后，可用 "A" 寄存器
+名。如果用寄存器名的小写形式，则寄存器内容会给新文本覆盖。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">quote</code> 
      <code class="badlink">quote_alpha</code> 
      <code class="badlink">10.1</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.8">faq-12.8</a> </b>
-12.8. How do I yank a complete sentence that spans over more than one line?
+12.8. 如何抽出跨越多行的完整句子？
 
-To yank a complete sentence that spans over more than one line you have to
-use the yank operator followed by a motion command. For example: 
+要抽出跨越多行的完整句子，须用带动作命令的抽出操作符。如: 
 <code class="example"></code>
 <code class="example">        y)</code>
 
-From inside the sentence you can use "yi)" to yank the sentence.
+从句子内部可用 "yi)" 来抽出句子。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">yank</code> 
      <code class="badlink">{motion}</code> 
@@ -3116,33 +2989,29 @@ For more information, read:
      <code class="badlink">04.6</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.9">faq-12.9</a> </b>
-12.9. How do I yank all the lines containing a pattern into a buffer?
+12.9. 如何抽出所有包含一个模式的行到一个缓冲区？
 
-You can use the  <code class="badlink">:global</code>  command to yank all the lines containing the
-pattern into a register and then paste the contents of the register into
-the buffer: 
+可用  <code class="badlink">:global</code>  命令来把所有包含一个模式的行抽出到寄存器里，然后把寄存器的内容
+粘贴到缓冲区上: 
 <code class="example"></code>
 <code class="example">    :let @a=''</code>
 <code class="example">    :g/mypattern/y A</code>
 
-The first command, clears the contents of the register "a". The second
-command copies all the lines containing "mypattern" into the register "a".
-<code class="note">Note </code>that the capital letter "A" is used to append the matched lines. Now
-you can paste the contents of register "a" to a buffer using "ap command.
+第一个命令，清除寄存器 "a" 的内容。第二个命令复制所有包含 "mypattern" 的行到寄
+存器 "a" 里。<code class="note">注意</code> 使用了大写字母 "A"，把匹配的行附加进来。现在可用 "ap 命令来
+粘贴突破口 "a" 的内容到缓冲区里。
 
-If you only want to collect all matches, you can use a different
-approach. For that run the  <code class="badlink">:s</code>  command with the flags "gn" so that it
-won't actually  change the buffer ("n" flag) but select each match ("g"
-flag). Combining this with the "\=" part in the replacement part, you
-can copy each match to e.g. a list. Altogether this looks like this: 
+如果你只想收集所有的匹配，还有一个不同的方法。为此，用  <code class="badlink">:s</code>  命令带上标志位
+"gn"，这样不实际修改缓冲区 ("n" 标志位) 但选择所有匹配 ("g" 标志位)。把此命令
+和替代部分的 "\=" 部分组合起来，可把每个匹配复制到，比如，一个列表上。 加总起
+来，可用下面的形式: 
 <code class="example"></code>
 <code class="example">    :let list=[]</code>
 <code class="example">    :%s/pattern/\=add(list, submatch(0))/gn</code>
 
-Now all matches will be in the list and you can post process them as
-wanted.
+现在所有的匹配都会在列表里，然后你可按需对它们进行后期处理。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:g</code> 
      <code class="badlink">:y</code> 
@@ -3154,37 +3023,33 @@ For more information, read:
      <code class="badlink">sub-replace-\=</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.10">faq-12.10</a> </b>
-12.10. How do I delete all the lines in a file that do not contain a
-       pattern?
+12.10. 如何删除文件中所有不包含特定模式的行？
 
-You can use  <code class="badlink">:v</code>  command to delete all the lines that do not contain a
-pattern: 
+可用  <code class="badlink">:v</code>  来删除文件中所有不包含特定模式的行: 
 <code class="example"></code>
 <code class="example">    :v/pattern/d</code>
 
-or 
+或 
 <code class="example"></code>
 <code class="example">    :g!/pattern/d</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:v</code> 
      <code class="badlink">:g</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.11">faq-12.11</a> </b>
-12.11. How do I add a line before each line with "pattern" in it?
+12.11. 如何在每个带 "pattern" 的行之前加上一行？
 
-You can use the following command to add a line before each line with
-"pattern" in it: 
+可用下列命令来在每个带 "pattern" 的行之前加上一行: 
 <code class="example"></code>
-<code class="example">    :g/pattern/normal! Oi&lt;line of text goes here&gt;</code>
+<code class="example">    :g/pattern/normal! Oi&lt;把文本行放在这里&gt;</code>
 
-Alternatively you can yank the line using the Y command and then insert the
-line using the following command: 
+此外，还要用 Y 命令抽出行，然后用下列命令插入该行: 
 <code class="example"></code>
 <code class="example">    :g/pattern/put!</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:g</code> 
      <code class="badlink">:put</code> 
@@ -3192,94 +3057,81 @@ For more information, read:
      <code class="badlink">0</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.12">faq-12.12</a> </b>
-12.12. Is there a way to operate on a line if the previous line contains a
-       particular pattern?
+12.12. 有没有办法在前行包含指定模式的行上操作？
 
-You can use the  <code class="badlink">:global</code>  command to operate on a line, if the previous
-line contains a particular pattern: 
+可用  <code class="badlink">:global</code>  命令在前行包含指定模式的行上操作: 
 <code class="example"></code>
 <code class="example">    :g/&lt;pattern&gt;/+{cmd}</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:g</code> 
      <code class="badlink">:range</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.13">faq-12.13</a> </b>
-12.13. How do I execute a command on all the lines containing a pattern?
+12.13. 如何在所有包含指定模式的行上执行命令？
 
-You can use the  <code class="badlink">:global</code>  (:g) command to execute a command on all the
-lines containing a pattern. 
+可用  <code class="badlink">:global</code>  (:g) 命令在所有包含指定模式的行上执行命令。 
 <code class="example"></code>
 <code class="example">    :g/my pattern/d</code>
 
-If you want to use a non-Ex command, then you can use the  <code class="badlink">:normal</code> 
-command: 
+如要想用非 Ex 的命令，可用  <code class="badlink">:normal</code>  命令: 
 <code class="example"></code>
 <code class="example">    :g/my pattern/normal {command}</code>
 
-Unless you want the normal mode commands to be remapped, consider using a
- <code class="badlink">:normal!</code>  command instead (<code class="note">note </code>the "!").
+除非你希望普通模式命令被重映射，考虑用  <code class="badlink">:normal!</code>  命令来代替 (<code class="note">注意</code> 这里的 "!")。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:global</code> 
      <code class="badlink">:v</code> 
      <code class="badlink">:normal</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.14">faq-12.14</a> </b>
-12.14. Can I copy the character above the cursor to the current cursor
-       position?
+12.14. 可以复制光标上方的字符到当前光标位置吗？
 
-In Insert mode, you can copy the character above the cursor to the current
-cursor position by typing <code class="keystroke">CTRL-Y</code>. The same can be done with the
-characters below the cursor by typing <code class="keystroke">CTRL-E</code>.
+在插入模式下，可用 <code class="keystroke">CTRL-Y</code> 来复制光标上方的字符到当前光标位置。也可用 <code class="keystroke">CTRL-E</code> 来
+对光标下方的字符同样办理。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">i_CTRL-Y</code> 
      <code class="badlink">i_CTRL-E</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.15">faq-12.15</a> </b>
-12.15. How do I insert a blank line above/below the current line without
-       entering insert mode?
+12.15. 如何在当前行上方/下方插入空行而无需进入插入模式？
 
-You can use the  <code class="badlink">:put</code>  ex command to insert blank lines. For example, try 
+可用  <code class="badlink">:put</code>  ex 命令来插入空行。例如，试试 
 <code class="example"></code>
 <code class="example">    :put =''</code>
 <code class="example">    :put! =''</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:put</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.16">faq-12.16</a> </b>
-12.16. How do I insert the name of the current file into the current buffer?
+12.16. 如何插入当前文件名到当前缓冲区？
 
-There are several ways to insert the name of the current file into the
-current buffer. In insert mode, you can use the <code class="special">&lt;C-R&gt;</code>% or the
-<code class="special">&lt;C-R&gt;</code>=expand("%") command. In normal mode, you can use the `:put =@%`
-command.
+有几种办法到插入当前文件名到当前缓冲区。插入模式下，可用 <code class="special">&lt;C-R&gt;</code>% 或
+<code class="special">&lt;C-R&gt;</code>=expand("%") 命令。普通模式下，可用 `:put =@%` 命令。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">i_CTRL-R</code> 
      <code class="badlink">expand()</code> 
      <code class="badlink">!!</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.17">faq-12.17</a> </b>
-12.17. How do I insert the contents of a Vim register into the current
-       buffer?
+12.17. 如何插入 Vim 寄存器的内容到当前缓冲区？
 
-In insert mode, you can use the &lt;<code class="keystroke">CTRL-R</code>&gt;<code class="special">&lt;register&gt;</code> command to insert the
-contents of <code class="special">&lt;register&gt;</code>. For example, use &lt;<code class="keystroke">CTRL-R</code>&gt;a to insert the contents
-of register "a" into the current buffer.
+插入模式下，可用 &lt;<code class="keystroke">CTRL-R</code>&gt;<code class="special">&lt;register&gt;</code> 命令来插入 <code class="special">&lt;register&gt;</code> 的内容。例如，
+&lt;<code class="keystroke">CTRL-R</code>&gt;a 插入寄存器 "a" 的内容到当前缓冲区。
 
-In normal mode, you can use the `:put <code class="special">&lt;register&gt;</code>` command to insert the
-contents of <code class="special">&lt;register&gt;</code>. For example, use the `:put d` command to insert
-the contents of register "d" into the current buffer.
+普通模式下，可用 `:put <code class="special">&lt;register&gt;</code>` 命令来插入 <code class="special">&lt;register&gt;</code> 的内容。例如，
+`:put d` 命令插入寄存器 "d" 的内容到当前缓冲区。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">i_CTRL-R</code> 
      <code class="badlink">i_CTRL-R_CTRL-R</code> 
@@ -3288,35 +3140,31 @@ For more information, read:
      <code class="badlink">:put</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.18">faq-12.18</a> </b>
-12.18. How do I move the cursor past the end of line and insert some
-       characters at some columns after the end of the line?
+12.18. 如何移动光标跨过行尾并在行尾之后的列插入字符？
 
-You can set the <code class="badlink">'virtualedit'</code> option to move the cursor past the
-end-of-line and insert characters in a column after the end-of-line. To
-start the virtual mode, use 
+可设置 <code class="badlink">'virtualedit'</code> 选项，这样就可以移动光标跨过行尾并在行尾之后的列插入字
+符。要启动虚拟模式，用 
 <code class="example"></code>
 <code class="example">    :set virtualedit=all</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'virtualedit'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.19">faq-12.19</a> </b>
-12.19. How to replace the word under the cursor (say: junk) with
-      "foojunkbar" in Vim?
+12.19. Vim 如何把光标所在的单词 (比如说: junk) 替代为 "foojunkbar"？
 
-There are several ways to do this. If the word is the first such word on
-the line, use the following command: 
+有几种方法。如果单词是本行首个这样的词，可用以下的命令: 
 <code class="example"></code>
 <code class="example">    :exe "s/".expand("&lt;cword&gt;")."/foo&amp;bar/"</code>
 
-To match specifically you could use a more complex substitution like this: 
+要只匹配整个单词，可以这样用一个更复杂的替代: 
 <code class="example"></code>
 <code class="example">    :exe 's/\&lt;'.expand("&lt;cword&gt;").'\%&gt;'.(col(".")-1).'c\&gt;/foo&amp;bar/'</code>
 
-You can also use the command: ciwfoo<code class="special">&lt;C-R&gt;</code>"bar<code class="special">&lt;Esc&gt;</code>
+也可用命令: ciwfoo<code class="special">&lt;C-R&gt;</code>"bar<code class="special">&lt;Esc&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:substitute</code> 
      <code class="badlink">expand()</code> 
@@ -3324,31 +3172,27 @@ For more information, read:
      <code class="badlink">/\%c</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.20">faq-12.20</a> </b>
-12.20. How do I replace a particular text in all the files in a directory?
+12.20. 如何对一个目录里所有文件里的特定文本进行替代？
 
-You can use the  <code class="badlink">:argdo</code>  command to execute the substitute command on all
-the files specified as arguments: 
+可用  <code class="badlink">:argdo</code>  命令在参数指定的所有文件上执行替代命令: 
 <code class="example"></code>
 <code class="example">    :args *</code>
 <code class="example">    :argdo %s/&lt;your_text&gt;/&lt;replacement_text&gt;/ge | update</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:args_f</code> 
      <code class="badlink">:argdo</code> 
      <code class="badlink">:s_flags</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.21">faq-12.21</a> </b>
-12.21. I have some numbers in a file. How do I increment or decrement the
-       numbers in the file?
+12.21. 文件中有若干数值。如何为文件中的数值增量或减量？
 
-You can use the <code class="keystroke">CTRL-A</code> key to increment the number and the <code class="keystroke">CTRL-X</code> key to
-decrement the number. You can also specify the number to
-increment/decrement from the number by specifying a count to the key. This
-works for decimal, octal and hexadecimal numbers. You can change the base
-used by Vim for this operation by modifying the <code class="badlink">'nrformats'</code> option.
+可用 <code class="keystroke">CTRL-A</code> 键来增量数值，而用 <code class="keystroke">CTRL-X</code> 键来减量数值。也可通过指定键的计数来指定
+增量/减量的数值。可用十进制、八进制和十六进制数值。修改 <code class="badlink">'nrformats'</code> 选项可改变
+此操作 Vim 使用的基底。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">26.2</code> 
      <code class="badlink">CTRL-A</code> 
@@ -3356,25 +3200,20 @@ For more information, read:
      <code class="badlink">'nrformats'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.22">faq-12.22</a> </b>
-12.22. How do I reuse the last used search pattern in a  <code class="badlink">:substitute</code> 
-       command?
+12.22. 如何在  <code class="badlink">:substitute</code>  命令中重用前次搜索模式？
 
-To reuse the last used search pattern in a  <code class="badlink">:substitute</code>  command, don't
-specify a new search pattern: 
+要在  <code class="badlink">:substitute</code>  命令中重用前次搜索模式，不要指定新的搜索模式: 
 <code class="example"></code>
 <code class="example">    :s/pattern/newtext/</code>
 <code class="example">    :s//sometext/</code>
 
-In the second  <code class="badlink">:s</code>  command, as a search pattern is not specified, the
-pattern specified in the first  <code class="badlink">:s</code>  command "pattern" will be used.
+第二个  <code class="badlink">:s</code>  命令里没有指定搜索模式，所以使用第一个  <code class="badlink">:s</code>  命令的模式 "pattern"。
 
-If you want to change the search pattern but repeat the substitution
-pattern you can use the special right hand side, you can use the tilde
-character: 
+如果你想改变搜索模式但重复替代模式，可用特殊的右手边形式，波浪符: 
 <code class="example"></code>
 <code class="example">    :s/newpattern/~/</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:s</code> 
      <code class="badlink">:&</code> 
@@ -3383,26 +3222,22 @@ For more information, read:
      <code class="badlink">sub-replace-special</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.23">faq-12.23</a> </b>
-12.23. How do I change the case of a string using the  <code class="badlink">:substitute</code> 
-       command?
+12.23. 如何用  <code class="badlink">:substitute</code>  改变字符串的大小写？
 
-You can use special characters in the replacement string for a
- <code class="badlink">:substitute</code>  command to change the case of the matched string. For
-example, to change the case of the string "MyString" to all uppercase, you
-can use the following command: 
+可用  <code class="badlink">:substitute</code>  命令的替代字符串中的特殊字符来改变匹配字符串的大小写。例
+如，要把字符串 "MyString" 改成全部大写，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :%s/MyString/\U&amp;/g</code>
 
-To change the case to lowercase, you can use the following command: 
+要改成小写，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :%s/MyString/\L&amp;/g</code>
 
-To change the case of the first character in all the words in the current
-line to uppercase, you can use the following command: 
+要把当前行的所有单词的首字符改为大写，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :s/\&lt;\(.\)\(\k*\)\&gt;/\u\1\L\2/g</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">sub-replace-special</code> 
      <code class="badlink">:substitute</code> 
@@ -3411,141 +3246,120 @@ For more information, read:
      <code class="badlink">/\u</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.24">faq-12.24</a> </b>
-12.24. How do I enter characters that are not present in the keyboard?
+12.24. 如何键入键盘上没有的字符？
 
-You can use digraphs to enter characters that are not present in the
-keyboard. You can use the  <code class="badlink">:digraphs</code>  command to display all the currently
-defined digraphs. You can add a new digraph to the list using the
- <code class="badlink">:digraphs</code>  command.
+可用二合字母来键入键盘上没有的字符。可用  <code class="badlink">:digraphs</code>  命令来显示所有当前定义的
+二合字母。可用  <code class="badlink">:digraphs</code>  命令在该列表中加入新的二合字母。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">digraphs</code> 
      <code class="badlink">'digraph'</code> 
      <code class="badlink">24.9</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.25">faq-12.25</a> </b>
-12.25. Is there a command to remove any or all digraphs?
+12.25. 有没有命令删除任何或所有的二合字母？
 
-No. The digraphs table is defined at compile time. You can only add new
-ones. Adding a command to remove digraphs is on the todo list.
+没有。二合字母表是编译时定义的。只可以加入新二合字母。将来会考虑增加新命令来删
+除二合字母。
 
                                                                 <b class="vimtag"> <a name="faq-12.26">faq-12.26</a> </b>
-12.26. In insert mode, when I press the backspace key, it erases only the
-       characters entered in this instance of insert mode. How do I erase
-       previously entered characters in insert mode using the backspace
-       key?
+12.26. 插入模式下，按退格键时，只删除这次在插入模式中键入的字符。如何能用退格
+       键删除在之前的插入模式中键入的字符？
 
-This is traditional vi behaviour. You can set the <code class="badlink">'backspace'</code> option to
-erase previously entered characters in insert mode: 
+这是 vi 的传统行为。可用 <code class="badlink">'backspace'</code> 选项来删除之前插入模式中键入的字符: 
 <code class="example"></code>
 <code class="example">    :set backspace=indent,eol,start</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'backspace'</code> 
      <code class="badlink">i_backspacing</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.27">faq-12.27</a> </b>
-12.27. I have a file which has lines longer than 72 characters terminated
-       with "+" and wrapped to the next line. How can I quickly join the
-       lines?
+12.27. 文件有长于 72 字符的行，以 "+" 终止并回绕到下一行。如何快速连接这些行？
 
-You can use the  <code class="badlink">:global</code>  command to search and join the lines: 
+可用  <code class="badlink">:global</code>  命令来搜索和连接这些行: 
 <code class="example"></code>
 <code class="example">    :g/+$/j</code>
 
-This will, however, only join every second line. A couple of more complex
-examples which will join all consecutive lines with a "+" at the end are: 
+不过，这只会对每两行进行连接。一个更复杂的例子，可以连接所有连续以 "+" 结尾的
+行: 
 <code class="example"></code>
 <code class="example">    :g/+$/,/\(^\|[^+]\)$/j</code>
 <code class="example">    :g/+$/mark a | .,/\(^\|[^+]\)$/s/+$// | 'a,.j</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:g</code> 
      <code class="badlink">:j</code> 
      <code class="badlink">:mark</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.28">faq-12.28</a> </b>
-12.28. How do I paste characterwise yanked text into separate lines?
+12.28. 如何把抽出的面向字符的文本粘贴到单独的行上？
 
-You can use the  <code class="badlink">:put</code>  command to paste characterwise yanked text into new
-lines: 
+可用  <code class="badlink">:put</code>  命令来把抽出的面向字符的文本粘贴到单独的行上: 
 <code class="example"></code>
 <code class="example">    :put =@"</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:put</code> 
      <code class="badlink">quote_=</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.29">faq-12.29</a> </b>
-12.29. How do I change the case (uppercase, lowercase) of a word or a
-       character or a block of text?
+12.29. 如何改变单词或字符或文本块的大小写？
 
-You can use the "~" command to switch the case of a character.
+可用 "~" 命令切换字符的大小写。
 
-You can change the case of the word under the cursor to uppercase using the
-"gUiw" or "viwU" command and to lowercase using the "guiw" or "viwu"
-command.
+可用 "gUiw" 或 "viwU" 命令把光标所在的单词改为大写，而用 "guiw" 或 "viwu" 命令
+改为小写。
 
-You can switch the case (upper case to lower case and vice versa) of the
-word under the cursor using the "viw~" or "g~iw" command.
+可用 "viw~" 或 "g~iw" 命令切换光标所在的单词的大小写 (大写到小写，小写到大
+写)。
 
-You can use the "gUgU" command to change the current line to uppercase and
-the "gugu" command to change the current line to lowercase.
+可用 "gUgU" 命令把当前行改为大写，而用 "gugu" 命令把当前行改为小写。
 
-You can use the "g~g~" command to switch the case of the current line. You
-can use the "g~<code class="special">{motion}</code>" or "<code class="special">{Visual}</code>~" commands to switch the case of a
-block of text.
+可用 "g~g~" 命令切换当前行的大小写。可用 "g~<code class="special">{motion}</code>" 或 "<code class="special">{Visual}</code>~" 命令来切
+换文本块的大小写。
 
-If you set <code class="badlink">'tildeop'</code> the "~" command behaves like an operator and expects
-a motion command to act on. If you have 
+如果置位了 <code class="badlink">'tildeop'</code>，"~" 命令类似操作符，会期待后跟应用的动作命令。如果设了 
 <code class="example"></code>
 <code class="example">    :set tildeop</code>
 
-and you want to change the case from the current cursor position to the end
-of line, simply use "~$".
+而现在要切换当前光标位置到行尾的大小写，只要简单地用 "~$"。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">case</code> 
      <code class="badlink">'tildeop'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.30">faq-12.30</a> </b>
-12.30. How do I enter ASCII characters that are not present in the
-       keyboard?
+12.30. 如何键入键盘上没有的 ASCII 字符？
 
-You can enter ASCII characters that are not present in the keyboard by
-pressing <code class="keystroke">CTRL-V</code> and then the ASCII character number. You can also use
-digraphs to enter special ASCII characters.
+可用 <code class="keystroke">CTRL-V</code> 后跟 ASCII 字符值来键入键盘上没有的 ASCII 字符。也可用二合字母来键
+入特殊的 ASCII 字符。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">i_CTRL-V_digit</code> 
      <code class="badlink">digraphs</code> 
      <code class="badlink">45.5</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.31">faq-12.31</a> </b>
-12.31. How do I replace non-printable characters in a file?
+12.31. 如何替代文件中的不可打印字符？
 
-To replace a non-printable character, you have to first determine the ASCII
-value for the character. You can use the  <code class="badlink">:ascii</code>  ex command or the "ga"
-normal-mode command to display the ASCII value of the character under the
-cursor.
+要替代不可打印字符，需要先决定字符的 ASCII 值。可用  <code class="badlink">:ascii</code>  ex 命令或 "ga" 普
+通模式命令来显示光标所在字符的 ASCII 值。
 
-You can enter the non-printable character by entering <code class="keystroke">CTRL-V</code> followed by
-the decimal number 1-255 (with no leading zero), or by x and a hex number
-00-FF, or by an octal number 0-0377 (with leading zero), or by u and a hex
-number 0-FFFF, or by U and a hex number 0-7FFFFFFF
+可用 <code class="keystroke">CTRL-V</code> 后跟十进制数 1-255 (不能有前导的零)、或用 x 加上十六进数 00-FF，或
+用八进制数 0-0377 (要有前导的零)，或用 u 和十六进制数 0-FFFF，或用 U 和十六进
+制数 0-7FFFFFFF
 
-Another alternative is to use the  <code class="badlink">:digraphs</code>  ex command to display the
-digraphs for all characters, together with their value in decimal and
-alpha. You can enter a non-printable character by entering <code class="keystroke">CTRL-K</code> followed
-by two alphanumeric characters (a digraph).
+另一个办法是用  <code class="badlink">:digraphs</code>  ex 命令来显示所有字符的二合字母以及它们的十进制值和
+字母值。可用 <code class="keystroke">CTRL-K</code> 后跟两个字母数字字符 (二合字母) 来输入不可打印字符。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:ascii</code> 
      <code class="badlink">i_CTRL-V</code> 
@@ -3553,44 +3367,36 @@ For more information, read:
      <code class="badlink">:digraphs</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.32">faq-12.32</a> </b>
-12.32. How do I remove duplicate lines from a buffer?
+12.32. 如何删除缓冲区中的重复行？
 
-You can use the following user-defined command to remove all the duplicate
-lines from a buffer:
+可用以下用户定义的命令来删除缓冲区中的重复行:
 
 :command -range=% Uniq <code class="special">&lt;line1&gt;</code>,<code class="special">&lt;line2&gt;</code>g/^\%&lt;<code class="special">&lt;line2&gt;</code>l\(.*\)\n\1$/d
 
-Add the above command to your .vimrc file and invoke  <code class="badlink">:Uniq</code>  to remove all
-the duplicate lines.
+把上述命令加入 .vimrc 文件，并调用  <code class="badlink">:Uniq</code>  来删除所有的重复行。
 
                                                                 <b class="vimtag"> <a name="faq-12.33">faq-12.33</a> </b>
-12.33. How do I prefix all the lines in a file with the corresponding line
-       numbers?
+12.33. 如何给文件中的所有行加上对应行号前缀？
 
-You can prefix the lines in a file with the corresponding line number in
-several ways. Some of them are listed below: 
+有几个方法给文件中的所有行加上对应行号前缀。下面列出一些: 
 <code class="example"></code>
 <code class="example">    :%s/^/\=line('.'). ' '</code>
 <code class="example">    :%s/^/\=printf('%5d ', line('.'))/</code>
 <code class="example">    :%s/^/\=strpart(line('.').'.     ', 0, 5)</code>
 <code class="example">    :%s/^/\=strpart('   ', strlen(line('.'))).line('.').'. '</code>
 
-The last two commands will pad the line numbers with space characters.  The
-last command will right align the numbers and the command before that will
-left align the numbers.
+最后两个命令会用空格填充行号。最后那个命令会右对齐行号，而之前那个命令则左对齐
+行号。
 
-If you don't want to number consecutive lines but rather non-consecutive
-regions, you can also use this idiom: 
+如果不想为连续行编号，而要为一些非连续的区域编号，可用以下的套路: 
 <code class="example"></code>
 <code class="example">    :let i = 1</code>
 <code class="example">    :g/TODO/s/^/\=printf('%2d.',i)|let i+=1</code>
 
-This first initializes the variable i with 1. In the next line, a  <code class="badlink">:g</code> 
-command is used to perform a substitute command only on lines, that
-match "TODO". After the substitute command has taken place, the variable
-i will be incremented by 1.
+首先，变量 i 初始化为 1。下一行中  <code class="badlink">:g</code>  命令用于只在匹配 "TODO" 的行上执行替代
+命令。变量 i 在每次替代命令发生后增加 1。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">sub-replace-special</code> 
      <code class="badlink">line()</code> 
@@ -3601,26 +3407,21 @@ For more information, read:
      <code class="badlink">:global</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.34">faq-12.34</a> </b>
-12.34. How do I exchange (swap) two characters or words or lines?
+12.34. 如何交换两个字符或单词或行？
 
-You can exchange two characters with the "xp" command sequence. The "x"
-will delete the character under the cursor and "p" will paste the just
-deleted character after the character under the cursor. This will result
-in exchanging the two characters.
+可用 "xp" 命令序列来交换两个字符。"c" 会删除光标所在的字符而 "p" 会把刚刚删
+除的字符粘贴到光标所在字符之后。最终结果就是交换了两了字符。
 
-You can exchange two words with the "deep" command sequence (start with the
-cursor in the blank space before the first word).
+可有 "deep" 命令序列来交换两个单词 (先移动光标到首个单词之前的空白上)。
 
-You can exchange two lines with the "ddp" command sequence. The "dd" will
-delete the current line and "p" will paste the just deleted line after the
-current line. This will result in exchanging the two lines.
+可用 "ddp" 命令序列来交换两行。"dd" 删除当前行，而 "p" 把刚刚删除的行粘贴到当
+前行后。最终结果就是交换了两行。
 
-All of the above operations will change the " unnamed register.
+所有以上的操作都会改变 " 无名寄存器。
 
-You can use the `:m +` ex command to exchange two lines without changing the
-unnamed register.
+可用 `:m +` ex 命令来交换两行而不改变无名寄存器。
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">x</code> 
      <code class="badlink">p</code> 
@@ -3632,20 +3433,20 @@ For more information, read:
      <code class="badlink">:move</code> 
 
                                                                 <b class="vimtag"> <a name="faq-12.35">faq-12.35</a> </b>
-12.35. How do I change the characters used as word delimiters?
+12.35. 如何改变用作单词定界的字符？
 
-Vim uses the characters specified by the <code class="badlink">'iskeyword'</code> option as word
-delimiters. The default setting for this option is "@,48-57,_,192-255".
+Vim 使用 <code class="badlink">'iskeyword'</code> 选项指定的字符用作单词定界符。此选项的缺省值是
+"@,48-57,_,192-255"。
 
-For example, to add ":" as a word delimiter, you can use 
+例如，要加上 ":" 作为单词定界符，可用 
 <code class="example"></code>
 <code class="example">    :set iskeyword+=:</code>
 
-To remove "_" as a word delimiter, you can use 
+要让 "_" 不再用作单词定界符，可用 
 <code class="example"></code>
 <code class="example">    :set iskeyword-=_</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'iskeyword'</code> 
      <code class="badlink">word</code> 
@@ -3683,7 +3484,7 @@ Vim supports completion of the following items:
 User defined completions and omni completions are often set by filetype
 plugins.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">24.3</code> 
      <code class="badlink">ins-completion</code> 
@@ -3695,7 +3496,7 @@ In insert mode, you can use the <code class="keystroke">CTRL-X</code> <code clas
 filenames that start with the same characters as in the current line before
 the cursor.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">compl-filename</code> 
 
@@ -3706,7 +3507,7 @@ For more information, read:
 You can use <code class="keystroke">CTRL-X</code> <code class="keystroke">CTRL-N</code> and <code class="keystroke">CTRL-X</code> <code class="keystroke">CTRL-P</code> keys to complete words that are
 present after the just completed word.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">i_CTRL-X_CTRL-P</code> 
      <code class="badlink">i_CTRL-X_CTRL-N</code> 
@@ -3732,7 +3533,7 @@ range of text. For example:
 <code class="example">    gwap - Format current paragraph (and don't move cursor)</code>
 <code class="example">    gq3j - Format the current and the next 3 lines</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">gq</code> 
      <code class="badlink">gw</code> 
@@ -3755,7 +3556,7 @@ Now to break the long lines in a file to the length defined by the
 <code class="example"></code>
 <code class="example">    :g/./normal gqq</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'textwidth'</code> 
      <code class="badlink">gq</code> 
@@ -3776,7 +3577,7 @@ all paragraphs in a specific range, use:
 <code class="example"></code>
 <code class="example">    :'a,'bg/\S/normal gq}</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">gq</code> 
      <code class="badlink">G</code> 
@@ -3804,7 +3605,7 @@ You can use the "n" flag in the <code class="badlink">'formatoptions'</code> to 
 With this option, when formatting text, Vim will recognize numbered lists.
 For this option to work, the <code class="badlink">'autoindent'</code> option also must be set.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'formatoptions'</code> 
      <code class="badlink">fo-table</code> 
@@ -3819,7 +3620,7 @@ indent at the start of the current line. In insert mode, you can use the
 line. You can also use the <code class="keystroke">CTRL-O</code> &gt;&gt; and <code class="keystroke">CTRL-O</code> &lt;&lt; commands to indent the
 current line in insert mode.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">i_CTRL-T</code> 
      <code class="badlink">i_CTRL-D</code> 
@@ -3837,7 +3638,7 @@ You can format/indent an entire file using the gg=G command, where
 <code class="example">    =  - apply indentation</code>
 <code class="example">    G  - till end of file</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">gg</code> 
      <code class="badlink">=</code> 
@@ -3851,7 +3652,7 @@ For more information, read:
 You can use the "&gt;&gt;" and "&lt;&lt;" commands to increase or decrease the
 indentation of the current line.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">shift-left-right</code> 
      <code class="badlink">&gt;&gt;</code> 
@@ -3867,7 +3668,7 @@ indent the lines
 <code class="example"></code>
 <code class="example">    :10,20&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">shift-left-right</code> 
      <code class="badlink">v_&gt;</code> 
@@ -3885,7 +3686,7 @@ used, when the <code class="badlink">'shiftwidth'</code> option is zero.
 <code class="example"></code>
 <code class="example">    :set shiftwidth=4</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'shiftwidth'</code> 
      <code class="badlink">&gt;&gt;</code> 
@@ -3901,7 +3702,7 @@ present, remove it. Also, depending on your preference, you may also want
 to check the value of the <code class="badlink">'autoindent'</code>, <code class="badlink">'smartindent'</code>, <code class="badlink">'cindent'</code> and
 <code class="badlink">'indentexpr'</code> options and turn them off as needed.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:filetype-indent-off</code> 
      <code class="badlink">'autoindent'</code> 
@@ -3917,7 +3718,7 @@ You can use the "FileType" autocommand to set the <code class="badlink">'textwid
 <code class="example"></code>
 <code class="example">    autocmd FileType mail set tw=&lt;your_value&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:autocmd</code> 
      <code class="badlink">FileType</code> 
@@ -3931,7 +3732,7 @@ Vim will auto-magically break the newly entered lines. For example:
 <code class="example"></code>
 <code class="example">    :set textwidth=75</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'textwidth'</code> 
      <code class="badlink">ins-textwidth</code> 
@@ -3984,7 +3785,7 @@ use the following command:
 <code class="example"></code>
 <code class="example">    :e ++ff=dos filename</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'fileformats'</code> 
      <code class="badlink">'fileformat'</code> 
@@ -4114,7 +3915,7 @@ symbols.
 <code class="example"></code>
 <code class="example">    :set display=lastline</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'display'</code> 
 
@@ -4129,7 +3930,7 @@ example, to convert all the tabs to white spaces, use
 <code class="example">    :set expandtab</code>
 <code class="example">    :retab</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:retab</code> 
      <code class="badlink">'expandtab'</code> 
@@ -4149,7 +3950,7 @@ word processor:
 <code class="example">    :set showbreak=&gt;&gt;&gt;</code>
 
 You can use the "gk" and "gj" commands to move one screen line up and down.
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'wrap'</code> 
      <code class="badlink">'linebreak'</code> 
@@ -4170,7 +3971,7 @@ character.
 To join lines without adding or removing any space characters, you can use
 the gJ or  <code class="badlink">:join!</code>  commands.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">gJ</code> 
      <code class="badlink">:join</code> 
@@ -4195,7 +3996,7 @@ If <code class="keystroke">CTRL-V</code> does not work as expected, it may have 
 the mswin.vim script which is often sourced by a vimrc on Windows machines
 to mimic some common short cuts from other programs.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">04.4</code> 
      <code class="badlink">blockwise-visual</code> 
@@ -4208,7 +4009,7 @@ For more information, read:
 You can use the Vim block-wise visual mode to select the column of text and
 apply an operator (delete, change, copy, etc) on it.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">visual-block</code> 
      <code class="badlink">visual-operators</code> 
@@ -4223,7 +4024,7 @@ command. After visually selecting the lines, press ":" to go to the command
 mode.  Vim will automatically insert the visual range '&lt;,'&gt;. You can run
 any ex-command on the visual range.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">v_:</code> 
      <code class="badlink">'&lt;</code> 
@@ -4239,7 +4040,7 @@ will operate on all the selected lines (instead of the selected
 columns). You can use the vis.vim or NrrwRgn plugin script from
 <a href="https://www.vim.org">https://www.vim.org</a> scripts archive to do this.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">cmdline-ranges</code> 
      <code class="badlink">10.3</code> 
@@ -4254,7 +4055,7 @@ You can select the entire file in visual mode using ggVG.
 <code class="example">    V  - Start linewise visual mode</code>
 <code class="example">    G  - goto the end of the file.</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">gg</code> 
      <code class="badlink">linewise-visual</code> 
@@ -4270,7 +4071,7 @@ You can use the "gv" command to reselect the last selected visual area. You
 can also use the marks '&lt; and '&gt; to jump to the beginning or the end of the
 last selected visual area.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">gv</code> 
      <code class="badlink">'&lt;</code> 
@@ -4282,7 +4083,7 @@ For more information, read:
 You can use the "o" command to jump to the beginning/end of a visually
 selected region.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">v_o</code> 
 
@@ -4303,7 +4104,7 @@ option is also automatically set when you use the "behave mswin" command.
 Select mode looks like visual mode, but it is similar to the selection mode
 in MS-Windows.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">Select-mode</code> 
      <code class="badlink">'selectmode'</code> 
@@ -4324,7 +4125,7 @@ option:
 <code class="note">Note </code>that by default, the <code class="badlink">'selectmode'</code> option will be set to empty, so that
 always visual mode is used.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'selectmode'</code> 
      <code class="badlink">Select-mode</code> 
@@ -4338,7 +4139,7 @@ text. The '[ mark is set to the beginning of the last changed/yanked text
 and the '] mark is set to the end of the last changed/yanked text. To
 visually select this block of text use the command '[v']
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'[</code> 
      <code class="badlink">']</code> 
@@ -4362,7 +4163,7 @@ are currently editing:
 <code class="example"></code>
 <code class="example">    :!xpdf %&lt;.pdf</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:_%</code> 
      <code class="badlink">cmdline-special</code> 
@@ -4381,7 +4182,7 @@ enter/return key.
 In a similar vain, the search history can be edited with "q/" and "q?"
 commands.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">cmdline-window</code> 
 
@@ -4391,7 +4192,7 @@ For more information, read:
 You can use the Q command to switch from Vi mode to Ex mode. To switch from
 Ex mode back to the Vi mode, use the  <code class="badlink">:vi</code>  command.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">Q</code> 
      <code class="badlink">gQ</code> 
@@ -4424,7 +4225,7 @@ following set of commands:
 <code class="example">    :g/HelloWord/p</code>
 <code class="example">    :redir END</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:redir</code> 
      <code class="badlink">:silent</code> 
@@ -4442,7 +4243,7 @@ option to "list":
 <code class="example"></code>
 <code class="example">    :set wildmode=list</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'wildmode'</code> 
 
@@ -4465,7 +4266,7 @@ is to open the command line window using q: from normal mode or <code class="key
 the command-line mode. In the command line window you can use all the Vim
 commands to edit the command line.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">c_CTRL-R</code> 
      <code class="badlink">quote_:</code> 
@@ -4481,7 +4282,7 @@ An alternative solution, is to use the histadd() function like this:
 <code class="example"></code>
 <code class="example">    :call histadd(':', 'echo strftime("%c")')</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">c_&lt;Esc&gt;</code> 
      <code class="badlink">histadd()</code> 
@@ -4494,7 +4295,7 @@ option:
 <code class="example"></code>
 <code class="example">    :set cmdheight=2</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'cmdheight'</code> 
      <code class="badlink">hit-enter</code> 
@@ -4510,7 +4311,7 @@ For more information, read:
 You can remove the $HOME/.viminfo or the $HOME/_viminfo file to get rid of
 these error messages.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">viminfo-errors</code> 
      <code class="badlink">viminfo-file-name</code> 
@@ -4527,7 +4328,7 @@ feature by setting the <code class="badlink">'viminfo'</code> option to an empty
 <code class="example"></code>
 <code class="example">    :set viminfo=""</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'viminfo'</code> 
 
@@ -4553,7 +4354,7 @@ Note, this will only work reliably, when Vim can detect the FocusLost
 and FocusGained autocommands correctly. This means it should work with
 GVim but might depend on your terminal for konsole vim.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">21.3</code> 
      <code class="badlink">viminfo</code> 
@@ -4591,7 +4392,7 @@ You can use the Vim remote server functionality to do this:
 <code class="example"></code>
 <code class="example">    $ gvim --servername myVIM --remote-send "&lt;C-\&gt;&lt;C-N&gt;:wall&lt;CR&gt;"</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">client-server</code> 
      <code class="badlink">CTRL-\_CTRL-N</code> 
@@ -4618,7 +4419,7 @@ You can use the  <code class="badlink">:options</code>  command to open the Vim 
 
 This window can be used for viewing and setting all the options.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:options</code> 
 
@@ -4635,7 +4436,7 @@ You can also suffix the option with "!" to toggle the value:
 <code class="example">    :set ignorecase!</code>
 <code class="example">    :set hlsearch!</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">set-option</code> 
 
@@ -4664,7 +4465,7 @@ You can also use the following command to set an option locally:
 <code class="example"></code>
 <code class="example">    :let &amp;l:{option-name} = &lt;value&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:setlocal</code> 
      <code class="badlink">local-options</code> 
@@ -4677,7 +4478,7 @@ character. For example:
 <code class="example"></code>
 <code class="example">    :set tags=tags\ /usr/tags</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">option-backslash</code> 
 
@@ -4698,7 +4499,7 @@ in the first line.
 The <code class="badlink">'modelines'</code> settings specifies the number of
 lines that will be checked for the Vim set commands.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">21.6</code> 
      <code class="badlink">modeline</code> 
@@ -4714,7 +4515,7 @@ lines.
 <code class="example"></code>
 <code class="example">    :set number</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'number'</code> 
 
@@ -4760,7 +4561,7 @@ trailing space characters will be displayed with a "." character.
 <code class="example"></code>
 <code class="example">    :set listchars=trail:.</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'listchars'</code> 
      <code class="badlink">'list'</code> 
@@ -4774,7 +4575,7 @@ the status line:
 <code class="example"></code>
 <code class="example">    :set ruler</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'ruler'</code> 
 
@@ -4787,7 +4588,7 @@ last line.
 <code class="example"></code>
 <code class="example">    :set showmode</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'showmode'</code> 
 
@@ -4800,7 +4601,7 @@ status line:
 <code class="example"></code>
 <code class="example">    :set showcmd</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'showcmd'</code> 
 
@@ -4811,7 +4612,7 @@ For more information, read:
 You can set the <code class="badlink">'statusline'</code> option to display different values/settings in
 the Vim status line.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'statusline'</code> 
      <code class="badlink">'laststatus'</code> 
@@ -4825,7 +4626,7 @@ You can set the <code class="badlink">'laststatus'</code> option to 2 to display
 <code class="example"></code>
 <code class="example">    :set laststatus=2</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'laststatus'</code> 
 
@@ -4837,7 +4638,7 @@ To make a Vim option setting persistent across different Vim instances, add
 your setting to the .vimrc or .gvimrc file. You can also use the  <code class="badlink">:mkvimrc</code> 
 command to generate a vimrc file for the current settings.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">save-settings</code> 
      <code class="badlink">vimrc</code> 
@@ -4869,7 +4670,7 @@ than the value for the timeout option. Setting the timeout option to a
 larger value can help alleviate problems that appear when using function
 keys over a slow line.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'ttimeout'</code> 
 
@@ -4882,7 +4683,7 @@ characters, add the $ flag to the <code class="badlink">'cpoptions'</code> optio
 <code class="example"></code>
 <code class="example">    :set cpoptions+=$</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'cpoptions'</code> 
 
@@ -4904,7 +4705,7 @@ remove the flags one by one:
 <code class="example"></code>
 <code class="example">    :set formatoptions-=t formatoptions-=n</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:set-=</code> 
 
@@ -4926,7 +4727,7 @@ To find out, where the key has been mapped, prefix the  <code class="badlink">:v
 <code class="example"></code>
 <code class="example">    :verbose :map &lt;key&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">map-listing</code> 
      <code class="badlink">map-overview</code> 
@@ -4938,7 +4739,7 @@ You can list all the user-defined key mappings using:
 <code class="example"></code>
 <code class="example">    :map</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">map-listing</code> 
 
@@ -4969,7 +4770,7 @@ the unmap command:
 <code class="example">    :unmap &lt;buffer&gt; &lt;key&gt;</code>
 <code class="example">    :unmap! &lt;buffer&gt; &lt;key&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:unmap</code> 
      <code class="badlink">map-modes</code> 
@@ -5027,7 +4828,7 @@ For more information, read:
 <code class="example"></code>
 <code class="example">        :map &lt;C-Right&gt;  &lt;your_command_to_be_mapped&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">map-keys-fails</code> 
      <code class="badlink">:map-special-keys</code> 
@@ -5079,7 +4880,7 @@ can use the following command to map the numeric keypad keys:
 where, <code class="special">&lt;kSomething&gt;</code> can be kHome, kEnd, kPageUp, kPageDown, kPlus, kMinus,
 kDivide, kMultiply, kEnter, etc.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">key-codes</code> 
      <code class="badlink">terminal-options</code> 
@@ -5104,7 +4905,7 @@ use:
 <code class="example"></code>
 <code class="example">    :smap &lt;F3&gt; &lt;your mapping here&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:vmap</code> 
      <code class="badlink">:xmap</code> 
@@ -5157,7 +4958,7 @@ When writing a plugin or other script, more often than not, it is advisable
 to use  <code class="badlink">:noremap</code>  instead of  <code class="badlink">:map</code>  to avoid side effects from user defined
 mappings.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">&lt;Leader&gt;</code> 
      <code class="badlink">&lt;LocalLeader&gt;</code> 
@@ -5181,7 +4982,7 @@ pressed.
 <code class="example">    :map &lt;F7&gt; &lt;Nop&gt;</code>
 <code class="example">    :map! &lt;F7&gt; &lt;Nop&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">&lt;Nop&gt;</code> 
      <code class="badlink">:map</code> 
@@ -5204,7 +5005,7 @@ Use the following mapping:
 Note, that the <code class="special">&lt;S-Tab&gt;</code> mapping will work only if Vim receives the correct
 key sequence. This is mostly the case with GUI Vim.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:inoremap</code> 
      <code class="badlink">:nnoremap</code> 
@@ -5236,7 +5037,7 @@ The <code class="badlink">'compatible'</code> option must be reset:
 <code class="example"></code>
 <code class="example">    :set nocompatible</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'cpoptions'</code> 
      <code class="badlink">'compatible'</code> 
@@ -5254,7 +5055,7 @@ You can also try the following command:
 
 There are also other ways to do this.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">map_bar</code> 
 
@@ -5267,7 +5068,7 @@ Instead of using the `:map lhs rhs` command, use the `:noremap lhs rhs`
 command. For abbreviations, use "noreabbrev lhs rhs". The "nore" prefix
 prevents the mapping or abbreviation from being expanded again.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:noremap</code> 
      <code class="badlink">:noreabbrev</code> 
@@ -5291,7 +5092,7 @@ the next key. If the <code class="badlink">'timeout'</code> option is set (which
 Vim will timeout after waiting for the period specified with the
 <code class="badlink">'timeoutlen'</code> option (default is 1 second).
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">map-typing</code> 
      <code class="badlink">'timeoutlen'</code> 
@@ -5326,7 +5127,7 @@ the visual mode and displayed on the command line. If the visual range is
 not removed using <code class="special">&lt;C-U&gt;</code>, then the output from the external command will
 replace the visually selected text.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:vmap</code> 
      <code class="badlink">quote_quote</code> 
@@ -5343,7 +5144,7 @@ distinguish between the <code class="keystroke">CTRL-I</code> and the <code clas
 key, the <code class="special">&lt;Tab&gt;</code> key is also mapped (and vice versa). The same restriction
 applies for the <code class="keystroke">CTRL-[</code> key and the <code class="special">&lt;Esc&gt;</code> key.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">keycodes</code> 
 
@@ -5421,7 +5222,7 @@ insert mode, these strategies can be used:
 <code class="example">    :nnoremap zC zC&lt;C-\&gt;&lt;C-N&gt;VzCzz</code>
 
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">i_CTRL-O</code> 
      <code class="badlink">map_bar</code> 
@@ -5442,7 +5243,7 @@ following abbreviation can be used to correct "teh" with "the":
 Vim supports abbreviations in insert mode, replace mode and command-line
 mode.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">24.7</code> 
      <code class="badlink">abbreviations</code> 
@@ -5464,7 +5265,7 @@ the following text:
 </section><hr class="singleline" /><section class=inner>
 </section><hr class="singleline" /><section class=inner>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">abbreviations</code> 
 
@@ -5488,7 +5289,7 @@ Now, define your abbreviations using the new "Iabbr" command instead of the
 builtin  <code class="badlink">:iabbrev</code>  command. With this command, after expanding the
 abbreviated text, the next typed space character will be discarded.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">abbreviations</code> 
 
@@ -5511,7 +5312,7 @@ Some other forms of the above abbreviation are listed below:
 <code class="example">    iabbrev hml  &lt;C-R&gt;=strftime("%d/%m/%y %H:%M:%S")&lt;CR&gt;</code>
 <code class="example">    iabbrev hms  &lt;C-R&gt;=strftime("%H:%M:%S")&lt;CR&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">strftime()</code> 
      <code class="badlink">i_CTRL-R</code> 
@@ -5522,7 +5323,7 @@ For more information, read:
 You can prevent an abbreviation from expanding in insert mode by typing
 <code class="keystroke">CTRL-V</code> before the character after the abbreviated word.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">abbreviations</code> 
 
@@ -5536,7 +5337,7 @@ For more information, read:
 You can repeat the last editing operation using the "." command. This will
 repeat the last simple change like a insert, delete, change, paste, etc.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">04.3</code> 
      <code class="badlink">single-repeat</code> 
@@ -5561,7 +5362,7 @@ command line argument to play it back:
 <code class="example"></code>
 <code class="example">    $ vim -s &lt;file_name&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">10.1</code> 
      <code class="badlink">recording</code> 
@@ -5578,7 +5379,7 @@ modify the register. For example:
 <code class="example"></code>
 <code class="example">    :let @a = "iHello World\&lt;Esc&gt;"</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">recording</code> 
      <code class="badlink">10.1</code> 
@@ -5597,7 +5398,7 @@ set of key sequences using qa ..... q. The recorded key sequences are
 stored in the register "a". You can paste the contents of register "a"
 using "ap.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">recording</code> 
      <code class="badlink">10.1</code> 
@@ -5613,7 +5414,7 @@ key sequence, when the yank is performed, register 0 is overwritten with
 the yanked text. So your recording stored in register 0 is lost. You have
 to use some other register.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">registers</code> 
 
@@ -5629,7 +5430,7 @@ read-only file:
 <code class="example"></code>
 <code class="example">    :autocmd FileChangedRO * call MyCheckoutFunction()</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">FileChangedRO</code> 
 
@@ -5641,7 +5442,7 @@ when entering a buffer. For example:
 <code class="example"></code>
 <code class="example">    :autocmd BufEnter *.c set formatoptions=croqt</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">BufEnter</code> 
 
@@ -5653,7 +5454,7 @@ when entering a window. For example:
 <code class="example"></code>
 <code class="example">    :autocmd WinEnter *.c call MyFunction()</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">WinEnter</code> 
 
@@ -5665,7 +5466,7 @@ You can use the special words <code class="special">&lt;afile&gt;</code> or <cod
 name of the file or the buffer number for which the autocommand is
 executed.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:&lt;afile&gt;</code> 
      <code class="badlink">:&lt;abuf&gt;</code> 
@@ -5680,7 +5481,7 @@ the modified buffers whenever Vim loses focus:
 <code class="example"></code>
 <code class="example">    :autocmd FocusLost * wall</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">FocusLost</code> 
      <code class="badlink">:wall</code> 
@@ -5693,7 +5494,7 @@ exits. For example,
 <code class="example"></code>
 <code class="example">    :autocmd VimLeave * call MyCleanupFunction()</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">VimLeave</code> 
 
@@ -5716,7 +5517,7 @@ To disable the syntax highlighting, you can use the following command:
 <code class="example"></code>
 <code class="example">    :syntax off</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">06.1</code> 
      <code class="badlink">06.4</code> 
@@ -5747,7 +5548,7 @@ supported only in the Motif or Athena versions:
 <code class="example"></code>
 <code class="example">    $ gvim -foreground Black -background Wheat</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:highlight</code> 
      <code class="badlink">.Xdefaults</code> 
@@ -5761,7 +5562,7 @@ the highlight colors to suit a dark/light background:
 <code class="example"></code>
 <code class="example">    :set background=dark</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'background'</code> 
      <code class="badlink">06.2</code> 
@@ -5781,7 +5582,7 @@ To change the color modify the LineNr highlight group. For example:
 
 This will give red numbers on a black background in GVIM.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:highlight</code> 
 
@@ -5794,7 +5595,7 @@ visually selected block:
 <code class="example"></code>
 <code class="example">    :highlight Visual guibg=red</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:highlight</code> 
      <code class="badlink">hl-Visual</code> 
@@ -5813,7 +5614,7 @@ The "NonText" highlighting group is used for "eol", "extends" and
 "precedes" settings in the <code class="badlink">'listchars'</code> option.  The "SpecialKey"
 highlighting group is used for the "tab" and "trail" settings.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'listchars'</code> 
      <code class="badlink">hl-NonText</code> 
@@ -5828,7 +5629,7 @@ You can specify the color scheme using the  <code class="badlink">:colorscheme</
 <code class="example"></code>
 <code class="example">    colorscheme evening</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:colorscheme</code> 
 
@@ -5847,7 +5648,7 @@ You can also use the command:
 
 <code class="note">Note </code>that this might considerably slow down the screen refreshing.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:syn-sync</code> 
      <code class="badlink">:syn-sync-first</code> 
@@ -5870,7 +5671,7 @@ matches in comments. This uses the % command to jump to corresponding
 items. Though both plugins provide similar functions they are unrelated
 and work differently.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">matchparen</code> 
      <code class="badlink">'matchpairs'</code> 
@@ -5885,7 +5686,7 @@ highlighting:
 <code class="example"></code>
 <code class="example">    :highlight clear comment</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">ft-c-syntax</code> 
 
@@ -5899,7 +5700,7 @@ changes. Instead you should create a file under the ~/.vim/after/syntax
 directory with the same name as the original syntax file and add your
 additions to this file.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">mysyntaxfile-add</code> 
      <code class="badlink">'runtimepath'</code> 
@@ -5915,7 +5716,7 @@ example, to replace the c.vim syntax file in a Unix system, place the new
 c.vim in the ~/.vim/syntax directory. In a MS-Windows system, place the new
 syntax file in the $HOME/vimfiles/syntax or $VIM/vimfiles/syntax directory.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">mysyntaxfile-replace</code> 
      <code class="badlink">44.11</code> 
@@ -5939,7 +5740,7 @@ column:
 which highlights 2 columns after the current <code class="badlink">'textwidth'</code> setting
 (alternatively, you can use the exact column number).
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:match</code> 
      <code class="badlink">/\%v</code> 
@@ -5956,7 +5757,7 @@ with the Vim syntax highlighting. Use the following command:
 <code class="example"></code>
 <code class="example">    :TOhtml</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">convert-to-HTML</code> 
      <code class="badlink">:TOhtml</code> 
@@ -5967,7 +5768,7 @@ For more information, read:
 You can list the definition of all the current highlight groups using the
  <code class="badlink">:highlight</code>  (without any arguments) ex command.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:highlight</code> 
 
@@ -5985,7 +5786,7 @@ See the wiki for a comprehensive solution:
 
     <a href="http://vim.wikia.com/wiki/Different_syntax_highlighting_within_regions_of_a_file">http://vim.wikia.com/wiki/Different_syntax_highlighting_within_regions_of_a_file</a>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:syn-include</code> 
      <code class="badlink">sh-awk</code> 
@@ -6001,7 +5802,7 @@ sourced by Vim:
 <code class="example"></code>
 <code class="example">    :scriptnames</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:scriptnames</code> 
 
@@ -6012,7 +5813,7 @@ Vim has built-in support for a primitive debugger to debug Vim plugins and
 scripts. Using this debugger you can set breakpoints and step through the
 plugin functions.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">debug-scripts</code> 
      <code class="badlink">-D</code> 
@@ -6025,7 +5826,7 @@ modified a Vim option. For example:
 <code class="example"></code>
 <code class="example">    :verbose set textwidth?</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:set-verbose</code> 
      <code class="badlink">:verbose</code> 
@@ -6039,7 +5840,7 @@ You can use the  <code class="badlink">:messages</code>  command to display the 
 <code class="example"></code>
 <code class="example">    :messages</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:messages</code> 
      <code class="badlink">:echoerr</code> 
@@ -6055,7 +5856,7 @@ letter and don't contain a lower case letter. For this to work, the
 <code class="badlink">'viminfo'</code> option must contain the "!" flag. Vim will store the variables in
 the viminfo file.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'viminfo'</code> 
      <code class="badlink">viminfo-file</code> 
@@ -6067,7 +5868,7 @@ For more information, read:
 You can use the  <code class="badlink">:startinsert</code>  command to start the insert mode from inside
 a Vim function.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:startinsert</code> 
 
@@ -6093,7 +5894,7 @@ You can also use the following command to change the cursor position:
 <code class="example"></code>
 <code class="example">        exe "normal! " . lnum . "G" . col . "|"</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">cursor()</code> 
      <code class="badlink">bar</code> 
@@ -6113,7 +5914,7 @@ environment variable using the $env_var syntax:
 <code class="example">    if $EDITOR == 'vi'</code>
 <code class="example">    endif</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">expr-env</code> 
 
@@ -6127,7 +5928,7 @@ environment variable.
 <code class="example">    if exists("$MY_ENV_VAR")</code>
 <code class="example">    endif</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">exists()</code> 
      <code class="badlink">expr-env</code> 
@@ -6156,7 +5957,7 @@ the following command:
 The above command will store the output of the "ls" command into
 the register "a".
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:call</code> 
      <code class="badlink">:echo</code> 
@@ -6175,7 +5976,7 @@ You can use the  <code class="badlink">:normal!</code>  command in your script t
 command. This will use the standard functionality of the normal mode
 command and will not use the user-defined mapping.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:normal</code> 
 
@@ -6207,7 +6008,7 @@ one shown below:
 <code class="example">    :vmap &lt;F3&gt; "*y:call ...</code>
 
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">gv</code> 
      <code class="badlink">:normal</code> 
@@ -6225,7 +6026,7 @@ You can use the  <code class="badlink">:execute</code>  command to evaluate the 
 <code class="example"></code>
 <code class="example">    :execute '%s/mytext/' . myvar . '/'</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:execute</code> 
 
@@ -6233,7 +6034,7 @@ You can also use "\=" in the substitute command to evaluate the variable:
 <code class="example"></code>
 <code class="example">    :%s/mytext/\=myvar/</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">sub-replace-special</code> 
 
@@ -6247,7 +6048,7 @@ evaluate the variable into the corresponding value. For example:
 <code class="example"></code>
 <code class="example">    :execute "buffer " . bno</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:execute</code> 
 
@@ -6273,7 +6074,7 @@ the "old_tw" variable, you can use the following command:
 <code class="example"></code>
 <code class="example">    :let &amp;tw = old_tw</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">expr-option</code> 
      <code class="badlink">:let-option</code> 
@@ -6286,7 +6087,7 @@ You can use the following command to format the just inserted text:
 <code class="example"></code>
 <code class="example">    :normal '[=']</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'[</code> 
      <code class="badlink">']</code> 
@@ -6316,7 +6117,7 @@ character under the cursor:
 
 Note, that the above commands will change the '&lt; and '&gt; marks.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">getline()</code> 
      <code class="badlink">col()</code> 
@@ -6335,7 +6136,7 @@ With some commands, you can use the file name modifiers directly:
 <code class="example">    :!gcc -o %:r.o %</code>
 <code class="example">    :!xpdf %&lt;.pdf</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">filename-modifiers</code> 
      <code class="badlink">expand()</code> 
@@ -6350,7 +6151,7 @@ file:
 <code class="example"></code>
 <code class="example">    :echo expand("%:t")</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">filename-modifiers</code> 
 
@@ -6364,7 +6165,7 @@ in insert mode:
 
 Note, that this will only insert the return value of the function.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">i_CTRL-R</code> 
      <code class="badlink">i_CTRL-R_CTRL-R</code> 
@@ -6382,7 +6183,7 @@ the result:
 
 You can also use "!" ex-command to run an external command.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">system()</code> 
      <code class="badlink">:!</code> 
@@ -6395,7 +6196,7 @@ For more information, read:
 You can use the predefined Vim v:shell_error variable to get the return
 status of the last run shell command.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">v:shell_error</code> 
 
@@ -6413,7 +6214,7 @@ From a Vim script, you can check the value of the <code class="badlink">'modifie
 <code class="example">        echo "File is modified"</code>
 <code class="example">    endif</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'modified'</code> 
 
@@ -6428,7 +6229,7 @@ character in a normal mode command:
 <code class="example">    :execute "normal \&lt;CR&gt;"</code>
 <code class="example">    :execute "normal ixxx\&lt;Esc&gt;"</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:execute</code> 
      <code class="badlink">expr-quote</code> 
@@ -6446,7 +6247,7 @@ character ("\") at the start of the next line. For example,
 <code class="example">                \n:&gt;,</code>
 <code class="example">                \fb:-</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">line-continuation</code> 
 
@@ -6467,7 +6268,7 @@ To call a Vim function, you should use the  <code class="badlink">:call</code>  
 <code class="example"></code>
 <code class="example">    :call Myfunc()</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:call</code> 
      <code class="badlink">:execute</code> 
@@ -6488,7 +6289,7 @@ of the following commands:
 or
     :exe @a
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:@</code> 
 
@@ -6502,7 +6303,7 @@ function/mapping are treated as one single operation. When you undo the
 last operation by pressing "u", all the changes made by the
 function/mapping are reversed.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">undo-redo</code> 
      <code class="badlink">:map-undo</code> 
@@ -6517,7 +6318,7 @@ script and cannot be called from other scripts. To define a function in a
 script/plugin, so that it can be called from other plugins/scripts, define
 the function without the s: prefix.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">script-variable</code> 
      <code class="badlink">script-local</code> 
@@ -6530,7 +6331,7 @@ For more information, read:
 No. It is not possible to reverse or undo all the commands executed by
 sourcing a script.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:source</code> 
 
@@ -6563,7 +6364,7 @@ type of files. For example, to set the <code class="badlink">'textwidth'</code> 
 <code class="example"></code>
 <code class="example">    autocmd BufRead *.txt setlocal textwidth=80</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">filetype-plugin</code> 
      <code class="badlink">add-filetype-plugin</code> 
@@ -6601,7 +6402,7 @@ directories are listed below:
     syntax/     syntax files
     tutor/      files for vimtutor
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">your-runtime-dir</code> 
      <code class="badlink">'runtimepath'</code> 
@@ -6655,7 +6456,7 @@ the new file.  If you placed the file in the $VIMRTUNTIME/ftplugin runtime
 directory, then Vim will first source the new file and then will source the
 existing filetype plugin file.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">ftplugin-overrule</code> 
      <code class="badlink">filetype-plugin</code> 
@@ -6674,7 +6475,7 @@ the plugins:
 <code class="example"></code>
 <code class="example">    $ vim --noplugin</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'loadplugins'</code> 
      <code class="badlink">--noplugin</code> 
@@ -6692,7 +6493,7 @@ You can turn off loading the filetype plugins using:
 <code class="example"></code>
 <code class="example">    filetype plugin off</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:filetype-plugin-on</code> 
      <code class="badlink">:filetype-plugin-off</code> 
@@ -6715,7 +6516,7 @@ file with the same name as the original filetype plugin in the
 c.vim filetype plugin, create a c.vim file in the ~/.vim/after/ftplugin
 directory and add your preferences in this file.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">ftplugin-overrule</code> 
      <code class="badlink">ftplugins</code> 
@@ -6729,7 +6530,7 @@ your .vimrc file:
 <code class="example"></code>
 <code class="example">    let g:loaded_netrw = 1</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">netrw</code> 
 
@@ -6756,7 +6557,7 @@ in the ~/.vim directory (or in one of the directories specified in the
 <code class="example">        au! BufRead,BufNewFile *.x       setfiletype c</code>
 <code class="example">    augroup END</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">new-filetype</code> 
      <code class="badlink">43.2</code> 
@@ -6776,7 +6577,7 @@ If you want to only enable automatic C indentation, then use:
 <code class="example"></code>
 <code class="example">    :set cindent</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'cindent'</code> 
      <code class="badlink">C-indenting</code> 
@@ -6788,7 +6589,7 @@ For more information, read:
 You can configure the Vim C indentation by modifying the value of the
 <code class="badlink">'cinoptions'</code>, <code class="badlink">'cinkeys'</code> and <code class="badlink">'cinwords'</code> options.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'cindent'</code> 
      <code class="badlink">'cinoptions'</code> 
@@ -6817,7 +6618,7 @@ Also, check the setting for the following options:
 <code class="example">    :set smartindent?</code>
 <code class="example">    :set indentexpr?</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'cindent'</code> 
      <code class="badlink">:filetype-indent-off</code> 
@@ -6834,7 +6635,7 @@ characters used for the automatic indentation:
 <code class="example"></code>
 <code class="example">    :set shiftwidth=4</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'shiftwidth'</code> 
 
@@ -6846,7 +6647,7 @@ You can use the "[d" command to display the definition of a macro, "[i"
 command to display the definition of a variable, "gd" to goto the local
 declaration of a variable and "gD" to go to the global Declaration.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">[d</code> 
      <code class="badlink">[i</code> 
@@ -6863,7 +6664,7 @@ For more information, read:
 You can use "[{" command to jump to the beginning of the code block and "]}"
 to jump to the end of the code block from inside the block.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">[{</code> 
      <code class="badlink">]}</code> 
@@ -6896,7 +6697,7 @@ The default filetype plugin for C and C++ files
 then you can add the above lines to the
 ~/.vim/after/ftplugin/cpp.vim file.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">formatoptions</code> 
      <code class="badlink">30.6</code> 
@@ -6914,7 +6715,7 @@ line. Enter the comment character and then stop the insert mode by pressing
 <code class="special">&lt;Esc&gt;</code>. Vim will automatically insert the entered characters at the
 beginning of all the selected lines.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">visual-block</code> 
      <code class="badlink">blockwise-operators</code> 
@@ -6945,7 +6746,7 @@ Another approach is to use the following command:
 This command will search for the header file in the directories specified
 in the <code class="badlink">'path'</code> option.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">cmdline-special</code> 
      <code class="badlink">filename-modifiers</code> 
@@ -6966,7 +6767,7 @@ You may also want to add the "c" flag to auto-wrap comments using the
 <code class="example"></code>
 <code class="example">    :set formatoptions=croq</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">30.6</code> 
      <code class="badlink">format-comments</code> 
@@ -6982,7 +6783,7 @@ For more information, read:
 You can use the  <code class="badlink">:make</code>  command to build programs from Vim. The  <code class="badlink">:make</code> 
 command runs the program specified by the <code class="badlink">'makeprg'</code> option.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">30.1</code> 
      <code class="badlink">:make_makeprg</code> 
@@ -7001,7 +6802,7 @@ You can use the  <code class="badlink">:copen</code>  or  <code class="badlink">
 that contains the compiler output. You can select different error lines
 from this window and jump to the corresponding line in the source code.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:copen</code> 
      <code class="badlink">:cwindow</code> 
@@ -7029,7 +6830,7 @@ occurences by using:
 <code class="example"></code>
 <code class="example">    :cdo :%s/Foobar/Foobaz | upd</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:cfdo</code> 
      <code class="badlink">:cdo</code> 
@@ -7064,7 +6865,7 @@ You can use the following commands:
 <code class="example">        endif</code>
 <code class="example">    endfun</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'foldexpr'</code> 
      <code class="badlink">fold-expr</code> 
@@ -7078,7 +6879,7 @@ folds above the specified value.
 <code class="example"></code>
 <code class="example">    :set foldlevelstart=99</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'foldlevelstart'</code> 
      <code class="badlink">'foldlevel'</code> 
@@ -7098,7 +6899,7 @@ To start editing with all the folds opened, you can use
 <code class="example"></code>
 <code class="example">    :set foldlevelstart=999</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'foldlevelstart'</code> 
 
@@ -7111,7 +6912,7 @@ to a value greater than zero:
 <code class="example"></code>
 <code class="example">    :set foldcolumn=2</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'foldcolumn'</code> 
 
@@ -7121,7 +6922,7 @@ For more information, read:
 You can use the <code class="badlink">'foldtext'</code> option to change the text displayed for a closed
 fold.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'foldtext'</code> 
      <code class="badlink">fold-foldtext</code> 
@@ -7135,7 +6936,7 @@ You can use the  <code class="badlink">:mkview</code>  command to store manually
 you can use the  <code class="badlink">:loadview</code>  command to restore the folds. For this to work,
 the <code class="badlink">'viewoptions'</code> must contain "folds".
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">28.4</code> 
      <code class="badlink">:mkview</code> 
@@ -7189,7 +6990,7 @@ To interact between the terminal and Vim, Vim implements several
 interfaces using term_sendkeys(), terminal-api and the client-server
 mechanism.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">terminal</code> 
      <code class="badlink">mapmode-t</code> 
@@ -7204,7 +7005,7 @@ to an external command. For example:
 <code class="example"></code>
 <code class="example">    :!dict &lt;cword&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:&lt;cword&gt;</code> 
 
@@ -7222,7 +7023,7 @@ following command:
 <code class="example"></code>
 <code class="example">    :0r !ls</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:r!</code> 
 
@@ -7255,7 +7056,7 @@ range of lines, you can use
 
 The above command will pipe the lines 10-20 to the sort command.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:range!</code> 
      <code class="badlink">10.9</code> 
@@ -7297,7 +7098,7 @@ script, supplied as part of the standard Vim distribution. This shell
 script uses the $VIMRUNTIME/macros/less.vim Vim script to provide less like
 key bindings.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">less</code> 
 
@@ -7314,7 +7115,7 @@ You can also press the K key to run the program specified by the
 <code class="badlink">'keywordprg'</code> option with the keyword under the cursor. By default,
 <code class="badlink">'keywordprg'</code> is set to run man on the keyword under the cursor.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">ft-man-plugin</code> 
      <code class="badlink">K</code> 
@@ -7326,7 +7127,7 @@ For more information, read:
 By default, the Vim diff support uses the <code class="badlink">'diff'</code> command. You can change
 this by changing the <code class="badlink">'diffexpr'</code> option.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">diff-diffexpr</code> 
      <code class="badlink">'diffexpr'</code> 
@@ -7341,7 +7142,7 @@ and use the diff mode without folding:
 
 If you like vertically split windows, then replace "-o" with "-O".
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">vimdiff</code> 
 
@@ -7378,7 +7179,7 @@ to bringup a dialog which will help you in changing the guifont:
 You can also use the -font Vim command line option to specify the font used
 for normal text.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'guifont'</code> 
      <code class="badlink">'guifontset'</code> 
@@ -7399,7 +7200,7 @@ of the GUI Vim window. For example:
 <code class="example"></code>
 <code class="example">    $ gvim -geometry 80x25+100+300</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">31.4</code> 
      <code class="badlink">-geom</code> 
@@ -7412,7 +7213,7 @@ option:
 <code class="example"></code>
 <code class="example">    :set guioptions+=b</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'guioptions'</code> 
      <code class="badlink">gui-horiz-scroll</code> 
@@ -7426,7 +7227,7 @@ appear in the left side.
 <code class="example">    :set guioptions+=l</code>
 <code class="example">    :set guioptions-=r</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'guioptions'</code> 
      <code class="badlink">gui-scrollbars</code> 
@@ -7439,7 +7240,7 @@ You can remove the Vim menubar by removing the "m" flag from the
 <code class="example"></code>
 <code class="example">    :set guioptions-=m</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'guioptions'</code> 
 
@@ -7453,7 +7254,7 @@ select a menu item:
 <code class="example"></code>
 <code class="example">    :set winaltkeys=no</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'winaltkeys'</code> 
      <code class="badlink">:simalt</code> 
@@ -7473,7 +7274,7 @@ website:
 
     <a href="http://vim.wikia.com/wiki/VimTip320">http://vim.wikia.com/wiki/VimTip320</a>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">mark-motions</code> 
 
@@ -7486,7 +7287,7 @@ You can set the <code class="badlink">'browsedir'</code> option to the default d
 <code class="example"></code>
 <code class="example">    :set browsedir='&lt;your_dir&gt;'</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'browsedir'</code> 
 
@@ -7500,7 +7301,7 @@ console dialogs instead of GUI dialogs:
 <code class="example"></code>
 <code class="example">    :set guioptions+=c</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'guioptions'</code> 
 
@@ -7519,7 +7320,7 @@ By default, GUI Vim will disconnect from the program that started Vim. With
 the '-f' option, GUI Vim will not disconnect from the program that started
 it.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">gui-fork</code> 
      <code class="badlink">-f</code> 
@@ -7532,7 +7333,7 @@ Vim supports only fixed width (mono-spaced) fonts. Proportional fonts are
 not supported.  In the "Select Font" dialog, only fixed width fonts will be
 displayed.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">font-sizes</code> 
      <code class="badlink">'guifont'</code> 
@@ -7545,7 +7346,7 @@ command-line mode:
 <code class="example"></code>
 <code class="example">    :set mouse+=c</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">mouse-using</code> 
      <code class="badlink">gui-mouse</code> 
@@ -7561,7 +7362,7 @@ button:
 <code class="example">    :map  &lt;MiddleMouse&gt; &lt;Nop&gt;</code>
 <code class="example">    :map! &lt;MiddleMouse&gt; &lt;Nop&gt;</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">gui-mouse-mapping</code> 
      <code class="badlink">&lt;Nop&gt;</code> 
@@ -7586,7 +7387,7 @@ Vim window. The <code class="badlink">'lines'</code> and <code class="badlink">'
 and characters to use for the height and the width of the window
 respectively.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">31.4</code> 
      <code class="badlink">:winpos</code> 
@@ -7641,7 +7442,7 @@ following commands:
 
 You have to use a proper terminal emulator like xterm with correct TERM
 settings (TERM=xterm) and a correct terminfo/termcap file.
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'term'</code> 
 
@@ -7663,7 +7464,7 @@ name. You can try using the "stty" command:
 where, you have to enter the ^H character by pressing the <code class="keystroke">CTRL-V</code> key and
 then the <code class="keystroke">CTRL-H</code> key. Also check the value of your <code class="badlink">'backspace'</code> setting.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:fixdel</code> 
      <code class="badlink">Linux-backspace</code> 
@@ -7681,7 +7482,7 @@ feature, add the following line to your .vimrc file:
 <code class="example"></code>
 <code class="example">    :set t_ti= t_te=</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'restorescreen'</code> 
      <code class="badlink">xterm-screens</code> 
@@ -7706,7 +7507,7 @@ You can also set the <code class="badlink">'clipboard'</code> option to
 
 This has the same effect as using the -X command-line argument.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">-X</code> 
      <code class="badlink">'clipboard'</code> 
@@ -7737,7 +7538,7 @@ directory. To further analyse this, open the file profile.log and run:
 <code class="example">    :enew</code>
 <code class="example">    :call setline('.', ['count total (s)   self (s)  script']+map(copy(timings), 'printf("%5u %9s   %8s  %s", v:val[1], v:val[2], v:val[3], v:val[0])'))</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">--startuptime</code> 
      <code class="badlink">profiling</code> 
@@ -7750,7 +7551,7 @@ For example:
 <code class="example"></code>
 <code class="example">    :set guicursor=a:blinkon0</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'guicursor'</code> 
 
@@ -7766,7 +7567,7 @@ example:
 
 The last line changes the font of all widgets.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">gui-gtk</code> 
 
@@ -7798,7 +7599,7 @@ When Vim is built with support for Python interface, you will have this
 problem. This is a known problem with the python thread library and Vim.  To
 solve this problem, use a Vim binary built without the Python interface.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">+python</code> 
      <code class="badlink">python</code> 
@@ -7825,7 +7626,7 @@ package to test the color setup. To use this script, follow these steps:
 <code class="example">    :e $VIMRUNTIME/syntax/colortest.vim</code>
 <code class="example">    :source %</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">06.2</code> 
      <code class="badlink">terminal-colors</code> 
@@ -7848,7 +7649,7 @@ of <code class="keystroke">CTRL-V</code> to start the blockwise visual mode. The
 <code class="keystroke">CTRL-Q</code> for staring the blockwise visual mode. So you can use <code class="keystroke">CTRL-Q</code> instead
 of <code class="keystroke">CTRL-V</code>.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">CTRL-V</code> 
      <code class="badlink">CTRL-V-alternative</code> 
@@ -7873,7 +7674,7 @@ the GUIEnter autocmd to maximize the Vim window on startup:
 <code class="example"></code>
 <code class="example">    autocmd GUIEnter * simalt ~x</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:simalt</code> 
      <code class="badlink">GUIEnter</code> 
@@ -7888,7 +7689,7 @@ Most probably, you used the mouse wheel to scroll the text in Vim. There is
 a known problem in using intellimouse mouse wheel with Vim. To avoid this
 problem, disable Universal scrolling support for Vim.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">intellimouse-wheel-problems</code> 
 
@@ -7956,7 +7757,7 @@ You have to download and use the OLE version of Vim (for example:
 gvim61ole.zip). This file also contains instructions on how to use Vim with
 Visual Studio.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">MSVisualStudio</code> 
 
@@ -7968,7 +7769,7 @@ by the VIM environment variable. If you are sharing this system with other
 users, then you can place the files in a directory and set the HOME
 environment variable to this directory.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">$HOME-use</code> 
      <code class="badlink">_vimrc</code> 
@@ -7991,7 +7792,7 @@ except on the day daylight saving time starts.
 This problem will go away the next day after the day the daylight saving
 time starts.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">W11</code> 
 
@@ -8007,7 +7808,7 @@ print your file:
 <code class="example">    :set printoptions=number:y</code>
 <code class="example">    :hardcopy</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'printoptions'</code> 
      <code class="badlink">:hardcopy</code> 
@@ -8019,7 +7820,7 @@ You can use the  <code class="badlink">:hardcopy</code>  command to print a file
 highlighting colors. You can also convert your file to a HTML file using
 the 2html.vim script and print the HTML file.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">syntax-printing</code> 
      <code class="badlink">2html.vim</code> 
@@ -8055,7 +7856,7 @@ the various Vim features. To list all the available options for the
 <code class="example"></code>
 <code class="example">    $ configure --help</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">install</code> 
 
@@ -8074,7 +7875,7 @@ to the configure script. For more information about all these options, run:
 <code class="example"></code>
 <code class="example">    $ ./configure --help</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">install-home</code> 
      <code class="badlink">install</code> 
@@ -8106,7 +7907,7 @@ makefiles. After successfully building the sources, you can copy the
 vim.exe or gvim.exe file to the desired directory along with the files from
 the runtime archive.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">install</code> 
 
@@ -8119,7 +7920,7 @@ runtime package. You need to download and install the Vim runtime package.
 For example, for MS-Windows, the name of the Vim 6.1 runtime package is
 vim61rt.zip.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">install</code> 
 
@@ -8146,7 +7947,7 @@ function:
 <code class="example">        " Set up some menus</code>
 <code class="example">    endif</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:version</code> 
      <code class="badlink">+feature-list</code> 
@@ -8158,7 +7959,7 @@ For more information, read:
 Yes. You can build Vim by optionally enabling/disabling many of the
 features including GUI.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">install</code> 
 
@@ -8271,7 +8072,7 @@ to track down the required missing packages using method 4 from above. But
 usually, this works good enough for most people and you won't have to
 bother with the fourth method.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:version</code> 
      <code class="badlink">+feature-list</code> 
@@ -8294,7 +8095,7 @@ You can also use the "-b" command-line option to edit a binary file:
 You can also use the xxd utility (part of the Vim distribution) to edit
 binary files.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">23.4</code> 
      <code class="badlink">edit-binary</code> 
@@ -8312,7 +8113,7 @@ following command:
 <code class="example"></code>
 <code class="example">    :set visualbell t_vb=</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'visualbell'</code> 
      <code class="badlink">'errorbells'</code> 
@@ -8325,7 +8126,7 @@ For more information, read:
 You can use the "ga" command to display the ascii value of a displayed
 character.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">ga</code> 
      <code class="badlink">:ascii</code> 
@@ -8336,7 +8137,7 @@ For more information, read:
 You cannot use zero as a count for a Vim command, as "0" is a command on
 its own, moving to the first column of the line.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">0</code> 
      <code class="badlink">count</code> 
@@ -8349,7 +8150,7 @@ You can disable the Vim welcome screen, by adding the "I" flag to the
 <code class="example"></code>
 <code class="example">    :set shortmess+=I</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:intro</code> 
      <code class="badlink">'shortmess'</code> 
@@ -8368,7 +8169,7 @@ You can also increase the command height by setting the <code class="badlink">'c
 <code class="example"></code>
 <code class="example">    :set cmdheight=2</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">hit-enter</code> 
      <code class="badlink">avoid-hit-enter</code> 
@@ -8411,7 +8212,7 @@ following command:
 <code class="example"></code>
 <code class="example">    $ vim -s mycmds.txt *.pl</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">-c</code> 
      <code class="badlink">-s</code> 
@@ -8429,7 +8230,7 @@ followed by any number of normal mode commands and then press <code class="speci
 back to the insert mode. (This only works, when the <code class="badlink">'insertmode'</code> option
 is set).
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">i_CTRL-O</code> 
      <code class="badlink">i_CTRL-L</code> 
@@ -8448,7 +8249,7 @@ you can use the following command:
 <code class="example"></code>
 <code class="example">    $ vim + +startinsert! myfile.txt</code>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:startinsert</code> 
 
@@ -8480,7 +8281,7 @@ mouse, then Vim doesn't control the mouse and xterm controls the
 mouse.
 
 In the GUI mode, Copy and Paste should just work, depending on the <code class="badlink">'mouse'</code>
-setting. For more information, read:
+setting. 更多详情请阅读:
 
      <code class="badlink">'clipboard'</code> 
      <code class="badlink">x11-selection</code> 
@@ -8530,7 +8331,7 @@ sites:
     <a href="http://www.unicode.org">http://www.unicode.org</a>
     <a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html">https://www.cl.cam.ac.uk/~mgk25/unicode.html</a>
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">multibyte</code> 
      <code class="badlink">usr_45.txt</code> 
@@ -8543,7 +8344,7 @@ The most important are the various "encoding" options, i.e., <code class="badlin
 <code class="badlink">'fileencoding'</code>, <code class="badlink">'fileencodings'</code> and <code class="badlink">'termencoding'</code>. The boolean option
 <code class="badlink">'bomb'</code> is also significant.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'encoding'</code> 
      <code class="badlink">'fileencoding'</code> 
@@ -8558,7 +8359,7 @@ Basically, the <code class="badlink">'encoding'</code> option defines how Vim wi
 internally.  However, all Unicode encodings are represented internally as
 utf-8 and converted (if necessary) when reading and writing.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'encoding'</code> 
 
@@ -8572,7 +8373,7 @@ for big-endian. If you create a file with an encoding of ucs-2 or ucs-4
 without specifying endianness, Vim will use what is typical of your
 machine.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">encoding-names</code> 
      <code class="badlink">encoding-values</code> 
@@ -8586,7 +8387,7 @@ will check for a byte-order mark. When writing a file, if the <code class="badli
 is set, Vim will write a byte-order mark on files whose encoding warrants
 it.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'fileencodings'</code> 
      <code class="badlink">'bomb'</code> 
@@ -8598,7 +8399,7 @@ The <code class="badlink">'fileencoding'</code> option defines the particular en
 use to write a file. If empty, then the value of the <code class="badlink">'encoding'</code> option is
 the default.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'fileencoding'</code> 
 
@@ -8616,7 +8417,7 @@ When Vim opens a file, it checks it against the encodings listed in
 then Vim sets <code class="badlink">'fileencoding'</code> to the null string, i.e., the value of
 <code class="badlink">'encoding'</code> will be used.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'fileencodings'</code> 
      <code class="badlink">'encoding'</code> 
@@ -8628,7 +8429,7 @@ The <code class="badlink">'termencoding'</code> option defines how your keyboard
 type.  If empty, Vim assumes that it has the same value as <code class="badlink">'encoding'</code>.
 Usually it should be set to something that matches your locale.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'termencoding'</code> 
      <code class="badlink">locale</code> 
@@ -8642,7 +8443,7 @@ absence of a byte-order mark at the start of the file. When writing, Vim
 will write a byte-order mark if the <code class="badlink">'bomb'</code> option is set. You may set or
 unset it manually do make Vim write, or not write, the b.o.m.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">'bomb'</code> 
 
@@ -8668,7 +8469,7 @@ Several methods are available:
 - Any character can be entered by using a <code class="keystroke">CTRL-V</code> prefix (or <code class="keystroke">CTRL-Q</code> if
   <code class="keystroke">CTRL-V</code> is remapped to paste from the clipboard).
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">digraphs</code> 
      <code class="badlink">'digraph'</code> 
@@ -8683,7 +8484,7 @@ the  <code class="badlink">:digraphs</code>  command to list the currently defin
 Alternatively, the help file contains the complete set of all digraphs.
 So you can easily search that list there.
 
-For more information, read:
+更多详情请阅读:
 
      <code class="badlink">:digraphs</code> 
      <code class="badlink">'encoding'</code> 
