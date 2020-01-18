@@ -253,20 +253,17 @@ https://vimhelp.appspot.com/vim_faq.txt.html。
 |faq-16.7|  如何把命令放进命令历史而不执行它？
 |faq-16.8|  如何增加命令行的高度？
                                                                 *faq-viminfo*
-SECTION 17 - VIMINFO ~
-|faq-17.1|  When I invoke Vim, I get error messages about illegal characters
-	  in the viminfo file. What should I do to get rid of these
-	  messages?
-|faq-17.2|  How do I disable the viminfo feature?
-|faq-17.3|  How do I save and use Vim marks/commands across Vim sessions?
+第十七节 - VIMINFO~
+|faq-17.1|  启动 Vim 时，给出关于 viminfo 里非法字符的错误信息。如何才能去掉这
+	  些信息？
+|faq-17.2|  如何关闭 viminfo 特性？
+|faq-17.3|  如何保存和跨 Vim 会话使用 Vim 的位置标记/命令？
                                                         *faq-remote-editing*
-SECTION 18 - REMOTE EDITING ~
-|faq-18.1|  How do I open a file with existing instance of gvim? What
-	  happened to the Vim 5.x OpenWithVim.exe and SendToVim.exe files?
-|faq-18.2|  How do I send a command to a Vim server to write all buffers to
-	  disk?
-|faq-18.3|  Where can I get the documentation about the Vim remote server
-	  functionality?
+第十八节 - 远程编辑~
+|faq-18.1|  如何使用已有的 gvim 实例打开文件？Vim 5.x 的 OpenWithVim.exe 和
+	  SendToVim.exe 文件去哪里啦？
+|faq-18.2|  如何发送命令到 Vim 服务器去把所有缓冲区写回到盘上？
+|faq-18.3|  哪里有 Vim 远程服务器功能的文档？
                                                                 *faq-options*
 SECTION 19 - OPTIONS ~
 |faq-19.1|  How do I configure Vim in a simple way?
@@ -4153,14 +4150,13 @@ CTRL-F 来打开命令行窗口。命令行窗口里可用所有的 Vim 命令�
 
 =============================================================================
  								*faq-17*
-SECTION 17 - VIMINFO ~
+第十七节 - VIMINFO~
 
  								*faq-17.1*
-17.1. When I invoke Vim, I get error messages about illegal characters in
-      the viminfo file. What should I do to get rid of these messages?
+17.1. 启动 Vim 时，给出关于 viminfo 里非法字符的错误信息。如何才能去掉这些信
+      息？
 
-You can remove the $HOME/.viminfo or the $HOME/_viminfo file to get rid of
-these error messages.
+可以删除 $HOME/.viminfo 或 $HOME/_viminfo 文件来去掉这些错误信息。
 
 更多详情请阅读:
 
@@ -4170,12 +4166,10 @@ these error messages.
     |21.3|
 
  								*faq-17.2*
-17.2. How do I disable the viminfo feature?
+17.2. 如何关闭 viminfo 特性？
 
-By default, the viminfo feature is disabled. If the viminfo feature is
-enabled by a system-wide vimrc file, then you can disable the viminfo
-feature by setting the 'viminfo' option to an empty string in your local
-.vimrc file: >
+缺省 viminfo 特性是关闭的。如果有系统范围的 vimrc 文件打开了 viminfo 特性，可
+在局部的 .vimcrc 文件中设置 'viminfo' 选项为空串来关闭 viminfo 特性: >
 
     :set viminfo=""
 <
@@ -4184,16 +4178,14 @@ feature by setting the 'viminfo' option to an empty string in your local
     |'viminfo'|
 
  								*faq-17.3*
-17.3. How do I save and use Vim marks/commands across Vim sessions?
+17.3. 如何保存和跨 Vim 会话使用 Vim 的位置标记/命令？
 
-You can save and restore Vim marks across Vim sessions using the viminfo
-file. To use the viminfo file, make sure the 'viminfo' option is not empty.
-To save and restore Vim marks, the 'viminfo' option should not contain the
-"f" flag or should have a value greater than zero for the "f" option.
+可用 viminfo 文件来保存和跨 Vim 会话使用 Vim 的位置标记。要使用 viminfo 文件，
+确保 'viminfo' 选项非空。要保存和恢复 Vim 位置标记，'viminfo' 选项不应包含 "f"
+标志位或 "f" 选项的值应大于零。
 
-You can also use the viminfo file to synchronize the commandline history
-across different sessions using `:wvimfo` and `:rviminfo` commands together
-with the FocusGained and FocusLost autocommands: >
+也可用 viminfo 文件来在不同会话间同步命令行历史。为此，使用 `:wvimfo` 和
+`:rviminfo` 加上 FocusGained 或 FocusLost 自动命令: >
 
     augroup viminfo
         au!
@@ -4201,9 +4193,8 @@ with the FocusGained and FocusLost autocommands: >
         au FocusGained * rviminfo
     augroup end
 <
-Note, this will only work reliably, when Vim can detect the FocusLost
-and FocusGained autocommands correctly. This means it should work with
-GVim but might depend on your terminal for konsole vim.
+备注: 要使这段代码可靠地工作，Vim 应能正确检测 FocusLost 和 FocusGained 自动命
+令。这就是说 GVim 没问题，而控制台 vim 取决于你的终端。
 
 更多详情请阅读:
 
@@ -4217,30 +4208,29 @@ GVim but might depend on your terminal for konsole vim.
 
 =============================================================================
  								*faq-18*
-SECTION 18 - REMOTE EDITING ~
+第十八节 - 远程编辑~
 
  								*faq-18.1*
-18.1. How do I open a file with existing instance of gvim? What happened to
-      the Vim 5.x OpenWithVim.exe and SendToVim.exe files?
+18.1. 如何使用已有的 gvim 实例打开文件？Vim 5.x 的 OpenWithVim.exe 和
+      SendToVim.exe 文件去哪里啦？
 
-Starting with Vim6, the OLE version of OpenWithVim.exe and SendToVim.exe
-Vim utilities are replaced by the new client-server feature. To open the
-file j.txt with an existing instance of Gvim (MyVim), use: >
+从 Vim6 开始，OLE 版本的 OpenWithVim.exe 和 SendToVim.exe Vim 工具被新的客户-
+服务器特性代替了。要用已有的 Gvim 实例 (MyVim) 打开文件 j.txt，可用: >
 
     $ gvim --servername MyVim --remote-silent j.txt
 <
-To list the server names of all the currently running Vim instances, use >
+要列出当前运行的 Vim 实例的服务器名，可用 >
 
     $ vim --serverlist
 <
-To get more information about client-server feature, read
+要了解客户-服务器特性的详情，请阅读
 
     |client-server|
 
  								*faq-18.2*
-18.2. How do I send a command to a Vim server to write all buffers to disk?
+18.2. 如何发送命令到 Vim 服务器去把所有缓冲区写回到盘上？
 
-You can use the Vim remote server functionality to do this: >
+可用 Vim 远程服务器功能来完成: >
 
     $ gvim --servername myVIM --remote-send "<C-\><C-N>:wall<CR>"
 <
@@ -4251,11 +4241,9 @@ You can use the Vim remote server functionality to do this: >
     |:wall|
 
  								*faq-18.3*
-18.3. Where can I get the documentation about the Vim remote server
-      functionality?
+18.3. 哪里有 Vim 远程服务器功能的文档？
 
-You can get more information about the Vim remote server functionality by
-reading
+关于 Vim 远程服务器功能的文档的详情，请阅读
 
     |client-server|
 
