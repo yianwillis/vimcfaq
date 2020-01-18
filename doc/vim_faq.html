@@ -673,23 +673,19 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-36.11">faq-36.11</a>  Why shouldn't I modify the files in the system runtime
           directory?
                                                                 <b class="vimtag"> <a name="faq-unicode">faq-unicode</a> </b>
-<code class="section">SECTION 37 - UNICODE </code>
- <a href="vim_faq.html#faq-37.1">faq-37.1</a>   Is it possible to create Unicode files using Vim?
- <a href="vim_faq.html#faq-37.2">faq-37.2</a>   Which Vim settings are particularly important for editing Unicode
-          files?
- <a href="vim_faq.html#faq-37.3">faq-37.3</a>   What is the <code class="badlink">'encoding'</code> option?
- <a href="vim_faq.html#faq-37.4">faq-37.4</a>   How does Vim name the various Unicode encodings?
- <a href="vim_faq.html#faq-37.5">faq-37.5</a>   How does Vim specify the presence or absence of a byte-order
-          mark?
- <a href="vim_faq.html#faq-37.6">faq-37.6</a>   What is the <code class="badlink">'fileencoding'</code> option?
- <a href="vim_faq.html#faq-37.7">faq-37.7</a>   What is the <code class="badlink">'fileencodings'</code> option?
- <a href="vim_faq.html#faq-37.8">faq-37.8</a>   What is the <code class="badlink">'termencoding'</code> option?
- <a href="vim_faq.html#faq-37.9">faq-37.9</a>   What is the <code class="badlink">'bomb'</code> option?
- <a href="vim_faq.html#faq-37.10">faq-37.10</a>  Where can I find an example of a typical use of all these
-          options?
- <a href="vim_faq.html#faq-37.11">faq-37.11</a>  How can I insert Unicode characters into a file using Vim?
- <a href="vim_faq.html#faq-37.12">faq-37.12</a>  How can I know which digraphs are defined and for which
-          characters?
+<code class="section">第三十七节 - UNICODE</code>
+ <a href="vim_faq.html#faq-37.1">faq-37.1</a>   可以用 Vim 创建 Unicode 文件吗？
+ <a href="vim_faq.html#faq-37.2">faq-37.2</a>   什么 Vim 设置对编辑 Unicode 文件尤其重要？
+ <a href="vim_faq.html#faq-37.3">faq-37.3</a>   什么是 <code class="badlink">'encoding'</code> 选项？
+ <a href="vim_faq.html#faq-37.4">faq-37.4</a>   Vim 如何命名众多的 Unicode 编码？
+ <a href="vim_faq.html#faq-37.5">faq-37.5</a>   Vim 如何指定字节顺序标记存在与否？
+ <a href="vim_faq.html#faq-37.6">faq-37.6</a>   什么是 <code class="badlink">'fileencoding'</code> 选项？
+ <a href="vim_faq.html#faq-37.7">faq-37.7</a>   什么是 <code class="badlink">'fileencodings'</code> 选项？
+ <a href="vim_faq.html#faq-37.8">faq-37.8</a>   什么是 <code class="badlink">'termencoding'</code> 选项？
+ <a href="vim_faq.html#faq-37.9">faq-37.9</a>   什么是 <code class="badlink">'bomb'</code> 选项？
+ <a href="vim_faq.html#faq-37.10">faq-37.10</a>  哪里能找到使用所有这些选项的典型用法的例子？
+ <a href="vim_faq.html#faq-37.11">faq-37.11</a>  Vim 如何在文件里插入 Unicode 字符？
+ <a href="vim_faq.html#faq-37.12">faq-37.12</a>  如何知道什么二合字母有定义及为什么字符定义？
 
 </section><hr class="doubleline" /><section class=inner>
 <h4>                                                                <b class="vimtag"> <a name="faq-1">faq-1</a> </b></h4><code class="section">第一节 - 通用信息 </code>
@@ -8166,18 +8162,15 @@ different filetypes and where to put those modifications so that
 they will not be overwritten.
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-37">faq-37</a> </b></h4><code class="section">SECTION 37 - UNICODE </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-37">faq-37</a> </b></h4><code class="section">第三十七节 - UNICODE</code>
 Author: Tony Mechelynck &lt;antoine.mechelynck AT belgacom.net&gt;
 
                                                                 <b class="vimtag"> <a name="faq-37.1">faq-37.1</a> </b>
-37.1. Is it possible to create Unicode files using Vim?
+37.1. 可以用 Vim 创建 Unicode 文件吗？
 
-Yes. It may be more or less complicated depending on the keyboard and fonts
-available to you, but it is always possible to encode any possible Unicode
-codepoint (and some illegal ones) into a file. To create a Unicode file
-using Vim, you should have compiled Vim with the "+multi_byte" compile-time
-option.  You can get more information about Unicode from the following
-sites:
+是的。复杂程度可多可少，取决于可用的键盘和字体，但总是可以编码任何可能的
+Unicode 代码点 (包括不合法的) 写入文件。要用 Vim 建立 Unicode 文件，须带
+"+multi_byte" 编译时选项编译 Vim。关于 Unicode 的详情更见下面网站:
 
     <a href="http://www.unicode.org">http://www.unicode.org</a>
     <a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html">https://www.cl.cam.ac.uk/~mgk25/unicode.html</a>
@@ -8188,12 +8181,10 @@ sites:
      <code class="badlink">usr_45.txt</code> 
 
                                                                 <b class="vimtag"> <a name="faq-37.2">faq-37.2</a> </b>
-37.2. Which Vim settings are particularly important for editing Unicode
-      files?
+37.2. 什么 Vim 设置对编辑 Unicode 文件尤其重要？
 
-The most important are the various "encoding" options, i.e., <code class="badlink">'encoding'</code>,
-<code class="badlink">'fileencoding'</code>, <code class="badlink">'fileencodings'</code> and <code class="badlink">'termencoding'</code>. The boolean option
-<code class="badlink">'bomb'</code> is also significant.
+最重要的是若干 "encoding" 选项，也就是 <code class="badlink">'encoding'</code>、<code class="badlink">'fileencoding'</code>、
+<code class="badlink">'fileencodings'</code> 和 <code class="badlink">'termencoding'</code>。布尔选项 <code class="badlink">'bomb'</code> 也重要。
 
 更多详情请阅读:
 
@@ -8204,25 +8195,22 @@ The most important are the various "encoding" options, i.e., <code class="badlin
      <code class="badlink">'bomb'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-37.3">faq-37.3</a> </b>
-37.3. What is the <code class="badlink">'encoding'</code> option?
+37.3. 什么是 <code class="badlink">'encoding'</code> 选项？
 
-Basically, the <code class="badlink">'encoding'</code> option defines how Vim will represent your data
-internally.  However, all Unicode encodings are represented internally as
-utf-8 and converted (if necessary) when reading and writing.
+基本上，<code class="badlink">'encoding'</code> 选择定义 Vim 在内部如何代表你的数据。不过，所有的 Unicode
+编码在内部都以 utf-8 编码，在读写时进行转换 (如有必要)。
 
 更多详情请阅读:
 
      <code class="badlink">'encoding'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-37.4">faq-37.4</a> </b>
-37.4. How does Vim name the various Unicode encodings?
+37.4. Vim 如何命名众多的 Unicode 编码？
 
-Utf-8 is called utf-8 or utf8; utf-16 is called ucs-2 or ucs2; utf-32 is
-called ucs-4 or ucs4. Also, you may specify endianness (except for utf-8
-which does not vary for endianness) by appending le for little-endian or be
-for big-endian. If you create a file with an encoding of ucs-2 or ucs-4
-without specifying endianness, Vim will use what is typical of your
-machine.
+Utf-8 叫做 utf-8 或 utf8；utf-16 叫做 ucs-2 或 ucs2；utf-32 叫做 ucs-4 或
+ucs4。另外，可能需要指定字节序 (除了 utf-8 对字节序不敏感以外)，附加 le 代表小
+端 (little-endian) 或 be 代表大端 (big-endian)。如果创建的文件使用编码 ucs-2
+或 ucs-4 而不指定字节序，Vim 使用机器所用的典型设置。
 
 更多详情请阅读:
 
@@ -8231,12 +8219,11 @@ machine.
      <code class="badlink">encoding-table</code> 
 
                                                                 <b class="vimtag"> <a name="faq-37.5">faq-37.5</a> </b>
-37.5. How does Vim specify the presence or absence of a byte-order mark?
+37.5. Vim 如何指定字节顺序标记存在与否？
 
-When reading a file, if the <code class="badlink">'fileencodings'</code> option includes "ucs-bom", Vim
-will check for a byte-order mark. When writing a file, if the <code class="badlink">'bomb'</code> option
-is set, Vim will write a byte-order mark on files whose encoding warrants
-it.
+读入文件时，如果 <code class="badlink">'fileencodings'</code> 选项包含了 "ucs-bom"，Vim 会检查字节顺序标
+记。写入文件时，如果置位了 <code class="badlink">'bomb'</code> 选项，Vim 会在使用需要字符顺序标记的编码的文
+件上写入此标记。
 
 更多详情请阅读:
 
@@ -8244,29 +8231,24 @@ it.
      <code class="badlink">'bomb'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-37.6">faq-37.6</a> </b>
-37.6. What is the <code class="badlink">'fileencoding'</code> option?
+37.6. 什么是 <code class="badlink">'fileencoding'</code> 选项？
 
-The <code class="badlink">'fileencoding'</code> option defines the particular encoding which Vim will
-use to write a file. If empty, then the value of the <code class="badlink">'encoding'</code> option is
-the default.
+<code class="badlink">'fileencoding'</code> 选项定义 Vim 用于写入文件的指定编码。如果为空，使用 <code class="badlink">'encoding'</code>
+选项的值作为缺省。
 
 更多详情请阅读:
 
      <code class="badlink">'fileencoding'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-37.7">faq-37.7</a> </b>
-37.7. What is the <code class="badlink">'fileencodings'</code> option?
+37.7. 什么是 <code class="badlink">'fileencodings'</code> 选项？
 
-The <code class="badlink">'fileencodings'</code> option defines the heuristics used by Vim when opening
-an existing file. It is a comma separated list of encodings. A special
-name, "ucs-bom" is used to indicate that Vim should check for the presence
-of a byte-order mark; however, it will not be recognised if it comes after
-"utf-8".  Normally, "ucs-bom" (if present) should be first in the list.
+<code class="badlink">'fileencodings'</code> 选项定义 Vim 打开已存在文件时使用的提示。它是逗号分隔的列表。
+特殊名字 "ucs-bom" 用于指示 Vim 应该检查字符顺序标记的存在与否；不过，如果出现
+在 "utf-8" 后它不会被识别。通常，"ucs-bom" (如果存在) 必须是列表的头一个。 
 
-When Vim opens a file, it checks it against the encodings listed in
-<code class="badlink">'fileencodings'</code>. The first one that matches is used. If there is no match,
-then Vim sets <code class="badlink">'fileencoding'</code> to the null string, i.e., the value of
-<code class="badlink">'encoding'</code> will be used.
+Vim 打开文件时，会检查 <code class="badlink">'fileencodings'</code> 列出的编码。使用第一个匹配。如果没有匹
+配，Vim 设置 <code class="badlink">'fileencoding'</code> 为空串，亦即使用 <code class="badlink">'encoding'</code> 的值。
 
 更多详情请阅读:
 
@@ -8274,11 +8256,10 @@ then Vim sets <code class="badlink">'fileencoding'</code> to the null string, i.
      <code class="badlink">'encoding'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-37.8">faq-37.8</a> </b>
-37.8. What is the <code class="badlink">'termencoding'</code> option?
+37.8. 什么是 <code class="badlink">'termencoding'</code> 选项？
 
-The <code class="badlink">'termencoding'</code> option defines how your keyboard encodes the data you
-type.  If empty, Vim assumes that it has the same value as <code class="badlink">'encoding'</code>.
-Usually it should be set to something that matches your locale.
+<code class="badlink">'termencoding'</code> 选项定义键盘如何编码键入的数据。如为空，Vim 假定使用 <code class="badlink">'encoding'</code>
+相同的值。通常应设为匹配你的 locale 的值。
 
 更多详情请阅读:
 
@@ -8286,39 +8267,36 @@ Usually it should be set to something that matches your locale.
      <code class="badlink">locale</code> 
 
                                                                 <b class="vimtag"> <a name="faq-37.9">faq-37.9</a> </b>
-37.9. What is the <code class="badlink">'bomb'</code> option?
+37.9. 什么是 <code class="badlink">'bomb'</code> 选项？
 
-When reading a file with "ucs-bom" present in the <code class="badlink">'fileencodings'</code> option,
-Vim will set the <code class="badlink">'bomb'</code> option on or off depending on the presence or
-absence of a byte-order mark at the start of the file. When writing, Vim
-will write a byte-order mark if the <code class="badlink">'bomb'</code> option is set. You may set or
-unset it manually do make Vim write, or not write, the b.o.m.
+<code class="badlink">'fileencodings'</code> 选项里有 "ucs-bom" 时如果读入文件，Vim 会根据文件头是否有字符
+顺序标记的存在设置 <code class="badlink">'bomb'</code> 选项的开或关。写入时，如果 <code class="badlink">'bomb'</code> 选项置位， Vim 会
+写入字节顺序标记。你可以手动置位或复位此选项，让 Vim 来写或不写 b.o.m (字节顺
+序标记)。
 
 更多详情请阅读:
 
      <code class="badlink">'bomb'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-37.10">faq-37.10</a> </b>
-37.10. Where can I find an example of a typical use of all these options?
+37.10. 哪里能找到使用所有这些选项的典型用法的例子？
 
-There is a "tip", with explains them in different words with an example, at
+有一个 "小技巧"，用例子解释了这些选项，文字略有不同。它在
 
     <a href="http://vim.wikia.com/wiki/VimTip246">http://vim.wikia.com/wiki/VimTip246</a>
 
                                                                 <b class="vimtag"> <a name="faq-37.11">faq-37.11</a> </b>
-37.11. How can I insert Unicode characters into a file using Vim?
+37.11. Vim 如何在文件里插入 Unicode 字符？
 
-Several methods are available:
+有几个方法:
 
-- Characters present on your keyboard can be typed in the usual way, even
-  those which require a "dead-key" prefix, like (for instance) the
-  circumflex on French keyboards.
-- Characters for which a digraph is defined can be typed as two characters
-  prefixed by <code class="keystroke">CTRL-K</code>.
-- If you have set the <code class="badlink">'digraph'</code> option, you can enter the characters for
-  which a digraph is defined as <code class="special">&lt;char1&gt;</code><code class="special">&lt;BS&gt;</code><code class="special">&lt;char2&gt;</code>.
-- Any character can be entered by using a <code class="keystroke">CTRL-V</code> prefix (or <code class="keystroke">CTRL-Q</code> if
-  <code class="keystroke">CTRL-V</code> is remapped to paste from the clipboard).
+- 键盘上有的字符可用通常的方式输入，即使其中有些需要 "死键" 前缀，例如法语键盘
+  上的抑扬符。
+- 定义了二合字母的字符可用带 <code class="keystroke">CTRL-K</code> 前缀的两个字符来输入。
+- 如果置位了 <code class="badlink">'digraph'</code> 选项，可用 <code class="special">&lt;char1&gt;</code><code class="special">&lt;BS&gt;</code><code class="special">&lt;char2&gt;</code> 来输入定义了二合字母的字
+  符。
+- 任何字符都可用 <code class="keystroke">CTRL-V</code> 前缀输入 (或 <code class="keystroke">CTRL-Q</code> 如果 <code class="keystroke">CTRL-V</code> 被重映射为从剪贴板粘贴
+  的话)。
 
 更多详情请阅读:
 
@@ -8327,13 +8305,13 @@ Several methods are available:
      <code class="badlink">i_CTRL-V_digit</code> 
 
                                                                 <b class="vimtag"> <a name="faq-37.12">faq-37.12</a> </b>
-37.12. How can I know which digraphs are defined and for which characters?
+37.12. 如何知道什么二合字母有定义及为什么字符定义？
 
-First set the <code class="badlink">'encoding'</code> option properly (for instance, to utf-8), then use
-the  <code class="badlink">:digraphs</code>  command to list the currently defined digraphs.
+首先正确地设置 <code class="badlink">'encoding'</code> 选项 (例如设为 utf-8)。然后用  <code class="badlink">:digraphs</code>  命令来列出
+当前定义的二合字母。
 
-Alternatively, the help file contains the complete set of all digraphs.
-So you can easily search that list there.
+或者，帮助文件里包含了所有二合字母的完整集合。简单地在那里的列表里查找就可以
+了。
 
 更多详情请阅读:
 
