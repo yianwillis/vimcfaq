@@ -131,7 +131,7 @@ https://vimhelp.appspot.com/vim_faq.txt.html。
 |faq-11.2|  如何在搜索模式中输入回车字符？
 |faq-11.3|  如何搜索字符 "^M"？
 |faq-11.4|  如何搜索/替代显示为 "~R"、"~S" 等的字符？
-|faq-11.5|  如何高亮文件中所有的不可打印字符？
+|faq-11.5|  如何高亮文件中所有的不可显示字符？
 |faq-11.6|  如何在文件中搜索整词？
 |faq-11.7|  如何搜索光标下的当前单词？
 |faq-11.8|  如何在搜索单词时忽略大小写？
@@ -188,54 +188,43 @@ https://vimhelp.appspot.com/vim_faq.txt.html。
 |faq-12.28| 如何把抽出的面向字符的文本粘贴到单独的行上？
 |faq-12.29| 如何改变单词或字符或文本块的大小写？
 |faq-12.30| 如何键入键盘上没有的 ASCII 字符？
-|faq-12.31| 如何替代文件中的不可打印字符？
+|faq-12.31| 如何替代文件中的不可显示字符？
 |faq-12.32| 如何删除缓冲区中的重复行？
 |faq-12.33| 如何给文件中的所有行加上对应行号前缀？
 |faq-12.34| 如何交换两个字符或单词或行？
 |faq-12.35| 如何改变用作单词定界的字符？
                                         *faq-completion-in-insert-mode*
-SECTION 13 - COMPLETION IN INSERT MODE ~
-|faq-13.1|  How do I complete words or lines in insert mode?
-|faq-13.2|  How do I complete file names in insert mode?
-|faq-13.3|  I am using CTRL-P/CTRL-N to complete words in insert mode. How do
-	  I complete words that occur after the just completed word?
+第十三节 - 插入模式补全~
+|faq-13.1|  插入模式下如何补全单词或行？
+|faq-13.2|  插入模式下如何补全文件名？
+|faq-13.3|  插入模式下用了 CTRL-P/CTRL-N 补全单词。如何补全刚补全的单词之后的
+	  单词？
                                                         *faq-text-formatting*
-SECTION 14 - TEXT FORMATTING ~
-|faq-14.1|  How do I format a text paragraph so that a new line is inserted
-	  at the end of each wrapped line?
-|faq-14.2|  How do I format long lines in a file so that each line contains
-	  less than "n" characters?
-|faq-14.3|  How do I join short lines to the form a paragraph?
-|faq-14.4|  How do I format bulleted and numbered lists?
-|faq-14.5|  How do I indent lines in insert mode?
-|faq-14.6|  How do I format/indent an entire file?
-|faq-14.7|  How do I increase or decrease the indentation of the current
-	  line?
-|faq-14.8|  How do I indent a block/group of lines?
-|faq-14.9|  When I indent lines using the > or < key, the standard 8-tabstops
-	  are used instead of the current 'tabstop' setting. Why?
-|faq-14.10| How do I turn off the automatic indentation of text?
-|faq-14.11| How do I configure Vim to automatically set the 'textwidth'
-	  option to a particular value when I edit mails?
-|faq-14.12| Is there a way to make Vim auto-magically break lines?
-|faq-14.13| I am seeing a lot of ^M symbols in my file. I tried setting the
-	  'fileformat' option to 'dos' and then 'unix' and then 'mac'.
-	  None of these helped. How can I hide these symbols?
-|faq-14.14| When I paste some text into a Vim buffer from another
-	  application, the alignment (indentation) of the new text is
-	  messed up. How do I fix this?
-|faq-14.15| When there is a very long wrapped line (wrap is "on") and a line
-	  doesn't fit entirely on the screen it is not displayed at all.
-	  There are blank lines beginning with "@" symbol instead of
-	  wrapped line. If I scroll the screen to fit the line the "@"
-	  symbols disappear and the line is displayed again. What Vim
-	  setting control this behavior?
-|faq-14.16| How do I convert all the tab characters in a file to space
-	  characters?
-|faq-14.17| What Vim options can I use to edit text that will later go to a
-	  word processor?
-|faq-14.18| How do I join lines without adding or removing any space
-	  characters?
+第十四节 - 文本排版~
+|faq-14.1|  如何排版文本段落以在每个回绕行尾插入换行符？
+|faq-14.2|  如何排版文件中的长行使得每行少于 "n" 个字符？
+|faq-14.3|  如何连接短行以形成段落？
+|faq-14.4|  如何排版项目符号和编号列表？
+|faq-14.5|  插入模式下如何缩进行？
+|faq-14.6|  如何排版/缩进整个文件？
+|faq-14.7|  如何增加或减少当前行的缩进？
+|faq-14.8|  如果对一组/块行进行缩进？
+|faq-14.9|  用 > 或 < 键缩进行时，使用标准的 8-制表位而不是当前 'tabstop' 设
+	  置。为什么？
+|faq-14.10| 如何关闭文本的自动缩进？
+|faq-14.11| 如何配置 Vim 在编辑邮件时自动设置 'textwidth' 选项为指定值？
+|faq-14.12| 有没有办法使得 Vim 自动神奇地断行？
+|faq-14.13| 我在文件中看到很多的 ^M 符号。我试过设置 'fileformat' 选项为
+	  'dos'，又试过 'unix' 然后 'mac'。都不行。我怎么才能隐藏这些符号呢？
+|faq-14.14| 我从另一个应用粘贴文本到 Vim 缓冲区时，新文本的对齐 (缩进) 不对。
+	  如何修正？
+|faq-14.15| 有很长回绕行 (回绕处于 "on" 状态) 时，如有一行不能完全放进屏幕，它
+	  会完全不显示。出现的是 "@" 符号开始的空行而不是回绕行。如果滚动屏幕
+	  后行能完全放进，"@" 符号消失而该行会再次显示。什么 Vim 设置控制此行
+	  为？
+|faq-14.16| 如何把文件中的所有的制表符转化为空格符？
+|faq-14.17| 什么 Vim 选项可用来编辑之后会用文字处理器处理的文本？
+|faq-14.18| 如何才能连接行而不加减空格字符？
                                                         *faq-visual-mode*
 SECTION 15 - VISUAL MODE ~
 |faq-15.1|  How do I do rectangular block copying?
@@ -2425,9 +2414,9 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
     |24.8|
 
  								*faq-11.5*
-11.5. 如何高亮文件中所有的不可打印字符？
+11.5. 如何高亮文件中所有的不可显示字符？
 
-可用下列命令和搜索模式来高亮文件中所有的不可打印字符: >
+可用下列命令和搜索模式来高亮文件中所有的不可显示字符: >
 
     :set hlsearch
     /\(\p\|$\)\@!.
@@ -3330,9 +3319,9 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
     |45.5|
 
  								*faq-12.31*
-12.31. 如何替代文件中的不可打印字符？
+12.31. 如何替代文件中的不可显示字符？
 
-要替代不可打印字符，需要先决定字符的 ASCII 值。可用 `:ascii` ex 命令或 "ga" 普
+要替代不可显示字符，需要先决定字符的 ASCII 值。可用 `:ascii` ex 命令或 "ga" 普
 通模式命令来显示光标所在字符的 ASCII 值。
 
 可用 CTRL-V 后跟十进制数 1-255 (不能有前导的零)、或用 x 加上十六进数 00-FF，或
@@ -3340,7 +3329,7 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
 制数 0-7FFFFFFF
 
 另一个办法是用 `:digraphs` ex 命令来显示所有字符的二合字母以及它们的十进制值和
-字母值。可用 CTRL-K 后跟两个字母数字字符 (二合字母) 来输入不可打印字符。
+字母值。可用 CTRL-K 后跟两个字母数字字符 (二合字母) 来输入不可显示字符。
 
 更多详情请阅读:
 
@@ -3436,37 +3425,34 @@ Vim 使用 'iskeyword' 选项指定的字符用作单词定界符。此选项的
 
 =============================================================================
  								*faq-13*
-SECTION 13 - COMPLETION IN INSERT MODE ~
+第十三节 - 插入模式补全~
 
  								*faq-13.1*
-13.1. How do I complete words or lines in insert mode?
+13.1. 插入模式下如何补全单词或行？
 
-In insert mode, you can complete words using the CTRL-P and CTRL-N keys.
-The CTRL-N command searches forward for the next matching keyword.
-The CTRL-P command searches backwards for the next matching keyword.
+插入模式下，可用 CTRL-P 和 CTRL-N 键补全单词。
+CTRL-N 命令正向搜索下个匹配关键字。
+CTRL-P 命令反向搜索下个匹配关键字。
 
-In insert mode, you can use the CTRL-X CTRL-L command sequence to complete
-lines that starts with the same characters as in the current line before
-the cursor. To get the next matching line, press the CTRL-P or CTRL-N keys.
-There are a lot of other keys/ways available to complete words in insert
-mode.
+插入模式下，可用 CTRL-X CTRL-L 命令序列来补全开头和当前行光标前字符序列相同的
+行。要得到下个匹配行，按 CTRL-P 或 CTRL-N 键。插入模式下还有其它很多的键/方法
+可用。
 
-Vim supports completion of the following items: >
+Vim 支持以下项目的补全: >
 
-    CTRL-X CTRL-L    whole lines
-    CTRL-X CTRL-N    keywords in the current file
-    CTRL-X CTRL-K    words from a dictionary
-    CTRL-X CTRL-T    words from a thesaurus
-    CTRL-X CTRL-I    current and included files
-    CTRL-X CTRL-]    tags
-    CTRL-X CTRL-F    file names
-    CTRL-X CTRL-D    macro definitions (also in included files)
-    CTRL-X CTRL-V    Vim command line
-    CTRL-X CTRL-U    User defined completion
-    CTRL-X CTRL-O    Omni completion
+    CTRL-X CTRL-L    整行
+    CTRL-X CTRL-N    当前文件中的关键字
+    CTRL-X CTRL-K    字典里的单词
+    CTRL-X CTRL-T    同义词字典里的单词
+    CTRL-X CTRL-I    当前文件和头文件
+    CTRL-X CTRL-]    标签
+    CTRL-X CTRL-F    文件名
+    CTRL-X CTRL-D    宏定义 (也包含头文件里的)
+    CTRL-X CTRL-V    Vim 命令行
+    CTRL-X CTRL-U    用户定义补全
+    CTRL-X CTRL-O    全能补全
 <
-User defined completions and omni completions are often set by filetype
-plugins.
+用户定义补全和全能补全常由文件类型插件设置。
 
 更多详情请阅读:
 
@@ -3474,22 +3460,19 @@ plugins.
     |ins-completion|
 
  								*faq-13.2*
-13.2. How do I complete file names in insert mode?
+13.2. 插入模式下如何补全文件名？
 
-In insert mode, you can use the CTRL-X CTRL-F command sequence to complete
-filenames that start with the same characters as in the current line before
-the cursor.
+插入模式下，可用 CTRL-X CTRL-F 命令序列来补全开头和当前行光标前字符序列相同的
+文件名。
 
 更多详情请阅读:
 
     |compl-filename|
 
  								*faq-13.3*
-13.3. I am using CTRL-P/CTRL-N to complete words in insert mode. How do I
-      complete words that occur after the just completed word?
+13.3. 插入模式下用了 CTRL-P/CTRL-N 补全单词。如何补全刚补全的单词之后的单词？
 
-You can use CTRL-X CTRL-N and CTRL-X CTRL-P keys to complete words that are
-present after the just completed word.
+可用 CTRL-X CTRL-N 和 CTRL-X CTRL-P 键来补全刚补全的单词之后的单词。
 
 更多详情请阅读:
 
@@ -3499,24 +3482,20 @@ present after the just completed word.
 
 =============================================================================
  								*faq-14*
-SECTION 14 - TEXT FORMATTING ~
+第十四节 - 文本排版~
 
  								*faq-14.1*
-14.1. How do I format a text paragraph so that a new line is inserted at
-      the end of each wrapped line?
+14.1. 如何排版文本段落以在每个回绕行尾插入换行符？
 
-You can use the "gq" command to format a paragraph. This will format the
-text according to the current 'textwidth' setting. An alternative would be
-to use the "gw" command that formats like "gq" but does not move the
-cursor.
+可用 "gq" 命令来排版段落。它会按照当前的 'textwidth' 设置来排版文本。另一方案
+是用 "gw" 命令，和 "gq" 一样排版，但不移动光标。
 
-Note that the gq operator can be used with a motion command to operate on a
-range of text. For example: >
+注意 gq 操作符可和动作命令联用，在指定文本范围上操作。例如: >
 
-    gqgq - Format the current line
-    gqap - Format current paragraph
-    gwap - Format current paragraph (and don't move cursor)
-    gq3j - Format the current and the next 3 lines
+    gqgq - 排版当前行
+    gqap - 排版当前段落
+    gwap - 排版当前段落 (且不移动光标)
+    gq3j - 排版当前行和后 3 行
 <
 更多详情请阅读:
 
@@ -3527,17 +3506,14 @@ range of text. For example: >
     |motion.txt|
 
  								*faq-14.2*
-14.2. How do I format long lines in a file so that each line contains less
-      than "n" characters?
+14.2. 如何排版文件中的长行使得每行少于 "n" 个字符？
 
-You can set the 'textwidth' option to control the number of characters that
-can be present in a line. For example, to set the maximum width of a line
-to 70 characters, you can use the following command: >
+可设置 'textwidth' 选项来控制一行可拥有的字符数。例如，要设置行的最大宽度为 70
+个字符，可用以下命令: >
 
     set textwidth=70
 <
-Now to break the long lines in a file to the length defined by the
-'textwidth' option, you can use >
+现在要在文件里断开长行到 'textwidth' 选项定义的长度，可用 >
 
     :g/./normal gqq
 <
@@ -3547,18 +3523,17 @@ Now to break the long lines in a file to the length defined by the
     |gq|
 
  								*faq-14.3*
-14.3. How do I join short lines to form a paragraph?
+14.3. 如何连接短行以形成段落？
 
-First, make sure the 'textwidth' option is set to a high value: >
+首先，确保 'textwidth' 选项设为大值: >
 
     :set textwidth=99999
 <
-Next, join the short lines to form a paragraph using the command: >
+然后，用以下命令来连接短行以形成段落: >
 
     1GgqG
 <
-The above command will operate on the entire file. To do the formatting on
-all paragraphs in a specific range, use: >
+上述命令会在整个文件上操作。要在指定行范围上段落排版，可用: >
 
     :'a,'bg/\S/normal gq}
 <
@@ -3569,26 +3544,25 @@ all paragraphs in a specific range, use: >
     |gqq|
 
  								*faq-14.4*
-14.4. How do I format bulleted and numbered lists?
+14.4. 如何排版项目符号和编号列表？
 
-You can configure Vim to format bulleted and numbered lists using the
-'formatoptions' option. For example, you can format the list of the
-following format:
+可用 'formatoptions' 选项来配置 Vim 为项目符号和编号列表排版。例如，可以排版下
+列格式的列表:
 
   - this is a test. this is a test. this is a test. this is a test.
   this is a test.
 
-into this format:
+为如下格式:
 
   - this is a test. this is a test. this is a test. this is a test.
     this is a test.
 
-You can use the "n" flag in the 'formatoptions' to align the text. >
+可用 'formatoptions' 里的 "n" 标志位来对齐文本。 >
 
     :set fo+=n
 <
-With this option, when formatting text, Vim will recognize numbered lists.
-For this option to work, the 'autoindent' option also must be set.
+有此选项时，Vim 在文本排版时会识别编号列表。要此选项可用，必须置位
+'autoindent' 选项。
 
 更多详情请阅读:
 
@@ -3597,13 +3571,11 @@ For this option to work, the 'autoindent' option also must be set.
     |format-comments|
 
  								*faq-14.5*
-14.5. How do I indent lines in insert mode?
+14.5. 插入模式下如何缩进行？
 
-In insert mode, you can press the CTRL-T key to insert one shiftwidth of
-indent at the start of the current line. In insert mode, you can use the
-CTRL-D key to delete on shiftwidth of indent at the start of the current
-line. You can also use the CTRL-O >> and CTRL-O << commands to indent the
-current line in insert mode.
+插入模式下，可用 CTRL-T 键来在当前行的行首插入一个 shiftwidth 的缩进。插入模式
+下，可用 CTRL-D 键来删除当前行行首的一个 shiftwidth 的缩进。插入模式下也可用
+CTRL-O >> 和 CTRL-O << 命令来缩进当前行。
 
 更多详情请阅读:
 
@@ -3615,13 +3587,13 @@ current line in insert mode.
     |<<|
 
  								*faq-14.6*
-14.6. How do I format/indent an entire file?
+14.6. 如何排版/缩进整个文件？
 
-You can format/indent an entire file using the gg=G command, where >
+可以用 gg=G 命令来排版/缩进整个文件，其中 >
 
-    gg - Goto the beginning of the file
-    =  - apply indentation
-    G  - till end of file
+    gg - 转到文件头
+    =  - 应用缩进
+    G  - 直到文件尾
 <
 更多详情请阅读:
 
@@ -3632,10 +3604,9 @@ You can format/indent an entire file using the gg=G command, where >
     |C-indenting|
 
  								*faq-14.7*
-14.7. How do I increase or decrease the indentation of the current line?
+14.7. 如何增加或减少当前行的缩进？
 
-You can use the ">>" and "<<" commands to increase or decrease the
-indentation of the current line.
+可用 ">>" 和 "<<" 命令来增加或减少当前行的缩进。
 
 更多详情请阅读:
 
@@ -3645,11 +3616,10 @@ indentation of the current line.
     |'shiftwidth'|
 
  								*faq-14.8*
-14.8. How do I indent a block/group of lines?
+14.8. 如果对一组/块行进行缩进？
 
-You can visually select the group of lines and press the > or < key to
-indent/unindent the lines. You can also use the following ex-command to
-indent the lines >
+可以先可视选择一组行，然后按 > 或 < 键来对行缩进/反向缩进。也可用下列 ex 命令
+来对行缩进 >
 
     :10,20>
 <
@@ -3662,12 +3632,11 @@ indent the lines >
     |:>|
 
  								*faq-14.9*
-14.9. When I indent lines using the > or < key, the standard 8-tabstops are
-      used instead of the current 'tabstop' setting. Why?
+14.9.用 > 或 < 键缩进行时，使用标准的 8-制表位而不是当前 'tabstop' 设置。为什
+     么？
 
-The number of spaces used when lines are indented using the ">" operator is
-controlled by the 'shiftwidth' option. The 'tabstop' setting is only
-used, when the 'shiftwidth' option is zero. >
+">" 操作符缩进行时使用的空格数由 'shiftwidth' 选项控制。仅当 'shiftwidth' 选项
+为零时才使用 'tabstop' 设置。 >
 
     :set shiftwidth=4
 <
@@ -3678,14 +3647,12 @@ used, when the 'shiftwidth' option is zero. >
     |'softtabstop'|
 
  								*faq-14.10*
-14.10. How do I turn off the automatic indentation of text?
+14.10. 如何关闭文本的自动缩进？
 
-By default, the automatic indentation of text is not turned on. Check the
-configuration files (.vimrc, .gvimrc) for settings related to indentation.
-Make sure the `:filetype indent on` command is not present. If it is
-present, remove it. Also, depending on your preference, you may also want
-to check the value of the 'autoindent', 'smartindent', 'cindent' and
-'indentexpr' options and turn them off as needed.
+缺省，不打开文本的自动缩进。检查配置文件 (.vimrc、.gvimrc) 关于缩进的设置。确
+保没有 `:filetype indent on` 命令。如果有，把它删掉。另外，取决于你的选择，也
+可以检查一下 'autoindent'、'smartindent'、'cindent' 和 'indentexpr' 选项的值，
+有必要时关闭它们。
 
 更多详情请阅读:
 
@@ -3696,10 +3663,9 @@ to check the value of the 'autoindent', 'smartindent', 'cindent' and
     |'indentexpr'|
 
  								*faq-14.11*
-14.11. How do I configure Vim to automatically set the 'textwidth' option
-       to a particular value when I edit mails?
+14.11. 如何配置 Vim 在编辑邮件时自动设置 'textwidth' 选项为指定值？
 
-You can use the "FileType" autocommand to set the 'textwidth' option: >
+可用 "FileType" 自动命令来设置 'textwidth' 选项: >
 
     autocmd FileType mail set tw=<your_value>
 <
@@ -3710,10 +3676,10 @@ You can use the "FileType" autocommand to set the 'textwidth' option: >
     |usr_43.txt|
 
  								*faq-14.12*
-14.12. Is there a way to make Vim auto-magically break lines?
+14.12. 有没有办法使得 Vim 自动神奇地断行？
 
-Yes. Set the 'textwidth' option to the preferred length for a line. Then
-Vim will auto-magically break the newly entered lines. For example: >
+有。设置 'textwidth' 选项为推荐的行长度。Vim 会自动神奇在新输入的行上断开。例
+如: >
 
     :set textwidth=75
 <
@@ -3726,47 +3692,38 @@ Vim will auto-magically break the newly entered lines. For example: >
     |formatting|
 
  								*faq-14.13*
-14.13. I am seeing a lot of ^M symbols in my file. I tried setting the
-       'fileformat' option to "dos" and then "unix" and then "mac". None of
-       these helped. How can I hide these symbols?
+14.13. 我在文件中看到很多的 ^M 符号。我试过设置 'fileformat' 选项为 'dos'，又
+       试过 'unix' 然后 'mac'。都不行。我怎么才能隐藏这些符号呢？
 
-When a file is loaded in Vim, the format of the file is determined as
-below:
+文件载入到 Vim 时，文件的格式由以下步骤决定:
 
-- If all the lines end with a new line (<NL>), then the fileformat is
-  "unix".
-- If all the lines end with a carriage return (<CR>) followed by a new line
-  (<NL>), then the fileformat is "dos".
-- If all the lines end with carriage return (<CR>), then the fileformat is
-  "mac".
+- 如果所有行都以换行符 (<NL>) 结尾，则 fileformat 为 "unix"。
+- 如果所有行都以回车符 (<CR>) 后跟换行符 (<NL>) 结尾，则 fileformat 为 "dos"。
+- 如果所有行都以回车符 (<CR>) 结尾，则 fileformat 为 "mac"。
 
-If the file has some lines ending with <CR> and some lines ending with <CR>
-followed by a <NL>, then the fileformat is set to "unix".
+如果文件有些行以 <CR> 结尾，有些行以 <CR> 后跟 <NL> 结尾，则 fileformat 设为
+"unix"。
 
-You can change the format of the current file, by saving it explicitly in
-dos format: >
+可以通过显式设置来改变当前文件的格式，例如改成 dos 格式: >
 
     :w ++ff=dos
 <
-To display the format of the current file, use >
+要显示当前文件的格式，可用 >
 
     :set fileformat?
 <
-The above behavior is also controlled by the 'fileformats' option. You can
-try the following commands: >
+上述行为也由 'fileformats' 选项控制。可用以下命令: >
 
     :set fileformats+=unix
     :e <your_file>
     :set fileformat=unix
     :w
 <
-To remove the carriage return (<CR>) character at the end of all the lines
-in the current file, you can use the following command: >
+要删除当前文件所有行尾的回车符 (<CR>)，可用以下命令: >
 
     :%s/\r$//
 <
-To force Vim to use a particular file format, when editing a file, you can
-use the following command: >
+要强制 Vim 在编辑文件时使用指定的文件格式，可用以下命令: >
 
     :e ++ff=dos filename
 <
@@ -3783,42 +3740,29 @@ use the following command: >
     |++ff|
 
  								*faq-14.14*
-14.14. When I paste some text into a Vim buffer from another application,
-      the alignment (indentation) of the new text is messed up. How do I
-      fix this?
+14.14. 我从另一个应用粘贴文本到 Vim 缓冲区时，新文本的对齐 (缩进) 不对。如何修
+       正？
 
-When you paste text into a GUI Vim using the mouse, Vim is able to
-detect that you are pasting text. So all the indentation related
-settings (like autoindent, smartindent, cindent, etc.) are ignored and
-the text is pasted literally.
+用鼠标粘贴文本到 GUI Vim 时，Vim 可以检测到你在粘贴文本。此时，忽略缩进有关的
+设置 (如 autoindent、smartindent、cindent 等等)，按本义粘贴文本。
 
-When pasting text into a Vim running in a terminal (like xterm) using
-the mouse, Vim may not be able to detect that you are pasting text. This
-depends on several things: the capability of the terminal to pass the
-mouse events to Vim, Vim is compiled to handle mouse events and access
-the clipboard, the DISPLAY variable is set properly, the Vim 'mouse'
-option is set correctly.
+用鼠标粘贴文本到终端 (如 xterm) 上运行的 Vim 时，Vim 可能检测不到你在粘贴文
+本。这取决于几种事: 终端给 Vim 传递鼠标事件的能力、编译 Vim 时关于鼠标事件处理
+和剪贴板访问的支持，DISPLAY 变量的正确设置，Vim 'mouse' 选项的正确设置。
 
-If Vim is able to detect that you are pasting text using the mouse, then
-the pasted text will be inserted literally.
+如果 Vim 能检测到你在用鼠标粘贴文本，粘贴的文本会按本义插入。
 
-If Vim is not able to detect that you are pasting using the mouse, then
-it will see the pasted text as though you literally typed the text.
-After the first line from the pasted text is inserted, when Vim
-encounters the newline character, because of the indentation settings,
-the next line will start indented. The spaces at the beginning of the
-second line in the pasted text will be inserted leading to additional
-indentation. This will be repeated for subsequent lines. So the pasted
-text will be inserted with stair case indentation.
+如果 Vim 不能检测到你在用鼠标粘贴文本，它会把文本的粘贴当作你在按文本直接输入
+文本。插入粘贴文本的第一行后，Vim 看到了换行符，因为有缩进设置，下行会以缩进开
+始，粘贴文本第二行开头的空白会导致额外的缩进。之后的行上，这会重复进行，所以最
+后会以阶梯形式的缩进插入粘贴文本。
 
-You can fix this problem in a terminal Vim in several ways:
+对终端 Vim 有几种方法可以修正此问题:
 
-1. Build Vim with the +mouse and +xterm_clipboard compile-time options.
-   The normal or big or huge build of Vim includes these options.  Set
-   the 'mouse' option to either "a" or include "i".  When pasting text
-   using the mouse, don't press the Shift key. This will work only if
-   Vim can access the X display. For more information, read the
-   following Vim help topics:
+1. 编译 Vim 时带上 +mouse 和 +xterm_clipboard 编译时选项。Vim 的 normal 或 big
+   或 huge 版本包含了这些选项。设置 'mouse' 选项为 "a" 或至少包含 "i"。用鼠标
+   粘贴文本时，不要按 Shift 键。仅当 Vim 可访问 X 显示时可用。更多详情请阅读以
+   下 Vim 帮助主题:
 
     |+feature-list|
     |'mouse'|
@@ -3826,77 +3770,59 @@ You can fix this problem in a terminal Vim in several ways:
     |x11-selection|
     |xterm-clipboard|
 
-1.1 Some Linux distributions build their terminal vim packages
-    without X support.  This makes no sense and leaves many users
-    with the impression that Vim in terminal mode doesn't support
-    some operations such as properly pasting text with a mouse. >
+1.1 有些 Linux 发布编译它们的终端 vim 包时没有 X 支持。这不合理，给很多用户留
+    下了终端模式下的 Vim 不支持某些操作，比如用鼠标正确地粘贴文本的印象。
 
-    If your distribution includes gvim, which it almost certainly
-    does these days, the solutions to this include the following.
-<
-    a)  Start Vim as >
+    如果你的发布包含了如今几乎肯定有的 gvim，解决方案包含以下选项之一。
+
+    a)  用下列方式启动 Vim >
 
             gvim -v
 <
-    b)  Put this alias in your shell's configuration file, e.g.
-        ~/.bashrc: >
+    b)  把下列 alias 放进外壳配置文件，如 ~/.bashrc 里: >
 
             alias vim='gvim -v'
 <
-    c)  Put the following command in a file named "vim" and put that
-        file in your ~/bin directory: >
+    c)  把下列命令存到名为 "vim" 的文件中，并把此文件放到你的 ~/bin 目录里: >
 
             gvim -v "$@"
 <
-    d)  Link the distribution's gvim to ~/bin/vim with the following
-        command, which needs to be executed only once. >
+    d)  用下列命令把发布的 gvim 链接到 ~/bin/vim。只需要执行一次。 >
 
             ln -s $(which gvim) ~/bin/vim
 <
-    For c) and d), make sure that ~/bin precedes /usr/bin in your
-    PATH.
+    对 c) 和 d) 而言，确保你的 PATH 里 ~/bin 在 /usr/bin 之前。
 
-2. Paste the text using the CTRL-R CTRL-O * command.  This will paste
-   the text literally without any automatic indentation. If you want to
-   paste the text and then fix the indentation, then you can use CTRL-R
-   CTRL-P *. These commands will work only if Vim can access the X
-   display. For more information, read the following Vim help topics:
+2. 用 CTRL-R CTRL-O * 命令粘贴文本。这会按本义粘贴文本，不应用自动缩进。如果你
+   希望先粘贴文本然后修正缩进，可用 CTRL-R CTRL-P *。仅当 Vim 能访问 X 显示时
+   才能使用这些命令。更多详情请阅读以下 Vim 帮助主题:
 
     |i_CTRL-R_CTRL-O|
     |i_CTRL-R_CTRL-P|
     |quotestar|
 
-3. Set the 'paste' option before pasting the text. This option will
-   disable the effect of all the indentation related settings. Make
-   sure to turn off this option using `:set nopaste` after pasting the
-   text. Otherwise the Vim indentation feature will not work.  Do not
-   permanently set the 'paste' option in your .vimrc file. If you are
-   going to repeat these steps often, then you can set the
-   'pastetoggle' option to a key. When you press the specified key,
-   the 'paste' option will be toggled. You can press the key once
-   before pasting the text and the press the key once after pasting
-   the text. Note that when the 'paste' option is set, all the
-   mappings and abbreviations are disabled.  For more information,
-   read the following Vim help topics:
+3. 在粘贴文本前置位 'paste' 选项。此选项会关闭所有缩进相关设置的效果。粘贴完文
+   本后务必用 `:set nopaste` 关闭此选项。否则 Vim 的缩进特性会停止工作。不要在
+   .vimrc 文件里永久置位 'paste' 选项。如果你经常重复以上步骤，可设置
+   'pastetoggle' 选项为某个键。按此键时，切换 'paste' 选项的值。粘贴文本前按此
+   键一次，粘贴文本后再按此键一次。注意 置位 'paste' 选项时，关闭所有的映射和
+   缩写。更多详情请阅读以下 Vim 帮助主题:
 
     |'paste'|
     |'pastetoggle'|
 
-You can also refer to the following topics in the user manual:
+也可参考用户手册中的以下主题:
 
     |04.7|
     |09.3|
 
  								*faq-14.15*
-14.15. When there is a very long wrapped line (wrap is "on") and a line
-      doesn't fit entirely on the screen it is not displayed at all. There
-      are blank lines beginning with "@" symbol instead of wrapped line. If
-      I scroll the screen to fit the line the "@" symbols disappear and the
-      line is displayed again. What Vim setting control this behavior?
+14.15. 有很长回绕行 (回绕处于 "on" 状态) 时，如有一行不能完全放进屏幕，它会完
+       全不显示。出现的是 "@" 符号开始的空行而不是回绕行。如果滚动屏幕后行能完
+       全放进，"@" 符号消失而该行会再次显示。什么 Vim 设置控制此行为？
 
-You can set the 'display' option to "lastline" to display as much as
-possible of the last line in a window instead of displaying the "@"
-symbols. >
+可设置 'display' 选项为 "lastline" 来显示窗口末行尽量多的内容，而不是显示 "@"
+符号。 >
 
     :set display=lastline
 <
@@ -3905,12 +3831,10 @@ symbols. >
     |'display'|
 
  								*faq-14.16*
-14.16. How do I convert all the tab characters in a file to space
-       characters?
+14.16. 如何把文件中的所有的制表符转化为空格符？
 
-You can use the `:retab` command to update all the tab characters in the
-current file with the current setting of 'expandtab' and 'tabstop'. For
-example, to convert all the tabs to white spaces, use >
+可用 `:retab` 命令来用 'expandtab' 和 'tabstop' 的当前设置来更新当前文件中所有
+的制表符。例如，把所有的制表符转化为空格符，可用 >
 
     :set expandtab
     :retab
@@ -3923,19 +3847,16 @@ example, to convert all the tabs to white spaces, use >
     |25.3|
 
  								*faq-14.17*
-14.17. What Vim options can I use to edit text that will later go to a word
-       processor?
+14.17. 什么 Vim 选项可用来编辑之后会用文字处理器处理的文本？
 
-You can set the following options to edit text that will later go into a
-word processor: >
+可用以下选项来编辑之后会用文字处理器处理的文本: >
 
     :set wrap
     :set linebreak
     :set textwidth=0
     :set showbreak=>>>
 <
-You can use the "gk" and "gj" commands to move one screen line up and down.
-更多详情请阅读:
+可用 "gk" 和 "gj" 命令来向上和向下移动一行屏幕行。更多详情请阅读:
 
     |'wrap'|
     |'linebreak'|
@@ -3945,16 +3866,12 @@ You can use the "gk" and "gj" commands to move one screen line up and down.
     |gj|
 
  								*faq-14.18*
-14.18. How do I join lines without adding or removing any space characters?
+14.18. 如何才能连接行而不加减空格字符？
 
-By default, when you join lines using the "J" or `:join` command, Vim will
-replace the line break, leading white space and trailing white space with a
-single space character. If there are space characters at the end of a line
-or a line starts with the ")" character, then Vim will not add a space
-character.
+缺省用 "J" 或 `:join` 命令连接行时，Vim 会把换行符、引导和拖尾的空白替代为单个
+空格符。如果行尾已经有空格或一行以 ")" 字符开头，Vim 不会加入空格符。
 
-To join lines without adding or removing any space characters, you can use
-the gJ or `:join!` commands.
+要连接行而不加减空格字符，可用 gJ 或 `:join!` 命令。
 
 更多详情请阅读:
 
