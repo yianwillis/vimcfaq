@@ -282,20 +282,17 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-16.7">faq-16.7</a>   如何把命令放进命令历史而不执行它？
  <a href="vim_faq.html#faq-16.8">faq-16.8</a>   如何增加命令行的高度？
                                                                 <b class="vimtag"> <a name="faq-viminfo">faq-viminfo</a> </b>
-<code class="section">SECTION 17 - VIMINFO </code>
- <a href="vim_faq.html#faq-17.1">faq-17.1</a>   When I invoke Vim, I get error messages about illegal characters
-          in the viminfo file. What should I do to get rid of these
-          messages?
- <a href="vim_faq.html#faq-17.2">faq-17.2</a>   How do I disable the viminfo feature?
- <a href="vim_faq.html#faq-17.3">faq-17.3</a>   How do I save and use Vim marks/commands across Vim sessions?
+<code class="section">第十七节 - VIMINFO</code>
+ <a href="vim_faq.html#faq-17.1">faq-17.1</a>   启动 Vim 时，给出关于 viminfo 里非法字符的错误信息。如何才能去掉这
+          些信息？
+ <a href="vim_faq.html#faq-17.2">faq-17.2</a>   如何关闭 viminfo 特性？
+ <a href="vim_faq.html#faq-17.3">faq-17.3</a>   如何保存和跨 Vim 会话使用 Vim 的位置标记/命令？
                                                         <b class="vimtag"> <a name="faq-remote-editing">faq-remote-editing</a> </b>
-<code class="section">SECTION 18 - REMOTE EDITING </code>
- <a href="vim_faq.html#faq-18.1">faq-18.1</a>   How do I open a file with existing instance of gvim? What
-          happened to the Vim 5.x OpenWithVim.exe and SendToVim.exe files?
- <a href="vim_faq.html#faq-18.2">faq-18.2</a>   How do I send a command to a Vim server to write all buffers to
-          disk?
- <a href="vim_faq.html#faq-18.3">faq-18.3</a>   Where can I get the documentation about the Vim remote server
-          functionality?
+<code class="section">第十八节 - 远程编辑</code>
+ <a href="vim_faq.html#faq-18.1">faq-18.1</a>   如何使用已有的 gvim 实例打开文件？Vim 5.x 的 OpenWithVim.exe 和
+          SendToVim.exe 文件去哪里啦？
+ <a href="vim_faq.html#faq-18.2">faq-18.2</a>   如何发送命令到 Vim 服务器去把所有缓冲区写回到盘上？
+ <a href="vim_faq.html#faq-18.3">faq-18.3</a>   哪里有 Vim 远程服务器功能的文档？
                                                                 <b class="vimtag"> <a name="faq-options">faq-options</a> </b>
 <code class="section">SECTION 19 - OPTIONS </code>
  <a href="vim_faq.html#faq-19.1">faq-19.1</a>   How do I configure Vim in a simple way?
@@ -4165,14 +4162,13 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
      <code class="badlink">05.7</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-17">faq-17</a> </b></h4><code class="section">SECTION 17 - VIMINFO </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-17">faq-17</a> </b></h4><code class="section">第十七节 - VIMINFO</code>
 
                                                                 <b class="vimtag"> <a name="faq-17.1">faq-17.1</a> </b>
-17.1. When I invoke Vim, I get error messages about illegal characters in
-      the viminfo file. What should I do to get rid of these messages?
+17.1. 启动 Vim 时，给出关于 viminfo 里非法字符的错误信息。如何才能去掉这些信
+      息？
 
-You can remove the $HOME/.viminfo or the $HOME/_viminfo file to get rid of
-these error messages.
+可以删除 $HOME/.viminfo 或 $HOME/_viminfo 文件来去掉这些错误信息。
 
 更多详情请阅读:
 
@@ -4182,12 +4178,10 @@ these error messages.
      <code class="badlink">21.3</code> 
 
                                                                 <b class="vimtag"> <a name="faq-17.2">faq-17.2</a> </b>
-17.2. How do I disable the viminfo feature?
+17.2. 如何关闭 viminfo 特性？
 
-By default, the viminfo feature is disabled. If the viminfo feature is
-enabled by a system-wide vimrc file, then you can disable the viminfo
-feature by setting the <code class="badlink">'viminfo'</code> option to an empty string in your local
-.vimrc file: 
+缺省 viminfo 特性是关闭的。如果有系统范围的 vimrc 文件打开了 viminfo 特性，可
+在局部的 .vimcrc 文件中设置 <code class="badlink">'viminfo'</code> 选项为空串来关闭 viminfo 特性: 
 <code class="example"></code>
 <code class="example">    :set viminfo=""</code>
 
@@ -4196,16 +4190,14 @@ feature by setting the <code class="badlink">'viminfo'</code> option to an empty
      <code class="badlink">'viminfo'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-17.3">faq-17.3</a> </b>
-17.3. How do I save and use Vim marks/commands across Vim sessions?
+17.3. 如何保存和跨 Vim 会话使用 Vim 的位置标记/命令？
 
-You can save and restore Vim marks across Vim sessions using the viminfo
-file. To use the viminfo file, make sure the <code class="badlink">'viminfo'</code> option is not empty.
-To save and restore Vim marks, the <code class="badlink">'viminfo'</code> option should not contain the
-"f" flag or should have a value greater than zero for the "f" option.
+可用 viminfo 文件来保存和跨 Vim 会话使用 Vim 的位置标记。要使用 viminfo 文件，
+确保 <code class="badlink">'viminfo'</code> 选项非空。要保存和恢复 Vim 位置标记，<code class="badlink">'viminfo'</code> 选项不应包含 "f"
+标志位或 "f" 选项的值应大于零。
 
-You can also use the viminfo file to synchronize the commandline history
-across different sessions using  <code class="badlink">:wvimfo</code>  and  <code class="badlink">:rviminfo</code>  commands together
-with the FocusGained and FocusLost autocommands: 
+也可用 viminfo 文件来在不同会话间同步命令行历史。为此，使用  <code class="badlink">:wvimfo</code>  和
+ <code class="badlink">:rviminfo</code>  加上 FocusGained 或 FocusLost 自动命令: 
 <code class="example"></code>
 <code class="example">    augroup viminfo</code>
 <code class="example">        au!</code>
@@ -4213,9 +4205,8 @@ with the FocusGained and FocusLost autocommands:
 <code class="example">        au FocusGained * rviminfo</code>
 <code class="example">    augroup end</code>
 
-Note, this will only work reliably, when Vim can detect the FocusLost
-and FocusGained autocommands correctly. This means it should work with
-GVim but might depend on your terminal for konsole vim.
+<code class="note">备注</code>: 要使这段代码可靠地工作，Vim 应能正确检测 FocusLost 和 FocusGained 自动命
+令。这就是说 GVim 没问题，而控制台 vim 取决于你的终端。
 
 更多详情请阅读:
 
@@ -4228,30 +4219,29 @@ GVim but might depend on your terminal for konsole vim.
      <code class="badlink">FocusGained</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-18">faq-18</a> </b></h4><code class="section">SECTION 18 - REMOTE EDITING </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-18">faq-18</a> </b></h4><code class="section">第十八节 - 远程编辑</code>
 
                                                                 <b class="vimtag"> <a name="faq-18.1">faq-18.1</a> </b>
-18.1. How do I open a file with existing instance of gvim? What happened to
-      the Vim 5.x OpenWithVim.exe and SendToVim.exe files?
+18.1. 如何使用已有的 gvim 实例打开文件？Vim 5.x 的 OpenWithVim.exe 和
+      SendToVim.exe 文件去哪里啦？
 
-Starting with Vim6, the OLE version of OpenWithVim.exe and SendToVim.exe
-Vim utilities are replaced by the new client-server feature. To open the
-file j.txt with an existing instance of Gvim (MyVim), use: 
+从 Vim6 开始，OLE 版本的 OpenWithVim.exe 和 SendToVim.exe Vim 工具被新的客户-
+服务器特性代替了。要用已有的 Gvim 实例 (MyVim) 打开文件 j.txt，可用: 
 <code class="example"></code>
 <code class="example">    $ gvim --servername MyVim --remote-silent j.txt</code>
 
-To list the server names of all the currently running Vim instances, use 
+要列出当前运行的 Vim 实例的服务器名，可用 
 <code class="example"></code>
 <code class="example">    $ vim --serverlist</code>
 
-To get more information about client-server feature, read
+要了解客户-服务器特性的详情，请阅读
 
      <code class="badlink">client-server</code> 
 
                                                                 <b class="vimtag"> <a name="faq-18.2">faq-18.2</a> </b>
-18.2. How do I send a command to a Vim server to write all buffers to disk?
+18.2. 如何发送命令到 Vim 服务器去把所有缓冲区写回到盘上？
 
-You can use the Vim remote server functionality to do this: 
+可用 Vim 远程服务器功能来完成: 
 <code class="example"></code>
 <code class="example">    $ gvim --servername myVIM --remote-send "&lt;C-\&gt;&lt;C-N&gt;:wall&lt;CR&gt;"</code>
 
@@ -4262,11 +4252,9 @@ You can use the Vim remote server functionality to do this:
      <code class="badlink">:wall</code> 
 
                                                                 <b class="vimtag"> <a name="faq-18.3">faq-18.3</a> </b>
-18.3. Where can I get the documentation about the Vim remote server
-      functionality?
+18.3. 哪里有 Vim 远程服务器功能的文档？
 
-You can get more information about the Vim remote server functionality by
-reading
+关于 Vim 远程服务器功能的文档的详情，请阅读
 
      <code class="badlink">client-server</code> 
 
