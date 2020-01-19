@@ -492,36 +492,25 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-26.8">faq-26.8</a>   How do I set the filetype option for files with names matching a
           particular pattern or depending on the file extension?
                                                 <b class="vimtag"> <a name="faq-editing-program-files">faq-editing-program-files</a> </b>
-<code class="section">SECTION 27 - EDITING PROGRAM FILES </code>
- <a href="vim_faq.html#faq-27.1">faq-27.1</a>   How do I enable automatic indentation for C/C++ files?
- <a href="vim_faq.html#faq-27.2">faq-27.2</a>   How do I configure the indentation used for C/C++ files?
- <a href="vim_faq.html#faq-27.3">faq-27.3</a>   How do I turn off the automatic indentation feature?
- <a href="vim_faq.html#faq-27.4">faq-27.4</a>   How do I change the number of space characters used for the
-          automatic indentation?
- <a href="vim_faq.html#faq-27.5">faq-27.5</a>   I am editing a C program using Vim. How do I display the
-          definition of a macro or a variable?
- <a href="vim_faq.html#faq-27.6">faq-27.6</a>   I am editing a C program using Vim. How do I jump to the
-          beginning or end of a code block from within the block?
- <a href="vim_faq.html#faq-27.7">faq-27.7</a>   When editing C++ files and when inserting new lines above or
-          below a comment (//) line, Vim automatically inserts the C++
-          comment character (//) at the beginning of the line. How do I
-          disable this?
- <a href="vim_faq.html#faq-27.8">faq-27.8</a>   How do I add the comment character "#" to a set of lines at the
-          beginning of each line?
- <a href="vim_faq.html#faq-27.9">faq-27.9</a>   How do I edit a header file with the same name as the
-          corresponding C source file?
- <a href="vim_faq.html#faq-27.10">faq-27.10</a>  How do I automatically insert comment leaders while typing
-          comments?
+<code class="section">第二十七节 - 编辑程序文件</code>
+ <a href="vim_faq.html#faq-27.1">faq-27.1</a>   如何打开 C/C++ 文件的自动缩进？
+ <a href="vim_faq.html#faq-27.2">faq-27.2</a>   如何配置 C/C++ 文件的缩进？
+ <a href="vim_faq.html#faq-27.3">faq-27.3</a>   如何关闭自动缩进功能？
+ <a href="vim_faq.html#faq-27.4">faq-27.4</a>   如何改变自动缩进的空格数？
+ <a href="vim_faq.html#faq-27.5">faq-27.5</a>   用 Vim 编辑 C 程序时，如何显示宏或变量的定义？
+ <a href="vim_faq.html#faq-27.6">faq-27.6</a>   用 Vim 编辑 C 程序时，如果从代码块里跳转到代码块的开头或结尾？
+ <a href="vim_faq.html#faq-27.7">faq-27.7</a>   编辑 C++ 文件并在注释 (//) 行上方或下方插入新行时，Vim 自动在行首
+          插入 C++ 注释字符 (//)。如何关闭此行为？
+ <a href="vim_faq.html#faq-27.8">faq-27.8</a>   如何为一组行在行首加上注释字符 "#"？
+ <a href="vim_faq.html#faq-27.9">faq-27.9</a>   如何编辑和对应 C 源文件相同名字的头文件？
+ <a href="vim_faq.html#faq-27.10">faq-27.10</a>  如何自动在输入注释时自动插入注释头部？
                                                                 <b class="vimtag"> <a name="faq-quickfix">faq-quickfix</a> </b>
-<code class="section">SECTION 28 - QUICKFIX </code>
- <a href="vim_faq.html#faq-28.1">faq-28.1</a>   How do I build programs from Vim?
- <a href="vim_faq.html#faq-28.2">faq-28.2</a>   When I run the make command in Vim I get the errors listed as the
-          compiler compiles the program. When it finishes this list
-          disappears and I have to use the  <code class="badlink">:clist</code>  command to see the error
-          message again. Is there any other way to see these error
-          messages?
- <a href="vim_faq.html#faq-28.3">faq-28.3</a>   How can I perform a command for each item in the
-          quickfix/location list?
+<code class="section">第二十八节 - 快速修复</code>
+ <a href="vim_faq.html#faq-28.1">faq-28.1</a>   如何在 Vim 里编译程序？
+ <a href="vim_faq.html#faq-28.2">faq-28.2</a>   在 Vim 里运行 make 命令时得到编译器编译程序里列出的错误。结束时此
+          列表消失，我不得不用  <code class="badlink">:clist</code>  命令来重新看到错误信息。有没有其它办法
+          来看到这些错误信息？
+ <a href="vim_faq.html#faq-28.3">faq-28.3</a>   如何为快速修复/位置列表的每个项目执行命令？
                                                                 <b class="vimtag"> <a name="faq-folding">faq-folding</a> </b>
 <code class="section">第二十九节 - 折叠</code>
  <a href="vim_faq.html#faq-29.1">faq-29.1</a>   如何扩展 Vim 折叠支持？
@@ -6376,16 +6365,16 @@ in the ~/.vim directory (or in one of the directories specified in the
      <code class="badlink">:setfiletype</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-27">faq-27</a> </b></h4><code class="section">SECTION 27 - EDITING PROGRAM FILES </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-27">faq-27</a> </b></h4><code class="section">第二十七节 - 编辑程序文件</code>
 
                                                                 <b class="vimtag"> <a name="faq-27.1">faq-27.1</a> </b>
-27.1. How do I enable automatic indentation for C/C++ files?
+27.1. 如何打开 C/C++ 文件的自动缩进？
 
-You can enable file-type based indentation using: 
+可如此打开基于文件类型的缩进: 
 <code class="example"></code>
 <code class="example">    :filetype indent on</code>
 
-If you want to only enable automatic C indentation, then use: 
+如果只要打开自动 C 缩进，可用: 
 <code class="example"></code>
 <code class="example">    :set cindent</code>
 
@@ -6396,10 +6385,9 @@ If you want to only enable automatic C indentation, then use:
      <code class="badlink">filetype</code> 
 
                                                                 <b class="vimtag"> <a name="faq-27.2">faq-27.2</a> </b>
-27.2. How do I configure the indentation used for C/C++ files?
+27.2. 如何配置 C/C++ 文件的缩进？
 
-You can configure the Vim C indentation by modifying the value of the
-<code class="badlink">'cinoptions'</code>, <code class="badlink">'cinkeys'</code> and <code class="badlink">'cinwords'</code> options.
+可修改 <code class="badlink">'cinoptions'</code>、<code class="badlink">'cinkeys'</code> 和 <code class="badlink">'cinwords'</code> 选项来配置 Vim C 缩进。
 
 更多详情请阅读:
 
@@ -6412,19 +6400,18 @@ You can configure the Vim C indentation by modifying the value of the
      <code class="badlink">'smartindent'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-27.3">faq-27.3</a> </b>
-27.3. How do I turn off the automatic indentation feature?
+27.3. 如何关闭自动缩进功能？
 
-By default, the automatic indentation is not turned on. You must have
-configured Vim to do automatic indentation in either .vimrc or .gvimrc
-files. You can disable automatic indentation using either, 
+缺省并没有打开自动缩进。一定是在 .vimrc 或 .gvimrc 文件里配置 Vim 打开了自动缩
+进。可以这些关闭自动缩进 
 <code class="example"></code>
 <code class="example">    :filetype indent off</code>
 
-or 
+或 
 <code class="example"></code>
 <code class="example">    :set nocindent</code>
 
-Also, check the setting for the following options: 
+另外，也检查一下下列选项的设置: 
 <code class="example"></code>
 <code class="example">    :set autoindent?</code>
 <code class="example">    :set smartindent?</code>
@@ -6439,11 +6426,9 @@ Also, check the setting for the following options:
      <code class="badlink">'indentexpr'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-27.4">faq-27.4</a> </b>
-27.4. How do I change the number of space characters used for the automatic
-      indentation?
+27.4. 如何改变自动缩进的空格数？
 
-You can modify the <code class="badlink">'shiftwidth'</code> option to change the number of space
-characters used for the automatic indentation: 
+可修改 <code class="badlink">'shiftwidth'</code> 选项以修改自动缩进的空格数: 
 <code class="example"></code>
 <code class="example">    :set shiftwidth=4</code>
 
@@ -6452,12 +6437,10 @@ characters used for the automatic indentation:
      <code class="badlink">'shiftwidth'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-27.5">faq-27.5</a> </b>
-27.5. I am editing a C program using Vim. How do I display the definition
-      of a macro or a variable?
+27.5. 用 Vim 编辑 C 程序时，如何显示宏或变量的定义？
 
-You can use the "[d" command to display the definition of a macro, "[i"
-command to display the definition of a variable, "gd" to goto the local
-declaration of a variable and "gD" to go to the global Declaration.
+可用 "[d" 命令来显示宏的定义，"[i" 来显示变量的定义，"gd" 转到变量的局部声明
+(declaration)，而 "gD" 转到其全局声明 (Declaration)。
 
 更多详情请阅读:
 
@@ -6470,11 +6453,10 @@ declaration of a variable and "gD" to go to the global Declaration.
      <code class="badlink">29.5</code> 
 
                                                                 <b class="vimtag"> <a name="faq-27.6">faq-27.6</a> </b>
-27.6. I am editing a C program using Vim. How do I jump to the beginning or
-      end of a code block from within the block?
+27.6. 用 Vim 编辑 C 程序时，如果从代码块里跳转到代码块的开头或结尾？
 
-You can use "[{" command to jump to the beginning of the code block and "]}"
-to jump to the end of the code block from inside the block.
+在代码块的内部，可用 "[{" 命令来跳转到代码块的开头，而 "]}" 跳转到代码块的结
+尾。
 
 更多详情请阅读:
 
@@ -6483,31 +6465,23 @@ to jump to the end of the code block from inside the block.
      <code class="badlink">various-motions</code> 
 
                                                                 <b class="vimtag"> <a name="faq-27.7">faq-27.7</a> </b>
-27.7. When editing C++ files and when inserting new lines above or below a
-      comment (//) line, Vim automatically inserts the C++ comment
-      character (//) at the beginning of the line. How do I disable this?
+27.7. 编辑 C++ 文件并在注释 (//) 行上方或下方插入新行时，Vim 自动在行首插入
+      C++ 注释字符 (//)。如何关闭此行为？
 
-This automatic insertion of the comment leader (//) when new lines
-are added is controlled by three flags in the <code class="badlink">'formatoptions'</code>
-option:  "c", "r" and "o".  "c" enables auto-wrapping of comment
-lines when typing extends beyond the right margin.  "r" enables the
-automatic insertion of the comment leader when <code class="special">&lt;Enter&gt;</code> is pressed
-while editing a comment line.  "o" enables the automatic insertion
-of the comment leader when a new line is opened above or below an
-existing comment line by typing O or o in Normal mode.
+插入新行时自动插入注释头部 (//) 的行为由 <code class="badlink">'formatoptions'</code> 选项的三个标志位控制:
+"c"、"r" 和 "o"。 "c" 打开注释行输入超过右边界时的自动回绕。"r" 打开编辑注释行
+时按下 <code class="special">&lt;Enter&gt;</code> 后注释头部的自动插入。“"o" 打开在普通模式下用 O 或 o 在已有的注
+释行上方或下方打开新行时注释头部的自动插入。
 
-You can stop Vim from automatically inserting the comment leader
-when typing <code class="special">&lt;Enter&gt;</code> within a comment or when opening a new line by
-removing the "r" and "o" flags from <code class="badlink">'formatoptions'</code>.
+可从 <code class="badlink">'formatoptions'</code> 里删除 "r" 和 "o" 标志位来停止 Vim 在注释上按 <code class="special">&lt;Enter&gt;</code> 或
+打开新行时注释头部的自动插入。
 
    :set formatoptions-=r
    :set formatoptions-=o
 
-The default filetype plugin for C and C++ files
-($VIMRUNTIME/ftplugin/c.vim) adds the "r" and "o" flags to the
-<code class="badlink">'formatoptions'</code> option.  If you want to override this for C++ files,
-then you can add the above lines to the
-~/.vim/after/ftplugin/cpp.vim file.
+缺省 C 和 C++ 文件的文件类型插件 ($VIMRUNTIME/ftplugin/c.vim) 在
+<code class="badlink">'formatoptions'</code> 选项中加入了 "r" 和 "o" 标志位。如果你要为 C++ 文件覆盖此值，
+可把上述行加入 ~/.vim/after/ftplugin/cpp.vim 文件。
 
 更多详情请阅读:
 
@@ -6518,14 +6492,11 @@ then you can add the above lines to the
      <code class="badlink">ftplugin-overrule</code> 
 
                                                                 <b class="vimtag"> <a name="faq-27.8">faq-27.8</a> </b>
-27.8. How do I add the comment character "#" to a set of lines at the
-      beginning of each line?
+27.8. 如何为一组行在行首加上注释字符 "#"？
 
-First, select the first character in all the lines using visual block mode
-(<code class="keystroke">CTRL-V</code>). Press "I" to start inserting characters at the beginning of the
-line. Enter the comment character and then stop the insert mode by pressing
-<code class="special">&lt;Esc&gt;</code>. Vim will automatically insert the entered characters at the
-beginning of all the selected lines.
+首先，用可视列块模式选择所有行的首字符 (<code class="keystroke">CTRL-V</code>)。按 "I" 在行首开始插入字符。输
+入注释字符，然后按 <code class="special">&lt;Esc&gt;</code> 停止插入模式。Vim 会自动在所有选中的行首插入输入的字
+符。
 
 更多详情请阅读:
 
@@ -6534,29 +6505,25 @@ beginning of all the selected lines.
      <code class="badlink">v_b_I</code> 
 
                                                                 <b class="vimtag"> <a name="faq-27.9">faq-27.9</a> </b>
-27.9. How do I edit a header file with the same name as the corresponding C
-      source file?
+27.9. 如何编辑和对应 C 源文件相同名字的头文件？
 
-You can use the following command to edit a header file with the same name
-as the corresponding C source file: 
+可用以下命令来编辑和对就 C 源文件相同名字的头文件: 
 <code class="example"></code>
 <code class="example">    :e %:t:r.h</code>
 
-You can use the following command to edit the file in a new split window: 
+可用以下命令来在新分割的窗口上编辑此文件: 
 <code class="example"></code>
 <code class="example">    :sp %:t:r.h</code>
 
-In the above commands, the percent sign expands to the name of the current
-file.  The  <code class="badlink">:t</code>  modifier extracts the tail (last component) of the
-filename. The  <code class="badlink">:r</code>  modifier extracts the root of the filename.  The .h is
-appended to the resulting name to get the header filename.
+上述命令中，百分号符号扩展为当前文件名。 <code class="badlink">:t</code>  修饰符提取文件名的 tail (路径的最
+后部分)。 <code class="badlink">:r</code>  修饰符提取文件名的 root (根，即去除扩展名的部分)。给扩展后的文件
+名附加上 .h 就得到了头文件名。
 
-Another approach is to use the following command: 
+另一个方法是使用以下命令: 
 <code class="example"></code>
 <code class="example">    :sfind %:t:r.h</code>
 
-This command will search for the header file in the directories specified
-in the <code class="badlink">'path'</code> option.
+此命令会在 <code class="badlink">'path'</code> 选项指定的目录里搜索头文件。
 
 更多详情请阅读:
 
@@ -6566,16 +6533,15 @@ in the <code class="badlink">'path'</code> option.
      <code class="badlink">'path'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-27.10">faq-27.10</a> </b>
-27.10. How do I automatically insert comment leaders while typing comments?
+27.10. 如何自动在输入注释时自动插入注释头部？
 
-To automatically insert comment leaders while typing comments, add the "r"
-and "o" flags to the <code class="badlink">'formatoptions'</code> option. 
+要在输入注释时自动插入注释头部，给 <code class="badlink">'formatoptions'</code> 选项加上 "r" 和 "o" 标志
+位。 
 <code class="example"></code>
 <code class="example">    :set formatoptions+=ro</code>
 
-You may also want to add the "c" flag to auto-wrap comments using the
-<code class="badlink">'textwidth'</code> option setting and the "q" flag to format comments with the
-"gq" command: 
+可能也需要加上 "c" 标志位来用 <code class="badlink">'textwidth'</code> 选项设置自动回绕注释，还有 "q" 标志
+位来用 "gq" 命令排版注释: 
 <code class="example"></code>
 <code class="example">    :set formatoptions=croq</code>
 
@@ -6587,13 +6553,13 @@ You may also want to add the "c" flag to auto-wrap comments using the
      <code class="badlink">fo-table</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-28">faq-28</a> </b></h4><code class="section">SECTION 28 - QUICKFIX </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-28">faq-28</a> </b></h4><code class="section">第二十八节 - 快速修复</code>
 
                                                                 <b class="vimtag"> <a name="faq-28.1">faq-28.1</a> </b>
-28.1. How do I build programs from Vim?
+28.1. 如何在 Vim 里编译程序？
 
-You can use the  <code class="badlink">:make</code>  command to build programs from Vim. The  <code class="badlink">:make</code> 
-command runs the program specified by the <code class="badlink">'makeprg'</code> option.
+可用  <code class="badlink">:make</code>  命令来在 Vim 里编译程序。 <code class="badlink">:make</code>  命令运行 <code class="badlink">'makeprg'</code> 选项指定的程
+序。
 
 更多详情请阅读:
 
@@ -6605,14 +6571,12 @@ command runs the program specified by the <code class="badlink">'makeprg'</code>
      <code class="badlink">quickfix</code> 
 
                                                                 <b class="vimtag"> <a name="faq-28.2">faq-28.2</a> </b>
-28.2. When I run the make command in Vim I get the errors listed as the
-      compiler compiles the program. When it finishes this list disappears
-      and I have to use the  <code class="badlink">:clist</code>  command to see the error message again.
-      Is there any other way to see these error messages?
+28.2. 在 Vim 里运行 make 命令时得到编译器编译程序里列出的错误。结束时此列表消
+      失，我不得不用  <code class="badlink">:clist</code>  命令来重新看到错误信息。有没有其它办法来看到这些
+      错误信息？
 
-You can use the  <code class="badlink">:copen</code>  or  <code class="badlink">:cwindow</code>  command to open the quickfix window
-that contains the compiler output. You can select different error lines
-from this window and jump to the corresponding line in the source code.
+可用  <code class="badlink">:copen</code>  或  <code class="badlink">:cwindow</code>  命令来打开包含编译器输出的快速修复窗口。可以此窗口
+选择不同的错误行并跳转到源码的对应行。
 
 更多详情请阅读:
 
@@ -6621,24 +6585,17 @@ from this window and jump to the corresponding line in the source code.
      <code class="badlink">quickfix</code> 
 
                                                                 <b class="vimtag"> <a name="faq-28.3">faq-28.3</a> </b>
-28.3. How can I perform a command for each item in the quickfix/location
-      list?
+28.3. 如何为快速修复/位置列表的每个项目执行命令？
 
-Starting from Vim 7.4.858 Vim provides the new commands  <code class="badlink">:cfdo</code> ,  <code class="badlink">:cdo</code> ,
- <code class="badlink">:lfdo</code>  and  <code class="badlink">:ldo.</code>  They work by iterating over all items in the quickfix
-list and performing a command on each. The difference is, that the  <code class="badlink">:lfdo</code> 
-and  <code class="badlink">:ldo</code>  commands iterate over the location list entries, while the
- <code class="badlink">:cfdo</code>  and  <code class="badlink">:cdo</code>  commands operate on the items in the quickfix list. Also,
-the  <code class="badlink">:cfdo</code>  and  <code class="badlink">:lfdo</code>  operate on all different files, while the  <code class="badlink">:cdo</code>  and
- <code class="badlink">:ldo</code>  commands operate on each item in the quickfix/location list.
+从 Vim 7.4.858 开始，Vim 提供了新命令  <code class="badlink">:cfdo</code> 、 <code class="badlink">:cdo</code> 、 <code class="badlink">:lfdo</code>  和  <code class="badlink">:ldo</code> 。它们的工作方法是遍历快速修复列表的所有项目，为每个项目执行一个命令。区别是  <code class="badlink">:lfdo</code> 
+和  <code class="badlink">:ldo</code>  命令遍历的是位置列表项目，而  <code class="badlink">:cfdo</code>  和  <code class="badlink">:cdo</code>  命令在快速修复列表的项目上操作。还有， <code class="badlink">:cfdo</code>  和  <code class="badlink">:lfdo</code>  在所有不同的文件上操作，而  <code class="badlink">:cdo</code>  和
+ <code class="badlink">:ldo</code>  命令在快速修复/位置列表的每个项目上操作。
 
-For example you could vimgrep all C files in the current directory for a
-search string "Foobar": 
+例如，可在当前目录里用 vimgrep 来搜索所有 C 文件里的字符串 "Foobar": 
 <code class="example"></code>
 <code class="example">    :vimgrep /Foobar/ *.c</code>
 
-and as this populates your quickfix list, you could simply replace all
-occurences by using: 
+因为它会生成快速修复列表，所以可简单地用下面命令来替代所有的出现: 
 <code class="example"></code>
 <code class="example">    :cdo :%s/Foobar/Foobaz | upd</code>
 
