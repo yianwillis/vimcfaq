@@ -505,7 +505,7 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-27.7">faq-27.7</a>   When editing C++ files and when inserting new lines above or
           below a comment (//) line, Vim automatically inserts the C++
           comment character (//) at the beginning of the line. How do I
-          disable this? 
+          disable this?
  <a href="vim_faq.html#faq-27.8">faq-27.8</a>   How do I add the comment character "#" to a set of lines at the
           beginning of each line?
  <a href="vim_faq.html#faq-27.9">faq-27.9</a>   How do I edit a header file with the same name as the
@@ -632,46 +632,36 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-34.1">faq-34.1</a>   How do I print a file along with line numbers for all the lines?
  <a href="vim_faq.html#faq-34.2">faq-34.2</a>   How do I print a file with the Vim syntax highlighting colors?
                                                 <b class="vimtag"> <a name="faq-building-vim-from-source">faq-building-vim-from-source</a> </b>
-<code class="section">SECTION 35 - BUILDING VIM FROM SOURCE </code>
- <a href="vim_faq.html#faq-35.1">faq-35.1</a>   How do I build Vim from the sources on a Unix system?
- <a href="vim_faq.html#faq-35.2">faq-35.2</a>   How do I install Vim in my home directory or a directory other
-          than the default installation directory in Unix?
- <a href="vim_faq.html#faq-35.3">faq-35.3</a>   How do I build Vim from the sources on a MS-Windows system?
- <a href="vim_faq.html#faq-35.4">faq-35.4</a>   The Vim help, syntax, indent files are missing from my Vim
-          installation. How do I install these files?
- <a href="vim_faq.html#faq-35.5">faq-35.5</a>   I have built Vim from the source and installed the Vim package
-          using "make install". Do I need to keep the Vim source directory?
- <a href="vim_faq.html#faq-35.6">faq-35.6</a>   How do I determine the Vim features which are enabled at compile
-          time?
- <a href="vim_faq.html#faq-35.7">faq-35.7</a>   Can I build Vim without the GUI support?
- <a href="vim_faq.html#faq-35.8">faq-35.8</a>   When building Vim on a Unix system, I am getting "undefined
-          reference to term_set_winsize" error. How do I resolve this
-          error?
- <a href="vim_faq.html#faq-35.9">faq-35.9</a>   Vim configure keeps complaining about the lack of gtk-config
-          while trying to use GTK 2.03. This is correct, since in GTK 2
-          they moved to using the generic pkg-config. I can get pkg-config
-          to list the various includes and libs for gtk, but for some
-          reason the configure script still isn't picking this up.
- <a href="vim_faq.html#faq-35.10">faq-35.10</a>  I did successfully download the sources and compiled Vim on
-          Unix. But feature ... still does not work. What is wrong and
-          how can I fix it?
+<code class="section">第三十五节 - 从源码开始编译 VIM</code>
+ <a href="vim_faq.html#faq-35.1">faq-35.1</a>   Unix 系统上如何从源码开始编译 Vim？
+ <a href="vim_faq.html#faq-35.2">faq-35.2</a>   如何在主目录或不同于缺省安装目录的位置安装 Vim？
+ <a href="vim_faq.html#faq-35.3">faq-35.3</a>   MS-Windows 系统上如何如何从源码开始编译 Vim？
+ <a href="vim_faq.html#faq-35.4">faq-35.4</a>   我的 Vim 安装找不到 Vim 帮助、语法、缩进文件。如何安装这些文件？
+ <a href="vim_faq.html#faq-35.5">faq-35.5</a>   从源码编译 Vim 并用 "make install" 安装了 Vim 包。还需要留着 Vim
+          源目录吗？
+ <a href="vim_faq.html#faq-35.6">faq-35.6</a>   如何确定编译时打开的 Vim 特性？
+ <a href="vim_faq.html#faq-35.7">faq-35.7</a>   编译 Vim 时可以不带 GUI 支持吗？
+ <a href="vim_faq.html#faq-35.8">faq-35.8</a>   Unix 系统上编译 Vim 时，得到了 "undefined reference to
+          term_set_winsize" 错误。如何解决这个错误？
+ <a href="vim_faq.html#faq-35.9">faq-35.9</a>   Vim configure 试图用 GTK 2.03 时不停抱怨找不到 gtk-config。这是对
+          的，因为 GTK 2 里转而改用了通用的 pkg-config。我可以拿到 pkg-config
+          来列出若干 gtk 的头文件和库，但不知为什么 configure 脚本还是找它不
+          到。
+ <a href="vim_faq.html#faq-35.10">faq-35.10</a>  我成功地下载了源码并在 Unix 上编译了 Vim。但某某特性还是不能用。哪
+          里做错了，如何才能纠正问题？
                                                                 <b class="vimtag"> <a name="faq-various">faq-various</a> </b>
-<code class="section">SECTION 36 - VARIOUS </code>
- <a href="vim_faq.html#faq-36.1">faq-36.1</a>   How do I edit binary files with Vim?
- <a href="vim_faq.html#faq-36.2">faq-36.2</a>   How do I disable the visual error flash and the error beep?
- <a href="vim_faq.html#faq-36.3">faq-36.3</a>   How do I display the ascii value of a character displayed in a
-          buffer?
- <a href="vim_faq.html#faq-36.4">faq-36.4</a>   Can I use zero as a count for a Vim command?
- <a href="vim_faq.html#faq-36.5">faq-36.5</a>   How do I disable the Vim welcome screen?
- <a href="vim_faq.html#faq-36.6">faq-36.6</a>   How do I avoid the "hit enter to continue" prompt?
- <a href="vim_faq.html#faq-36.7">faq-36.7</a>   How do I invoke Vim from command line to run a group of commands
-          on a group of files?
- <a href="vim_faq.html#faq-36.8">faq-36.8</a>   How do I use a normal mode command from insert mode without
-          leaving the insert mode?
- <a href="vim_faq.html#faq-36.9">faq-36.9</a>   How do I start Vim in insert mode?
- <a href="vim_faq.html#faq-36.10">faq-36.10</a>  How do I use Copy and Paste with Vim?
- <a href="vim_faq.html#faq-36.11">faq-36.11</a>  Why shouldn't I modify the files in the system runtime
-          directory?
+<code class="section">第三十六节 - 杂项</code>
+ <a href="vim_faq.html#faq-36.1">faq-36.1</a>   用 Vim 如何编辑二进制文件？
+ <a href="vim_faq.html#faq-36.2">faq-36.2</a>   如果关闭可视错误闪烁和错误响铃？
+ <a href="vim_faq.html#faq-36.3">faq-36.3</a>   如何显示在缓冲区中显示字符的 ascii 值？
+ <a href="vim_faq.html#faq-36.4">faq-36.4</a>   Vim 命令如何使用零计数？
+ <a href="vim_faq.html#faq-36.5">faq-36.5</a>   如何关闭 Vim 欢迎屏幕？
+ <a href="vim_faq.html#faq-36.6">faq-36.6</a>   如何避免 "hit enter to continue" 提示？
+ <a href="vim_faq.html#faq-36.7">faq-36.7</a>   如何从命令行调用 Vim 来为一组文件运行一组命令？
+ <a href="vim_faq.html#faq-36.8">faq-36.8</a>   如何在插入模式里使用用普通模式命令而不用退出插入模式？
+ <a href="vim_faq.html#faq-36.9">faq-36.9</a>   如何启动 Vim 时就进行插入模式？
+ <a href="vim_faq.html#faq-36.10">faq-36.10</a>  Vim 里如何使用复制和粘贴？
+ <a href="vim_faq.html#faq-36.11">faq-36.11</a>  为什么不应修改系统运行时目录里的文件？
                                                                 <b class="vimtag"> <a name="faq-unicode">faq-unicode</a> </b>
 <code class="section">第三十七节 - UNICODE</code>
  <a href="vim_faq.html#faq-37.1">faq-37.1</a>   可以用 Vim 创建 Unicode 文件吗？
@@ -898,7 +888,7 @@ Vim 大部分是基于 Stvie 的工作并由 Bram Moolenaar 编写，还有来�
 <code class="section">  为众多程序语言提供缩进</code>
 
      C、C++、Java、Perl、XML 和许多其它的语言在输入时 Vim 可以自动缩进。还可以
-     加入其它语言的支持。 
+     加入其它语言的支持。
 
 <code class="section">  在头文件中查找单词</code>
 
@@ -7675,31 +7665,28 @@ the 2html.vim script and print the HTML file.
      <code class="badlink">printing</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-35">faq-35</a> </b></h4><code class="section">SECTION 35 - BUILDING VIM FROM SOURCE </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-35">faq-35</a> </b></h4><code class="section">第三十五节 - 从源码开始编译 VIM</code>
 
                                                                 <b class="vimtag"> <a name="faq-35.1">faq-35.1</a> </b>
-35.1. How do I build Vim from the sources on a Unix system?
+35.1. Unix 系统上如何从源码开始编译 Vim？
 
-For a Unix system, follow these steps to build Vim from the sources:
+Unix 系统上，采取以下步骤来从源码开始编译 Vim:
 
-- Download the source and run-time files archive (vim-##.tar.bz2) from the
-  ftp://ftp.vim.org/pub/vim/unix directory.
-- Extract the archive using the bzip2 and tar utilities using the command: 
+- 从 ftp://ftp.vim.org/pub/vim/unix 目录下载源码和运行时文件归档
+  (vim-##.tar.bz2)。
+- 用 bzip2 和 tar 工具解压归档，命令如下: 
 <code class="example"></code>
 <code class="example">        $ bunzip2 -c &lt;filename&gt; | tar -xf -</code>
 
-- Alternatively, download the source from the git repository:
+- 或者，从 git 库下载源码:
   <a href="https://github.com/vim/vim/releases/">https://github.com/vim/vim/releases/</a>
-- Alternatively, download the source from the mercurial repository:
+- 或者，从 mercrial 库下载源码:
   <a href="https://bitbucket.org/vim-mirror/vim/downloads/">https://bitbucket.org/vim-mirror/vim/downloads/</a>
-- Run the "make" command to configure and build Vim with the default
-  configuration.
-- Run "make install" command to install Vim in the default directory.
+- 运行 "make" 命令，用缺省的配置设定来配置和编译 Vim。
+- 运行 "make install" 命令在缺省目录上安装 Vim。
 
-To enable/disable various Vim features, before running the "make" command
-you can run the "configure" command with different flags to include/exclude
-the various Vim features. To list all the available options for the
-"configure" command, use: 
+要打开/关闭若干 Vim 特性，在运行 "make" 命令前可运行 "configure" 命令带不同标
+志位来包含/排除对应的 Vim 特性。可以这样列出 "configure" 所有可用的选项: 
 <code class="example"></code>
 <code class="example">    $ configure --help</code>
 
@@ -7708,17 +7695,15 @@ the various Vim features. To list all the available options for the
      <code class="badlink">install</code> 
 
                                                                 <b class="vimtag"> <a name="faq-35.2">faq-35.2</a> </b>
-35.2. How do I install Vim in my home directory or a directory other
-      than the default installation directory in Unix?
+35.2. 如何在主目录或不同于缺省安装目录的位置安装 Vim？
 
-To install Vim in a directory other than the default installation
-directory, you have to specify the directory using the --prefix option
-while running the configure script. 
+要在不同于缺少安装目录的位置安装 Vim，可在运行 configure 脚本时用 --prefix 选
+项指定该目录。 
 <code class="example"></code>
 <code class="example">    $ ./configure --prefix=/users/xyz</code>
 
-You can enable/disable various Vim feature by supplying different arguments
-to the configure script. For more information about all these options, run: 
+给 configure 脚本不同的参数可以打开/关闭若干的 Vim 特性。关于这些选项的更多详
+情，可运行: 
 <code class="example"></code>
 <code class="example">    $ ./configure --help</code>
 
@@ -7728,70 +7713,62 @@ to the configure script. For more information about all these options, run:
      <code class="badlink">install</code> 
 
                                                                 <b class="vimtag"> <a name="faq-35.3">faq-35.3</a> </b>
-35.3. How do I build Vim from the sources on a MS-Windows system?
+35.3. MS-Windows 系统上如何如何从源码开始编译 Vim？
 
-For a MS-Windows system, Vim can be built using either the Visual C++
-compiler or the Borland C++ compiler or the Ming GCC compiler or the cygwin
-gcc compiler. Follow these steps to build Vim from the sources for
-MS-Windows:
-    - Download the source (vim##src.zip), runtime (vim##rt.zip) and the
-      extra (vim-##-extra.tar.gz) archives from the
-      ftp://ftp.vim.org/pub/vim/pc directory.
-    - Extract the archives into a directory (for example, c:\vimsrc)
-    - Alternatively, download the source from the git repository:
+- 用 bzip2 和 tar 工具解压归档，命令如下: 
+<code class="example"></code>
+<code class="example">        $ bunzip2 -c &lt;filename&gt; | tar -xf -</code>
+
+- 运行 "make" 命令，用缺省的配置设定来配置和编译 Vim。
+- 运行 "make install" 命令在缺省目录上安装 Vim。
+MS-Windows 系统上，可用 Visual C++ 编译器或 Borland C++ 编译器或 Ming GCC 编译
+器或 cygwin gcc 编译器来编译 Vim。采取以下步骤来从源码开始编译 Vim:
+    - 从 ftp://ftp.vim.org/pub/vim/pc 目录下载源码 (vim##src.zip)、运行时文件
+      (vim##rt.zip) 和额外文件 (vim-##-extra.tar.gz) 归档。
+    - 在某个目录 (例如，c:\vimsrc) 解压归档
+    - 或者，从 git 库下载源码:
       <a href="https://github.com/vim/vim/releases/">https://github.com/vim/vim/releases/</a>
-    - Alternatively, download the source from the mercurial repository:
+    - A或者，从 mercrial 库下载源码:
       <a href="https://bitbucket.org/vim-mirror/vim/downloads/">https://bitbucket.org/vim-mirror/vim/downloads/</a>
-    - Depending on the installed compiler, you can use the corresponding
-      makefile to build the Vim sources. For Visual C++ use the
-      Make_mvc.mak makefile, for borland C++ use the Make_bc5.mak makefile,
-      for ming GCC use the Make_ming.mak makefile, for cygwin gcc use the
-      Make_cyg.mak makefile.
+    - 取决于安装的编译器，可用对应的 makefile 来编译 Vim 源码。Visual C++ 用
+      Make_mvc.mak makefile，borland C++ 用 Make_bc5.mak makefile，
+      ming GCC 用 Make_ming.mak makefile，cygwin gcc 用 Make_cyg.mak
+      makefile。
 
-Depending on whether you want to build the GUI version of Vim or the
-console version of Vim, you have to pass different arguments to the
-makefiles. After successfully building the sources, you can copy the
-vim.exe or gvim.exe file to the desired directory along with the files from
-the runtime archive.
-
+取决于你想编译 GUI 版本的 Vim 还是控制台版本的 Vim，需要给 makefile 传递不同的
+参数。成功编译源码后，可以复制 vim.exe 或 gvim.exe 文件还有运行时文件归档到目
+的目录。
 更多详情请阅读:
 
      <code class="badlink">install</code> 
 
                                                                 <b class="vimtag"> <a name="faq-35.4">faq-35.4</a> </b>
-35.4. The Vim help, syntax, indent files are missing from my Vim
-      installation. How do I install these files?
+35.4. 我的 Vim 安装找不到 Vim 帮助、语法、缩进文件。如何安装这些文件？
 
-The Vim help, syntax, indent and other runtime files are part of the Vim
-runtime package. You need to download and install the Vim runtime package.
-For example, for MS-Windows, the name of the Vim 6.1 runtime package is
-vim61rt.zip.
+Vim 帮助、语法、缩进和其它运行时文件是 Vim 运行时 包的一部分。可以下载和安装
+Vim 运行时包。例如，MS-Windows 上的 Vim 6.1 运行时包的名字是 vim61rt.zip。
 
 更多详情请阅读:
 
      <code class="badlink">install</code> 
 
                                                                 <b class="vimtag"> <a name="faq-35.5">faq-35.5</a> </b>
-35.5. I have built Vim from the source and installed the Vim package using
-      "make install". Do I need to keep the Vim source directory?
+35.5. 从源码编译 Vim 并用 "make install" 安装了 Vim 包。还需要留着 Vim 源目录
+      吗？I
 
-No. Once you have built and installed Vim in some directory other than the
-original source directory (for example, /usr/bin or /usr/local/bin), then
-you can remove the source directory.
+不需要。一量编译并安装 Vim 到除了原先的源码目录以外的目录 (例如 /usr/bin 和
+/usr/local/bin) 后，就可以删除源码目录。
 
                                                                 <b class="vimtag"> <a name="faq-35.6">faq-35.6</a> </b>
-35.6. How do I determine the Vim features which are enabled at compile
-      time?
+35.6. 如何确定编译时打开的 Vim 特性？
 
-You can use the  <code class="badlink">:version</code>  command to determine the Vim features that are
-enabled at compile time. The features that are enabled will be prefixed
-with a "+". The features that are not enabled will be prefixed with a "-".
+可用  <code class="badlink">:version</code>  命令确定编译时打开的在 Vim 特性。打开的特性会加上前缀 "+"。不
+打开的特性会加上前缀 "-"。
 
-If you want to test for a feature in a script, you can use the has()
-function: 
+如果你要在脚本中测试某特性是否存在，可用 has() 函数: 
 <code class="example"></code>
 <code class="example">    if has("menu")</code>
-<code class="example">        " Set up some menus</code>
+<code class="example">        " 设置一些菜单</code>
 <code class="example">    endif</code>
 
 更多详情请阅读:
@@ -7801,123 +7778,99 @@ function:
      <code class="badlink">has()</code> 
 
                                                                 <b class="vimtag"> <a name="faq-35.7">faq-35.7</a> </b>
-35.7. Can I build Vim without the GUI support?
+35.7. 编译 Vim 时可以不带 GUI 支持吗？
 
-Yes. You can build Vim by optionally enabling/disabling many of the
-features including GUI.
+是的，你可以在编译 Vim 时可选地打开/关闭许多特性，包含 GUI。
 
 更多详情请阅读:
 
      <code class="badlink">install</code> 
 
                                                                 <b class="vimtag"> <a name="faq-35.8">faq-35.8</a> </b>
-35.8. When building Vim on a Unix system, I am getting "undefined reference
-      to term_set_winsize" error. How do I resolve this error?
+35.8. Unix 系统上编译 Vim 时，得到了 "undefined reference to term_set_winsize"
+      错误。如何解决这个错误？
 
-You will get this error when the build process is not able to locate the
-termlib, termcap or ncurses library. You have to install the ncurses-dev
-package to resolve this error.
+如果编译过程中没找到 termlib、termcap 或 ncurses 库，就会得到这个错误。需要安
+装 ncurses-dev 库来解决这个错误。
 
                                                                 <b class="vimtag"> <a name="faq-35.9">faq-35.9</a> </b>
-35.9. Vim configure keeps complaining about the lack of gtk-config while
-      trying to use GTK 2.03. This is correct, since in GTK 2 they moved to
-      using the generic pkg-config. I can get pkg-config to list the
-      various includes and libs for gtk, but for some reason the configure
-      script still isn't picking this up.
+35.9. Vim configure 试图用 GTK 2.03 时不停抱怨找不到 gtk-config。这是对的，因
+      为 GTK 2 里转而改用了通用的 pkg-config。我可以拿到 pkg-config 来列出若干
+      gtk 的头文件和库，但不知为什么 configure 脚本还是找它不到。
 
-Use the following shell script named gtk-config: 
+可用以下外壳脚本，命名为 gtk-config: 
 <code class="example"></code>
 <code class="example">    #!/bin/sh</code>
 <code class="example">    pkg-config gtk+-2.0 $1 $2</code>
 
                                                                 <b class="vimtag"> <a name="faq-35.10">faq-35.10</a> </b>
-35.10. I did successfully download the sources and compiled Vim on
-        Unix. But feature ... still does not work. What is wrong and
-        how can I fix it?
+35.10. 我成功地下载了源码并在 Unix 上编译了 Vim。但某某特性还是不能用。哪里做
+       错了，如何才能纠正问题？
 
-You should first check, that you are actually running your self compiled
-Vim and not the system's provided version. So first check your $PATH
-setting.
+要首先检查一下你实际运行的是自己编译的 Vim 而不是系统提供的版本。所以首先检查
+一下 $PATH 设置。
 
-Depending on your compile options, some features might not be included in
-your build of Vim. You can use the  <code class="badlink">:version</code>  command to determine the Vim
-features that are enabled at compile time. The features that are enabled
-will be prefixed with a "+". The features that are not enabled will be
-prefixed with a "-".
+取决于编译选项，你编译的 Vim 可能没有些某些特性。可用  <code class="badlink">:version</code>  命令确定编译
+时带了哪些 Vim 特性。打开的特性会加上前缀 "+"。不打开的特性会加上前缀 "-"。
 
-The easiest way to include all features is to build the huge version. To do
-this, you have to specify the --with-features option while running the
-configure script: 
+最简单的包含所有特性的方法是编译 huge 版本。为此，运行 configure 脚本时须指定
+--with-features 选项: 
 <code class="example"></code>
 <code class="example">    $ ./configure --with-features=huge</code>
 
-Nevertheless, a feature could still be disabled at compile time, if the
-configure script can't find the required libraries for those features (e.g.
-for clipboard integration, your Vim needs to be linked against the X11
-development libraries).
+不过，编译时如果 configure 脚本找不到某些特性需要的库，仍然可以关闭这些特性
+(例如，剪贴板集成需要链接 X11 开发库)。
 
-There are several ways to install the required libraries:
+有几种方法可以安装所需的库:
 
-1) On a Debian based distribution, you can use the package manager "apt"
-   to install all required dependencies. As superuser, run the command:
+1) 在基于 Debian 的发布上，可用软件库管理工具 "apt" 来安装所有所需的依赖。作为
+   超级用户，运行命令:
 
    $ apt-get build-dep vim-gtk
 
-   This makes sure all required libraries needed to compile the vim-gtk
-   package will be installed. (This requires, that your sources list
-   contains deb-src entries. See your distribution manual on how to
-   enable this, if the above command did not work.)
+   这会确保所有编译 vim-gtk 包所需要的库被安装。(这需要你的源列表包含了
+   deb-src 项目。如果上述命令不可用，参见你的发布手册了解如何打开这些项目。)
 
-2) In openSUSE you can use the package manager "zypper" to install all
-   required libraries. This requires, that there is a source version of
-   the package installable from a configured repository (which by
-   default is not the case). Use:
+2) openSUSE 上可用软件库管理工具 "zypper" 来安装所有所需的库。这需要有可从配置
+   好的仓库里安装的库的源版本 (缺省并非如此)。用:
 
    $ zypper search -t srcpackage vim
 
-   to find out, whether or not there exists a source version in the
-   repository. If there is none, you'll need to add a source repository.
-   For openSUSE 11.2 you could use, e.g.
+   来确定在仓库里里是否有源版本。如果没有，需要加上源仓库。对 openSUSE 11.2 可
+   用比如说
 
    $ zypper ar
    <a href="http://download.opensuse.org/source/distribution/11.2/repo/oss/src-11.2">http://download.opensuse.org/source/distribution/11.2/repo/oss/src-11.2</a>
 
-   (one line)
+   (一行)
 
-   Once you have a source version available in your repositories, use
-   this command to install all needed requirements:
+   一旦在仓库里有了可用的源版本，用以下命令来安装所有所需的部件:
 
    $ zypper source-install --build-deps-only vim
 
-3) On a Fedora/RedHat based system, you can use
+3) 在基于 Fedora/RedHat 的系统上，可用
 
    $ yum-builddep vim-enhanced
 
-4) Run configure with your options and watch for missing libraries:
+4) 运行 configure 并带上你的选项，然后观察缺失的库:
 
    $ ./configure --with-features=huge 2&gt;&amp;1 |tee logfile
 
-   This will run configure and record the output into the file "logfile".
-   You need to check the logfile for missing dependencies. Consider this
-   output: 
+   这会运行 configure 并记录输出到文件 "logfile"。需要检查 logfile 来寻找缺失
+   依赖。考虑以下输出: 
 <code class="example"></code>
 <code class="example">    checking --disable-gtktest argument... gtk test enabled</code>
 <code class="example">    checking for pkg-config... /usr/bin/pkg-config</code>
 <code class="example">    checking for GTK - version &gt;= 2.2.0... no</code>
 
-    Here you can see, that the gtk libraries are missing and therefore
-    no GTK gui version can't be build. So you need to install the GTK
-    library in your system, with your package manager or by compiling it
-    yourself. Then run the configure script again and check, that it
-    finds the library.
+    这里你看到，缺失了 gtk 库，因而不能编译 GTK gui 版本。所以，你需要在你的系
+    统上安装 GTK 库，用你的软件库管理工具或自己编译。然后再次运行 configure 脚
+    本并检查这次是否找到了库。
 
-In theory, those provided dependencies by your distribution might still
-lack some libraries, that are needed for features, that simply are not
-enabled in your distribution and therefore those commands in 1-3 won't
-install it. At the very least, this provides a jumping point and you need
-to track down the required missing packages using method 4 from above. But
-usually, this works good enough for most people and you won't have to
-bother with the fourth method.
+理论上，你的发布提供的这些依赖仍可能缺少某些特性需要的库，也可能仅仅因为没有被
+你的发布打开，所以不能被 1-3 的命令安装。至少，这里提供了一个发动点，然后用上
+述的方法 4 可以继续追踪所需的缺失库。不过对大多数人而言，这里的步骤通常已经够
+用而不需要麻烦第四个方法了。
 
 更多详情请阅读:
 
@@ -7925,22 +7878,21 @@ bother with the fourth method.
      <code class="badlink">+feature-list</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-36">faq-36</a> </b></h4><code class="section">SECTION 36 - VARIOUS </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-36">faq-36</a> </b></h4><code class="section">第三十六节 - 杂项</code>
 
                                                                 <b class="vimtag"> <a name="faq-36.1">faq-36.1</a> </b>
-36.1. How do I edit binary files with Vim?
+36.1. 用 Vim 如何编辑二进制文件？
 
-You can set the following options to edit binary files in Vim: 
+可用以下选项一用 Vim 编辑二进制文件: 
 <code class="example"></code>
 <code class="example">    :set binary</code>
 <code class="example">    :set display=uhex</code>
 
-You can also use the "-b" command-line option to edit a binary file: 
+也可有 "-b" 命令行选项来编辑二进制文件: 
 <code class="example"></code>
 <code class="example">    $ vim -b &lt;binary_file_name&gt;</code>
 
-You can also use the xxd utility (part of the Vim distribution) to edit
-binary files.
+也可用 xxd 工具 (Vim 发布的一部分) 来编辑二进制文件。
 
 更多详情请阅读:
 
@@ -7953,10 +7905,9 @@ binary files.
      <code class="badlink">'display'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-36.2">faq-36.2</a> </b>
-36.2. How do I disable the visual error flash and the error beep?
+36.2. 如果关闭可视错误闪烁和错误响铃？
 
-You can disable both the visual error flash and the error beep using the
-following command: 
+可用以下命令关闭可视错误闪烁和错误响铃: 
 <code class="example"></code>
 <code class="example">    :set visualbell t_vb=</code>
 
@@ -7967,11 +7918,9 @@ following command:
      <code class="badlink">t_vb</code> 
 
                                                                 <b class="vimtag"> <a name="faq-36.3">faq-36.3</a> </b>
-36.3. How do I display the ascii value of a character displayed in a
-      buffer?
+36.3. 如何显示在缓冲区中显示字符的 ascii 值？
 
-You can use the "ga" command to display the ascii value of a displayed
-character.
+可用 "ga" 命令来显示在缓冲区中显示字符的 ascii 值。
 
 更多详情请阅读:
 
@@ -7979,10 +7928,9 @@ character.
      <code class="badlink">:ascii</code> 
 
                                                                 <b class="vimtag"> <a name="faq-36.4">faq-36.4</a> </b>
-36.4. Can I use zero as a count for a Vim command?
+36.4. Vim 命令如何使用零计数？
 
-You cannot use zero as a count for a Vim command, as "0" is a command on
-its own, moving to the first column of the line.
+Vim 命令不能使用零计数。因为 "0" 自身是个命令，移动到行的首列。
 
 更多详情请阅读:
 
@@ -7990,10 +7938,9 @@ its own, moving to the first column of the line.
      <code class="badlink">count</code> 
 
                                                                 <b class="vimtag"> <a name="faq-36.5">faq-36.5</a> </b>
-36.5. How do I disable the Vim welcome screen?
+36.5. 如何关闭 Vim 欢迎屏幕？
 
-You can disable the Vim welcome screen, by adding the "I" flag to the
-<code class="badlink">'shortmess'</code> option: 
+在 <code class="badlink">'shortmess'</code> 选项中加入 "I" 标志位可以关闭 Vim 欢迎屏幕: 
 <code class="example"></code>
 <code class="example">    :set shortmess+=I</code>
 
@@ -8003,16 +7950,15 @@ You can disable the Vim welcome screen, by adding the "I" flag to the
      <code class="badlink">'shortmess'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-36.6">faq-36.6</a> </b>
-36.6. How do I avoid the "hit enter to continue" prompt?
+36.6. 如何避免 "hit enter to continue" 提示？
 
-Vim will prompt you with the "hit enter to continue" prompt, if there are
-some messages on the screen for you to read and the screen is about to be
-redrawn.  You can add the "T" flag to the <code class="badlink">'shortmess'</code> option to truncate
-all messages. This will help in avoiding the hit-enter prompt: 
+如果有消息在屏幕上等待你阅读并且屏幕即将要重画时，Vim 会提示 "hit enter to
+continue"。在 <code class="badlink">'shortmess'</code> 选项中加入 "T" 标志位可截短所有的信息。这有助于避免
+hit-enter 的提示: 
 <code class="example"></code>
 <code class="example">    :set shortmess+=T</code>
 
-You can also increase the command height by setting the <code class="badlink">'cmdheight'</code> option: 
+也可设置 <code class="badlink">'cmdheight'</code> 选项来增加命令高度: 
 <code class="example"></code>
 <code class="example">    :set cmdheight=2</code>
 
@@ -8024,38 +7970,30 @@ You can also increase the command height by setting the <code class="badlink">'c
      <code class="badlink">'cmdheight'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-36.7">faq-36.7</a> </b>
-36.7. How do I invoke Vim from command line to run a group of commands on a
-      group of files?
+36.7. 如何从命令行调用 Vim 来为一组文件运行一组命令？
 
-There are several ways to invoke Vim from command line to run a group of
-commands on a group of files. You can use a set of  "-c" command line
-options to specify a group of commands: 
+有几种方法来从命令行调用 Vim 来为一组文件运行一组命令。可用一组 "-c" 命令行选
+项来指定一组命令: 
 <code class="example"></code>
 <code class="example">    $ vim -c "&lt;ex_command_1&gt;" -c "&lt;ex_command_2&gt;" *.txt</code>
 
-Each of the ex-command specified with the "-c" command line option is
-executed one by one sequentially. You can also use a single "-c" command
-line option and the "|" character to separate the ex commands: 
+每个 "-c" 命令行选项指定的 ex 命令依次顺序执行。可用单个 "-c" 命令行选项，然后
+用 "|" 字符分隔 ex 命令: 
 <code class="example"></code>
 <code class="example">    $ vim -c "&lt;ex_command_1&gt; | &lt;ex_command_2&gt;" *.txt</code>
 
-In the above command, if an ex command fails, then all the remaining ex
-commands will not be executed.
+上面的命令里，如果有 ex 命令失败，其余的 ex 命令都不会执行。
 
-For example, to replace "ABC" with "DEF" in a file from the command-line,
-you can use the following command: 
+例如，要从命令行替代一个文件里的 "ABC" 为 "DEF"，可用以下命令: 
 <code class="example"></code>
 <code class="example">    $ vim -c "%s/ABC/DEF/ge | update" myfile.txt</code>
 
-To replace "ABC" with "DEF" in multiple files from the command-line,
-you can use the following command: 
+要从命令行替代多个文件里的 "ABC" 为 "DEF"，可用以下命令: 
 <code class="example"></code>
 <code class="example">    $ vim -c "argdo %s/ABC/DEF/ge | update" *.txt</code>
 
-You can store the group of commands into a file and use the "-s" command
-line option to run the commands on a set of files. For example, if the
-group of commands are stored in the file mycmds.txt, then you can use the
-following command: 
+可把一组命令存在文件里，然后在一组文件上用 "-s" 命令行选项执行这些命令。例如，
+如果这组命令存在文件 mycmds.txt 里，可用下列命令: 
 <code class="example"></code>
 <code class="example">    $ vim -s mycmds.txt *.pl</code>
 
@@ -8065,17 +8003,13 @@ following command:
      <code class="badlink">-s</code> 
 
                                                                 <b class="vimtag"> <a name="faq-36.8">faq-36.8</a> </b>
-36.8. How do I use a normal mode command from insert mode without leaving
-      the insert mode?
+36.8. 如何在插入模式里使用用普通模式命令而不用退出插入模式？
 
-You can use a normal command from insert mode, without leaving the insert
-mode, by first pressing the <code class="keystroke">CTRL-O</code> key and then follow that with a single
-normal mode command.
+可按 <code class="keystroke">CTRL-O</code> 键后跟单个普通模式命令来在插入模式里使用用普通模式命令而不用退出插
+入模式。
 
-To execute more than one normal mode command, press the <code class="keystroke">CTRL-L</code> key,
-followed by any number of normal mode commands and then press <code class="special">&lt;Esc&gt;</code> to get
-back to the insert mode. (This only works, when the <code class="badlink">'insertmode'</code> option
-is set).
+要执行多于一个普通模式命令，按 <code class="keystroke">CTRL-L</code> 键后跟任意数量的普通模式命令，然后按
+<code class="special">&lt;Esc&gt;</code> 回到插入模式。(只适用于 <code class="badlink">'insertmode'</code> 选项置位的情形)。
 
 更多详情请阅读:
 
@@ -8083,16 +8017,14 @@ is set).
      <code class="badlink">i_CTRL-L</code> 
 
                                                                 <b class="vimtag"> <a name="faq-36.9">faq-36.9</a> </b>
-36.9. How do I start Vim in insert mode?
+36.9. 如何启动 Vim 时就进行插入模式？
 
-You can start Vim in insert mode using the  <code class="badlink">:startinsert</code>  ex command. 
+可用  <code class="badlink">:startinsert</code>  ex 命令在启动 Vim 时就进行插入模式: 
 <code class="example"></code>
 <code class="example">    $ vim +startinsert myfile.txt</code>
 
-The above command will open the file "myfile.txt" and start insert mode
-with the cursor in front of the first character on the first line.  To open
-the file and start appending after the last character on the last line,
-you can use the following command: 
+上述命令会打开文件 "myfile.txt" 并进行插入模式，光标在首行的首个字符上。要打开
+文件并立即在末行的末字符之后开始添加，可用以下命令: 
 <code class="example"></code>
 <code class="example">    $ vim + +startinsert! myfile.txt</code>
 
@@ -8101,34 +8033,24 @@ you can use the following command:
      <code class="badlink">:startinsert</code> 
 
                                                                 <b class="vimtag"> <a name="faq-36.10">faq-36.10</a> </b>
-36.10. How do I use Copy and Paste with Vim?
+36.10. Vim 里如何使用复制和粘贴？
 
-You should first check the output of the  <code class="badlink">:version</code>  command and make
-sure that +xterm-clipboard is present.
+首先检查  <code class="badlink">:version</code>  命令的输出，确定有 +xterm-clipboard。
 
-When running Vim in an xterm, you can either let Vim control the mouse
-or let xterm control the mouse. This is configured by the <code class="badlink">'mouse'</code> option.
+在 xterm 里运行 Vim 时，或者让 Vim 控制鼠标或者让 xterm 控制鼠标。这是由
+<code class="badlink">'mouse'</code> 选项配置的。
 
-If the <code class="badlink">'mouse'</code> option is not set (or set to the default value), then Vim will
-not control the mouse. You cannot move the Vim text cursor using the
-mouse. When you select some text using the mouse, xterm will copy
-it to the X11 cut buffer. When you press both the mouse buttons,
-xterm will paste the text from the cut buffer.
+如果不设置 <code class="badlink">'mouse'</code> 选项(或设为缺省值)，Vim 不会控制鼠标。你不能用鼠标移动 Vim
+的文本光标。用鼠标选择文本时，xterm 会把它复制到 X11 剪切缓冲区。如果同时按下
+两个鼠标键，xterm 会从剪切缓冲区里粘贴文本。
 
-If the <code class="badlink">'mouse'</code> option is set to "a" or some other value, then Vim controls
-the mouse. The mode (normal or insert or visual, etc) in which Vim
-controls the mouse is configured by the <code class="badlink">'mouse'</code> option. You can move
-the Vim text cursor using the mouse. When you select some text,
-the <code class="badlink">'clipboard'</code> option setting is used to determine whether to transfer
-the selected text to the clipboard or not. The default setting is to
-transfer the selected text to the clipboard. If you want to use the
-xterm selection mechanism in this mode, then you can press the
-<code class="special">&lt;Shift&gt;</code> key. If you press <code class="special">&lt;Shift&gt;</code> key when selecting text using the
-mouse, then Vim doesn't control the mouse and xterm controls the
-mouse.
+如果 <code class="badlink">'mouse'</code> 选项设为 "a" 或其它值，Vim 控制鼠标。<code class="badlink">'mouse'</code> 选项配置 Vim 在何模
+式 (普通或插入或可视等等) 下控制鼠标。可用鼠标移动 Vim 文本光标。选择一些文本
+时，<code class="badlink">'clipboard'</code> 选项设置用于决定是否传送选中的文本到剪贴板。缺省设置是把选中的
+文本传送到剪贴板。如果在此模式下想用 xterm 的选择机制，可按 <code class="special">&lt;Shift&gt;</code> 键。如果用
+鼠标选择文本时按住了 <code class="special">&lt;Shift&gt;</code> 键，Vim 不会控制鼠标而 xterm 控制鼠标。
 
-In the GUI mode, Copy and Paste should just work, depending on the <code class="badlink">'mouse'</code>
-setting. 更多详情请阅读:
+在 GUI 模式下，取决于 <code class="badlink">'mouse'</code> 设定，复制和粘贴应该总是可用。更多详情请阅读:
 
      <code class="badlink">'clipboard'</code> 
      <code class="badlink">x11-selection</code> 
@@ -8139,27 +8061,22 @@ setting. 更多详情请阅读:
      <code class="badlink">09.3</code> 
 
                                                                 <b class="vimtag"> <a name="faq-36.11">faq-36.11</a> </b>
-36.11. Why shouldn't I modify the files in the system runtime directory?
+36.11. 为什么不应修改系统运行时目录里的文件？
 
-Just be careful about modifying files under $VIMRUNTIME, which usually
-is /usr/share/vim/vimXX (Unix) or C:\Program Files\vim\vimXX
-(Windows) and XX being the version for which it applies, e.g. 73 for Vim
-7.3.
+修改 $VIMRUNTIME，通常是 /usr/share/vim/vimXX (Unix) 或 C:\Program
+Files\vim\vimXX (Windows)，里的文件要小心。这里 XX 是适用的版本号，如 Vim 7.3
+是 73。
 
-One should generally avoid modifying those files because they may be
-replaced during an upgrade of your Vim installation and your changes
-will be lost.  Also, if you upgrade to a new major or minor revision of
-Vim (e.g., from 7.3 to 7.4), the new version of Vim will use a different
-$VIMRUNTIME directory and while your changes won't be lost, they will be
-ignored.
+通常应避免修改这些文件，因为它们在 Vim 安装升级时会被替换，而你的改动会丢失。
+另外，如果你更新 Vim 的主要或次要版本 (如从 7.3 升到 7.4)，新版本的 Vim 会使用
+不同的 $VIMRUNTIME 目录，你的改动尽管不会丢失，也会被忽略。
 
-Consequently, take a look at
+所以，看一看
 
      <code class="badlink">filetypes</code> 
 
-for an explanation of several ways to modify Vim's response to
-different filetypes and where to put those modifications so that
-they will not be overwritten.
+其中解释了几种修改 Vim 对不同文件类型应对的方法，也解释了在哪里放置那些修改使
+得修改不会被覆盖。
 
 </section><hr class="doubleline" /><section class=inner>
 <h4>                                                                <b class="vimtag"> <a name="faq-37">faq-37</a> </b></h4><code class="section">第三十七节 - UNICODE</code>
@@ -8245,7 +8162,7 @@ ucs4。另外，可能需要指定字节序 (除了 utf-8 对字节序不敏感�
 
 <code class="badlink">'fileencodings'</code> 选项定义 Vim 打开已存在文件时使用的提示。它是逗号分隔的列表。
 特殊名字 "ucs-bom" 用于指示 Vim 应该检查字符顺序标记的存在与否；不过，如果出现
-在 "utf-8" 后它不会被识别。通常，"ucs-bom" (如果存在) 必须是列表的头一个。 
+在 "utf-8" 后它不会被识别。通常，"ucs-bom" (如果存在) 必须是列表的头一个。
 
 Vim 打开文件时，会检查 <code class="badlink">'fileencodings'</code> 列出的编码。使用第一个匹配。如果没有匹
 配，Vim 设置 <code class="badlink">'fileencoding'</code> 为空串，亦即使用 <code class="badlink">'encoding'</code> 的值。
