@@ -523,31 +523,28 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-28.3">faq-28.3</a>   How can I perform a command for each item in the
           quickfix/location list?
                                                                 <b class="vimtag"> <a name="faq-folding">faq-folding</a> </b>
-<code class="section">SECTION 29 - FOLDING </code>
- <a href="vim_faq.html#faq-29.1">faq-29.1</a>   How do I extend the Vim folding support?
- <a href="vim_faq.html#faq-29.2">faq-29.2</a>   When I enable folding by setting the <code class="badlink">'foldmethod'</code> option, all the
-          folds are closed. How do I prevent this?
- <a href="vim_faq.html#faq-29.3">faq-29.3</a>   How do I control how many folds will be opened when I start
-          editing a file?
- <a href="vim_faq.html#faq-29.4">faq-29.4</a>   How do I open and close folds using the mouse?
- <a href="vim_faq.html#faq-29.5">faq-29.5</a>   How do I change the text displayed for a closed fold?
- <a href="vim_faq.html#faq-29.6">faq-29.6</a>   How do I store and restore manually created folds across
-          different Vim invocations?
- <a href="vim_faq.html#faq-29.7">faq-29.7</a>   I have enabled syntax based folding. Why is Vim so slow?
+<code class="section">第二十九节 - 折叠</code>
+ <a href="vim_faq.html#faq-29.1">faq-29.1</a>   如何扩展 Vim 折叠支持？
+ <a href="vim_faq.html#faq-29.2">faq-29.2</a>   通过设置 <code class="badlink">'foldmethod'</code> 选项打开折叠时，所有的折叠都处于关闭状态。如
+          何防止？
+ <a href="vim_faq.html#faq-29.3">faq-29.3</a>   如何控制开始编辑文件时打开的折叠层数？
+ <a href="vim_faq.html#faq-29.4">faq-29.4</a>   如何用鼠标打开和关闭折叠？
+ <a href="vim_faq.html#faq-29.5">faq-29.5</a>   如何改变关闭折叠显示的文本？
+ <a href="vim_faq.html#faq-29.6">faq-29.6</a>   如何保存和恢复跨越不同 Vim 会话手动创建的折叠？
+ <a href="vim_faq.html#faq-29.7">faq-29.7</a>   打开基于语法的折叠。为什么 Vim 这么慢？
 
                                         <b class="vimtag"> <a name="faq-vim-with-external-applications">faq-vim-with-external-applications</a> </b>
-<code class="section">SECTION 30 - VIM WITH EXTERNAL APPLICATIONS </code>
- <a href="vim_faq.html#faq-30.1">faq-30.1</a>   Can I run a shell inside a Vim window?
- <a href="vim_faq.html#faq-30.2">faq-30.2</a>   How do I pass the word under the cursor to an external command?
- <a href="vim_faq.html#faq-30.3">faq-30.3</a>   How do I get the output of a shell command into a Vim buffer?
- <a href="vim_faq.html#faq-30.4">faq-30.4</a>   How do I pipe the contents of the current buffer to an external
-          command and replace the contents of the buffer with the output
-          from the command?
- <a href="vim_faq.html#faq-30.5">faq-30.5</a>   How do I sort a section of my file?
- <a href="vim_faq.html#faq-30.6">faq-30.6</a>   How do I use Vim as a pager?
- <a href="vim_faq.html#faq-30.7">faq-30.7</a>   How do I view Unix man pages from inside Vim?
- <a href="vim_faq.html#faq-30.8">faq-30.8</a>   How do I change the diff command used by the Vim diff support?
- <a href="vim_faq.html#faq-30.9">faq-30.9</a>   How do I use the Vim diff mode without folding?
+<code class="section">第三十节 - VIM 和外部应用</code>
+ <a href="vim_faq.html#faq-30.1">faq-30.1</a>   如何在 Vim 窗口里运行外壳？
+ <a href="vim_faq.html#faq-30.2">faq-30.2</a>   如何传递光标所在的单词给外部命令？
+ <a href="vim_faq.html#faq-30.3">faq-30.3</a>   如何把外壳命令的输出放进 Vim 缓冲区？
+ <a href="vim_faq.html#faq-30.4">faq-30.4</a>   如何把当前缓冲区的内容用管道给外部命令，并用命令的输出替换缓冲区的
+          内容？
+ <a href="vim_faq.html#faq-30.5">faq-30.5</a>   如何给文件的一部分排序？
+ <a href="vim_faq.html#faq-30.6">faq-30.6</a>   如何把 Vim 用作分页程序？
+ <a href="vim_faq.html#faq-30.7">faq-30.7</a>   如何在 Vim 内部查阅 Unix man 页面？
+ <a href="vim_faq.html#faq-30.8">faq-30.8</a>   如何更换 Vim 比较支持所需的 diff 命令？
+ <a href="vim_faq.html#faq-30.9">faq-30.9</a>   如何使用 Vim 比较模式时不带折叠？
                                                                 <b class="vimtag"> <a name="faq-gui-vim">faq-gui-vim</a> </b>
 <code class="section">第三十一节 - GUI VIM</code>
  <a href="vim_faq.html#faq-31.1">faq-31.1</a>   如何创建缓冲区特定的菜单？
@@ -6651,13 +6648,13 @@ occurences by using:
      <code class="badlink">:cdo</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-29">faq-29</a> </b></h4><code class="section">SECTION 29 - FOLDING </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-29">faq-29</a> </b></h4><code class="section">第二十九节 - 折叠</code>
 
                                                                 <b class="vimtag"> <a name="faq-29.1">faq-29.1</a> </b>
-29.1. How do I extend the Vim folding support?
+29.1. 如何扩展 Vim 折叠支持？
 
-You can use the <code class="badlink">'foldexpr'</code> option to fold using a user specified function.
-For example, to fold subroutines of the following form into a single line: 
+可用 <code class="badlink">'foldexpr'</code> 选项来用用户定义函数进行折叠。例如，要折叠下面形式的子例程到一
+行: 
 <code class="example"></code>
 <code class="example">    sub foo {</code>
 <code class="example">      my $barf;</code>
@@ -6665,7 +6662,7 @@ For example, to fold subroutines of the following form into a single line:
 <code class="example">      return $barf;</code>
 <code class="example">    }</code>
 
-You can use the following commands: 
+可用以下命令: 
 <code class="example"></code>
 <code class="example">    set foldmethod=expr</code>
 <code class="example">    set foldexpr=MyFoldExpr(v:lnum)</code>
@@ -6686,11 +6683,10 @@ You can use the following commands:
      <code class="badlink">fold-expr</code> 
 
                                                                 <b class="vimtag"> <a name="faq-29.2">faq-29.2</a> </b>
-29.2. When I enable folding by setting the <code class="badlink">'foldmethod'</code> option, all the
-      folds are closed. How do I prevent this?
+29.2. 通过设置 <code class="badlink">'foldmethod'</code> 选项打开折叠时，所有的折叠都处于关闭状态。如何防
+      止？
 
-You can set the <code class="badlink">'foldlevelstart'</code> option to a particular value to close only
-folds above the specified value. 
+可设 <code class="badlink">'foldlevelstart'</code> 选项为指定值，仅关闭高于该值的折叠。 
 <code class="example"></code>
 <code class="example">    :set foldlevelstart=99</code>
 
@@ -6701,16 +6697,14 @@ folds above the specified value.
      <code class="badlink">fold-foldlevel</code> 
 
                                                                 <b class="vimtag"> <a name="faq-29.3">faq-29.3</a> </b>
-29.3. How do I control how many folds will be opened when I start editing a
-      file?
+29.3. 如何控制开始编辑文件时打开的折叠层数？
 
-You can modify the <code class="badlink">'foldlevelstart'</code> option to control the number of folds
-that will be opened when you start editing a file. To start editing with
-all the folds closed: 
+可修改 <code class="badlink">'foldlevelstart'</code> 选项来控制开始编辑文件时打开的折叠层数。要开始编辑时关
+闭所有的折叠: 
 <code class="example"></code>
 <code class="example">    :set foldlevelstart=0</code>
 
-To start editing with all the folds opened, you can use 
+要开始编辑时打开所有的折叠，可用 
 <code class="example"></code>
 <code class="example">    :set foldlevelstart=999</code>
 
@@ -6719,11 +6713,10 @@ To start editing with all the folds opened, you can use
      <code class="badlink">'foldlevelstart'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-29.4">faq-29.4</a> </b>
-29.4. How do I open and close folds using the mouse?
+29.4. 如何用鼠标打开和关闭折叠？
 
-You can click on the + and - characters displayed at the leftmost column to
-open and close fold. For this to work, you have to set the <code class="badlink">'foldcolumn'</code>
-to a value greater than zero: 
+可以点击最左列显示的 + 和 - 字符来打开和关闭折叠。为此，必须设置 <code class="badlink">'foldcolumn'</code>
+为大于零的值: 
 <code class="example"></code>
 <code class="example">    :set foldcolumn=2</code>
 
@@ -6732,10 +6725,9 @@ to a value greater than zero:
      <code class="badlink">'foldcolumn'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-29.5">faq-29.5</a> </b>
-29.5. How do I change the text displayed for a closed fold?
+29.5. 如何改变关闭折叠显示的文本？
 
-You can use the <code class="badlink">'foldtext'</code> option to change the text displayed for a closed
-fold.
+可用 <code class="badlink">'foldtext'</code> 选项来改变关闭折叠显示的文本。
 
 更多详情请阅读:
 
@@ -6744,12 +6736,10 @@ fold.
      <code class="badlink">'fillchars'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-29.6">faq-29.6</a> </b>
-29.6. How do I store and restore manually created folds across different
-      Vim invocations?
+29.6. 如何保存和恢复跨越不同 Vim 会话手动创建的折叠？
 
-You can use the  <code class="badlink">:mkview</code>  command to store manually created folds. Later,
-you can use the  <code class="badlink">:loadview</code>  command to restore the folds. For this to work,
-the <code class="badlink">'viewoptions'</code> must contain "folds".
+可用  <code class="badlink">:mkview</code>  命令来保存手动创建的折叠。之后，可用  <code class="badlink">:loadview</code>  命令来恢复折
+叠。为此，<code class="badlink">'viewoptions'</code> 必须包含 "folds"。
 
 更多详情请阅读:
 
@@ -6762,48 +6752,39 @@ the <code class="badlink">'viewoptions'</code> must contain "folds".
      <code class="badlink">'sessionoptions'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-29.7">faq-29.7</a> </b>
-29.7. I have enabled syntax based folding. Why is Vim so slow?
+29.7. 打开基于语法的折叠。为什么 Vim 这么慢？
 
-Syntax based folding is currently rather slow in Vim and will possibly
-slow down Vim considerably. There is an issue in the todo list to fix
-this, but the todo list is rather long and it may take a while until
-this will be fixed.
+基于语法的折叠在 Vim 里目前颇慢，Vim 的减慢可能很可观。这是待开发列表中的一
+项，但待开发列表颇长，要修正此问题可能需要时日。
 
-You can find the issue in the todo list, if you read
+可以在待开发列表中找到此问题，如果你阅读
 
      <code class="badlink">todo.txt</code> 
 
-followed by a search for "folding with <code class="badlink">'foldmethod'</code>"
+然后搜索 "folding with <code class="badlink">'foldmethod'</code>"
 
-A workaround is to temporarily set the foldmethod to manual while in
-insert mode. This is described in the wiki at:
+一个临时解决方案是在插入模式下临时设置 foldmethod 为 manual。在 wiki 里有描述:
 
     <a href="http://vim.wikia.com/wiki/Keep_folds_closed_while_inserting_text">http://vim.wikia.com/wiki/Keep_folds_closed_while_inserting_text</a>
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-30">faq-30</a> </b></h4><code class="section">SECTION 30 - VIM WITH EXTERNAL APPLICATIONS </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-30">faq-30</a> </b></h4><code class="section">第三十节 - VIM 和外部应用</code>
 
                                                                 <b class="vimtag"> <a name="faq-30.1">faq-30.1</a> </b>
-30.1. Can I run a shell inside a Vim window?
+30.1. 如何在 Vim 窗口里运行外壳？
 
-Since Version 8.1 Vim comes with a terminal window included. It allows
-to run a shell inside an ordinary Vim window (e.g. split) asynchronously
-and interact with the shell using the normal Vim commands.
+从 8.1 版本开始，Vim 提供了终端窗口。支持在普通 Vim 窗口 (例如通过分割) 中异步
+运行外壳，使用普通 Vim 命令和外壳交互。
 
-When the focus is in the terminal window, typed keys will be sent to
-the job and is called terminal mode. You can click outside of the
-terminal window to move keyboard focus elsewhere, alternatively one can
-use <code class="keystroke">CTRL-W</code> to novigate between different Vim windows. To feed <code class="keystroke">CTRL-W</code> into the
-terminal, one needs to use <code class="keystroke">CTRL-W</code> .
+焦点在终端窗口时，输入的键发送到作业，这称为终端模式。可以在终端窗口之外点击来
+把键盘焦点移到别处，也可用 <code class="keystroke">CTRL-W</code> 来浏览不同的 Vim 窗口。要给终端发送 <code class="keystroke">CTRL-W</code>，
+须用 <code class="keystroke">CTRL-W</code> .
 
-To map keys specifically for terminal mode, use the new  <code class="badlink">:tmap</code> 
-command. After typing <code class="keystroke">CTRL-W</code> the terminal window will switch to
-Terminal-Normal mode (this can be used to move the cursor around, scroll
-the window, etc. Just like normal mode).
+要专门为终端模式映射键，可用新的  <code class="badlink">:tmap</code>  命令。在终端窗口中按 <code class="keystroke">CTRL-W</code> N 后会切换
+到终端普通模式 (可用于移动光标，滚动窗口等等，就像普通模式一样)。
 
-To interact between the terminal and Vim, Vim implements several
-interfaces using term_sendkeys(), terminal-api and the client-server
-mechanism.
+要在终端和 Vim 间交互，Vim 用 term_sendkeys()、终端 API 和客户-服务器机制实现
+了几种接口。
 
 更多详情请阅读:
 
@@ -6813,10 +6794,9 @@ mechanism.
      <code class="badlink">terminal-communication</code> 
 
                                                                 <b class="vimtag"> <a name="faq-30.2">faq-30.2</a> </b>
-30.2. How do I pass the word under the cursor to an external command?
+30.2. 如何传递光标所在的单词给外部命令？
 
-You can use the special keyword <code class="special">&lt;cword&gt;</code> to pass the word under the cursor
-to an external command. For example: 
+可用特殊关键字 <code class="special">&lt;cword&gt;</code> 来传递光标所在的单词给外部命令。例如: 
 <code class="example"></code>
 <code class="example">    :!dict &lt;cword&gt;</code>
 
@@ -6825,16 +6805,14 @@ to an external command. For example:
      <code class="badlink">:&lt;cword&gt;</code> 
 
                                                                 <b class="vimtag"> <a name="faq-30.3">faq-30.3</a> </b>
-30.3. How do I get the output of a shell command into a Vim buffer?
+30.3. 如何把外壳命令的输出放进 Vim 缓冲区？
 
-You can use the `:r !` command to get the output of a shell command into a
-Vim buffer. For example, to insert the output of the "ls" shell command,
-you can use the following command: 
+可用 `:r !` 命令来把外壳命令的输出放进 Vim 缓冲区。例如，要插入 "ls" 外壳命令
+的输出，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :r !ls</code>
 
-To insert the output of the shell command above the first line use the
-following command: 
+要插入外壳命令的输出到首行的上方，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :0r !ls</code>
 
@@ -6843,33 +6821,27 @@ following command:
      <code class="badlink">:r!</code> 
 
                                                                 <b class="vimtag"> <a name="faq-30.4">faq-30.4</a> </b>
-30.4. How do I pipe the contents of the current buffer to an external
-      command and replace the contents of the buffer with the output from
-      the command?
+30.4. 如何把当前缓冲区的内容用管道给外部命令，并用命令的输出替换缓冲区的内容？
 
-You can use the :! command to pipe the contents of the current buffer to an
-external command and replace the contents of the buffer with the output
-from the command. For example, to sort the contents of the current buffer,
-using the Unix sort command, you can use the following command: 
+可用 :! 命令来把当前缓冲区的内容用管道给外部命令，并用命令的输出替换缓冲区的内
+容。例如，要用 Unix sort 命令给当前缓冲区的内容排序，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :%!sort</code>
 
-To sort only lines 10-20, you can use the following command 
+要只给 10-20 行排序，可用以下命令 
 <code class="example"></code>
 <code class="example">    :10,20!sort</code>
 
-Also, if you want to pipe a buffer to an external command but not put the
-results back in the buffer, you can use 
+另外，如果要把缓冲区用管道给外部命令但不需要把结果传回缓冲区，可用 
 <code class="example"></code>
 <code class="example">    :w !sort</code>
 
-The above command will pipe the entire buffer to the sort command.  Note,
-that the space between the "w" and the "!" is critical.  To pipe only a
-range of lines, you can use 
+上述命令会把整个缓冲区用管道给 sort 命令。<code class="note">注意</code>，"w" 和 "!" 间的空格是至关重要
+的。要只给管道一段行范围，可用 
 <code class="example"></code>
 <code class="example">    :10,20w !sort</code>
 
-The above command will pipe the lines 10-20 to the sort command.
+上述命令会把 10-20 行用管道给 sort 命令。
 
 更多详情请阅读:
 
@@ -6878,57 +6850,51 @@ The above command will pipe the lines 10-20 to the sort command.
      <code class="badlink">:w_c</code> 
 
                                                                 <b class="vimtag"> <a name="faq-30.5">faq-30.5</a> </b>
-30.5. How do I sort a section of my file?
+30.5. 如何给文件的一部分排序？
 
-You use the  <code class="badlink">:sort</code>  command like this:
+可这样用  <code class="badlink">:sort</code>  命令:
 
    :5,100sort
 
-Using the  <code class="badlink">:sort</code>  command provides many options, you can sort numerical on
-the first found decimal number using:
+ <code class="badlink">:sort</code>  命令提供了许多选项，可这样按第一个找到的十进制数值排序:
 
    :%sort n
 
-Or you can specify to sort on the text, starting at virtual column 8:
+也可指定从虚拟第 8 列开始给文件排序:
 
    :%sort /.*\%8v/
 
-Alternatively can pipe a section of the file to the Unix "sort" utility to
-sort the file. For example: 
+也可把文件的一部分用管道传给 Unix "sort" 工具来给文件排序。例如: 
 <code class="example"></code>
 <code class="example">    :5,100!sort</code>
 
-You can also use a visual block, and use the "!sort" command on the
-selected block.
+也可用可视列块，在选中的列块上使用 "!sort" 命令。
 
-See also:
+另见:
      <code class="badlink">:sort</code> 
      <code class="badlink">filter</code> 
 
                                                                 <b class="vimtag"> <a name="faq-30.6">faq-30.6</a> </b>
-30.6. How do I use Vim as a pager?
+30.6. 如何把 Vim 用作分页程序？
 
-You can use Vim as a pager using the $VIMRUNTIME/macros/less.sh shell
-script, supplied as part of the standard Vim distribution. This shell
-script uses the $VIMRUNTIME/macros/less.vim Vim script to provide less like
-key bindings.
+可用标准 Vim 发布提供的 $VIMRUNTIME/macros/less.sh 外壳脚本来把 Vim 用作分页程
+序。此外壳脚本使用 $VIMRUNTIME/macros/less.vim Vim 脚本来提供类似 less 的键盘
+绑定。
 
 更多详情请阅读:
 
      <code class="badlink">less</code> 
 
                                                                 <b class="vimtag"> <a name="faq-30.7">faq-30.7</a> </b>
-30.7. How do I view Unix man pages from inside Vim?
+30.7. 如何在 Vim 内部查阅 Unix man 页面？
 
-You can view Unix man pages, inside Vim, using the man.vim plugin supplied
-as part of the standard Vim distribution. To use this plugin, add the
-following line to your startup vimrc file: 
+可用标准 Vim 发布提供的 man.vim 插件在 Vim 内部查阅 Unix man 页面。要使用此插
+件，在启动 vimrc 文件中加入下行: 
 <code class="example"></code>
 <code class="example">    runtime ftplugin/man.vim</code>
 
-You can also press the K key to run the program specified by the
-<code class="badlink">'keywordprg'</code> option with the keyword under the cursor. By default,
-<code class="badlink">'keywordprg'</code> is set to run man on the keyword under the cursor.
+也可按 K 键来运行 <code class="badlink">'keywordprg'</code> 选项指定的程序，带上光标所在的关键字。缺省的
+<code class="badlink">'keywordprg'</code> 设置会在光标所在的关键字上运行 man。
 
 更多详情请阅读:
 
@@ -6937,10 +6903,9 @@ You can also press the K key to run the program specified by the
      <code class="badlink">'keywordprg'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-30.8">faq-30.8</a> </b>
-30.8. How do I change the diff command used by the Vim diff support?
+30.8. 如何更换 Vim 比较支持所需的 diff 命令？
 
-By default, the Vim diff support uses the <code class="badlink">'diff'</code> command. You can change
-this by changing the <code class="badlink">'diffexpr'</code> option.
+缺省，Vim 的比较支持使用 <code class="badlink">'diff'</code> 命令。可通过修改 <code class="badlink">'diffexpr'</code> 选项来更改之。
 
 更多详情请阅读:
 
@@ -6948,14 +6913,13 @@ this by changing the <code class="badlink">'diffexpr'</code> option.
      <code class="badlink">'diffexpr'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-30.9">faq-30.9</a> </b>
-30.9. How do I use the Vim diff mode without folding?
+30.9. 如何使用 Vim 比较模式时不带折叠？
 
-You can use the following command-line to start Vim with two filenames
-and use the diff mode without folding: 
+可用以下命令行来启动 Vim 带两个文件名并使用不带折叠的比较模式: 
 <code class="example"></code>
 <code class="example">    $ vim -o file1 file2 "+windo set diff scrollbind scrollopt+=hor nowrap"</code>
 
-If you like vertically split windows, then replace "-o" with "-O".
+如果你喜欢垂直分割的窗口，把 "-o" 换成 "-O"。
 
 更多详情请阅读:
 
