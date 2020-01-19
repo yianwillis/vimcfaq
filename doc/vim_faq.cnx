@@ -463,36 +463,25 @@ SECTION 26 - PLUGINS ~
 |faq-26.8|  How do I set the filetype option for files with names matching a
 	  particular pattern or depending on the file extension?
                                                 *faq-editing-program-files*
-SECTION 27 - EDITING PROGRAM FILES ~
-|faq-27.1|  How do I enable automatic indentation for C/C++ files?
-|faq-27.2|  How do I configure the indentation used for C/C++ files?
-|faq-27.3|  How do I turn off the automatic indentation feature?
-|faq-27.4|  How do I change the number of space characters used for the
-	  automatic indentation?
-|faq-27.5|  I am editing a C program using Vim. How do I display the
-	  definition of a macro or a variable?
-|faq-27.6|  I am editing a C program using Vim. How do I jump to the
-	  beginning or end of a code block from within the block?
-|faq-27.7|  When editing C++ files and when inserting new lines above or
-	  below a comment (//) line, Vim automatically inserts the C++
-	  comment character (//) at the beginning of the line. How do I
-	  disable this?
-|faq-27.8|  How do I add the comment character "#" to a set of lines at the
-	  beginning of each line?
-|faq-27.9|  How do I edit a header file with the same name as the
-	  corresponding C source file?
-|faq-27.10| How do I automatically insert comment leaders while typing
-	  comments?
+第二十七节 - 编辑程序文件~
+|faq-27.1|  如何打开 C/C++ 文件的自动缩进？
+|faq-27.2|  如何配置 C/C++ 文件的缩进？
+|faq-27.3|  如何关闭自动缩进功能？
+|faq-27.4|  如何改变自动缩进的空格数？
+|faq-27.5|  用 Vim 编辑 C 程序时，如何显示宏或变量的定义？
+|faq-27.6|  用 Vim 编辑 C 程序时，如果从代码块里跳转到代码块的开头或结尾？
+|faq-27.7|  编辑 C++ 文件并在注释 (//) 行上方或下方插入新行时，Vim 自动在行首
+	  插入 C++ 注释字符 (//)。如何关闭此行为？
+|faq-27.8|  如何为一组行在行首加上注释字符 "#"？
+|faq-27.9|  如何编辑和对应 C 源文件相同名字的头文件？
+|faq-27.10| 如何自动在输入注释时自动插入注释头部？
                                                                 *faq-quickfix*
-SECTION 28 - QUICKFIX ~
-|faq-28.1|  How do I build programs from Vim?
-|faq-28.2|  When I run the make command in Vim I get the errors listed as the
-	  compiler compiles the program. When it finishes this list
-	  disappears and I have to use the `:clist` command to see the error
-	  message again. Is there any other way to see these error
-	  messages?
-|faq-28.3|  How can I perform a command for each item in the
-	  quickfix/location list?
+第二十八节 - 快速修复~
+|faq-28.1|  如何在 Vim 里编译程序？
+|faq-28.2|  在 Vim 里运行 make 命令时得到编译器编译程序里列出的错误。结束时此
+	  列表消失，我不得不用 `:clist` 命令来重新看到错误信息。有没有其它办法
+	  来看到这些错误信息？
+|faq-28.3|  如何为快速修复/位置列表的每个项目执行命令？
                                                                 *faq-folding*
 第二十九节 - 折叠~
 |faq-29.1|  如何扩展 Vim 折叠支持？
@@ -6374,16 +6363,16 @@ in the ~/.vim directory (or in one of the directories specified in the
 
 =============================================================================
  								*faq-27*
-SECTION 27 - EDITING PROGRAM FILES ~
+第二十七节 - 编辑程序文件~
 
  								*faq-27.1*
-27.1. How do I enable automatic indentation for C/C++ files?
+27.1. 如何打开 C/C++ 文件的自动缩进？
 
-You can enable file-type based indentation using: >
+可如此打开基于文件类型的缩进: >
 
     :filetype indent on
 <
-If you want to only enable automatic C indentation, then use: >
+如果只要打开自动 C 缩进，可用: >
 
     :set cindent
 <
@@ -6394,10 +6383,9 @@ If you want to only enable automatic C indentation, then use: >
     |filetype|
 
  								*faq-27.2*
-27.2. How do I configure the indentation used for C/C++ files?
+27.2. 如何配置 C/C++ 文件的缩进？
 
-You can configure the Vim C indentation by modifying the value of the
-'cinoptions', 'cinkeys' and 'cinwords' options.
+可修改 'cinoptions'、'cinkeys' 和 'cinwords' 选项来配置 Vim C 缩进。
 
 更多详情请阅读:
 
@@ -6410,19 +6398,18 @@ You can configure the Vim C indentation by modifying the value of the
     |'smartindent'|
 
  								*faq-27.3*
-27.3. How do I turn off the automatic indentation feature?
+27.3. 如何关闭自动缩进功能？
 
-By default, the automatic indentation is not turned on. You must have
-configured Vim to do automatic indentation in either .vimrc or .gvimrc
-files. You can disable automatic indentation using either, >
+缺省并没有打开自动缩进。一定是在 .vimrc 或 .gvimrc 文件里配置 Vim 打开了自动缩
+进。可以这些关闭自动缩进 >
 
     :filetype indent off
 <
-or >
+或 >
 
     :set nocindent
 <
-Also, check the setting for the following options: >
+另外，也检查一下下列选项的设置: >
 
     :set autoindent?
     :set smartindent?
@@ -6437,11 +6424,9 @@ Also, check the setting for the following options: >
     |'indentexpr'|
 
  								*faq-27.4*
-27.4. How do I change the number of space characters used for the automatic
-      indentation?
+27.4. 如何改变自动缩进的空格数？
 
-You can modify the 'shiftwidth' option to change the number of space
-characters used for the automatic indentation: >
+可修改 'shiftwidth' 选项以修改自动缩进的空格数: >
 
     :set shiftwidth=4
 <
@@ -6450,12 +6435,10 @@ characters used for the automatic indentation: >
     |'shiftwidth'|
 
  								*faq-27.5*
-27.5. I am editing a C program using Vim. How do I display the definition
-      of a macro or a variable?
+27.5. 用 Vim 编辑 C 程序时，如何显示宏或变量的定义？
 
-You can use the "[d" command to display the definition of a macro, "[i"
-command to display the definition of a variable, "gd" to goto the local
-declaration of a variable and "gD" to go to the global Declaration.
+可用 "[d" 命令来显示宏的定义，"[i" 来显示变量的定义，"gd" 转到变量的局部声明
+(declaration)，而 "gD" 转到其全局声明 (Declaration)。
 
 更多详情请阅读:
 
@@ -6468,11 +6451,10 @@ declaration of a variable and "gD" to go to the global Declaration.
     |29.5|
 
  								*faq-27.6*
-27.6. I am editing a C program using Vim. How do I jump to the beginning or
-      end of a code block from within the block?
+27.6. 用 Vim 编辑 C 程序时，如果从代码块里跳转到代码块的开头或结尾？
 
-You can use "[{" command to jump to the beginning of the code block and "]}"
-to jump to the end of the code block from inside the block.
+在代码块的内部，可用 "[{" 命令来跳转到代码块的开头，而 "]}" 跳转到代码块的结
+尾。
 
 更多详情请阅读:
 
@@ -6481,31 +6463,23 @@ to jump to the end of the code block from inside the block.
     |various-motions|
 
  								*faq-27.7*
-27.7. When editing C++ files and when inserting new lines above or below a
-      comment (//) line, Vim automatically inserts the C++ comment
-      character (//) at the beginning of the line. How do I disable this?
+27.7. 编辑 C++ 文件并在注释 (//) 行上方或下方插入新行时，Vim 自动在行首插入
+      C++ 注释字符 (//)。如何关闭此行为？
 
-This automatic insertion of the comment leader (//) when new lines
-are added is controlled by three flags in the 'formatoptions'
-option:  "c", "r" and "o".  "c" enables auto-wrapping of comment
-lines when typing extends beyond the right margin.  "r" enables the
-automatic insertion of the comment leader when <Enter> is pressed
-while editing a comment line.  "o" enables the automatic insertion
-of the comment leader when a new line is opened above or below an
-existing comment line by typing O or o in Normal mode.
+插入新行时自动插入注释头部 (//) 的行为由 'formatoptions' 选项的三个标志位控制:
+"c"、"r" 和 "o"。 "c" 打开注释行输入超过右边界时的自动回绕。"r" 打开编辑注释行
+时按下 <Enter> 后注释头部的自动插入。“"o" 打开在普通模式下用 O 或 o 在已有的注
+释行上方或下方打开新行时注释头部的自动插入。
 
-You can stop Vim from automatically inserting the comment leader
-when typing <Enter> within a comment or when opening a new line by
-removing the "r" and "o" flags from 'formatoptions'.
+可从 'formatoptions' 里删除 "r" 和 "o" 标志位来停止 Vim 在注释上按 <Enter> 或
+打开新行时注释头部的自动插入。
 
    :set formatoptions-=r
    :set formatoptions-=o
 
-The default filetype plugin for C and C++ files
-($VIMRUNTIME/ftplugin/c.vim) adds the "r" and "o" flags to the
-'formatoptions' option.  If you want to override this for C++ files,
-then you can add the above lines to the
-~/.vim/after/ftplugin/cpp.vim file.
+缺省 C 和 C++ 文件的文件类型插件 ($VIMRUNTIME/ftplugin/c.vim) 在
+'formatoptions' 选项中加入了 "r" 和 "o" 标志位。如果你要为 C++ 文件覆盖此值，
+可把上述行加入 ~/.vim/after/ftplugin/cpp.vim 文件。
 
 更多详情请阅读:
 
@@ -6516,14 +6490,11 @@ then you can add the above lines to the
     |ftplugin-overrule|
 
  								*faq-27.8*
-27.8. How do I add the comment character "#" to a set of lines at the
-      beginning of each line?
+27.8. 如何为一组行在行首加上注释字符 "#"？
 
-First, select the first character in all the lines using visual block mode
-(CTRL-V). Press "I" to start inserting characters at the beginning of the
-line. Enter the comment character and then stop the insert mode by pressing
-<Esc>. Vim will automatically insert the entered characters at the
-beginning of all the selected lines.
+首先，用可视列块模式选择所有行的首字符 (CTRL-V)。按 "I" 在行首开始插入字符。输
+入注释字符，然后按 <Esc> 停止插入模式。Vim 会自动在所有选中的行首插入输入的字
+符。
 
 更多详情请阅读:
 
@@ -6532,29 +6503,25 @@ beginning of all the selected lines.
     |v_b_I|
 
  								*faq-27.9*
-27.9. How do I edit a header file with the same name as the corresponding C
-      source file?
+27.9. 如何编辑和对应 C 源文件相同名字的头文件？
 
-You can use the following command to edit a header file with the same name
-as the corresponding C source file: >
+可用以下命令来编辑和对就 C 源文件相同名字的头文件: >
 
     :e %:t:r.h
 <
-You can use the following command to edit the file in a new split window: >
+可用以下命令来在新分割的窗口上编辑此文件: >
 
     :sp %:t:r.h
 <
-In the above commands, the percent sign expands to the name of the current
-file.  The `:t` modifier extracts the tail (last component) of the
-filename. The `:r` modifier extracts the root of the filename.  The .h is
-appended to the resulting name to get the header filename.
+上述命令中，百分号符号扩展为当前文件名。`:t` 修饰符提取文件名的 tail (路径的最
+后部分)。`:r` 修饰符提取文件名的 root (根，即去除扩展名的部分)。给扩展后的文件
+名附加上 .h 就得到了头文件名。
 
-Another approach is to use the following command: >
+另一个方法是使用以下命令: >
 
     :sfind %:t:r.h
 <
-This command will search for the header file in the directories specified
-in the 'path' option.
+此命令会在 'path' 选项指定的目录里搜索头文件。
 
 更多详情请阅读:
 
@@ -6564,16 +6531,15 @@ in the 'path' option.
     |'path'|
 
  								*faq-27.10*
-27.10. How do I automatically insert comment leaders while typing comments?
+27.10. 如何自动在输入注释时自动插入注释头部？
 
-To automatically insert comment leaders while typing comments, add the "r"
-and "o" flags to the 'formatoptions' option. >
+要在输入注释时自动插入注释头部，给 'formatoptions' 选项加上 "r" 和 "o" 标志
+位。 >
 
     :set formatoptions+=ro
 <
-You may also want to add the "c" flag to auto-wrap comments using the
-'textwidth' option setting and the "q" flag to format comments with the
-"gq" command: >
+可能也需要加上 "c" 标志位来用 'textwidth' 选项设置自动回绕注释，还有 "q" 标志
+位来用 "gq" 命令排版注释: >
 
     :set formatoptions=croq
 <
@@ -6586,13 +6552,13 @@ You may also want to add the "c" flag to auto-wrap comments using the
 
 =============================================================================
  								*faq-28*
-SECTION 28 - QUICKFIX ~
+第二十八节 - 快速修复~
 
  								*faq-28.1*
-28.1. How do I build programs from Vim?
+28.1. 如何在 Vim 里编译程序？
 
-You can use the `:make` command to build programs from Vim. The `:make`
-command runs the program specified by the 'makeprg' option.
+可用 `:make` 命令来在 Vim 里编译程序。`:make` 命令运行 'makeprg' 选项指定的程
+序。
 
 更多详情请阅读:
 
@@ -6604,14 +6570,12 @@ command runs the program specified by the 'makeprg' option.
     |quickfix|
 
  								*faq-28.2*
-28.2. When I run the make command in Vim I get the errors listed as the
-      compiler compiles the program. When it finishes this list disappears
-      and I have to use the `:clist` command to see the error message again.
-      Is there any other way to see these error messages?
+28.2. 在 Vim 里运行 make 命令时得到编译器编译程序里列出的错误。结束时此列表消
+      失，我不得不用 `:clist` 命令来重新看到错误信息。有没有其它办法来看到这些
+      错误信息？
 
-You can use the `:copen` or `:cwindow` command to open the quickfix window
-that contains the compiler output. You can select different error lines
-from this window and jump to the corresponding line in the source code.
+可用 `:copen` 或 `:cwindow` 命令来打开包含编译器输出的快速修复窗口。可以此窗口
+选择不同的错误行并跳转到源码的对应行。
 
 更多详情请阅读:
 
@@ -6620,24 +6584,17 @@ from this window and jump to the corresponding line in the source code.
     |quickfix|
 
  								*faq-28.3*
-28.3. How can I perform a command for each item in the quickfix/location
-      list?
+28.3. 如何为快速修复/位置列表的每个项目执行命令？
 
-Starting from Vim 7.4.858 Vim provides the new commands `:cfdo`, `:cdo`,
-`:lfdo` and `:ldo.` They work by iterating over all items in the quickfix
-list and performing a command on each. The difference is, that the `:lfdo`
-and `:ldo` commands iterate over the location list entries, while the
-`:cfdo` and `:cdo` commands operate on the items in the quickfix list. Also,
-the `:cfdo` and `:lfdo` operate on all different files, while the `:cdo` and
-`:ldo` commands operate on each item in the quickfix/location list.
+从 Vim 7.4.858 开始，Vim 提供了新命令 `:cfdo`、`:cdo`、`:lfdo` 和 `:ldo`。它们的工作方法是遍历快速修复列表的所有项目，为每个项目执行一个命令。区别是 `:lfdo`
+和 `:ldo` 命令遍历的是位置列表项目，而 `:cfdo` 和 `:cdo` 命令在快速修复列表的项目上操作。还有，`:cfdo` 和 `:lfdo` 在所有不同的文件上操作，而 `:cdo` 和
+`:ldo` 命令在快速修复/位置列表的每个项目上操作。
 
-For example you could vimgrep all C files in the current directory for a
-search string "Foobar": >
+例如，可在当前目录里用 vimgrep 来搜索所有 C 文件里的字符串 "Foobar": >
 
     :vimgrep /Foobar/ *.c
 <
-and as this populates your quickfix list, you could simply replace all
-occurences by using: >
+因为它会生成快速修复列表，所以可简单地用下面命令来替代所有的出现: >
 
     :cdo :%s/Foobar/Foobaz | upd
 <
