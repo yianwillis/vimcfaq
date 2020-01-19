@@ -574,34 +574,28 @@ SECTION 32 - VIM ON UNIX ~
 |faq-32.10| How do I get the Vim syntax highlighting to work in a Unix
 	  terminal?
                                                 *faq-vim-on-ms-windows*
-SECTION 33 - VIM ON MS-WINDOWS ~
-|faq-33.1|  In MS-Windows, CTRL-V doesn't start the blockwise visual mode.
-	  What happened?
-|faq-33.2|  When I press the CTRL-Y key, it acts like the CTRL-R key. How do
-	  I configure Vim to treat CTRL-Y as CTRL-Y?
-|faq-33.3|  How do I start GUI Vim in a maximized window always?
-|faq-33.4|  After doing some editing operations, Vim freezes. The cursor
-	  becomes an empty rectangle. I am not able enter any characters.
-	  What is happening?
-|faq-33.5|  I am using Windows XP, the display speed of maximized GVim is
-	  very slow. What can I do to speed the display updates?
-|faq-33.6|  What are the recommended settings for using Vim with cygwin?
-|faq-33.7|  I am trying to use GNU diff with Vim diff mode. When I run the
-	  diff from command line, it works. When I try to use the diff with
-	  Vim it doesn't work. What should I do now?
-|faq-33.8|  Is it possible to use Vim as an external editor for MS-Windows
-	  Outlook email client?
-|faq-33.9|  I am using Vim to edit HTML files. How do I start internet
-	  explorer with the current file to preview the HTML file?
-|faq-33.10| I would like to use Vim with Microsoft Visual Studio. How do I
-	  do this?
-|faq-33.11| Where do I place the _vimrc and _gvimrc files?
-|faq-33.12| Every time I save a file, Vim warns about the file being changed
-	  outside of Vim. Why?
+第三十三节 - MS-WINDOWS 上的 VIM~
+|faq-33.1|  MS-Windows 上，CTRL-V 不启动面向列块可视模式。怎么啦？
+|faq-33.2|  按 CTRL-Y 键时，就像 CTRL-R 键一样。如果配置 Vim 把 CTRL-Y 当作
+	  CTRL-Y？
+|faq-33.3|  如何总是以最大化窗口来启动 GUI？
+|faq-33.4|  做完一些编辑操作后，Vim 死机了。光标成了空的长方形。不能输入任何字
+	  符。怎么啦？
+|faq-33.5|  使用 Windows XP 时，最大化 GVim 的显示速度很慢。如何才能加速显示更
+	  新？
+|faq-33.6|  使用 cygwin 时，什么是 Vim 的建议设定？
+|faq-33.7|  对 Vim 差异模式我试图用 GNU diff。在命令行上运行 diff 没问题。在
+	  Vim 上试着用 diff 时却不行。我应该怎么办？
+|faq-33.8|  可以用 Vim 作为 MS-Windows Outlook 邮件客户端的外部编辑器吗？
+|faq-33.9|  我用 Vim 来编辑 HTML 文件。我如何启动 internet explorer 来预览当前
+	  HTML 文件？
+|faq-33.10| 我想在 Microsoft Visual Studio 上用 Vim。要怎么做？
+|faq-33.11| 在哪里放 _vimrc 和 _gvimrc 文件？
+|faq-33.12| 每次我保存文件时，Vim 警告我文件在 Vim 外面被修改了。为什么？
                                                                 *faq-printing*
-SECTION 34 - PRINTING ~
-|faq-34.1|  How do I print a file along with line numbers for all the lines?
-|faq-34.2|  How do I print a file with the Vim syntax highlighting colors?
+第三十四节 - 打印~
+|faq-34.1|  如何打印文件并带上所有行的行号？
+|faq-34.2|  如何打印文件时带上 Vim 语法高亮颜色？
                                                 *faq-building-vim-from-source*
 第三十五节 - 从源码开始编译 VIM~
 |faq-35.1|  Unix 系统上如何从源码开始编译 Vim？
@@ -7477,18 +7471,15 @@ package to test the color setup. To use this script, follow these steps: >
 
 =============================================================================
  								*faq-33*
-SECTION 33 - VIM ON MS-WINDOWS ~
+第三十三节 - MS-WINDOWS 上的 VIM~
 
  								*faq-33.1*
-33.1. In MS-Windows, CTRL-V doesn't start the blockwise visual mode. What
-      happened?
+33.1. MS-Windows 上，CTRL-V 不启动面向列块可视模式。怎么啦？
 
-The mswin.vim script provides key mappings and options to make Vim behave
-like a MS-Windows application. One of the keys mapped is CTRL-V which is
-used for pasting text in MS-Windows applications. This will disable the use
-of CTRL-V to start the blockwise visual mode. The mswin.vim script maps
-CTRL-Q for staring the blockwise visual mode. So you can use CTRL-Q instead
-of CTRL-V.
+mswin.vim 脚本提供了使 Vim 行为类似于 MS-Windows 应用的键盘映射和选项。其中一
+个映射的键是 CTRL-V，在 MS-Windows 应用中它用于粘贴文本。这就关闭了 CTRL-V 启
+动面向列块可视模式的功能。mswin.vim 脚本 把 CTRL-Q 映射为启动面向列块可视模
+式。所以，可用 CTRL-Q 代替 CTRL-V。
 
 更多详情请阅读:
 
@@ -7498,20 +7489,18 @@ of CTRL-V.
     |10.5|
 
  								*faq-33.2*
-33.2. When I press the CTRL-Y key, it acts like the CTRL-R key. How do I
-      configure Vim to treat CTRL-Y as CTRL-Y?
+33.2. 按 CTRL-Y 键时，就像 CTRL-R 键一样。如果配置 Vim 把 CTRL-Y 当作 CTRL-Y？
 
-The mapping of the CTRL-Y key to the CTRL-R key is done by the mswin.vim
-script. The mswin.vim script maps CTRL-Y to make Vim behave like a standard
-MS-Windows application. This is explained in `:help CTRL-Y`. You can either
-comment out the line in mswin.vim that maps the CTRL-Y key or you can
-remove the line in your .vimrc file that sources the mswin.vim script.
+把 CTRL-Y 键映射成 CTRL-R 键是 mswin.vim 脚本完成的。mswin.script 对 CTRL-Y 的
+映射使 Vim 的行为类似于标准的 MS-Windows 应用。`:help CTRL-Y` 里有解释。可以注
+释掉 mswin.vim 映射 CTRL-Y 键的那一行，或者从 .vimrc 文件里删除执行 mswin.vim
+脚本的那行。
 
  								*faq-33.3*
-33.3. How do I start GUI Vim in a maximized window always?
+33.3. 如何总是以最大化窗口来启动 GUI？
 
-You can use the `:simalt` command to maximize the Vim window. You can use
-the GUIEnter autocmd to maximize the Vim window on startup: >
+可用 `:simalt` 命令来最大化 Vim 窗口。可用 GUIEnter 自动命令在启动时最大化 Vim
+窗口: >
 
     autocmd GUIEnter * simalt ~x
 <
@@ -7522,93 +7511,81 @@ the GUIEnter autocmd to maximize the Vim window on startup: >
     |gui-win32-maximized|
 
  								*faq-33.4*
-33.4. After doing some editing operations, Vim freezes. The cursor becomes
-      an empty rectangle. I am not able enter any characters. What is
-      happening?
+33.4. 做完一些编辑操作后，Vim 死机了。光标成了空的长方形。不能输入任何字符。怎
+      么啦？
 
-Most probably, you used the mouse wheel to scroll the text in Vim. There is
-a known problem in using intellimouse mouse wheel with Vim. To avoid this
-problem, disable Universal scrolling support for Vim.
+最有可能是你在 Vim 中用了鼠标滚轮来滚动文本。Vim 使用智能鼠 (intellimouse) 鼠
+标滚动有已知的问题。要避免，关闭 Vim 的 Universal scrolling 支持就可以了。
 
 更多详情请阅读:
 
     |intellimouse-wheel-problems|
 
  								*faq-33.5*
-33.5. I am using Windows XP, the display speed of maximized GVim is very
-      slow. What can I do to speed the display updates?
+33.5. 使用 Windows XP 时，最大化 GVim 的显示速度很慢。如何才能加速显示更新？
 
-This may be due to the fact that you have enabled 'Smooth edges of screen
-fonts' in the display properties. Try turning off font smoothing or try
-changing the smoothing method to "Standard".
+这可能是因为你打开了显示属性的 '平滑屏幕字符边缘'。试试关闭字体平滑或改变平滑
+方法为 "标准"。
 
  								*faq-33.6*
-33.6. What are the recommended settings for using Vim with cygwin?
+33.6. 使用 cygwin 时，什么是 Vim 的建议设定？
 
-You may want to set the following shell related Vim settings: >
+可以考虑以下外壳相关的 Vim 设置: >
 
     :set shellcmdflag=-c
     :set shellquote=
-    :set shellslash          " Use the forward slash for expansion.
+    :set shellslash          " 使用正斜杠用于扩展。
     :set shellxquote=\"
-    :set shell=d:\cygwin\bin\bash.exe " Use the bash shell
+    :set shell=d:\cygwin\bin\bash.exe " 使用 bash 外壳
     :set shellpipe=2>&1| tee
     :set shellredir=>%s 2>&1
 <
  								*faq-33.7*
-33.7. I am trying to use GNU diff with Vim diff mode. When I run the diff
-      from command line, it works. When I try to use the diff with Vim it
-      doesn't work. What should I do now?
+33.7. 对 Vim 差异模式我试图用 GNU diff。在命令行上运行 diff 没问题。在 Vim 上
+      试着用 diff 时却不行。我应该怎么办？
 
-There is a problem with using GNU diff with Vim. You can try using the
-GNU diff.exe built by Ron Aaron from the following link:
+GNU diff 用于 Vim 有问题。可用以下链接来试用 Ron Aaron 编译的 GNU diff.exe:
 
     http://www.mossbayeng.com/~ron/vim/builds.html
-(This page no longer exists.)
+(此页面不再存在。)
 
  								*faq-33.8*
-33.8. Is it possible to use Vim as an external editor for MS-Windows
-      Outlook email client?
+33.8. 可以用 Vim 作为 MS-Windows Outlook 邮件客户端的外部编辑器吗？
 
-You can use the "cubiclevim" COM Add-In to use Vim as an external editor
-for MS-Windows Outlook email client. Visit the following URL for more
-information:
+可用 "cubiclevim" COM Add-In 来使用 Vim 作为 MS-Windows Outlook 邮件客户端的外
+部编辑器。详情可访问下列 URL:
 
     https://sourceforge.net/projects/cubiclevim/
 
-Note, that currently this works only with MS-Office 2000 and XP.
+注意，目前这只能用于 MS-Office 2000 和 XP。
 
-Also the plugin OutlookVim might be worth a look:
+另外 OutlookVim 插件也值得考虑:
 
     https://www.vim.org/scripts/script.php?script_id=3087
 
  								*faq-33.9*
-33.9. I am using Vim to edit HTML files. How do I start internet explorer
-      with the current file to preview the HTML file?
+33.9. 我用 Vim 来编辑 HTML 文件。我如何启动 internet explorer 来预览当前 HTML
+      文件？
 
-You can use the following command: >
+可用以下命令: >
 
     :!start c:\progra~1\intern~1\iexplore.exe file://%:p<CR>
 <
  								*faq-33.10*
-33.10. I would like to use Vim with Microsoft Visual Studio. How do I do
-       this?
+33.10. 我想在 Microsoft Visual Studio 上用 Vim。要怎么做？
 
-You have to download and use the OLE version of Vim (for example:
-gvim61ole.zip). This file also contains instructions on how to use Vim with
-Visual Studio.
+需要下载 Vim 的 OLE 版本 (如: gvim61ole.zip)。此文件也有如何把 Vim 用于 Visual
+Studio 的说明。
 
 更多详情请阅读:
 
     |MSVisualStudio|
 
  								*faq-33.11*
-33.11. Where do I place the _vimrc and _gvimrc files?
+33.11. 在哪里放 _vimrc 和 _gvimrc 文件？
 
-You can place the _vimrc and _gvimrc files under the directory pointed to
-by the VIM environment variable. If you are sharing this system with other
-users, then you can place the files in a directory and set the HOME
-environment variable to this directory.
+可以把 _vimrc 和 _gvimrc 文件放在 VIM 环境变量指向的目录下。如果你和其它用户分
+享此系统，可把文件放在一个目录下，并把 HOME 环境变量设为此目录。
 
 更多详情请阅读:
 
@@ -7616,22 +7593,18 @@ environment variable to this directory.
     |_vimrc|
 
  								*faq-33.12*
-33.12. Every time I save a file, Vim warns about the file being changed
-       outside of Vim. Why?
+33.12. 每次我保存文件时，Vim 警告我文件在 Vim 外面被修改了。为什么？
 
-If you get the following warning message, every time you save a file: >
+如果你每次保存文件时都会得到以下警告信息: >
 
     WARNING: The file has been changed since reading it!!!
     Do you really want to write to it (y/n)?
 <
-then this problem could be related to a bug in MS-Windows on the day
-daylight saving time starts.  Vim remembers the timestamp of the file after
-it was written.  Just before the next write the timestamp is obtained again
-to check if the file was changed outside of Vim.  This works correctly,
-except on the day daylight saving time starts.
+那么问题可能和 MS-Windows 一个夏令时开始日期的漏洞有关。Vim 写入文件后，记住文
+件的时间戳。在下次写入之前，再次读取时间戳以检查文件是否在 Vim 外部被修改。这
+是正确的，但夏令时开始的那天会出问题。
 
-This problem will go away the next day after the day the daylight saving
-time starts.
+此问题在夏令时开始日的下一天就会消失。
 
 更多详情请阅读:
 
@@ -7639,13 +7612,12 @@ time starts.
 
 =============================================================================
  								*faq-34*
-SECTION 34 - PRINTING ~
+第三十四节 - 打印~
 
  								*faq-34.1*
-34.1. How do I print a file along with line numbers for all the lines?
+34.1. 如何打印文件并带上所有行的行号？
 
-You can set the 'printoptions' option and use the `:hardcopy` command to
-print your file: >
+可以设置 'printoptions' 选项并用 `:hardcopy` 命令来打印文件: >
 
     :set printoptions=number:y
     :hardcopy
@@ -7656,11 +7628,10 @@ print your file: >
     |:hardcopy|
 
  								*faq-34.2*
-34.2. How do I print a file with the Vim syntax highlighting colors?
+34.2. 如何打印文件时带上 Vim 语法高亮颜色？
 
-You can use the `:hardcopy` command to print a file with the Vim syntax
-highlighting colors. You can also convert your file to a HTML file using
-the 2html.vim script and print the HTML file.
+可用 `:hardcopy` 命令来打印文件带上 Vim 语法高亮颜色。也可用 2html.vim 脚本把
+文件转换为 HTML 文件，并打印 HTML 文件。
 
 更多详情请阅读:
 
@@ -7686,7 +7657,7 @@ Unix 系统上，采取以下步骤来从源码开始编译 Vim:
 <
 - 或者，从 git 库下载源码:
   https://github.com/vim/vim/releases/
-- 或者，从 mercrial 库下载源码:
+- 或者，从 mercurial 库下载源码:
   https://bitbucket.org/vim-mirror/vim/downloads/
 - 运行 "make" 命令，用缺省的配置设定来配置和编译 Vim。
 - 运行 "make install" 命令在缺省目录上安装 Vim。
@@ -7721,12 +7692,6 @@ Unix 系统上，采取以下步骤来从源码开始编译 Vim:
  								*faq-35.3*
 35.3. MS-Windows 系统上如何如何从源码开始编译 Vim？
 
-- 用 bzip2 和 tar 工具解压归档，命令如下: >
-
-        $ bunzip2 -c <filename> | tar -xf -
-<
-- 运行 "make" 命令，用缺省的配置设定来配置和编译 Vim。
-- 运行 "make install" 命令在缺省目录上安装 Vim。
 MS-Windows 系统上，可用 Visual C++ 编译器或 Borland C++ 编译器或 Ming GCC 编译
 器或 cygwin gcc 编译器来编译 Vim。采取以下步骤来从源码开始编译 Vim:
     - 从 ftp://ftp.vim.org/pub/vim/pc 目录下载源码 (vim##src.zip)、运行时文件
@@ -7734,7 +7699,7 @@ MS-Windows 系统上，可用 Visual C++ 编译器或 Borland C++ 编译器或 M
     - 在某个目录 (例如，c:\vimsrc) 解压归档
     - 或者，从 git 库下载源码:
       https://github.com/vim/vim/releases/
-    - A或者，从 mercrial 库下载源码:
+    - A或者，从 mercurial 库下载源码:
       https://bitbucket.org/vim-mirror/vim/downloads/
     - 取决于安装的编译器，可用对应的 makefile 来编译 Vim 源码。Visual C++ 用
       Make_mvc.mak makefile，borland C++ 用 Make_bc5.mak makefile，
@@ -7744,6 +7709,7 @@ MS-Windows 系统上，可用 Visual C++ 编译器或 Borland C++ 编译器或 M
 取决于你想编译 GUI 版本的 Vim 还是控制台版本的 Vim，需要给 makefile 传递不同的
 参数。成功编译源码后，可以复制 vim.exe 或 gvim.exe 文件还有运行时文件归档到目
 的目录。
+
 更多详情请阅读:
 
     |install|
