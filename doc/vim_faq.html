@@ -549,59 +549,43 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-30.8">faq-30.8</a>   How do I change the diff command used by the Vim diff support?
  <a href="vim_faq.html#faq-30.9">faq-30.9</a>   How do I use the Vim diff mode without folding?
                                                                 <b class="vimtag"> <a name="faq-gui-vim">faq-gui-vim</a> </b>
-<code class="section">SECTION 31 - GUI VIM </code>
- <a href="vim_faq.html#faq-31.1">faq-31.1</a>   How do I create buffer specific menus?
- <a href="vim_faq.html#faq-31.2">faq-31.2</a>   How do I change the font used by GUI Vim?
- <a href="vim_faq.html#faq-31.3">faq-31.3</a>   When starting GUI Vim, how do I specify the location of the GVIM
-          window?
- <a href="vim_faq.html#faq-31.4">faq-31.4</a>   How do I add a horizontal scrollbar in GVim?
- <a href="vim_faq.html#faq-31.5">faq-31.5</a>   How do I make the scrollbar appear in the left side by default?
- <a href="vim_faq.html#faq-31.6">faq-31.6</a>   How do I remove the Vim menubar?
- <a href="vim_faq.html#faq-31.7">faq-31.7</a>   I am using GUI Vim. When I press the <code class="special">&lt;Alt&gt;</code> key and a letter, the
-          menu starting with that letter is selected. I don't want this
-          behavior as I want to map the <code class="special">&lt;Alt&gt;</code>-<code class="special">&lt;key&gt;</code> combination. How do I do
-          this?
- <a href="vim_faq.html#faq-31.8">faq-31.8</a>   Is it possible to scroll the text by dragging the scrollbar so
-          that the cursor stays in the original location?
- <a href="vim_faq.html#faq-31.9">faq-31.9</a>   How do I get gvim to start browsing files in a particular
-          directory when using the  <code class="badlink">:browse</code>  command?
- <a href="vim_faq.html#faq-31.10">faq-31.10</a>  For some questions, like when a file is changed outside of Vim,
-          Vim displays a GUI dialog box. How do I replace this GUI dialog
-          box with a console dialog box?
- <a href="vim_faq.html#faq-31.11">faq-31.11</a>  I am trying to use GUI Vim as the editor for my xxx application.
-          When the xxx application launches GUI Vim to edit a file, the
-          control immediately returns to the xxx application. How do I
-          start GUI Vim, so that the control returns to the xxx
-          application only after I quit Vim?
- <a href="vim_faq.html#faq-31.12">faq-31.12</a>  Why does the "Select Font" dialog doesn't show all the fonts
-          installed in my system?
- <a href="vim_faq.html#faq-31.13">faq-31.13</a>  How do I use the mouse in Vim command-line mode?
- <a href="vim_faq.html#faq-31.14">faq-31.14</a>  When I use the middle mouse button to scroll text, it pastes the
-          last copied text. How do I disable this behavior?
- <a href="vim_faq.html#faq-31.15">faq-31.15</a>  How do I change the location and size of a GUI Vim window?
- <a href="vim_faq.html#faq-31.16">faq-31.16</a>  When splitting the Vim window vertically, Vim changes
-          the position.
+<code class="section">第三十一节 - GUI VIM</code>
+ <a href="vim_faq.html#faq-31.1">faq-31.1</a>   如何创建缓冲区特定的菜单？
+ <a href="vim_faq.html#faq-31.2">faq-31.2</a>   如何改变 GUI Vim 使用的字体？
+ <a href="vim_faq.html#faq-31.3">faq-31.3</a>   启动 GUI Vim 时，如何指定 GVIM 窗口的位置？
+ <a href="vim_faq.html#faq-31.4">faq-31.4</a>   如何给 GVim 加上水平滚动条？
+ <a href="vim_faq.html#faq-31.5">faq-31.5</a>   如何使滚动条缺省出现在左侧？
+ <a href="vim_faq.html#faq-31.6">faq-31.6</a>   如何删除 Vim 菜单条？
+ <a href="vim_faq.html#faq-31.7">faq-31.7</a>   用 GUI Vim 时，按 <code class="special">&lt;Alt&gt;</code> 键和字母时选择以该字母开始的菜单。我不想这
+          样，因为我想映射 <code class="special">&lt;Alt&gt;</code>-<code class="special">&lt;key&gt;</code> 组合。如何才可以？
+ <a href="vim_faq.html#faq-31.8">faq-31.8</a>   可以拖动滚动条来滚动文本而光标保持原来的位置吗？
+ <a href="vim_faq.html#faq-31.9">faq-31.9</a>   如何使 gvim 用  <code class="badlink">:browse</code>  命令时从指定目录开始浏览文件？
+ <a href="vim_faq.html#faq-31.10">faq-31.10</a>  有些问题，比如文件在 Vim 外面修改后，会显示 GUI 对话框。如何把 GUI
+          对话框换成控制台对话框？
+ <a href="vim_faq.html#faq-31.11">faq-31.11</a>  我试图用 GUI Vim 作为 xxx 应用的编辑器。当 xxx 应用启动 GUI Vim 编
+          辑文件时，控制立即返回 xxx 应用。如何启动 GUI Vim 使得 Vim 退出时才
+          会把控制返回 xxx 应用？
+ <a href="vim_faq.html#faq-31.12">faq-31.12</a>  为什么 "Select Font" 对话框不显示我系统上安装的所有字体？
+ <a href="vim_faq.html#faq-31.13">faq-31.13</a>  在 Vim 命令行模式中如何使用鼠标？
+ <a href="vim_faq.html#faq-31.14">faq-31.14</a>  用鼠标中键来滚动文本时，它却粘贴了前次复制的文本。如何停止此行为？
+ <a href="vim_faq.html#faq-31.15">faq-31.15</a>  如何改变 GUI Vim 窗口的位置和大小？
+ <a href="vim_faq.html#faq-31.16">faq-31.16</a>  Vim 窗口垂直分割时，Vim 改变了位置。
                                                         <b class="vimtag"> <a name="faq-vim-on-unix">faq-vim-on-unix</a> </b>
-<code class="section">SECTION 32 - VIM ON UNIX </code>
- <a href="vim_faq.html#faq-32.1">faq-32.1</a>   I am running Vim in a xterm. When I press the <code class="keystroke">CTRL-S</code> key, Vim
-          freezes. What should I do now?
- <a href="vim_faq.html#faq-32.2">faq-32.2</a>   I am seeing weird screen update problems in Vim. What can I do to
-          solve this screen/display update problems?
- <a href="vim_faq.html#faq-32.3">faq-32.3</a>   I am using the terminal/console version of Vim. In insertmode,
-          When I press the backspace key, the character before the cursor
-          is not erased. How do I configure Vim to do this?
- <a href="vim_faq.html#faq-32.4">faq-32.4</a>   I am using Vim in a xterm. When I quit Vim, the screen contents
-          are restored back to the original contents. How do I disable
-          this?
- <a href="vim_faq.html#faq-32.5">faq-32.5</a>   When I start Vim, it takes quite a few seconds to start. How do I
-          minimize the startup time?
- <a href="vim_faq.html#faq-32.6">faq-32.6</a>   How can I make the cursor in gvim in unix stop blinking?
- <a href="vim_faq.html#faq-32.7">faq-32.7</a>   How do I change the menu font on GTK Vim?
- <a href="vim_faq.html#faq-32.8">faq-32.8</a>   How do I prevent <code class="keystroke">CTRL-Z</code> from suspending Vim?
- <a href="vim_faq.html#faq-32.9">faq-32.9</a>   When I kill the xterm running Vim, the Vim process continues to
-          run and takes up a lot of CPU (99%) time. Why is this happening?
- <a href="vim_faq.html#faq-32.10">faq-32.10</a>  How do I get the Vim syntax highlighting to work in a Unix
-          terminal?
+<code class="section">第三十二节 - Unix 上的 VIM</code>
+ <a href="vim_faq.html#faq-32.1">faq-32.1</a>   我在 xterm 里运行 Vim。当按了 <code class="keystroke">CTRL-S</code> 键时，Vim 死机了。我现在应该
+          做什么？
+ <a href="vim_faq.html#faq-32.2">faq-32.2</a>   Vim 上看到奇怪的屏幕刷新问题。如何才能解决屏幕/显示刷新问题？
+ <a href="vim_faq.html#faq-32.3">faq-32.3</a>   使用 Vim 的终端/控制台版本时，插入模式下，按了退格键没有删除光标前
+          的字符。如何配置 Vim 来做到这一点？
+ <a href="vim_faq.html#faq-32.4">faq-32.4</a>   我在 xterm 下使用 Vim 。退出 Vim 时，屏幕内容恢复为原先的内容。如
+          何关闭此行为？
+ <a href="vim_faq.html#faq-32.5">faq-32.5</a>   启动 Vim 时，花了好几秒才启动。如何才能最小化启动时间？
+ <a href="vim_faq.html#faq-32.6">faq-32.6</a>   如何使 unix 上 gvim 里的光标停止闪烁？
+ <a href="vim_faq.html#faq-32.7">faq-32.7</a>   如何改变 GTK Vim 的菜单字体？
+ <a href="vim_faq.html#faq-32.8">faq-32.8</a>   如何不让 <code class="keystroke">CTRL-Z</code> 暂停 Vim？
+ <a href="vim_faq.html#faq-32.9">faq-32.9</a>   杀掉运行 Vim 的 xterm 时，Vim 进程继续运行并使用大量的 CPU (99%)
+          时间。为什么会这样？
+ <a href="vim_faq.html#faq-32.10">faq-32.10</a>  如何使 Vim 语法高亮在 Unix 终端上工作？
                                                 <b class="vimtag"> <a name="faq-vim-on-ms-windows">faq-vim-on-ms-windows</a> </b>
 <code class="section">第三十三节 - MS-WINDOWS 上的 VIM</code>
  <a href="vim_faq.html#faq-33.1">faq-33.1</a>   MS-Windows 上，<code class="keystroke">CTRL-V</code> 不启动面向列块可视模式。怎么啦？
@@ -6978,37 +6962,34 @@ If you like vertically split windows, then replace "-o" with "-O".
      <code class="badlink">vimdiff</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-31">faq-31</a> </b></h4><code class="section">SECTION 31 - GUI VIM </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-31">faq-31</a> </b></h4><code class="section">第三十一节 - GUI VIM</code>
 
                                                                 <b class="vimtag"> <a name="faq-31.1">faq-31.1</a> </b>
-31.1. How do I create buffer specific menus?
+31.1. 如何创建缓冲区特定的菜单？
 
-Adding support for buffer specific menus is in the Vim TODO list. In the
-mean time, you can try Michael Geddes's plugin, buffermenu.vim:
+加入缓冲区特定的菜单在 Vim 待开发列表中。与此同时，可以试试 Michael Geddes 的
+buffermenu.vim 插件:
 
     <a href="https://www.vim.org/scripts/script.php?script_id=246">https://www.vim.org/scripts/script.php?script_id=246</a>
 
                                                                 <b class="vimtag"> <a name="faq-31.2">faq-31.2</a> </b>
-31.2. How do I change the font used by GUI Vim?
+31.2. 如何改变 GUI Vim 使用的字体？
 
-You can change the <code class="badlink">'guifont'</code> option to change the font used by GUI Vim.  To
-display the current value of this option, you can use 
+可以修改 <code class="badlink">'guifont'</code> 选项来改变 GUI Vim 使用的字体。要显示此选项的当前值，可用 
 <code class="example"></code>
 <code class="example">    :set guifont?</code>
 
-You can add the displayed font name to the .vimrc file to use the font
-across Vim sessions. For example, add the following line to the .vimrc file
-to use Andale Mono font. 
+可把显示的字体名加入 .vimrc 文件，这样跨 Vim 会话可以继续使用该字体。例如，加
+入下列行到 .vimrc 文件以使用 Andale Mono 字体。 
 <code class="example"></code>
 <code class="example">    set guifont=Andale_Mono:h10:cANSI</code>
 
-For Win32, GTK and Photon version of Vim, you can use the following command
-to bringup a dialog which will help you in changing the guifont: 
+Win32、GTK 和 Photon 的 Vim 版本可用以下命令来打开一个对话框，帮助你修改
+guifont: 
 <code class="example"></code>
 <code class="example">    :set guifont=*</code>
 
-You can also use the -font Vim command line option to specify the font used
-for normal text.
+也可用 -font Vim 命令行选项来指定普通文本使用的字体。
 
 更多详情请阅读:
 
@@ -7023,11 +7004,9 @@ for normal text.
      <code class="badlink">-menufontset</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.3">faq-31.3</a> </b>
-31.3. When starting GUI Vim, how do I specify the location of the GVIM
-      window?
+31.3. 启动 GUI Vim 时，如何指定 GVIM 窗口的位置？
 
-You can use the "-geometry" command line argument to specify the location
-of the GUI Vim window. For example: 
+可用 "-geometry" 命令行参数来指定 GUI Vim 窗口的位置。例如: 
 <code class="example"></code>
 <code class="example">    $ gvim -geometry 80x25+100+300</code>
 
@@ -7037,10 +7016,9 @@ of the GUI Vim window. For example:
      <code class="badlink">-geom</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.4">faq-31.4</a> </b>
-31.4. How do I add a horizontal scrollbar in GVim?
+31.4. 如何给 GVim 加上水平滚动条？
 
-You can enable the horizontal scrollbar by modifying the <code class="badlink">'guioptions'</code>
-option: 
+可修改 <code class="badlink">'guioptions'</code> 选项来加上水平滚动条: 
 <code class="example"></code>
 <code class="example">    :set guioptions+=b</code>
 
@@ -7050,10 +7028,9 @@ option:
      <code class="badlink">gui-horiz-scroll</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.5">faq-31.5</a> </b>
-31.5. How do I make the scrollbar appear in the left side by default?
+31.5. 如何使滚动条缺省出现在左侧？
 
-You can add the "l" flag to the <code class="badlink">'guioptions'</code> option to make the scrollbar
-appear in the left side. 
+可给 <code class="badlink">'guioptions'</code> 选项加上 "l" 标志位，使滚动条出现在左侧。 
 <code class="example"></code>
 <code class="example">    :set guioptions+=l</code>
 <code class="example">    :set guioptions-=r</code>
@@ -7064,10 +7041,9 @@ appear in the left side.
      <code class="badlink">gui-scrollbars</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.6">faq-31.6</a> </b>
-31.6. How do I remove the Vim menubar?
+31.6. 如何删除 Vim 菜单条？
 
-You can remove the Vim menubar by removing the "m" flag from the
-<code class="badlink">'guioptions'</code> option: 
+可从 <code class="badlink">'guioptions'</code> 选项里删除 "m" 标志位来删除 Vim 菜单条: 
 <code class="example"></code>
 <code class="example">    :set guioptions-=m</code>
 
@@ -7076,12 +7052,10 @@ You can remove the Vim menubar by removing the "m" flag from the
      <code class="badlink">'guioptions'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.7">faq-31.7</a> </b>
-31.7. I am using GUI Vim. When I press the <code class="special">&lt;Alt&gt;</code> key and a letter, the menu
-      starting with that letter is selected. I don't want this behavior as
-      I want to map the <code class="special">&lt;Alt&gt;</code>-<code class="special">&lt;key&gt;</code> combination. How do I do this?
+31.7. 用 GUI Vim 时，按 <code class="special">&lt;Alt&gt;</code> 键和字母时选择以该字母开始的菜单。我不想这样，因
+      为我想映射 <code class="special">&lt;Alt&gt;</code>-<code class="special">&lt;key&gt;</code> 组合。如何才可以？
 
-You can use the <code class="badlink">'winaltkeys'</code> option to disable the use of the <code class="special">&lt;Alt&gt;</code> key to
-select a menu item: 
+可用 <code class="badlink">'winaltkeys'</code> 选项来关闭 <code class="special">&lt;Alt&gt;</code> 键选择菜单项目的用法: 
 <code class="example"></code>
 <code class="example">    :set winaltkeys=no</code>
 
@@ -7091,17 +7065,12 @@ select a menu item:
      <code class="badlink">:simalt</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.8">faq-31.8</a> </b>
-31.8. Is it possible to scroll the text by dragging the scrollbar so that
-      the cursor stays in the original location?
+31.8. 可以拖动滚动条来滚动文本而光标保持原来的位置吗？
 
-The way Vim is designed, the cursor position has to be in a visible spot in
-normal, visual, select and insert mode. This cannot be changed without
-modifying Vim. When the scrollbar is used, the cursor will be moved so that
-it is always visible. Another approach to solving this problem is to use
-the Vim marks. You can mark the current cursor position using ma. Then
-scroll to a different part of the text and jump back to the old position
-using `a. You can also try the following suggestion from the Vim Online
-website:
+Vim 的设计方法是普通、可视、选择和插入模式下，光标位置必须在可见的地点。不修改
+Vim 不可能改变这一点。使用滚动条时，会移动光标使它可见。另一个解决此问题的方法
+是使用 Vim 位置标记。可以用 ma 标记当前光标位置。然后滚动到文本的不同部分，然
+后用 `a 跳回原来的位置。也可试试以下来自 Vim Online 网站的建议:
 
     <a href="http://vim.wikia.com/wiki/VimTip320">http://vim.wikia.com/wiki/VimTip320</a>
 
@@ -7110,11 +7079,9 @@ website:
      <code class="badlink">mark-motions</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.9">faq-31.9</a> </b>
-31.9. How do I get gvim to start browsing files in a particular directory
-      when using the  <code class="badlink">:browse</code>  command?
+31.9. 如何使 gvim 用  <code class="badlink">:browse</code>  命令时从指定目录开始浏览文件？
 
-You can set the <code class="badlink">'browsedir'</code> option to the default directory to use for the
- <code class="badlink">:browse</code>  command. 
+用 <code class="badlink">'browsedir'</code> 选项可以设置  <code class="badlink">:browse</code>  命令使用的缺省目录。 
 <code class="example"></code>
 <code class="example">    :set browsedir='&lt;your_dir&gt;'</code>
 
@@ -7123,12 +7090,11 @@ You can set the <code class="badlink">'browsedir'</code> option to the default d
      <code class="badlink">'browsedir'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.10">faq-31.10</a> </b>
-31.10. For some questions, like when a file is changed outside of Vim, Vim
-       displays a GUI dialog box. How do I replace this GUI dialog box with
-       a console dialog box?
+31.10. 有些问题，比如文件在 Vim 外面修改后，会显示 GUI 对话框。如何把 GUI 对话
+       框换成控制台对话框？
 
-You can set the "c" flag in the <code class="badlink">'guioptions'</code> option to configure Vim to use
-console dialogs instead of GUI dialogs: 
+你可以设置 <code class="badlink">'guioptions'</code> 选项里的 "c" 标志位以配置 Vim 来使用控制台对话框而不是
+GUI 对话框: 
 <code class="example"></code>
 <code class="example">    :set guioptions+=c</code>
 
@@ -7137,19 +7103,16 @@ console dialogs instead of GUI dialogs:
      <code class="badlink">'guioptions'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.11">faq-31.11</a> </b>
-31.11. I am trying to use GUI Vim as the editor for my xxx application.
-       When the xxx application launches GUI Vim to edit a file, the
-       control immediately returns to the xxx application. How do I start
-       GUI Vim, so that the control returns to the xxx application only
-       after I quit Vim?
+31.11. 我试图用 GUI Vim 作为 xxx 应用的编辑器。当 xxx 应用启动 GUI Vim 编辑文
+       件时，控制立即返回 xxx 应用。如何启动 GUI Vim 使得 Vim 退出时才会把控制
+       返回 xxx 应用？
 
-You have to start GUI Vim with the "-f" (foreground) command line option: 
+启动 GUI Vim 时须用 "-f" (foreground) 命令行选项: 
 <code class="example"></code>
 <code class="example">    $ gvim -f</code>
 
-By default, GUI Vim will disconnect from the program that started Vim. With
-the '-f' option, GUI Vim will not disconnect from the program that started
-it.
+缺省，GUI Vim 会和启动 Vim 的程序断开。用了 "-f" 选项后，GUI Vim 就不会和启动
+它的程序断开。
 
 更多详情请阅读:
 
@@ -7157,12 +7120,10 @@ it.
      <code class="badlink">-f</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.12">faq-31.12</a> </b>
-31.12. Why does the "Select Font" dialog doesn't show all the fonts
-       installed in my system?
+31.12. 为什么 "Select Font" 对话框不显示我系统上安装的所有字体？
 
-Vim supports only fixed width (mono-spaced) fonts. Proportional fonts are
-not supported.  In the "Select Font" dialog, only fixed width fonts will be
-displayed.
+Vim 只支持固定宽度 (等宽) 字体。不支持比例字体。在 "Select Font" 对话框中，只
+显示固定宽度字体。
 
 更多详情请阅读:
 
@@ -7170,10 +7131,9 @@ displayed.
      <code class="badlink">'guifont'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.13">faq-31.13</a> </b>
-31.13. How do I use the mouse in Vim command-line mode?
+31.13. 在 Vim 命令行模式中如何使用鼠标？
 
-You can set the "c" flag in the <code class="badlink">'mouse'</code> option to use mouse in the Vim
-command-line mode: 
+可设置 <code class="badlink">'mouse'</code> 选项的 "c" 标志位以在 Vim 命令行模式中使用鼠标: 
 <code class="example"></code>
 <code class="example">    :set mouse+=c</code>
 
@@ -7184,11 +7144,9 @@ command-line mode:
      <code class="badlink">09.2</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.14">faq-31.14</a> </b>
-31.14. When I use the middle mouse button to scroll text, it pastes the
-       last copied text. How do I disable this behavior?
+31.14. 用鼠标中键来滚动文本时，它却粘贴了前次复制的文本。如何停止此行为？
 
-You can map the middle mouse button to <code class="special">&lt;Nop&gt;</code> to disable the middle mouse
-button: 
+可把鼠标中键映射为 <code class="special">&lt;Nop&gt;</code> 以关闭鼠标中键: 
 <code class="example"></code>
 <code class="example">    :map  &lt;MiddleMouse&gt; &lt;Nop&gt;</code>
 <code class="example">    :map! &lt;MiddleMouse&gt; &lt;Nop&gt;</code>
@@ -7199,24 +7157,20 @@ button:
      <code class="badlink">&lt;Nop&gt;</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.15">faq-31.15</a> </b>
-31.15. How do I change the location and size of a GUI Vim window?
+31.15. 如何改变 GUI Vim 窗口的位置和大小？
 
-You can use the  <code class="badlink">:winpos</code>  command to change the Vim window position. To
-change the size of the window, you can modify the <code class="badlink">'lines'</code> and <code class="badlink">'columns'</code>
-options.
+可用  <code class="badlink">:winpos</code>  命令来改变 Vim 窗口位置。要改变窗口大小，可修改 <code class="badlink">'lines'</code> 和
+<code class="badlink">'columns'</code> 选项。
 
-For example, the following commands will position the GUI Vim window at the
-X,Y co-ordinates 50,50 and set the number of lines to 50 and the number of
-columns to 80. 
+例如，下列命令会把 GUI Vim 窗口放在 X,Y 坐标 50，50 并设置行数为 50 及列数为
+80。 
 <code class="example"></code>
 <code class="example">    :winpos 50 50</code>
 <code class="example">    :set lines=50</code>
 <code class="example">    :set columns=80</code>
 
-The arguments to the  <code class="badlink">:winpos</code>  command specify the pixel co-ordinates of the
-Vim window. The <code class="badlink">'lines'</code> and <code class="badlink">'columns'</code> options specify the number of lines
-and characters to use for the height and the width of the window
-respectively.
+ <code class="badlink">:winpos</code>  命令的参数指定 Vim 窗口的像素坐标。<code class="badlink">'lines'</code> 和 <code class="badlink">'columns'</code> 选项指定行数
+和字符数，分别用于窗口的高度和宽度。
 
 更多详情请阅读:
 
@@ -7227,73 +7181,63 @@ respectively.
      <code class="badlink">GUIEnter</code> 
 
                                                                 <b class="vimtag"> <a name="faq-31.16">faq-31.16</a> </b>
-31.16. When splitting the Vim window vertically, Vim changes the position.
+31.16. Vim 窗口垂直分割时，Vim 改变了位置。
 
-This is a known problem. When you are splitting the Vim window, Vim will
-try to draw a scrollbar. Since this changes the gui window, Vim tries to
-resize its main window to keep the same position and this will cause Vim
-to move its position. This happens on Windows with a multi-window setup or
-a window that was "snapped" to a certain position.
+这是个已知问题。当你分割 Vim 窗口时，Vim 会试图画出滚动条。因为这改变了 gui 窗
+口，Vim 会试图调整其主窗口的大小以保持相同的位置，而这会使 Vim 移动它的位置。
+这发生在带多窗口布局或有一个 "钉" 在固定位置的 Windows 系统上。
 
-A workaournd to this problem is, to remove gui scrollbars, e.g. 
+一个此问题的临时解决方案是删除 gui 滚动条，例如 
 <code class="example"></code>
 <code class="example">    :set guioptions-=L</code>
 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-32">faq-32</a> </b></h4><code class="section">SECTION 32 - VIM ON UNIX </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-32">faq-32</a> </b></h4><code class="section">第三十二节 - Unix 上的 VIM</code>
 
                                                                 <b class="vimtag"> <a name="faq-32.1">faq-32.1</a> </b>
-32.1. I am running Vim in a xterm. When I press the <code class="keystroke">CTRL-S</code> key, Vim
-      freezes. What should I do now?
+32.1. 我在 xterm 里运行 Vim。当按了 <code class="keystroke">CTRL-S</code> 键时，Vim 死机了。我现在应该做什
+      么？
 
-Many terminal emulators and real terminal drivers use the <code class="keystroke">CTRL-S</code> key to
-stop the data from arriving so that you can stop a fast scrolling display
-to look at it (also allowed older terminals to slow down the computer so
-that it did not get buffer overflows).  You can start the output again by
-pressing the <code class="keystroke">CTRL-Q</code> key.
+许多终端模拟器和实际终端驱动程序用 <code class="keystroke">CTRL-S</code> 键来停止数据的接收，以便停止快速滚动
+的显示以看清楚内容 (也允许旧式的终端减慢电脑速度，不致产生缓冲区溢出)。可以按
+<code class="keystroke">CTRL-Q</code> 键重新输出。
 
-When you press the <code class="keystroke">CTRL-S</code> key, the terminal driver will stop sending the
-output data. As a result of this, it will look like Vim is hung. If you
-press the <code class="keystroke">CTRL-Q</code> key, then everything will be back to normal.
+按 <code class="keystroke">CTRL-S</code> 键时，终端驱动会停止发送输出数据。后果就是看起来 Vim 挂起了。如果你
+按 <code class="keystroke">CTRL-Q</code> 键，一切都会恢复正常。
 
-You can turn off the terminal driver flow control using the "stty" command: 
+用 "stty" 命令可以关闭终端驱动的流控制: 
 <code class="example"></code>
 <code class="example">    $ stty -ixon -ixoff</code>
 
-or, you can change the keys used for the terminal flow control, using the
-following commands: 
+或者用下列命令来改变终端流控制的用键: 
 <code class="example"></code>
 <code class="example">    $ stty stop &lt;char&gt;</code>
 <code class="example">    $ stty start &lt;char&gt;</code>
 
                                                                 <b class="vimtag"> <a name="faq-32.2">faq-32.2</a> </b>
-32.2. I am seeing weird screen update problems in Vim. What can I do to
-      solve this screen/display update problems?
+32.2. Vim 上看到奇怪的屏幕刷新问题。如何才能解决屏幕/显示刷新问题？
 
-You have to use a proper terminal emulator like xterm with correct TERM
-settings (TERM=xterm) and a correct terminfo/termcap file.
+你需要使用像 xterm 那样合适的终端模拟器，并带有正确的 TERM 设置 (TERM=xterm)
+还有正确的 terminfo/termcap 文件。
 更多详情请阅读:
 
      <code class="badlink">'term'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-32.3">faq-32.3</a> </b>
-32.3. I am using the terminal/console version of Vim. In insertmode, When I
-      press the backspace key, the character before the cursor is not
-      erased. How do I configure Vim to do this?
+32.3. 使用 Vim 的终端/控制台版本时，插入模式下，按了退格键没有删除光标前的字
+      符。如何配置 Vim 来做到这一点？
 
-You have to make sure that Vim gets the correct keycode for the backpspace
-key. You can try using the command: 
+要确保 Vim 收到退格键的正确键盘码。可用以下命令: 
 <code class="example"></code>
 <code class="example">    :fixdel</code>
 
-Make sure the TERM environment variable is set to the correct terminal
-name. You can try using the "stty" command: 
+确保 TERM 环境变量设为正确的终端名。可试用 "stty" 命令: 
 <code class="example"></code>
 <code class="example">    $ stty erase ^H</code>
 
-where, you have to enter the ^H character by pressing the <code class="keystroke">CTRL-V</code> key and
-then the <code class="keystroke">CTRL-H</code> key. Also check the value of your <code class="badlink">'backspace'</code> setting.
+这里，你要用 <code class="keystroke">CTRL-V</code> 键后跟 <code class="keystroke">CTRL-H</code> 键来输入 ^H 字符。也要检查 <code class="badlink">'backspace'</code> 设置
+的值。
 
 更多详情请阅读:
 
@@ -7303,13 +7247,12 @@ then the <code class="keystroke">CTRL-H</code> key. Also check the value of your
      <code class="badlink">'backspace'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-32.4">faq-32.4</a> </b>
-32.4. I am using Vim in a xterm. When I quit Vim, the screen contents are
-      restored back to the original contents. How do I disable this?
+32.4. 我在 xterm 下使用 Vim 。退出 Vim 时，屏幕内容恢复为原先的内容。如何关闭
+      此行为？
 
-The xterm has a capability called "alternate screen".  If this capability
-is present, vim switches to that alternate screen upon startup and back on
-exit, thus restoring the original screen contents.  To disable this
-feature, add the following line to your .vimrc file: 
+xterm 有名为 "alternate screen" 的能力。如果此能力存在，vim 在启动时切换到轮换
+屏幕，退出时切换回来，因而会恢复原先的屏幕内容。要关闭此功能，在 .vimrc 文件中
+加入以下行: 
 <code class="example"></code>
 <code class="example">    :set t_ti= t_te=</code>
 
@@ -7319,39 +7262,34 @@ feature, add the following line to your .vimrc file:
      <code class="badlink">xterm-screens</code> 
 
                                                                 <b class="vimtag"> <a name="faq-32.5">faq-32.5</a> </b>
-32.5. When I start Vim, it takes quite a few seconds to start. How do I
-      minimize the startup time?
+32.5. 启动 Vim 时，花了好几秒才启动。如何才能最小化启动时间？
 
-This may be related to Vim opening the X display for setting the xterm
-title and using the X clipboard. Make sure the DISPLAY variable is set to
-point to the correct host. Try using the command line: 
+这可能和 Vim 打开 X 显示来设置 xterm 标题和使用 X 剪贴板有关。确信 DISPLAY 变
+量设为正确的主机名。试试以下命令: 
 <code class="example"></code>
 <code class="example">    $ vim -X</code>
 
-This will prevent Vim from opening the X display. With this command-line
-option, the X clipboard cannot be used and also Vim will not be able to
-change the xterm title.
+这会不让 Vim 打开 X 显示。用此命令行选项，不使用 X 剪贴板而 Vim 也不会修改
+xterm 标题。
 
-You can also set the <code class="badlink">'clipboard'</code> option to 
+也可设置 <code class="badlink">'clipboard'</code> 选项为 
 <code class="example"></code>
 <code class="example">    :set clipboard=exclude:.*</code>
 
-This has the same effect as using the -X command-line argument.
+这和使用 -X 命令行参数有相同的效果。
 
 更多详情请阅读:
 
      <code class="badlink">-X</code> 
      <code class="badlink">'clipboard'</code> 
 
-If the clipboard is not the cause of the slow startup, it might be a
-plugin that slows down Vim. In that case, you can use the --startuptime
-argument to debug this further. You can do: 
+如果剪贴板不是启动慢的原因，可能是某个插件导致的减慢。在此情形下，可用
+--startuptime 参数进一步调试。可用: 
 <code class="example"></code>
 <code class="example">    $ vim --startuptime vim_startup.log</code>
 
-and the timing will be written to the file vim_startup.log. For even
-more advanced profiling, you can use the profiling feature, that is
-available in huge builds of Vim. To do so, call Vim like this: 
+计时信息会写入文件 vim_startup.log。要更高级的剖视，可用 Vim 的 huge 版本带有
+的剖视特性。为此，这样调用 Vim: 
 <code class="example"></code>
 <code class="example">    $ vim --cmd 'profile start profile.log' \</code>
 <code class="example">      --cmd 'profile func *' \</code>
@@ -7360,10 +7298,10 @@ available in huge builds of Vim. To do so, call Vim like this:
 <code class="example">      -c 'profdel file *' \</code>
 <code class="example">      -c 'qa!'</code>
 
-After running this, you will have a file profile.log in your current
-directory. To further analyse this, open the file profile.log and run: 
+运行后，会在当前目录生成文件 profile.log。要进一步分析，打开 profile.log 文件
+并运行: 
 <code class="example"></code>
-<code class="example">    " Open profile.log file in vim first</code>
+<code class="example">    " 先在 vim 里打开 profile.log 文件</code>
 <code class="example">    :let timings=[]</code>
 <code class="example">    :g/^SCRIPT/call add(timings, [getline('.')[len('SCRIPT  '):], matchstr(getline(line('.')+1), '^Sourced \zs\d\+')]+map(getline(line('.')+2, line('.')+3), 'matchstr(v:val, ''\d\+\.\d\+$'')'))</code>
 <code class="example">    :enew</code>
@@ -7375,10 +7313,9 @@ directory. To further analyse this, open the file profile.log and run:
      <code class="badlink">profiling</code> 
 
                                                                 <b class="vimtag"> <a name="faq-32.6">faq-32.6</a> </b>
-32.6. How can I make the cursor in gvim in unix stop blinking?
+32.6. 如何使 unix 上 gvim 里的光标停止闪烁？
 
-You can modify the <code class="badlink">'guicursor'</code> option, to stop the cursor from blinking.
-For example: 
+可修改 <code class="badlink">'guicursor'</code> 选项以停止光标闪烁。例如: 
 <code class="example"></code>
 <code class="example">    :set guicursor=a:blinkon0</code>
 
@@ -7387,48 +7324,45 @@ For example:
      <code class="badlink">'guicursor'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-32.7">faq-32.7</a> </b>
-32.7. How do I change the menu font on GTK Vim?
+32.7. 如何改变 GTK Vim 的菜单字体？
 
-You can modify the ~/.gtkrc file to change the menu font on GTK Vim. For
-example: 
+可修改 ~/.gtkrc 文件以改变 GTK Vim 的菜单字体。例如: 
 <code class="example"></code>
 <code class="example">    style "default"</code>
 <code class="example">    { font ="smooth09" }</code>
 <code class="example">    class "*" style "default"</code>
 
-The last line changes the font of all widgets.
+末行会改变所有小部件的字体。
 
 更多详情请阅读:
 
      <code class="badlink">gui-gtk</code> 
 
                                                                 <b class="vimtag"> <a name="faq-32.8">faq-32.8</a> </b>
-32.8. How do I prevent <code class="keystroke">CTRL-Z</code> from suspending Vim?
+32.8. 如何不让 <code class="keystroke">CTRL-Z</code> 暂停 Vim？
 
-You can map <code class="keystroke">CTRL-Z</code> to prevent the suspending. Here are some suggestions:
+可映射 <code class="keystroke">CTRL-Z</code> 来不让它暂停。这里是一些建议:
 
-- Make <code class="keystroke">CTRL-Z</code> do nothing: 
+- 使 <code class="keystroke">CTRL-Z</code> 什么也不做: 
 <code class="example"></code>
 <code class="example">    :map &lt;C-Z&gt; &lt;Nop&gt;</code>
 
-- Make <code class="keystroke">CTRL-Z</code> start a shell: 
+- 使 <code class="keystroke">CTRL-Z</code> 启动外壳: 
 <code class="example"></code>
 <code class="example">    :map &lt;C-Z&gt; :shell&lt;CR&gt;</code>
 
-- Make <code class="keystroke">CTRL-Z</code> give an error message: 
+- 使 <code class="keystroke">CTRL-Z</code> 报错: 
 <code class="example"></code>
 <code class="example">    :map &lt;C-Z&gt; :"suspending disabled&lt;CR&gt;</code>
 
-For the last example, the double quote is necessary in order to keep the
-message on the status line.
+最后一个例子里双引号是必要的，它会使消息停留在状态行上。
 
                                                                 <b class="vimtag"> <a name="faq-32.9">faq-32.9</a> </b>
-32.9. When I kill the xterm running Vim, the Vim process continues to run
-      and takes up a lot of CPU (99%) time. Why is this happening?
+32.9. 杀掉运行 Vim 的 xterm 时，Vim 进程继续运行并使用大量的 CPU (99%) 时间。
+      为什么会这样？
 
-When Vim is built with support for Python interface, you will have this
-problem. This is a known problem with the python thread library and Vim.  To
-solve this problem, use a Vim binary built without the Python interface.
+Vim 编译时带 Python 接口支持时，会有这个问题。这是 python 线程库和 Vim 相关的
+已知问题。要解决这个问题，使用不带 Python 接口的 Vim 可执行程序。
 
 更多详情请阅读:
 
@@ -7436,23 +7370,18 @@ solve this problem, use a Vim binary built without the Python interface.
      <code class="badlink">python</code> 
 
                                                                 <b class="vimtag"> <a name="faq-32.10">faq-32.10</a> </b>
-32.10. How do I get the Vim syntax highlighting to work in a Unix terminal?
+32.10. 如何使 Vim 语法高亮在 Unix 终端上工作？
 
-The easiest and simplest way to get Vim syntax highlighting is to use the
-GUI version of Vim (GVIM). To get syntax highlighting to work in the
-console/terminal version of Vim, you have to run a terminal emulator (like
-Xfree86 xterm or rxvt or dtterm) that supports color. <code class="note">Note </code>that if a
-terminal emulator supports changing the background and foreground colors,
-that does not mean that it also supports ANSI escape sequences for changing
-the color. You can download the latest version of Xfree86 xterm from
-<a href="https://invisible-island.net/xterm/xterm.html">https://invisible-island.net/xterm/xterm.html</a>
-You can download the latest version of rxvt from <a href="https://rxvt.org">https://rxvt.org</a>
-You have to install the terminfo/termcap file that supports colors for the
-terminal emulator. Also, set the TERM environment variable to the correct
-name of the term that supports colors.
+最容易和最简单得到 Vim 语法高亮的方法是使用 Vim 的 GUI 版本 (GVIM)。要使语法高
+亮可在 Vim 的控制台/终端版本上工作，需要运行支持色彩的终端模拟器 (比如 Xfree86
+xterm 或 rxvt 或 dtterm)。<code class="note">注意</code> 如果终端模拟器支持改变背景和前景色，未必意味它
+同时支持改变色彩的 ANSI 转义序列。可从
+<a href="https://invisible-island.net/xterm/xterm.html">https://invisible-island.net/xterm/xterm.html</a> 下载 Xfree86 xterm 的最新版本。
+可以 <a href="https://rxvt.org">https://rxvt.org</a> 下载 rxvt 的最新版本。要安装用于终端模拟器的支持色彩的
+terminfo/termcap 文件。另外，设置 TERM 环境变量为支持色彩的终端的正确名字。
 
-You can use the colortest.vim script supplied with the Vim runtime
-package to test the color setup. To use this script, follow these steps: 
+可用 Vim 运行时包提供的 colortest.vim 来测试色彩设置。可用以下步骤来运行此脚
+本: 
 <code class="example"></code>
 <code class="example">    :e $VIMRUNTIME/syntax/colortest.vim</code>
 <code class="example">    :source %</code>
