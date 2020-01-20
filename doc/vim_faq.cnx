@@ -215,7 +215,7 @@ https://vimhelp.appspot.com/vim_faq.txt.html。
 |faq-14.11| 如何配置 Vim 在编辑邮件时自动设置 'textwidth' 选项为指定值？
 |faq-14.12| 有没有办法使得 Vim 自动神奇地断行？
 |faq-14.13| 我在文件中看到很多的 ^M 符号。我试过设置 'fileformat' 选项为
-	  'dos'，又试过 'unix' 然后 'mac'。都不行。我怎么才能隐藏这些符号呢？
+	  "dos"，又试过 "unix" 然后 "mac"。都不行。我怎么才能隐藏这些符号呢？
 |faq-14.14| 我从另一个应用粘贴文本到 Vim 缓冲区时，新文本的对齐 (缩进) 不对。
 	  如何修正？
 |faq-14.15| 有很长回绕行 (回绕处于 "on" 状态) 时，如有一行不能完全放进屏幕，它
@@ -1070,7 +1070,7 @@ https://github.com/vim/vim-history#release-history
     |new-7|
     |new-6|
     |new-5|
-    |chnaged-8.2|
+    |changed-8.2|
     |changed-8.1|
     |changed-7.4|
     |changed-7.3|
@@ -2286,7 +2286,7 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
 更多详情请阅读:
 
     |ga|
-    |using_CTRL_V|
+    |using_CTRL-V|
     |24.8|
 
 								*faq-11.5*
@@ -3568,8 +3568,8 @@ CTRL-O >> 和 CTRL-O << 命令来缩进当前行。
     |formatting|
 
 								*faq-14.13*
-14.13. 我在文件中看到很多的 ^M 符号。我试过设置 'fileformat' 选项为 'dos'，又
-       试过 'unix' 然后 'mac'。都不行。我怎么才能隐藏这些符号呢？
+14.13. 我在文件中看到很多的 ^M 符号。我试过设置 'fileformat' 选项为 "dos"，又
+       试过 "unix" 然后 "mac"。都不行。我怎么才能隐藏这些符号呢？
 
 文件载入到 Vim 时，文件的格式由以下步骤决定:
 
@@ -4073,7 +4073,7 @@ CTRL-F 来打开命令行窗口。命令行窗口里可用所有的 Vim 命令�
 确保 'viminfo' 选项非空。要保存和恢复 Vim 位置标记，'viminfo' 选项不应包含 "f"
 标志位或 "f" 选项的值应大于零。
 
-也可用 viminfo 文件来在不同会话间同步命令行历史。为此，使用 `:wvimfo` 和
+也可用 viminfo 文件来在不同会话间同步命令行历史。为此，使用 `:wviminfo` 和
 `:rviminfo` 加上 FocusGained 或 FocusLost 自动命令: >
 
     augroup viminfo
@@ -6161,7 +6161,7 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
 
 更多详情请阅读:
 
-    |formatoptions|
+    |'formatoptions'|
     |30.6|
     |format-comments|
     |filetype-plugins|
@@ -7054,7 +7054,7 @@ mswin.vim 脚本提供了使 Vim 行为类似于 MS-Windows 应用的键盘映�
 								*faq-33.5*
 33.5. 使用 Windows XP 时，最大化 GVim 的显示速度很慢。如何才能加速显示更新？
 
-这可能是因为你打开了显示属性的 '平滑屏幕字符边缘'。试试关闭字体平滑或改变平滑
+这可能是因为你打开了显示属性的 "平滑屏幕字符边缘"。试试关闭字体平滑或改变平滑
 方法为 "标准"。
 
 								*faq-33.6*

@@ -6,8 +6,8 @@ git commit -a -m "$1"
 git push
 cd "$ROOT"/devel/doc
 make
-git co gh-pages
+git checkout gh-pages
 cp *.html ../../doc
 git commit -a -m "$1"
 git push
-git co master
+git checkout master
