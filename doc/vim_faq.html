@@ -294,70 +294,49 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-18.2">faq-18.2</a>   如何发送命令到 Vim 服务器去把所有缓冲区写回到盘上？
  <a href="vim_faq.html#faq-18.3">faq-18.3</a>   哪里有 Vim 远程服务器功能的文档？
                                                                 <b class="vimtag"> <a name="faq-options">faq-options</a> </b>
-<code class="section">SECTION 19 - OPTIONS </code>
- <a href="vim_faq.html#faq-19.1">faq-19.1</a>   How do I configure Vim in a simple way?
- <a href="vim_faq.html#faq-19.2">faq-19.2</a>   How do I toggle the value of an option?
- <a href="vim_faq.html#faq-19.3">faq-19.3</a>   How do I set an option that affects only the current
-          buffer/window?
- <a href="vim_faq.html#faq-19.4">faq-19.4</a>   How do I use space characters for a Vim option value?
- <a href="vim_faq.html#faq-19.5">faq-19.5</a>   Can I add (embed) Vim option settings to the contents of a file?
- <a href="vim_faq.html#faq-19.6">faq-19.6</a>   How do I display the line numbers of all the lines in a file?
- <a href="vim_faq.html#faq-19.7">faq-19.7</a>   How do I change the width of the line numbers displayed using the
-          <code class="badlink">'number'</code> option?
- <a href="vim_faq.html#faq-19.8">faq-19.8</a>   How do I display (view) all the invisible characters like space,
-          tabs and newlines in a file?
- <a href="vim_faq.html#faq-19.9">faq-19.9</a>   How do I configure Vim to always display the current line and
-          column number?
- <a href="vim_faq.html#faq-19.10">faq-19.10</a>  How do I display the current Vim mode?
- <a href="vim_faq.html#faq-19.11">faq-19.11</a>  How do I configure Vim to show pending/partial commands on the
-          status line?
- <a href="vim_faq.html#faq-19.12">faq-19.12</a>  How do I configure the Vim status line to display different
-          settings/values?
- <a href="vim_faq.html#faq-19.13">faq-19.13</a>  How do I configure Vim to display status line always?
- <a href="vim_faq.html#faq-19.14">faq-19.14</a>  How do I make a Vim setting persistent across different Vim
-          invocations/instances/sessions?
- <a href="vim_faq.html#faq-19.15">faq-19.15</a>  Why do I hear a beep (why does my window flash) about 1 second
-          after I hit the Escape key?
- <a href="vim_faq.html#faq-19.16">faq-19.16</a>  How do I make the "c" and "s" commands display a "$" instead of
-          deleting the characters I'm changing?
- <a href="vim_faq.html#faq-19.17">faq-19.17</a>  How do I remove more than one flag using a single  <code class="badlink">:set</code>  command
-          from a Vim option?
+<code class="section">第十九节 - 选项</code>
+ <a href="vim_faq.html#faq-19.1">faq-19.1</a>   如何可以简易地配置 Vim？
+ <a href="vim_faq.html#faq-19.2">faq-19.2</a>   如何切换选项值？
+ <a href="vim_faq.html#faq-19.3">faq-19.3</a>   如何设置只影响当前缓冲区/窗口的选项？
+ <a href="vim_faq.html#faq-19.4">faq-19.4</a>   Vim 选项值里如何使用空格符？
+ <a href="vim_faq.html#faq-19.5">faq-19.5</a>   如何把 Vim 选项设定加入 (嵌入) 文件内容？
+ <a href="vim_faq.html#faq-19.6">faq-19.6</a>   如何显示文件中所有行的行号？
+ <a href="vim_faq.html#faq-19.7">faq-19.7</a>   如何改变 <code class="badlink">'number'</code> 选项显示的行号的宽度？
+ <a href="vim_faq.html#faq-19.8">faq-19.8</a>   如何显示 (查看) 文件中所有不可见的字符，如空格、制表和换行？
+ <a href="vim_faq.html#faq-19.9">faq-19.9</a>   如何配置 Vim 来总是显示当前行号和列号？
+ <a href="vim_faq.html#faq-19.10">faq-19.10</a>  如何显示当前 Vim 模式？
+ <a href="vim_faq.html#faq-19.11">faq-19.11</a>  如何配置 Vim 在状态行上显示待定/部分命令？
+ <a href="vim_faq.html#faq-19.12">faq-19.12</a>  如何配置 Vim 状态行以显示不同的设置/值？
+ <a href="vim_faq.html#faq-19.13">faq-19.13</a>  如何配置 Vim 总是显示状态行？
+ <a href="vim_faq.html#faq-19.14">faq-19.14</a>  如果在不同的 Vim 调用/实例/会话间存留 Vim 设置？
+ <a href="vim_faq.html#faq-19.15">faq-19.15</a>  为什么在按 Escape 键后会听到响铃 (窗口会闪烁) 大约 1 秒钟？
+ <a href="vim_faq.html#faq-19.16">faq-19.16</a>  如何使 "c" 和 "s" 命令显示 "$" 而不是删除正在修改的字符？
+ <a href="vim_faq.html#faq-19.17">faq-19.17</a>  如何用单个  <code class="badlink">:set</code>  命令删除一个 Vim 选项的多个标志位？
                                                         <b class="vimtag"> <a name="faq-mapping-keys">faq-mapping-keys</a> </b>
-<code class="section">SECTION 20 - MAPPING KEYS </code>
- <a href="vim_faq.html#faq-20.1">faq-20.1</a>   How do I know what a key is mapped to?
- <a href="vim_faq.html#faq-20.2">faq-20.2</a>   How do I list all the user-defined key mappings?
- <a href="vim_faq.html#faq-20.3">faq-20.3</a>   How do I unmap a key?
- <a href="vim_faq.html#faq-20.4">faq-20.4</a>   I am not able to create a mapping for the <code class="special">&lt;xxx&gt;</code> key. What is
-          wrong?
- <a href="vim_faq.html#faq-20.5">faq-20.5</a>   Why does mapping the &lt;C-...&gt; key not work?
- <a href="vim_faq.html#faq-20.6">faq-20.6</a>   How do I map the numeric keypad keys?
- <a href="vim_faq.html#faq-20.7">faq-20.7</a>   How do I create a mapping that works only in visual mode?
- <a href="vim_faq.html#faq-20.8">faq-20.8</a>   How do I create a mapping that works only in normal and operator
-          pending mode (but not in visual mode)?
- <a href="vim_faq.html#faq-20.9">faq-20.9</a>   In a Vim script, how do I know which keys to use for my mappings,
-          so that the mapped key will not collide with an already used key?
- <a href="vim_faq.html#faq-20.10">faq-20.10</a>  How do I map the escape key?
- <a href="vim_faq.html#faq-20.11">faq-20.11</a>  How do I map a key to perform nothing?
- <a href="vim_faq.html#faq-20.12">faq-20.12</a>  I want to use the <code class="special">&lt;Tab&gt;</code> key to indent a block of text and
-          <code class="special">&lt;Shift-Tab&gt;</code> key to unindent a block of text. How do I map the keys
-          to do this?  This behavior is similar to textpad, visual studio,
-          etc.
- <a href="vim_faq.html#faq-20.13">faq-20.13</a>  In my mappings the special characters like <code class="special">&lt;CR&gt;</code> are not
-          recognized. How can I configure Vim to recognize special
-          characters?
- <a href="vim_faq.html#faq-20.14">faq-20.14</a>  How do I use the "|" to separate multiple commands in a map?
- <a href="vim_faq.html#faq-20.15">faq-20.15</a>  If I have a mapping/abbreviation whose ending is the beginning of
-          another mapping/abbreviation, how do I keep the first from
-          expanding into the second one?
- <a href="vim_faq.html#faq-20.16">faq-20.16</a>  Why does it take a second or more for Vim to process a key,
-          sometimes when I press a key?
- <a href="vim_faq.html#faq-20.17">faq-20.17</a>  How do I map a key to run an external command using a visually
-          selected text?
- <a href="vim_faq.html#faq-20.18">faq-20.18</a>  How do I map the <code class="keystroke">CTRL-I</code> key while still retaining the
-          functionality of the <code class="special">&lt;Tab&gt;</code> key?
- <a href="vim_faq.html#faq-20.19">faq-20.19</a>  How do I define a map to accept a count?
- <a href="vim_faq.html#faq-20.20">faq-20.20</a>  How can I make my normal mode mapping work from within Insert
-          Mode?
+<code class="section">第二十节 - 键映射</code>
+ <a href="vim_faq.html#faq-20.1">faq-20.1</a>   如何知道键被映射了？
+ <a href="vim_faq.html#faq-20.2">faq-20.2</a>   如何列出所有用户定义的键映射？
+ <a href="vim_faq.html#faq-20.3">faq-20.3</a>   如何删除键映射？
+ <a href="vim_faq.html#faq-20.4">faq-20.4</a>   不能建立 <code class="special">&lt;xxx&gt;</code> 键的映射。哪里做错了？
+ <a href="vim_faq.html#faq-20.5">faq-20.5</a>   为什么 &lt;C-...&gt; 键的映射不可用？
+ <a href="vim_faq.html#faq-20.6">faq-20.6</a>   如何映射数字小键盘上的键？
+ <a href="vim_faq.html#faq-20.7">faq-20.7</a>   如何创建只在可视模式下可用的映射？
+ <a href="vim_faq.html#faq-20.8">faq-20.8</a>   如何创建只在普通和操作符等待模式 (而不是可视模式) 下可用的映射？
+ <a href="vim_faq.html#faq-20.9">faq-20.9</a>   Vim 脚本中，如何知道用哪个键来映射而不会为已有的键相冲突？
+ <a href="vim_faq.html#faq-20.10">faq-20.10</a>  如何映射 escape 键？
+ <a href="vim_faq.html#faq-20.11">faq-20.11</a>  如何把键映射为空操作？
+ <a href="vim_faq.html#faq-20.12">faq-20.12</a>  想用 <code class="special">&lt;Tab&gt;</code> 键来缩进一块文本而 <code class="special">&lt;Shit-Tab&gt;</code> 键来反向缩进一块文件。如
+          何才能通过映射键完成？此行为和 textpad、visual studio 等类似。
+ <a href="vim_faq.html#faq-20.13">faq-20.13</a>  我的映射里不识别 <code class="special">&lt;CR&gt;</code> 这样的特殊字符。如何才能配置 Vim 才能识别特
+          殊字符？
+ <a href="vim_faq.html#faq-20.14">faq-20.14</a>  如何在映射里使用 "|" 来分隔多个命令？
+ <a href="vim_faq.html#faq-20.15">faq-20.15</a>  如果一个映射/缩写的结束是另一个映射/缩写的开始，如何不让第一个映射
+          扩展第二个映射？
+ <a href="vim_faq.html#faq-20.16">faq-20.16</a>  为什么有时我按一个键时，Vim 需要花一秒或更长时间来处理这个键？
+ <a href="vim_faq.html#faq-20.17">faq-20.17</a>  如何映射键来在可视选择文本上运行外部命令？
+ <a href="vim_faq.html#faq-20.18">faq-20.18</a>  如何映射 <code class="keystroke">CTRL-I</code> 键，同时保留 <code class="special">&lt;Tab&gt;</code> 键的功能？
+ <a href="vim_faq.html#faq-20.19">faq-20.19</a>  如何定义接受计数的映射？
+ <a href="vim_faq.html#faq-20.20">faq-20.20</a>  如何使普通模式映射用于插入模式？
                                                         <b class="vimtag"> <a name="faq-abbreviations">faq-abbreviations</a> </b>
 <code class="section">SECTION 21 - ABBREVIATIONS </code>
  <a href="vim_faq.html#faq-21.1">faq-21.1</a>   How do I auto correct misspelled words?
@@ -4209,30 +4188,30 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
      <code class="badlink">client-server</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-19">faq-19</a> </b></h4><code class="section">SECTION 19 - OPTIONS </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-19">faq-19</a> </b></h4><code class="section">第十九节 - 选项</code>
 
                                                                 <b class="vimtag"> <a name="faq-19.1">faq-19.1</a> </b>
-19.1. How do I configure Vim in a simple way?
+19.1. 如何可以简易地配置 Vim？
 
-You can use the  <code class="badlink">:options</code>  command to open the Vim option window: 
+可用  <code class="badlink">:options</code>  命令来打开 Vim 选项窗口: 
 <code class="example"></code>
 <code class="example">    :options</code>
 
-This window can be used for viewing and setting all the options.
+此窗口可用于察看和设置所有选项。
 
 更多详情请阅读:
 
      <code class="badlink">:options</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.2">faq-19.2</a> </b>
-19.2. How do I toggle the value of an option?
+19.2. 如何切换选项值？
 
-You can prefix the option with "inv" to toggle the value of the option: 
+可用选项加上 "inv" 前缀来切换选项值: 
 <code class="example"></code>
 <code class="example">    :set invignorecase</code>
 <code class="example">    :set invhlsearch</code>
 
-You can also suffix the option with "!" to toggle the value: 
+也可用选项加上 "!" 后缀来切换选项值: 
 <code class="example"></code>
 <code class="example">    :set ignorecase!</code>
 <code class="example">    :set hlsearch!</code>
@@ -4242,27 +4221,22 @@ You can also suffix the option with "!" to toggle the value:
      <code class="badlink">set-option</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.3">faq-19.3</a> </b>
-19.3. How do I set an option that affects only the current buffer/window?
+19.3. 如何设置只影响当前缓冲区/窗口的选项？
 
-Some of the Vim options can have a local or global value. A local value
-applies only to a specific buffer or window. A global value applies to all
-the buffers or windows.
+有些 Vim 选项有局部和全局值。局部值只应用于指定的缓冲区和窗口。全局值应用于所
+有缓冲区或窗口。
 
-When a Vim option is modified using the  <code class="badlink">:set</code>  command, both the global and
-local values for the option are changed. You can use the  <code class="badlink">:setlocal</code> 
-command to modify only the local value for the option and the  <code class="badlink">:setglobal</code> 
-command to modify only the global value.
+用  <code class="badlink">:set</code>  命令修改选项时，同时改变选项的全局和局部值。可用  <code class="badlink">:setlocal</code>  命令来
+只修改选项的局部值，而  <code class="badlink">:setglobal</code>  命令来只修改选项的全局值。
 
-You can use the  <code class="badlink">:setlocal</code>  command to set an option that will affect only
-the current file/buffer: 
+可用  <code class="badlink">:setlocal</code>  命令来设置只影响当前文件/缓冲区的选项: 
 <code class="example"></code>
 <code class="example">    :setlocal textwidth=70</code>
 
-<code class="note">Note </code>that not all options can have a local value. You can use  <code class="badlink">:setlocal</code> 
-command to set an option locally to a buffer/window only if the option is
-allowed to have a local value.
+<code class="note">注意</code> 不是所有选项都有局部值。仅当选项支持局部值时，才能用  <code class="badlink">:setlocal</code>  命令来设
+置局部于缓冲区/窗口的选项。
 
-You can also use the following command to set an option locally: 
+也可用下列命令来设置局部选项: 
 <code class="example"></code>
 <code class="example">    :let &amp;l:{option-name} = &lt;value&gt;</code>
 
@@ -4272,10 +4246,9 @@ You can also use the following command to set an option locally:
      <code class="badlink">local-options</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.4">faq-19.4</a> </b>
-19.4. How do I use space characters for a Vim option value?
+19.4. Vim 选项值里如何使用空格符？
 
-To use space characters in a Vim option value, you have to escape the space
-character. For example: 
+要在 Vim 选项值里使用空格符，需要给空格符转义。例如: 
 <code class="example"></code>
 <code class="example">    :set tags=tags\ /usr/tags</code>
 
@@ -4284,21 +4257,16 @@ character. For example:
      <code class="badlink">option-backslash</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.5">faq-19.5</a> </b>
-19.5. Can I add (embed) Vim option settings to the contents of a file?
+19.5. 如何把 Vim 选项设定加入 (嵌入) 文件内容？
 
-You can use modelines to add Vim option settings to the contents of a file.
-For example, in a C file, you can add the following line to the top or the
-bottom of the file: 
+可用模式行来把  Vim 选项设定加入文件内容。例如，在 C 文件里，可在文件的顶部或
+底部加入以下行: 
 <code class="example"></code>
 <code class="example">    /* vim:sw=4: */</code>
 
-This will set the <code class="badlink">'shiftwidth'</code> option to 4, when editing that C file.
-For this to work, the <code class="badlink">'modeline'</code> option should be set. By default, the
-<code class="badlink">'modeline'</code> option is set. An alternative example is given in this document
-in the first line.
+这会编辑该 C 文件时设置  <code class="badlink">'shiftwidth'</code> 选项为 4。为此，必须置位 <code class="badlink">'modeline'</code> 选项。缺省，这是置位的。另一个例子在本文档的首行给出。
 
-The <code class="badlink">'modelines'</code> settings specifies the number of
-lines that will be checked for the Vim set commands.
+<code class="badlink">'modelines'</code> 设置指定用于检查 Vim set 命令的行数。
 
 更多详情请阅读:
 
@@ -4309,10 +4277,9 @@ lines that will be checked for the Vim set commands.
      <code class="badlink">'modelines'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.6">faq-19.6</a> </b>
-19.6. How do I display the line numbers of all the lines in a file?
+19.6. 如何显示文件中所有行的行号？
 
-You can set the <code class="badlink">'number'</code> option to display the line numbers for all the
-lines. 
+可设置 <code class="badlink">'number'</code> 选项来显示所有行的行号。 
 <code class="example"></code>
 <code class="example">    :set number</code>
 
@@ -4321,44 +4288,34 @@ lines.
      <code class="badlink">'number'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.7">faq-19.7</a> </b>
-19.7. How do I change the width of the line numbers displayed using the
-      <code class="badlink">'number'</code> option?
+19.7. 如何改变 <code class="badlink">'number'</code> 选项显示的行号的宽度？
 
-You can set the minimum number of columns to be used for line numbering by
-setting the <code class="badlink">'numberwidth'</code> option: 
+可用 <code class="badlink">'numberwidth'</code> 选项来设置用于行号的最少列数: 
 <code class="example"></code>
 <code class="example">    :set numberwidth=3</code>
 
-This set's the width for the line number to 3 digits, which is enough, if
-your buffer contains less than 999 lines. However, if your current buffer
-contains more lines than 999, the <code class="badlink">'numberwidth'</code> will be adjusted accordingly,
-so that the maximum line number will fit on the screen.
+这会设置行号的宽度为 3 个数位，如果你的缓冲区少于 999 行应该足够了。不过，如果
+你的当前缓冲区多于 999 行，会相应调整 <code class="badlink">'numberwidth'</code> 使得最大行号可以放进屏幕。
 
                                                                 <b class="vimtag"> <a name="faq-19.8">faq-19.8</a> </b>
-19.8. How do I display (view) all the invisible characters like space, tabs
-      and newlines in a file?
+19.8. 如何显示 (查看) 文件中所有不可见的字符，如空格、制表和换行？
 
-You can set the <code class="badlink">'list'</code> option to see all the invisible characters in your
-file. 
+可置位 <code class="badlink">'list'</code> 选项来看到文件中所有的不可见字符。 
 <code class="example"></code>
 <code class="example">    :set list</code>
 
-With this option set, you can view space characters, tabs, newlines,
-trailing space characters and wrapped lines.
+置位此选项后，可以查看空格符、制表、换行、拖尾的空格符和回绕行。
 
-To not display the invisible characters (which is the default), you have to
-reset the <code class="badlink">'list'</code> option: 
+要不显示不可见字符 (这是缺省)，需要复位 <code class="badlink">'list'</code> 选项: 
 <code class="example"></code>
 <code class="example">    :set nolist</code>
 <code class="example">    (or)</code>
 <code class="example">    :set list!</code>
 
-The `:set list!` command will toggle the current setting of the boolean
-<code class="badlink">'list'</code> option.
+`:set list!` 命令会切换布尔 <code class="badlink">'list'</code> 选项的当前值。
 
-You can modify the <code class="badlink">'listchars'</code> option to configure how and which invisible
-characters are displayed. For example, with the following command all the
-trailing space characters will be displayed with a "." character. 
+可修改 <code class="badlink">'listchars'</code> 选项来配置如何显示和显示什么不可见字符。例如，下列命令会显
+示所有的拖尾空格符为 "." 字符。 
 <code class="example"></code>
 <code class="example">    :set listchars=trail:.</code>
 
@@ -4368,11 +4325,9 @@ trailing space characters will be displayed with a "." character.
      <code class="badlink">'list'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.9">faq-19.9</a> </b>
-19.9. How do I configure Vim to always display the current line and column
-      number?
+19.9. 如何配置 Vim 来总是显示当前行号和列号？
 
-You can set the <code class="badlink">'ruler'</code> option to display current column and line number in
-the status line: 
+可置位 <code class="badlink">'ruler'</code> 选项来在状态行上显示当前列号和行号: 
 <code class="example"></code>
 <code class="example">    :set ruler</code>
 
@@ -4381,11 +4336,10 @@ the status line:
      <code class="badlink">'ruler'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.10">faq-19.10</a> </b>
-19.10. How do I display the current Vim mode?
+19.10. 如何显示当前 Vim 模式？
 
-You can set the <code class="badlink">'showmode'</code> option to display the current Vim mode. In
-Insert, Replace and Visual modes, Vim will display the current mode on the
-last line. 
+可置位 <code class="badlink">'showmode'</code> 选项来显示当前 Vim 模式。在插入、替换和可视模式下，Vim 会在
+末行显示当前模式。 
 <code class="example"></code>
 <code class="example">    :set showmode</code>
 
@@ -4394,11 +4348,9 @@ last line.
      <code class="badlink">'showmode'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.11">faq-19.11</a> </b>
-19.11. How do I configure Vim to show pending/partial commands on the
-       status line?
+19.11. 如何配置 Vim 在状态行上显示待定/部分命令？
 
-You can set the <code class="badlink">'showcmd'</code> option to display pending/partial commands in the
-status line: 
+可置位 <code class="badlink">'showcmd'</code> 选项在状态行上显示选定/部分命令: 
 <code class="example"></code>
 <code class="example">    :set showcmd</code>
 
@@ -4407,11 +4359,9 @@ status line:
      <code class="badlink">'showcmd'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.12">faq-19.12</a> </b>
-19.12. How do I configure the Vim status line to display different
-       settings/values?
+19.12. 如何配置 Vim 状态行以显示不同的设置/值？
 
-You can set the <code class="badlink">'statusline'</code> option to display different values/settings in
-the Vim status line.
+可设置 <code class="badlink">'statusline'</code> 选项来在 Vim 状态行上显示不同的值/设置。
 
 更多详情请阅读:
 
@@ -4421,9 +4371,9 @@ the Vim status line.
      <code class="badlink">'ruler'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.13">faq-19.13</a> </b>
-19.13. How do I configure Vim to display status line always?
+19.13. 如何配置 Vim 总是显示状态行？
 
-You can set the <code class="badlink">'laststatus'</code> option to 2 to display the status line always. 
+可设置 <code class="badlink">'laststatus'</code> 选项为 2 来总是显示状态行。 
 <code class="example"></code>
 <code class="example">    :set laststatus=2</code>
 
@@ -4432,12 +4382,10 @@ You can set the <code class="badlink">'laststatus'</code> option to 2 to display
      <code class="badlink">'laststatus'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.14">faq-19.14</a> </b>
-19.14. How do I make a Vim setting persistent across different Vim
-       invocations/instances/sessions?
+19.14. 如果在不同的 Vim 调用/实例/会话间存留 Vim 设置？
 
-To make a Vim option setting persistent across different Vim instances, add
-your setting to the .vimrc or .gvimrc file. You can also use the  <code class="badlink">:mkvimrc</code> 
-command to generate a vimrc file for the current settings.
+要在不同的 Vim 实例间存留 Vim 选项设置，把你的设置放在 .vimrc 或 .gvimrc 文
+件里。也可用  <code class="badlink">:mkvimrc</code>  命令用当前设置生成 vimrc 文件。
 
 更多详情请阅读:
 
@@ -4449,38 +4397,29 @@ command to generate a vimrc file for the current settings.
      <code class="badlink">initialization</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.15">faq-19.15</a> </b>
-19.15. Why do I hear a beep (why does my window flash) about 1 second after
-       I hit the Escape key?
+19.15. 为什么在按 Escape 键后会听到响铃 (窗口会闪烁) 大约 1 秒钟？
 
-This is normal behavior. If your window flashes, then you've got the visual
-bell on. Otherwise, you should hear a beep.
+这是正常行为。如果窗口闪烁，你打开了可视响铃。不然，你会听到蜂鸣。
 
-Vim needs a timeout to tell the difference between a simple escape and,
-say, a cursor key sequence.  When you press a key in normal mode (and even
-in insert mode) and that key is the beginning of a mapping, Vim waits a
-certain amount of time to see if the rest of the mapping sequence follows.
-If the mapping sequence is completed before a given timeout period, the
-mapping for that sequence of keys is applied. If you interrupt the mapping,
-the normal actions associated with the keys are executed.
+Vim 需要超时来区别简单的 Escape 和,比如说，光标键盘序列。在普通模式按键 (即使
+插入模式也是如此) 而该键是映射开始的一部分时，Vim 会等待一段时间也观察映射序列
+的其余部分是否出现。如果映射序列在规定超时期限之前完成，应用该键盘序列的映射。
+如果中断了映射，执行键相关联的正常动作。
 
-For example, if you have a mapping defined as `:imap vvv Vim is great!!`
-and you type "vvv" quickly, the "Vim is great!!" will be inserted into your
-text. But if you type "vv v" then that is what will put into your text.
-This is also true if you type "vvv" too slowly where "too slowly" is longer
-than the value for the timeout option. Setting the timeout option to a
-larger value can help alleviate problems that appear when using function
-keys over a slow line.
+例如，如果你有映射定义 `:imap vvv Vim is great!!`，然后快速地按了 "vvv"，那么
+就会插入文本 "Vim is great!!"。但如果你按了 "vv v" 那么就按原样放置进文本。这
+也适用于键入 "vvv" 过慢的情形，这里 "过慢" 是超过超时选项值的时间。设置超时选
+项为更大值可有助于减轻在慢速线路上使用函数键出现的问题。
 
 更多详情请阅读:
 
      <code class="badlink">'ttimeout'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.16">faq-19.16</a> </b>
-19.16. How do I make the "c" and "s" commands display a "$" instead of
-       deleting the characters I'm changing?
+19.16. 如何使 "c" 和 "s" 命令显示 "$" 而不是删除正在修改的字符？
 
-To make the "c" and "s" commands display a "$" instead of deleting the
-characters, add the $ flag to the <code class="badlink">'cpoptions'</code> option: 
+要使 "c" 和 "s" 命令显示 "$" 而不是删除正在修改的字符，给 <code class="badlink">'cpoptions'</code> 选项加入
+$ 标志位: 
 <code class="example"></code>
 <code class="example">    :set cpoptions+=$</code>
 
@@ -4489,20 +4428,17 @@ characters, add the $ flag to the <code class="badlink">'cpoptions'</code> optio
      <code class="badlink">'cpoptions'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-19.17">faq-19.17</a> </b>
-19.17. How do I remove more than one flag using a single  <code class="badlink">:set</code>  command
-       from a Vim option?
+19.17. 如何用单个  <code class="badlink">:set</code>  命令删除一个 Vim 选项的多个标志位？
 
-You can remove more than one flag from a Vim option using a single  <code class="badlink">:set</code> 
-command, by specifying the flags in exactly the same order as they appear
-in the option. For example, if you use the following command to remove the
-"t" and "n" flags from the <code class="badlink">'formatoptions'</code> option: 
+要用单个  <code class="badlink">:set</code>  命令删除一个 Vim 选项的多个标志位，可指定和选项中出现顺序完全
+相同的标志位序列。例如，如果用下列命令来从 <code class="badlink">'formatoptions'</code> 选项中删除 "t" 和
+"n" 标志位: 
 <code class="example"></code>
 <code class="example">    :set formatoptions-=tn</code>
 
-The "t" and "n" flags will be removed from the <code class="badlink">'formatoptions'</code> option, only
-if the <code class="badlink">'formatoptions'</code> option contains these flags in this order: "tn".
-Otherwise, it will not remove the flags. To avoid this problem, you can
-remove the flags one by one: 
+仅当 <code class="badlink">'formatoptions'</code> 选项以顺序 "tn" 包含这些标志位时，才从 <code class="badlink">'formatoptions'</code> 选
+项里删除 "t" 和 "n" 标志位。否则，标志位不会被删除 。为了避免此问题，可以一个
+一个删除标志位: 
 <code class="example"></code>
 <code class="example">    :set formatoptions-=t formatoptions-=n</code>
 
@@ -4511,20 +4447,20 @@ remove the flags one by one:
      <code class="badlink">:set-=</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-20">faq-20</a> </b></h4><code class="section">SECTION 20 - MAPPING KEYS </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-20">faq-20</a> </b></h4><code class="section">第二十节 - 键映射</code>
 
                                                                 <b class="vimtag"> <a name="faq-20.1">faq-20.1</a> </b>
-20.1. How do I know what a key is mapped to?
+20.1. 如何知道键被映射了？
 
-To see what a key is mapped to, use the following commands: 
+要看到什么键被映射了，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :map &lt;key&gt;</code>
 <code class="example">    :map! &lt;key&gt;</code>
 
-You can also check the mappings in a particular mode using one of the
- <code class="badlink">:cmap</code> ,  <code class="badlink">:nmap</code> ,  <code class="badlink">:vmap</code> ,  <code class="badlink">:imap</code> ,  <code class="badlink">:omap</code> , etc commands.
+也可用  <code class="badlink">:cmap</code> 、 <code class="badlink">:nmap</code> 、 <code class="badlink">:vmap</code> 、 <code class="badlink">:imap</code> 、 <code class="badlink">:omap</code>  等命令之一来检查特定模式下
+的映射。
 
-To find out, where the key has been mapped, prefix the  <code class="badlink">:verbose</code>  command: 
+要知道键是哪里被映射的，加上  <code class="badlink">:verbose</code>  命令前缀: 
 <code class="example"></code>
 <code class="example">    :verbose :map &lt;key&gt;</code>
 
@@ -4534,9 +4470,9 @@ To find out, where the key has been mapped, prefix the  <code class="badlink">:v
      <code class="badlink">map-overview</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.2">faq-20.2</a> </b>
-20.2. How do I list all the user-defined key mappings?
+20.2. 如何列出所有用户定义的键映射？
 
-You can list all the user-defined key mappings using: 
+可以这样也列出所有用户定义的键映射: 
 <code class="example"></code>
 <code class="example">    :map</code>
 
@@ -4545,14 +4481,14 @@ You can list all the user-defined key mappings using:
      <code class="badlink">map-listing</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.3">faq-20.3</a> </b>
-20.3. How do I unmap a previously mapped key?
+20.3. 如何删除键映射？
 
-You can unmap a previously mapped key using the  <code class="badlink">:unmap</code>  command: 
+可用  <code class="badlink">:unmap</code>  命令来删除之前的键映射: 
 <code class="example"></code>
 <code class="example">    :unmap &lt;key&gt;</code>
 <code class="example">    :unmap! &lt;key&gt;</code>
 
-For mode specific mappings, you can use one of the these commands: 
+对模式特定的映射，可用以下命令之一: 
 <code class="example"></code>
 <code class="example">    :nunmap</code>
 <code class="example">    :vunmap</code>
@@ -4561,12 +4497,11 @@ For mode specific mappings, you can use one of the these commands:
 <code class="example">    :lunmap</code>
 <code class="example">    :cunmap</code>
 
-The following command will fail to unmap a buffer-local mapped key: 
+以下命令会在删除局部于缓冲区的键映射时失败: 
 <code class="example"></code>
 <code class="example">    :unmap &lt;key&gt;</code>
 
-To unmap a buffer-local mapped key, you have to use the <code class="special">&lt;buffer&gt;</code> keyword in
-the unmap command: 
+要删除局部于缓冲区的键映射，须在 unmap 命令里用 <code class="special">&lt;buffer&gt;</code> 关键字: 
 <code class="example"></code>
 <code class="example">    :unmap &lt;buffer&gt; &lt;key&gt;</code>
 <code class="example">    :unmap! &lt;buffer&gt; &lt;key&gt;</code>
@@ -4579,53 +4514,41 @@ the unmap command:
      <code class="badlink">mapleader</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.4">faq-20.4</a> </b>
-20.4. I am not able to create a mapping for the <code class="special">&lt;xxx&gt;</code> key. What is wrong?
+20.4. 不能建立 <code class="special">&lt;xxx&gt;</code> 键的映射。哪里做错了？
 
-1) First make sure, the key is passed correctly to Vim. To determine if
-   this is the case, put Vim in Insert mode and then hit <code class="keystroke">CTRL-V</code> (or
-   <code class="keystroke">CTRL-Q</code> if your <code class="keystroke">CTRL-V</code> is remapped to the paste operation (e.g. on
-   Windows if you are using the mswin.vim script file) followed by your
-   key.
+1) 首先要确定，此键正确地传给了 Vim。可确定这一点，进入插入模式并按 <code class="keystroke">CTRL-V</code> (或
+   <code class="keystroke">CTRL-Q</code>，如果 <code class="keystroke">CTRL-V</code> 被重映射到粘贴操作，例如在 Windows 上而用了 mswin.vim
+   脚本文件的时候) 后跟你的键。
 
-   If nothing appears in the buffer (and assuming that you have
-   <code class="badlink">'showcmd'</code> on, ^V remains displayed near the bottom right of the Vim
-   screen), then Vim doesn't get your key correctly and there is nothing
-   to be done, other than selecting a different key for your mapping or
-   using GVim, which should recognise the key correctly.
+   如果缓冲区里什么都没有 (假定你打开了 <code class="badlink">'showcmd'</code>，^V 会在 Vim 屏幕右下角继续
+   显示)，那么 Vim 没有正确地接收到该键，此时你什么都做不了，除了选一个不同的
+   键用于映射以外。也可考虑用 GVim，后者应能正确地识别该键。
 
-2) Possibly, Vim gets your key, but sees it as no different than
-   something else. Say you want to map <code class="special">&lt;Ctrl-Right&gt;</code>, then in Insert mode
-   hit <code class="keystroke">CTRL-K</code> followed by <code class="special">&lt;Ctrl-Right&gt;</code>. If Vim displays <code class="special">&lt;C-Right&gt;</code> it has
-   correctly seen the keystroke and you should be able to map it (by
-   using <code class="special">&lt;C-Right&gt;</code> as your <code class="special">{lhs}</code>). If it displays <code class="special">&lt;Right&gt;</code> it has seen
-   the keystroke but as if you hadn't held <code class="special">&lt;Ctrl&gt;</code> down: this means your
-   temrinal passes <code class="special">&lt;Ctrl-Right&gt;</code> as if it were just <code class="special">&lt;Right&gt;</code>. Anything else
-   means the key has been misidentified.
+2) 有可能，Vim 收到了该键，但不觉得它和另一个键有何不同。例如你要映射
+   <code class="special">&lt;Ctrl-Right&gt;</code>，在插入模式下在 <code class="keystroke">CTRL-V</code> 之后按了 Ctrl-Right&gt;。如果 Vim 显示
+   <code class="special">&lt;C-Right&gt;</code>，它应是正确地看见了键击，而你就应该可以对它映射 (使用 <code class="special">&lt;C-Right&gt;</code>
+   作为你的 <code class="special">{lhs}</code>)。如果显示 <code class="special">&lt;Right&gt;</code> 它看见了键击节但就像你没按下 <code class="special">&lt;Ctrl&gt;</code> 一样:
+   这意味着终端把 <code class="special">&lt;Ctrl-Right&gt;</code> 当作 <code class="special">&lt;Right&gt;</code> 一样传送。任何其它值都意味着键被错
+   认了。
 
-3) If the key is seen, but not as itself and not as some recognizable
-   key, then there is probably an error in the terminal library for the
-   current terminal (termcap or terminfo database). In that case 
+3) 如果看到了键，但既不是自身也不是我能识别的键，可能是当前终端的终端库
+   (termcap 或 terminfo 数据库) 里有错误。这种情形下 
 <code class="example"></code>
 <code class="example">        :set term?</code>
 
-   will tell you which termcap or terminfo Vim is using. You can try to
-   tell vim, what termcode to use in that terminal, by adding the
-   following to your vimrc: 
+   会告诉你 Vim 使用哪 个 termcap 或 terminfo。可以在 vimrc 里加入下列命令来试
+   图告诉 vim 该终端应使用什么键码: 
 <code class="example"></code>
 <code class="example">        if &amp;term == &lt;termname&gt;</code>
 <code class="example">            set &lt;C-Right&gt;=&lt;keycode&gt;</code>
 <code class="example">        endif</code>
 
-   where <code class="special">&lt;termname&gt;</code> above should be replaced by the value of <code class="badlink">'term'</code>
-   (with quotes around it) and <code class="special">&lt;keycode&gt;</code> by what you get when hitting
-   <code class="keystroke">CTRL-V</code> followed by <code class="special">&lt;Ctrl-Right&gt;</code> in Insert mode (with nothing around
-   it). <code class="special">&lt;C-Right&gt;</code> should be left as-is (9 characters). Don't forget that
-   in a  <code class="badlink">:set</code>  command, white space is not allowed between the equal sign
-   and the value, and any space, double quote, vertical bar or backslash
-   present as part of the value must be backslash-escaped.
+   其中上面的 <code class="special">&lt;termname&gt;</code> 应被 <code class="badlink">'term'</code> 的值替换 (加上引号) 而 <code class="special">&lt;keycode&gt;</code> 被你在插
+   入模式下按 <code class="keystroke">CTRL-V</code> 后跟 <code class="special">&lt;Ctrl-Right&gt;</code> 得到的键值所替换 (不加引号)。<code class="special">&lt;C-Right&gt;</code>
+   照字面输入 (9 个字符)。不要忘记  <code class="badlink">:set</code>  命令不允许等号和值之间有空白，而作为
+   值一部分的空格、双引号、垂直线或反斜杠必须用反斜杠转义。
 
-   Now you should be able to see the keycode corresponding to the key
-   and you can create a mapping for the key using the following command: 
+   现在你应能看到对应键的键码，然后就可以用下列命令创建该键的映射: 
 <code class="example"></code>
 <code class="example">        :map &lt;C-Right&gt;  &lt;your_command_to_be_mapped&gt;</code>
 
@@ -4636,10 +4559,10 @@ the unmap command:
      <code class="badlink">key-codes</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.5">faq-20.5</a> </b>
-20.5. Why does mapping the &lt;C-...&gt; key not work?
+20.5. 为什么 &lt;C-...&gt; 键的映射不可用？
 
-The only <code class="special">&lt;Ctrl&gt;</code>-<code class="special">&lt;printable-key&gt;</code> chords which Vim can reliably detect
-(because they are defined in the ASCII standard) are the following: 
+Vim 能可靠识别的 <code class="special">&lt;Ctrl&gt;</code>-<code class="special">&lt;printable-key&gt;</code> 组合 (因为由 ASCII 标准定义) 只有以下
+这些: 
 <code class="example"></code>
 <code class="example">        CTRL-@                 0x00            NUL</code>
 <code class="example">        CTRL-A to CTRL-Z       0x01 to 0x1A</code>
@@ -4651,35 +4574,28 @@ The only <code class="special">&lt;Ctrl&gt;</code>-<code class="special">&lt;pri
 <code class="example">        CTRL-_                 0x1F</code>
 <code class="example">        CTRL-?                 0x7F            DEL</code>
 
-Most of these, however, already have a function in Vim (and some are
-aliases of other keys: <code class="keystroke">CTRL-H</code> and <code class="special">&lt;BS&gt;</code>, <code class="keystroke">CTRL-I</code> and <code class="special">&lt;Tab&gt;</code>, <code class="keystroke">CTRL-M</code> and <code class="special">&lt;Enter&gt;</code>,
-<code class="keystroke">CTRL-[</code> and <code class="special">&lt;Esc&gt;</code>, <code class="keystroke">CTRL-?</code> and <code class="special">&lt;Del&gt;</code>).
+不过，这里多数键在 Vim 里已有对应功能 (有些是其它键的别名: <code class="keystroke">CTRL-H</code> 和 <code class="special">&lt;BS&gt;</code>、
+<code class="keystroke">CTRL-I</code> 和 <code class="special">&lt;Tab&gt;</code>, <code class="keystroke">CTRL-M</code> 和 <code class="special">&lt;Enter&gt;</code>、<code class="keystroke">CTRL-[</code> 和 <code class="special">&lt;Esc&gt;</code>, <code class="keystroke">CTRL-?</code> 和 <code class="special">&lt;Del&gt;</code>)。
 
-The "safest" keys to use in Vim for the <code class="special">{lhs}</code> of a mapping are the F
-keys, with or without Shift: <code class="special">&lt;F2&gt;</code> to <code class="special">&lt;F12&gt;</code> and <code class="special">&lt;S-F1&gt;</code> to <code class="special">&lt;S-F12&gt;</code>. (Some
-OSes, including mine, intercept <code class="special">&lt;Ctrl-Fn&gt;</code> and <code class="special">&lt;Alt-Fn&gt;</code>, which never reach an
-application program such as vim or gvim).
+Vim 可用的 "最安全的" 用于映射 <code class="special">{lhs}</code> 的键是带或不带 Shift 的 F 系列键: <code class="special">&lt;F2&gt;</code> 到
+<code class="special">&lt;F12&gt;</code> 和 <code class="special">&lt;S-F1&gt;</code> 到 <code class="special">&lt;S-F12&gt;</code>. (有些操作系统，包括我的，截获 <code class="special">&lt;Ctrl-Fn&gt;</code> 和
+<code class="special">&lt;Alt-Fn&gt;</code>，使它们永远到不了 vim 或 gvim 这样的应用程序)。
 
-You can try other combinations of <code class="special">&lt;Ctrl&gt;</code> + any key, but they may either
-not work everywhere (e.g. the terminal might not pass that key to Vim,
-or they might have unintended side effects (e.g. mapping <code class="special">&lt;C-I&gt;</code> means
-also to map <code class="special">&lt;Tab&gt;</code>).
+可以试试其它 <code class="special">&lt;Ctrl&gt;</code> + 任何键的组合，不过未必在所有地方都可用 (例如终端可能不把
+该键传给 Vim)，或有意想不到的副作用 (例如 <code class="special">&lt;C-I&gt;</code> 的映射也会用于 <code class="special">&lt;Tab&gt;</code> 的映射)。
 
-This is a known issue, that has been discussed and might be implemented
-in the future to enable Vim to distinguish between various keys even in
-console mode. (e.g.
-<a href="https://groups.google.com/d/msg/vim_dev/2bp9UdfZ63M/sajb9KM0pNYJ">https://groups.google.com/d/msg/vim_dev/2bp9UdfZ63M/sajb9KM0pNYJ</a>)
+这是个已知的问题，讨论过，将来可能有允许 Vim 即使在控制台模式也能区别若干键的
+实现。(例如 <a href="https://groups.google.com/d/msg/vim_dev/2bp9UdfZ63M/sajb9KM0pNYJ">https://groups.google.com/d/msg/vim_dev/2bp9UdfZ63M/sajb9KM0pNYJ</a>)
 
                                                                 <b class="vimtag"> <a name="faq-20.6">faq-20.6</a> </b>
-20.6. How do I map the numeric keypad keys?
+20.6. 如何映射数字小键盘上的键？
 
-First make sure that the numeric keypad keys are passed to Vim. Next, you
-can use the following command to map the numeric keypad keys: 
+首先确保数字小键盘的键能传递给 Vim。然后用下列命令来映射数字小键盘上的键: 
 <code class="example"></code>
 <code class="example">    :map &lt;kSomething&gt;  &lt;your_command&gt;</code>
 
-where, <code class="special">&lt;kSomething&gt;</code> can be kHome, kEnd, kPageUp, kPageDown, kPlus, kMinus,
-kDivide, kMultiply, kEnter, etc.
+其中，<code class="special">&lt;kSomething&gt;</code> 可以是 kHome、kEnd、kPageUp、kPageDown、kPlus、kMinus、
+kDivide、kMultiply、kEnter 等等。
 
 更多详情请阅读:
 
@@ -4687,24 +4603,20 @@ kDivide, kMultiply, kEnter, etc.
      <code class="badlink">terminal-options</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.7">faq-20.7</a> </b>
-20.7. How do I create a mapping that works only in visual mode?
+20.7. 如何创建只在可视模式下可用的映射？
 
-You can create mappings that work only in specific modes (normal, command,
-insert, visual, etc). To create a mapping that works only in the visual
-mode, use the  <code class="badlink">:vmap</code>  command: 
+可创建只用于指定模式的映射 (普通、命令、插入、可视等)。要创建只能用于可视模式
+的映射，可用  <code class="badlink">:vmap</code>  命令: 
 <code class="example"></code>
-<code class="example">    :vmap &lt;F3&gt; &lt;your mapping here&gt;</code>
+<code class="example">    :vmap &lt;F3&gt; &lt;你的映射&gt;</code>
 
-This mapping will work in visual and select mode. If you want the map to
-work only in visual mode (excluding select mode), use:
- 
+此映射只用于可视和选择模式。如果只想此映射用于可视模式 (排除选择模式)，用: 
 <code class="example"></code>
-<code class="example">    :xmap &lt;F3&gt; &lt;your mapping here&gt;</code>
+<code class="example">    :xmap &lt;F3&gt; &lt;你的映射&gt;</code>
 
-and to have the mapping only work in select mode (but not visual mode),
-use: 
+要使此映射只用于选择模式 (而不是可视模式)，用: 
 <code class="example"></code>
-<code class="example">    :smap &lt;F3&gt; &lt;your mapping here&gt;</code>
+<code class="example">    :smap &lt;F3&gt; &lt;你的映射&gt;</code>
 
 更多详情请阅读:
 
@@ -4715,49 +4627,40 @@ use:
      <code class="badlink">40.1</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.8">faq-20.8</a> </b>
-20.8. How do I create a mapping that works only in normal and operator
-   pending mode (but not in visual mode)?
+20.8. 如何创建只在普通和操作符等待模式 (而不是可视模式) 下可用的映射？
 
-Using  <code class="badlink">:map</code>  creates a mapping that works in normal, visual+select mode and
-operator pending mode. You can use  <code class="badlink">:nmap</code>  to have the mapping only work in
-normal mode and  <code class="badlink">:vmap</code>  to have the mapping only be defined for visual and
-select mode or use  <code class="badlink">:omap</code>  to have the mapping only defined in operator
-pending mode.
+ <code class="badlink">:map</code>  创建可用于普通、可视+选择和操作符等待模式的映射。可用  <code class="badlink">:nmap</code>  定义只用
+于普通模式的映射，用  <code class="badlink">:vmap</code>  定义只用于可视和选择模式的映射，而用  <code class="badlink">:omap</code>  定义
+只用于操作符等待模式的映射。
 
-But if you want to have a mapping defined, that works in both operator
-pending mode and normal mode, but not in visual and select mode, you need
-to first define the mapping using  <code class="badlink">:map</code>  and afterwards delete the mapping
-for visual and select mode:
+不过如果你要定义可用于操作符等待和普通模式而不用于可视和选择模式的映射，需要先
+用  <code class="badlink">:map</code>  定义映射，然后删除可视和选择模式下的该映射:
 
         :map <code class="special">&lt;f3&gt;</code> &lt;your mapping here&gt;
         :vunmap <code class="special">&lt;f3&gt;</code>
 
                                                                 <b class="vimtag"> <a name="faq-20.9">faq-20.9</a> </b>
-20.9. In a Vim script, how do I know which keys to use for my mappings, so
-      that the mapped key will not collide with an already used key?
+20.9. Vim 脚本中，如何知道用哪个键来映射而不会为已有的键相冲突？
 
-Vim uses most of the keys in the keyboard. You can use the <code class="special">&lt;leader&gt;</code> prefix
-in maps to define keys which will not overlap with Vim keys. For example: 
+Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;leader&gt;</code> 前缀来定义不会和 Vim 键起冲突的
+键。例如: 
 <code class="example"></code>
 <code class="example">    :map &lt;leader&gt;S &lt;C-W&gt;s</code>
 <code class="example">    :map &lt;leader&gt;j &lt;C-W&gt;j</code>
 <code class="example">    :map &lt;leader&gt;k &lt;C-W&gt;k</code>
 
-where by default <code class="special">&lt;leader&gt;</code> gets substituted with a backslash (\), so the
-user would enter 
+这里，缺省 <code class="special">&lt;leader&gt;</code> 被反斜杠 (\) 替代，这样用户会输入 
 <code class="example"></code>
 <code class="example">        \s</code>
 <code class="example">        \j</code>
 <code class="example">        \k</code>
 
-to invoke the above map commands. The user can change the mapleader
-variable to be whatever they wanted: 
+来调用以上的映射命令。用户可修改 mapleader 变量为任何他们想要的键: 
 <code class="example"></code>
 <code class="example">    :let mapleader = ","</code>
 
-When writing a plugin or other script, more often than not, it is advisable
-to use  <code class="badlink">:noremap</code>  instead of  <code class="badlink">:map</code>  to avoid side effects from user defined
-mappings.
+编写插件或其它脚本时，常常建议使用  <code class="badlink">:noremap</code>  而不是  <code class="badlink">:map</code>  以避免用户定义映射
+的副作用。
 
 更多详情请阅读:
 
@@ -4766,19 +4669,18 @@ mappings.
      <code class="badlink">write-plugin</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.10">faq-20.10</a> </b>
-20.10. How do I map the escape key?
+20.10. 如何映射 escape 键？
 
-You can map the Escape key to some other key using the  <code class="badlink">:map</code>  command. For
-example, the following command maps the escape key to <code class="keystroke">CTRL-O</code>. 
+可用  <code class="badlink">:map</code>  命令把 escape 键映射成其它键。例如，下列命令把 escape 键映射成
+<code class="keystroke">CTRL-O</code>。 
 <code class="example"></code>
-<code class="example">    :map &lt;C-O&gt; &lt;Esc&gt;</code>
+<code class="example">    :map &lt;Esc&gt; &lt;C-O&gt;</code>
 
                                                                 <b class="vimtag"> <a name="faq-20.11">faq-20.11</a> </b>
-20.11. How do I map a key to perform nothing?
+20.11. 如何把键映射为空操作？
 
-You can map a key to <code class="special">&lt;Nop&gt;</code> to perform nothing when the key is pressed. For
-example, with the following mappings, the <code class="special">&lt;F7&gt;</code> key will do nothing when
-pressed. 
+可把键映射为 <code class="special">&lt;Nop&gt;</code>，按下此键时不执行任何操作。例如，以下映射使 <code class="special">&lt;F7&gt;</code> 键在按下时
+什么都不做。 
 <code class="example"></code>
 <code class="example">    :map &lt;F7&gt; &lt;Nop&gt;</code>
 <code class="example">    :map! &lt;F7&gt; &lt;Nop&gt;</code>
@@ -4791,11 +4693,10 @@ pressed.
      <code class="badlink">map-modes</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.12">faq-20.12</a> </b>
-20.12. I want to use the <code class="special">&lt;Tab&gt;</code> key to indent a block of text and <code class="special">&lt;Shift-Tab&gt;</code>
-       key to unindent a block of text. How do I map the keys to do this?
-       This behavior is similar to textpad, visual studio, etc.
+20.12. 想用 <code class="special">&lt;Tab&gt;</code> 键来缩进一块文本而 <code class="special">&lt;Shit-Tab&gt;</code> 键来反向缩进一块文件。如何才能
+       通过映射键完成？此行为和 textpad、visual studio 等类似。
 
-Use the following mapping: 
+使用以下映射: 
 <code class="example"></code>
 <code class="example">    :inoremap &lt;S-Tab&gt; &lt;C-O&gt;&lt;lt&gt;&lt;lt&gt;</code>
 <code class="example">    :nnoremap &lt;Tab&gt; &gt;&gt;</code>
@@ -4803,8 +4704,7 @@ Use the following mapping:
     :vnoremap <code class="special">&lt;Tab&gt;</code> 
 <code class="example">    :vnoremap &lt;S-Tab&gt; &lt;lt&gt;</code>
 
-Note, that the <code class="special">&lt;S-Tab&gt;</code> mapping will work only if Vim receives the correct
-key sequence. This is mostly the case with GUI Vim.
+<code class="note">注意</code>，<code class="special">&lt;S-Tab&gt;</code> 映射仅当 Vim 能正确接收键序列时才可用。GUI Vim 上多半可以。
 
 更多详情请阅读:
 
@@ -4818,23 +4718,23 @@ key sequence. This is mostly the case with GUI Vim.
      <code class="badlink">&lt;lt&gt;</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.13">faq-20.13</a> </b>
-20.13. In my mappings the special characters like <code class="special">&lt;CR&gt;</code> are not recognized.
-       How can I configure Vim to recognize special characters?
+20.13. 我的映射里不识别 <code class="special">&lt;CR&gt;</code> 这样的特殊字符。如何才能配置 Vim 才能识别特殊字
+       符？
 
-Check the value of the <code class="badlink">'cpoptions'</code> option: 
+检查 <code class="badlink">'cpoptions'</code> 选项值: 
 <code class="example"></code>
 <code class="example">    :set cpoptions?</code>
 
-If this option contains the "&lt;" flag, then special characters will not be
-recognized in mappings. Remove the "&lt;" flag from <code class="badlink">'cpoptions'</code> option: 
+此选项包含 "&lt;" 标志位时，映射里不识别特殊字符。从 <code class="badlink">'cpoptions'</code> 选项里删除 "&lt;"
+标志位: 
 <code class="example"></code>
 <code class="example">    :set cpo-=&lt;</code>
 
-Also, check the value of the <code class="badlink">'compatible'</code> option: 
+另外，检查 <code class="badlink">'compatible'</code> 选项值: 
 <code class="example"></code>
 <code class="example">    :set compatible?</code>
 
-The <code class="badlink">'compatible'</code> option must be reset: 
+<code class="badlink">'compatible'</code> 选项必须复位: 
 <code class="example"></code>
 <code class="example">    :set nocompatible</code>
 
@@ -4844,30 +4744,28 @@ The <code class="badlink">'compatible'</code> option must be reset:
      <code class="badlink">'compatible'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.14">faq-20.14</a> </b>
-20.14. How do I use the "|" to separate multiple commands in a map?
+20.14. 如何在映射里使用 "|" 来分隔多个命令？
 
-You can escape the "|" character using backslash (\) to use "|" in a map. 
+映射里可以用反斜杠转义 "|" 字符。 
 <code class="example"></code>
 <code class="example">    :map _l :!ls \| more&lt;CR&gt;</code>
 
-You can also try the following command: 
+也可试试以下命令: 
 <code class="example"></code>
 <code class="example">    :map _l :!ls &lt;bar&gt; more&lt;CR&gt;</code>
 
-There are also other ways to do this.
+还有其它办法可以做到。
 
 更多详情请阅读:
 
      <code class="badlink">map_bar</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.15">faq-20.15</a> </b>
-20.15. If I have a mapping/abbreviation whose ending is the beginning of
-       another mapping/abbreviation, how do I keep the first from expanding
-       into the second one?
+20.15. 如果一个映射/缩写的结束是另一个映射/缩写的开始，如何不让第一个映射扩展
+       第二个映射？
 
-Instead of using the `:map lhs rhs` command, use the `:noremap lhs rhs`
-command. For abbreviations, use "noreabbrev lhs rhs". The "nore" prefix
-prevents the mapping or abbreviation from being expanded again.
+不用 `:map lhs rhs` 命令，而用 `:noremap lhs rhs` 命令代替。缩写可用
+"noreabbrev lhs rhs"。"nore" 前缀防止映射或缩写被再次扩展。
 
 更多详情请阅读:
 
@@ -4875,23 +4773,17 @@ prevents the mapping or abbreviation from being expanded again.
      <code class="badlink">:noreabbrev</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.16">faq-20.16</a> </b>
-20.16. Why does it take a second or more for Vim to process a key,
-       sometimes when I press a key?
+20.16. 为什么有时我按一个键时，Vim 需要花一秒或更长时间来处理这个键？
 
-Make sure you have not defined a mapping for this key using the following
-command: 
+有下列命令来确认你没有定义此键的映射: 
 <code class="example"></code>
 <code class="example">    :map &lt;key&gt;</code>
 
-If a mapping is defined for this key and the mapped key contains more than
-one character, then Vim will wait for the next character to be pressed to
-determine whether it is the mapped key or not. For example, if you have
-mapped "ab", then if you press "a", Vim will wait for the next key to be
-pressed. If the next key is "b", Vim will execute the mapped sequence.
-Otherwise, Vim will proceed with the normal processing of "a" followed by
-the next key. If the <code class="badlink">'timeout'</code> option is set (which is the default), then
-Vim will timeout after waiting for the period specified with the
-<code class="badlink">'timeoutlen'</code> option (default is 1 second).
+如果此键有定义映射而映射用键多于一个字符，Vim 会等待下个字符按下，来决定是否有
+映射用键。例如，如果你映射了 "ab"，然后按 "a"，Vim 会等待下个键按下。如果下个
+键是 "b"，Vim 会执行映射序列。否则，Vim 会用正常方式处理 "a" 和下一个键。如果
+置位了 <code class="badlink">'timeout'</code> 选项 (这是缺省)，Vim 会等待 <code class="badlink">'timeoutlen'</code> 选项 (缺省为 1 秒)
+指定的超时。
 
 更多详情请阅读:
 
@@ -4904,29 +4796,21 @@ Vim will timeout after waiting for the period specified with the
      <code class="badlink">slow-fast-terminal</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.17">faq-20.17</a> </b>
-20.17. How do I map a key to run an external command using a visually
-       selected text?
+20.17. 如何映射键来在可视选择文本上运行外部命令？
 
-You can the  <code class="badlink">:vmap</code>  command to map a key in the visual mode. In the mapped
-command sequence, you have to first yank the text. The yanked text is
-available in the '"' register. Now, you can use the contents of this
-register to run the external command. For example, to run the external
-command "perldoc" on a visually selected text, you can use the following
-mapping: 
+可用  <code class="badlink">:vmap</code>  命令来在可视模式下映射键。命令序列中，要先抽出文本。抽出的文本在
+'"' 寄存器里。现在，使用此寄存器的内容来运行外部命令。例如，要在可视选择文本上
+运行命令“"perldoc"，可用以下映射: 
 <code class="example"></code>
 <code class="example">    :vmap &lt;F7&gt; y:!exec "!perldoc '" . @" . "'"&lt;CR&gt;</code>
 
-If you want the mapping to work in the visual mode, but not with the
-highlighted text, you can use the following command: 
+如果想要映射在可视模式下可用但不使用高亮文本，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :vmap &lt;F7&gt; :&lt;C-U&gt;!perldoc &lt;cword&gt;&lt;CR&gt;</code>
 
-The above mapping will use the word under the cursor instead of the
-highlighted text. <code class="note">Note </code>the use of the <code class="special">&lt;C-U&gt;</code> before invoking the "perldoc"
-external command. The <code class="special">&lt;C-U&gt;</code> is used to erase the range of text selected in
-the visual mode and displayed on the command line. If the visual range is
-not removed using <code class="special">&lt;C-U&gt;</code>, then the output from the external command will
-replace the visually selected text.
+以上映射使用光标所在的单词而不是高亮文本。<code class="note">注意</code> 在调用 "perldoc" 外部命令之前的
+<code class="special">&lt;C-U&gt;</code> 的使用。<code class="special">&lt;C-U&gt;</code> 用于删除在命令行上显示的可视模式选中文本范围。如果不用
+<code class="special">&lt;C-U&gt;</code> 删除可视范围，外部命令的输出会替换可视选择文本。
 
 更多详情请阅读:
 
@@ -4937,38 +4821,33 @@ replace the visually selected text.
      <code class="badlink">:!cmd</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.18">faq-20.18</a> </b>
-20.18. How do I map the <code class="keystroke">CTRL-I</code> key while still retaining the functionality
-       of the <code class="special">&lt;Tab&gt;</code> key?
+20.18. 如何映射 <code class="keystroke">CTRL-I</code> 键，同时保留 <code class="special">&lt;Tab&gt;</code> 键的功能？
 
-The <code class="keystroke">CTRL-I</code> key and the <code class="special">&lt;Tab&gt;</code> key produce the same keycode, so Vim cannot
-distinguish between the <code class="keystroke">CTRL-I</code> and the <code class="special">&lt;Tab&gt;</code> key. When you map the <code class="keystroke">CTRL-I</code>
-key, the <code class="special">&lt;Tab&gt;</code> key is also mapped (and vice versa). The same restriction
-applies for the <code class="keystroke">CTRL-[</code> key and the <code class="special">&lt;Esc&gt;</code> key.
+<code class="keystroke">CTRL-I</code> 键和 <code class="special">&lt;Tab&gt;</code> 键产生相同的键码，所以 Vim 无法区分 <code class="keystroke">CTRL-I</code> 和 <code class="special">&lt;Tab&gt;</code> 键。映射
+<code class="keystroke">CTRL-I</code> 键时，同时映射了 <code class="special">&lt;Tab&gt;</code> 键 (反之亦然)。同样的限制也适用于 <code class="keystroke">CTRL-[</code> 键和
+<code class="special">&lt;Esc&gt;</code> 键。
 
 更多详情请阅读:
 
      <code class="badlink">keycodes</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.19">faq-20.19</a> </b>
-20.19. How do I define a map to accept a count?
+20.19. 如何定义接受计数的映射？
 
-Use the @= command to use an expression. For example, 
+用 @= 命令来使用表达式。例如， 
 <code class="example"></code>
 <code class="example">    nnoremap = @='3l'</code>
 
-Now you can specify a count to the "=" command.
+现在可为 "=" 命令给出计数。
 
      <code class="badlink">complex-repeat</code> 
 
                                                                 <b class="vimtag"> <a name="faq-20.20">faq-20.20</a> </b>
-20.20. How can I make my normal mode mapping work from within Insert
-       Mode?
+20.20. 如何使普通模式映射用于插入模式？
 
-Mappings in normal mode can be executed after <code class="keystroke">CTRL-O</code> from insert mode as
-well but if there are more commands included in the mapping <code class="special">{rhs}</code>, only the
-first one will be executed in normal mode and the rest of <code class="special">{rhs}</code> will be
-printed literally in insert mode. One of ways to workaround this problem is
-to make <code class="special">{rhs}</code> be one command, via wrapping it to the function. For example: 
+插入模式下，在 <code class="keystroke">CTRL-O</code> 之后也可执行普通模式的映射，但映射 <code class="special">{rhs}</code> 如果包含更多命
+令，只执行普通模式下的第一个命令，而其余的 <code class="special">{rhs}</code> 会在插入模式下按本义显示。此
+问题的一个临时解决方案是使通过函数封装使 <code class="special">{rhs}</code> 成为一个命令。例如: 
 <code class="example"></code>
 <code class="example">    function GetFontNameOfFirstChar()</code>
 <code class="example">    normal! 0</code>
@@ -4977,48 +4856,40 @@ to make <code class="special">{rhs}</code> be one command, via wrapping it to th
 
     :nmap <code class="special">&lt;F9&gt;</code> :call GetFontNameOfFirstChar()<code class="special">&lt;CR&gt;</code>
 
-A more technical and detailed solution to this problem follows and can
-be found at <a href="https://groups.google.com/group/vim_dev/msg/75f1f2dfc00908bb">https://groups.google.com/group/vim_dev/msg/75f1f2dfc00908bb</a>
+此问题一个更技术性及具体的解决方法如下，也可在以下位置找到
+<a href="https://groups.google.com/group/vim_dev/msg/75f1f2dfc00908bb">https://groups.google.com/group/vim_dev/msg/75f1f2dfc00908bb</a>
 
-Not every normal mode-mapping is automatically suitable for execution via
-<code class="keystroke">CTRL-O</code> from within insert mode; you need to explicitly design your mappings
-for that purpose.
+不是每个普通模式映射都自动地适合用于插入模式下的 <code class="keystroke">CTRL-O</code> 执行；需要为此显式设计
+你的映射。
 
-The <code class="keystroke">CTRL-O</code> command allows execution of one normal mode command from
-within insert mode, then returns to insert mode. If a normal mode mapping
-concatenates multiple normal mode commands, this breaks down in temporary
-normal mode and literally inserts the second part of the command into the
-buffer instead. To support execution of normal mode mappings from within
-insert mode, these strategies can be used:
+<code class="keystroke">CTRL-O</code> 命令允许从插入模式下一个普通模式命令的执行，然后返回插入模式。如果普通
+模式映射连接了多个普通模式命令，在临时普通模式中会被分解，命令的第二部分会按本
+义插进缓冲区。要支持插入模式下普通模式映射的执行，可用以下策略:
 
-1) Instead of concatenating multiple normal mode commands, use one  <code class="badlink">:normal</code> 
-    mapping: 
+1) 使用一个  <code class="badlink">:normal</code>  映射而不是连接多个普通模式命令: 
 <code class="example"></code>
 <code class="example">    :nnoremap &lt;silent&gt; zC :&lt;C-U&gt;normal! zCVzC&lt;CR&gt;</code>
 
-2) Concatenate multiple Ex commands via <code class="special">&lt;Bar&gt;</code> on the rhs: 
+2) 在右手边用 <code class="special">&lt;Bar&gt;</code> 连接多个 Ex 命令: 
 <code class="example"></code>
 <code class="example">    :nnoremap zC :&lt;C-U&gt;call MyMap1()&lt;Bar&gt;call MyMap2()&lt;CR&gt;</code>
 
-3) Shadow normal mode mappings by insert mode mappings that
-    re-enter normal mode, then invoke the normal mode mapping: 
+3) 定义插入模式映射来重新进入普通模式然后执行普通模式映射，然后定义普通模式映
+   射跟随插入模式映射: 
 <code class="example"></code>
 <code class="example">    :nnoremap &lt;silent&gt; &lt;SID&gt;MyMap2 :&lt;C-U&gt;call MyMap2()&lt;CR&gt;</code>
 <code class="example">    :inoremap &lt;silent&gt; &lt;script&gt; &lt;SID&gt;MyMap2 &lt;C-\&gt;&lt;C-O&gt;&lt;SID&gt;MyMap2</code>
 <code class="example">    :nnoremap &lt;silent&gt; &lt;script&gt; zC &lt;SID&gt;MyMap1&lt;SID&gt;MyMap2</code>
 
-4) Normal mode mappings that consist of multiple Ex command lines (and
-    where Ex commands cannot be concatenated via <code class="special">&lt;Bar&gt;</code>) replace  <code class="badlink">:<code class="special">&lt;C-U&gt;</code></code> 
-    with <code class="special">&lt;SID&gt;</code>NM; the <code class="special">&lt;SID&gt;</code>NM mapping enters normal mode for one ex command
-    line: 
+4) 包含多个 Ex 命令行 (且 Ex 命令不能用 <code class="special">&lt;Bar&gt;</code> 连接) 的普通模式映射把  <code class="badlink">:<code class="special">&lt;C-U&gt;</code></code> 
+   换成 <code class="special">&lt;SID&gt;</code>NM；<code class="special">&lt;SID&gt;</code>NM 映射为一个 ex 命令行进入普通模式: 
 <code class="example"></code>
 <code class="example">    :nnoremap &lt;silent&gt; &lt;SID&gt;NM :&lt;C-U&gt;</code>
 <code class="example">    :inoremap &lt;silent&gt; &lt;SID&gt;NM &lt;C-\&gt;&lt;C-O&gt;:</code>
 <code class="example">    :nnoremap &lt;silent&gt; &lt;script&gt; zC &lt;SID&gt;MyMap1&lt;SID&gt;NMcall MyMap2()&lt;CR&gt;</code>
 
-5)  If none of the above is possible, at least force normal mode for
-    subsequent commands via <code class="keystroke">CTRL-\</code> <code class="keystroke">CTRL-N</code> to avoid accidental insertion
-    of the remainder of the mapping. 
+5)  如果以上都不可行，至少为后续命令用 <code class="keystroke">CTRL-\</code> <code class="keystroke">CTRL-N</code> 来强制普通模式以避免意外
+    插入映射的余下部分。 
 <code class="example"></code>
 <code class="example">    :nnoremap zC zC&lt;C-\&gt;&lt;C-N&gt;VzCzz</code>
 
