@@ -985,7 +985,7 @@ NONE 不读 .vimrc 文件，而 -U NONE 不读 .gvimrc 文件) 或插件来启�
 <code class="example">    :source $VIMRUNTIME/bugreport.vim</code>
 
 现在把上述命令的结果文本发送给 bugs@vim.org e-mail 地址。还有一个公共漏洞跟踪
-器: <a href="https://github.com/vim/vim/issues">https://github.com/vim/vim/issues</a>. 那里每个消息会转发给 Vim 开发列表。
+器: <a href="https://github.com/vim/vim/issues">https://github.com/vim/vim/issues</a>。那里每个消息会转发给 Vim 开发列表。
 
 Vim 开发邮件列表 (见问题 2.2  <a href="vim_faq.html#faq-2.2">faq-2.2</a> ) 是个讨论一般漏洞的好去处。如果你发现的
 漏洞和语法高亮、运行时文件、或其它一些 "附加特性" (也就是，不直接编进 vim 程序
@@ -2613,7 +2613,7 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
 
 可用 \_x 正规表达式匹配原来搜索跨越多行的文本客串。例如，要搜索文件字符串
 "Hello
-World", 可用下列搜索命令: 
+World"，可用下列搜索命令: 
 <code class="example"></code>
 <code class="example">    /Hello\_sWorld</code>
 
@@ -2814,7 +2814,7 @@ World", 可用下列搜索命令:
 
 可用动作命令带抽出操作符 (y) 来从一行中抽出一个位置到另一个位置的文本。例如，
 要抽出当前光标位置到下个 x 字符的文本，用 yfx 或 Fx 和 tx 或 Tx。要抽出直到第
-n 列的文本，用  n|。要抽出直到下个 "word" 的出现的文本，用 /word。要抽出直到另
+n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 /word。要抽出直到另
 一行第 n 列的文本，先用 "ma" 命令标记该位置，再转到抽出开始的位置，然后用 y`a
 来抽出直到标记所在的文本 (<code class="note">注意</code> 引号的方向)
 
@@ -4362,7 +4362,7 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
 
 这是正常行为。如果窗口闪烁，你打开了可视响铃。不然，你会听到蜂鸣。
 
-Vim 需要超时来区别简单的 Escape 和,比如说，光标键盘序列。在普通模式按键 (即使
+Vim 需要超时来区别简单的 Escape 和，比如说，光标键盘序列。在普通模式按键 (即使
 插入模式也是如此) 而该键是映射开始的一部分时，Vim 会等待一段时间也观察映射序列
 的其余部分是否出现。如果映射序列在规定超时期限之前完成，应用该键盘序列的映射。
 如果中断了映射，执行键相关联的正常动作。
@@ -4535,11 +4535,12 @@ Vim 能可靠识别的 <code class="special">&lt;Ctrl&gt;</code>-<code class="sp
 <code class="example">        CTRL-_                 0x1F</code>
 <code class="example">        CTRL-?                 0x7F            DEL</code>
 
-不过，这里多数键在 Vim 里已有对应功能 (有些是其它键的别名: <code class="keystroke">CTRL-H</code> 和 <code class="special">&lt;BS&gt;</code>、
-<code class="keystroke">CTRL-I</code> 和 <code class="special">&lt;Tab&gt;</code>, <code class="keystroke">CTRL-M</code> 和 <code class="special">&lt;Enter&gt;</code>、<code class="keystroke">CTRL-[</code> 和 <code class="special">&lt;Esc&gt;</code>, <code class="keystroke">CTRL-?</code> 和 <code class="special">&lt;Del&gt;</code>)。
+不过，这里多数键在 Vim 里已有对应功能 (有些是其它键的别名: <code class="keystroke">CTRL-H</code> 对应 <code class="special">&lt;BS&gt;</code>、
+<code class="keystroke">CTRL-I</code> 对应 <code class="special">&lt;Tab&gt;</code>、<code class="keystroke">CTRL-M</code> 对应 <code class="special">&lt;Enter&gt;</code>、<code class="keystroke">CTRL-[</code> 对应 <code class="special">&lt;Esc&gt;</code>、<code class="keystroke">CTRL-?</code> 对应
+<code class="special">&lt;Del&gt;</code>)。
 
 Vim 可用的 "最安全的" 用于映射 <code class="special">{lhs}</code> 的键是带或不带 Shift 的 F 系列键: <code class="special">&lt;F2&gt;</code> 到
-<code class="special">&lt;F12&gt;</code> 和 <code class="special">&lt;S-F1&gt;</code> 到 <code class="special">&lt;S-F12&gt;</code>. (有些操作系统，包括我的，截获 <code class="special">&lt;Ctrl-Fn&gt;</code> 和
+<code class="special">&lt;F12&gt;</code> 和 <code class="special">&lt;S-F1&gt;</code> 到 <code class="special">&lt;S-F12&gt;</code>。(有些操作系统，包括我的，截获 <code class="special">&lt;Ctrl-Fn&gt;</code> 和
 <code class="special">&lt;Alt-Fn&gt;</code>，使它们永远到不了 vim 或 gvim 这样的应用程序)。
 
 可以试试其它 <code class="special">&lt;Ctrl&gt;</code> + 任何键的组合，不过未必在所有地方都可用 (例如终端可能不把
@@ -5154,7 +5155,7 @@ Vim 使用 "Normal" 高亮组用于背景和前景色。要改变前景/背景�
                                                                 <b class="vimtag"> <a name="faq-24.3">faq-24.3</a> </b>
 24.3. 如何改变高亮色来匹配深色/浅色背景？
 
-可设置  <code class="badlink">'background'</code> 选项为 "dark" 或 "light" 来改变高亮色来匹配深色/浅色背
+可设置 <code class="badlink">'background'</code> 选项为 "dark" 或 "light" 来改变高亮色来匹配深色/浅色背
 景: 
 <code class="example"></code>
 <code class="example">    :set background=dark</code>
@@ -5958,7 +5959,7 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
 <code class="example"></code>
 <code class="example">    :set noloadplugins</code>
 
-也可指定  "--noplugin" 命令行参数来停止插件的载入: 
+也可指定 "--noplugin" 命令行参数来停止插件的载入: 
 <code class="example"></code>
 <code class="example">    $ vim --noplugin</code>
 
@@ -6762,7 +6763,7 @@ Vim 只支持固定宽度 (等宽) 字体。不支持比例字体。在 "Select 
 可用  <code class="badlink">:winpos</code>  命令来改变 Vim 窗口位置。要改变窗口大小，可修改 <code class="badlink">'lines'</code> 和
 <code class="badlink">'columns'</code> 选项。
 
-例如，下列命令会把 GUI Vim 窗口放在 X,Y 坐标 50，50 并设置行数为 50 及列数为
+例如，下列命令会把 GUI Vim 窗口放在 X，Y 坐标 50，50 并设置行数为 50 及列数为
 80。 
 <code class="example"></code>
 <code class="example">    :winpos 50 50</code>
