@@ -309,25 +309,21 @@ https://vimhelp.appspot.com/vim_faq.txt.html。
 |faq-20.19| 如何定义接受计数的映射？
 |faq-20.20| 如何使普通模式映射用于插入模式？
                                                         *faq-abbreviations*
-SECTION 21 - ABBREVIATIONS ~
-|faq-21.1|  How do I auto correct misspelled words?
-|faq-21.2|  How do I create multi-line abbreviations?
-|faq-21.3|  When my abbreviations are expanded, an additional space character
-	  is added at the end of the expanded text. How do I avoid this
-	  character?
-|faq-21.4|  How do I insert the current date/time stamp into the file?
-|faq-21.5|  How do I prevent an abbreviation from expanding in insert mode?
+第二十一节 - 缩写~
+|faq-21.1|  如何自动修正单词的错误拼写？
+|faq-21.2|  如何创建多行缩写？
+|faq-21.3|  扩展缩写时，在扩展文本尾部加了额外的一个空格。如何才能避免这个空
+	  格？
+|faq-21.4|  如何在文件中插入当前日期/时间戳？
+|faq-21.5|  插入模式下如何防止缩写被扩展？
                                                 *faq-record-and-playback*
-SECTION 22 - RECORD AND PLAYBACK ~
-|faq-22.1|  How do I repeat an editing operation (insertion, deletion, paste,
-	  etc)?
-|faq-22.2|  How I record and repeat a set of key sequences?
-|faq-22.3|  How do I edit/modify a recorded set of key sequences?
-|faq-22.4|  How do I write recorded key sequences to a file?
-|faq-22.5|  I am using register 0 to record my key sequences (i.e. q0 ....
-	  q). In the recorded key sequences, I am yanking some text.  After
-	  the first replay of the recorded key sequence, I am no longer
-	  able to play it back.
+第二十二节 - 记录和回放~
+|faq-22.1|  如何重复编辑操作 (插入、删除、粘贴等等)？
+|faq-22.2|  如何记录和重复一组键序列？
+|faq-22.3|  如何编辑/修改记录好的键序列组？
+|faq-22.4|  如何把记录好的键序列存入文件？
+|faq-22.5|  用寄存器 0 来记录键序列时 (即 q0 .... q)，记录的键序列中有抽出文本
+	  的操作。记录的键序列第一次回放后，就不能再次回放了。
                                                         *faq-autocommands*
 SECTION 23 - AUTOCOMMANDS ~
 |faq-23.1|  How do I execute a command when I try to modify a read-only file?
@@ -4894,18 +4890,16 @@ CTRL-O 命令允许从插入模式下一个普通模式命令的执行，然后�
 
 =============================================================================
  								*faq-21*
-SECTION 21 - ABBREVIATIONS ~
+第二十一节 - 缩写~
 
  								*faq-21.1*
-21.1. How do I auto correct misspelled words?
+21.1. 如何自动修正单词的错误拼写？
 
-You can auto correct misspelled words using abbreviations. For example, the
-following abbreviation can be used to correct "teh" with "the": >
+可用缩写来自动修正单词的错误拼写。例如，下列缩写可用于修正 "teh" 为 "the": >
 
     :abbreviate teh the
 <
-Vim supports abbreviations in insert mode, replace mode and command-line
-mode.
+Vim 支持插入模式、替换模式和命令行模式下的缩写。
 
 更多详情请阅读:
 
@@ -4914,15 +4908,13 @@ mode.
     |Q_ab|
 
  								*faq-21.2*
-21.2. How do I create multi-line abbreviations?
+21.2. 如何创建多行缩写？
 
-You can create multi-line abbreviations by embedding the "<CR>"
-key code in the text: >
+可在文本中嵌入 <CR> 键盘代码来创建多行缩写: >
 
     iabbrev #c --------------<CR>-- Date:<CR>--<CR>---------
 <
-With the above abbreviation, when you type #c, it will be expanded to
-the following text:
+使用以上缩写，输入 #c 后，会扩展为下列文本:
 
 --------------
 -- Date:
@@ -4934,14 +4926,12 @@ the following text:
     |abbreviations|
 
  								*faq-21.3*
-21.3. When my abbreviations are expanded, an additional space character is
-      added at the end of the expanded text. How do I avoid this character?
+21.3. 扩展缩写时，在扩展文本尾部加了额外的一个空格。如何才能避免这个空格？
 
-To avoid an additional space character at the end of the expanded text, you
-can expand the abbreviation by pressing the CTRL-] key.  The abbreviation
-will be expanded without adding a space character at the end.
+要避免扩展文本尾部的额外空格，可用 CTRL-] 键来扩展缩写。缩写的扩展此时不会在尾
+部加上空格。
 
-Another alternative is to use the following function and command: >
+另一个方案是使用下列函数和命令: >
 
     function! Eatchar(pat)
         let c = nr2char(getchar())
@@ -4949,26 +4939,23 @@ Another alternative is to use the following function and command: >
     endfunction
     command! -nargs=+ Iabbr execute "iabbr" <q-args> . "<C-R>=Eatchar('\\s')<CR>"
 <
-Now, define your abbreviations using the new "Iabbr" command instead of the
-builtin `:iabbrev` command. With this command, after expanding the
-abbreviated text, the next typed space character will be discarded.
+现在，用新的 "Iabbr" 命令来定义缩写而不是内建的 `:iabbrev` 命令。用此命令，扩
+展缩写文本后，忽略下个输入的空格。
 
 更多详情请阅读:
 
     |abbreviations|
 
  								*faq-21.4*
-21.4. How do I insert the current date/time stamp into the file?
+21.4. 如何在文件中插入当前日期/时间戳？
 
-You can use the strftime() function to insert the current data/time stamp
-in a file. For example, you can use the following abbreviation: >
+可用 strftime() 函数在文件中来插入当前日期/时间戳。例如，可用以下缩写: >
 
     iabbrev dts <C-R>=strftime("%y/%m/%d %H:%M")<CR>
 <
-With this abbreviation, when you type dts in insert mode, it will be
-expanded to the date/time stamp.
+用此缩写，在插入模式下输入 dts 时，会扩展为日期/时间戳。
 
-Some other forms of the above abbreviation are listed below: >
+以下列出上述缩写的其它形式: >
 
     iabbrev mdyl <C-R>=strftime("%a %d %b %Y")<CR>
     iabbrev mdys <C-R>=strftime("%y%m%d")<CR>
@@ -4982,10 +4969,9 @@ Some other forms of the above abbreviation are listed below: >
     |i_CTRL-R|
 
  								*faq-21.5*
-21.5. How do I prevent an abbreviation from expanding in insert mode?
+21.5. 插入模式下如何防止缩写被扩展？
 
-You can prevent an abbreviation from expanding in insert mode by typing
-CTRL-V before the character after the abbreviated word.
+插入模式下可在缩写单词前按 CTRL-V 以防止缩写被扩展。
 
 更多详情请阅读:
 
@@ -4993,14 +4979,13 @@ CTRL-V before the character after the abbreviated word.
 
 =============================================================================
  								*faq-22*
-SECTION 22 - RECORD AND PLAYBACK ~
+第二十二节 - 记录和回放~
 
  								*faq-22.1*
-22.1. How do I repeat an editing operation (insertion, deletion, paste,
-      etc)?
+22.1. 如何重复编辑操作 (插入、删除、粘贴等等)？
 
-You can repeat the last editing operation using the "." command. This will
-repeat the last simple change like a insert, delete, change, paste, etc.
+可用 "." 命令重复前次的编辑操作。这会重复前次的简单修改，如插入、删除、修改、
+粘贴等等。
 
 更多详情请阅读:
 
@@ -5009,21 +4994,18 @@ repeat the last simple change like a insert, delete, change, paste, etc.
     |Q_re|
 
  								*faq-22.2*
-22.2. How I record and repeat a set of key sequences?
+22.2. 如何记录和重复一组键序列？
 
-You can use the "q" command in normal mode to record a set of key sequences
-and store it in a register. For example, in the normal mode you can press q
-followed by a register name {0-9a-bA-Z"} to start the recording.  To
-end/stop the recording press q again. You can playback/repeat the recorded
-key sequences by pressing @ followed by the register name. e.g. @a.
+在普通模式下可用 "q" 命令来记录一组键序列并存入一个寄存器。例如，普通模式下可
+按 q 后跟寄存器名 {0-9a-bA-Z"} 来开始记录。要结束/中止记录，再次按 q。然后可以
+按 @ 后跟寄存器名来回放/重复记录的键序列，如 @a。
 
-Another approach is to start Vim with the "-w" command-line argument. >
+另一个方法是用 "-w" 命令行参数启动 Vim。 >
 
     $ vim -w <file_name>
 <
-Vim will record all the characters typed in the session in the
-specified file "file_name". You can use the recorded file with the "-s"
-command line argument to play it back: >
+Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里。可用 "-s" 命令行
+参数来回放记录文件: >
 
     $ vim -s <file_name>
 <
@@ -5035,12 +5017,10 @@ command line argument to play it back: >
     |-s|
 
  								*faq-22.3*
-22.3. How do I edit/modify a recorded set of key sequences?
+22.3. 如何编辑/修改记录好的键序列组？
 
-The recorded key sequences are stored in a register. You can paste the
-contents of the register into a Vim buffer, edit the pasted text and again
-yank the text into the register. You can also use the `:let` command to
-modify the register. For example: >
+记录好的键序列存入一个寄存器。可把寄存器内容粘贴到 Vim 缓冲区里，编辑粘贴的文
+本，然后抽出文本到该寄存器。也可用 `:let` 命令来修改寄存器。例如: >
 
     :let @a = "iHello World\<Esc>"
 <
@@ -5053,15 +5033,12 @@ modify the register. For example: >
     |'cpoptions'|
 
  								*faq-22.4*
-22.4. How do I write recorded key sequences to a file?
+22.4. 如何把记录好的键序列存入文件？
 
-The recorded key sequences are stored in a register. You can paste the
-contents of the register into a Vim buffer. Now you can save the buffer
-into a file. You can also modify the pasted text and again yank into the
-register to modify the recorded key sequence. For example, if you record a
-set of key sequences using qa ..... q. The recorded key sequences are
-stored in the register "a". You can paste the contents of register "a"
-using "ap.
+记录好的键序列存入一个寄存器。可把寄存器内容粘贴到 Vim 缓冲区里。现在可以保存
+缓冲区到文件。也可修改粘贴的文本，然后抽出文本到该寄存器以修改键序列的记录。例
+如，如果用 qa ..... q 来记录一组键序列，记录好的键序列存入寄存器 “"a"。用 "ap
+可以粘贴寄存器 "a" 的内容。
 
 更多详情请阅读:
 
@@ -5069,15 +5046,11 @@ using "ap.
     |10.1|
 
  								*faq-22.5*
-22.5. I am using register 0 to record my key sequences (i.e. q0 .... q).
-      In the recorded key sequences, I am yanking some text. After the
-      first replay of the recorded key sequence, I am no longer able to
-      play it back.
+22.5. 用寄存器 0 来记录键序列时 (即 q0 .... q)，记录的键序列中有抽出文本的操
+      作。记录的键序列第一次回放后，就不能再次回放了。
 
-Register 0 contains the text from the last yank operation. In your recorded
-key sequence, when the yank is performed, register 0 is overwritten with
-the yanked text. So your recording stored in register 0 is lost. You have
-to use some other register.
+寄存器 0 包含了最近抽出操作的文本。在你记录的键序列中的抽出完成时，寄存器 0 被
+抽出的文本覆盖。这样你存在寄存器 0 的记录就丢失了。请使用其它寄存器。
 
 更多详情请阅读:
 
