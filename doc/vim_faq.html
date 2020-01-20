@@ -338,25 +338,21 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-20.19">faq-20.19</a>  如何定义接受计数的映射？
  <a href="vim_faq.html#faq-20.20">faq-20.20</a>  如何使普通模式映射用于插入模式？
                                                         <b class="vimtag"> <a name="faq-abbreviations">faq-abbreviations</a> </b>
-<code class="section">SECTION 21 - ABBREVIATIONS </code>
- <a href="vim_faq.html#faq-21.1">faq-21.1</a>   How do I auto correct misspelled words?
- <a href="vim_faq.html#faq-21.2">faq-21.2</a>   How do I create multi-line abbreviations?
- <a href="vim_faq.html#faq-21.3">faq-21.3</a>   When my abbreviations are expanded, an additional space character
-          is added at the end of the expanded text. How do I avoid this
-          character?
- <a href="vim_faq.html#faq-21.4">faq-21.4</a>   How do I insert the current date/time stamp into the file?
- <a href="vim_faq.html#faq-21.5">faq-21.5</a>   How do I prevent an abbreviation from expanding in insert mode?
+<code class="section">第二十一节 - 缩写</code>
+ <a href="vim_faq.html#faq-21.1">faq-21.1</a>   如何自动修正单词的错误拼写？
+ <a href="vim_faq.html#faq-21.2">faq-21.2</a>   如何创建多行缩写？
+ <a href="vim_faq.html#faq-21.3">faq-21.3</a>   扩展缩写时，在扩展文本尾部加了额外的一个空格。如何才能避免这个空
+          格？
+ <a href="vim_faq.html#faq-21.4">faq-21.4</a>   如何在文件中插入当前日期/时间戳？
+ <a href="vim_faq.html#faq-21.5">faq-21.5</a>   插入模式下如何防止缩写被扩展？
                                                 <b class="vimtag"> <a name="faq-record-and-playback">faq-record-and-playback</a> </b>
-<code class="section">SECTION 22 - RECORD AND PLAYBACK </code>
- <a href="vim_faq.html#faq-22.1">faq-22.1</a>   How do I repeat an editing operation (insertion, deletion, paste,
-          etc)?
- <a href="vim_faq.html#faq-22.2">faq-22.2</a>   How I record and repeat a set of key sequences?
- <a href="vim_faq.html#faq-22.3">faq-22.3</a>   How do I edit/modify a recorded set of key sequences?
- <a href="vim_faq.html#faq-22.4">faq-22.4</a>   How do I write recorded key sequences to a file?
- <a href="vim_faq.html#faq-22.5">faq-22.5</a>   I am using register 0 to record my key sequences (i.e. q0 ....
-          q). In the recorded key sequences, I am yanking some text.  After
-          the first replay of the recorded key sequence, I am no longer
-          able to play it back.
+<code class="section">第二十二节 - 记录和回放</code>
+ <a href="vim_faq.html#faq-22.1">faq-22.1</a>   如何重复编辑操作 (插入、删除、粘贴等等)？
+ <a href="vim_faq.html#faq-22.2">faq-22.2</a>   如何记录和重复一组键序列？
+ <a href="vim_faq.html#faq-22.3">faq-22.3</a>   如何编辑/修改记录好的键序列组？
+ <a href="vim_faq.html#faq-22.4">faq-22.4</a>   如何把记录好的键序列存入文件？
+ <a href="vim_faq.html#faq-22.5">faq-22.5</a>   用寄存器 0 来记录键序列时 (即 q0 .... q)，记录的键序列中有抽出文本
+          的操作。记录的键序列第一次回放后，就不能再次回放了。
                                                         <b class="vimtag"> <a name="faq-autocommands">faq-autocommands</a> </b>
 <code class="section">SECTION 23 - AUTOCOMMANDS </code>
  <a href="vim_faq.html#faq-23.1">faq-23.1</a>   How do I execute a command when I try to modify a read-only file?
@@ -4902,18 +4898,16 @@ Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;l
      <code class="badlink">CTRL-\_CTRL-N</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-21">faq-21</a> </b></h4><code class="section">SECTION 21 - ABBREVIATIONS </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-21">faq-21</a> </b></h4><code class="section">第二十一节 - 缩写</code>
 
                                                                 <b class="vimtag"> <a name="faq-21.1">faq-21.1</a> </b>
-21.1. How do I auto correct misspelled words?
+21.1. 如何自动修正单词的错误拼写？
 
-You can auto correct misspelled words using abbreviations. For example, the
-following abbreviation can be used to correct "teh" with "the": 
+可用缩写来自动修正单词的错误拼写。例如，下列缩写可用于修正 "teh" 为 "the": 
 <code class="example"></code>
 <code class="example">    :abbreviate teh the</code>
 
-Vim supports abbreviations in insert mode, replace mode and command-line
-mode.
+Vim 支持插入模式、替换模式和命令行模式下的缩写。
 
 更多详情请阅读:
 
@@ -4922,15 +4916,13 @@ mode.
      <code class="badlink">Q_ab</code> 
 
                                                                 <b class="vimtag"> <a name="faq-21.2">faq-21.2</a> </b>
-21.2. How do I create multi-line abbreviations?
+21.2. 如何创建多行缩写？
 
-You can create multi-line abbreviations by embedding the "<code class="special">&lt;CR&gt;</code>"
-key code in the text: 
+可在文本中嵌入 <code class="special">&lt;CR&gt;</code> 键盘代码来创建多行缩写: 
 <code class="example"></code>
 <code class="example">    iabbrev #c --------------&lt;CR&gt;-- Date:&lt;CR&gt;--&lt;CR&gt;---------</code>
 
-With the above abbreviation, when you type #c, it will be expanded to
-the following text:
+使用以上缩写，输入 #c 后，会扩展为下列文本:
 
 </section><hr class="singleline" /><section class=inner>
 -- Date:
@@ -4942,14 +4934,12 @@ the following text:
      <code class="badlink">abbreviations</code> 
 
                                                                 <b class="vimtag"> <a name="faq-21.3">faq-21.3</a> </b>
-21.3. When my abbreviations are expanded, an additional space character is
-      added at the end of the expanded text. How do I avoid this character?
+21.3. 扩展缩写时，在扩展文本尾部加了额外的一个空格。如何才能避免这个空格？
 
-To avoid an additional space character at the end of the expanded text, you
-can expand the abbreviation by pressing the <code class="keystroke">CTRL-]</code> key.  The abbreviation
-will be expanded without adding a space character at the end.
+要避免扩展文本尾部的额外空格，可用 <code class="keystroke">CTRL-]</code> 键来扩展缩写。缩写的扩展此时不会在尾
+部加上空格。
 
-Another alternative is to use the following function and command: 
+另一个方案是使用下列函数和命令: 
 <code class="example"></code>
 <code class="example">    function! Eatchar(pat)</code>
 <code class="example">        let c = nr2char(getchar())</code>
@@ -4957,26 +4947,23 @@ Another alternative is to use the following function and command:
 <code class="example">    endfunction</code>
 <code class="example">    command! -nargs=+ Iabbr execute "iabbr" &lt;q-args&gt; . "&lt;C-R&gt;=Eatchar('\\s')&lt;CR&gt;"</code>
 
-Now, define your abbreviations using the new "Iabbr" command instead of the
-builtin  <code class="badlink">:iabbrev</code>  command. With this command, after expanding the
-abbreviated text, the next typed space character will be discarded.
+现在，用新的 "Iabbr" 命令来定义缩写而不是内建的  <code class="badlink">:iabbrev</code>  命令。用此命令，扩
+展缩写文本后，忽略下个输入的空格。
 
 更多详情请阅读:
 
      <code class="badlink">abbreviations</code> 
 
                                                                 <b class="vimtag"> <a name="faq-21.4">faq-21.4</a> </b>
-21.4. How do I insert the current date/time stamp into the file?
+21.4. 如何在文件中插入当前日期/时间戳？
 
-You can use the strftime() function to insert the current data/time stamp
-in a file. For example, you can use the following abbreviation: 
+可用 strftime() 函数在文件中来插入当前日期/时间戳。例如，可用以下缩写: 
 <code class="example"></code>
 <code class="example">    iabbrev dts &lt;C-R&gt;=strftime("%y/%m/%d %H:%M")&lt;CR&gt;</code>
 
-With this abbreviation, when you type dts in insert mode, it will be
-expanded to the date/time stamp.
+用此缩写，在插入模式下输入 dts 时，会扩展为日期/时间戳。
 
-Some other forms of the above abbreviation are listed below: 
+以下列出上述缩写的其它形式: 
 <code class="example"></code>
 <code class="example">    iabbrev mdyl &lt;C-R&gt;=strftime("%a %d %b %Y")&lt;CR&gt;</code>
 <code class="example">    iabbrev mdys &lt;C-R&gt;=strftime("%y%m%d")&lt;CR&gt;</code>
@@ -4990,24 +4977,22 @@ Some other forms of the above abbreviation are listed below:
      <code class="badlink">i_CTRL-R</code> 
 
                                                                 <b class="vimtag"> <a name="faq-21.5">faq-21.5</a> </b>
-21.5. How do I prevent an abbreviation from expanding in insert mode?
+21.5. 插入模式下如何防止缩写被扩展？
 
-You can prevent an abbreviation from expanding in insert mode by typing
-<code class="keystroke">CTRL-V</code> before the character after the abbreviated word.
+插入模式下可在缩写单词前按 <code class="keystroke">CTRL-V</code> 以防止缩写被扩展。
 
 更多详情请阅读:
 
      <code class="badlink">abbreviations</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-22">faq-22</a> </b></h4><code class="section">SECTION 22 - RECORD AND PLAYBACK </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-22">faq-22</a> </b></h4><code class="section">第二十二节 - 记录和回放</code>
 
                                                                 <b class="vimtag"> <a name="faq-22.1">faq-22.1</a> </b>
-22.1. How do I repeat an editing operation (insertion, deletion, paste,
-      etc)?
+22.1. 如何重复编辑操作 (插入、删除、粘贴等等)？
 
-You can repeat the last editing operation using the "." command. This will
-repeat the last simple change like a insert, delete, change, paste, etc.
+可用 "." 命令重复前次的编辑操作。这会重复前次的简单修改，如插入、删除、修改、
+粘贴等等。
 
 更多详情请阅读:
 
@@ -5016,21 +5001,18 @@ repeat the last simple change like a insert, delete, change, paste, etc.
      <code class="badlink">Q_re</code> 
 
                                                                 <b class="vimtag"> <a name="faq-22.2">faq-22.2</a> </b>
-22.2. How I record and repeat a set of key sequences?
+22.2. 如何记录和重复一组键序列？
 
-You can use the "q" command in normal mode to record a set of key sequences
-and store it in a register. For example, in the normal mode you can press q
-followed by a register name {0-9a-bA-Z"} to start the recording.  To
-end/stop the recording press q again. You can playback/repeat the recorded
-key sequences by pressing @ followed by the register name. e.g. @a.
+在普通模式下可用 "q" 命令来记录一组键序列并存入一个寄存器。例如，普通模式下可
+按 q 后跟寄存器名 {0-9a-bA-Z"} 来开始记录。要结束/中止记录，再次按 q。然后可以
+按 @ 后跟寄存器名来回放/重复记录的键序列，如 @a。
 
-Another approach is to start Vim with the "-w" command-line argument. 
+另一个方法是用 "-w" 命令行参数启动 Vim。 
 <code class="example"></code>
 <code class="example">    $ vim -w &lt;file_name&gt;</code>
 
-Vim will record all the characters typed in the session in the
-specified file "file_name". You can use the recorded file with the "-s"
-command line argument to play it back: 
+Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里。可用 "-s" 命令行
+参数来回放记录文件: 
 <code class="example"></code>
 <code class="example">    $ vim -s &lt;file_name&gt;</code>
 
@@ -5042,12 +5024,10 @@ command line argument to play it back:
      <code class="badlink">-s</code> 
 
                                                                 <b class="vimtag"> <a name="faq-22.3">faq-22.3</a> </b>
-22.3. How do I edit/modify a recorded set of key sequences?
+22.3. 如何编辑/修改记录好的键序列组？
 
-The recorded key sequences are stored in a register. You can paste the
-contents of the register into a Vim buffer, edit the pasted text and again
-yank the text into the register. You can also use the  <code class="badlink">:let</code>  command to
-modify the register. For example: 
+记录好的键序列存入一个寄存器。可把寄存器内容粘贴到 Vim 缓冲区里，编辑粘贴的文
+本，然后抽出文本到该寄存器。也可用  <code class="badlink">:let</code>  命令来修改寄存器。例如: 
 <code class="example"></code>
 <code class="example">    :let @a = "iHello World\&lt;Esc&gt;"</code>
 
@@ -5060,15 +5040,12 @@ modify the register. For example:
      <code class="badlink">'cpoptions'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-22.4">faq-22.4</a> </b>
-22.4. How do I write recorded key sequences to a file?
+22.4. 如何把记录好的键序列存入文件？
 
-The recorded key sequences are stored in a register. You can paste the
-contents of the register into a Vim buffer. Now you can save the buffer
-into a file. You can also modify the pasted text and again yank into the
-register to modify the recorded key sequence. For example, if you record a
-set of key sequences using qa ..... q. The recorded key sequences are
-stored in the register "a". You can paste the contents of register "a"
-using "ap.
+记录好的键序列存入一个寄存器。可把寄存器内容粘贴到 Vim 缓冲区里。现在可以保存
+缓冲区到文件。也可修改粘贴的文本，然后抽出文本到该寄存器以修改键序列的记录。例
+如，如果用 qa ..... q 来记录一组键序列，记录好的键序列存入寄存器 “"a"。用 "ap
+可以粘贴寄存器 "a" 的内容。
 
 更多详情请阅读:
 
@@ -5076,15 +5053,11 @@ using "ap.
      <code class="badlink">10.1</code> 
 
                                                                 <b class="vimtag"> <a name="faq-22.5">faq-22.5</a> </b>
-22.5. I am using register 0 to record my key sequences (i.e. q0 .... q).
-      In the recorded key sequences, I am yanking some text. After the
-      first replay of the recorded key sequence, I am no longer able to
-      play it back.
+22.5. 用寄存器 0 来记录键序列时 (即 q0 .... q)，记录的键序列中有抽出文本的操
+      作。记录的键序列第一次回放后，就不能再次回放了。
 
-Register 0 contains the text from the last yank operation. In your recorded
-key sequence, when the yank is performed, register 0 is overwritten with
-the yanked text. So your recording stored in register 0 is lost. You have
-to use some other register.
+寄存器 0 包含了最近抽出操作的文本。在你记录的键序列中的抽出完成时，寄存器 0 被
+抽出的文本覆盖。这样你存在寄存器 0 的记录就丢失了。请使用其它寄存器。
 
 更多详情请阅读:
 
