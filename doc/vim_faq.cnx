@@ -353,76 +353,54 @@ https://vimhelp.appspot.com/vim_faq.txt.html。
 |faq-24.15| 如何列出所有当前高亮组的定义？
 |faq-24.16| 如何在一个语言的语法高亮中嵌入另一个语言的高亮？
                                                 *faq-vim-script-writing*
-SECTION 25 - VIM SCRIPT WRITING ~
-|faq-25.1|  How do I list the names of all the scripts sourced by Vim?
-|faq-25.2|  How do I debug Vim scripts?
-|faq-25.3|  How do I locate the script/plugin which sets a Vim option?
-|faq-25.4|  I am getting some error/informational messages from Vim (possibly
-	  when running a script), the messages are cleared immediately. How
-	  do I display the messages again?
-|faq-25.5|  How do I save and restore a plugin specific information across
-	  Vim invocations?
-|faq-25.6|  How do I start insert mode from a Vim function?
-|faq-25.7|  How do I change the cursor position from within a Vim function?
-|faq-25.8|  How do I check the value of an environment variable in the .vimrc
-	  file?
-|faq-25.9|  How do I check whether an environment variable is set or not from
-	  a Vim function?
-|faq-25.10| How do I call/use the Vim built-in functions?
-|faq-25.11| I am using some normal mode commands in my Vim script. How do I
-	  avoid using the user-defined mappings for these normal mode
-	  commands and use the standard Vim functionality for these normal
-	  mode commands?
-|faq-25.12| How do I get a visually selected text into a Vim variable or
-	  register?
-|faq-25.13| I have some text in a Vim variable "myvar". I would like to use
-	  this variable in a `:s` substitute command to replace a text
-	  "mytext". How do I do this?
-|faq-25.14| A Vim variable (bno) contains a buffer number. How do I use this
-	  variable to open the corresponding buffer?
-|faq-25.15| How do I store the value of a Vim option into a Vim variable?
-|faq-25.16| I have copied and inserted some text into a buffer from a Vim
-	  function. How do I indent the inserted text from the Vim
-	  function?
-|faq-25.17| How do I get the character under the cursor from a Vim script?
-|faq-25.18| How do I get the name of the current file without the extension?
-|faq-25.19| How do I get the basename of the current file?
-|faq-25.20| How do I get the output from a Vim function into the current
-	  buffer?
-|faq-25.21| How do I call external programs from a Vim function?
-|faq-25.22| How do I get the return status of a program executed using the
-	  `:!` command?
-|faq-25.23| How do I determine whether the current buffer is modified or
-	  not?
-|faq-25.24| I would like to use the carriage return character in a normal
-	  command from a Vim script. How do I specify the carriage return
-	  character?
-|faq-25.25| How do I split long lines in a Vim script?
-|faq-25.26| When I try to "execute" my function using the `:execute Myfunc()`
-	  command, the cursor is moved to the top of the current buffer.
-	  Why?
-|faq-25.27| How do I source/execute the contents of a register?
-|faq-25.28| After calling a Vim function or a mapping, when I press the "u"
-	  key to undo the last change, Vim undoes all the changes made by
-	  the mapping/function. Why?
-|faq-25.29| How can I call a function defined with s: (script local
-	  function) from another script/plugin?
-|faq-25.30| Is it possible to un-source a sourced script? In other words,
-	  reverse all the commands executed by sourcing a script.
+第二十五节 - VIM 脚本编写~
+|faq-25.1|  如何列出 Vim 执行过的所有脚本名？
+|faq-25.2|  如何调试 Vim 脚本？
+|faq-25.3|  如何定位设置某个 Vim 选项的脚本/插件？
+|faq-25.4|  Vim 给出一些错误/提示信息 (可能在运行脚本时)，信息被立即清除。如何
+	  才能再次显示这些信息？
+|faq-25.5|  如何跨 Vim 调用保存和恢复插件特定的信息？
+|faq-25.6|  如何在 Vim 函数中启动插入模式？
+|faq-25.7|  如何在 Vim 函数中改变光标位置？
+|faq-25.8|  如何在 .vimrc 文件中检查环境变量值？
+|faq-25.9|  如何在 Vim 函数中检查环境变量设置与否？
+|faq-25.10| 如何调用/使用 Vim 内建函数？
+|faq-25.11| 在 Vim 脚本里使用普通模式命令时，如何避免这些普通模式命令应用用户
+	  定义的映射而使用这些普通模式命令标准的 Vim 功能？
+|faq-25.12| 如何把可视选择文本存入 Vim 变量或寄存器？
+|faq-25.13| Vim 变量 "myvar" 存了一些文本。想在 `:s` 替代命令里用此变量来替代
+	  文本 "mytext"。应该怎么做？
+|faq-25.14| Vim 变量 (bno) 包含了缓冲区号。如何用此变量来打开对应的缓冲区？
+|faq-25.15| 如何保存 Vim 选项值到 Vim 变量里？
+|faq-25.16| 从 Vim 函数复制并插入一些文本到缓冲区。如何在 Vim 函数里缩进插入的
+	  文本？
+|faq-25.17| Vim 脚本里如何取得光标所在的字符？
+|faq-25.18| 如何取得不带扩展名的当前文件名？
+|faq-25.19| 如何取得当前文件名的基名？
+|faq-25.20| 如何把 Vim 函数的输出写入当前缓冲区？
+|faq-25.21| Vim 函数里如何调用外部程序？
+|faq-25.22| 如何得到用 `:!` 命令执行的程序的返回状态？
+|faq-25.23| 如何确定当前缓冲区是否修改过？
+|faq-25.24| Vim 脚本里在普通模式命令里想用回车字符。如何指定回车字符？
+|faq-25.25| Vim 脚本里如何分割长行？
+|faq-25.26| 用 `:execute Myfunc()` 命令试图 "execute" 我的函数时，光标移到了当
+	  前缓冲区的顶部。为什么？
+|faq-25.27| 如何执行寄存器的内容？
+|faq-25.28| 调用了 Vim 函数或映射后，按 "u" 键撤销最近的修改时，Vim 撤销了该映
+	  射/函数所做的所有改动。为什么？
+|faq-25.29| 如何从另一个脚本/插件中调用定义时带 s: 的函数 (脚本局部函数)？
+|faq-25.30| 可以撤销已执行的脚本吗？换句话说，反转一个脚本执行的所有命令的效果。
                                                                 *faq-plugins*
-SECTION 26 - PLUGINS ~
-|faq-26.1|  How do I set different options for different types of files?
-|faq-26.2|  I have downloaded a Vim plugin or a syntax file or a indent file,
-	  or a color scheme or a filetype plugin from the web. Where should
-	  I copy these files so that Vim will find them?
-|faq-26.3|  How do I extend an existing filetype plugin?
-|faq-26.4|  How do I turn off loading the Vim plugins?
-|faq-26.5|  How do I turn on/off loading the filetype plugins?
-|faq-26.6|  How do I override settings made in a file type plugin in the
-	  global ftplugin directory for all the file types?
-|faq-26.7|  How do I disable the Vim directory browser plugin?
-|faq-26.8|  How do I set the filetype option for files with names matching a
-	  particular pattern or depending on the file extension?
+第二十六节 - 插件~
+|faq-26.1|  如何为不同类型的文件设置不同的选项？
+|faq-26.2|  从网上下载了 Vim 插件、语法文件、缩进文件、色彩方案或文件类型插
+	  件。应该怎么复制这些文件才能让 Vim 能找到它们？
+|faq-26.3|  如何扩展已有的文件类型插件？
+|faq-26.4|  如何关闭 Vim 插件的载入？
+|faq-26.5|  如何打开/关闭文件类型插件的载入？
+|faq-26.6|  如何为所有文件类型覆盖全局 ftplugin 目录下的文件类型插件的设定？
+|faq-26.7|  如何关闭 Vim 目录浏览器插件？
+|faq-26.8|  如何为名字匹配特定模式或文件扩展名的文件设置 filetype 选项？
                                                 *faq-editing-program-files*
 第二十七节 - 编辑程序文件~
 |faq-27.1|  如何打开 C/C++ 文件的自动缩进？
@@ -2819,7 +2797,7 @@ World", 可用下列搜索命令: >
 
 可用动作命令带抽出操作符 (y) 来从一行中抽出一个位置到另一个位置的文本。例如，
 要抽出当前光标位置到下个 x 字符的文本，用 yfx 或 Fx 和 tx 或 Tx。要抽出直到第
-n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 /word。要抽出直到另
+n 列的文本，用  n|。要抽出直到下个 "word" 的出现的文本，用 /word。要抽出直到另
 一行第 n 列的文本，先用 "ma" 命令标记该位置，再转到抽出开始的位置，然后用 y`a
 来抽出直到标记所在的文本 (注意 引号的方向)
 
@@ -5146,7 +5124,8 @@ Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里
  								*faq-24.2*
 24.2. 如何改变 Vim 使用的背景和前景色？
 
-Vim 使用 "Normal" 高亮组用于背景和前景色。要改变前景/背景色，可修改 "Normal" 高亮组。例如，要设置背景色为蓝色及前景色为白色，可用 >
+Vim 使用 "Normal" 高亮组用于背景和前景色。要改变前景/背景色，可修改 "Normal"
+高亮组。例如，要设置背景色为蓝色及前景色为白色，可用 >
 
     :highlight Normal ctermbg=blue ctermfg=white guibg=blue guifg=white
 <
@@ -5374,13 +5353,12 @@ $HOME/vimfiles/syntax 或 $VIM/vimfiles/syntax 目录下。
 
 =============================================================================
  								*faq-25*
-SECTION 25 - VIM SCRIPT WRITING ~
+第二十五节 - VIM 脚本编写~
 
  								*faq-25.1*
-25.1. How do I list the names of all the scripts sourced by Vim?
+25.1. 如何列出 Vim 执行过的所有脚本名？
 
-You can use the `:scriptnames` command to list the names of all the scripts
-sourced by Vim: >
+可用 `:scriptnames` 命令来列出 Vim 执行过的所有脚本名: >
 
     :scriptnames
 <
@@ -5389,11 +5367,10 @@ sourced by Vim: >
     |:scriptnames|
 
  								*faq-25.2*
-25.2. How do I debug Vim scripts?
+25.2. 如何调试 Vim 脚本？
 
-Vim has built-in support for a primitive debugger to debug Vim plugins and
-scripts. Using this debugger you can set breakpoints and step through the
-plugin functions.
+Vim 有内建的基本调试器支持，用于调试 Vim 插件和脚本。使用此调试器可设置断点和
+在插入函数上步进。
 
 更多详情请阅读:
 
@@ -5401,10 +5378,9 @@ plugin functions.
     |-D|
 
  								*faq-25.3*
-25.3. How do I locate the script/plugin which sets a Vim option?
+25.3. 如何定位设置某个 Vim 选项的脚本/插件？
 
-You can use the `:verbose` command to locate the plugin/script which last
-modified a Vim option. For example: >
+可用 `:verbose` 命令来定位最后修改某个 Vim 选项的插件/脚本。例如: >
 
     :verbose set textwidth?
 <
@@ -5414,11 +5390,10 @@ modified a Vim option. For example: >
     |:verbose|
 
  								*faq-25.4*
-25.4. I am getting some error/informational messages from Vim (possibly
-      when running a script), the messages are cleared immediately. How do
-      I display the messages again?
+25.4. Vim 给出一些错误/提示信息 (可能在运行脚本时)，信息被立即清除。如何才能再
+      次显示这些信息？
 
-You can use the `:messages` command to display the previous messages. >
+可用 `:messages` 命令来显示之前的消息。 >
 
     :messages
 <
@@ -5430,13 +5405,10 @@ You can use the `:messages` command to display the previous messages. >
     |message-history|
 
  								*faq-25.5*
-25.5. How do I save and restore a plugin specific information across Vim
-      invocations?
+25.5. 如何跨 Vim 调用保存和恢复插件特定的信息？
 
-Vim will save and restore global variables that start with an uppercase
-letter and don't contain a lower case letter. For this to work, the
-'viminfo' option must contain the "!" flag. Vim will store the variables in
-the viminfo file.
+Vim 会保存和恢复以大写字母开始且不包含小写字母的全局变量。为此， 'viminfo' 选
+项必须包含 "!" 标志位。Vim 会在 viminfo 文件里保存变量。
 
 更多详情请阅读:
 
@@ -5445,34 +5417,31 @@ the viminfo file.
     |variables|
 
  								*faq-25.6*
-25.6. How do I start insert mode from a Vim function?
+25.6. 如何在 Vim 函数中启动插入模式？
 
-You can use the `:startinsert` command to start the insert mode from inside
-a Vim function.
+可用 `:startinsert` 命令来从 Vim 函数中启动插入模式。
 
 更多详情请阅读:
 
     |:startinsert|
 
  								*faq-25.7*
-25.7. How do I change the cursor position from within a Vim function?
+25.7. 如何在 Vim 函数中改变光标位置？
 
-You can use the cursor() function to position the cursor. >
+可用 cursor() 函数来定位光标。 >
 
         call cursor(lnum, col)
 <
-Alternatively, use the setpos() function: >
+也可用 setpos() 函数: >
 
         call setpos('.', [bufnum, lnum, col, off])
 <
-which set's the cursor in the buffer bufnum to line lnum, column col and
-offset for 'virtualedit'. You can use the getpos() function, to return a
-list with these values, that can then be fed back to the setpos() function.
+它会设置缓冲区 bufnum 里的光标定位在行 lnum，列 col 和 'virtualedit' 所用的偏
+移。可用 getpos() 函数来返回这些值的列表，之后可以在 setpos() 函数里用这些值。
 
-If you want to save and restore the viewpoint on a window, use the
-winsaveview() and winrestview() function calls.
+如果要想保存和恢复窗口的视点，可用 winsaveview() 和 winrestview() 函数调用。
 
-You can also use the following command to change the cursor position: >
+也可用下列命令来改变光标位置: >
 
         exe "normal! " . lnum . "G" . col . "|"
 <
@@ -5486,12 +5455,10 @@ You can also use the following command to change the cursor position: >
     |winrestview()|
 
  								*faq-25.8*
-25.8. How do I check the value of an environment variable in the .vimrc
-      file?
+25.8. 如何在 .vimrc 文件中检查环境变量值？
 
-You can use prefix the environment variable name with the "$" character to
-use it from a Vim script/function.  You can refer to the value of an
-environment variable using the $env_var syntax: >
+在 Vim 脚本函数中可在环境变量名前加上前缀 "$" 字符来访问它。使用 $env_var 语法
+可以引用环境变量的值: >
 
     if $EDITOR == 'vi'
     endif
@@ -5501,11 +5468,9 @@ environment variable using the $env_var syntax: >
     |expr-env|
 
  								*faq-25.9*
-25.9. How do I check whether an environment variable is set or not from a
-      Vim function?
+25.9. 如何在 Vim 函数中检查环境变量设置与否？
 
-You can use the exists() function to check for the existence of an
-environment variable. >
+可用 exists() 函数来检查环境变量是否存在。 >
 
     if exists("$MY_ENV_VAR")
     endif
@@ -5516,28 +5481,25 @@ environment variable. >
     |expr-env|
 
  								*faq-25.10*
-25.10. How do I call/use the Vim built-in functions?
+25.10. 如何调用/使用 Vim 内建函数？
 
-You can use the `:call` command to invoke a Vim built-in function: >
+可用 `:call` 命令来调用 Vim 内建函数: >
 
     :call cursor(10,20)
 <
-You can use the `:echo` command to echo the value returned by a function: >
+可用 `:echo` 命令来回显函数返回值: >
 
     :echo char2nr('a')
 <
-You can use the `:let` command to assign the value returned by a function
-to a variable: >
+可用 `:let` 命令把函数返回值赋给变量: >
 
     :let a = getline('.')
 <
-To store the return value from a function into a Vim register, you can use
-the following command: >
+要把函数返回值存入 Vim 寄存器，可用以下命令: >
 
     :let @a = system('ls')
 <
-The above command will store the output of the "ls" command into
-the register "a".
+以上命令会保存 "ls" 命令的输出到寄存器 "a" 里。
 
 更多详情请阅读:
 
@@ -5549,43 +5511,34 @@ the register "a".
     |usr_41.txt|
 
  								*faq-25.11*
-25.11. I am using some normal mode commands in my Vim script. How do I
-       avoid using the user-defined mappings for these normal mode commands
-       and use the standard Vim functionality for these normal mode
-       commands?
+25.11. 在 Vim 脚本里使用普通模式命令时，如何避免这些普通模式命令应用用户定义的
+       映射而使用这些普通模式命令标准的 Vim 功能？
 
-You can use the `:normal!` command in your script to invoke a normal-mode
-command. This will use the standard functionality of the normal mode
-command and will not use the user-defined mapping.
+脚本中可用 `:normal!` 命令来调用普通模式命令。这会使用普通模式命令的标准功能而
+不应用用户定义的映射。
 
 更多详情请阅读:
 
     |:normal|
 
  								*faq-25.12*
-25.12. How do I get the current visually selected text into a Vim variable
-       or register?
+25.12. 如何把可视选择文本存入 Vim 变量或寄存器？
 
-You can get the current visually selected text into a Vim variable by
-yanking the text into Vim register and then assigning the contents of the
-register into the variable: >
+要把可视选择文本存入 Vim 变量，可先把文本抽出到 Vim 寄存器里，然后把寄存器的内
+容存入变量: >
 
     :normal! gvy
     :let myvar = @"
 <
-The above command copies the visually selected text into the variable
-"myvar".
+上述命令把可视选择文本复制入变量 "myvar"。
 
-You can also use the command: >
+也可用以下命令: >
 
     :normal! gv"*y
 <
-In the above command, gv reselects the last visually selected text and the
-rest of the command copies the selected text into the * (clipboard)
-register. Alternatively, you can set the "a" flag in the 'guioptions'
-option to automatically copy a visually selected text into the * register.
-To do this as part of a visual map, you can use a command similar to the
-one shown below: >
+上述命令里，gv 重新选择了最近可视选择文本，其余命令复制选中的文本进 * (剪贴板)
+寄存器。此外，也可在 'guioptions' 选项里设置 "a" 标志位以自动复制可视选择文本
+进 * 寄存器。作为可视映射的一部分，可用下面所示的命令来完成: >
 
     :vmap <F3> "*y:call ...
 <
@@ -5600,11 +5553,10 @@ one shown below: >
     |registers|
 
  								*faq-25.13*
-25.13. I have some text in a Vim variable "myvar". I would like to use this
-       variable in a `:s` substitute command to replace a text "mytext".
-       How do I do this?
+25.13. Vim 变量 "myvar" 存了一些文本。想在 `:s` 替代命令里用此变量来替代文本
+       "mytext"。应该怎么做？
 
-You can use the `:execute` command to evaluate the variable: >
+可用 `:execute` 命令来计算变量: >
 
     :execute '%s/mytext/' . myvar . '/'
 <
@@ -5612,7 +5564,7 @@ You can use the `:execute` command to evaluate the variable: >
 
     |:execute|
 
-You can also use "\=" in the substitute command to evaluate the variable: >
+也可用替代命令中的 "\=" 来计算变量: >
 
     :%s/mytext/\=myvar/
 <
@@ -5621,12 +5573,10 @@ You can also use "\=" in the substitute command to evaluate the variable: >
     |sub-replace-special|
 
  								*faq-25.14*
-25.14. A Vim variable (bno) contains a buffer number. How do I use this
-       variable to open the corresponding buffer?
+25.14. Vim 变量 (bno) 包含了缓冲区号。如何用此变量来打开对应的缓冲区？
 
-The `:buffer` command will not accept a variable name. It accepts only a
-buffer number or buffer name. You have to use the `:execute` command to
-evaluate the variable into the corresponding value. For example: >
+`:buffer` 命令不接受变量名。只接受缓冲区号或缓冲区名。须用 `:execute` 命令来计
+算变量成为对应的值。例如: >
 
     :execute "buffer " . bno
 <
@@ -5635,24 +5585,20 @@ evaluate the variable into the corresponding value. For example: >
     |:execute|
 
  								*faq-25.15*
-25.15. How do I store the value of a Vim option into a Vim variable?
+25.15. 如何保存 Vim 选项值到 Vim 变量里？
 
-You can prefix the option name with the "&" character and assign the option
-value to a Vim variable using the `:let` command. For example, to store the
-value of the 'textwidth' option into the Vim variable "old_tw", you can use
-the following command: >
+可用选项名加上前缀 "&" 字符并把 `:let` 命令来把选项值赋给 Vim 变量。例如，要保
+存 'textwidth' 选项值到 Vim 变量 "old_tw"，可用以下命令: >
 
     :let old_tw = &tw
 <
-To explicitly save buffer local options, use the prefix "l:" >
+要显式保存缓冲区局部选项，可用前缀 "l:" >
 
     :let old_tw = &l:tw
 <
-If you want to explicitly select the global option, use the "g:" prefix to
-the option name.
+要显式保存全局选项，可用选项名加上前缀 "g:"。
 
-To do the opposite, to set the 'textwidth' option with the value stored in
-the "old_tw" variable, you can use the following command: >
+相反地，要把 "old_tw" 变量保存的值赋给 'textwidth' 选项，可用以下命令: >
 
     :let &tw = old_tw
 <
@@ -5662,10 +5608,10 @@ the "old_tw" variable, you can use the following command: >
     |:let-option|
 
  								*faq-25.16*
-25.16. I have copied and inserted some text into a buffer from a Vim
-       function. How do I indent the inserted text from the Vim function?
+25.16. 从 Vim 函数复制并插入一些文本到缓冲区。如何在 Vim 函数里缩进插入的文
+       本？
 
-You can use the following command to format the just inserted text: >
+可用以下命令来排版刚刚插入的文本: >
 
     :normal '[=']
 <
@@ -5677,27 +5623,23 @@ You can use the following command to format the just inserted text: >
     |:normal|
 
  								*faq-25.17*
-25.17. How do I get the character under the cursor from a Vim script?
+25.17. Vim 脚本里如何取得光标所在的字符？
 
-You can use the getline() function and use string index [] to get the
-character: >
+可用 getline() 函数并用字符串索引 [] 来取得字符: >
 
     :echo getline(".")[col(".") - 1]
 <
-In the above command, getline(".") returns  the text in the current line.
-The indexing of the string starts at zero, and you can get a single
-character in a string by its index with the "string[index]" notation. The
-col(".") returns the column of the cursor position; the adjustment is to
-get the right character of the string. However, this does NOT work with
-multibyte characters as this command only returns the byte index.
+上述命令中，getline(".") 返回当前行上的文本，字符串的索引从零开始，用
+"string[index]" 记法可以取得该字符串对应索引的单个字符。col(".)" 返回光标所在
+的列；调整是为了取得字符串上正确的字符。不过，这_不能_用于多字节字符，因为此命
+令只返回字节索引。
 
-Alternatively, you can use the following sequence of commands to get the
-character under the cursor: >
+此外，也可用下列命令序列来取得光标所在的字符: >
 
     normal! vy
     let ch=@"
 <
-Note, that the above commands will change the '< and '> marks.
+注意，上述命令会改变 '< 或 '> 位置标记。
 
 更多详情请阅读:
 
@@ -5706,13 +5648,13 @@ Note, that the above commands will change the '< and '> marks.
     |expr-[]|
 
  								*faq-25.18*
-25.18. How do I get the name of the current file without the extension?
+25.18. 如何取得不带扩展名的当前文件名？
 
-You can get the name of the current file without the extension using: >
+可以这样取得不带扩展名的当前文件名: >
 
     :echo expand("%:r")
 <
-With some commands, you can use the file name modifiers directly: >
+有些命令里可以直接用文件名修饰符: >
 
     :cd %:p:h
     :!gcc -o %:r.o %
@@ -5726,10 +5668,9 @@ With some commands, you can use the file name modifiers directly: >
     |fnamemodify()|
 
  								*faq-25.19*
-25.19. How do I get the basename of the current file?
+25.19. 如何取得当前文件名的基名？
 
-You can use the ":t" filename modifier to get the basename of the current
-file: >
+可用 ":t" 文件名修饰符来取得当前文件名的基名: >
 
     :echo expand("%:t")
 <
@@ -5738,14 +5679,13 @@ file: >
     |filename-modifiers|
 
  								*faq-25.20*
-25.20. How do I get the output from a Vim function into the current buffer?
+25.20. 如何把 Vim 函数的输出写入当前缓冲区？
 
-You can insert the return value from a function using the following command
-in insert mode: >
+插入模式下，可以用以下命令插入函数的返回值: >
 
     <C-R>=MyFunc()
 <
-Note, that this will only insert the return value of the function.
+注意，这只能插入函数的返回值。
 
 更多详情请阅读:
 
@@ -5755,15 +5695,14 @@ Note, that this will only insert the return value of the function.
     |expression|
 
  								*faq-25.21*
-25.21. How do I call external programs from a Vim function?
+25.21. Vim 函数里如何调用外部程序？
 
-There are several ways to call external programs from a Vim function. You
-can use the builtin system() function to invoke external programs and get
-the result: >
+Vim 函数里有几种方式可以调用外部程序。可用内建的 system() 函数来调用外部程序并
+返回结果: >
 
     :let output = system("ls")
 <
-You can also use "!" ex-command to run an external command.
+也可用 "!" ex 命令来运行外部程序。
 
 更多详情请阅读:
 
@@ -5772,25 +5711,22 @@ You can also use "!" ex-command to run an external command.
     |10.9|
 
  								*faq-25.22*
-25.22. How do I get the return status of a program executed using the `:!`
-       command?
+25.22. 如何得到用 `:!` 命令执行的程序的返回状态？
 
-You can use the predefined Vim v:shell_error variable to get the return
-status of the last run shell command.
+可用预定义的 Vim v:shell_error 变量来取得最近运行的外壳命令的返回状态。
 
 更多详情请阅读:
 
     |v:shell_error|
 
  								*faq-25.23*
-25.23. How do I determine whether the current buffer is modified or not?
+25.23. 如何确定当前缓冲区是否修改过？
 
-You can check the value of the 'modified' option to determine whether the
-current buffer is modified: >
+可以检查 'modified' 选项值来决定当前缓冲区是否修改过: >
 
     :set modified?
 <
-From a Vim script, you can check the value of the 'modified' option: >
+Vim 脚本里，可以这样检查 'modified' 选项值: >
 
     if &modified
         echo "File is modified"
@@ -5801,12 +5737,9 @@ From a Vim script, you can check the value of the 'modified' option: >
     |'modified'|
 
  								*faq-25.24*
-25.24. I would like to use the carriage return character in a normal
-       command from a Vim script. How do I specify the carriage return
-       character?
+25.24. Vim 脚本里在普通模式命令里想用回车字符。如何指定回车字符？
 
-You can use the `:execute` command to specify the special (control)
-character in a normal mode command: >
+可用 `:execute` 命令来指定普通模式命令使用的特殊 (控制) 字符: >
 
     :execute "normal \<CR>"
     :execute "normal ixxx\<Esc>"
@@ -5817,10 +5750,9 @@ character in a normal mode command: >
     |expr-quote|
 
  								*faq-25.25*
-25.25. How do I split long lines in a Vim script?
+25.25. Vim 脚本里如何分割长行？
 
-You can split long lines in a Vim script by inserting the backslash
-character ("\") at the start of the next line. For example, >
+Vim 脚本里可以在下一行的行首插入反斜杠 ("\") 字符来分隔长行。例如， >
 
     set comments=sr:/*,mb:*,el:*/,
                 \://,
@@ -5834,19 +5766,15 @@ character ("\") at the start of the next line. For example, >
     |line-continuation|
 
  								*faq-25.26*
-25.26. When I try to "execute" my function using the `:execute Myfunc()`
-       command, the cursor is moved to the top of the current buffer.
-       Why?
+25.26. 用 `:execute Myfunc()` 命令试图 "execute" 我的函数时，光标移到了当前缓
+       冲区的顶部。为什么？
 
-The `:execute` command runs the ex command specified by the argument.
-In the case of the following command: >
+`:execute` 命令运行参数指定的 ex 命令。在下列命令的情形下: >
 
     :execute Myfunc()
 <
-The call to Myfunc() will return 0. The `:execute` command will run
-the ex command `:0`, which moves the cursor to the top of the file.
-To call a Vim function, you should use the `:call` command instead of the
-`:execute` command: >
+Myfunc() 的调用会返回 0。`:execute` 命令会运行 ex 命令 `:0`，这会移动光标到文
+件顶部。所以，要调用 Vim 函数，应该用 `:call` 命令而不是 `:execute` 命令: >
 
     :call Myfunc()
 <
@@ -5861,14 +5789,13 @@ To call a Vim function, you should use the `:call` command instead of the
     |cmdline-lines|
 
  								*faq-25.27*
-25.27. How do I source/execute the contents of a register?
+25.27. 如何执行寄存器的内容？
 
-If you have yanked a set of Vim commands into a Vim register (for example
-register "a"), then you can source the contents of the register using one
-of the following commands:
+如果抽出了一组 Vim 命令到 Vim 寄存器里 (如寄存器 "a")，就可以用以下命令之一来
+执行寄存器的内容:
 
     :@a
-or
+或
     :exe @a
 
 更多详情请阅读:
@@ -5876,14 +5803,11 @@ or
     |:@|
 
  								*faq-25.28*
-25.28. After calling a Vim function or a mapping, when I press the "u"
-       key to undo the last change, Vim undoes all the changes made by
-       the mapping/function. Why?
+25.28. 调用了 Vim 函数或映射后，按 "u" 键撤销最近的修改时，Vim 撤销了该映射/函
+       数所做的所有改动。为什么？
 
-When you call a function or a mapping, all the operations performed by the
-function/mapping are treated as one single operation. When you undo the
-last operation by pressing "u", all the changes made by the
-function/mapping are reversed.
+调用了 Vim 函数或映射后，该函数/映射所做的所有操作都会当成一个单一操作。按 "u"
+撤销最近操作时，此函数/映射所做的所有改动都被逆转。
 
 更多详情请阅读:
 
@@ -5891,14 +5815,11 @@ function/mapping are reversed.
     |:map-undo|
 
  								*faq-25.29*
-25.29. How can I call a function defined with s: (script local function)
-       from another script/plugin?
+25.29. 如何从另一个脚本/插件中调用定义时带 s: 的函数 (脚本局部函数)？
 
-The s: prefix for a Vim function name is used to create a script local
-function. A script local function can be called only from within that
-script and cannot be called from other scripts. To define a function in a
-script/plugin, so that it can be called from other plugins/scripts, define
-the function without the s: prefix.
+Vim 函数名的 s: 前缀用于创建脚本局部函数。脚本局部函数只可在该脚本内部调用，不
+能从其它脚本中执行。要在脚本中定义其它插件/脚本可调用的函数，函数定义时不能带
+s: 前缀。
 
 更多详情请阅读:
 
@@ -5907,11 +5828,9 @@ the function without the s: prefix.
     |:scriptnames|
 
  								*faq-25.30*
-25.30. Is it possible to un-source a sourced script? In other words, reverse
-       all the commands executed by sourcing a script.
+25.30. 可以撤销已执行的脚本吗？换句话说，反转一个脚本执行的所有命令的效果。
 
-No. It is not possible to reverse or undo all the commands executed by
-sourcing a script.
+不可以。没有办法反转或撤销一个脚本执行的所有命令的效果。
 
 更多详情请阅读:
 
@@ -5919,31 +5838,28 @@ sourcing a script.
 
 =============================================================================
  								*faq-26*
-SECTION 26 - PLUGINS ~
+第二十六节 - 插件~
 
  								*faq-26.1*
-26.1. How do I set different options for different types of files?
+26.1. 如何为不同类型的文件设置不同的选项？
 
-You can create filetype plugins to set different options for different
-types of files. You should first enable filetype plugins using the command: >
+可创建文件类型插件来为不同类型的文件设置不同的选项。首先要用此命令打开文件类型
+插件: >
 
     :filetype plugin on
 <
-A filetype plugin is a vim script that is loaded whenever Vim opens or
-creates a file of that type.  For example, to ensure that the 'textwidth'
-option is set to 80 when editing a C program (filetype "c"), create one of
-the following files: >
+文件类型插件是 Vim 打开或创建该类型文件时都会载入的 vim 脚本。例如，要确保编辑
+C 程序 (文件类型是 "c") 时 'textwidth' 选项设为 80，建立下列文件之一: >
 
         ~/.vim/ftplugin/c.vim (Unix)
         %HOME%\vimfiles\ftplugin\c.vim (Windows)
 <
-with the following text in it: >
+放入下面的文本: >
 
         setlocal textwidth=80
 <
-You can also use autocommands to set specific options when editing specific
-type of files. For example, to set the 'textwidth' option to 75 for only
-*.txt files, you can use the following autocmd: >
+也可用自动命令在编辑指定文件类型时设置特定选项。例如，要只为 *.txt 文件设置
+'textwidth' 选项为 75，可用以下自动命令: >
 
     autocmd BufRead *.txt setlocal textwidth=80
 <
@@ -5955,35 +5871,31 @@ type of files. For example, to set the 'textwidth' option to 75 for only
     |40.3|
 
  								*faq-26.2*
-26.2. I have downloaded a Vim plugin or a syntax file or a indent file, or
-      a color scheme or a filetype plugin from the web. Where should I copy
-      these files so that Vim will find them?
+26.2. 从网上下载了 Vim 插件、语法文件、缩进文件、色彩方案或文件类型插件。应该
+      怎么复制这些文件才能让 Vim 能找到它们？
 
-You can place the Vim runtime files (plugins, syntax files, indent files,
-color schemes, filetype plugins, etc) under one of the directories
-specified in the 'runtimepath' option. To determine the current value of
-the 'runtimepath' option, use the following command: >
+可把 Vim 运行时文件 (插件、语法文件、缩进文件、色彩方案、文件类型插件等等) 放
+在 'runtimepath' 选项指定的一个目录下。要知道 'runtimepath' 选项的当前值，可用
+以下命令: >
 
     :set runtimepath
 <
-For Unix systems, this is usually the "$HOME/.vim" directory. For MS-Windows
-systems, this is usually the $VIM\vimfiles or $HOME\vimfiles directory.
-Depending on the type of the runtime file, you have to place it under a
-specific directory under the above runtime directory. The names of the
-directories are listed below:
+Unix 系统上，通常是 "$HOME/.vim" 目录。MS-Windows 系统上，通常是 $VIM\vimfiles
+或 $HOME\vimfiles 目录。须放在上述运行时目录下取决于运行时文件的类型的指定目录
+里。下面列出这些目录名:
 
-    name        description ~
+    目录名      描述~
     ----------  ------------------ ~
-    colors/     color scheme files
-    compiler/   compiler files
-    doc/        documentation
-    ftplugin/   filetype plugins
-    indent/     indent scripts
-    keymap/     key mapping files
-    lang/       menu translations
-    plugin/     plugin scripts
-    syntax/     syntax files
-    tutor/      files for vimtutor
+    colors/     色彩方案文件
+    compiler/   编译器文件
+    doc/        文档
+    ftplugin/   文件类型插件
+    indent/     缩进脚本
+    keymap/     键盘映射文件
+    lang/       菜单翻译
+    plugin/     插入脚本
+    syntax/     语法文件
+    tutor/      vimtutor 教程文件
 
 更多详情请阅读:
 
@@ -5992,52 +5904,42 @@ directories are listed below:
     |:runtime|
 
  								*faq-26.3*
-26.3. How do I extend an existing filetype plugin?
+26.3. 如何扩展已有的文件类型插件？
 
-You can extend an existing filetype plugin by creating a file in the
-after/ directory in any of the 'runtimepath' directories.
+可在任何 'runtimepath' 目录下的 after/ 目录里创建文件来扩展已有的文件类型插
+件。
 
 
-- for small changes to be done after (and in addition to) what is
-  already done by the ftplugin installed with Vim, use an after-directory,
-  as follows (replacing foobar by the 'filetype' of the concerned
-  files):
-    - For changes private to one user:
-        - on Windows:
+- 在 Vim 安装的 ftplugin 已经完成部分之上的小改动 (或新增)，使用 after 目录如
+  下 (把 foobar 换成关心的 'filetype'):
+    - 只用于一个用户的私人修改:
+        - Windows 上:
             $HOME/vimfiles/after/ftplugin/foobar.vim
-        - on Unix-like OSes:
+        - Unix 系列的操作系统上:
             $HOME/.vim/after/ftplugin/foobar.vim
-    - For changes affecting all users on the system:
+    - 影响系统上所有用户的修改:
         $VIM/vimfiles/after/ftplugin/foobar.vim
 
-- when replacing the whole filetype-plugin by a different version, or
-  when installing a new ftplugin for some filetype not yet supported by
-  Vim out of the box: use the same paths without the after/ in them. In
-  that case you should place near the start of your plugin an "if...
-  finish... endif... let" block like the one in the plugins distributed
-  with Vim.
+- 用不同的版本替换整个文件类型插件或安装 Vim 原装还不支持的文件类型的新文件类
+  型插件时: 使用相同的路径，但不带 after/ 部分。这种情况下应该在插件头部放上
+  "if... finish... endif... let" 块，就像随 Vim 发布的插件那样。
 
-All the above paths are given in Vim terminology (which is similar to
-Unix terminology, but is understood even by Vim for Windows); they don't
-exist by default, so the first time you need them you will have to
-create them using mkdir (on any OS including DOS/Windows) or md (on
-DOS/Windows only). $VIM and, on DOS/Windows, $HOME, do not necessarily
-exist outside Vim. If $HOME has no value (or no valid value) inside Vim,
-you can use $VIM instead; but on any but possibly very old versions of
-Windows, $HOMEDRIVE and $HOMEPATH are defined by the system, and if
-$HOME is undefined at Vim startup, Vim will set it by expanding
-$HOMEDRIVE$HOMEPATH before sourcing your vimrc. To know which values Vim
-uses, you can type (in a running Vim): >
+上述路径使用 Vim 的术语 (和 Unix 术语类似，但即使 Windows 上的 Vim 也能理解)；
+缺省这些目录不存在，第一次需要的时候你要自己用 mkdir (任何 OS 包括 DOS/Windows
+上都有) 或 md (只用于 DOS/Windows) 创建这些目录。在 Vim 之外，$VIM 和
+DOS/Windows 上的 $HOME 未必存在。如果 $HOME 在 Vim 里没有值 (或没有合法值)，可
+用 $VIM 代替；不过除了很老的 Windows 系统外，$HOMEDRIVE 和 $HOMEPATH 由系统定
+义，如果 Vim 启动时 $HOME 无定义，Vim 会在执行你的 vimrc 之前通过扩展
+$HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 (在运行中的 Vim
+里) 输入: >
 
     :echo $VIM
     :echo $HOME
 <
 
-If you placed the file in the after/ftplugin runtime directory, then Vim
-will first source the existing filetype plugin file and then will source
-the new file.  If you placed the file in the $VIMRTUNTIME/ftplugin runtime
-directory, then Vim will first source the new file and then will source the
-existing filetype plugin file.
+如果把文件放在 after/ftplugin 运行时目录下，Vim 会先执行已有的文件类型插件文件
+然后执行新文件。如果把文件放在 $VIMRUNTIME/ftplugin 运行时目录下，Vim 会先执行
+新文件然后再执行已有的文件类型插件文件。
 
 更多详情请阅读:
 
@@ -6047,14 +5949,13 @@ existing filetype plugin file.
     |'runtimepath'|
 
  								*faq-26.4*
-26.4. How do I turn off loading the Vim plugins?
+26.4. 如何关闭 Vim 插件的载入？
 
-You can reset the 'loadplugins' option to turn off loading the plugins: >
+可以复位 'loadplugins' 选项来关闭插件的载入: >
 
     :set noloadplugins
 <
-You can also specify the "--noplugin" command line argument to stop loading
-the plugins: >
+也可指定  "--noplugin" 命令行参数来停止插件的载入: >
 
     $ vim --noplugin
 <
@@ -6065,14 +5966,13 @@ the plugins: >
     |load-plugins|
 
  								*faq-26.5*
-26.5. How do I turn on/off loading the filetype plugins?
+26.5. 如何打开/关闭文件类型插件的载入？
 
-By default, Vim will not load the filetype plugins. You can configure Vim
-to load filetype plugins using the command: >
+缺省 Vim 不载入文件类型插件。可以用此命令配置 Vim 来载入文件类型插件: >
 
     filetype plugin on
 <
-You can turn off loading the filetype plugins using: >
+可以这样关闭文件类型的载入: >
 
     filetype plugin off
 <
@@ -6083,21 +5983,18 @@ You can turn off loading the filetype plugins using: >
     |:filetype|
 
  								*faq-26.6*
-26.6. How do I override settings made in a file type plugin in the global
-      ftplugin directory for all the file types?
+26.6. 如何为所有文件类型覆盖全局 ftplugin 目录下的文件类型插件的设定？
 
-You can use an autocommand triggered on the FileType event: >
+可用 FileType 事件触发的自动命令: >
 
     au Filetype * set formatoptions=xyz
 <
-This should at least be after "filetype on" in your vimrc. Best is to put
-it in your "myfiletypefile" file, so that it's always last.
+至少应在 vimrc 中的 "filetype on" 之后出现。最好放在你自己的 "myfiletypefile"
+文件里，保证在最后执行。
 
-If you want to override a setting for a particular filetype, then create a
-file with the same name as the original filetype plugin in the
-~/.vim/after/ftplugin directory For example, to override a setting in the
-c.vim filetype plugin, create a c.vim file in the ~/.vim/after/ftplugin
-directory and add your preferences in this file.
+如果你要覆盖特定文件类型的设定，在 ~/.vim/after/ftplugin 目录下创建和原来的文
+件类型插件同名的文件。例如，要覆盖 c.vim 文件类型插件的设置，在
+~/.vim/after/ftplugin 目录下创建 c.vim 文件，并在此文件中加入你的偏好设置。
 
 更多详情请阅读:
 
@@ -6106,10 +6003,9 @@ directory and add your preferences in this file.
     |myfiletypefile|
 
  								*faq-26.7*
-26.7. How do I disable the Vim directory browser plugin?
+26.7. 如何关闭 Vim 目录浏览器插件？
 
-To disable the directory browsing Vim plugin, add the following line to
-your .vimrc file: >
+要关闭目录浏览 Vim 插件，在 .vimrc 文件中加入以下行: >
 
     let g:loaded_netrw = 1
 <
@@ -6118,21 +6014,17 @@ your .vimrc file: >
     |netrw|
 
  								*faq-26.8*
-26.8. How do I set the filetype option for files with names matching a
-      particular pattern or depending on the file extension?
+26.8. 如何为名字匹配特定模式或文件扩展名的文件设置 filetype 选项？
 
-You can set the 'filetype' option for files with names matching a
-particular pattern using an autocmd. For example, to set the 'filetype'
-option to "c" for all files with extension ".x", you can use the following
-autocmd: >
+可用自动命令为名字匹配特定模式的文件设置 'filetype' 选项。例如，要为所有带扩展
+名 ".x" 的文件设置 'filetype' 选项为 "c"，可用以下自动命令: >
 
     autocmd! BufRead,BufNewFile *.x     setfiletype c
 <
-A better alternative to the above approach is to create a filetype.vim file
-in the ~/.vim directory (or in one of the directories specified in the
-'runtimepath' option) and add the following lines: >
+比上述方法更好的办法是在 ~/.vim 目录 (或 'runtimepath' 选项指定的目录之一) 下
+创建 filetype.vim 文件，并加入以下行: >
 
-    " my filetype file
+    " 我的 filetype 文件
     if exists("did_load_filetypes")
         finish
     endif
@@ -6371,8 +6263,10 @@ in the ~/.vim directory (or in one of the directories specified in the
  								*faq-28.3*
 28.3. 如何为快速修复/位置列表的每个项目执行命令？
 
-从 Vim 7.4.858 开始，Vim 提供了新命令 `:cfdo`、`:cdo`、`:lfdo` 和 `:ldo`。它们的工作方法是遍历快速修复列表的所有项目，为每个项目执行一个命令。区别是 `:lfdo`
-和 `:ldo` 命令遍历的是位置列表项目，而 `:cfdo` 和 `:cdo` 命令在快速修复列表的项目上操作。还有，`:cfdo` 和 `:lfdo` 在所有不同的文件上操作，而 `:cdo` 和
+从 Vim 7.4.858 开始，Vim 提供了新命令 `:cfdo`、`:cdo`、`:lfdo` 和 `:ldo`。它们
+的工作方法是遍历快速修复列表的所有项目，为每个项目执行一个命令。区别是 `:lfdo`
+和 `:ldo` 命令遍历的是位置列表项目，而 `:cfdo` 和 `:cdo` 命令在快速修复列表的
+项目上操作。还有，`:cfdo` 和 `:lfdo` 在所有不同的文件上操作，而 `:cdo` 和
 `:ldo` 命令在快速修复/位置列表的每个项目上操作。
 
 例如，可在当前目录里用 vimgrep 来搜索所有 C 文件里的字符串 "Foobar": >
@@ -6523,8 +6417,8 @@ in the ~/.vim directory (or in one of the directories specified in the
 把键盘焦点移到别处，也可用 CTRL-W 来浏览不同的 Vim 窗口。要给终端发送 CTRL-W，
 须用 CTRL-W .
 
-要专门为终端模式映射键，可用新的 `:tmap` 命令。在终端窗口中按 CTRL-W N 后会切换
-到终端普通模式 (可用于移动光标，滚动窗口等等，就像普通模式一样)。
+要专门为终端模式映射键，可用新的 `:tmap` 命令。在终端窗口中按 CTRL-W N 后会切
+换到终端普通模式 (可用于移动光标，滚动窗口等等，就像普通模式一样)。
 
 要在终端和 Vim 间交互，Vim 用 term_sendkeys()、终端 API 和客户-服务器机制实现
 了几种接口。
