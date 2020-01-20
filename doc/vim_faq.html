@@ -382,76 +382,54 @@ Charles Campbell 和许多其他人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-24.15">faq-24.15</a>  如何列出所有当前高亮组的定义？
  <a href="vim_faq.html#faq-24.16">faq-24.16</a>  如何在一个语言的语法高亮中嵌入另一个语言的高亮？
                                                 <b class="vimtag"> <a name="faq-vim-script-writing">faq-vim-script-writing</a> </b>
-<code class="section">SECTION 25 - VIM SCRIPT WRITING </code>
- <a href="vim_faq.html#faq-25.1">faq-25.1</a>   How do I list the names of all the scripts sourced by Vim?
- <a href="vim_faq.html#faq-25.2">faq-25.2</a>   How do I debug Vim scripts?
- <a href="vim_faq.html#faq-25.3">faq-25.3</a>   How do I locate the script/plugin which sets a Vim option?
- <a href="vim_faq.html#faq-25.4">faq-25.4</a>   I am getting some error/informational messages from Vim (possibly
-          when running a script), the messages are cleared immediately. How
-          do I display the messages again?
- <a href="vim_faq.html#faq-25.5">faq-25.5</a>   How do I save and restore a plugin specific information across
-          Vim invocations?
- <a href="vim_faq.html#faq-25.6">faq-25.6</a>   How do I start insert mode from a Vim function?
- <a href="vim_faq.html#faq-25.7">faq-25.7</a>   How do I change the cursor position from within a Vim function?
- <a href="vim_faq.html#faq-25.8">faq-25.8</a>   How do I check the value of an environment variable in the .vimrc
-          file?
- <a href="vim_faq.html#faq-25.9">faq-25.9</a>   How do I check whether an environment variable is set or not from
-          a Vim function?
- <a href="vim_faq.html#faq-25.10">faq-25.10</a>  How do I call/use the Vim built-in functions?
- <a href="vim_faq.html#faq-25.11">faq-25.11</a>  I am using some normal mode commands in my Vim script. How do I
-          avoid using the user-defined mappings for these normal mode
-          commands and use the standard Vim functionality for these normal
-          mode commands?
- <a href="vim_faq.html#faq-25.12">faq-25.12</a>  How do I get a visually selected text into a Vim variable or
-          register?
- <a href="vim_faq.html#faq-25.13">faq-25.13</a>  I have some text in a Vim variable "myvar". I would like to use
-          this variable in a  <code class="badlink">:s</code>  substitute command to replace a text
-          "mytext". How do I do this?
- <a href="vim_faq.html#faq-25.14">faq-25.14</a>  A Vim variable (bno) contains a buffer number. How do I use this
-          variable to open the corresponding buffer?
- <a href="vim_faq.html#faq-25.15">faq-25.15</a>  How do I store the value of a Vim option into a Vim variable?
- <a href="vim_faq.html#faq-25.16">faq-25.16</a>  I have copied and inserted some text into a buffer from a Vim
-          function. How do I indent the inserted text from the Vim
-          function?
- <a href="vim_faq.html#faq-25.17">faq-25.17</a>  How do I get the character under the cursor from a Vim script?
- <a href="vim_faq.html#faq-25.18">faq-25.18</a>  How do I get the name of the current file without the extension?
- <a href="vim_faq.html#faq-25.19">faq-25.19</a>  How do I get the basename of the current file?
- <a href="vim_faq.html#faq-25.20">faq-25.20</a>  How do I get the output from a Vim function into the current
-          buffer?
- <a href="vim_faq.html#faq-25.21">faq-25.21</a>  How do I call external programs from a Vim function?
- <a href="vim_faq.html#faq-25.22">faq-25.22</a>  How do I get the return status of a program executed using the
-           <code class="badlink">:!</code>  command?
- <a href="vim_faq.html#faq-25.23">faq-25.23</a>  How do I determine whether the current buffer is modified or
-          not?
- <a href="vim_faq.html#faq-25.24">faq-25.24</a>  I would like to use the carriage return character in a normal
-          command from a Vim script. How do I specify the carriage return
-          character?
- <a href="vim_faq.html#faq-25.25">faq-25.25</a>  How do I split long lines in a Vim script?
- <a href="vim_faq.html#faq-25.26">faq-25.26</a>  When I try to "execute" my function using the `:execute Myfunc()`
-          command, the cursor is moved to the top of the current buffer.
-          Why?
- <a href="vim_faq.html#faq-25.27">faq-25.27</a>  How do I source/execute the contents of a register?
- <a href="vim_faq.html#faq-25.28">faq-25.28</a>  After calling a Vim function or a mapping, when I press the "u"
-          key to undo the last change, Vim undoes all the changes made by
-          the mapping/function. Why?
- <a href="vim_faq.html#faq-25.29">faq-25.29</a>  How can I call a function defined with s: (script local
-          function) from another script/plugin?
- <a href="vim_faq.html#faq-25.30">faq-25.30</a>  Is it possible to un-source a sourced script? In other words,
-          reverse all the commands executed by sourcing a script.
+<code class="section">第二十五节 - VIM 脚本编写</code>
+ <a href="vim_faq.html#faq-25.1">faq-25.1</a>   如何列出 Vim 执行过的所有脚本名？
+ <a href="vim_faq.html#faq-25.2">faq-25.2</a>   如何调试 Vim 脚本？
+ <a href="vim_faq.html#faq-25.3">faq-25.3</a>   如何定位设置某个 Vim 选项的脚本/插件？
+ <a href="vim_faq.html#faq-25.4">faq-25.4</a>   Vim 给出一些错误/提示信息 (可能在运行脚本时)，信息被立即清除。如何
+          才能再次显示这些信息？
+ <a href="vim_faq.html#faq-25.5">faq-25.5</a>   如何跨 Vim 调用保存和恢复插件特定的信息？
+ <a href="vim_faq.html#faq-25.6">faq-25.6</a>   如何在 Vim 函数中启动插入模式？
+ <a href="vim_faq.html#faq-25.7">faq-25.7</a>   如何在 Vim 函数中改变光标位置？
+ <a href="vim_faq.html#faq-25.8">faq-25.8</a>   如何在 .vimrc 文件中检查环境变量值？
+ <a href="vim_faq.html#faq-25.9">faq-25.9</a>   如何在 Vim 函数中检查环境变量设置与否？
+ <a href="vim_faq.html#faq-25.10">faq-25.10</a>  如何调用/使用 Vim 内建函数？
+ <a href="vim_faq.html#faq-25.11">faq-25.11</a>  在 Vim 脚本里使用普通模式命令时，如何避免这些普通模式命令应用用户
+          定义的映射而使用这些普通模式命令标准的 Vim 功能？
+ <a href="vim_faq.html#faq-25.12">faq-25.12</a>  如何把可视选择文本存入 Vim 变量或寄存器？
+ <a href="vim_faq.html#faq-25.13">faq-25.13</a>  Vim 变量 "myvar" 存了一些文本。想在  <code class="badlink">:s</code>  替代命令里用此变量来替代
+          文本 "mytext"。应该怎么做？
+ <a href="vim_faq.html#faq-25.14">faq-25.14</a>  Vim 变量 (bno) 包含了缓冲区号。如何用此变量来打开对应的缓冲区？
+ <a href="vim_faq.html#faq-25.15">faq-25.15</a>  如何保存 Vim 选项值到 Vim 变量里？
+ <a href="vim_faq.html#faq-25.16">faq-25.16</a>  从 Vim 函数复制并插入一些文本到缓冲区。如何在 Vim 函数里缩进插入的
+          文本？
+ <a href="vim_faq.html#faq-25.17">faq-25.17</a>  Vim 脚本里如何取得光标所在的字符？
+ <a href="vim_faq.html#faq-25.18">faq-25.18</a>  如何取得不带扩展名的当前文件名？
+ <a href="vim_faq.html#faq-25.19">faq-25.19</a>  如何取得当前文件名的基名？
+ <a href="vim_faq.html#faq-25.20">faq-25.20</a>  如何把 Vim 函数的输出写入当前缓冲区？
+ <a href="vim_faq.html#faq-25.21">faq-25.21</a>  Vim 函数里如何调用外部程序？
+ <a href="vim_faq.html#faq-25.22">faq-25.22</a>  如何得到用  <code class="badlink">:!</code>  命令执行的程序的返回状态？
+ <a href="vim_faq.html#faq-25.23">faq-25.23</a>  如何确定当前缓冲区是否修改过？
+ <a href="vim_faq.html#faq-25.24">faq-25.24</a>  Vim 脚本里在普通模式命令里想用回车字符。如何指定回车字符？
+ <a href="vim_faq.html#faq-25.25">faq-25.25</a>  Vim 脚本里如何分割长行？
+ <a href="vim_faq.html#faq-25.26">faq-25.26</a>  用 `:execute Myfunc()` 命令试图 "execute" 我的函数时，光标移到了当
+          前缓冲区的顶部。为什么？
+ <a href="vim_faq.html#faq-25.27">faq-25.27</a>  如何执行寄存器的内容？
+ <a href="vim_faq.html#faq-25.28">faq-25.28</a>  调用了 Vim 函数或映射后，按 "u" 键撤销最近的修改时，Vim 撤销了该映
+          射/函数所做的所有改动。为什么？
+ <a href="vim_faq.html#faq-25.29">faq-25.29</a>  如何从另一个脚本/插件中调用定义时带 s: 的函数 (脚本局部函数)？
+ <a href="vim_faq.html#faq-25.30">faq-25.30</a>  可以撤销已执行的脚本吗？换句话说，反转一个脚本执行的所有命令的效果。
                                                                 <b class="vimtag"> <a name="faq-plugins">faq-plugins</a> </b>
-<code class="section">SECTION 26 - PLUGINS </code>
- <a href="vim_faq.html#faq-26.1">faq-26.1</a>   How do I set different options for different types of files?
- <a href="vim_faq.html#faq-26.2">faq-26.2</a>   I have downloaded a Vim plugin or a syntax file or a indent file,
-          or a color scheme or a filetype plugin from the web. Where should
-          I copy these files so that Vim will find them?
- <a href="vim_faq.html#faq-26.3">faq-26.3</a>   How do I extend an existing filetype plugin?
- <a href="vim_faq.html#faq-26.4">faq-26.4</a>   How do I turn off loading the Vim plugins?
- <a href="vim_faq.html#faq-26.5">faq-26.5</a>   How do I turn on/off loading the filetype plugins?
- <a href="vim_faq.html#faq-26.6">faq-26.6</a>   How do I override settings made in a file type plugin in the
-          global ftplugin directory for all the file types?
- <a href="vim_faq.html#faq-26.7">faq-26.7</a>   How do I disable the Vim directory browser plugin?
- <a href="vim_faq.html#faq-26.8">faq-26.8</a>   How do I set the filetype option for files with names matching a
-          particular pattern or depending on the file extension?
+<code class="section">第二十六节 - 插件</code>
+ <a href="vim_faq.html#faq-26.1">faq-26.1</a>   如何为不同类型的文件设置不同的选项？
+ <a href="vim_faq.html#faq-26.2">faq-26.2</a>   从网上下载了 Vim 插件、语法文件、缩进文件、色彩方案或文件类型插
+          件。应该怎么复制这些文件才能让 Vim 能找到它们？
+ <a href="vim_faq.html#faq-26.3">faq-26.3</a>   如何扩展已有的文件类型插件？
+ <a href="vim_faq.html#faq-26.4">faq-26.4</a>   如何关闭 Vim 插件的载入？
+ <a href="vim_faq.html#faq-26.5">faq-26.5</a>   如何打开/关闭文件类型插件的载入？
+ <a href="vim_faq.html#faq-26.6">faq-26.6</a>   如何为所有文件类型覆盖全局 ftplugin 目录下的文件类型插件的设定？
+ <a href="vim_faq.html#faq-26.7">faq-26.7</a>   如何关闭 Vim 目录浏览器插件？
+ <a href="vim_faq.html#faq-26.8">faq-26.8</a>   如何为名字匹配特定模式或文件扩展名的文件设置 filetype 选项？
                                                 <b class="vimtag"> <a name="faq-editing-program-files">faq-editing-program-files</a> </b>
 <code class="section">第二十七节 - 编辑程序文件</code>
  <a href="vim_faq.html#faq-27.1">faq-27.1</a>   如何打开 C/C++ 文件的自动缩进？
@@ -2836,7 +2814,7 @@ World", 可用下列搜索命令:
 
 可用动作命令带抽出操作符 (y) 来从一行中抽出一个位置到另一个位置的文本。例如，
 要抽出当前光标位置到下个 x 字符的文本，用 yfx 或 Fx 和 tx 或 Tx。要抽出直到第
-n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 /word。要抽出直到另
+n 列的文本，用  n|。要抽出直到下个 "word" 的出现的文本，用 /word。要抽出直到另
 一行第 n 列的文本，先用 "ma" 命令标记该位置，再转到抽出开始的位置，然后用 y`a
 来抽出直到标记所在的文本 (<code class="note">注意</code> 引号的方向)
 
@@ -5151,7 +5129,8 @@ Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里
                                                                 <b class="vimtag"> <a name="faq-24.2">faq-24.2</a> </b>
 24.2. 如何改变 Vim 使用的背景和前景色？
 
-Vim 使用 "Normal" 高亮组用于背景和前景色。要改变前景/背景色，可修改 "Normal" 高亮组。例如，要设置背景色为蓝色及前景色为白色，可用 
+Vim 使用 "Normal" 高亮组用于背景和前景色。要改变前景/背景色，可修改 "Normal"
+高亮组。例如，要设置背景色为蓝色及前景色为白色，可用 
 <code class="example"></code>
 <code class="example">    :highlight Normal ctermbg=blue ctermfg=white guibg=blue guifg=white</code>
 
@@ -5378,13 +5357,12 @@ $HOME/vimfiles/syntax 或 $VIM/vimfiles/syntax 目录下。
      <code class="badlink">sh-awk</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-25">faq-25</a> </b></h4><code class="section">SECTION 25 - VIM SCRIPT WRITING </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-25">faq-25</a> </b></h4><code class="section">第二十五节 - VIM 脚本编写</code>
 
                                                                 <b class="vimtag"> <a name="faq-25.1">faq-25.1</a> </b>
-25.1. How do I list the names of all the scripts sourced by Vim?
+25.1. 如何列出 Vim 执行过的所有脚本名？
 
-You can use the  <code class="badlink">:scriptnames</code>  command to list the names of all the scripts
-sourced by Vim: 
+可用  <code class="badlink">:scriptnames</code>  命令来列出 Vim 执行过的所有脚本名: 
 <code class="example"></code>
 <code class="example">    :scriptnames</code>
 
@@ -5393,11 +5371,10 @@ sourced by Vim:
      <code class="badlink">:scriptnames</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.2">faq-25.2</a> </b>
-25.2. How do I debug Vim scripts?
+25.2. 如何调试 Vim 脚本？
 
-Vim has built-in support for a primitive debugger to debug Vim plugins and
-scripts. Using this debugger you can set breakpoints and step through the
-plugin functions.
+Vim 有内建的基本调试器支持，用于调试 Vim 插件和脚本。使用此调试器可设置断点和
+在插入函数上步进。
 
 更多详情请阅读:
 
@@ -5405,10 +5382,9 @@ plugin functions.
      <code class="badlink">-D</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.3">faq-25.3</a> </b>
-25.3. How do I locate the script/plugin which sets a Vim option?
+25.3. 如何定位设置某个 Vim 选项的脚本/插件？
 
-You can use the  <code class="badlink">:verbose</code>  command to locate the plugin/script which last
-modified a Vim option. For example: 
+可用  <code class="badlink">:verbose</code>  命令来定位最后修改某个 Vim 选项的插件/脚本。例如: 
 <code class="example"></code>
 <code class="example">    :verbose set textwidth?</code>
 
@@ -5418,11 +5394,10 @@ modified a Vim option. For example:
      <code class="badlink">:verbose</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.4">faq-25.4</a> </b>
-25.4. I am getting some error/informational messages from Vim (possibly
-      when running a script), the messages are cleared immediately. How do
-      I display the messages again?
+25.4. Vim 给出一些错误/提示信息 (可能在运行脚本时)，信息被立即清除。如何才能再
+      次显示这些信息？
 
-You can use the  <code class="badlink">:messages</code>  command to display the previous messages. 
+可用  <code class="badlink">:messages</code>  命令来显示之前的消息。 
 <code class="example"></code>
 <code class="example">    :messages</code>
 
@@ -5434,13 +5409,10 @@ You can use the  <code class="badlink">:messages</code>  command to display the 
      <code class="badlink">message-history</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.5">faq-25.5</a> </b>
-25.5. How do I save and restore a plugin specific information across Vim
-      invocations?
+25.5. 如何跨 Vim 调用保存和恢复插件特定的信息？
 
-Vim will save and restore global variables that start with an uppercase
-letter and don't contain a lower case letter. For this to work, the
-<code class="badlink">'viminfo'</code> option must contain the "!" flag. Vim will store the variables in
-the viminfo file.
+Vim 会保存和恢复以大写字母开始且不包含小写字母的全局变量。为此， <code class="badlink">'viminfo'</code> 选
+项必须包含 "!" 标志位。Vim 会在 viminfo 文件里保存变量。
 
 更多详情请阅读:
 
@@ -5449,34 +5421,31 @@ the viminfo file.
      <code class="badlink">variables</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.6">faq-25.6</a> </b>
-25.6. How do I start insert mode from a Vim function?
+25.6. 如何在 Vim 函数中启动插入模式？
 
-You can use the  <code class="badlink">:startinsert</code>  command to start the insert mode from inside
-a Vim function.
+可用  <code class="badlink">:startinsert</code>  命令来从 Vim 函数中启动插入模式。
 
 更多详情请阅读:
 
      <code class="badlink">:startinsert</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.7">faq-25.7</a> </b>
-25.7. How do I change the cursor position from within a Vim function?
+25.7. 如何在 Vim 函数中改变光标位置？
 
-You can use the cursor() function to position the cursor. 
+可用 cursor() 函数来定位光标。 
 <code class="example"></code>
 <code class="example">        call cursor(lnum, col)</code>
 
-Alternatively, use the setpos() function: 
+也可用 setpos() 函数: 
 <code class="example"></code>
 <code class="example">        call setpos('.', [bufnum, lnum, col, off])</code>
 
-which set's the cursor in the buffer bufnum to line lnum, column col and
-offset for <code class="badlink">'virtualedit'</code>. You can use the getpos() function, to return a
-list with these values, that can then be fed back to the setpos() function.
+它会设置缓冲区 bufnum 里的光标定位在行 lnum，列 col 和 <code class="badlink">'virtualedit'</code> 所用的偏
+移。可用 getpos() 函数来返回这些值的列表，之后可以在 setpos() 函数里用这些值。
 
-If you want to save and restore the viewpoint on a window, use the
-winsaveview() and winrestview() function calls.
+如果要想保存和恢复窗口的视点，可用 winsaveview() 和 winrestview() 函数调用。
 
-You can also use the following command to change the cursor position: 
+也可用下列命令来改变光标位置: 
 <code class="example"></code>
 <code class="example">        exe "normal! " . lnum . "G" . col . "|"</code>
 
@@ -5490,12 +5459,10 @@ You can also use the following command to change the cursor position:
      <code class="badlink">winrestview()</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.8">faq-25.8</a> </b>
-25.8. How do I check the value of an environment variable in the .vimrc
-      file?
+25.8. 如何在 .vimrc 文件中检查环境变量值？
 
-You can use prefix the environment variable name with the "$" character to
-use it from a Vim script/function.  You can refer to the value of an
-environment variable using the $env_var syntax: 
+在 Vim 脚本函数中可在环境变量名前加上前缀 "$" 字符来访问它。使用 $env_var 语法
+可以引用环境变量的值: 
 <code class="example"></code>
 <code class="example">    if $EDITOR == 'vi'</code>
 <code class="example">    endif</code>
@@ -5505,11 +5472,9 @@ environment variable using the $env_var syntax:
      <code class="badlink">expr-env</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.9">faq-25.9</a> </b>
-25.9. How do I check whether an environment variable is set or not from a
-      Vim function?
+25.9. 如何在 Vim 函数中检查环境变量设置与否？
 
-You can use the exists() function to check for the existence of an
-environment variable. 
+可用 exists() 函数来检查环境变量是否存在。 
 <code class="example"></code>
 <code class="example">    if exists("$MY_ENV_VAR")</code>
 <code class="example">    endif</code>
@@ -5520,28 +5485,25 @@ environment variable.
      <code class="badlink">expr-env</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.10">faq-25.10</a> </b>
-25.10. How do I call/use the Vim built-in functions?
+25.10. 如何调用/使用 Vim 内建函数？
 
-You can use the  <code class="badlink">:call</code>  command to invoke a Vim built-in function: 
+可用  <code class="badlink">:call</code>  命令来调用 Vim 内建函数: 
 <code class="example"></code>
 <code class="example">    :call cursor(10,20)</code>
 
-You can use the  <code class="badlink">:echo</code>  command to echo the value returned by a function: 
+可用  <code class="badlink">:echo</code>  命令来回显函数返回值: 
 <code class="example"></code>
 <code class="example">    :echo char2nr('a')</code>
 
-You can use the  <code class="badlink">:let</code>  command to assign the value returned by a function
-to a variable: 
+可用  <code class="badlink">:let</code>  命令把函数返回值赋给变量: 
 <code class="example"></code>
 <code class="example">    :let a = getline('.')</code>
 
-To store the return value from a function into a Vim register, you can use
-the following command: 
+要把函数返回值存入 Vim 寄存器，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :let @a = system('ls')</code>
 
-The above command will store the output of the "ls" command into
-the register "a".
+以上命令会保存 "ls" 命令的输出到寄存器 "a" 里。
 
 更多详情请阅读:
 
@@ -5553,43 +5515,34 @@ the register "a".
      <code class="badlink">usr_41.txt</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.11">faq-25.11</a> </b>
-25.11. I am using some normal mode commands in my Vim script. How do I
-       avoid using the user-defined mappings for these normal mode commands
-       and use the standard Vim functionality for these normal mode
-       commands?
+25.11. 在 Vim 脚本里使用普通模式命令时，如何避免这些普通模式命令应用用户定义的
+       映射而使用这些普通模式命令标准的 Vim 功能？
 
-You can use the  <code class="badlink">:normal!</code>  command in your script to invoke a normal-mode
-command. This will use the standard functionality of the normal mode
-command and will not use the user-defined mapping.
+脚本中可用  <code class="badlink">:normal!</code>  命令来调用普通模式命令。这会使用普通模式命令的标准功能而
+不应用用户定义的映射。
 
 更多详情请阅读:
 
      <code class="badlink">:normal</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.12">faq-25.12</a> </b>
-25.12. How do I get the current visually selected text into a Vim variable
-       or register?
+25.12. 如何把可视选择文本存入 Vim 变量或寄存器？
 
-You can get the current visually selected text into a Vim variable by
-yanking the text into Vim register and then assigning the contents of the
-register into the variable: 
+要把可视选择文本存入 Vim 变量，可先把文本抽出到 Vim 寄存器里，然后把寄存器的内
+容存入变量: 
 <code class="example"></code>
 <code class="example">    :normal! gvy</code>
 <code class="example">    :let myvar = @"</code>
 
-The above command copies the visually selected text into the variable
-"myvar".
+上述命令把可视选择文本复制入变量 "myvar"。
 
-You can also use the command: 
+也可用以下命令: 
 <code class="example"></code>
 <code class="example">    :normal! gv"*y</code>
 
-In the above command, gv reselects the last visually selected text and the
-rest of the command copies the selected text into the * (clipboard)
-register. Alternatively, you can set the "a" flag in the <code class="badlink">'guioptions'</code>
-option to automatically copy a visually selected text into the * register.
-To do this as part of a visual map, you can use a command similar to the
-one shown below: 
+上述命令里，gv 重新选择了最近可视选择文本，其余命令复制选中的文本进 * (剪贴板)
+寄存器。此外，也可在 <code class="badlink">'guioptions'</code> 选项里设置 "a" 标志位以自动复制可视选择文本
+进 * 寄存器。作为可视映射的一部分，可用下面所示的命令来完成: 
 <code class="example"></code>
 <code class="example">    :vmap &lt;F3&gt; "*y:call ...</code>
 
@@ -5604,11 +5557,10 @@ one shown below:
      <code class="badlink">registers</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.13">faq-25.13</a> </b>
-25.13. I have some text in a Vim variable "myvar". I would like to use this
-       variable in a  <code class="badlink">:s</code>  substitute command to replace a text "mytext".
-       How do I do this?
+25.13. Vim 变量 "myvar" 存了一些文本。想在  <code class="badlink">:s</code>  替代命令里用此变量来替代文本
+       "mytext"。应该怎么做？
 
-You can use the  <code class="badlink">:execute</code>  command to evaluate the variable: 
+可用  <code class="badlink">:execute</code>  命令来计算变量: 
 <code class="example"></code>
 <code class="example">    :execute '%s/mytext/' . myvar . '/'</code>
 
@@ -5616,7 +5568,7 @@ You can use the  <code class="badlink">:execute</code>  command to evaluate the 
 
      <code class="badlink">:execute</code> 
 
-You can also use "\=" in the substitute command to evaluate the variable: 
+也可用替代命令中的 "\=" 来计算变量: 
 <code class="example"></code>
 <code class="example">    :%s/mytext/\=myvar/</code>
 
@@ -5625,12 +5577,10 @@ You can also use "\=" in the substitute command to evaluate the variable:
      <code class="badlink">sub-replace-special</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.14">faq-25.14</a> </b>
-25.14. A Vim variable (bno) contains a buffer number. How do I use this
-       variable to open the corresponding buffer?
+25.14. Vim 变量 (bno) 包含了缓冲区号。如何用此变量来打开对应的缓冲区？
 
-The  <code class="badlink">:buffer</code>  command will not accept a variable name. It accepts only a
-buffer number or buffer name. You have to use the  <code class="badlink">:execute</code>  command to
-evaluate the variable into the corresponding value. For example: 
+ <code class="badlink">:buffer</code>  命令不接受变量名。只接受缓冲区号或缓冲区名。须用  <code class="badlink">:execute</code>  命令来计
+算变量成为对应的值。例如: 
 <code class="example"></code>
 <code class="example">    :execute "buffer " . bno</code>
 
@@ -5639,24 +5589,20 @@ evaluate the variable into the corresponding value. For example:
      <code class="badlink">:execute</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.15">faq-25.15</a> </b>
-25.15. How do I store the value of a Vim option into a Vim variable?
+25.15. 如何保存 Vim 选项值到 Vim 变量里？
 
-You can prefix the option name with the "&amp;" character and assign the option
-value to a Vim variable using the  <code class="badlink">:let</code>  command. For example, to store the
-value of the <code class="badlink">'textwidth'</code> option into the Vim variable "old_tw", you can use
-the following command: 
+可用选项名加上前缀 "&amp;" 字符并把  <code class="badlink">:let</code>  命令来把选项值赋给 Vim 变量。例如，要保
+存 <code class="badlink">'textwidth'</code> 选项值到 Vim 变量 "old_tw"，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :let old_tw = &amp;tw</code>
 
-To explicitly save buffer local options, use the prefix "l:" 
+要显式保存缓冲区局部选项，可用前缀 "l:" 
 <code class="example"></code>
 <code class="example">    :let old_tw = &amp;l:tw</code>
 
-If you want to explicitly select the global option, use the "g:" prefix to
-the option name.
+要显式保存全局选项，可用选项名加上前缀 "g:"。
 
-To do the opposite, to set the <code class="badlink">'textwidth'</code> option with the value stored in
-the "old_tw" variable, you can use the following command: 
+相反地，要把 "old_tw" 变量保存的值赋给 <code class="badlink">'textwidth'</code> 选项，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :let &amp;tw = old_tw</code>
 
@@ -5666,10 +5612,10 @@ the "old_tw" variable, you can use the following command:
      <code class="badlink">:let-option</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.16">faq-25.16</a> </b>
-25.16. I have copied and inserted some text into a buffer from a Vim
-       function. How do I indent the inserted text from the Vim function?
+25.16. 从 Vim 函数复制并插入一些文本到缓冲区。如何在 Vim 函数里缩进插入的文
+       本？
 
-You can use the following command to format the just inserted text: 
+可用以下命令来排版刚刚插入的文本: 
 <code class="example"></code>
 <code class="example">    :normal '[=']</code>
 
@@ -5681,27 +5627,23 @@ You can use the following command to format the just inserted text:
      <code class="badlink">:normal</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.17">faq-25.17</a> </b>
-25.17. How do I get the character under the cursor from a Vim script?
+25.17. Vim 脚本里如何取得光标所在的字符？
 
-You can use the getline() function and use string index [] to get the
-character: 
+可用 getline() 函数并用字符串索引 [] 来取得字符: 
 <code class="example"></code>
 <code class="example">    :echo getline(".")[col(".") - 1]</code>
 
-In the above command, getline(".") returns  the text in the current line.
-The indexing of the string starts at zero, and you can get a single
-character in a string by its index with the "string[index]" notation. The
-col(".") returns the column of the cursor position; the adjustment is to
-get the right character of the string. However, this does NOT work with
-multibyte characters as this command only returns the byte index.
+上述命令中，getline(".") 返回当前行上的文本，字符串的索引从零开始，用
+"string[index]" 记法可以取得该字符串对应索引的单个字符。col(".)" 返回光标所在
+的列；调整是为了取得字符串上正确的字符。不过，这 <code class="emphasis">不能</code> 用于多字节字符，因为此命
+令只返回字节索引。
 
-Alternatively, you can use the following sequence of commands to get the
-character under the cursor: 
+此外，也可用下列命令序列来取得光标所在的字符: 
 <code class="example"></code>
 <code class="example">    normal! vy</code>
 <code class="example">    let ch=@"</code>
 
-Note, that the above commands will change the '&lt; and '&gt; marks.
+<code class="note">注意</code>，上述命令会改变 '&lt; 或 '&gt; 位置标记。
 
 更多详情请阅读:
 
@@ -5710,13 +5652,13 @@ Note, that the above commands will change the '&lt; and '&gt; marks.
      <code class="badlink">expr-[]</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.18">faq-25.18</a> </b>
-25.18. How do I get the name of the current file without the extension?
+25.18. 如何取得不带扩展名的当前文件名？
 
-You can get the name of the current file without the extension using: 
+可以这样取得不带扩展名的当前文件名: 
 <code class="example"></code>
 <code class="example">    :echo expand("%:r")</code>
 
-With some commands, you can use the file name modifiers directly: 
+有些命令里可以直接用文件名修饰符: 
 <code class="example"></code>
 <code class="example">    :cd %:p:h</code>
 <code class="example">    :!gcc -o %:r.o %</code>
@@ -5730,10 +5672,9 @@ With some commands, you can use the file name modifiers directly:
      <code class="badlink">fnamemodify()</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.19">faq-25.19</a> </b>
-25.19. How do I get the basename of the current file?
+25.19. 如何取得当前文件名的基名？
 
-You can use the ":t" filename modifier to get the basename of the current
-file: 
+可用 ":t" 文件名修饰符来取得当前文件名的基名: 
 <code class="example"></code>
 <code class="example">    :echo expand("%:t")</code>
 
@@ -5742,14 +5683,13 @@ file:
      <code class="badlink">filename-modifiers</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.20">faq-25.20</a> </b>
-25.20. How do I get the output from a Vim function into the current buffer?
+25.20. 如何把 Vim 函数的输出写入当前缓冲区？
 
-You can insert the return value from a function using the following command
-in insert mode: 
+插入模式下，可以用以下命令插入函数的返回值: 
 <code class="example"></code>
 <code class="example">    &lt;C-R&gt;=MyFunc()</code>
 
-Note, that this will only insert the return value of the function.
+<code class="note">注意</code>，这只能插入函数的返回值。
 
 更多详情请阅读:
 
@@ -5759,15 +5699,14 @@ Note, that this will only insert the return value of the function.
      <code class="badlink">expression</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.21">faq-25.21</a> </b>
-25.21. How do I call external programs from a Vim function?
+25.21. Vim 函数里如何调用外部程序？
 
-There are several ways to call external programs from a Vim function. You
-can use the builtin system() function to invoke external programs and get
-the result: 
+Vim 函数里有几种方式可以调用外部程序。可用内建的 system() 函数来调用外部程序并
+返回结果: 
 <code class="example"></code>
 <code class="example">    :let output = system("ls")</code>
 
-You can also use "!" ex-command to run an external command.
+也可用 "!" ex 命令来运行外部程序。
 
 更多详情请阅读:
 
@@ -5776,25 +5715,22 @@ You can also use "!" ex-command to run an external command.
      <code class="badlink">10.9</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.22">faq-25.22</a> </b>
-25.22. How do I get the return status of a program executed using the  <code class="badlink">:!</code> 
-       command?
+25.22. 如何得到用  <code class="badlink">:!</code>  命令执行的程序的返回状态？
 
-You can use the predefined Vim v:shell_error variable to get the return
-status of the last run shell command.
+可用预定义的 Vim v:shell_error 变量来取得最近运行的外壳命令的返回状态。
 
 更多详情请阅读:
 
      <code class="badlink">v:shell_error</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.23">faq-25.23</a> </b>
-25.23. How do I determine whether the current buffer is modified or not?
+25.23. 如何确定当前缓冲区是否修改过？
 
-You can check the value of the <code class="badlink">'modified'</code> option to determine whether the
-current buffer is modified: 
+可以检查 <code class="badlink">'modified'</code> 选项值来决定当前缓冲区是否修改过: 
 <code class="example"></code>
 <code class="example">    :set modified?</code>
 
-From a Vim script, you can check the value of the <code class="badlink">'modified'</code> option: 
+Vim 脚本里，可以这样检查 <code class="badlink">'modified'</code> 选项值: 
 <code class="example"></code>
 <code class="example">    if &amp;modified</code>
 <code class="example">        echo "File is modified"</code>
@@ -5805,12 +5741,9 @@ From a Vim script, you can check the value of the <code class="badlink">'modifie
      <code class="badlink">'modified'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.24">faq-25.24</a> </b>
-25.24. I would like to use the carriage return character in a normal
-       command from a Vim script. How do I specify the carriage return
-       character?
+25.24. Vim 脚本里在普通模式命令里想用回车字符。如何指定回车字符？
 
-You can use the  <code class="badlink">:execute</code>  command to specify the special (control)
-character in a normal mode command: 
+可用  <code class="badlink">:execute</code>  命令来指定普通模式命令使用的特殊 (控制) 字符: 
 <code class="example"></code>
 <code class="example">    :execute "normal \&lt;CR&gt;"</code>
 <code class="example">    :execute "normal ixxx\&lt;Esc&gt;"</code>
@@ -5821,10 +5754,9 @@ character in a normal mode command:
      <code class="badlink">expr-quote</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.25">faq-25.25</a> </b>
-25.25. How do I split long lines in a Vim script?
+25.25. Vim 脚本里如何分割长行？
 
-You can split long lines in a Vim script by inserting the backslash
-character ("\") at the start of the next line. For example, 
+Vim 脚本里可以在下一行的行首插入反斜杠 ("\") 字符来分隔长行。例如， 
 <code class="example"></code>
 <code class="example">    set comments=sr:/*,mb:*,el:*/,</code>
 <code class="example">                \://,</code>
@@ -5838,19 +5770,15 @@ character ("\") at the start of the next line. For example,
      <code class="badlink">line-continuation</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.26">faq-25.26</a> </b>
-25.26. When I try to "execute" my function using the `:execute Myfunc()`
-       command, the cursor is moved to the top of the current buffer.
-       Why?
+25.26. 用 `:execute Myfunc()` 命令试图 "execute" 我的函数时，光标移到了当前缓
+       冲区的顶部。为什么？
 
-The  <code class="badlink">:execute</code>  command runs the ex command specified by the argument.
-In the case of the following command: 
+ <code class="badlink">:execute</code>  命令运行参数指定的 ex 命令。在下列命令的情形下: 
 <code class="example"></code>
 <code class="example">    :execute Myfunc()</code>
 
-The call to Myfunc() will return 0. The  <code class="badlink">:execute</code>  command will run
-the ex command  <code class="badlink">:0</code> , which moves the cursor to the top of the file.
-To call a Vim function, you should use the  <code class="badlink">:call</code>  command instead of the
- <code class="badlink">:execute</code>  command: 
+Myfunc() 的调用会返回 0。 <code class="badlink">:execute</code>  命令会运行 ex 命令  <code class="badlink">:0</code> ，这会移动光标到文
+件顶部。所以，要调用 Vim 函数，应该用  <code class="badlink">:call</code>  命令而不是  <code class="badlink">:execute</code>  命令: 
 <code class="example"></code>
 <code class="example">    :call Myfunc()</code>
 
@@ -5865,14 +5793,13 @@ To call a Vim function, you should use the  <code class="badlink">:call</code>  
      <code class="badlink">cmdline-lines</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.27">faq-25.27</a> </b>
-25.27. How do I source/execute the contents of a register?
+25.27. 如何执行寄存器的内容？
 
-If you have yanked a set of Vim commands into a Vim register (for example
-register "a"), then you can source the contents of the register using one
-of the following commands:
+如果抽出了一组 Vim 命令到 Vim 寄存器里 (如寄存器 "a")，就可以用以下命令之一来
+执行寄存器的内容:
 
     :@a
-or
+或
     :exe @a
 
 更多详情请阅读:
@@ -5880,14 +5807,11 @@ or
      <code class="badlink">:@</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.28">faq-25.28</a> </b>
-25.28. After calling a Vim function or a mapping, when I press the "u"
-       key to undo the last change, Vim undoes all the changes made by
-       the mapping/function. Why?
+25.28. 调用了 Vim 函数或映射后，按 "u" 键撤销最近的修改时，Vim 撤销了该映射/函
+       数所做的所有改动。为什么？
 
-When you call a function or a mapping, all the operations performed by the
-function/mapping are treated as one single operation. When you undo the
-last operation by pressing "u", all the changes made by the
-function/mapping are reversed.
+调用了 Vim 函数或映射后，该函数/映射所做的所有操作都会当成一个单一操作。按 "u"
+撤销最近操作时，此函数/映射所做的所有改动都被逆转。
 
 更多详情请阅读:
 
@@ -5895,14 +5819,11 @@ function/mapping are reversed.
      <code class="badlink">:map-undo</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.29">faq-25.29</a> </b>
-25.29. How can I call a function defined with s: (script local function)
-       from another script/plugin?
+25.29. 如何从另一个脚本/插件中调用定义时带 s: 的函数 (脚本局部函数)？
 
-The s: prefix for a Vim function name is used to create a script local
-function. A script local function can be called only from within that
-script and cannot be called from other scripts. To define a function in a
-script/plugin, so that it can be called from other plugins/scripts, define
-the function without the s: prefix.
+Vim 函数名的 s: 前缀用于创建脚本局部函数。脚本局部函数只可在该脚本内部调用，不
+能从其它脚本中执行。要在脚本中定义其它插件/脚本可调用的函数，函数定义时不能带
+s: 前缀。
 
 更多详情请阅读:
 
@@ -5911,42 +5832,37 @@ the function without the s: prefix.
      <code class="badlink">:scriptnames</code> 
 
                                                                 <b class="vimtag"> <a name="faq-25.30">faq-25.30</a> </b>
-25.30. Is it possible to un-source a sourced script? In other words, reverse
-       all the commands executed by sourcing a script.
+25.30. 可以撤销已执行的脚本吗？换句话说，反转一个脚本执行的所有命令的效果。
 
-No. It is not possible to reverse or undo all the commands executed by
-sourcing a script.
+不可以。没有办法反转或撤销一个脚本执行的所有命令的效果。
 
 更多详情请阅读:
 
      <code class="badlink">:source</code> 
 
 </section><hr class="doubleline" /><section class=inner>
-<h4>                                                                <b class="vimtag"> <a name="faq-26">faq-26</a> </b></h4><code class="section">SECTION 26 - PLUGINS </code>
+<h4>                                                                <b class="vimtag"> <a name="faq-26">faq-26</a> </b></h4><code class="section">第二十六节 - 插件</code>
 
                                                                 <b class="vimtag"> <a name="faq-26.1">faq-26.1</a> </b>
-26.1. How do I set different options for different types of files?
+26.1. 如何为不同类型的文件设置不同的选项？
 
-You can create filetype plugins to set different options for different
-types of files. You should first enable filetype plugins using the command: 
+可创建文件类型插件来为不同类型的文件设置不同的选项。首先要用此命令打开文件类型
+插件: 
 <code class="example"></code>
 <code class="example">    :filetype plugin on</code>
 
-A filetype plugin is a vim script that is loaded whenever Vim opens or
-creates a file of that type.  For example, to ensure that the <code class="badlink">'textwidth'</code>
-option is set to 80 when editing a C program (filetype "c"), create one of
-the following files: 
+文件类型插件是 Vim 打开或创建该类型文件时都会载入的 vim 脚本。例如，要确保编辑
+C 程序 (文件类型是 "c") 时 <code class="badlink">'textwidth'</code> 选项设为 80，建立下列文件之一: 
 <code class="example"></code>
 <code class="example">        ~/.vim/ftplugin/c.vim (Unix)</code>
 <code class="example">        %HOME%\vimfiles\ftplugin\c.vim (Windows)</code>
 
-with the following text in it: 
+放入下面的文本: 
 <code class="example"></code>
 <code class="example">        setlocal textwidth=80</code>
 
-You can also use autocommands to set specific options when editing specific
-type of files. For example, to set the <code class="badlink">'textwidth'</code> option to 75 for only
-*.txt files, you can use the following autocmd: 
+也可用自动命令在编辑指定文件类型时设置特定选项。例如，要只为 *.txt 文件设置
+<code class="badlink">'textwidth'</code> 选项为 75，可用以下自动命令: 
 <code class="example"></code>
 <code class="example">    autocmd BufRead *.txt setlocal textwidth=80</code>
 
@@ -5958,35 +5874,31 @@ type of files. For example, to set the <code class="badlink">'textwidth'</code> 
      <code class="badlink">40.3</code> 
 
                                                                 <b class="vimtag"> <a name="faq-26.2">faq-26.2</a> </b>
-26.2. I have downloaded a Vim plugin or a syntax file or a indent file, or
-      a color scheme or a filetype plugin from the web. Where should I copy
-      these files so that Vim will find them?
+26.2. 从网上下载了 Vim 插件、语法文件、缩进文件、色彩方案或文件类型插件。应该
+      怎么复制这些文件才能让 Vim 能找到它们？
 
-You can place the Vim runtime files (plugins, syntax files, indent files,
-color schemes, filetype plugins, etc) under one of the directories
-specified in the <code class="badlink">'runtimepath'</code> option. To determine the current value of
-the <code class="badlink">'runtimepath'</code> option, use the following command: 
+可把 Vim 运行时文件 (插件、语法文件、缩进文件、色彩方案、文件类型插件等等) 放
+在 <code class="badlink">'runtimepath'</code> 选项指定的一个目录下。要知道 <code class="badlink">'runtimepath'</code> 选项的当前值，可用
+以下命令: 
 <code class="example"></code>
 <code class="example">    :set runtimepath</code>
 
-For Unix systems, this is usually the "$HOME/.vim" directory. For MS-Windows
-systems, this is usually the $VIM\vimfiles or $HOME\vimfiles directory.
-Depending on the type of the runtime file, you have to place it under a
-specific directory under the above runtime directory. The names of the
-directories are listed below:
+Unix 系统上，通常是 "$HOME/.vim" 目录。MS-Windows 系统上，通常是 $VIM\vimfiles
+或 $HOME\vimfiles 目录。须放在上述运行时目录下取决于运行时文件的类型的指定目录
+里。下面列出这些目录名:
 
-<code class="section">    name        description </code>
+<code class="section">    目录名      描述</code>
 <code class="section">    ----------  ------------------ </code>
-    colors/     color scheme files
-    compiler/   compiler files
-    doc/        documentation
-    ftplugin/   filetype plugins
-    indent/     indent scripts
-    keymap/     key mapping files
-    lang/       menu translations
-    plugin/     plugin scripts
-    syntax/     syntax files
-    tutor/      files for vimtutor
+    colors/     色彩方案文件
+    compiler/   编译器文件
+    doc/        文档
+    ftplugin/   文件类型插件
+    indent/     缩进脚本
+    keymap/     键盘映射文件
+    lang/       菜单翻译
+    plugin/     插入脚本
+    syntax/     语法文件
+    tutor/      vimtutor 教程文件
 
 更多详情请阅读:
 
@@ -5995,52 +5907,42 @@ directories are listed below:
      <code class="badlink">:runtime</code> 
 
                                                                 <b class="vimtag"> <a name="faq-26.3">faq-26.3</a> </b>
-26.3. How do I extend an existing filetype plugin?
+26.3. 如何扩展已有的文件类型插件？
 
-You can extend an existing filetype plugin by creating a file in the
-after/ directory in any of the <code class="badlink">'runtimepath'</code> directories.
+可在任何 <code class="badlink">'runtimepath'</code> 目录下的 after/ 目录里创建文件来扩展已有的文件类型插
+件。
 
 
-- for small changes to be done after (and in addition to) what is
-  already done by the ftplugin installed with Vim, use an after-directory,
-  as follows (replacing foobar by the <code class="badlink">'filetype'</code> of the concerned
-  files):
-    - For changes private to one user:
-        - on Windows:
+- 在 Vim 安装的 ftplugin 已经完成部分之上的小改动 (或新增)，使用 after 目录如
+  下 (把 foobar 换成关心的 <code class="badlink">'filetype'</code>):
+    - 只用于一个用户的私人修改:
+        - Windows 上:
             $HOME/vimfiles/after/ftplugin/foobar.vim
-        - on Unix-like OSes:
+        - Unix 系列的操作系统上:
             $HOME/.vim/after/ftplugin/foobar.vim
-    - For changes affecting all users on the system:
+    - 影响系统上所有用户的修改:
         $VIM/vimfiles/after/ftplugin/foobar.vim
 
-- when replacing the whole filetype-plugin by a different version, or
-  when installing a new ftplugin for some filetype not yet supported by
-  Vim out of the box: use the same paths without the after/ in them. In
-  that case you should place near the start of your plugin an "if...
-  finish... endif... let" block like the one in the plugins distributed
-  with Vim.
+- 用不同的版本替换整个文件类型插件或安装 Vim 原装还不支持的文件类型的新文件类
+  型插件时: 使用相同的路径，但不带 after/ 部分。这种情况下应该在插件头部放上
+  "if... finish... endif... let" 块，就像随 Vim 发布的插件那样。
 
-All the above paths are given in Vim terminology (which is similar to
-Unix terminology, but is understood even by Vim for Windows); they don't
-exist by default, so the first time you need them you will have to
-create them using mkdir (on any OS including DOS/Windows) or md (on
-DOS/Windows only). $VIM and, on DOS/Windows, $HOME, do not necessarily
-exist outside Vim. If $HOME has no value (or no valid value) inside Vim,
-you can use $VIM instead; but on any but possibly very old versions of
-Windows, $HOMEDRIVE and $HOMEPATH are defined by the system, and if
-$HOME is undefined at Vim startup, Vim will set it by expanding
-$HOMEDRIVE$HOMEPATH before sourcing your vimrc. To know which values Vim
-uses, you can type (in a running Vim): 
+上述路径使用 Vim 的术语 (和 Unix 术语类似，但即使 Windows 上的 Vim 也能理解)；
+缺省这些目录不存在，第一次需要的时候你要自己用 mkdir (任何 OS 包括 DOS/Windows
+上都有) 或 md (只用于 DOS/Windows) 创建这些目录。在 Vim 之外，$VIM 和
+DOS/Windows 上的 $HOME 未必存在。如果 $HOME 在 Vim 里没有值 (或没有合法值)，可
+用 $VIM 代替；不过除了很老的 Windows 系统外，$HOMEDRIVE 和 $HOMEPATH 由系统定
+义，如果 Vim 启动时 $HOME 无定义，Vim 会在执行你的 vimrc 之前通过扩展
+$HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 (在运行中的 Vim
+里) 输入: 
 <code class="example"></code>
 <code class="example">    :echo $VIM</code>
 <code class="example">    :echo $HOME</code>
 
 
-If you placed the file in the after/ftplugin runtime directory, then Vim
-will first source the existing filetype plugin file and then will source
-the new file.  If you placed the file in the $VIMRTUNTIME/ftplugin runtime
-directory, then Vim will first source the new file and then will source the
-existing filetype plugin file.
+如果把文件放在 after/ftplugin 运行时目录下，Vim 会先执行已有的文件类型插件文件
+然后执行新文件。如果把文件放在 $VIMRUNTIME/ftplugin 运行时目录下，Vim 会先执行
+新文件然后再执行已有的文件类型插件文件。
 
 更多详情请阅读:
 
@@ -6050,14 +5952,13 @@ existing filetype plugin file.
      <code class="badlink">'runtimepath'</code> 
 
                                                                 <b class="vimtag"> <a name="faq-26.4">faq-26.4</a> </b>
-26.4. How do I turn off loading the Vim plugins?
+26.4. 如何关闭 Vim 插件的载入？
 
-You can reset the <code class="badlink">'loadplugins'</code> option to turn off loading the plugins: 
+可以复位 <code class="badlink">'loadplugins'</code> 选项来关闭插件的载入: 
 <code class="example"></code>
 <code class="example">    :set noloadplugins</code>
 
-You can also specify the "--noplugin" command line argument to stop loading
-the plugins: 
+也可指定  "--noplugin" 命令行参数来停止插件的载入: 
 <code class="example"></code>
 <code class="example">    $ vim --noplugin</code>
 
@@ -6068,14 +5969,13 @@ the plugins:
      <code class="badlink">load-plugins</code> 
 
                                                                 <b class="vimtag"> <a name="faq-26.5">faq-26.5</a> </b>
-26.5. How do I turn on/off loading the filetype plugins?
+26.5. 如何打开/关闭文件类型插件的载入？
 
-By default, Vim will not load the filetype plugins. You can configure Vim
-to load filetype plugins using the command: 
+缺省 Vim 不载入文件类型插件。可以用此命令配置 Vim 来载入文件类型插件: 
 <code class="example"></code>
 <code class="example">    filetype plugin on</code>
 
-You can turn off loading the filetype plugins using: 
+可以这样关闭文件类型的载入: 
 <code class="example"></code>
 <code class="example">    filetype plugin off</code>
 
@@ -6086,21 +5986,18 @@ You can turn off loading the filetype plugins using:
      <code class="badlink">:filetype</code> 
 
                                                                 <b class="vimtag"> <a name="faq-26.6">faq-26.6</a> </b>
-26.6. How do I override settings made in a file type plugin in the global
-      ftplugin directory for all the file types?
+26.6. 如何为所有文件类型覆盖全局 ftplugin 目录下的文件类型插件的设定？
 
-You can use an autocommand triggered on the FileType event: 
+可用 FileType 事件触发的自动命令: 
 <code class="example"></code>
 <code class="example">    au Filetype * set formatoptions=xyz</code>
 
-This should at least be after "filetype on" in your vimrc. Best is to put
-it in your "myfiletypefile" file, so that it's always last.
+至少应在 vimrc 中的 "filetype on" 之后出现。最好放在你自己的 "myfiletypefile"
+文件里，保证在最后执行。
 
-If you want to override a setting for a particular filetype, then create a
-file with the same name as the original filetype plugin in the
-~/.vim/after/ftplugin directory For example, to override a setting in the
-c.vim filetype plugin, create a c.vim file in the ~/.vim/after/ftplugin
-directory and add your preferences in this file.
+如果你要覆盖特定文件类型的设定，在 ~/.vim/after/ftplugin 目录下创建和原来的文
+件类型插件同名的文件。例如，要覆盖 c.vim 文件类型插件的设置，在
+~/.vim/after/ftplugin 目录下创建 c.vim 文件，并在此文件中加入你的偏好设置。
 
 更多详情请阅读:
 
@@ -6109,10 +6006,9 @@ directory and add your preferences in this file.
      <code class="badlink">myfiletypefile</code> 
 
                                                                 <b class="vimtag"> <a name="faq-26.7">faq-26.7</a> </b>
-26.7. How do I disable the Vim directory browser plugin?
+26.7. 如何关闭 Vim 目录浏览器插件？
 
-To disable the directory browsing Vim plugin, add the following line to
-your .vimrc file: 
+要关闭目录浏览 Vim 插件，在 .vimrc 文件中加入以下行: 
 <code class="example"></code>
 <code class="example">    let g:loaded_netrw = 1</code>
 
@@ -6121,21 +6017,17 @@ your .vimrc file:
      <code class="badlink">netrw</code> 
 
                                                                 <b class="vimtag"> <a name="faq-26.8">faq-26.8</a> </b>
-26.8. How do I set the filetype option for files with names matching a
-      particular pattern or depending on the file extension?
+26.8. 如何为名字匹配特定模式或文件扩展名的文件设置 filetype 选项？
 
-You can set the <code class="badlink">'filetype'</code> option for files with names matching a
-particular pattern using an autocmd. For example, to set the <code class="badlink">'filetype'</code>
-option to "c" for all files with extension ".x", you can use the following
-autocmd: 
+可用自动命令为名字匹配特定模式的文件设置 <code class="badlink">'filetype'</code> 选项。例如，要为所有带扩展
+名 ".x" 的文件设置 <code class="badlink">'filetype'</code> 选项为 "c"，可用以下自动命令: 
 <code class="example"></code>
 <code class="example">    autocmd! BufRead,BufNewFile *.x     setfiletype c</code>
 
-A better alternative to the above approach is to create a filetype.vim file
-in the ~/.vim directory (or in one of the directories specified in the
-<code class="badlink">'runtimepath'</code> option) and add the following lines: 
+比上述方法更好的办法是在 ~/.vim 目录 (或 <code class="badlink">'runtimepath'</code> 选项指定的目录之一) 下
+创建 filetype.vim 文件，并加入以下行: 
 <code class="example"></code>
-<code class="example">    " my filetype file</code>
+<code class="example">    " 我的 filetype 文件</code>
 <code class="example">    if exists("did_load_filetypes")</code>
 <code class="example">        finish</code>
 <code class="example">    endif</code>
@@ -6372,8 +6264,10 @@ in the ~/.vim directory (or in one of the directories specified in the
                                                                 <b class="vimtag"> <a name="faq-28.3">faq-28.3</a> </b>
 28.3. 如何为快速修复/位置列表的每个项目执行命令？
 
-从 Vim 7.4.858 开始，Vim 提供了新命令  <code class="badlink">:cfdo</code> 、 <code class="badlink">:cdo</code> 、 <code class="badlink">:lfdo</code>  和  <code class="badlink">:ldo</code> 。它们的工作方法是遍历快速修复列表的所有项目，为每个项目执行一个命令。区别是  <code class="badlink">:lfdo</code> 
-和  <code class="badlink">:ldo</code>  命令遍历的是位置列表项目，而  <code class="badlink">:cfdo</code>  和  <code class="badlink">:cdo</code>  命令在快速修复列表的项目上操作。还有， <code class="badlink">:cfdo</code>  和  <code class="badlink">:lfdo</code>  在所有不同的文件上操作，而  <code class="badlink">:cdo</code>  和
+从 Vim 7.4.858 开始，Vim 提供了新命令  <code class="badlink">:cfdo</code> 、 <code class="badlink">:cdo</code> 、 <code class="badlink">:lfdo</code>  和  <code class="badlink">:ldo</code> 。它们
+的工作方法是遍历快速修复列表的所有项目，为每个项目执行一个命令。区别是  <code class="badlink">:lfdo</code> 
+和  <code class="badlink">:ldo</code>  命令遍历的是位置列表项目，而  <code class="badlink">:cfdo</code>  和  <code class="badlink">:cdo</code>  命令在快速修复列表的
+项目上操作。还有， <code class="badlink">:cfdo</code>  和  <code class="badlink">:lfdo</code>  在所有不同的文件上操作，而  <code class="badlink">:cdo</code>  和
  <code class="badlink">:ldo</code>  命令在快速修复/位置列表的每个项目上操作。
 
 例如，可在当前目录里用 vimgrep 来搜索所有 C 文件里的字符串 "Foobar": 
@@ -6522,8 +6416,8 @@ in the ~/.vim directory (or in one of the directories specified in the
 把键盘焦点移到别处，也可用 <code class="keystroke">CTRL-W</code> 来浏览不同的 Vim 窗口。要给终端发送 <code class="keystroke">CTRL-W</code>，
 须用 <code class="keystroke">CTRL-W</code> .
 
-要专门为终端模式映射键，可用新的  <code class="badlink">:tmap</code>  命令。在终端窗口中按 <code class="keystroke">CTRL-W</code> N 后会切换
-到终端普通模式 (可用于移动光标，滚动窗口等等，就像普通模式一样)。
+要专门为终端模式映射键，可用新的  <code class="badlink">:tmap</code>  命令。在终端窗口中按 <code class="keystroke">CTRL-W</code> N 后会切
+换到终端普通模式 (可用于移动光标，滚动窗口等等，就像普通模式一样)。
 
 要在终端和 Vim 间交互，Vim 用 term_sendkeys()、终端 API 和客户-服务器机制实现
 了几种接口。
