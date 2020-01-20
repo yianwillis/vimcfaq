@@ -325,47 +325,33 @@ https://vimhelp.appspot.com/vim_faq.txt.html。
 |faq-22.5|  用寄存器 0 来记录键序列时 (即 q0 .... q)，记录的键序列中有抽出文本
 	  的操作。记录的键序列第一次回放后，就不能再次回放了。
                                                         *faq-autocommands*
-SECTION 23 - AUTOCOMMANDS ~
-|faq-23.1|  How do I execute a command when I try to modify a read-only file?
-|faq-23.2|  How do I execute a command every time when entering a buffer?
-|faq-23.3|  How do I execute a command every time when entering a window?
-|faq-23.4|  From an autocmd, how can I determine the name of the file or the
-	  buffer number for which the autocommand is executed?
-|faq-23.5|  How do I automatically save all the changed buffers whenever Vim
-	  loses focus?
-|faq-23.6|  How do I execute/run a function when Vim exits to do some
-	  cleanup?
+第二十三节-自动命令~
+|faq-23.1|  如何在试图修改只读文件时执行命令？
+|faq-23.2|  如何在每次进入缓冲区时执行命令？
+|faq-23.3|  如何在每次进入窗口时执行命令？
+|faq-23.4|  从自动命令里，如何决定激活自动命令的文件名或缓冲区号？
+|faq-23.5|  如何在 Vim 丢失焦点时自动保存所有已修改的缓冲区？
+|faq-23.6|  如何在 Vim 退出时执行/运行函数进行清理？
                                                         *faq-syntax-highlight*
-SECTION 24 - SYNTAX HIGHLIGHT ~
-|faq-24.1|  How do I turn off/on syntax highlighting?
-|faq-24.2|  How do I change the background and foreground colors used by Vim?
-|faq-24.3|  How do I change the highlight colors to suit a dark/light
-	  background?
-|faq-24.4|  How do I change the color of the line numbers displayed when the
-	  `:set number` command is used?
-|faq-24.5|  How do I change the background color used for a Visually selected
-	  block?
-|faq-24.6|  How do I highlight the special characters (tabs, trailing spaces,
-	  end of line, etc) displayed by the 'list' option?
-|faq-24.7|  How do I specify a colorscheme in my .vimrc/.gvimrc file, so that
-	  Vim uses the specified colorscheme every time?
-|faq-24.8|  Vim syntax highlighting is broken. When I am editing a file, some
-	  parts of the file is not syntax highlighted or syntax highlighted
-	  incorrectly.
-|faq-24.9|  Is there a built-in function to syntax-highlight the
-	  corresponding matching bracket?
-|faq-24.10| How do I turn off the C comment syntax highlighting?
-|faq-24.11| How do I add my own syntax extensions to the standard syntax
-	  files supplied with Vim?
-|faq-24.12| How do I replace a standard syntax file that comes with the Vim
-	  distribution with my own syntax file?
-|faq-24.13| How do I highlight all the characters after a particular column?
-|faq-24.14| How do I convert a source file (.c, .h, etc) with the Vim syntax
-	  highlighting into a HTML file?
-|faq-24.15| How do I list the definition of all the current highlight
-	  groups?
-|faq-24.16| How can I embed one syntax highlighting language into another
-	  one?
+第二十四节 - 语法高亮~
+|faq-24.1|  如何关闭/打开语法高亮？
+|faq-24.2|  如何改变 Vim 使用的背景和前景色？
+|faq-24.3|  如何改变高亮色来匹配深色/浅色背景？
+|faq-24.4|  如何改变使用 `:set number` 时显示的行号颜色？
+|faq-24.5|  如何改变用于可视选择列块的背景色？
+|faq-24.6|  如何高亮 'list' 选项显示的特殊字符 (制表、拖尾空格、行尾等)？
+|faq-24.7|  如何在 .vimrc/.gvimrc 文件里设置色彩方案让 Vim 每次都使用指定的色
+	  彩方案？
+|faq-24.8|  Vim 语法高亮不能用了。编辑文件时，文件的一部分没有语法高亮或语法高
+	  亮不正确。
+|faq-24.9|  有没有内建函数来语法高亮对应的匹配括号？
+|faq-24.10| 如何关闭 C 注释语法高亮？
+|faq-24.11| 如何加入我自己的 Vim 提供的标准语法文件的语法扩展？
+|faq-24.12| 如何用我自己语法文件来替换 Vim 发布自带的标准语法文件？
+|faq-24.13| 如何高亮特定列后的所有字符？
+|faq-24.14| 如何把源文件 (.c、.h 等) 带 Vim 语法高亮转换为 HTML 文件？
+|faq-24.15| 如何列出所有当前高亮组的定义？
+|faq-24.16| 如何在一个语言的语法高亮中嵌入另一个语言的高亮？
                                                 *faq-vim-script-writing*
 SECTION 25 - VIM SCRIPT WRITING ~
 |faq-25.1|  How do I list the names of all the scripts sourced by Vim?
@@ -997,9 +983,9 @@ NONE 不读 .vimrc 文件，而 -U NONE 不读 .gvimrc 文件) 或插件来启�
 器: https://github.com/vim/vim/issues. 那里每个消息会转发给 Vim 开发列表。
 
 Vim 开发邮件列表 (见问题 2.2 |faq-2.2|) 是个讨论一般漏洞的好去处。如果你发现的
-漏洞和语法高亮、运行时文件、或其它一些 "附加特性"  (也就是，不直接编进 vim 程
-序的) 有关，试试通知该特性的维护者。相应的运行时文件的顶部会提及他们的 e-mail
-地址。
+漏洞和语法高亮、运行时文件、或其它一些 "附加特性" (也就是，不直接编进 vim 程序
+的) 有关，试试通知该特性的维护者。相应的运行时文件的顶部会提及他们的 e-mail 地
+址。
 
 更多详情请阅读:
 
@@ -1354,7 +1340,7 @@ d)  可用 `:helpgrep` 命令在所有帮助文件中搜索给定文本。打开
  								*faq-5.4*
 5.4. 如何在写入文件时不在文件尾加上换行符 (EOL)？
 
-可以关闭 'eol' 选项并打开  'binary' 选项来，这样在写入文件时就不会在文件尾加上
+可以关闭 'eol' 选项并打开 'binary' 选项来，这样在写入文件时就不会在文件尾加上
 EOL: >
 
     :set binary
@@ -1441,7 +1427,7 @@ Vim 在 '"' 寄存器中保存每个缓冲区上次编辑所在的光标位置�
  								*faq-5.8*
 5.8. 如何重载/重新编辑当前文件？
 
-你可以使用不指定文件名的  `:edit` 命令来重载当前文件。如果此文件有修改，可用
+你可以使用不指定文件名的 `:edit` 命令来重载当前文件。如果此文件有修改，可用
 `:edit!` 来强制当前文件的重载 (会丢失你的修改，但取决于你的 'undoreload' 设
 置，这些修改可能已经在撤销历史中保存)。
 
@@ -3296,7 +3282,7 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
 可用 "xp" 命令序列来交换两个字符。"c" 会删除光标所在的字符而 "p" 会把刚刚删
 除的字符粘贴到光标所在字符之后。最终结果就是交换了两了字符。
 
-可有 "deep" 命令序列来交换两个单词 (先移动光标到首个单词之前的空白上)。
+可用 "deep" 命令序列来交换两个单词 (先移动光标到首个单词之前的空白上)。
 
 可用 "ddp" 命令序列来交换两行。"dd" 删除当前行，而 "p" 把刚刚删除的行粘贴到当
 前行后。最终结果就是交换了两行。
@@ -3871,8 +3857,8 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 https://
 15.6. 可视选择一组行并按 > 键缩进选中的行时，可视模式结束。如何才能重新选择区
       域用于将来的操作？(或) 如何才能重新选择最近选中的可视区域？
 
-可用 "gv" 命令来重重新选择最近选中的可视区域。也可用位置标记 '< 和  '> 来跳转
-到最近选中可视区域的开始和结束处。
+可用 "gv" 命令来重重新选择最近选中的可视区域。也可用位置标记 '< 和 '> 来跳转到
+最近选中可视区域的开始和结束处。
 
 更多详情请阅读:
 
@@ -4245,12 +4231,13 @@ CTRL-F 来打开命令行窗口。命令行窗口里可用所有的 Vim 命令�
  								*faq-19.5*
 19.5. 如何把 Vim 选项设定加入 (嵌入) 文件内容？
 
-可用模式行来把  Vim 选项设定加入文件内容。例如，在 C 文件里，可在文件的顶部或
-底部加入以下行: >
+可用模式行来把 Vim 选项设定加入文件内容。例如，在 C 文件里，可在文件的顶部或底
+部加入以下行: >
 
     /* vim:sw=4: */
 <
-这会编辑该 C 文件时设置  'shiftwidth' 选项为 4。为此，必须置位 'modeline' 选项。缺省，这是置位的。另一个例子在本文档的首行给出。
+这会编辑该 C 文件时设置 'shiftwidth' 选项为 4。为此，必须置位 'modeline' 选
+项。缺省，这是置位的。另一个例子在本文档的首行给出。
 
 'modelines' 设置指定用于检查 Vim set 命令的行数。
 
@@ -4875,8 +4862,8 @@ CTRL-O 命令允许从插入模式下一个普通模式命令的执行，然后�
     :inoremap <silent> <SID>NM <C-\><C-O>:
     :nnoremap <silent> <script> zC <SID>MyMap1<SID>NMcall MyMap2()<CR>
 <
-5)  如果以上都不可行，至少为后续命令用 CTRL-\ CTRL-N 来强制普通模式以避免意外
-    插入映射的余下部分。 >
+5) 如果以上都不可行，至少为后续命令用 CTRL-\ CTRL-N 来强制普通模式以避免意外插
+   入映射的余下部分。 >
 
     :nnoremap zC zC<C-\><C-N>VzCzz
 <
@@ -5058,14 +5045,13 @@ Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里
 
 =============================================================================
  								*faq-23*
-SECTION 23 - AUTOCOMMANDS ~
+第二十三节-自动命令~
 
  								*faq-23.1*
-23.1. How do I execute a command when I try to modify a read-only file?
+23.1. 如何在试图修改只读文件时执行命令？
 
-You can use the FileChangedRO autocommand event to execute a command when a
-read-only file is modified. For example, you can use this event to checkout a
-read-only file: >
+可用 FileChangedRO 自动命令事件在试图修改只读文件时执行命令。例如，利用此事件
+来检出只读文件: >
 
     :autocmd FileChangedRO * call MyCheckoutFunction()
 <
@@ -5074,10 +5060,9 @@ read-only file: >
     |FileChangedRO|
 
  								*faq-23.2*
-23.2. How do I execute a command every time when entering a buffer?
+23.2. 如何在每次进入缓冲区时执行命令？
 
-You can use the BufEnter autocommand event to execute a command every time
-when entering a buffer. For example: >
+可用 BufEnter 自动命令事件在每次进入缓冲区时执行命令。例如: >
 
     :autocmd BufEnter *.c set formatoptions=croqt
 <
@@ -5086,10 +5071,9 @@ when entering a buffer. For example: >
     |BufEnter|
 
  								*faq-23.3*
-23.3. How do I execute a command every time when entering a window?
+23.3. 如何在每次进入窗口时执行命令？
 
-You can use the WinEnter autocommand event to execute a command every time
-when entering a window. For example: >
+可用 WinEnter 自动命令事件在每次进入窗口时执行命令。例如: >
 
     :autocmd WinEnter *.c call MyFunction()
 <
@@ -5098,12 +5082,10 @@ when entering a window. For example: >
     |WinEnter|
 
  								*faq-23.4*
-23.4. From an autocmd, how can I determine the name of the file or the
-      buffer number for which the autocommand is executed?
+23.4. 从自动命令里，如何决定激活自动命令的文件名或缓冲区号？
 
-You can use the special words <afile> or <abuf> in an autocmd to get the
-name of the file or the buffer number for which the autocommand is
-executed.
+可在自动命令里用特殊单词 <afile> 和 <abuf> 取得激活自动命令的文件名或缓冲区
+号。
 
 更多详情请阅读:
 
@@ -5112,11 +5094,9 @@ executed.
     |:<amatch>|
 
  								*faq-23.5*
-23.5. How do I automatically save all the changed buffers whenever Vim
-      loses focus?
+23.5. 如何在 Vim 丢失焦点时自动保存所有已修改的缓冲区？
 
-You can define an autocommand for the FocusLost event which will save all
-the modified buffers whenever Vim loses focus: >
+可定义 FocusLost 自动命令事件在 Vim 丢失焦点时自动保存所有已修过的缓冲区: >
 
     :autocmd FocusLost * wall
 <
@@ -5126,10 +5106,9 @@ the modified buffers whenever Vim loses focus: >
     |:wall|
 
  								*faq-23.6*
-23.6. How do I execute/run a function when Vim exits to do some cleanup?
+23.6. 如何在 Vim 退出时执行/运行函数进行清理？
 
-You can use VimLeave autocmd event to execute a function just before Vim
-exits. For example, >
+可用 VimLeave 自动命令事件在 Vim 即将退出之前执行函数。例如， >
 
     :autocmd VimLeave * call MyCleanupFunction()
 <
@@ -5139,21 +5118,20 @@ exits. For example, >
 
 =============================================================================
  								*faq-24*
-SECTION 24 - SYNTAX HIGHLIGHT ~
+第二十四节 - 语法高亮~
 
  								*faq-24.1*
-24.1. How do I turn off/on syntax highlighting?
+24.1. 如何关闭/打开语法高亮？
 
-By default, the Vim syntax highlighting is turned off. To enable the syntax
-highlighting, you can use one of the following commands: >
+缺省打开 Vim 语法高亮。要打开语法高亮，可用以下命令之一: >
 
     :syntax enable
 <
-    or >
+    或 >
 
     :syntax on
 <
-To disable the syntax highlighting, you can use the following command: >
+要关闭语法高亮，可用以下命令: >
 
     :syntax off
 <
@@ -5166,25 +5144,20 @@ To disable the syntax highlighting, you can use the following command: >
     |:syn-clear|
 
  								*faq-24.2*
-24.2. How do I change the background and foreground colors used by Vim?
+24.2. 如何改变 Vim 使用的背景和前景色？
 
-Vim uses the "Normal" highlight group for the background and foreground
-colors. To change the foreground/background colors, you have to modify the
-"Normal" highlight group. For example, to set the background color to blue
-and foreground color to white, you can use >
+Vim 使用 "Normal" 高亮组用于背景和前景色。要改变前景/背景色，可修改 "Normal" 高亮组。例如，要设置背景色为蓝色及前景色为白色，可用 >
 
     :highlight Normal ctermbg=blue ctermfg=white guibg=blue guifg=white
 <
-If you are using the Motif or the Athena version of the GUI Vim, then you
-can modify the foreground and background resource names in the .Xdefaults
-files to change the colors: >
+如果使用 GUI Vim 的 Motif 或 Athena 版本，可修改 .Xdefaults 文件里的前景和背景
+资源名来修改颜色: >
 
     Vim.foreground:     Black
     Vim.background:     Wheat
 <
-You can also use the "-foreground" and "-background" command-line arguments
-to specify the foreground and background colors. These arguments are
-supported only in the Motif or Athena versions: >
+也可用 "-foreground" 和 "-background" 命令行参数指定前景和背景色。只有 Motif
+和 Athena 版本支持这些参数: >
 
     $ gvim -foreground Black -background Wheat
 <
@@ -5195,10 +5168,10 @@ supported only in the Motif or Athena versions: >
     |-gui|
 
  								*faq-24.3*
-24.3. How do I change the highlight colors to suit a dark/light background?
+24.3. 如何改变高亮色来匹配深色/浅色背景？
 
-You can set the 'background' option to either "dark" or "light" to change
-the highlight colors to suit a dark/light background: >
+可设置  'background' 选项为 "dark" 或 "light" 来改变高亮色来匹配深色/浅色背
+景: >
 
     :set background=dark
 <
@@ -5208,30 +5181,26 @@ the highlight colors to suit a dark/light background: >
     |06.2|
 
  								*faq-24.4*
-24.4. How do I change the color of the line numbers displayed when the
-      `:set number` command is used?
+24.4. 如何改变使用 `:set number` 时显示的行号颜色？
 
-The line numbers displayed use the LineNr highlighting group. To display
-the current colors used, use >
+显示的行号使用 LineNr 高亮组。要显示当前使用的颜色，用 >
 
     :hi LineNr
 <
-To change the color modify the LineNr highlight group. For example: >
+要改变颜色，修改 LineNr 高亮组。例如: >
 
     :hi linenr guifg=red guibg=black
 <
-This will give red numbers on a black background in GVIM.
+GVIM 里这会产生黑色背景红色数字。
 
 更多详情请阅读:
 
     |:highlight|
 
  								*faq-24.5*
-24.5. How do I change the background color used for a Visually selected
-      block?
+24.5. 如何改变用于可视选择列块的背景色？
 
-You can modify the "Visual" highlight group to change the color used for a
-visually selected block: >
+可修改 "Visual" 高亮组来改变用于可视选择列块的背景色: >
 
     :highlight Visual guibg=red
 <
@@ -5241,18 +5210,15 @@ visually selected block: >
     |hl-Visual|
 
  								*faq-24.6*
-24.6. How do I highlight the special characters (tabs, trailing spaces, end
-      of line, etc) displayed by the 'list' option?
+24.6. 如何高亮 'list' 选项显示的特殊字符 (制表、拖尾空格、行尾等)？
 
-You can modify the "NonText" and "SpecialKey" highlight groups to highlight
-the special characters displayed by the 'list' option: >
+可修改 "NonText" 和 "SpecialKey" 高亮组来高亮 'list' 选项显示的特殊字符: >
 
     :highlight NonText guibg=red
     :highlight SpecialKey guibg=green
 <
-The "NonText" highlighting group is used for "eol", "extends" and
-"precedes" settings in the 'listchars' option.  The "SpecialKey"
-highlighting group is used for the "tab" and "trail" settings.
+"NonText" 高亮组用于 'listchars' 选项的 "eol"、"extends" 和 "precedes" 设置。
+"SpecialKey" 高亮组用于 "tab" 和 "trail" 设置。
 
 更多详情请阅读:
 
@@ -5261,11 +5227,10 @@ highlighting group is used for the "tab" and "trail" settings.
     |hl-SpecialKey|
 
  								*faq-24.7*
-24.7. How do I specify a colorscheme in my .vimrc/.gvimrc file, so that Vim
-      uses the specified colorscheme every time?
+24.7. 如何在 .vimrc/.gvimrc 文件里设置色彩方案让 Vim 每次都使用指定的色彩方
+      案？
 
-You can specify the color scheme using the `:colorscheme` command in your
-.vimrc or .gvimrc file: >
+可在 .vimrc 或 .gvimrc 文件里用 `:colorscheme` 命令指定色彩方案: >
 
     colorscheme evening
 <
@@ -5274,19 +5239,16 @@ You can specify the color scheme using the `:colorscheme` command in your
     |:colorscheme|
 
  								*faq-24.8*
-24.8. Vim syntax highlighting is broken. When I am editing a file, some
-      parts of the file is not syntax highlighted or syntax highlighted
-      incorrectly.
+24.8. Vim 语法高亮不能用了。编辑文件时，文件的一部分没有语法高亮或语法高亮不正
+      确。
 
-Vim doesn't read the whole file to parse the text for syntax highlighting.
-It starts parsing wherever you are viewing the file. That saves a lot of
-time, but sometimes the colors are wrong. A simple fix is refreshing the
-screen using the CTRL-L key. Or scroll back a bit and then forward again.
-You can also use the command: >
+Vim 进行语法高亮时不读入整个文件来解析文本。它在任何你阅读文件的地方开始解析。
+这节约了很多时间，但有时颜色是错的。简单的修正是用 CTRL-L 键刷新屏幕。或回滚一
+小段再正向滚动回来。也可用命令: >
 
     :syntax sync fromstart
 <
-Note that this might considerably slow down the screen refreshing.
+注意 这会显著地减慢屏幕刷新。
 
 更多详情请阅读:
 
@@ -5294,22 +5256,16 @@ Note that this might considerably slow down the screen refreshing.
     |:syn-sync-first|
 
  								*faq-24.9*
-24.9. Is there a built-in function to syntax-highlight the corresponding
-      matching bracket?
+24.9. 有没有内建函数来语法高亮对应的匹配括号？
 
-Yes. Vim includes the matchparen Plugin as standard plugin that is enabled
-by default. Whenever the cursor moves over an item defined with the
-'matchpairs' option, Vim will highlight the corresponding bracket using the
-MatchParen highlighting group.
+有的。Vim 包含了 matchparen 插件，作为标准插件缺省打开。无论何时光标移动过
+'matchpairs' 选项定义的项目时，Vim 会用 MatchParen 高亮组高亮对应的括号。
 
-However, if the corresponding parenthesis is not visible in the current
-window, the cursor won't jump to it.
+不过，如果对应的括号在当前窗口不可见，光标不会跳过去。
 
-The matchit plugin provides a similar function, that lets the cursor
-jump to related items (e.g. "if", "else", "endif" items) and skips
-matches in comments. This uses the % command to jump to corresponding
-items. Though both plugins provide similar functions they are unrelated
-and work differently.
+matchit 插件提供了类似的功能，会让光标跳转到相关的项目 (例如 "if"、"else"、
+"endif" 项目) 上并跳过注释里的匹配。它用 % 命令来跳转到对应的项目。尽管两个插
+件提供了相似的功能，两者没有关系，工作方式也不同。
 
 更多详情请阅读:
 
@@ -5319,10 +5275,9 @@ and work differently.
     |matchit-intro|
 
  								*faq-24.10*
-24.10. How do I turn off the C comment syntax highlighting?
+24.10. 如何关闭 C 注释语法高亮？
 
-You can use the following command to turn off C comment syntax
-highlighting: >
+可用以下命令来关闭 C 注释语法高亮: >
 
     :highlight clear comment
 <
@@ -5331,14 +5286,11 @@ highlighting: >
     |ft-c-syntax|
 
  								*faq-24.11*
-24.11. How do I add my own syntax extensions to the standard syntax files
-       supplied with Vim?
+24.11. 如何加入我自己的 Vim 提供的标准语法文件的语法扩展？
 
-You should not modify the syntax files supplied with Vim to add your
-extensions. When you install the next version of Vim, you will lose your
-changes. Instead you should create a file under the ~/.vim/after/syntax
-directory with the same name as the original syntax file and add your
-additions to this file.
+不应修改 Vim 提供的语法文件来加入你的扩展。安装 Vim 的下个版本时，会丢失自己的
+改变。相反，应该在 ~/.vim/after/syntax 目录下建立和原始语法文件同名的文件，在
+该文件里加入你自己的扩展。
 
 更多详情请阅读:
 
@@ -5346,15 +5298,12 @@ additions to this file.
     |'runtimepath'|
 
  								*faq-24.12*
-24.12. How do I replace a standard syntax file that comes with the Vim
-       distribution with my own syntax file?
+24.12. 如何用我自己语法文件来替换 Vim 发布自带的标准语法文件？
 
-You can replace a standard syntax file that comes with the Vim distribution
-by creating a file with the same name as the original syntax file and
-placing it in the vim runtime syntax (~/.vim/syntax) directory. For
-example, to replace the c.vim syntax file in a Unix system, place the new
-c.vim in the ~/.vim/syntax directory. In a MS-Windows system, place the new
-syntax file in the $HOME/vimfiles/syntax or $VIM/vimfiles/syntax directory.
+可建立和原始语法文件同名的文件并放在 vim 运行时语法目录 ~/.vim/syntax 下来替换
+Vim 发布自带的标准语法文件。例如，要替换 Unix 系统上的 c.vim 语法文件，把新的
+c.vim 放在 ~/.vim/syntax 目录下。在 MS-Windows 系统上，把新的语法文件放在
+$HOME/vimfiles/syntax 或 $VIM/vimfiles/syntax 目录下。
 
 更多详情请阅读:
 
@@ -5363,22 +5312,19 @@ syntax file in the $HOME/vimfiles/syntax or $VIM/vimfiles/syntax directory.
     |mysyntaxfile|
 
  								*faq-24.13*
-24.13. How do I highlight all the characters after a particular column?
+24.13. 如何高亮特定列后的所有字符？
 
-You can use the `:match` command to highlight all the characters after a
-particular column: >
+可用 `:match` 命令来高亮特殊列后的所有字符: >
 
     :match Todo '\%>75v.\+'
 <
-This will highlight all the characters after the 75th column.
+这会高亮所有第 75 列之后的字符。
 
-You can also set the 'colorcolumn' option to highlight a particular
-column:
+也可设置 'colorcolumn' 选项来高亮特定列:
 
    :set colorcolumn=+2
 
-which highlights 2 columns after the current 'textwidth' setting
-(alternatively, you can use the exact column number).
+会高亮当前 'textwidth' 设置后面第二列 (也可用绝对列号)。
 
 更多详情请阅读:
 
@@ -5389,11 +5335,9 @@ which highlights 2 columns after the current 'textwidth' setting
     |'colorcolumn'|
 
  								*faq-24.14*
-24.14. How do I convert a source file (.c, .h, etc) with the Vim syntax
-       highlighting into a HTML file?
+24.14. 如何把源文件 (.c、.h 等) 带 Vim 语法高亮转换为 HTML 文件？
 
-You can use the 2html.vim script to convert a source file into a HTML file
-with the Vim syntax highlighting. Use the following command: >
+可用 2html.vim 脚本把源文件带 Vim 语法高亮转换为 HTML 文件。用以下命令: >
 
     :TOhtml
 <
@@ -5403,26 +5347,23 @@ with the Vim syntax highlighting. Use the following command: >
     |:TOhtml|
 
  								*faq-24.15*
-24.15. How do I list the definition of all the current highlight groups?
+24.15. 如何列出所有当前高亮组的定义？
 
-You can list the definition of all the current highlight groups using the
-`:highlight` (without any arguments) ex command.
+可用 `:highlight` (不带参数) ex 命令来列出所有当前高亮组的定义。
 
 更多详情请阅读:
 
     |:highlight|
 
  								*faq-24.16*
-24.16. How can I embed one syntax highlighting language into another one?
+24.16. 如何在一个语言的语法高亮中嵌入另一个语言的高亮？
 
-It is possible to include one syntax highlighting into another one,
-however most of the currently deployed syntax highlighting scripts are
-not prepared to be included into another syntax script.
+可在一个语言的语法高亮中嵌入另一个语言的高亮，不过目前发布的多数语法高亮脚本不
+是为给其它语法脚本包含准备的。
 
-You can however create your own custom script to define your own
-regions, which will be highlighted with a different language.
+不过你可以建立自己的定制脚本来定义自己的区域，使用另一个语言的高亮。
 
-See the wiki for a comprehensive solution:
+全面的方案请参见此 wiki:
 
     http://vim.wikia.com/wiki/Different_syntax_highlighting_within_regions_of_a_file
 
@@ -7555,7 +7496,7 @@ Vim 运行时包。例如，MS-Windows 上的 Vim 6.1 运行时包的名字是 v
     :set binary
     :set display=uhex
 <
-也可有 "-b" 命令行选项来编辑二进制文件: >
+也可用 "-b" 命令行选项来编辑二进制文件: >
 
     $ vim -b <binary_file_name>
 <
