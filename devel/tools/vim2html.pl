@@ -189,6 +189,7 @@ EOF
 
 	my $inexample = 0;
 	my $inheader = 0;
+	my $infaqheader = 0;
 	if ($tagfile) {
 		print OUT "<table>\n";
 	}
@@ -262,13 +263,17 @@ EOF
 				next LOOP;
 			}
 			elsif ( $token =~ /^\*([^*"|[:space:]]+)\*/ ) {
+				my $target=$1;
+				if ($1 =~ /faq-\d/) {
+					$infaqheader = 1;
+				}
 				# target
 				if ( $conceal ) {
 					push( @out,
-									"<b class=\"vimtag\"> <a name=\"".escurl($1)."\">".esctext($1)."<\/a> <\/b>");
+									"<b class=\"vimtag\"> <a name=\"".escurl($target)."\">".esctext($target)."<\/a> <\/b>");
 				} else {
 					push( @out,
-									"<b class=\"vimtag\">\*<a name=\"".escurl($1)."\">".esctext($1)."<\/a>\*<\/b>");
+									"<b class=\"vimtag\">\*<a name=\"".escurl($target)."\">".esctext($target)."<\/a>\*<\/b>");
 				}
 				next LOOP;
 			}
@@ -322,7 +327,14 @@ EOF
 		# compatibility notes: {Vi: }.
 		s/\{((?:Vi[ :]|仅)[^}]*)\}/<code class="notvi">{$1}<\/code>/g;
 
-		if ($inheader == 1) {
+		if ($infaqheader == 1) {
+			if ($_ eq "") {
+				print OUT "\n";
+				$infaqheader = 0;
+			} else {
+				print OUT "<h4>$_</h4>";
+			}
+    } elsif ($inheader == 1) {
 			print OUT "<h4>$_</h4>";
 		} else {
 			print OUT $_,"\n";
