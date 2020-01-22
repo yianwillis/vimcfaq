@@ -61,7 +61,7 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
                                                                 <b class="vimtag"> <a name="faq-help">faq-help</a> </b>
 <code class="section">第四节 - 帮助</code>
  <a href="vim_faq.html#faq-4.1">faq-4.1</a>    如何使用帮助文件？
- <a href="vim_faq.html#faq-4.2">faq-4.2</a>    如果在 Vim 帮助文件中搜索某关键字？
+ <a href="vim_faq.html#faq-4.2">faq-4.2</a>    如何在 Vim 帮助文件中搜索某关键字？
  <a href="vim_faq.html#faq-4.3">faq-4.3</a>    我得到了错误信息 E123，我做错什么了？
  <a href="vim_faq.html#faq-4.4">faq-4.4</a>    在哪里可以了解 Vim 的各种模式？
  <a href="vim_faq.html#faq-4.5">faq-4.5</a>    加入新 Vim 帮助文件后，如何生成 Vim 帮助标签文件呢？
@@ -74,7 +74,7 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-5.4">faq-5.4</a>    如何在写入文件时不在文件尾加上换行符 (EOL)？
  <a href="vim_faq.html#faq-5.5">faq-5.5</a>    如何配置 Vim 打开文件时回到之前编辑所在的位置？
  <a href="vim_faq.html#faq-5.6">faq-5.6</a>    在 Vim 中编辑文件时，文件被外部应用修改了，每次检测到改变发生时，
-          Vim 都会弹出<code class="note">警告</code>窗口 (像确认对话框)。如果屏蔽此<code class="note">警告</code>？
+          Vim 都会弹出<code class="note">警告</code>窗口 (像确认对话框)。如何屏蔽此<code class="note">警告</code>？
  <a href="vim_faq.html#faq-5.7">faq-5.7</a>    如何编辑光标所在的文件名对应的文件？
  <a href="vim_faq.html#faq-5.8">faq-5.8</a>    如何重载/重新编辑当前文件？
  <a href="vim_faq.html#faq-5.9">faq-5.9</a>    如何周期性地自动保存文件？
@@ -99,8 +99,8 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-7.2">faq-7.2</a>    我在编辑和保存文件的时候，Vim 创建了和原先文件名字相同但尾部附加了
           ".un~" 扩展名的文件。我怎么能不让 Vim 建立这个文件 (或) 我怎样能关闭
           Vim 的撤销文件功能？
- <a href="vim_faq.html#faq-7.3">faq-7.3</a>    如果配置 Vim 在指定目录保存所有的备份文件？
- <a href="vim_faq.html#faq-7.4">faq-7.4</a>    Vim 保存文件时，文件的权限被改变了。如果配置 Vim 在文件保存时不改
+ <a href="vim_faq.html#faq-7.3">faq-7.3</a>    如何配置 Vim 在指定目录保存所有的备份文件？
+ <a href="vim_faq.html#faq-7.4">faq-7.4</a>    Vim 保存文件时，文件的权限被改变了。如何配置 Vim 在文件保存时不改
           变文件权限？
                                                                 <b class="vimtag"> <a name="faq-buffers">faq-buffers</a> </b>
 <code class="section">第八节 - 缓冲区</code>
@@ -161,7 +161,7 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-11.15">faq-11.15</a>  我在映射中使用了  <a href="https://yianwillis.github.io/vimcdoc/doc/change.html#:s">:s</a>  替代命令。如果模式的搜索失败，映射被终止。我
           想要即使替代命令失败时，映射还继续处理下个命令。该如何做呢？
  <a href="vim_faq.html#faq-11.16">faq-11.16</a>  如何搜索一行中某字符的第 n 次出现？
- <a href="vim_faq.html#faq-11.17">faq-11.17</a>  如何用硬回车 (换行) 字符来替代制表符 (或任何字符)？
+ <a href="vim_faq.html#faq-11.17">faq-11.17</a>  如何把制表符 (或任何字符) 换成硬回车 (换行) 字符？
  <a href="vim_faq.html#faq-11.18">faq-11.18</a>  如何用字符的 ASCII 值来搜索字符？
  <a href="vim_faq.html#faq-11.19">faq-11.19</a>  如何搜索长行？
  <a href="vim_faq.html#faq-11.20">faq-11.20</a>  如何在当前缓冲区中显示包含特定模式的所有行？
@@ -174,7 +174,7 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
                                                         <b class="vimtag"> <a name="faq-changing-text">faq-changing-text</a> </b>
 <code class="section">第十二节 - 修改文本</code>
  <a href="vim_faq.html#faq-12.1">faq-12.1</a>   如何删除文件中所有行的拖尾空白字符 (空格和制表)？
- <a href="vim_faq.html#faq-12.2">faq-12.2</a>   如何把所有的多个连续出现的空格字符替代把单个空格？
+ <a href="vim_faq.html#faq-12.2">faq-12.2</a>   如何把所有的多个连续出现的空格字符换成单个空格？
  <a href="vim_faq.html#faq-12.3">faq-12.3</a>   如何把一串空行缩减成一行？
  <a href="vim_faq.html#faq-12.4">faq-12.4</a>   如何删除文件中的全部空行？如何删除全部只有空白字符的行？
  <a href="vim_faq.html#faq-12.5">faq-12.5</a>   如何复制/抽出当前单词？
@@ -192,7 +192,7 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-12.17">faq-12.17</a>  如何插入 Vim 寄存器的内容到当前缓冲区？
  <a href="vim_faq.html#faq-12.18">faq-12.18</a>  如何移动光标跨过行尾并在行尾之后的列插入字符？
  <a href="vim_faq.html#faq-12.19">faq-12.19</a>  Vim 如何把光标所在的单词 (比如说: junk) 替代为 "foojunkbar"？
- <a href="vim_faq.html#faq-12.20">faq-12.20</a>  如何对一个目录里所有文件里的特定文本进行替代？
+ <a href="vim_faq.html#faq-12.20">faq-12.20</a>  如何对一个目录中的所有文件里的特定文本进行替代？
  <a href="vim_faq.html#faq-12.21">faq-12.21</a>  文件中有若干数值。如何为文件中的数值增量或减量？
  <a href="vim_faq.html#faq-12.22">faq-12.22</a>  如何在  <a href="https://yianwillis.github.io/vimcdoc/doc/change.html#:substitute">:substitute</a>  命令中重用前次搜索模式？
  <a href="vim_faq.html#faq-12.23">faq-12.23</a>  如何用  <a href="https://yianwillis.github.io/vimcdoc/doc/change.html#:substitute">:substitute</a>  改变字符串的大小写？
@@ -225,7 +225,7 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-14.5">faq-14.5</a>   插入模式下如何缩进行？
  <a href="vim_faq.html#faq-14.6">faq-14.6</a>   如何排版/缩进整个文件？
  <a href="vim_faq.html#faq-14.7">faq-14.7</a>   如何增加或减少当前行的缩进？
- <a href="vim_faq.html#faq-14.8">faq-14.8</a>   如果对一组/块行进行缩进？
+ <a href="vim_faq.html#faq-14.8">faq-14.8</a>   如何对一组/块行进行缩进？
  <a href="vim_faq.html#faq-14.9">faq-14.9</a>   用 &gt; 或 &lt; 键缩进行时，使用标准的 8-制表位而不是当前 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'tabstop'">'tabstop'</a> 设
           置。为什么？
  <a href="vim_faq.html#faq-14.10">faq-14.10</a>  如何关闭文本的自动缩进？
@@ -283,40 +283,40 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-18.3">faq-18.3</a>   哪里有 Vim 远程服务器功能的文档？
                                                                 <b class="vimtag"> <a name="faq-options">faq-options</a> </b>
 <code class="section">第十九节 - 选项</code>
- <a href="vim_faq.html#faq-19.1">faq-19.1</a>   如何可以简易地配置 Vim？
+ <a href="vim_faq.html#faq-19.1">faq-19.1</a>   如何可以简便地配置 Vim？
  <a href="vim_faq.html#faq-19.2">faq-19.2</a>   如何切换选项值？
  <a href="vim_faq.html#faq-19.3">faq-19.3</a>   如何设置只影响当前缓冲区/窗口的选项？
  <a href="vim_faq.html#faq-19.4">faq-19.4</a>   Vim 选项值里如何使用空格符？
- <a href="vim_faq.html#faq-19.5">faq-19.5</a>   如何把 Vim 选项设定加入 (嵌入) 文件内容？
+ <a href="vim_faq.html#faq-19.5">faq-19.5</a>   如何把 Vim 选项设定加入 (嵌入) 文件内容里？
  <a href="vim_faq.html#faq-19.6">faq-19.6</a>   如何显示文件中所有行的行号？
  <a href="vim_faq.html#faq-19.7">faq-19.7</a>   如何改变 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'number'">'number'</a> 选项显示的行号的宽度？
- <a href="vim_faq.html#faq-19.8">faq-19.8</a>   如何显示 (查看) 文件中所有不可见的字符，如空格、制表和换行？
+ <a href="vim_faq.html#faq-19.8">faq-19.8</a>   如何显示 (查看) 文件中所有的不可见字符，如空格、制表和换行？
  <a href="vim_faq.html#faq-19.9">faq-19.9</a>   如何配置 Vim 来总是显示当前行号和列号？
  <a href="vim_faq.html#faq-19.10">faq-19.10</a>  如何显示当前 Vim 模式？
  <a href="vim_faq.html#faq-19.11">faq-19.11</a>  如何配置 Vim 在状态行上显示待定/部分命令？
  <a href="vim_faq.html#faq-19.12">faq-19.12</a>  如何配置 Vim 状态行以显示不同的设置/值？
  <a href="vim_faq.html#faq-19.13">faq-19.13</a>  如何配置 Vim 总是显示状态行？
- <a href="vim_faq.html#faq-19.14">faq-19.14</a>  如果在不同的 Vim 调用/实例/会话间存留 Vim 设置？
+ <a href="vim_faq.html#faq-19.14">faq-19.14</a>  如何在不同的 Vim 调用/实例/会话间存留 Vim 设置？
  <a href="vim_faq.html#faq-19.15">faq-19.15</a>  为什么在按 Escape 键后会听到响铃 (窗口会闪烁) 大约 1 秒钟？
  <a href="vim_faq.html#faq-19.16">faq-19.16</a>  如何使 "c" 和 "s" 命令显示 "$" 而不是删除正在修改的字符？
  <a href="vim_faq.html#faq-19.17">faq-19.17</a>  如何用单个  <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#:set">:set</a>  命令删除一个 Vim 选项的多个标志位？
                                                         <b class="vimtag"> <a name="faq-mapping-keys">faq-mapping-keys</a> </b>
 <code class="section">第二十节 - 键映射</code>
  <a href="vim_faq.html#faq-20.1">faq-20.1</a>   如何知道键被映射了？
- <a href="vim_faq.html#faq-20.2">faq-20.2</a>   如何列出所有用户定义的键映射？
+ <a href="vim_faq.html#faq-20.2">faq-20.2</a>   如何列出用户定义的所有键映射？
  <a href="vim_faq.html#faq-20.3">faq-20.3</a>   如何删除键映射？
  <a href="vim_faq.html#faq-20.4">faq-20.4</a>   不能建立 <code class="special">&lt;xxx&gt;</code> 键的映射。哪里做错了？
  <a href="vim_faq.html#faq-20.5">faq-20.5</a>   为什么 &lt;C-...&gt; 键的映射不可用？
  <a href="vim_faq.html#faq-20.6">faq-20.6</a>   如何映射数字小键盘上的键？
  <a href="vim_faq.html#faq-20.7">faq-20.7</a>   如何创建只在可视模式下可用的映射？
  <a href="vim_faq.html#faq-20.8">faq-20.8</a>   如何创建只在普通和操作符等待模式 (而不是可视模式) 下可用的映射？
- <a href="vim_faq.html#faq-20.9">faq-20.9</a>   Vim 脚本中，如何知道用哪个键来映射而不会为已有的键相冲突？
+ <a href="vim_faq.html#faq-20.9">faq-20.9</a>   Vim 脚本中，如何知道用哪个键来映射而不会和已有的键相冲突？
  <a href="vim_faq.html#faq-20.10">faq-20.10</a>  如何映射 escape 键？
  <a href="vim_faq.html#faq-20.11">faq-20.11</a>  如何把键映射为空操作？
- <a href="vim_faq.html#faq-20.12">faq-20.12</a>  想用 <code class="special">&lt;Tab&gt;</code> 键来缩进一块文本而 <code class="special">&lt;Shit-Tab&gt;</code> 键来反向缩进一块文件。如
+ <a href="vim_faq.html#faq-20.12">faq-20.12</a>  想用 <code class="special">&lt;Tab&gt;</code> 键来缩进一块文本而 <code class="special">&lt;Shit-Tab&gt;</code> 键来反向缩进一块文本。如
           何才能通过映射键完成？此行为和 textpad、visual studio 等类似。
- <a href="vim_faq.html#faq-20.13">faq-20.13</a>  我的映射里不识别 <code class="special">&lt;CR&gt;</code> 这样的特殊字符。如何才能配置 Vim 才能识别特
-          殊字符？
+ <a href="vim_faq.html#faq-20.13">faq-20.13</a>  我的映射里不识别 <code class="special">&lt;CR&gt;</code> 这样的特殊字符。如何配置 Vim 才能识别特殊字
+          符？
  <a href="vim_faq.html#faq-20.14">faq-20.14</a>  如何在映射里使用 "|" 来分隔多个命令？
  <a href="vim_faq.html#faq-20.15">faq-20.15</a>  如果一个映射/缩写的结束是另一个映射/缩写的开始，如何不让第一个映射
           扩展第二个映射？
@@ -340,31 +340,31 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-22.3">faq-22.3</a>   如何编辑/修改记录好的键序列组？
  <a href="vim_faq.html#faq-22.4">faq-22.4</a>   如何把记录好的键序列存入文件？
  <a href="vim_faq.html#faq-22.5">faq-22.5</a>   用寄存器 0 来记录键序列时 (即 q0 .... q)，记录的键序列中有抽出文本
-          的操作。记录的键序列第一次回放后，就不能再次回放了。
+          的操作。记录的键序列在第一次回放后，就不能再次回放了。
                                                         <b class="vimtag"> <a name="faq-autocommands">faq-autocommands</a> </b>
 <code class="section">第二十三节-自动命令</code>
  <a href="vim_faq.html#faq-23.1">faq-23.1</a>   如何在试图修改只读文件时执行命令？
  <a href="vim_faq.html#faq-23.2">faq-23.2</a>   如何在每次进入缓冲区时执行命令？
  <a href="vim_faq.html#faq-23.3">faq-23.3</a>   如何在每次进入窗口时执行命令？
- <a href="vim_faq.html#faq-23.4">faq-23.4</a>   从自动命令里，如何决定激活自动命令的文件名或缓冲区号？
+ <a href="vim_faq.html#faq-23.4">faq-23.4</a>   自动命令里，如何确定激活自动命令的文件名或缓冲区号？
  <a href="vim_faq.html#faq-23.5">faq-23.5</a>   如何在 Vim 丢失焦点时自动保存所有已修改的缓冲区？
  <a href="vim_faq.html#faq-23.6">faq-23.6</a>   如何在 Vim 退出时执行/运行函数进行清理？
                                                         <b class="vimtag"> <a name="faq-syntax-highlight">faq-syntax-highlight</a> </b>
 <code class="section">第二十四节 - 语法高亮</code>
  <a href="vim_faq.html#faq-24.1">faq-24.1</a>   如何关闭/打开语法高亮？
  <a href="vim_faq.html#faq-24.2">faq-24.2</a>   如何改变 Vim 使用的背景和前景色？
- <a href="vim_faq.html#faq-24.3">faq-24.3</a>   如何改变高亮色来匹配深色/浅色背景？
- <a href="vim_faq.html#faq-24.4">faq-24.4</a>   如何改变使用 `:set number` 时显示的行号颜色？
+ <a href="vim_faq.html#faq-24.3">faq-24.3</a>   如何改变高亮色彩来匹配深色/浅色背景？
+ <a href="vim_faq.html#faq-24.4">faq-24.4</a>   如何改变使用 `:set number` 时显示行号的颜色？
  <a href="vim_faq.html#faq-24.5">faq-24.5</a>   如何改变用于可视选择列块的背景色？
  <a href="vim_faq.html#faq-24.6">faq-24.6</a>   如何高亮 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'list'">'list'</a> 选项显示的特殊字符 (制表、拖尾空格、行尾等)？
- <a href="vim_faq.html#faq-24.7">faq-24.7</a>   如何在 .vimrc/.gvimrc 文件里设置色彩方案让 Vim 每次都使用指定的色
-          彩方案？
+ <a href="vim_faq.html#faq-24.7">faq-24.7</a>   如何在 .vimrc/.gvimrc 文件里设置色彩方案，让 Vim 每次都使用我指定
+          的色彩方案？
  <a href="vim_faq.html#faq-24.8">faq-24.8</a>   Vim 语法高亮不能用了。编辑文件时，文件的一部分没有语法高亮或语法高
           亮不正确。
- <a href="vim_faq.html#faq-24.9">faq-24.9</a>   有没有内建函数来语法高亮对应的匹配括号？
+ <a href="vim_faq.html#faq-24.9">faq-24.9</a>   有没有内建功能来语法高亮对应的匹配括号？
  <a href="vim_faq.html#faq-24.10">faq-24.10</a>  如何关闭 C 注释语法高亮？
  <a href="vim_faq.html#faq-24.11">faq-24.11</a>  如何加入我自己的 Vim 提供的标准语法文件的语法扩展？
- <a href="vim_faq.html#faq-24.12">faq-24.12</a>  如何用我自己语法文件来替换 Vim 发布自带的标准语法文件？
+ <a href="vim_faq.html#faq-24.12">faq-24.12</a>  如何用我自己的语法文件来替换 Vim 发布自带的标准语法文件？
  <a href="vim_faq.html#faq-24.13">faq-24.13</a>  如何高亮特定列后的所有字符？
  <a href="vim_faq.html#faq-24.14">faq-24.14</a>  如何把源文件 (.c、.h 等) 带 Vim 语法高亮转换为 HTML 文件？
  <a href="vim_faq.html#faq-24.15">faq-24.15</a>  如何列出所有当前高亮组的定义？
@@ -383,14 +383,14 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-25.9">faq-25.9</a>   如何在 Vim 函数中检查环境变量设置与否？
  <a href="vim_faq.html#faq-25.10">faq-25.10</a>  如何调用/使用 Vim 内建函数？
  <a href="vim_faq.html#faq-25.11">faq-25.11</a>  在 Vim 脚本里使用普通模式命令时，如何避免这些普通模式命令应用用户
-          定义的映射而使用这些普通模式命令标准的 Vim 功能？
+          定义的映射，而使用这些普通模式命令标准的 Vim 功能？
  <a href="vim_faq.html#faq-25.12">faq-25.12</a>  如何把可视选择文本存入 Vim 变量或寄存器？
  <a href="vim_faq.html#faq-25.13">faq-25.13</a>  Vim 变量 "myvar" 存了一些文本。想在  <a href="https://yianwillis.github.io/vimcdoc/doc/change.html#:s">:s</a>  替代命令里用此变量来替代
           文本 "mytext"。应该怎么做？
  <a href="vim_faq.html#faq-25.14">faq-25.14</a>  Vim 变量 (bno) 包含了缓冲区号。如何用此变量来打开对应的缓冲区？
  <a href="vim_faq.html#faq-25.15">faq-25.15</a>  如何保存 Vim 选项值到 Vim 变量里？
- <a href="vim_faq.html#faq-25.16">faq-25.16</a>  从 Vim 函数复制并插入一些文本到缓冲区。如何在 Vim 函数里缩进插入的
-          文本？
+ <a href="vim_faq.html#faq-25.16">faq-25.16</a>  从 Vim 函数复制并插入了一些文本到缓冲区。如何在 Vim 函数里缩进插入
+          的文本？
  <a href="vim_faq.html#faq-25.17">faq-25.17</a>  Vim 脚本里如何取得光标所在的字符？
  <a href="vim_faq.html#faq-25.18">faq-25.18</a>  如何取得不带扩展名的当前文件名？
  <a href="vim_faq.html#faq-25.19">faq-25.19</a>  如何取得当前文件名的基名？
@@ -398,20 +398,21 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-25.21">faq-25.21</a>  Vim 函数里如何调用外部程序？
  <a href="vim_faq.html#faq-25.22">faq-25.22</a>  如何得到用  <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:!">:!</a>  命令执行的程序的返回状态？
  <a href="vim_faq.html#faq-25.23">faq-25.23</a>  如何确定当前缓冲区是否修改过？
- <a href="vim_faq.html#faq-25.24">faq-25.24</a>  Vim 脚本里在普通模式命令里想用回车字符。如何指定回车字符？
+ <a href="vim_faq.html#faq-25.24">faq-25.24</a>  Vim 脚本里 normal 命令想用回车字符。如何指定回车字符？
  <a href="vim_faq.html#faq-25.25">faq-25.25</a>  Vim 脚本里如何分割长行？
  <a href="vim_faq.html#faq-25.26">faq-25.26</a>  用 `:execute Myfunc()` 命令试图 "execute" 我的函数时，光标移到了当
           前缓冲区的顶部。为什么？
  <a href="vim_faq.html#faq-25.27">faq-25.27</a>  如何执行寄存器的内容？
  <a href="vim_faq.html#faq-25.28">faq-25.28</a>  调用了 Vim 函数或映射后，按 "u" 键撤销最近的修改时，Vim 撤销了该映
           射/函数所做的所有改动。为什么？
- <a href="vim_faq.html#faq-25.29">faq-25.29</a>  如何从另一个脚本/插件中调用定义时带 s: 的函数 (脚本局部函数)？
- <a href="vim_faq.html#faq-25.30">faq-25.30</a>  可以撤销已执行的脚本吗？换句话说，反转一个脚本执行的所有命令的效果。
+ <a href="vim_faq.html#faq-25.29">faq-25.29</a>  如何从另一个脚本/插件调用定义时带 s: 的函数 (脚本局部函数)？
+ <a href="vim_faq.html#faq-25.30">faq-25.30</a>  可以撤销已执行的脚本吗？换句话说，反转一个脚本执行的所有命令的效
+          果。
                                                                 <b class="vimtag"> <a name="faq-plugins">faq-plugins</a> </b>
 <code class="section">第二十六节 - 插件</code>
  <a href="vim_faq.html#faq-26.1">faq-26.1</a>   如何为不同类型的文件设置不同的选项？
  <a href="vim_faq.html#faq-26.2">faq-26.2</a>   从网上下载了 Vim 插件、语法文件、缩进文件、色彩方案或文件类型插
-          件。应该怎么复制这些文件才能让 Vim 能找到它们？
+          件。应该怎么复制这些文件才能让 Vim 找到它们？
  <a href="vim_faq.html#faq-26.3">faq-26.3</a>   如何扩展已有的文件类型插件？
  <a href="vim_faq.html#faq-26.4">faq-26.4</a>   如何关闭 Vim 插件的载入？
  <a href="vim_faq.html#faq-26.5">faq-26.5</a>   如何打开/关闭文件类型插件的载入？
@@ -425,7 +426,7 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-27.3">faq-27.3</a>   如何关闭自动缩进功能？
  <a href="vim_faq.html#faq-27.4">faq-27.4</a>   如何改变自动缩进的空格数？
  <a href="vim_faq.html#faq-27.5">faq-27.5</a>   用 Vim 编辑 C 程序时，如何显示宏或变量的定义？
- <a href="vim_faq.html#faq-27.6">faq-27.6</a>   用 Vim 编辑 C 程序时，如果从代码块里跳转到代码块的开头或结尾？
+ <a href="vim_faq.html#faq-27.6">faq-27.6</a>   用 Vim 编辑 C 程序时，如何从代码块里跳转到代码块的开头或结尾？
  <a href="vim_faq.html#faq-27.7">faq-27.7</a>   编辑 C++ 文件并在注释 (//) 行上方或下方插入新行时，Vim 自动在行首
           插入 C++ 注释字符 (//)。如何关闭此行为？
  <a href="vim_faq.html#faq-27.8">faq-27.8</a>   如何为一组行在行首加上注释字符 "#"？
@@ -434,9 +435,9 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
                                                                 <b class="vimtag"> <a name="faq-quickfix">faq-quickfix</a> </b>
 <code class="section">第二十八节 - 快速修复</code>
  <a href="vim_faq.html#faq-28.1">faq-28.1</a>   如何在 Vim 里编译程序？
- <a href="vim_faq.html#faq-28.2">faq-28.2</a>   在 Vim 里运行 make 命令时得到编译器编译程序里列出的错误。结束时此
-          列表消失，我不得不用  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:clist">:clist</a>  命令来重新看到错误信息。有没有其它办法
-          来看到这些错误信息？
+ <a href="vim_faq.html#faq-28.2">faq-28.2</a>   在 Vim 里运行 make 命令时得到编译器编译程序时列出的错误。命令结束
+          时此列表消失，我不得不用  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:clist">:clist</a>  命令来重新看到错误信息。有没有其它
+          办法来看到这些错误信息？
  <a href="vim_faq.html#faq-28.3">faq-28.3</a>   如何为快速修复/位置列表的每个项目执行命令？
                                                                 <b class="vimtag"> <a name="faq-folding">faq-folding</a> </b>
 <code class="section">第二十九节 - 折叠</code>
@@ -446,21 +447,21 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-29.3">faq-29.3</a>   如何控制开始编辑文件时打开的折叠层数？
  <a href="vim_faq.html#faq-29.4">faq-29.4</a>   如何用鼠标打开和关闭折叠？
  <a href="vim_faq.html#faq-29.5">faq-29.5</a>   如何改变关闭折叠显示的文本？
- <a href="vim_faq.html#faq-29.6">faq-29.6</a>   如何保存和恢复跨越不同 Vim 会话手动创建的折叠？
- <a href="vim_faq.html#faq-29.7">faq-29.7</a>   打开基于语法的折叠。为什么 Vim 这么慢？
+ <a href="vim_faq.html#faq-29.6">faq-29.6</a>   如何保存和恢复跨越不同 Vim 会话的手动创建折叠？
+ <a href="vim_faq.html#faq-29.7">faq-29.7</a>   打开基于语法的折叠时，为什么 Vim 这么慢？
 
                                         <b class="vimtag"> <a name="faq-vim-with-external-applications">faq-vim-with-external-applications</a> </b>
 <code class="section">第三十节 - VIM 和外部应用</code>
  <a href="vim_faq.html#faq-30.1">faq-30.1</a>   如何在 Vim 窗口里运行外壳？
  <a href="vim_faq.html#faq-30.2">faq-30.2</a>   如何传递光标所在的单词给外部命令？
  <a href="vim_faq.html#faq-30.3">faq-30.3</a>   如何把外壳命令的输出放进 Vim 缓冲区？
- <a href="vim_faq.html#faq-30.4">faq-30.4</a>   如何把当前缓冲区的内容用管道给外部命令，并用命令的输出替换缓冲区的
-          内容？
+ <a href="vim_faq.html#faq-30.4">faq-30.4</a>   如何把当前缓冲区的内容用管道发给外部命令，并用命令的输出替换缓冲区
+          的内容？
  <a href="vim_faq.html#faq-30.5">faq-30.5</a>   如何给文件的一部分排序？
  <a href="vim_faq.html#faq-30.6">faq-30.6</a>   如何把 Vim 用作分页程序？
  <a href="vim_faq.html#faq-30.7">faq-30.7</a>   如何在 Vim 内部查阅 Unix man 页面？
  <a href="vim_faq.html#faq-30.8">faq-30.8</a>   如何更换 Vim 比较支持所需的 diff 命令？
- <a href="vim_faq.html#faq-30.9">faq-30.9</a>   如何使用 Vim 比较模式时不带折叠？
+ <a href="vim_faq.html#faq-30.9">faq-30.9</a>   如何在使用 Vim 比较模式时不带折叠？
                                                                 <b class="vimtag"> <a name="faq-gui-vim">faq-gui-vim</a> </b>
 <code class="section">第三十一节 - GUI VIM</code>
  <a href="vim_faq.html#faq-31.1">faq-31.1</a>   如何创建缓冲区特定的菜单？
@@ -490,30 +491,30 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-32.2">faq-32.2</a>   Vim 上看到奇怪的屏幕刷新问题。如何才能解决屏幕/显示刷新问题？
  <a href="vim_faq.html#faq-32.3">faq-32.3</a>   使用 Vim 的终端/控制台版本时，插入模式下，按了退格键没有删除光标前
           的字符。如何配置 Vim 来做到这一点？
- <a href="vim_faq.html#faq-32.4">faq-32.4</a>   我在 xterm 下使用 Vim 。退出 Vim 时，屏幕内容恢复为原先的内容。如
-          何关闭此行为？
+ <a href="vim_faq.html#faq-32.4">faq-32.4</a>   我在 xterm 下使用 Vim。退出 Vim 时，屏幕内容恢复为原先的内容。如何
+          关闭此行为？
  <a href="vim_faq.html#faq-32.5">faq-32.5</a>   启动 Vim 时，花了好几秒才启动。如何才能最小化启动时间？
  <a href="vim_faq.html#faq-32.6">faq-32.6</a>   如何使 unix 上 gvim 里的光标停止闪烁？
  <a href="vim_faq.html#faq-32.7">faq-32.7</a>   如何改变 GTK Vim 的菜单字体？
  <a href="vim_faq.html#faq-32.8">faq-32.8</a>   如何不让 <code class="keystroke">CTRL-Z</code> 暂停 Vim？
- <a href="vim_faq.html#faq-32.9">faq-32.9</a>   杀掉运行 Vim 的 xterm 时，Vim 进程继续运行并使用大量的 CPU (99%)
+ <a href="vim_faq.html#faq-32.9">faq-32.9</a>   杀掉运行 Vim 的 xterm 时，Vim 进程继续运行并占用大量的 CPU (99%)
           时间。为什么会这样？
  <a href="vim_faq.html#faq-32.10">faq-32.10</a>  如何使 Vim 语法高亮在 Unix 终端上工作？
                                                 <b class="vimtag"> <a name="faq-vim-on-ms-windows">faq-vim-on-ms-windows</a> </b>
 <code class="section">第三十三节 - MS-WINDOWS 上的 VIM</code>
  <a href="vim_faq.html#faq-33.1">faq-33.1</a>   MS-Windows 上，<code class="keystroke">CTRL-V</code> 不启动面向列块可视模式。怎么啦？
- <a href="vim_faq.html#faq-33.2">faq-33.2</a>   按 <code class="keystroke">CTRL-Y</code> 键时，就像 <code class="keystroke">CTRL-R</code> 键一样。如果配置 Vim 把 <code class="keystroke">CTRL-Y</code> 当作
+ <a href="vim_faq.html#faq-33.2">faq-33.2</a>   按 <code class="keystroke">CTRL-Y</code> 键时，就像 <code class="keystroke">CTRL-R</code> 键一样。如何配置 Vim 把 <code class="keystroke">CTRL-Y</code> 当作
           <code class="keystroke">CTRL-Y</code>？
- <a href="vim_faq.html#faq-33.3">faq-33.3</a>   如何总是以最大化窗口来启动 GUI？
+ <a href="vim_faq.html#faq-33.3">faq-33.3</a>   如何总是最大化窗口启动 GUI？
  <a href="vim_faq.html#faq-33.4">faq-33.4</a>   做完一些编辑操作后，Vim 死机了。光标成了空的长方形。不能输入任何字
           符。怎么啦？
  <a href="vim_faq.html#faq-33.5">faq-33.5</a>   使用 Windows XP 时，最大化 GVim 的显示速度很慢。如何才能加速显示更
           新？
  <a href="vim_faq.html#faq-33.6">faq-33.6</a>   使用 cygwin 时，什么是 Vim 的建议设定？
- <a href="vim_faq.html#faq-33.7">faq-33.7</a>   对 Vim 差异模式我试图用 GNU diff。在命令行上运行 diff 没问题。在
-          Vim 上试着用 diff 时却不行。我应该怎么办？
+ <a href="vim_faq.html#faq-33.7">faq-33.7</a>   为 Vim 比较模式我试图用 GNU diff。在命令行上运行 diff 没问题。但在
+          Vim 上试着用 diff 却不行。我应该怎么办？
  <a href="vim_faq.html#faq-33.8">faq-33.8</a>   可以用 Vim 作为 MS-Windows Outlook 邮件客户端的外部编辑器吗？
- <a href="vim_faq.html#faq-33.9">faq-33.9</a>   我用 Vim 来编辑 HTML 文件。我如何启动 internet explorer 来预览当前
+ <a href="vim_faq.html#faq-33.9">faq-33.9</a>   我用 Vim 来编辑 HTML 文件。如何启动 internet explorer 来预览当前
           HTML 文件？
  <a href="vim_faq.html#faq-33.10">faq-33.10</a>  我想在 Microsoft Visual Studio 上用 Vim。要怎么做？
  <a href="vim_faq.html#faq-33.11">faq-33.11</a>  在哪里放 _vimrc 和 _gvimrc 文件？
@@ -528,8 +529,8 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
  <a href="vim_faq.html#faq-35.2">faq-35.2</a>   如何在主目录或不同于缺省安装目录的位置安装 Vim？
  <a href="vim_faq.html#faq-35.3">faq-35.3</a>   MS-Windows 系统上如何如何从源码开始编译 Vim？
  <a href="vim_faq.html#faq-35.4">faq-35.4</a>   我的 Vim 安装找不到 Vim 帮助、语法、缩进文件。如何安装这些文件？
- <a href="vim_faq.html#faq-35.5">faq-35.5</a>   从源码编译 Vim 并用 "make install" 安装了 Vim 包。还需要留着 Vim
-          源目录吗？
+ <a href="vim_faq.html#faq-35.5">faq-35.5</a>   从源码编译 Vim 并用 "make install" 安装了 Vim 包。我还需要留着 Vim
+          源码目录吗？
  <a href="vim_faq.html#faq-35.6">faq-35.6</a>   如何确定编译时打开的 Vim 特性？
  <a href="vim_faq.html#faq-35.7">faq-35.7</a>   编译 Vim 时可以不带 GUI 支持吗？
  <a href="vim_faq.html#faq-35.8">faq-35.8</a>   Unix 系统上编译 Vim 时，得到了 "undefined reference to
@@ -543,14 +544,14 @@ Charles Campbell 和其他许多人士。本 FAQ 的线上版本可见
                                                                 <b class="vimtag"> <a name="faq-various">faq-various</a> </b>
 <code class="section">第三十六节 - 杂项</code>
  <a href="vim_faq.html#faq-36.1">faq-36.1</a>   用 Vim 如何编辑二进制文件？
- <a href="vim_faq.html#faq-36.2">faq-36.2</a>   如果关闭可视错误闪烁和错误响铃？
- <a href="vim_faq.html#faq-36.3">faq-36.3</a>   如何显示在缓冲区中显示字符的 ascii 值？
+ <a href="vim_faq.html#faq-36.2">faq-36.2</a>   如何关闭可视错误闪烁和错误响铃？
+ <a href="vim_faq.html#faq-36.3">faq-36.3</a>   如何查看在缓冲区中显示的字符的 ascii 值？
  <a href="vim_faq.html#faq-36.4">faq-36.4</a>   Vim 命令如何使用零计数？
  <a href="vim_faq.html#faq-36.5">faq-36.5</a>   如何关闭 Vim 欢迎屏幕？
  <a href="vim_faq.html#faq-36.6">faq-36.6</a>   如何避免 "hit enter to continue" 提示？
  <a href="vim_faq.html#faq-36.7">faq-36.7</a>   如何从命令行调用 Vim 来为一组文件运行一组命令？
- <a href="vim_faq.html#faq-36.8">faq-36.8</a>   如何在插入模式里使用用普通模式命令而不用退出插入模式？
- <a href="vim_faq.html#faq-36.9">faq-36.9</a>   如何启动 Vim 时就进行插入模式？
+ <a href="vim_faq.html#faq-36.8">faq-36.8</a>   如何在插入模式里使用普通模式命令，而不用退出插入模式？
+ <a href="vim_faq.html#faq-36.9">faq-36.9</a>   如何在启动 Vim 时就进行插入模式？
  <a href="vim_faq.html#faq-36.10">faq-36.10</a>  Vim 里如何使用复制和粘贴？
  <a href="vim_faq.html#faq-36.11">faq-36.11</a>  为什么不应修改系统运行时目录里的文件？
                                                                 <b class="vimtag"> <a name="faq-unicode">faq-unicode</a> </b>
@@ -1117,7 +1118,7 @@ Vim 所有的功能都能找到帮助。要得到帮助，可用  <a href="https
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/helphelp.html#online-help">online-help</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-4.2">faq-4.2</a> </b></h4><h4>4.2. 如果在 Vim 帮助文件中搜索某关键字？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-4.2">faq-4.2</a> </b></h4><h4>4.2. 如何在 Vim 帮助文件中搜索某关键字？</h4>
 a)  在输入 help 关键字后按 <code class="keystroke">CTRL-D</code> 键可以得到包含指定模式的所有帮助关键字的列
     表。可用元字符如 *、\+ 等来指定帮助搜索模式: 
 <code class="example"></code>
@@ -1308,7 +1309,7 @@ Vim 在 '"' 位置标记中保存每个缓冲区上次编辑所在的光标位�
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_05.html#last-position-jump">last-position-jump</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_05.html#vimrc_example.vim">vimrc_example.vim</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-5.6">faq-5.6</a> </b></h4><h4>5.6. 在 Vim 中编辑文件时，文件被外部应用修改了，每次检测到改变发生时， Vim 都</h4><h4>     会弹出<code class="note">警告</code>窗口 (像确认对话框)。如果屏蔽此<code class="note">警告</code>？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-5.6">faq-5.6</a> </b></h4><h4>5.6. 在 Vim 中编辑文件时，文件被外部应用修改了，每次检测到改变发生时， Vim 都</h4><h4>     会弹出<code class="note">警告</code>窗口 (像确认对话框)。如何屏蔽此<code class="note">警告</code>？</h4>
 可用 Vim 的 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'autoread'">'autoread'</a> 选项来在 Vim 之外改动了文件后自动重新读入文件: 
 <code class="example"></code>
 <code class="example">    :set autoread</code>
@@ -1612,7 +1613,7 @@ Vim 7.3 包含了持续撤销的新功能，也就是说，撤销信息在 Vim �
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'undofile'">'undofile'</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/undo.html#undo-persistence">undo-persistence</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-7.3">faq-7.3</a> </b></h4><h4>7.3. 如果配置 Vim 在指定目录保存所有的备份文件？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-7.3">faq-7.3</a> </b></h4><h4>7.3. 如何配置 Vim 在指定目录保存所有的备份文件？</h4>
 可用 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'backupdir'">'backupdir'</a> 选项配置 Vim 在指定目录保存所有的备份文件。例如，要把所有的备
 份文件保存到 ~/backup 目录，可用以下命令: 
 <code class="example"></code>
@@ -1624,7 +1625,7 @@ Vim 7.3 包含了持续撤销的新功能，也就是说，撤销信息在 Vim �
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'backupdir'">'backupdir'</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/editing.html#backup">backup</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-7.4">faq-7.4</a> </b></h4><h4>7.4. Vim 保存文件时，文件的权限被改变了。如果配置 Vim 在文件保存时不改变文件权</h4><h4>     限？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-7.4">faq-7.4</a> </b></h4><h4>7.4. Vim 保存文件时，文件的权限被改变了。如何配置 Vim 在文件保存时不改变文件权</h4><h4>     限？</h4>
 这可能发生在 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'backupcopy'">'backupcopy'</a> 选项设为 "no" 或 "auto" 的时候。<code class="note">注意</code> 此选项的缺省设
 置在多数情况下会正确工作。如果缺省对你不合用，试试设置 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'backupcopy'">'backupcopy'</a> 选项为
 "yes"，以便保存文件时保留文件权限: 
@@ -2057,8 +2058,8 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
 </section><hr class="doubleline" /><section class=inner>
 <h4>                                                                <b class="vimtag"> <a name="faq-11">faq-11</a> </b></h4><h4><code class="section">第十一节 - 搜索文本</code></h4>
 <h4>                                                                <b class="vimtag"> <a name="faq-11.1">faq-11.1</a> </b></h4><h4>11.1. 用模式搜索文本后，所有匹配的文本保持高亮。如何临时/永久关闭高亮？</h4>
-<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'hlsearch'">'hlsearch'</a> 选项控制是否高亮前次搜索模式所有的匹配。缺省，此选项不打开。如果系
-统范围的 vimrc 文件置位了此选项，可用以下命令关闭搜索高亮: 
+<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'hlsearch'">'hlsearch'</a> 选项控制是否高亮前次搜索模式所有的匹配。缺省不打开此选项。如果系统
+范围的 vimrc 文件置位了此选项，可用以下命令关闭搜索高亮: 
 <code class="example"></code>
 <code class="example">    :set nohlsearch</code>
 
@@ -2078,8 +2079,8 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
      <a href="https://yianwillis.github.io/vimcdoc/doc/pattern.html#:nohlsearch">:nohlsearch</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-11.2">faq-11.2</a> </b></h4><h4>11.2. 如何在搜索模式中输入回车字符？</h4>
-可用 "\r" 或 &lt;<code class="keystroke">CTRL-V</code>&gt;&lt;<code class="keystroke">CTRL-M</code>&gt; 来在模式中输入回车。在 Vim 脚本里，用 "\r" 代表
-回车字符更好。
+可用 "\r" 或 &lt;<code class="keystroke">CTRL-V</code>&gt;&lt;<code class="keystroke">CTRL-M</code>&gt; 来在模式中输入回车。Vim 脚本里，用 "\r" 代表回车
+字符更好。
 
 更多详情请阅读:
 
@@ -2090,7 +2091,7 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
 <code class="example"></code>
 <code class="example">    /^V^M</code>
 
-也可用 "\r" 字符。在 Vim 脚本 里，建议使用 "\r"。
+也可用 "\r" 字符。在 Vim 脚本里，建议使用 "\r"。
 
 更多详情请阅读:
 
@@ -2132,7 +2133,7 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
 <code class="example"></code>
 <code class="example">    /\&lt;myword\&gt;</code>
 
-\&lt; 匹配原匹配单词开始，而 \&gt; 匹配原匹配单词结尾。
+\&lt; 匹配原用来匹配单词的起始，而 \&gt; 匹配原用来匹配单词的结尾。
 
 更多详情请阅读:
 
@@ -2190,7 +2191,7 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'iskeyword'">'iskeyword'</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-11.10">faq-11.10</a> </b></h4><h4>11.10. 如何统计缓冲区中特定单词出现的次数？</h4>
-可用下面一组命令来编译缓冲区中特定单词出现的次数: 
+可用下面一组命令来统计缓冲区中特定单词出现的次数: 
 <code class="example"></code>
 <code class="example">    :let cnt=0</code>
 <code class="example">    :g/\&lt;your_word\&gt;/let cnt=cnt+1</code>
@@ -2290,8 +2291,8 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
      <a href="https://yianwillis.github.io/vimcdoc/doc/motion.html#;">;</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/motion.html#,">,</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-11.17">faq-11.17</a> </b></h4><h4>11.17. 如何用硬回车 (换行) 字符来替代制表符 (或任何字符)？</h4>
-可用下列命令来用硬回车 (换行) 字符来替代制表符 (或任何字符): 
+<h4>                                                                <b class="vimtag"> <a name="faq-11.17">faq-11.17</a> </b></h4><h4>11.17. 如何把制表符 (或任何字符) 换成硬回车 (换行) 字符？</h4>
+可用下列命令把制表符 (或任何字符) 换成硬回车 (换行) 字符: 
 <code class="example"></code>
 <code class="example">    :s/\t/\r/</code>
 
@@ -2381,7 +2382,7 @@ Vim 缓冲区是载入内存用于编辑的文件。原始文件保留不变，�
      <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:number">:number</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-11.21">faq-11.21</a> </b></h4><h4>11.21. 如何搜索跨越多行的文本字符串？</h4>
-可用 \_x 正规表达式匹配原来搜索跨越多行的文本客串。例如，要搜索文件字符串
+可用 \_x 正规表达式匹配原去搜索跨越多行的文本字符串。例如，要搜索文本字符串
 "Hello
 World"，可用下列搜索命令: 
 <code class="example"></code>
@@ -2459,17 +2460,17 @@ World"，可用下列搜索命令:
      <a href="https://yianwillis.github.io/vimcdoc/doc/pattern.html#%2F%3CCR%3E">/&lt;CR&gt;</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-11.26">faq-11.26</a> </b></h4><h4>11.26. 如何操作搜索的匹配？</h4>
-"gn" 命令很容易地在匹配当前搜索模式的文本区域中操作。缺省，正向搜索前次搜索模
-式并可视选择此匹配。如果光标已经在匹配上，就对它可视选择。如果在操作符后使用
-"gn" 命令 (如 "c" 来修改文本)，此操作符会适用于匹配上。
+"gn" 命令可用来很容易地在匹配当前搜索模式的文本区域上操作。缺省，正向搜索前次
+搜索模式并可视选择匹配。如果光标已经在匹配上，就对它可视选择。如果在操作符后使
+用 "gn" 命令 (如用 "c" 来修改文本)，就在匹配上应用此操作符。
 
-如果使用 gn 之前激活了可视模式，可视选择区会延伸到下个匹配的结尾。
+如果使用 gn 之前激活了可视模式，延伸可视选择区到下个匹配的结尾。
 
 "gN" 命令类似，但用于反向搜索。
 
 此命令可用于为每个匹配重复一些简单操作。例如，要把所有的 apple 换成 peach。先
 用 "/apple" 开始搜索，然后用 "cgnpeach<code class="special">&lt;Esc&gt;</code>" 把当前匹配替代成 peach。现在用句
-号 "." 命令就可为缓冲区其余部分重做替代操作。
+号 "." 命令就可为缓冲区其余部分重做此替代操作。
 
 另见以下相关帮助
 
@@ -2491,8 +2492,8 @@ World"，可用下列搜索命令:
      <a href="https://yianwillis.github.io/vimcdoc/doc/pattern.html#%2F\+">/\+</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/pattern.html#%2F$">/$</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-12.2">faq-12.2</a> </b></h4><h4>12.2. 如何把所有的多个连续出现的空格字符替代把单个空格？</h4>
-可用以下命令来把所有的多个连续出现的空格字符替代把单个空格: 
+<h4>                                                                <b class="vimtag"> <a name="faq-12.2">faq-12.2</a> </b></h4><h4>12.2. 如何把所有的多个连续出现的空格字符换成单个空格？</h4>
+可用以下命令来把所有的多个连续出现的空格字符换成单个空格: 
 <code class="example"></code>
 <code class="example">    :%s/ \{2,}/ /g</code>
 
@@ -2522,7 +2523,7 @@ World"，可用下列搜索命令:
      -1             调整行范围，使结束行变成原来结束行的前一行。
      j              连接范围中的所有行。
 
-<code class="note">备注</code> 如果文件末有空行这会报错。要改正这个问题，在文件末加一行临时行，执行本命
+<code class="note">备注</code> 文件末有空行时会报错。要改正这个问题，在文件末加一行临时行，执行本命
 令，然后再删除临时行。
 
 更多详情请阅读:
@@ -2541,7 +2542,7 @@ World"，可用下列搜索命令:
 <code class="example"></code>
 <code class="example">    :g/^\s\+$/d</code>
 
-要删除全部如果有的话只有空白字符的行，使用下列命令: 
+要删除全部要么没有，如果有的话只有空白字符的行，使用下列命令: 
 <code class="example"></code>
 <code class="example">    :g/^\s*$/d</code>
 
@@ -2587,7 +2588,7 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
 <code class="example"></code>
 <code class="example">        y)</code>
 
-从句子内部可用 "yi)" 来抽出句子。
+从句子内部可用 "yi)" 来抽出句子 (<code class="vim">译者注</code>: 原文如此，似应为 "yis")。
 
 更多详情请阅读:
 
@@ -2609,13 +2610,13 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
 
 如果你只想收集所有的匹配，还有一个不同的方法。为此，用  <a href="https://yianwillis.github.io/vimcdoc/doc/change.html#:s">:s</a>  命令带上标志位
 "gn"，这样不实际修改缓冲区 ("n" 标志位) 但选择所有匹配 ("g" 标志位)。把此命令
-和替代部分的 "\=" 部分组合起来，可把每个匹配复制到，比如，一个列表上。 加总起
-来，可用下面的形式: 
+和替代部分的 "\=" 部分组合起来，可把每个匹配复制到比如一个列表上。 加总起来，
+可用下面的形式: 
 <code class="example"></code>
 <code class="example">    :let list=[]</code>
 <code class="example">    :%s/pattern/\=add(list, submatch(0))/gn</code>
 
-现在所有的匹配都会在列表里，然后你可按需对它们进行后期处理。
+现在所有的匹配都在列表里，然后按需可对它们进行后期处理。
 
 更多详情请阅读:
 
@@ -2647,7 +2648,7 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
 <code class="example"></code>
 <code class="example">    :g/pattern/normal! Oi&lt;把文本行放在这里&gt;</code>
 
-此外，还要用 Y 命令抽出行，然后用下列命令插入该行: 
+此外，还可用 Y 命令抽出行，然后用下列命令插入该行: 
 <code class="example"></code>
 <code class="example">    :g/pattern/put!</code>
 
@@ -2677,7 +2678,8 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
 <code class="example"></code>
 <code class="example">    :g/my pattern/normal {command}</code>
 
-除非你希望普通模式命令被重映射，考虑用  <code class="badlink">:normal!</code>  命令来代替 (<code class="note">注意</code> 这里的 "!")。
+除非你希望普通模式命令被重映射，考虑用  <code class="badlink">:normal!</code>  命令来代替 (<code class="note">注意</code> 这里的
+"!")。
 
 更多详情请阅读:
 
@@ -2686,8 +2688,8 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
      <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:normal">:normal</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-12.14">faq-12.14</a> </b></h4><h4>12.14. 可以复制光标上方的字符到当前光标位置吗？</h4>
-在插入模式下，可用 <code class="keystroke">CTRL-Y</code> 来复制光标上方的字符到当前光标位置。也可用 <code class="keystroke">CTRL-E</code> 来
-对光标下方的字符同样办理。
+在插入模式下，可用 <code class="keystroke">CTRL-Y</code> 来复制光标上方的字符到当前光标位置。也可用 <code class="keystroke">CTRL-E</code> 对
+光标下方的字符同样办理。
 
 更多详情请阅读:
 
@@ -2705,7 +2707,7 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
      <a href="https://yianwillis.github.io/vimcdoc/doc/change.html#:put">:put</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-12.16">faq-12.16</a> </b></h4><h4>12.16. 如何插入当前文件名到当前缓冲区？</h4>
-有几种办法到插入当前文件名到当前缓冲区。插入模式下，可用 <code class="special">&lt;C-R&gt;</code>% 或
+有几种办法插入当前文件名到当前缓冲区。插入模式下，可用 <code class="special">&lt;C-R&gt;</code>% 或
 <code class="special">&lt;C-R&gt;</code>=expand("%") 命令。普通模式下，可用 `:put =@%` 命令。
 
 更多详情请阅读:
@@ -2757,7 +2759,7 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
      <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#col()">col()</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/pattern.html#%2F\%c">/\%c</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-12.20">faq-12.20</a> </b></h4><h4>12.20. 如何对一个目录里所有文件里的特定文本进行替代？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-12.20">faq-12.20</a> </b></h4><h4>12.20. 如何对一个目录中的所有文件里的特定文本进行替代？</h4>
 可用  <a href="https://yianwillis.github.io/vimcdoc/doc/editing.html#:argdo">:argdo</a>  命令在参数指定的所有文件上执行替代命令: 
 <code class="example"></code>
 <code class="example">    :args *</code>
@@ -2771,8 +2773,8 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-12.21">faq-12.21</a> </b></h4><h4>12.21. 文件中有若干数值。如何为文件中的数值增量或减量？</h4>
 可用 <code class="keystroke">CTRL-A</code> 键来增量数值，而用 <code class="keystroke">CTRL-X</code> 键来减量数值。也可通过指定键的计数来指定
-增量/减量的数值。可用十进制、八进制和十六进制数值。修改 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'nrformats'">'nrformats'</a> 选项可改变
-此操作 Vim 使用的基底。
+增减的量。可用十进制、八进制和十六进制数值。修改 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'nrformats'">'nrformats'</a> 选项可改变此操作
+Vim 使用的基底。
 
 更多详情请阅读:
 
@@ -2964,8 +2966,8 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
      <a href="https://yianwillis.github.io/vimcdoc/doc/repeat.html#:global">:global</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-12.34">faq-12.34</a> </b></h4><h4>12.34. 如何交换两个字符或单词或行？</h4>
-可用 "xp" 命令序列来交换两个字符。"c" 会删除光标所在的字符而 "p" 会把刚刚删
-除的字符粘贴到光标所在字符之后。最终结果就是交换了两了字符。
+可用 "xp" 命令序列来交换两个字符。"x" 会删除光标所在的字符而 "p" 会把刚刚删
+除的字符粘贴到光标所在字符之后。最终结果就是交换了两个字符。
 
 可用 "deep" 命令序列来交换两个单词 (先移动光标到首个单词之前的空白上)。
 
@@ -2974,7 +2976,7 @@ n 列的文本，用 n|。要抽出直到下个 "word" 的出现的文本，用 
 
 所有以上的操作都会改变 " 无名寄存器。
 
-可用 `:m +` ex 命令来交换两行而不改变无名寄存器。
+可用 ":m +" ex 命令来交换两行而不改变无名寄存器。
 
 更多详情请阅读:
 
@@ -3172,7 +3174,7 @@ Vim 支持以下项目的补全:
      <a href="https://yianwillis.github.io/vimcdoc/doc/change.html#%3C%3C">&lt;&lt;</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'shiftwidth'">'shiftwidth'</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-14.8">faq-14.8</a> </b></h4><h4>14.8. 如果对一组/块行进行缩进？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-14.8">faq-14.8</a> </b></h4><h4>14.8. 如何对一组/块行进行缩进？</h4>
 可以先可视选择一组行，然后按 &gt; 或 &lt; 键来对行缩进/反向缩进。也可用下列 ex 命令
 来对行缩进 
 <code class="example"></code>
@@ -3292,9 +3294,9 @@ Vim 支持以下项目的补全:
 
 如果 Vim 能检测到你在用鼠标粘贴文本，粘贴的文本会按本义插入。
 
-如果 Vim 不能检测到你在用鼠标粘贴文本，它会把文本的粘贴当作你在按文本直接输入
-文本。插入粘贴文本的第一行后，Vim 看到了换行符，因为有缩进设置，下行会以缩进开
-始，粘贴文本第二行开头的空白会导致额外的缩进。之后的行上，这会重复进行，所以最
+如果 Vim 检测不到你在用鼠标粘贴文本，它会把文本的粘贴当作你在按文本直接输入文
+本。插入粘贴文本的第一行后，Vim 看到了换行符，因为有缩进设置，下行会以缩进开
+始，粘贴文本第二行开头的空白会导致额外的缩进。这会在之后的行上重复进行，所以最
 后会以阶梯形式的缩进插入粘贴文本。
 
 对终端 Vim 有几种方法可以修正此问题:
@@ -3553,7 +3555,7 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
 <h4>                                                                <b class="vimtag"> <a name="faq-16.2">faq-16.2</a> </b></h4><h4>16.2. 如何有效地在 Vim 命令行上编辑文本？</h4>
 可用命令行窗口来编辑 Vim 的命令行文本。要打开 Vim 命令行窗口，可在普通模式下用
 "q:" 命令。在命令行模式下，用 <code class="keystroke">CTRL-F</code> 键。在此窗口中，会显示命令行历史。可用普
-通的 Vim 键/命令来编辑任何之前/新的命令行。要执行某命令行，按 enter/retur
+通的 Vim 键/命令来编辑任何之前/新的命令行。要执行某命令行，按 enter/return
 键。
 
 类似地，可用 "q/" 和 "q?" 命令编辑搜索历史。
@@ -3581,7 +3583,7 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
 <code class="example">    :g/HelloWord/p</code>
 <code class="example">    :redir END</code>
 
-现在寄存器 "a" 会包含 ex 命令  <code class="badlink">:g/HelloWord/p</code>  的输出，然后你可以把寄存器 "a"
+现在寄存器 'a' 会包含 ex 命令  <code class="badlink">:g/HelloWord/p</code>  的输出，然后你可以把寄存器 'a'
 的内容粘贴进缓冲区。也可用  <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:redir">:redir</a>  命令把 ex 命令的输出发送或附加到文件。
 
 可给  <a href="https://yianwillis.github.io/vimcdoc/doc/repeat.html#:global">:global</a>  命令加上  <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:silent">:silent</a>  前缀，以避免把行显示在屏幕上。
@@ -3730,7 +3732,7 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
 
 </section><hr class="doubleline" /><section class=inner>
 <h4>                                                                <b class="vimtag"> <a name="faq-19">faq-19</a> </b></h4><h4><code class="section">第十九节 - 选项</code></h4>
-<h4>                                                                <b class="vimtag"> <a name="faq-19.1">faq-19.1</a> </b></h4><h4>19.1. 如何可以简易地配置 Vim？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-19.1">faq-19.1</a> </b></h4><h4>19.1. 如何可以简便地配置 Vim？</h4>
 可用  <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#:options">:options</a>  命令来打开 Vim 选项窗口: 
 <code class="example"></code>
 <code class="example">    :options</code>
@@ -3760,8 +3762,8 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
 有些 Vim 选项有局部和全局值。局部值只应用于指定的缓冲区和窗口。全局值应用于所
 有缓冲区或窗口。
 
-用  <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#:set">:set</a>  命令修改选项时，同时改变选项的全局和局部值。可用  <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#:setlocal">:setlocal</a>  命令来
-只修改选项的局部值，而  <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#:setglobal">:setglobal</a>  命令来只修改选项的全局值。
+用  <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#:set">:set</a>  命令修改选项时，同时改变选项的全局和局部值。用  <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#:setlocal">:setlocal</a>  命令可只
+修改选项的局部值，而  <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#:setglobal">:setglobal</a>  命令只修改选项的全局值。
 
 可用  <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#:setlocal">:setlocal</a>  命令来设置只影响当前文件/缓冲区的选项: 
 <code class="example"></code>
@@ -3770,7 +3772,7 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
 <code class="note">注意</code> 不是所有选项都有局部值。仅当选项支持局部值时，才能用  <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#:setlocal">:setlocal</a>  命令来设
 置局部于缓冲区/窗口的选项。
 
-也可用下列命令来设置局部选项: 
+也可用下列命令设置局部选项: 
 <code class="example"></code>
 <code class="example">    :let &amp;l:{option-name} = &lt;value&gt;</code>
 
@@ -3788,14 +3790,14 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#option-backslash">option-backslash</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-19.5">faq-19.5</a> </b></h4><h4>19.5. 如何把 Vim 选项设定加入 (嵌入) 文件内容？</h4>
-可用模式行来把 Vim 选项设定加入文件内容。例如，在 C 文件里，可在文件的顶部或底
-部加入以下行: 
+<h4>                                                                <b class="vimtag"> <a name="faq-19.5">faq-19.5</a> </b></h4><h4>19.5. 如何把 Vim 选项设定加入 (嵌入) 文件内容里？</h4>
+可用模式行把 Vim 选项设定加进文件内容。例如，在 C 文件里，可在文件的顶部或底部
+加入下行: 
 <code class="example"></code>
 <code class="example">    /* vim:sw=4: */</code>
 
-这会编辑该 C 文件时设置 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'shiftwidth'">'shiftwidth'</a> 选项为 4。为此，必须置位 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'modeline'">'modeline'</a> 选
-项。缺省，这是置位的。另一个例子在本文档的首行给出。
+编辑此 C 文件时，<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'shiftwidth'">'shiftwidth'</a> 选项就会设置为 4。为此必须置位 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'modeline'">'modeline'</a> 选项。
+缺省是置位的。另一个例子在本文档的首行给出。
 
 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'modelines'">'modelines'</a> 设置指定用于检查 Vim set 命令的行数。
 
@@ -3821,10 +3823,10 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
 <code class="example"></code>
 <code class="example">    :set numberwidth=3</code>
 
-这会设置行号的宽度为 3 个数位，如果你的缓冲区少于 999 行应该足够了。不过，如果
-你的当前缓冲区多于 999 行，会相应调整 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'numberwidth'">'numberwidth'</a> 使得最大行号可以放进屏幕。
+这会设置行号的宽度为 3 个数位，如果缓冲区少于 999 行，这应该足够了。不过如果当
+前缓冲区多于 999 行，<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'numberwidth'">'numberwidth'</a> 会相应调整，使得最大行号可以放进屏幕。
 
-<h4>                                                                <b class="vimtag"> <a name="faq-19.8">faq-19.8</a> </b></h4><h4>19.8. 如何显示 (查看) 文件中所有不可见的字符，如空格、制表和换行？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-19.8">faq-19.8</a> </b></h4><h4>19.8. 如何显示 (查看) 文件中所有的不可见字符，如空格、制表和换行？</h4>
 可置位 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'list'">'list'</a> 选项来看到文件中所有的不可见字符。 
 <code class="example"></code>
 <code class="example">    :set list</code>
@@ -3834,7 +3836,7 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
 要不显示不可见字符 (这是缺省)，需要复位 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'list'">'list'</a> 选项: 
 <code class="example"></code>
 <code class="example">    :set nolist</code>
-<code class="example">    (or)</code>
+<code class="example">    (或)</code>
 <code class="example">    :set list!</code>
 
 `:set list!` 命令会切换布尔 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'list'">'list'</a> 选项的当前值。
@@ -3869,7 +3871,7 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'showmode'">'showmode'</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-19.11">faq-19.11</a> </b></h4><h4>19.11. 如何配置 Vim 在状态行上显示待定/部分命令？</h4>
-可置位 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'showcmd'">'showcmd'</a> 选项在状态行上显示选定/部分命令: 
+可置位 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'showcmd'">'showcmd'</a> 选项在状态行上显示待定/部分命令: 
 <code class="example"></code>
 <code class="example">    :set showcmd</code>
 
@@ -3896,9 +3898,9 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'laststatus'">'laststatus'</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-19.14">faq-19.14</a> </b></h4><h4>19.14. 如果在不同的 Vim 调用/实例/会话间存留 Vim 设置？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-19.14">faq-19.14</a> </b></h4><h4>19.14. 如何在不同的 Vim 调用/实例/会话间存留 Vim 设置？</h4>
 要在不同的 Vim 实例间存留 Vim 选项设置，把你的设置放在 .vimrc 或 .gvimrc 文
-件里。也可用  <a href="https://yianwillis.github.io/vimcdoc/doc/starting.html#:mkvimrc">:mkvimrc</a>  命令用当前设置生成 vimrc 文件。
+件里。也可用  <a href="https://yianwillis.github.io/vimcdoc/doc/starting.html#:mkvimrc">:mkvimrc</a>  命令来用当前设置生成 vimrc 文件。
 
 更多详情请阅读:
 
@@ -3913,9 +3915,9 @@ Vim 会在所有选中的行 (而不是选中的列) 上操作。可用 <a href=
 这是正常行为。如果窗口闪烁，你打开了可视响铃。不然，你会听到蜂鸣。
 
 Vim 需要超时来区别简单的 Escape 和，比如说，光标键盘序列。在普通模式按键 (即使
-插入模式也是如此) 而该键是映射开始的一部分时，Vim 会等待一段时间也观察映射序列
+插入模式也是如此) 而该键是映射开始的一部分时，Vim 会等待一段时间来观察映射序列
 的其余部分是否出现。如果映射序列在规定超时期限之前完成，应用该键盘序列的映射。
-如果中断了映射，执行键相关联的正常动作。
+但如果映射被中断，执行和键关联的正常动作。
 
 例如，如果你有映射定义 `:imap vvv Vim is great!!`，然后快速地按了 "vvv"，那么
 就会插入文本 "Vim is great!!"。但如果你按了 "vv v" 那么就按原样放置进文本。这
@@ -3944,8 +3946,8 @@ $ 标志位:
 <code class="example">    :set formatoptions-=tn</code>
 
 仅当 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'formatoptions'">'formatoptions'</a> 选项以顺序 "tn" 包含这些标志位时，才从 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'formatoptions'">'formatoptions'</a> 选
-项里删除 "t" 和 "n" 标志位。否则，标志位不会被删除 。为了避免此问题，可以一个
-一个删除标志位: 
+项里删除 "t" 和 "n" 标志位。否则，标志位不会被删除。要避免此问题，可以一个一个
+删除标志位: 
 <code class="example"></code>
 <code class="example">    :set formatoptions-=t formatoptions-=n</code>
 
@@ -3964,7 +3966,7 @@ $ 标志位:
 也可用  <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:cmap">:cmap</a> 、 <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:nmap">:nmap</a> 、 <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:vmap">:vmap</a> 、 <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:imap">:imap</a> 、 <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:omap">:omap</a>  等命令之一来检查特定模式下
 的映射。
 
-要知道键是哪里被映射的，加上  <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:verbose">:verbose</a>  命令前缀: 
+要知道键映射是在哪里发生的，加上  <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:verbose">:verbose</a>  命令前缀: 
 <code class="example"></code>
 <code class="example">    :verbose :map &lt;key&gt;</code>
 
@@ -3973,8 +3975,8 @@ $ 标志位:
      <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#map-listing">map-listing</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#map-overview">map-overview</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-20.2">faq-20.2</a> </b></h4><h4>20.2. 如何列出所有用户定义的键映射？</h4>
-可以这样也列出所有用户定义的键映射: 
+<h4>                                                                <b class="vimtag"> <a name="faq-20.2">faq-20.2</a> </b></h4><h4>20.2. 如何列出用户定义的所有键映射？</h4>
+可以这样列出用户定义的所有键映射: 
 <code class="example"></code>
 <code class="example">    :map</code>
 
@@ -4020,22 +4022,21 @@ $ 标志位:
 
    如果缓冲区里什么都没有 (假定你打开了 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'showcmd'">'showcmd'</a>，^V 会在 Vim 屏幕右下角继续
    显示)，那么 Vim 没有正确地接收到该键，此时你什么都做不了，除了选一个不同的
-   键用于映射以外。也可考虑用 GVim，后者应能正确地识别该键。
+   键用于映射以外。也可考虑用 GVim，后者应能正确地识别这些键。
 
 2) 有可能，Vim 收到了该键，但不觉得它和另一个键有何不同。例如你要映射
-   <code class="special">&lt;Ctrl-Right&gt;</code>，在插入模式下在 <code class="keystroke">CTRL-V</code> 之后按了 Ctrl-Right&gt;。如果 Vim 显示
-   <code class="special">&lt;C-Right&gt;</code>，它应是正确地看见了键击，而你就应该可以对它映射 (使用 <code class="special">&lt;C-Right&gt;</code>
-   作为你的 <code class="special">{lhs}</code>)。如果显示 <code class="special">&lt;Right&gt;</code> 它看见了键击节但就像你没按下 <code class="special">&lt;Ctrl&gt;</code> 一样:
-   这意味着终端把 <code class="special">&lt;Ctrl-Right&gt;</code> 当作 <code class="special">&lt;Right&gt;</code> 一样传送。任何其它值都意味着键被错
-   认了。
+   <code class="special">&lt;Ctrl-Right&gt;</code>，在插入模式下在 <code class="keystroke">CTRL-V</code> 之后按了 Ctrl-Right。如果 Vim 显示
+   <code class="special">&lt;C-Right&gt;</code>，应是正确看见了键击，而你应该就可以对它映射 (把 <code class="special">&lt;C-Right&gt;</code> 作为
+   <code class="special">{lhs}</code>)。如果显示的是 <code class="special">&lt;Right&gt;</code>，也就是看见了键击但就像没按下 Ctrl 一样: 这意
+   味着终端把 Ctrl-Right 当作 <code class="special">&lt;Right&gt;</code> 一样传送。任何其它值都意味着键被错认了。
 
-3) 如果看到了键，但既不是自身也不是我能识别的键，可能是当前终端的终端库
-   (termcap 或 terminfo 数据库) 里有错误。这种情形下 
+3) 如果看到了键，但既不是它自身也不是其它能识别的键，可能是当前终端的终端库
+   (termcap 或 terminfo 数据库) 里有误。这种情形下 
 <code class="example"></code>
 <code class="example">        :set term?</code>
 
-   会告诉你 Vim 使用哪 个 termcap 或 terminfo。可以在 vimrc 里加入下列命令来试
-   图告诉 vim 该终端应使用什么键码: 
+   会告诉你 Vim 用的是哪个 termcap 或 terminfo。可以在 vimrc 里加入下列命令来
+   试图告知 vim 该终端应使用什么键码: 
 <code class="example"></code>
 <code class="example">        if &amp;term == &lt;termname&gt;</code>
 <code class="example">            set &lt;C-Right&gt;=&lt;keycode&gt;</code>
@@ -4048,7 +4049,7 @@ $ 标志位:
 
    现在你应能看到对应键的键码，然后就可以用下列命令创建该键的映射: 
 <code class="example"></code>
-<code class="example">        :map &lt;C-Right&gt;  &lt;your_command_to_be_mapped&gt;</code>
+<code class="example">        :map &lt;C-Right&gt;  &lt;要映射的命令&gt;</code>
 
 更多详情请阅读:
 
@@ -4061,8 +4062,8 @@ Vim 能可靠识别的 <code class="special">&lt;Ctrl&gt;</code>-<code class="sp
 这些: 
 <code class="example"></code>
 <code class="example">        CTRL-@                 0x00            NUL</code>
-<code class="example">        CTRL-A to CTRL-Z       0x01 to 0x1A</code>
-<code class="example">        CTRL-a to CTRL-z       0x01 to 0x1A</code>
+<code class="example">        CTRL-A 到 CTRL-Z       0x01 到 0x1A</code>
+<code class="example">        CTRL-a 到 CTRL-z       0x01 到 0x1A</code>
 <code class="example">        CTRL-[                 0x1B            ESC</code>
 <code class="example">        CTRL-\                 0x1C</code>
 <code class="example">        CTRL-]                 0x1D</code>
@@ -4081,7 +4082,7 @@ Vim 可用的 "最安全的" 用于映射 <code class="special">{lhs}</code> 的
 可以试试其它 <code class="special">&lt;Ctrl&gt;</code> + 任何键的组合，不过未必在所有地方都可用 (例如终端可能不把
 该键传给 Vim)，或有意想不到的副作用 (例如 <code class="special">&lt;C-I&gt;</code> 的映射也会用于 <code class="special">&lt;Tab&gt;</code> 的映射)。
 
-这是个已知的问题，讨论过，将来可能有允许 Vim 即使在控制台模式也能区别若干键的
+这是个已知的问题，讨论过，将来可能会允许 Vim 即使在控制台模式也能区别若干键的
 实现。(例如 <a href="https://groups.google.com/d/msg/vim_dev/2bp9UdfZ63M/sajb9KM0pNYJ">https://groups.google.com/d/msg/vim_dev/2bp9UdfZ63M/sajb9KM0pNYJ</a>)
 
 <h4>                                                                <b class="vimtag"> <a name="faq-20.6">faq-20.6</a> </b></h4><h4>20.6. 如何映射数字小键盘上的键？</h4>
@@ -4130,7 +4131,7 @@ kDivide、kMultiply、kEnter 等等。
         :map <code class="special">&lt;f3&gt;</code> &lt;your mapping here&gt;
         :vunmap <code class="special">&lt;f3&gt;</code>
 
-<h4>                                                                <b class="vimtag"> <a name="faq-20.9">faq-20.9</a> </b></h4><h4>20.9. Vim 脚本中，如何知道用哪个键来映射而不会为已有的键相冲突？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-20.9">faq-20.9</a> </b></h4><h4>20.9. Vim 脚本中，如何知道用哪个键来映射而不会和已有的键相冲突？</h4>
 Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;leader&gt;</code> 前缀来定义不会和 Vim 键起冲突的
 键。例如: 
 <code class="example"></code>
@@ -4148,8 +4149,8 @@ Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;l
 <code class="example"></code>
 <code class="example">    :let mapleader = ","</code>
 
-编写插件或其它脚本时，常常建议使用  <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:noremap">:noremap</a>  而不是  <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:map">:map</a>  以避免用户定义映射
-的副作用。
+编写插件或其它脚本时，多数情况建议使用  <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:noremap">:noremap</a>  而不是  <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:map">:map</a>  以避免用户定义
+映射的副作用。
 
 更多详情请阅读:
 
@@ -4177,16 +4178,16 @@ Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;l
      <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:map!">:map!</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#map-modes">map-modes</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-20.12">faq-20.12</a> </b></h4><h4>20.12. 想用 <code class="special">&lt;Tab&gt;</code> 键来缩进一块文本而 <code class="special">&lt;Shit-Tab&gt;</code> 键来反向缩进一块文件。如何才能</h4><h4>       通过映射键完成？此行为和 textpad、visual studio 等类似。</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-20.12">faq-20.12</a> </b></h4><h4>20.12. 想用 <code class="special">&lt;Tab&gt;</code> 键来缩进一块文本而 <code class="special">&lt;Shit-Tab&gt;</code> 键来反向缩进一块文本。如何才能</h4><h4>       通过映射键完成？此行为和 textpad、visual studio 等类似。</h4>
 使用以下映射: 
 <code class="example"></code>
 <code class="example">    :inoremap &lt;S-Tab&gt; &lt;C-O&gt;&lt;lt&gt;&lt;lt&gt;</code>
 <code class="example">    :nnoremap &lt;Tab&gt; &gt;&gt;</code>
 <code class="example">    :nnoremap &lt;S-Tab&gt; &lt;lt&gt;&lt;lt&gt;</code>
-    :vnoremap <code class="special">&lt;Tab&gt;</code> 
+<code class="example">    :vnoremap &lt;Tab&gt; &gt; </code>
 <code class="example">    :vnoremap &lt;S-Tab&gt; &lt;lt&gt;</code>
 
-<code class="note">注意</code>，<code class="special">&lt;S-Tab&gt;</code> 映射仅当 Vim 能正确接收键序列时才可用。GUI Vim 上多半可以。
+<code class="note">注意</code>，<code class="special">&lt;S-Tab&gt;</code> 映射仅当 Vim 能正确接收它的键序列时才可用。GUI Vim 上多半可以。
 
 更多详情请阅读:
 
@@ -4199,7 +4200,7 @@ Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;l
      <a href="https://yianwillis.github.io/vimcdoc/doc/change.html#%3C%3C">&lt;&lt;</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/intro.html#%3Clt%3E">&lt;lt&gt;</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-20.13">faq-20.13</a> </b></h4><h4>20.13. 我的映射里不识别 <code class="special">&lt;CR&gt;</code> 这样的特殊字符。如何才能配置 Vim 才能识别特殊字</h4><h4>       符？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-20.13">faq-20.13</a> </b></h4><h4>20.13. 我的映射里不识别 <code class="special">&lt;CR&gt;</code> 这样的特殊字符。如何配置 Vim 才能识别特殊字符？</h4>
 检查 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'cpoptions'">'cpoptions'</a> 选项值: 
 <code class="example"></code>
 <code class="example">    :set cpoptions?</code>
@@ -4247,15 +4248,15 @@ Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;l
      <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:noreabbrev">:noreabbrev</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-20.16">faq-20.16</a> </b></h4><h4>20.16. 为什么有时我按一个键时，Vim 需要花一秒或更长时间来处理这个键？</h4>
-有下列命令来确认你没有定义此键的映射: 
+用下列命令来确认你没有定义此键的映射: 
 <code class="example"></code>
 <code class="example">    :map &lt;key&gt;</code>
 
-如果此键有定义映射而映射用键多于一个字符，Vim 会等待下个字符按下，来决定是否有
-映射用键。例如，如果你映射了 "ab"，然后按 "a"，Vim 会等待下个键按下。如果下个
-键是 "b"，Vim 会执行映射序列。否则，Vim 会用正常方式处理 "a" 和下一个键。如果
-置位了 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'timeout'">'timeout'</a> 选项 (这是缺省)，Vim 会等待 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'timeoutlen'">'timeoutlen'</a> 选项 (缺省为 1 秒)
-指定的超时。
+如果此键有定义映射且映射用键多于一个字符，Vim 会等待下个字符按下来决定是否有映
+射用键。例如，如果你映射了 "ab" 然后按 "a"，Vim 会等待下个键按下。如果下个键是
+"b"，Vim 会执行映射序列。否则，Vim 会用正常方式处理 "a" 和下一个键。如果置位了
+<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'timeout'">'timeout'</a> 选项 (这是缺省)，Vim 会等待 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'timeoutlen'">'timeoutlen'</a> 选项 (缺省为 1 秒) 指定的超
+时。
 
 更多详情请阅读:
 
@@ -4268,9 +4269,9 @@ Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;l
      <a href="https://yianwillis.github.io/vimcdoc/doc/term.html#slow-fast-terminal">slow-fast-terminal</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-20.17">faq-20.17</a> </b></h4><h4>20.17. 如何映射键来在可视选择文本上运行外部命令？</h4>
-可用  <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:vmap">:vmap</a>  命令来在可视模式下映射键。命令序列中，要先抽出文本。抽出的文本在
-'"' 寄存器里。现在，使用此寄存器的内容来运行外部命令。例如，要在可视选择文本上
-运行命令“"perldoc"，可用以下映射: 
+可用  <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:vmap">:vmap</a>  命令来为可视模式映射键。在命令序列中，要先抽出文本。抽出的文本在
+'"' 寄存器里。然后用此寄存器的内容来运行外部命令。例如，要在可视选择文本上运行
+命令 "perldoc"，可用以下映射: 
 <code class="example"></code>
 <code class="example">    :vmap &lt;F7&gt; y:!exec "!perldoc '" . @" . "'"&lt;CR&gt;</code>
 
@@ -4279,7 +4280,7 @@ Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;l
 <code class="example">    :vmap &lt;F7&gt; :&lt;C-U&gt;!perldoc &lt;cword&gt;&lt;CR&gt;</code>
 
 以上映射使用光标所在的单词而不是高亮文本。<code class="note">注意</code> 在调用 "perldoc" 外部命令之前的
-<code class="special">&lt;C-U&gt;</code> 的使用。<code class="special">&lt;C-U&gt;</code> 用于删除在命令行上显示的可视模式选中文本范围。如果不用
+<code class="special">&lt;C-U&gt;</code> 的使用。<code class="special">&lt;C-U&gt;</code> 用于删除在命令行上显示的可视模式选择的文本范围。如果不用
 <code class="special">&lt;C-U&gt;</code> 删除可视范围，外部命令的输出会替换可视选择文本。
 
 更多详情请阅读:
@@ -4304,7 +4305,7 @@ Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;l
 <code class="example"></code>
 <code class="example">    nnoremap = @='3l'</code>
 
-现在可为 "=" 命令给出计数。
+现在就可为 "=" 命令给出计数了。
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/repeat.html#complex-repeat">complex-repeat</a> 
 
@@ -4320,15 +4321,15 @@ Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;l
 
     :nmap <code class="special">&lt;F9&gt;</code> :call GetFontNameOfFirstChar()<code class="special">&lt;CR&gt;</code>
 
-此问题一个更技术性及具体的解决方法如下，也可在以下位置找到
+此问题更技术性及具体的解决方法如下，也可在以下位置找到
 <a href="https://groups.google.com/group/vim_dev/msg/75f1f2dfc00908bb">https://groups.google.com/group/vim_dev/msg/75f1f2dfc00908bb</a>
 
 不是每个普通模式映射都自动地适合用于插入模式下的 <code class="keystroke">CTRL-O</code> 执行；需要为此显式设计
 你的映射。
 
-<code class="keystroke">CTRL-O</code> 命令允许从插入模式下一个普通模式命令的执行，然后返回插入模式。如果普通
-模式映射连接了多个普通模式命令，在临时普通模式中会被分解，命令的第二部分会按本
-义插进缓冲区。要支持插入模式下普通模式映射的执行，可用以下策略:
+<code class="keystroke">CTRL-O</code> 命令允许插入模式下执行一个普通模式命令，然后返回插入模式。如果普通模式
+映射连接了多个普通模式命令，在临时普通模式中会被分解，命令的第二部分会按本义插
+进缓冲区。要支持插入模式下普通模式映射的执行，可用以下策略:
 
 1) 使用一个  <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:normal">:normal</a>  映射而不是连接多个普通模式命令: 
 <code class="example"></code>
@@ -4338,15 +4339,14 @@ Vim 用了键盘上的大多数键。映射中可用 <code class="special">&lt;l
 <code class="example"></code>
 <code class="example">    :nnoremap zC :&lt;C-U&gt;call MyMap1()&lt;Bar&gt;call MyMap2()&lt;CR&gt;</code>
 
-3) 定义插入模式映射来重新进入普通模式然后执行普通模式映射，然后定义普通模式映
-   射跟随插入模式映射: 
+3) 定义插入模式映射来重新进入普通模式并执行真正的普通模式映射: 
 <code class="example"></code>
 <code class="example">    :nnoremap &lt;silent&gt; &lt;SID&gt;MyMap2 :&lt;C-U&gt;call MyMap2()&lt;CR&gt;</code>
 <code class="example">    :inoremap &lt;silent&gt; &lt;script&gt; &lt;SID&gt;MyMap2 &lt;C-\&gt;&lt;C-O&gt;&lt;SID&gt;MyMap2</code>
 <code class="example">    :nnoremap &lt;silent&gt; &lt;script&gt; zC &lt;SID&gt;MyMap1&lt;SID&gt;MyMap2</code>
 
 4) 包含多个 Ex 命令行 (且 Ex 命令不能用 <code class="special">&lt;Bar&gt;</code> 连接) 的普通模式映射把  <code class="badlink">:<code class="special">&lt;C-U&gt;</code></code> 
-   换成 <code class="special">&lt;SID&gt;</code>NM；<code class="special">&lt;SID&gt;</code>NM 映射为一个 ex 命令行进入普通模式: 
+   换成 <code class="special">&lt;SID&gt;</code>NM；<code class="special">&lt;SID&gt;</code>NM 映射会在普通模式下执行一个 ex 命令行: 
 <code class="example"></code>
 <code class="example">    :nnoremap &lt;silent&gt; &lt;SID&gt;NM :&lt;C-U&gt;</code>
 <code class="example">    :inoremap &lt;silent&gt; &lt;SID&gt;NM &lt;C-\&gt;&lt;C-O&gt;:</code>
@@ -4397,7 +4397,7 @@ Vim 支持插入模式、替换模式和命令行模式下的缩写。
      <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#abbreviations">abbreviations</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-21.3">faq-21.3</a> </b></h4><h4>21.3. 扩展缩写时，在扩展文本尾部加了额外的一个空格。如何才能避免这个空格？</h4>
-要避免扩展文本尾部的额外空格，可用 <code class="keystroke">CTRL-]</code> 键来扩展缩写。缩写的扩展此时不会在尾
+要避免扩展文本尾部的额外空格，可用 <code class="keystroke">CTRL-]</code> 键来扩展缩写。此时缩写扩展后不会在尾
 部加上空格。
 
 另一个方案是使用下列函数和命令: 
@@ -4408,7 +4408,7 @@ Vim 支持插入模式、替换模式和命令行模式下的缩写。
 <code class="example">    endfunction</code>
 <code class="example">    command! -nargs=+ Iabbr execute "iabbr" &lt;q-args&gt; . "&lt;C-R&gt;=Eatchar('\\s')&lt;CR&gt;"</code>
 
-现在，用新的 "Iabbr" 命令来定义缩写而不是内建的  <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:iabbrev">:iabbrev</a>  命令。用此命令，扩
+现在，用新的 "Iabbr" 命令而不是内建的  <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:iabbrev">:iabbrev</a>  命令来定义缩写。用此命令，扩
 展缩写文本后，忽略下个输入的空格。
 
 更多详情请阅读:
@@ -4416,11 +4416,11 @@ Vim 支持插入模式、替换模式和命令行模式下的缩写。
      <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#abbreviations">abbreviations</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-21.4">faq-21.4</a> </b></h4><h4>21.4. 如何在文件中插入当前日期/时间戳？</h4>
-可用 strftime() 函数在文件中来插入当前日期/时间戳。例如，可用以下缩写: 
+可用 strftime() 函数在文件中插入当前日期/时间戳。例如，可用: 
 <code class="example"></code>
 <code class="example">    iabbrev dts &lt;C-R&gt;=strftime("%y/%m/%d %H:%M")&lt;CR&gt;</code>
 
-用此缩写，在插入模式下输入 dts 时，会扩展为日期/时间戳。
+用此缩写，插入模式下输入的 dts 会扩展为日期/时间戳。
 
 以下列出上述缩写的其它形式: 
 <code class="example"></code>
@@ -4436,7 +4436,7 @@ Vim 支持插入模式、替换模式和命令行模式下的缩写。
      <a href="https://yianwillis.github.io/vimcdoc/doc/insert.html#i_CTRL-R">i_CTRL-R</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-21.5">faq-21.5</a> </b></h4><h4>21.5. 插入模式下如何防止缩写被扩展？</h4>
-插入模式下可在缩写单词前按 <code class="keystroke">CTRL-V</code> 以防止缩写被扩展。
+插入模式下，缩写单词前按 <code class="keystroke">CTRL-V</code> 可防止缩写被扩展。
 
 更多详情请阅读:
 
@@ -4445,7 +4445,7 @@ Vim 支持插入模式、替换模式和命令行模式下的缩写。
 </section><hr class="doubleline" /><section class=inner>
 <h4>                                                                <b class="vimtag"> <a name="faq-22">faq-22</a> </b></h4><h4><code class="section">第二十二节 - 记录和回放</code></h4>
 <h4>                                                                <b class="vimtag"> <a name="faq-22.1">faq-22.1</a> </b></h4><h4>22.1. 如何重复编辑操作 (插入、删除、粘贴等等)？</h4>
-可用 "." 命令重复前次的编辑操作。这会重复前次的简单修改，如插入、删除、修改、
+可用 "." 命令重复前次的编辑操作。这会重复前次的简单改动，如插入、删除、修改、
 粘贴等等。
 
 更多详情请阅读:
@@ -4463,8 +4463,8 @@ Vim 支持插入模式、替换模式和命令行模式下的缩写。
 <code class="example"></code>
 <code class="example">    $ vim -w &lt;file_name&gt;</code>
 
-Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里。可用 "-s" 命令行
-参数来回放记录文件: 
+Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里。然后可用 "-s" 命
+令行参数来回放此记录文件: 
 <code class="example"></code>
 <code class="example">    $ vim -s &lt;file_name&gt;</code>
 
@@ -4476,8 +4476,8 @@ Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里
      <a href="https://yianwillis.github.io/vimcdoc/doc/starting.html#-s">-s</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-22.3">faq-22.3</a> </b></h4><h4>22.3. 如何编辑/修改记录好的键序列组？</h4>
-记录好的键序列存入一个寄存器。可把寄存器内容粘贴到 Vim 缓冲区里，编辑粘贴的文
-本，然后抽出文本到该寄存器。也可用  <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:let">:let</a>  命令来修改寄存器。例如: 
+记录好的键序列会存入一个寄存器。可把此寄存器内容粘贴到 Vim 缓冲区里，编辑粘贴
+的文本，然后抽出文本回该寄存器。也可用  <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:let">:let</a>  命令来修改寄存器。例如: 
 <code class="example"></code>
 <code class="example">    :let @a = "iHello World\&lt;Esc&gt;"</code>
 
@@ -4490,19 +4490,19 @@ Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'cpoptions'">'cpoptions'</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-22.4">faq-22.4</a> </b></h4><h4>22.4. 如何把记录好的键序列存入文件？</h4>
-记录好的键序列存入一个寄存器。可把寄存器内容粘贴到 Vim 缓冲区里。现在可以保存
-缓冲区到文件。也可修改粘贴的文本，然后抽出文本到该寄存器以修改键序列的记录。例
-如，如果用 qa ..... q 来记录一组键序列，记录好的键序列存入寄存器 “"a"。用 "ap
-可以粘贴寄存器 "a" 的内容。
+记录好的键序列会存入一个寄存器。可把寄存器内容粘贴到 Vim 缓冲区里。然后保存缓
+冲区到文件。也可修改粘贴的文本，然后抽出文本回该寄存器以修改键序列的记录。例
+如，如果用 qa ..... q 来记录一组键序列，记录好的键序列存入寄存器 'a'。用 "ap
+可以粘贴寄存器 'a' 的内容。
 
 更多详情请阅读:
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/repeat.html#recording">recording</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_10.html#10.1">10.1</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-22.5">faq-22.5</a> </b></h4><h4>22.5. 用寄存器 0 来记录键序列时 (即 q0 .... q)，记录的键序列中有抽出文本的操</h4><h4>      作。记录的键序列第一次回放后，就不能再次回放了。</h4>
-寄存器 0 包含了最近抽出操作的文本。在你记录的键序列中的抽出完成时，寄存器 0 被
-抽出的文本覆盖。这样你存在寄存器 0 的记录就丢失了。请使用其它寄存器。
+<h4>                                                                <b class="vimtag"> <a name="faq-22.5">faq-22.5</a> </b></h4><h4>22.5. 用寄存器 0 来记录键序列时 (即 q0 .... q)，记录的键序列中有抽出文本的操</h4><h4>      作。记录的键序列在第一次回放后，就不能再次回放了。</h4>
+寄存器 0 包含了最近抽出操作的文本。在完成记录键序列中的抽出时，寄存器 0 被抽出
+的文本覆盖。这样你存在寄存器 0 的记录就丢失了。请使用其它寄存器。
 
 更多详情请阅读:
 
@@ -4538,7 +4538,7 @@ Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/autocmd.html#WinEnter">WinEnter</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-23.4">faq-23.4</a> </b></h4><h4>23.4. 从自动命令里，如何决定激活自动命令的文件名或缓冲区号？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-23.4">faq-23.4</a> </b></h4><h4>23.4. 自动命令里，如何确定激活自动命令的文件名或缓冲区号？</h4>
 可在自动命令里用特殊单词 <code class="special">&lt;afile&gt;</code> 和 <code class="special">&lt;abuf&gt;</code> 取得激活自动命令的文件名或缓冲区
 号。
 
@@ -4549,7 +4549,7 @@ Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里
      <a href="https://yianwillis.github.io/vimcdoc/doc/cmdline.html#:%3Camatch%3E">:&lt;amatch&gt;</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-23.5">faq-23.5</a> </b></h4><h4>23.5. 如何在 Vim 丢失焦点时自动保存所有已修改的缓冲区？</h4>
-可定义 FocusLost 自动命令事件在 Vim 丢失焦点时自动保存所有已修过的缓冲区: 
+可定义 FocusLost 自动命令事件在 Vim 丢失焦点时自动保存所有已修改的缓冲区: 
 <code class="example"></code>
 <code class="example">    :autocmd FocusLost * wall</code>
 
@@ -4570,7 +4570,7 @@ Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里
 </section><hr class="doubleline" /><section class=inner>
 <h4>                                                                <b class="vimtag"> <a name="faq-24">faq-24</a> </b></h4><h4><code class="section">第二十四节 - 语法高亮</code></h4>
 <h4>                                                                <b class="vimtag"> <a name="faq-24.1">faq-24.1</a> </b></h4><h4>24.1. 如何关闭/打开语法高亮？</h4>
-缺省打开 Vim 语法高亮。要打开语法高亮，可用以下命令之一: 
+缺省关闭 Vim 语法高亮。要打开语法高亮，可用以下命令之一: 
 <code class="example"></code>
 <code class="example">    :syntax enable</code>
 
@@ -4591,8 +4591,8 @@ Vim 会把会话中输入的所有字符记录到指定的文件 "file_name" 里
      <a href="https://yianwillis.github.io/vimcdoc/doc/syntax.html#:syn-clear">:syn-clear</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-24.2">faq-24.2</a> </b></h4><h4>24.2. 如何改变 Vim 使用的背景和前景色？</h4>
-Vim 使用 "Normal" 高亮组用于背景和前景色。要改变前景/背景色，可修改 "Normal"
-高亮组。例如，要设置背景色为蓝色及前景色为白色，可用 
+"Normal" 高亮组用于背景和前景色。要改变前景/背景色，可修改 "Normal" 高亮组。例
+如，要设置背景为蓝色及前景为白色，可用 
 <code class="example"></code>
 <code class="example">    :highlight Normal ctermbg=blue ctermfg=white guibg=blue guifg=white</code>
 
@@ -4613,8 +4613,8 @@ Vim 使用 "Normal" 高亮组用于背景和前景色。要改变前景/背景�
      <a href="https://yianwillis.github.io/vimcdoc/doc/gui_x11.html#.Xdefaults">.Xdefaults</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/gui_x11.html#-gui">-gui</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-24.3">faq-24.3</a> </b></h4><h4>24.3. 如何改变高亮色来匹配深色/浅色背景？</h4>
-可设置 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'background'">'background'</a> 选项为 "dark" 或 "light" 来改变高亮色来匹配深色/浅色背
+<h4>                                                                <b class="vimtag"> <a name="faq-24.3">faq-24.3</a> </b></h4><h4>24.3. 如何改变高亮色彩来匹配深色/浅色背景？</h4>
+可设置 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'background'">'background'</a> 选项为 "dark" 或 "light" 来改变高亮色彩以匹配深色/浅色背
 景: 
 <code class="example"></code>
 <code class="example">    :set background=dark</code>
@@ -4624,8 +4624,8 @@ Vim 使用 "Normal" 高亮组用于背景和前景色。要改变前景/背景�
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'background'">'background'</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_06.html#06.2">06.2</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-24.4">faq-24.4</a> </b></h4><h4>24.4. 如何改变使用 `:set number` 时显示的行号颜色？</h4>
-显示的行号使用 LineNr 高亮组。要显示当前使用的颜色，用 
+<h4>                                                                <b class="vimtag"> <a name="faq-24.4">faq-24.4</a> </b></h4><h4>24.4. 如何改变使用 `:set number` 时显示行号的颜色？</h4>
+显示的行号使用 LineNr 高亮组。要看到当前使用的颜色，用 
 <code class="example"></code>
 <code class="example">    :hi LineNr</code>
 
@@ -4633,7 +4633,7 @@ Vim 使用 "Normal" 高亮组用于背景和前景色。要改变前景/背景�
 <code class="example"></code>
 <code class="example">    :hi linenr guifg=red guibg=black</code>
 
-GVIM 里这会产生黑色背景红色数字。
+GVIM 里，这会显示黑色背景上的红色数字。
 
 更多详情请阅读:
 
@@ -4655,8 +4655,8 @@ GVIM 里这会产生黑色背景红色数字。
 <code class="example">    :highlight NonText guibg=red</code>
 <code class="example">    :highlight SpecialKey guibg=green</code>
 
-"NonText" 高亮组用于 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'listchars'">'listchars'</a> 选项的 "eol"、"extends" 和 "precedes" 设置。
-"SpecialKey" 高亮组用于 "tab" 和 "trail" 设置。
+"NonText" 高亮组用于 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'listchars'">'listchars'</a> 选项中的 "eol"、"extends" 和 "precedes" 设
+置。"SpecialKey" 高亮组用于 "tab" 和 "trail" 设置。
 
 更多详情请阅读:
 
@@ -4664,7 +4664,7 @@ GVIM 里这会产生黑色背景红色数字。
      <a href="https://yianwillis.github.io/vimcdoc/doc/syntax.html#hl-NonText">hl-NonText</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/syntax.html#hl-SpecialKey">hl-SpecialKey</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-24.7">faq-24.7</a> </b></h4><h4>24.7. 如何在 .vimrc/.gvimrc 文件里设置色彩方案让 Vim 每次都使用指定的色彩方</h4><h4>      案？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-24.7">faq-24.7</a> </b></h4><h4>24.7. 如何在 .vimrc/.gvimrc 文件里设置色彩方案，让 Vim 每次都使用我指定的色彩</h4><h4>      方案？</h4>
 可在 .vimrc 或 .gvimrc 文件里用  <a href="https://yianwillis.github.io/vimcdoc/doc/syntax.html#:colorscheme">:colorscheme</a>  命令指定色彩方案: 
 <code class="example"></code>
 <code class="example">    colorscheme evening</code>
@@ -4675,8 +4675,8 @@ GVIM 里这会产生黑色背景红色数字。
 
 <h4>                                                                <b class="vimtag"> <a name="faq-24.8">faq-24.8</a> </b></h4><h4>24.8. Vim 语法高亮不能用了。编辑文件时，文件的一部分没有语法高亮或语法高亮不正</h4><h4>      确。</h4>
 Vim 进行语法高亮时不读入整个文件来解析文本。它在任何你阅读文件的地方开始解析。
-这节约了很多时间，但有时颜色是错的。简单的修正是用 <code class="keystroke">CTRL-L</code> 键刷新屏幕。或回滚一
-小段再正向滚动回来。也可用命令: 
+这节约了很多时间，但因此有时颜色不正确。简单的修正是用 <code class="keystroke">CTRL-L</code> 键刷新屏幕。或回
+滚一小段再滚动回来。也可用命令: 
 <code class="example"></code>
 <code class="example">    :syntax sync fromstart</code>
 
@@ -4687,15 +4687,15 @@ Vim 进行语法高亮时不读入整个文件来解析文本。它在任何你�
      <a href="https://yianwillis.github.io/vimcdoc/doc/syntax.html#:syn-sync">:syn-sync</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/syntax.html#:syn-sync-first">:syn-sync-first</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-24.9">faq-24.9</a> </b></h4><h4>24.9. 有没有内建函数来语法高亮对应的匹配括号？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-24.9">faq-24.9</a> </b></h4><h4>24.9. 有没有内建功能来语法高亮对应的匹配括号？</h4>
 有的。Vim 包含了 matchparen 插件，作为标准插件缺省打开。无论何时光标移动过
 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'matchpairs'">'matchpairs'</a> 选项定义的项目时，Vim 会用 MatchParen 高亮组高亮对应的括号。
 
 不过，如果对应的括号在当前窗口不可见，光标不会跳过去。
 
-matchit 插件提供了类似的功能，会让光标跳转到相关的项目 (例如 "if"、"else"、
-"endif" 项目) 上并跳过注释里的匹配。它用 % 命令来跳转到对应的项目。尽管两个插
-件提供了相似的功能，两者没有关系，工作方式也不同。
+matchit 插件提供了类似的功能，会让光标跳转到相关项目 (如 "if"、"else"、
+"endif" 项目) 且并跳过注释里的匹配。它用 % 命令来完成对应项目的跳转。尽管两个
+插件提供了相似的功能，两者没有关系，工作方式也不同。
 
 更多详情请阅读:
 
@@ -4714,16 +4714,16 @@ matchit 插件提供了类似的功能，会让光标跳转到相关的项目 (�
      <a href="https://yianwillis.github.io/vimcdoc/doc/syntax.html#ft-c-syntax">ft-c-syntax</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-24.11">faq-24.11</a> </b></h4><h4>24.11. 如何加入我自己的 Vim 提供的标准语法文件的语法扩展？</h4>
-不应修改 Vim 提供的语法文件来加入你的扩展。安装 Vim 的下个版本时，会丢失自己的
-改变。相反，应该在 ~/.vim/after/syntax 目录下建立和原始语法文件同名的文件，在
-该文件里加入你自己的扩展。
+不应修改 Vim 提供的语法文件来加入你的扩展。安装 Vim 的下个版本时，会丢失你自己
+的改变。相反，应该在 ~/.vim/after/syntax 目录下建立和原始语法文件同名的文件，
+在该文件里加入你自己的扩展。
 
 更多详情请阅读:
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/syntax.html#mysyntaxfile-add">mysyntaxfile-add</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'runtimepath'">'runtimepath'</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-24.12">faq-24.12</a> </b></h4><h4>24.12. 如何用我自己语法文件来替换 Vim 发布自带的标准语法文件？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-24.12">faq-24.12</a> </b></h4><h4>24.12. 如何用我自己的语法文件来替换 Vim 发布自带的标准语法文件？</h4>
 可建立和原始语法文件同名的文件并放在 vim 运行时语法目录 ~/.vim/syntax 下来替换
 Vim 发布自带的标准语法文件。例如，要替换 Unix 系统上的 c.vim 语法文件，把新的
 c.vim 放在 ~/.vim/syntax 目录下。在 MS-Windows 系统上，把新的语法文件放在
@@ -4801,7 +4801,7 @@ $HOME/vimfiles/syntax 或 $VIM/vimfiles/syntax 目录下。
 
 <h4>                                                                <b class="vimtag"> <a name="faq-25.2">faq-25.2</a> </b></h4><h4>25.2. 如何调试 Vim 脚本？</h4>
 Vim 有内建的基本调试器支持，用于调试 Vim 插件和脚本。使用此调试器可设置断点和
-在插入函数上步进。
+在插件函数上步进。
 
 更多详情请阅读:
 
@@ -4832,7 +4832,7 @@ Vim 有内建的基本调试器支持，用于调试 Vim 插件和脚本。使�
 
 <h4>                                                                <b class="vimtag"> <a name="faq-25.5">faq-25.5</a> </b></h4><h4>25.5. 如何跨 Vim 调用保存和恢复插件特定的信息？</h4>
 Vim 会保存和恢复以大写字母开始且不包含小写字母的全局变量。为此，<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'viminfo'">'viminfo'</a> 选项
-必须包含 "!" 标志位。Vim 会在 viminfo 文件里保存变量。
+必须包含 "!" 标志位。Vim 会在 viminfo 文件里保存这些变量。
 
 更多详情请阅读:
 
@@ -4856,10 +4856,10 @@ Vim 会保存和恢复以大写字母开始且不包含小写字母的全局变�
 <code class="example"></code>
 <code class="example">        call setpos('.', [bufnum, lnum, col, off])</code>
 
-它会设置缓冲区 bufnum 里的光标定位在行 lnum，列 col 和 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'virtualedit'">'virtualedit'</a> 所用的偏
-移。可用 getpos() 函数来返回这些值的列表，之后可以在 setpos() 函数里用这些值。
+这会定位缓冲区 bufnum 里的光标在行 lnum，列 col 以及带 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'virtualedit'">'virtualedit'</a> 所用的偏
+移。可用 getpos() 函数取回这些值的列表，之后可在 setpos() 函数里用到这些值。
 
-如果要想保存和恢复窗口的视点，可用 winsaveview() 和 winrestview() 函数调用。
+要想保存和恢复窗口的视点，可用 winsaveview() 和 winrestview() 函数调用。
 
 也可用下列命令来改变光标位置: 
 <code class="example"></code>
@@ -4875,7 +4875,7 @@ Vim 会保存和恢复以大写字母开始且不包含小写字母的全局变�
      <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#winrestview()">winrestview()</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-25.8">faq-25.8</a> </b></h4><h4>25.8. 如何在 .vimrc 文件中检查环境变量值？</h4>
-在 Vim 脚本函数中可在环境变量名前加上前缀 "$" 字符来访问它。使用 $env_var 语法
+在 Vim 脚本函数中可在环境变量名前加上前缀 "$" 字符来访问之。使用 $env_var 语法
 可以引用环境变量的值: 
 <code class="example"></code>
 <code class="example">    if $EDITOR == 'vi'</code>
@@ -4909,11 +4909,11 @@ Vim 会保存和恢复以大写字母开始且不包含小写字母的全局变�
 <code class="example"></code>
 <code class="example">    :let a = getline('.')</code>
 
-要把函数返回值存入 Vim 寄存器，可用以下命令: 
+可用以下命令把函数返回值存入 Vim 寄存器: 
 <code class="example"></code>
 <code class="example">    :let @a = system('ls')</code>
 
-以上命令会保存 "ls" 命令的输出到寄存器 "a" 里。
+上述命令会把 "ls" 命令的输出存入寄存器 'a'。
 
 更多详情请阅读:
 
@@ -4924,8 +4924,8 @@ Vim 会保存和恢复以大写字母开始且不包含小写字母的全局变�
      <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#user-functions">user-functions</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_41.html#usr_41.txt">usr_41.txt</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-25.11">faq-25.11</a> </b></h4><h4>25.11. 在 Vim 脚本里使用普通模式命令时，如何避免这些普通模式命令应用用户定义的</h4><h4>       映射而使用这些普通模式命令标准的 Vim 功能？</h4>
-脚本中可用  <code class="badlink">:normal!</code>  命令来调用普通模式命令。这会使用普通模式命令的标准功能而
+<h4>                                                                <b class="vimtag"> <a name="faq-25.11">faq-25.11</a> </b></h4><h4>25.11. 在 Vim 脚本里使用普通模式命令时，如何避免这些普通模式命令应用用户定义的</h4><h4>       映射，而使用这些普通模式命令标准的 Vim 功能？</h4>
+脚本中可用  <code class="badlink">:normal!</code>  命令来调用普通模式命令。它会使用普通模式命令的标准功能而
 不应用用户定义的映射。
 
 更多详情请阅读:
@@ -4979,8 +4979,8 @@ Vim 会保存和恢复以大写字母开始且不包含小写字母的全局变�
      <a href="https://yianwillis.github.io/vimcdoc/doc/change.html#sub-replace-special">sub-replace-special</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-25.14">faq-25.14</a> </b></h4><h4>25.14. Vim 变量 (bno) 包含了缓冲区号。如何用此变量来打开对应的缓冲区？</h4>
- <a href="https://yianwillis.github.io/vimcdoc/doc/windows.html#:buffer">:buffer</a>  命令不接受变量名。只接受缓冲区号或缓冲区名。须用  <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:execute">:execute</a>  命令来计
-算变量成为对应的值。例如: 
+ <a href="https://yianwillis.github.io/vimcdoc/doc/windows.html#:buffer">:buffer</a>  命令不接受变量名。它只接受缓冲区号或缓冲区名。须用  <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:execute">:execute</a>  命令来
+计算变量对应的值。例如: 
 <code class="example"></code>
 <code class="example">    :execute "buffer " . bno</code>
 
@@ -5009,7 +5009,7 @@ Vim 会保存和恢复以大写字母开始且不包含小写字母的全局变�
      <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#expr-option">expr-option</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:let-option">:let-option</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-25.16">faq-25.16</a> </b></h4><h4>25.16. 从 Vim 函数复制并插入一些文本到缓冲区。如何在 Vim 函数里缩进插入的文</h4><h4>       本？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-25.16">faq-25.16</a> </b></h4><h4>25.16. 从 Vim 函数复制并插入了一些文本到缓冲区。如何在 Vim 函数里缩进插入的文</h4><h4>       本？</h4>
 可用以下命令来排版刚刚插入的文本: 
 <code class="example"></code>
 <code class="example">    :normal '[=']</code>
@@ -5028,8 +5028,8 @@ Vim 会保存和恢复以大写字母开始且不包含小写字母的全局变�
 
 上述命令中，getline(".") 返回当前行上的文本，字符串的索引从零开始，用
 "string[index]" 记法可以取得该字符串对应索引的单个字符。col(".)" 返回光标所在
-的列；调整是为了取得字符串上正确的字符。不过，这 <code class="emphasis">不能</code> 用于多字节字符，因为此命
-令只返回字节索引。
+的列；做的调整是为了获取字符串中正确的字符。不过，此命令 <code class="emphasis">不能</code> 用于多字节字符，
+因为它只返回字节索引。
 
 此外，也可用下列命令序列来取得光标所在的字符: 
 <code class="example"></code>
@@ -5107,21 +5107,21 @@ Vim 函数里有几种方式可以调用外部程序。可用内建的 system() 
      <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#v:shell_error">v:shell_error</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-25.23">faq-25.23</a> </b></h4><h4>25.23. 如何确定当前缓冲区是否修改过？</h4>
-可以检查 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'modified'">'modified'</a> 选项值来决定当前缓冲区是否修改过: 
+可以检查 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'modified'">'modified'</a> 选项值来确定当前缓冲区是否修改过: 
 <code class="example"></code>
 <code class="example">    :set modified?</code>
 
 Vim 脚本里，可以这样检查 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'modified'">'modified'</a> 选项值: 
 <code class="example"></code>
 <code class="example">    if &amp;modified</code>
-<code class="example">        echo "File is modified"</code>
+<code class="example">        echo "此文件已修改"</code>
 <code class="example">    endif</code>
 
 更多详情请阅读:
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'modified'">'modified'</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-25.24">faq-25.24</a> </b></h4><h4>25.24. Vim 脚本里在普通模式命令里想用回车字符。如何指定回车字符？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-25.24">faq-25.24</a> </b></h4><h4>25.24. Vim 脚本里 normal 命令想用回车字符。如何指定回车字符？</h4>
 可用  <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:execute">:execute</a>  命令来指定普通模式命令使用的特殊 (控制) 字符: 
 <code class="example"></code>
 <code class="example">    :execute "normal \&lt;CR&gt;"</code>
@@ -5151,8 +5151,8 @@ Vim 脚本里可以在下一行的行首插入反斜杠 ("\") 字符来分隔长
 <code class="example"></code>
 <code class="example">    :execute Myfunc()</code>
 
-Myfunc() 的调用会返回 0。 <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:execute">:execute</a>  命令会运行 ex 命令  <code class="badlink">:0</code> ，这会移动光标到文
-件顶部。所以，要调用 Vim 函数，应该用  <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:call">:call</a>  命令而不是  <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:execute">:execute</a>  命令: 
+Myfunc() 的调用会返回 0。 <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:execute">:execute</a>  命令会运行 ex 命令  <code class="badlink">:0</code> ，移动光标到文件顶
+部。所以，要调用 Vim 函数，应该用  <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:call">:call</a>  命令而不是  <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#:execute">:execute</a>  命令: 
 <code class="example"></code>
 <code class="example">    :call Myfunc()</code>
 
@@ -5167,7 +5167,7 @@ Myfunc() 的调用会返回 0。 <a href="https://yianwillis.github.io/vimcdoc/d
      <a href="https://yianwillis.github.io/vimcdoc/doc/cmdline.html#cmdline-lines">cmdline-lines</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-25.27">faq-25.27</a> </b></h4><h4>25.27. 如何执行寄存器的内容？</h4>
-如果抽出了一组 Vim 命令到 Vim 寄存器里 (如寄存器 "a")，就可以用以下命令之一来
+如果抽出了一组 Vim 命令到 Vim 寄存器里 (如寄存器 'a')，就可以用以下命令之一来
 执行寄存器的内容:
 
     :@a
@@ -5187,10 +5187,10 @@ Myfunc() 的调用会返回 0。 <a href="https://yianwillis.github.io/vimcdoc/d
      <a href="https://yianwillis.github.io/vimcdoc/doc/undo.html#undo-redo">undo-redo</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#:map-undo">:map-undo</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-25.29">faq-25.29</a> </b></h4><h4>25.29. 如何从另一个脚本/插件中调用定义时带 s: 的函数 (脚本局部函数)？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-25.29">faq-25.29</a> </b></h4><h4>25.29. 如何从另一个脚本/插件调用定义时带 s: 的函数 (脚本局部函数)？</h4>
 Vim 函数名的 s: 前缀用于创建脚本局部函数。脚本局部函数只可在该脚本内部调用，不
-能从其它脚本中执行。要在脚本中定义其它插件/脚本可调用的函数，函数定义时不能带
-s: 前缀。
+能被其它脚本执行。要在脚本中定义其它插件/脚本可调用的函数，函数定义时不能带 s:
+前缀。
 
 更多详情请阅读:
 
@@ -5219,7 +5219,7 @@ C 程序 (文件类型是 "c") 时 <a href="https://yianwillis.github.io/vimcdoc
 <code class="example">        ~/.vim/ftplugin/c.vim (Unix)</code>
 <code class="example">        %HOME%\vimfiles\ftplugin\c.vim (Windows)</code>
 
-放入下面的文本: 
+放入以下文本: 
 <code class="example"></code>
 <code class="example">        setlocal textwidth=80</code>
 
@@ -5235,16 +5235,16 @@ C 程序 (文件类型是 "c") 时 <a href="https://yianwillis.github.io/vimcdoc
      <a href="https://yianwillis.github.io/vimcdoc/doc/autocmd.html#:autocmd">:autocmd</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_40.html#40.3">40.3</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-26.2">faq-26.2</a> </b></h4><h4>26.2. 从网上下载了 Vim 插件、语法文件、缩进文件、色彩方案或文件类型插件。应该</h4><h4>      怎么复制这些文件才能让 Vim 能找到它们？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-26.2">faq-26.2</a> </b></h4><h4>26.2. 从网上下载了 Vim 插件、语法文件、缩进文件、色彩方案或文件类型插件。应该</h4><h4>      怎么复制这些文件才能让 Vim 找到它们？</h4>
 可把 Vim 运行时文件 (插件、语法文件、缩进文件、色彩方案、文件类型插件等等) 放
 在 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'runtimepath'">'runtimepath'</a> 选项指定的一个目录下。要知道 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'runtimepath'">'runtimepath'</a> 选项的当前值，可用
 以下命令: 
 <code class="example"></code>
 <code class="example">    :set runtimepath</code>
 
-Unix 系统上，通常是 "$HOME/.vim" 目录。MS-Windows 系统上，通常是 $VIM\vimfiles
-或 $HOME\vimfiles 目录。须放在上述运行时目录下取决于运行时文件的类型的指定目录
-里。下面列出这些目录名:
+Unix 系统上，这通常是 "$HOME/.vim" 目录。MS-Windows 系统上，这通常是
+$VIM\vimfiles 或 $HOME\vimfiles 目录。运行时文件须放在该运行时目录下由文件类型
+决定的目录里。下面列出这些目录名:
 
 <code class="section">    目录名      描述</code>
 <code class="section">    ----------  ------------------ </code>
@@ -5270,9 +5270,9 @@ Unix 系统上，通常是 "$HOME/.vim" 目录。MS-Windows 系统上，通常�
 件。
 
 
-- 在 Vim 安装的 ftplugin 已经完成部分之上的小改动 (或新增)，使用 after 目录如
-  下 (把 foobar 换成关心的 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'filetype'">'filetype'</a>):
-    - 只用于一个用户的私人修改:
+- 对在 Vim 安装的 ftplugin 已经完成部分之上的小改动 (或新增)，使用 after 目录
+  如下 (把 foobar 换成关心的 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'filetype'">'filetype'</a>):
+    - 只用于个别用户的私人修改:
         - Windows 上:
             $HOME/vimfiles/after/ftplugin/foobar.vim
         - Unix 系列的操作系统上:
@@ -5280,25 +5280,25 @@ Unix 系统上，通常是 "$HOME/.vim" 目录。MS-Windows 系统上，通常�
     - 影响系统上所有用户的修改:
         $VIM/vimfiles/after/ftplugin/foobar.vim
 
-- 用不同的版本替换整个文件类型插件或安装 Vim 原装还不支持的文件类型的新文件类
-  型插件时: 使用相同的路径，但不带 after/ 部分。这种情况下应该在插件头部放上
+- 用不同的版本替换整个文件类型插件，或安装 Vim 原装还不支持的文件类型的新文件
+  类型插件时: 使用相同的路径，但不带 after/ 部分。这种情况下应该在插件头部放上
   "if... finish... endif... let" 块，就像随 Vim 发布的插件那样。
 
 上述路径使用 Vim 的术语 (和 Unix 术语类似，但即使 Windows 上的 Vim 也能理解)；
 缺省这些目录不存在，第一次需要的时候你要自己用 mkdir (任何 OS 包括 DOS/Windows
 上都有) 或 md (只用于 DOS/Windows) 创建这些目录。在 Vim 之外，$VIM 和
 DOS/Windows 上的 $HOME 未必存在。如果 $HOME 在 Vim 里没有值 (或没有合法值)，可
-用 $VIM 代替；不过除了很老的 Windows 系统外，$HOMEDRIVE 和 $HOMEPATH 由系统定
-义，如果 Vim 启动时 $HOME 无定义，Vim 会在执行你的 vimrc 之前通过扩展
-$HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 (在运行中的 Vim
+用 $VIM 代替；不过除了很老的 Windows 系统外，$HOMEDRIVE 和 $HOMEPATH 都由系统
+定义，如果 Vim 启动时 $HOME 无定义，Vim 会在执行你的 vimrc 之前先通过扩展
+$HOMEDRIVE$HOMEPATH 来设置之。要知道 Vim 使用的是什么值，可以 (在运行中的 Vim
 里) 输入: 
 <code class="example"></code>
 <code class="example">    :echo $VIM</code>
 <code class="example">    :echo $HOME</code>
 
 
-如果把文件放在 after/ftplugin 运行时目录下，Vim 会先执行已有的文件类型插件文件
-然后执行新文件。如果把文件放在 $VIMRUNTIME/ftplugin 运行时目录下，Vim 会先执行
+如果把文件放在 after/ftplugin 运行时目录里，Vim 会先执行已有的文件类型插件文件
+然后执行新文件。如果把文件放在 $VIMRUNTIME/ftplugin 运行时目录里，Vim 会先执行
 新文件然后再执行已有的文件类型插件文件。
 
 更多详情请阅读:
@@ -5343,8 +5343,8 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
 <code class="example"></code>
 <code class="example">    au Filetype * set formatoptions=xyz</code>
 
-至少应在 vimrc 中的 "filetype on" 之后出现。最好放在你自己的 "myfiletypefile"
-文件里，保证在最后执行。
+这至少应在 vimrc 中的 "filetype on" 之后出现。最好放在你自己的
+"myfiletypefile" 文件里，以保证在最后执行。
 
 如果你要覆盖特定文件类型的设定，在 ~/.vim/after/ftplugin 目录下创建和原来的文
 件类型插件同名的文件。例如，要覆盖 c.vim 文件类型插件的设置，在
@@ -5357,7 +5357,7 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
      <a href="https://yianwillis.github.io/vimcdoc/doc/syntax.html#myfiletypefile">myfiletypefile</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-26.7">faq-26.7</a> </b></h4><h4>26.7. 如何关闭 Vim 目录浏览器插件？</h4>
-要关闭目录浏览 Vim 插件，在 .vimrc 文件中加入以下行: 
+要关闭目录浏览 Vim 插件，在 .vimrc 文件中加入下行: 
 <code class="example"></code>
 <code class="example">    let g:loaded_netrw = 1</code>
 
@@ -5372,7 +5372,7 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
 <code class="example">    autocmd! BufRead,BufNewFile *.x     setfiletype c</code>
 
 比上述方法更好的办法是在 ~/.vim 目录 (或 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'runtimepath'">'runtimepath'</a> 选项指定的目录之一) 下
-创建 filetype.vim 文件，并加入以下行: 
+创建 filetype.vim 文件，并加入下行: 
 <code class="example"></code>
 <code class="example">    " 我的 filetype 文件</code>
 <code class="example">    if exists("did_load_filetypes")</code>
@@ -5465,7 +5465,7 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_29.html#29.4">29.4</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_29.html#29.5">29.5</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-27.6">faq-27.6</a> </b></h4><h4>27.6. 用 Vim 编辑 C 程序时，如果从代码块里跳转到代码块的开头或结尾？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-27.6">faq-27.6</a> </b></h4><h4>27.6. 用 Vim 编辑 C 程序时，如何从代码块里跳转到代码块的开头或结尾？</h4>
 在代码块的内部，可用 "[{" 命令来跳转到代码块的开头，而 "]}" 跳转到代码块的结
 尾。
 
@@ -5478,7 +5478,7 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
 <h4>                                                                <b class="vimtag"> <a name="faq-27.7">faq-27.7</a> </b></h4><h4>27.7. 编辑 C++ 文件并在注释 (//) 行上方或下方插入新行时，Vim 自动在行首插入</h4><h4>      C++ 注释字符 (//)。如何关闭此行为？</h4>
 插入新行时自动插入注释头部 (//) 的行为由 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'formatoptions'">'formatoptions'</a> 选项的三个标志位控制:
 "c"、"r" 和 "o"。"c" 打开注释行输入超过右边界时的自动回绕。"r" 打开编辑注释行
-时按下 <code class="special">&lt;Enter&gt;</code> 后注释头部的自动插入。“"o" 打开在普通模式下用 O 或 o 在已有的注
+时按下 <code class="special">&lt;Enter&gt;</code> 后注释头部的自动插入。"o" 打开在普通模式下用 O 或 o 在已有的注
 释行上方或下方打开新行时注释头部的自动插入。
 
 可从 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'formatoptions'">'formatoptions'</a> 里删除 "r" 和 "o" 标志位来停止 Vim 在注释上按 <code class="special">&lt;Enter&gt;</code> 或
@@ -5488,8 +5488,8 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
    :set formatoptions-=o
 
 缺省 C 和 C++ 文件的文件类型插件 ($VIMRUNTIME/ftplugin/c.vim) 在
-<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'formatoptions'">'formatoptions'</a> 选项中加入了 "r" 和 "o" 标志位。如果你要为 C++ 文件覆盖此值，
-可把上述行加入 ~/.vim/after/ftplugin/cpp.vim 文件。
+<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'formatoptions'">'formatoptions'</a> 选项中加入了 "r" 和 "o" 标志位。如果你只要为 C++ 文件覆盖此
+值，可把上述行加入 ~/.vim/after/ftplugin/cpp.vim 文件。
 
 更多详情请阅读:
 
@@ -5511,17 +5511,17 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
      <a href="https://yianwillis.github.io/vimcdoc/doc/visual.html#v_b_I">v_b_I</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-27.9">faq-27.9</a> </b></h4><h4>27.9. 如何编辑和对应 C 源文件相同名字的头文件？</h4>
-可用以下命令来编辑和对就 C 源文件相同名字的头文件: 
+可用以下命令来编辑和对应 C 源文件相同名字的头文件: 
 <code class="example"></code>
 <code class="example">    :e %:t:r.h</code>
 
-可用以下命令来在新分割的窗口上编辑此文件: 
+可用以下命令在新分割的窗口上编辑该文件: 
 <code class="example"></code>
 <code class="example">    :sp %:t:r.h</code>
 
 上述命令中，百分号符号扩展为当前文件名。 <a href="https://yianwillis.github.io/vimcdoc/doc/change.html#:t">:t</a>  修饰符提取文件名的 tail (路径的最
 后部分)。 <a href="https://yianwillis.github.io/vimcdoc/doc/insert.html#:r">:r</a>  修饰符提取文件名的 root (根，即去除扩展名的部分)。给扩展后的文件
-名附加上 .h 就得到了头文件名。
+名加上 .h 就得到了头文件名。
 
 另一个方法是使用以下命令: 
 <code class="example"></code>
@@ -5569,8 +5569,8 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
      <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:make">:make</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#quickfix">quickfix</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-28.2">faq-28.2</a> </b></h4><h4>28.2. 在 Vim 里运行 make 命令时得到编译器编译程序里列出的错误。结束时此列表消</h4><h4>      失，我不得不用  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:clist">:clist</a>  命令来重新看到错误信息。有没有其它办法来看到这些</h4><h4>      错误信息？</h4>
-可用  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:copen">:copen</a>  或  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:cwindow">:cwindow</a>  命令来打开包含编译器输出的快速修复窗口。可以此窗口
+<h4>                                                                <b class="vimtag"> <a name="faq-28.2">faq-28.2</a> </b></h4><h4>28.2. 在 Vim 里运行 make 命令时得到编译器编译程序时列出的错误。命令结束时此列</h4><h4>      表消失，我不得不用  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:clist">:clist</a>  命令来重新看到错误信息。有没有其它办法来看到</h4><h4>      这些错误信息？</h4>
+可用  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:copen">:copen</a>  或  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:cwindow">:cwindow</a>  命令来打开包含编译器输出的快速修复窗口。可从此窗口
 选择不同的错误行并跳转到源码的对应行。
 
 更多详情请阅读:
@@ -5583,8 +5583,8 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
 从 Vim 7.4.858 开始，Vim 提供了新命令  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:cfdo">:cfdo</a> 、 <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:cdo">:cdo</a> 、 <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:lfdo">:lfdo</a>  和  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:ldo">:ldo</a> 。它们
 的工作方法是遍历快速修复列表的所有项目，为每个项目执行一个命令。区别是  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:lfdo">:lfdo</a> 
 和  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:ldo">:ldo</a>  命令遍历的是位置列表项目，而  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:cfdo">:cfdo</a>  和  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:cdo">:cdo</a>  命令在快速修复列表的
-项目上操作。还有， <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:cfdo">:cfdo</a>  和  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:lfdo">:lfdo</a>  在所有不同的文件上操作，而  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:cdo">:cdo</a>  和
- <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:ldo">:ldo</a>  命令在快速修复/位置列表的每个项目上操作。
+项目上操作。还有， <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:cfdo">:cfdo</a>  和  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:lfdo">:lfdo</a>  在不同的文件上操作，而  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:cdo">:cdo</a>  和  <a href="https://yianwillis.github.io/vimcdoc/doc/quickfix.html#:ldo">:ldo</a> 
+命令在快速修复/位置列表的每个项目上操作。
 
 例如，可在当前目录里用 vimgrep 来搜索所有 C 文件里的字符串 "Foobar": 
 <code class="example"></code>
@@ -5602,8 +5602,8 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
 </section><hr class="doubleline" /><section class=inner>
 <h4>                                                                <b class="vimtag"> <a name="faq-29">faq-29</a> </b></h4><h4><code class="section">第二十九节 - 折叠</code></h4>
 <h4>                                                                <b class="vimtag"> <a name="faq-29.1">faq-29.1</a> </b></h4><h4>29.1. 如何扩展 Vim 折叠支持？</h4>
-可用 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'foldexpr'">'foldexpr'</a> 选项来用用户定义函数进行折叠。例如，要折叠下面形式的子例程到一
-行: 
+可用 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'foldexpr'">'foldexpr'</a> 选项来通过用户定义函数进行折叠。例如，要把下面形式的子例程折叠
+到一行: 
 <code class="example"></code>
 <code class="example">    sub foo {</code>
 <code class="example">      my $barf;</code>
@@ -5675,7 +5675,7 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
      <a href="https://yianwillis.github.io/vimcdoc/doc/fold.html#fold-foldtext">fold-foldtext</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'fillchars'">'fillchars'</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-29.6">faq-29.6</a> </b></h4><h4>29.6. 如何保存和恢复跨越不同 Vim 会话手动创建的折叠？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-29.6">faq-29.6</a> </b></h4><h4>29.6. 如何保存和恢复跨越不同 Vim 会话的手动创建折叠？</h4>
 可用  <a href="https://yianwillis.github.io/vimcdoc/doc/starting.html#:mkview">:mkview</a>  命令来保存手动创建的折叠。之后，可用  <a href="https://yianwillis.github.io/vimcdoc/doc/starting.html#:loadview">:loadview</a>  命令来恢复折
 叠。为此，<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'viewoptions'">'viewoptions'</a> 必须包含 "folds"。
 
@@ -5689,15 +5689,15 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
      <a href="https://yianwillis.github.io/vimcdoc/doc/starting.html#:mksession">:mksession</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'sessionoptions'">'sessionoptions'</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-29.7">faq-29.7</a> </b></h4><h4>29.7. 打开基于语法的折叠。为什么 Vim 这么慢？</h4>
-基于语法的折叠在 Vim 里目前颇慢，Vim 的减慢可能很可观。这是待开发列表中的一
-项，但待开发列表颇长，要修正此问题可能需要时日。
+<h4>                                                                <b class="vimtag"> <a name="faq-29.7">faq-29.7</a> </b></h4><h4>29.7. 打开基于语法的折叠时，为什么 Vim 这么慢？</h4>
+基于语法的折叠在 Vim 里目前颇慢，而且 Vim 的减慢可能很可观。这是待开发列表中的
+一项，但待开发列表很长，要修正此问题可能需要时日。
 
 可以在待开发列表中找到此问题，如果你阅读
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/todo.html#todo.txt">todo.txt</a> 
 
-然后搜索 "folding with <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'foldmethod'">'foldmethod'</a>"
+然后搜索 "folding with <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'foldmethod'">'foldmethod'</a>" 的话。
 
 一个临时解决方案是在插入模式下临时设置 foldmethod 为 manual。在 wiki 里有描述:
 
@@ -5707,7 +5707,7 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
 <h4>                                                                <b class="vimtag"> <a name="faq-30">faq-30</a> </b></h4><h4><code class="section">第三十节 - VIM 和外部应用</code></h4>
 <h4>                                                                <b class="vimtag"> <a name="faq-30.1">faq-30.1</a> </b></h4><h4>30.1. 如何在 Vim 窗口里运行外壳？</h4>
 从 8.1 版本开始，Vim 提供了终端窗口。支持在普通 Vim 窗口 (例如通过分割) 中异步
-运行外壳，使用普通 Vim 命令和外壳交互。
+运行外壳，使用普通的 Vim 命令和外壳交互。
 
 焦点在终端窗口时，输入的键发送到作业，这称为终端模式。可以在终端窗口之外点击来
 把键盘焦点移到别处，也可用 <code class="keystroke">CTRL-W</code> 来浏览不同的 Vim 窗口。要给终端发送 <code class="keystroke">CTRL-W</code>，
@@ -5749,8 +5749,8 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/insert.html#:r!">:r!</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-30.4">faq-30.4</a> </b></h4><h4>30.4. 如何把当前缓冲区的内容用管道给外部命令，并用命令的输出替换缓冲区的内容？</h4>
-可用 :! 命令来把当前缓冲区的内容用管道给外部命令，并用命令的输出替换缓冲区的内
+<h4>                                                                <b class="vimtag"> <a name="faq-30.4">faq-30.4</a> </b></h4><h4>30.4. 如何把当前缓冲区的内容用管道发给外部命令，并用命令的输出替换缓冲区的内</h4><h4>      容？</h4>
+用 :! 命令可把当前缓冲区的内容用管道发给外部命令，并用命令的输出替换缓冲区的内
 容。例如，要用 Unix sort 命令给当前缓冲区的内容排序，可用以下命令: 
 <code class="example"></code>
 <code class="example">    :%!sort</code>
@@ -5759,16 +5759,16 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
 <code class="example"></code>
 <code class="example">    :10,20!sort</code>
 
-另外，如果要把缓冲区用管道给外部命令但不需要把结果传回缓冲区，可用 
+另外，如果要把缓冲区用管道发给外部命令但不需要把结果传回缓冲区，可用 
 <code class="example"></code>
 <code class="example">    :w !sort</code>
 
-上述命令会把整个缓冲区用管道给 sort 命令。<code class="note">注意</code>，"w" 和 "!" 间的空格是至关重要
-的。要只给管道一段行范围，可用 
+上述命令会把整个缓冲区用管道发给 sort 命令。<code class="note">注意</code>，"w" 和 "!" 间的空格是至关重
+要的。要只发给管道一段行范围，可用 
 <code class="example"></code>
 <code class="example">    :10,20w !sort</code>
 
-上述命令会把 10-20 行用管道给 sort 命令。
+上述命令会把 10-20 行用管道发给 sort 命令。
 
 更多详情请阅读:
 
@@ -5831,8 +5831,8 @@ $HOMEDRIVE$HOMEPATH 来设置它。要知道 Vim 使用的是什么值，可以 
      <a href="https://yianwillis.github.io/vimcdoc/doc/diff.html#diff-diffexpr">diff-diffexpr</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'diffexpr'">'diffexpr'</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-30.9">faq-30.9</a> </b></h4><h4>30.9. 如何使用 Vim 比较模式时不带折叠？</h4>
-可用以下命令行来启动 Vim 带两个文件名并使用不带折叠的比较模式: 
+<h4>                                                                <b class="vimtag"> <a name="faq-30.9">faq-30.9</a> </b></h4><h4>30.9. 如何在使用 Vim 比较模式时不带折叠？</h4>
+可用以下命令行来启动 Vim 带两个文件名，并使用不带折叠的比较模式: 
 <code class="example"></code>
 <code class="example">    $ vim -o file1 file2 "+windo set diff scrollbind scrollopt+=hor nowrap"</code>
 
@@ -5944,7 +5944,7 @@ Vim 不可能改变这一点。使用滚动条时，会移动光标使它可见�
 <h4>                                                                <b class="vimtag"> <a name="faq-31.9">faq-31.9</a> </b></h4><h4>31.9. 如何使 gvim 用  <a href="https://yianwillis.github.io/vimcdoc/doc/editing.html#:browse">:browse</a>  命令时从指定目录开始浏览文件？</h4>
 用 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'browsedir'">'browsedir'</a> 选项可以设置  <a href="https://yianwillis.github.io/vimcdoc/doc/editing.html#:browse">:browse</a>  命令使用的缺省目录。 
 <code class="example"></code>
-<code class="example">    :set browsedir='&lt;your_dir&gt;'</code>
+<code class="example">    :set browsedir='&lt;你的目录&gt;'</code>
 
 更多详情请阅读:
 
@@ -6081,10 +6081,10 @@ Vim 只支持固定宽度 (等宽) 字体。不支持比例字体。在 "Select 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#NetBSD-backspace">NetBSD-backspace</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'backspace'">'backspace'</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-32.4">faq-32.4</a> </b></h4><h4>32.4. 我在 xterm 下使用 Vim 。退出 Vim 时，屏幕内容恢复为原先的内容。如何关闭</h4><h4>      此行为？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-32.4">faq-32.4</a> </b></h4><h4>32.4. 我在 xterm 下使用 Vim。退出 Vim 时，屏幕内容恢复为原先的内容。如何关闭此</h4><h4>      行为？</h4>
 xterm 有名为 "alternate screen" 的能力。如果此能力存在，vim 在启动时切换到轮换
-屏幕，退出时切换回来，因而会恢复原先的屏幕内容。要关闭此功能，在 .vimrc 文件中
-加入以下行: 
+屏幕，退出时再切换回来，从而会恢复原先的屏幕内容。要关闭此功能，在 .vimrc 文件
+中加入下行: 
 <code class="example"></code>
 <code class="example">    :set t_ti= t_te=</code>
 
@@ -6093,13 +6093,13 @@ xterm 有名为 "alternate screen" 的能力。如果此能力存在，vim 在�
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'restorescreen'">'restorescreen'</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/tips.html#xterm-screens">xterm-screens</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-32.5">faq-32.5</a> </b></h4><h4>32.5. 启动 Vim 时，花了好几秒才启动。如何才能最小化启动时间？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-32.5">faq-32.5</a> </b></h4><h4>32.5. 启动 Vim 时，花了好几秒才启动。如何才能最少化启动时间？</h4>
 这可能和 Vim 打开 X 显示来设置 xterm 标题和使用 X 剪贴板有关。确信 DISPLAY 变
 量设为正确的主机名。试试以下命令: 
 <code class="example"></code>
 <code class="example">    $ vim -X</code>
 
-这会不让 Vim 打开 X 显示。用此命令行选项，不使用 X 剪贴板而 Vim 也不会修改
+这会防止 Vim 打开 X 显示。用此命令行选项，不使用 X 剪贴板而 Vim 也不会修改
 xterm 标题。
 
 也可设置 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'clipboard'">'clipboard'</a> 选项为 
@@ -6181,9 +6181,9 @@ xterm 标题。
 
 最后一个例子里双引号是必要的，它会使消息停留在状态行上。
 
-<h4>                                                                <b class="vimtag"> <a name="faq-32.9">faq-32.9</a> </b></h4><h4>32.9. 杀掉运行 Vim 的 xterm 时，Vim 进程继续运行并使用大量的 CPU (99%) 时间。</h4><h4>      为什么会这样？</h4>
-Vim 编译时带 Python 接口支持时，会有这个问题。这是 python 线程库和 Vim 相关的
-已知问题。要解决这个问题，使用不带 Python 接口的 Vim 可执行程序。
+<h4>                                                                <b class="vimtag"> <a name="faq-32.9">faq-32.9</a> </b></h4><h4>32.9. 杀掉运行 Vim 的 xterm 时，Vim 进程继续运行并占用大量的 CPU (99%) 时间。</h4><h4>      为什么会这样？</h4>
+Vim 编译时如果带 Python 接口支持，可能会有这个问题。这是一个和 python 线程库和
+Vim 相关的已知问题。要解决这个问题，使用不带 Python 接口的 Vim 可执行程序。
 
 更多详情请阅读:
 
@@ -6193,14 +6193,13 @@ Vim 编译时带 Python 接口支持时，会有这个问题。这是 python 线
 <h4>                                                                <b class="vimtag"> <a name="faq-32.10">faq-32.10</a> </b></h4><h4>32.10. 如何使 Vim 语法高亮在 Unix 终端上工作？</h4>
 最容易和最简单得到 Vim 语法高亮的方法是使用 Vim 的 GUI 版本 (GVIM)。要使语法高
 亮可在 Vim 的控制台/终端版本上工作，需要运行支持色彩的终端模拟器 (比如 Xfree86
-xterm 或 rxvt 或 dtterm)。<code class="note">注意</code> 如果终端模拟器支持改变背景和前景色，未必意味它
-同时支持改变色彩的 ANSI 转义序列。可从
+xterm 或 rxvt 或 dtterm)。<code class="note">注意</code> 即使终端模拟器支持改变背景和前景色，也未必意味
+它同时支持改变色彩的 ANSI 转义序列。可从
 <a href="https://invisible-island.net/xterm/xterm.html">https://invisible-island.net/xterm/xterm.html</a> 下载 Xfree86 xterm 的最新版本。
-可以 <a href="https://rxvt.org">https://rxvt.org</a> 下载 rxvt 的最新版本。要安装用于终端模拟器的支持色彩的
-terminfo/termcap 文件。另外，设置 TERM 环境变量为支持色彩的终端的正确名字。
+可从 <a href="https://rxvt.org">https://rxvt.org</a> 下载 rxvt 的最新版本。还要安装用于终端模拟器的支持色彩的
+terminfo/termcap 文件。另外，设置 TERM 环境变量为正确的支持色彩的终端名。
 
-可用 Vim 运行时包提供的 colortest.vim 来测试色彩设置。可用以下步骤来运行此脚
-本: 
+可用 Vim 运行时包提供的 colortest.vim 来测试色彩设置。以下步骤可运行此脚本: 
 <code class="example"></code>
 <code class="example">    :e $VIMRUNTIME/syntax/colortest.vim</code>
 <code class="example">    :source %</code>
@@ -6229,15 +6228,15 @@ mswin.vim 脚本提供了使 Vim 行为类似于 MS-Windows 应用的键盘映�
      <a href="https://yianwillis.github.io/vimcdoc/doc/gui_w32.html#CTRL-Q">CTRL-Q</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_10.html#10.5">10.5</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-33.2">faq-33.2</a> </b></h4><h4>33.2. 按 <code class="keystroke">CTRL-Y</code> 键时，就像 <code class="keystroke">CTRL-R</code> 键一样。如果配置 Vim 把 <code class="keystroke">CTRL-Y</code> 当作 <code class="keystroke">CTRL-Y</code>？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-33.2">faq-33.2</a> </b></h4><h4>33.2. 按 <code class="keystroke">CTRL-Y</code> 键时，就像 <code class="keystroke">CTRL-R</code> 键一样。如何配置 Vim 把 <code class="keystroke">CTRL-Y</code> 当作 <code class="keystroke">CTRL-Y</code>？</h4>
 把 <code class="keystroke">CTRL-Y</code> 键映射成 <code class="keystroke">CTRL-R</code> 键是 mswin.vim 脚本完成的。mswin.script 对 <code class="keystroke">CTRL-Y</code> 的
 映射使 Vim 的行为类似于标准的 MS-Windows 应用。`:help <code class="keystroke">CTRL-Y</code>` 里有解释。可以注
 释掉 mswin.vim 映射 <code class="keystroke">CTRL-Y</code> 键的那一行，或者从 .vimrc 文件里删除执行 mswin.vim
 脚本的那行。
 
-<h4>                                                                <b class="vimtag"> <a name="faq-33.3">faq-33.3</a> </b></h4><h4>33.3. 如何总是以最大化窗口来启动 GUI？</h4>
-可用  <a href="https://yianwillis.github.io/vimcdoc/doc/gui_w32.html#:simalt">:simalt</a>  命令来最大化 Vim 窗口。可用 GUIEnter 自动命令在启动时最大化 Vim
-窗口: 
+<h4>                                                                <b class="vimtag"> <a name="faq-33.3">faq-33.3</a> </b></h4><h4>33.3. 如何总是最大化窗口启动 GUI？</h4>
+用  <a href="https://yianwillis.github.io/vimcdoc/doc/gui_w32.html#:simalt">:simalt</a>  命令可最大化 Vim 窗口。所以，可以这样用 GUIEnter 自动命令在启动时
+最大化 Vim 窗口: 
 <code class="example"></code>
 <code class="example">    autocmd GUIEnter * simalt ~x</code>
 
@@ -6249,7 +6248,7 @@ mswin.vim 脚本提供了使 Vim 行为类似于 MS-Windows 应用的键盘映�
 
 <h4>                                                                <b class="vimtag"> <a name="faq-33.4">faq-33.4</a> </b></h4><h4>33.4. 做完一些编辑操作后，Vim 死机了。光标成了空的长方形。不能输入任何字符。怎</h4><h4>      么啦？</h4>
 最有可能是你在 Vim 中用了鼠标滚轮来滚动文本。Vim 使用智能鼠 (intellimouse) 鼠
-标滚动有已知的问题。要避免，关闭 Vim 的 Universal scrolling 支持就可以了。
+标滚动有已知的问题。要避免这个问题，请关闭 Vim 的 Universal scrolling 支持。
 
 更多详情请阅读:
 
@@ -6270,7 +6269,7 @@ mswin.vim 脚本提供了使 Vim 行为类似于 MS-Windows 应用的键盘映�
 <code class="example">    :set shellpipe=2&gt;&amp;1| tee</code>
 <code class="example">    :set shellredir=&gt;%s 2&gt;&amp;1</code>
 
-<h4>                                                                <b class="vimtag"> <a name="faq-33.7">faq-33.7</a> </b></h4><h4>33.7. 对 Vim 差异模式我试图用 GNU diff。在命令行上运行 diff 没问题。在 Vim 上</h4><h4>      试着用 diff 时却不行。我应该怎么办？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-33.7">faq-33.7</a> </b></h4><h4>33.7. 为 Vim 比较模式我试图用 GNU diff。在命令行上运行 diff 没问题。但在 Vim</h4><h4>      上试着用 diff 却不行。我应该怎么办？</h4>
 GNU diff 用于 Vim 有问题。可用以下链接来试用 Ron Aaron 编译的 GNU diff.exe:
 
     <a href="http://www.mossbayeng.com/~ron/vim/builds.html">http://www.mossbayeng.com/~ron/vim/builds.html</a>
@@ -6282,20 +6281,20 @@ GNU diff 用于 Vim 有问题。可用以下链接来试用 Ron Aaron 编译的 
 
     <a href="https://sourceforge.net/projects/cubiclevim/">https://sourceforge.net/projects/cubiclevim/</a>
 
-<code class="note">注意</code>，目前这只能用于 MS-Office 2000 和 XP。
+<code class="note">注意</code>，目前只能用于 MS-Office 2000 和 XP。
 
-另外 OutlookVim 插件也值得考虑:
+另外，OutlookVim 插件也值得考虑:
 
     <a href="https://www.vim.org/scripts/script.php?script_id=3087">https://www.vim.org/scripts/script.php?script_id=3087</a>
 
-<h4>                                                                <b class="vimtag"> <a name="faq-33.9">faq-33.9</a> </b></h4><h4>33.9. 我用 Vim 来编辑 HTML 文件。我如何启动 internet explorer 来预览当前 HTML</h4><h4>      文件？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-33.9">faq-33.9</a> </b></h4><h4>33.9. 我用 Vim 来编辑 HTML 文件。如何启动 internet explorer 来预览当前 HTML 文</h4><h4>      件？</h4>
 可用以下命令: 
 <code class="example"></code>
 <code class="example">    :!start c:\progra~1\intern~1\iexplore.exe file://%:p&lt;CR&gt;</code>
 
 <h4>                                                                <b class="vimtag"> <a name="faq-33.10">faq-33.10</a> </b></h4><h4>33.10. 我想在 Microsoft Visual Studio 上用 Vim。要怎么做？</h4>
-需要下载 Vim 的 OLE 版本 (如: gvim61ole.zip)。此文件也有如何把 Vim 用于 Visual
-Studio 的说明。
+需要下载 Vim 的 OLE 版本 (如: gvim61ole.zip)。此文件也有关于如何把 Vim 用于
+Visual Studio 的说明。
 
 更多详情请阅读:
 
@@ -6340,8 +6339,8 @@ Studio 的说明。
      <a href="https://yianwillis.github.io/vimcdoc/doc/print.html#:hardcopy">:hardcopy</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-34.2">faq-34.2</a> </b></h4><h4>34.2. 如何打印文件时带上 Vim 语法高亮颜色？</h4>
-可用  <a href="https://yianwillis.github.io/vimcdoc/doc/print.html#:hardcopy">:hardcopy</a>  命令来打印文件带上 Vim 语法高亮颜色。也可用 2html.vim 脚本把
-文件转换为 HTML 文件，并打印 HTML 文件。
+可用  <a href="https://yianwillis.github.io/vimcdoc/doc/print.html#:hardcopy">:hardcopy</a>  命令来打印文件并带上 Vim 语法高亮颜色。也可用 2html.vim 脚本
+把文件转换为 HTML 文件，并打印 HTML 文件。
 
 更多详情请阅读:
 
@@ -6401,36 +6400,36 @@ MS-Windows 系统上，可用 Visual C++ 编译器或 Borland C++ 编译器或 M
     - 在某个目录 (例如，c:\vimsrc) 解压归档
     - 或者，从 git 库下载源码:
       <a href="https://github.com/vim/vim/releases/">https://github.com/vim/vim/releases/</a>
-    - A或者，从 mercurial 库下载源码:
+    - 或者，从 mercurial 库下载源码:
       <a href="https://bitbucket.org/vim-mirror/vim/downloads/">https://bitbucket.org/vim-mirror/vim/downloads/</a>
     - 取决于安装的编译器，可用对应的 makefile 来编译 Vim 源码。Visual C++ 用
       Make_mvc.mak makefile，borland C++ 用 Make_bc5.mak makefile，
       ming GCC 用 Make_ming.mak makefile，cygwin gcc 用 Make_cyg.mak
       makefile。
 
-取决于你想编译 GUI 版本的 Vim 还是控制台版本的 Vim，需要给 makefile 传递不同的
-参数。成功编译源码后，可以复制 vim.exe 或 gvim.exe 文件还有运行时文件归档到目
-的目录。
+取决于你想编译的是 GUI 版本的 Vim 还是控制台版本的 Vim，需要给 makefile 传递不
+同的参数。成功编译源码后，可以复制 vim.exe 或 gvim.exe 文件以及运行时文件归档
+到目的目录。
 
 更多详情请阅读:
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_90.html#install">install</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-35.4">faq-35.4</a> </b></h4><h4>35.4. 我的 Vim 安装找不到 Vim 帮助、语法、缩进文件。如何安装这些文件？</h4>
-Vim 帮助、语法、缩进和其它运行时文件是 Vim 运行时 包的一部分。可以下载和安装
+Vim 帮助、语法、缩进和其它运行时文件是 Vim 运行时包的一部分。可以下载和安装
 Vim 运行时包。例如，MS-Windows 上的 Vim 6.1 运行时包的名字是 vim61rt.zip。
 
 更多详情请阅读:
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_90.html#install">install</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-35.5">faq-35.5</a> </b></h4><h4>35.5. 从源码编译 Vim 并用 "make install" 安装了 Vim 包。还需要留着 Vim 源目录</h4><h4>      吗？I</h4>
-不需要。一量编译并安装 Vim 到除了原先的源码目录以外的目录 (例如 /usr/bin 和
+<h4>                                                                <b class="vimtag"> <a name="faq-35.5">faq-35.5</a> </b></h4><h4>35.5. 从源码编译 Vim 并用 "make install" 安装了 Vim 包。我还需要留着 Vim 源码</h4><h4>      目录吗？</h4>
+不需要。一但编译并安装 Vim 到原先源码目录以外的目录 (例如 /usr/bin 和
 /usr/local/bin) 后，就可以删除源码目录。
 
 <h4>                                                                <b class="vimtag"> <a name="faq-35.6">faq-35.6</a> </b></h4><h4>35.6. 如何确定编译时打开的 Vim 特性？</h4>
-可用  <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:version">:version</a>  命令确定编译时打开的在 Vim 特性。打开的特性会加上前缀 "+"。不
-打开的特性会加上前缀 "-"。
+可用  <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:version">:version</a>  命令确定编译时打开的 Vim 特性。打开的特性会加上前缀 "+"。未打
+开的特性会加上前缀 "-"。
 
 如果你要在脚本中测试某特性是否存在，可用 has() 函数: 
 <code class="example"></code>
@@ -6445,7 +6444,7 @@ Vim 运行时包。例如，MS-Windows 上的 Vim 6.1 运行时包的名字是 v
      <a href="https://yianwillis.github.io/vimcdoc/doc/eval.html#has()">has()</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-35.7">faq-35.7</a> </b></h4><h4>35.7. 编译 Vim 时可以不带 GUI 支持吗？</h4>
-是的，你可以在编译 Vim 时可选地打开/关闭许多特性，包含 GUI。
+是的，你在编译 Vim 时可以打开/关闭许多可选特性，包含 GUI。
 
 更多详情请阅读:
 
@@ -6466,7 +6465,7 @@ Vim 运行时包。例如，MS-Windows 上的 Vim 6.1 运行时包的名字是 v
 一下 $PATH 设置。
 
 取决于编译选项，你编译的 Vim 可能没有些某些特性。可用  <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:version">:version</a>  命令确定编译
-时带了哪些 Vim 特性。打开的特性会加上前缀 "+"。不打开的特性会加上前缀 "-"。
+时带了哪些 Vim 特性。打开的特性会加上前缀 "+"。未打开的特性会加上前缀 "-"。
 
 最简单的包含所有特性的方法是编译 huge 版本。为此，运行 configure 脚本时须指定
 --with-features 选项: 
@@ -6484,7 +6483,7 @@ Vim 运行时包。例如，MS-Windows 上的 Vim 6.1 运行时包的名字是 v
    $ apt-get build-dep vim-gtk
 
    这会确保所有编译 vim-gtk 包所需要的库被安装。(这需要你的源列表包含了
-   deb-src 项目。如果上述命令不可用，参见你的发布手册了解如何打开这些项目。)
+   deb-src 项目。如果上述命令不可用，参见你的发布手册了解如何加上这些项目。)
 
 2) openSUSE 上可用软件库管理工具 "zypper" 来安装所有所需的库。这需要有可从配置
    好的仓库里安装的库的源版本 (缺省并非如此)。用:
@@ -6520,12 +6519,12 @@ Vim 运行时包。例如，MS-Windows 上的 Vim 6.1 运行时包的名字是 v
 
     这里你看到，缺失了 gtk 库，因而不能编译 GTK gui 版本。所以，你需要在你的系
     统上安装 GTK 库，用你的软件库管理工具或自己编译。然后再次运行 configure 脚
-    本并检查这次是否找到了库。
+    本，并检查这次是否找到了库。
 
 理论上，你的发布提供的这些依赖仍可能缺少某些特性需要的库，也可能仅仅因为没有被
-你的发布打开，所以不能被 1-3 的命令安装。至少，这里提供了一个发动点，然后用上
-述的方法 4 可以继续追踪所需的缺失库。不过对大多数人而言，这里的步骤通常已经够
-用而不需要麻烦第四个方法了。
+你的发布打开，所以不能被 1-3 的命令安装。但至少，这里的说明提供了一个发动点，
+用上述的方法 4 你可以继续追踪所需的缺失库。不过对大多数人而言，这里的步骤通常
+已经够用，而不需要麻烦第四个方法了。
 
 更多详情请阅读:
 
@@ -6535,7 +6534,7 @@ Vim 运行时包。例如，MS-Windows 上的 Vim 6.1 运行时包的名字是 v
 </section><hr class="doubleline" /><section class=inner>
 <h4>                                                                <b class="vimtag"> <a name="faq-36">faq-36</a> </b></h4><h4><code class="section">第三十六节 - 杂项</code></h4>
 <h4>                                                                <b class="vimtag"> <a name="faq-36.1">faq-36.1</a> </b></h4><h4>36.1. 用 Vim 如何编辑二进制文件？</h4>
-可用以下选项一用 Vim 编辑二进制文件: 
+可用以下选项来用 Vim 编辑二进制文件: 
 <code class="example"></code>
 <code class="example">    :set binary</code>
 <code class="example">    :set display=uhex</code>
@@ -6556,7 +6555,7 @@ Vim 运行时包。例如，MS-Windows 上的 Vim 6.1 运行时包的名字是 v
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'endofline'">'endofline'</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'display'">'display'</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-36.2">faq-36.2</a> </b></h4><h4>36.2. 如果关闭可视错误闪烁和错误响铃？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-36.2">faq-36.2</a> </b></h4><h4>36.2. 如何关闭可视错误闪烁和错误响铃？</h4>
 可用以下命令关闭可视错误闪烁和错误响铃: 
 <code class="example"></code>
 <code class="example">    :set visualbell t_vb=</code>
@@ -6567,8 +6566,8 @@ Vim 运行时包。例如，MS-Windows 上的 Vim 6.1 运行时包的名字是 v
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'errorbells'">'errorbells'</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/term.html#t_vb">t_vb</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-36.3">faq-36.3</a> </b></h4><h4>36.3. 如何显示在缓冲区中显示字符的 ascii 值？</h4>
-可用 "ga" 命令来显示在缓冲区中显示字符的 ascii 值。
+<h4>                                                                <b class="vimtag"> <a name="faq-36.3">faq-36.3</a> </b></h4><h4>36.3. 如何查看在缓冲区中显示的字符的 ascii 值？</h4>
+可用 "ga" 命令来查看在缓冲区中显示的字符的 ascii 值。
 
 更多详情请阅读:
 
@@ -6617,23 +6616,23 @@ hit-enter 的提示:
 <code class="example"></code>
 <code class="example">    $ vim -c "&lt;ex_command_1&gt;" -c "&lt;ex_command_2&gt;" *.txt</code>
 
-每个 "-c" 命令行选项指定的 ex 命令依次顺序执行。可用单个 "-c" 命令行选项，然后
-用 "|" 字符分隔 ex 命令: 
+每个 "-c" 命令行选项指定的 ex 命令会依次顺序执行。也可用单个 "-c" 命令行选项，
+然后用 "|" 字符分隔 ex 命令: 
 <code class="example"></code>
 <code class="example">    $ vim -c "&lt;ex_command_1&gt; | &lt;ex_command_2&gt;" *.txt</code>
 
-上面的命令里，如果有 ex 命令失败，其余的 ex 命令都不会执行。
+上面的命令里，如果一个 ex 命令失败，其余的 ex 命令都不会执行。
 
-例如，要从命令行替代一个文件里的 "ABC" 为 "DEF"，可用以下命令: 
+例如，要从命令行把一个文件里的 "ABC" 换为 "DEF"，可用以下命令: 
 <code class="example"></code>
 <code class="example">    $ vim -c "%s/ABC/DEF/ge | update" myfile.txt</code>
 
-要从命令行替代多个文件里的 "ABC" 为 "DEF"，可用以下命令: 
+要从命令行把多个文件里的 "ABC" 换为 "DEF"，可用以下命令: 
 <code class="example"></code>
 <code class="example">    $ vim -c "argdo %s/ABC/DEF/ge | update" *.txt</code>
 
-可把一组命令存在文件里，然后在一组文件上用 "-s" 命令行选项执行这些命令。例如，
-如果这组命令存在文件 mycmds.txt 里，可用下列命令: 
+可把一组命令存到一个文件里，然后在一组文件上用 "-s" 命令行选项来执行这些命令。
+例如，如果这组命令存入文件 mycmds.txt，可用下列命令: 
 <code class="example"></code>
 <code class="example">    $ vim -s mycmds.txt *.pl</code>
 
@@ -6642,8 +6641,8 @@ hit-enter 的提示:
      <a href="https://yianwillis.github.io/vimcdoc/doc/starting.html#-c">-c</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/starting.html#-s">-s</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-36.8">faq-36.8</a> </b></h4><h4>36.8. 如何在插入模式里使用用普通模式命令而不用退出插入模式？</h4>
-可按 <code class="keystroke">CTRL-O</code> 键后跟单个普通模式命令来在插入模式里使用用普通模式命令而不用退出插
+<h4>                                                                <b class="vimtag"> <a name="faq-36.8">faq-36.8</a> </b></h4><h4>36.8. 如何在插入模式里使用普通模式命令，而不用退出插入模式？</h4>
+可按 <code class="keystroke">CTRL-O</code> 键后跟单个普通模式命令来在插入模式里使用普通模式命令，而不用退出插
 入模式。
 
 要执行多于一个普通模式命令，按 <code class="keystroke">CTRL-L</code> 键后跟任意数量的普通模式命令，然后按
@@ -6654,7 +6653,7 @@ hit-enter 的提示:
      <a href="https://yianwillis.github.io/vimcdoc/doc/insert.html#i_CTRL-O">i_CTRL-O</a> 
      <a href="https://yianwillis.github.io/vimcdoc/doc/insert.html#i_CTRL-L">i_CTRL-L</a> 
 
-<h4>                                                                <b class="vimtag"> <a name="faq-36.9">faq-36.9</a> </b></h4><h4>36.9. 如何启动 Vim 时就进行插入模式？</h4>
+<h4>                                                                <b class="vimtag"> <a name="faq-36.9">faq-36.9</a> </b></h4><h4>36.9. 如何在启动 Vim 时就进行插入模式？</h4>
 可用  <a href="https://yianwillis.github.io/vimcdoc/doc/insert.html#:startinsert">:startinsert</a>  ex 命令在启动 Vim 时就进行插入模式: 
 <code class="example"></code>
 <code class="example">    $ vim +startinsert myfile.txt</code>
@@ -6671,18 +6670,18 @@ hit-enter 的提示:
 <h4>                                                                <b class="vimtag"> <a name="faq-36.10">faq-36.10</a> </b></h4><h4>36.10. Vim 里如何使用复制和粘贴？</h4>
 首先检查  <a href="https://yianwillis.github.io/vimcdoc/doc/various.html#:version">:version</a>  命令的输出，确定有 +xterm-clipboard。
 
-在 xterm 里运行 Vim 时，或者让 Vim 控制鼠标或者让 xterm 控制鼠标。这是由
+在 xterm 里运行 Vim 时，或者让 Vim 控制鼠标，或者让 xterm 控制鼠标。这是由
 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'mouse'">'mouse'</a> 选项配置的。
 
-如果不设置 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'mouse'">'mouse'</a> 选项(或设为缺省值)，Vim 不会控制鼠标。你不能用鼠标移动 Vim
+如果不设置 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'mouse'">'mouse'</a> 选项 (或设为缺省值)，Vim 不控制鼠标。你不能用鼠标移动 Vim
 的文本光标。用鼠标选择文本时，xterm 会把它复制到 X11 剪切缓冲区。如果同时按下
 两个鼠标键，xterm 会从剪切缓冲区里粘贴文本。
 
-如果 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'mouse'">'mouse'</a> 选项设为 "a" 或其它值，Vim 控制鼠标。<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'mouse'">'mouse'</a> 选项配置 Vim 在何模
-式 (普通或插入或可视等等) 下控制鼠标。可用鼠标移动 Vim 文本光标。选择一些文本
-时，<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'clipboard'">'clipboard'</a> 选项设置用于决定是否传送选中的文本到剪贴板。缺省设置是把选中的
-文本传送到剪贴板。如果在此模式下想用 xterm 的选择机制，可按 <code class="special">&lt;Shift&gt;</code> 键。如果用
-鼠标选择文本时按住了 <code class="special">&lt;Shift&gt;</code> 键，Vim 不会控制鼠标而 xterm 控制鼠标。
+如果 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'mouse'">'mouse'</a> 选项设为 "a" 或其它值，Vim 控制鼠标。<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'mouse'">'mouse'</a> 选项配置 Vim 在何种
+模式 (普通或插入或可视等等) 下控制鼠标。可用鼠标移动 Vim 文本光标。选择一些文
+本时，<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'clipboard'">'clipboard'</a> 选项设置用于决定是否传送选中的文本到剪贴板。缺省设置是把选中
+的文本传送到剪贴板。如果在此模式下想用 xterm 的选择机制，可按 <code class="special">&lt;Shift&gt;</code> 键。用鼠
+标选择文本时如果按住了 <code class="special">&lt;Shift&gt;</code> 键，Vim 不控制鼠标而让 xterm 控制鼠标。
 
 在 GUI 模式下，取决于 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'mouse'">'mouse'</a> 设定，复制和粘贴应该总是可用。更多详情请阅读:
 
@@ -6695,27 +6694,27 @@ hit-enter 的提示:
      <a href="https://yianwillis.github.io/vimcdoc/doc/usr_09.html#09.3">09.3</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-36.11">faq-36.11</a> </b></h4><h4>36.11. 为什么不应修改系统运行时目录里的文件？</h4>
-修改 $VIMRUNTIME，通常是 /usr/share/vim/vimXX (Unix) 或 C:\Program
-Files\vim\vimXX (Windows)，里的文件要小心。这里 XX 是适用的版本号，如 Vim 7.3
-是 73。
+修改 $VIMRUNTIME 里的文件要小心。它们通常在 /usr/share/vim/vimXX (Unix) 或
+C:\Program Files\vim\vimXX (Windows)，这里 XX 是适用的版本号，如 Vim 7.3
+对应 73。
 
 通常应避免修改这些文件，因为它们在 Vim 安装升级时会被替换，而你的改动会丢失。
 另外，如果你更新 Vim 的主要或次要版本 (如从 7.3 升到 7.4)，新版本的 Vim 会使用
-不同的 $VIMRUNTIME 目录，你的改动尽管不会丢失，也会被忽略。
+不同的 $VIMRUNTIME 目录，你的改动尽管不会丢失，也不会被采用。
 
 所以，看一看
 
      <a href="https://yianwillis.github.io/vimcdoc/doc/filetype.html#filetypes">filetypes</a> 
 
-其中解释了几种修改 Vim 对不同文件类型应对的方法，也解释了在哪里放置那些修改使
-得修改不会被覆盖。
+其中解释了几种更改 Vim 对不同文件类型应对的方法，同时也解释了应在哪里放置那些
+修改，才会使修改不被覆盖。
 
 </section><hr class="doubleline" /><section class=inner>
 <h4>                                                                <b class="vimtag"> <a name="faq-37">faq-37</a> </b></h4><h4><code class="section">第三十七节 - UNICODE</code></h4><h4>Author: Tony Mechelynck &lt;antoine.mechelynck AT belgacom.net&gt;</h4>
 <h4>                                                                <b class="vimtag"> <a name="faq-37.1">faq-37.1</a> </b></h4><h4>37.1. 可以用 Vim 创建 Unicode 文件吗？</h4>
-是的。复杂程度可多可少，取决于可用的键盘和字体，但总是可以编码任何可能的
-Unicode 代码点 (包括不合法的) 写入文件。要用 Vim 建立 Unicode 文件，须带
-"+multi_byte" 编译时选项编译 Vim。关于 Unicode 的详情更见下面网站:
+是的。这里的复杂程度可多可少，取决于可用的键盘和字体，但总是可以编码所有可能的
+Unicode 代码点 (包括不合法的) 并写入文件。要用 Vim 建立 Unicode 文件，须在编译
+Vim 时带上 "+multi_byte" 编译时选项。关于 Unicode 的更多详情可见下面网站:
 
     <a href="http://www.unicode.org">http://www.unicode.org</a>
     <a href="https://www.cl.cam.ac.uk/~mgk25/unicode.html">https://www.cl.cam.ac.uk/~mgk25/unicode.html</a>
@@ -6738,7 +6737,7 @@ Unicode 代码点 (包括不合法的) 写入文件。要用 Vim 建立 Unicode 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'bomb'">'bomb'</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-37.3">faq-37.3</a> </b></h4><h4>37.3. 什么是 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'encoding'">'encoding'</a> 选项？</h4>
-基本上，<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'encoding'">'encoding'</a> 选择定义 Vim 在内部如何代表你的数据。不过，所有的 Unicode
+基本上，<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'encoding'">'encoding'</a> 选项定义了 Vim 在内部如何代表你的数据。不过，所有的 Unicode
 编码在内部都以 utf-8 编码，在读写时进行转换 (如有必要)。
 
 更多详情请阅读:
@@ -6748,8 +6747,8 @@ Unicode 代码点 (包括不合法的) 写入文件。要用 Vim 建立 Unicode 
 <h4>                                                                <b class="vimtag"> <a name="faq-37.4">faq-37.4</a> </b></h4><h4>37.4. Vim 如何命名众多的 Unicode 编码？</h4>
 Utf-8 叫做 utf-8 或 utf8；utf-16 叫做 ucs-2 或 ucs2；utf-32 叫做 ucs-4 或
 ucs4。另外，可能需要指定字节序 (除了 utf-8 对字节序不敏感以外)，附加 le 代表小
-端 (little-endian) 或 be 代表大端 (big-endian)。如果创建的文件使用编码 ucs-2
-或 ucs-4 而不指定字节序，Vim 使用机器所用的典型设置。
+端 (little-endian)，而 be 代表大端 (big-endian)。如果创建的文件使用编码 ucs-2
+或 ucs-4 而不指定字节序，Vim 使用你的机器所用的典型设置。
 
 更多详情请阅读:
 
@@ -6798,10 +6797,10 @@ Vim 打开文件时，会检查 <a href="https://yianwillis.github.io/vimcdoc/do
      <a href="https://yianwillis.github.io/vimcdoc/doc/mbyte.html#locale">locale</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-37.9">faq-37.9</a> </b></h4><h4>37.9. 什么是 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'bomb'">'bomb'</a> 选项？</h4>
-<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'fileencodings'">'fileencodings'</a> 选项里有 "ucs-bom" 时如果读入文件，Vim 会根据文件头是否有字符
-顺序标记的存在设置 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'bomb'">'bomb'</a> 选项的开或关。写入时，如果 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'bomb'">'bomb'</a> 选项置位， Vim 会
-写入字节顺序标记。你可以手动置位或复位此选项，让 Vim 来写或不写 b.o.m (字节顺
-序标记)。
+<a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'fileencodings'">'fileencodings'</a> 选项里有 "ucs-bom" 时，如果读入文件，Vim 会根据文件头是否存在
+字符顺序标记来设置 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'bomb'">'bomb'</a> 选项的开或关。写入时，如果 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'bomb'">'bomb'</a> 选项置位，Vim 会写
+入字节顺序标记。你可以手动置位或复位此选项来让 Vim 写或不写 b.o.m (字节顺序标
+记)。
 
 更多详情请阅读:
 
@@ -6815,13 +6814,13 @@ Vim 打开文件时，会检查 <a href="https://yianwillis.github.io/vimcdoc/do
 <h4>                                                                <b class="vimtag"> <a name="faq-37.11">faq-37.11</a> </b></h4><h4>37.11. Vim 如何在文件里插入 Unicode 字符？</h4>
 有几个方法:
 
-- 键盘上有的字符可用通常的方式输入，即使其中有些需要 "死键" 前缀，例如法语键盘
-  上的抑扬符。
-- 定义了二合字母的字符可用带 <code class="keystroke">CTRL-K</code> 前缀的两个字符来输入。
+- 对键盘上有的字符，可用通常的方式输入，包括其中有些需要 "死键" 前缀，例如法语
+  键盘上的抑扬符。
+- 对定义了二合字母的字符，可用带 <code class="keystroke">CTRL-K</code> 前缀的两个字符来输入。
 - 如果置位了 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'digraph'">'digraph'</a> 选项，可用 <code class="special">&lt;char1&gt;</code><code class="special">&lt;BS&gt;</code><code class="special">&lt;char2&gt;</code> 来输入定义了二合字母的字
   符。
-- 任何字符都可用 <code class="keystroke">CTRL-V</code> 前缀输入 (或 <code class="keystroke">CTRL-Q</code> 如果 <code class="keystroke">CTRL-V</code> 被重映射为从剪贴板粘贴
-  的话)。
+- 任何字符都可通过加上 <code class="keystroke">CTRL-V</code> 前缀来输入 (或 <code class="keystroke">CTRL-Q</code>，如果 <code class="keystroke">CTRL-V</code> 被重映射为从
+  剪贴板粘贴的话)。
 
 更多详情请阅读:
 
@@ -6833,8 +6832,8 @@ Vim 打开文件时，会检查 <a href="https://yianwillis.github.io/vimcdoc/do
 首先正确地设置 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'encoding'">'encoding'</a> 选项 (例如设为 utf-8)。然后用  <a href="https://yianwillis.github.io/vimcdoc/doc/digraph.html#:digraphs">:digraphs</a>  命令来列出
 当前定义的二合字母。
 
-或者，帮助文件里包含了所有二合字母的完整集合。简单地在那里的列表里查找就可以
-了。
+此外，在帮助文件里包含了所有二合字母的完整集合。简单地在那里给出的列表中查找也
+是可以的。
 
 更多详情请阅读:
 
