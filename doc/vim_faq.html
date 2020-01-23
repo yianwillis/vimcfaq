@@ -4016,9 +4016,9 @@ $ 标志位:
      <a href="https://yianwillis.github.io/vimcdoc/doc/map.html#mapleader">mapleader</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-20.4">faq-20.4</a> </b></h4><h4>20.4. 不能建立 <code class="special">&lt;xxx&gt;</code> 键的映射。哪里做错了？</h4>
-1) 首先要确定，此键正确地传给了 Vim。可确定这一点，进入插入模式并按 <code class="keystroke">CTRL-V</code> (或
-   <code class="keystroke">CTRL-Q</code>，如果 <code class="keystroke">CTRL-V</code> 被重映射到粘贴操作，例如在 Windows 上而用了 mswin.vim
-   脚本文件的时候) 后跟你的键。
+1) 首先要确定，此键正确地传给了 Vim。要确定这一点，进入插入模式，然后按 <code class="keystroke">CTRL-V</code>
+   (或 <code class="keystroke">CTRL-Q</code>，如果 <code class="keystroke">CTRL-V</code> 被重映射到粘贴操作，例如在 Windows 上而用了
+   mswin.vim 脚本文件的时候) 后跟你的键。
 
    如果缓冲区里什么都没有 (假定你打开了 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'showcmd'">'showcmd'</a>，^V 会在 Vim 屏幕右下角继续
    显示)，那么 Vim 没有正确地接收到该键，此时你什么都做不了，除了选一个不同的
@@ -5179,7 +5179,7 @@ Myfunc() 的调用会返回 0。 <a href="https://yianwillis.github.io/vimcdoc/d
      <a href="https://yianwillis.github.io/vimcdoc/doc/repeat.html#:@">:@</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-25.28">faq-25.28</a> </b></h4><h4>25.28. 调用了 Vim 函数或映射后，按 "u" 键撤销最近的修改时，Vim 撤销了该映射/函</h4><h4>       数所做的所有改动。为什么？</h4>
-调用了 Vim 函数或映射后，该函数/映射所做的所有操作都会当成一个单一操作。按 "u"
+调用了 Vim 函数或映射后，该函数/映射所做的所有操作会被当成一个单一操作。按 "u"
 撤销最近操作时，此函数/映射所做的所有改动都被逆转。
 
 更多详情请阅读:
@@ -5443,7 +5443,7 @@ $HOMEDRIVE$HOMEPATH 来设置之。要知道 Vim 使用的是什么值，可以 
      <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'indentexpr'">'indentexpr'</a> 
 
 <h4>                                                                <b class="vimtag"> <a name="faq-27.4">faq-27.4</a> </b></h4><h4>27.4. 如何改变自动缩进的空格数？</h4>
-可修改 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'shiftwidth'">'shiftwidth'</a> 选项以修改自动缩进的空格数: 
+可修改 <a href="https://yianwillis.github.io/vimcdoc/doc/options.html#'shiftwidth'">'shiftwidth'</a> 选项以改变自动缩进的空格数: 
 <code class="example"></code>
 <code class="example">    :set shiftwidth=4</code>
 
