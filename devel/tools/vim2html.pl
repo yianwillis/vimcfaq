@@ -177,7 +177,7 @@ EOF
 <![endif]-->
 <title>VIM: $outfile</title>
 <link rel="stylesheet" href="vim-stylesheet.css" type="text/css" />
-<meta name=viewport content='width=device-width, initial-scale=1'>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
 $banner
