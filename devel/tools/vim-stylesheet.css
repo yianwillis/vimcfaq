@@ -1,14 +1,8 @@
 @import 'https://fontlibrary.org/face/gnu-unifont';
-@media only screen and (max-width: 800px) {
-  #outer { font-size: 48px; } 
+@media only screen and (max-width: 600px) {
+  #outer { font-size: 32px; } 
   body::before {
-    content: 'mobile device optimized v800';
-  }
-}
-@media only screen and (max-width: 700px) {
-  #outer { font-size: 48px; } 
-  body::before {
-    content: 'mobile device optimized v700';
+    content: 'mobile device optimized v600';
   }
 }
 #outer {
