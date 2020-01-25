@@ -1,5 +1,5 @@
 @import 'https://fontlibrary.org/face/gnu-unifont';
-@media(max-width: 850px) {
+@media only screen and (max-width: 800px) {
   #outer { font-size: 48px; } 
   body::before {
     content: 'mobile device optimized';
