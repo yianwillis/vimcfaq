@@ -1,6 +1,9 @@
 @import 'https://fontlibrary.org/face/gnu-unifont';
 @media(max-width: 800px) {
-  body { font-size: 32px; }
+  body { font-size: 32px; } 
+  body::after {
+    content: 'mobile device optimized';
+  }
 }
 #outer {
   border: 1px solid;
