@@ -1,5 +1,5 @@
 @import 'https://fontlibrary.org/face/gnu-unifont';
-@media(max-device-width: 800px) {
+@media(max-width: 800px) {
   body { font-size: 32px; }
 }
 #outer {
