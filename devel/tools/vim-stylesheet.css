@@ -2,7 +2,13 @@
 @media only screen and (max-width: 800px) {
   #outer { font-size: 48px; } 
   body::before {
-    content: 'mobile device optimized';
+    content: 'mobile device optimized v800';
+  }
+}
+@media only screen and (max-width: 700px) {
+  #outer { font-size: 48px; } 
+  body::before {
+    content: 'mobile device optimized v700';
   }
 }
 #outer {
