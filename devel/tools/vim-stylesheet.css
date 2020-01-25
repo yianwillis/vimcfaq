@@ -1,10 +1,4 @@
 @import 'https://fontlibrary.org/face/gnu-unifont';
-@media only screen and (max-width: 600px) {
-  #outer { font-size: 32px; } 
-  body::before {
-    content: 'mobile device optimized v600';
-  }
-}
 #outer {
   border: 1px solid;
   border-radius: 1em;
