@@ -8,6 +8,15 @@ Vim 中文常见问题解答
 这是 https://vimhelp.org/vim_faq.txt.html 的中文翻译。Vim FAQ 创建自
 vim@vim.org 用户邮件列表和 comp.editors 新闻组的问与答。
 
+# 在 线 阅 读
+
+可在线阅读帮助文档的 HTML 版。
+
+https://yianwillis.github.io/vimcfaq/
+
+为了最佳阅读效果，请确保你的系统安装了 'Noto Sans Mono CJK SC' 或 NSimsun 字
+体，否则可能有字体不能完全对齐的情况。
+
 # 安装
 
 ## Vim 8+ 自带软件包支持
@@ -89,15 +98,6 @@ $ git clone git://github.com/yianwillis/vimcfaq.git
 ```vim
 :language message zh_CN.UTF-8
 ```
-
-# 在 线 阅 读
-
-可在线阅读帮助文档的 HTML 版。
-
-https://yianwillis.github.io/vimcfaq/
-
-为了最佳阅读效果，请确保你的系统安装了 'Noto Sans Mono CJK SC' 或 NSimsun 字
-体，否则可能有字体不能完全对齐的情况。
 
 # 信 息
 
