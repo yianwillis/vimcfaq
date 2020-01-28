@@ -9,7 +9,7 @@
   footer { display: none; }
   #outer {
     position: fixed;
-    top: 4em; right: 1em; bottom: 1em; left: 1em;
+    top: 4em; right: 1px; bottom: 1px; left: 1px;
     width: auto !important;
     max-width: 40em;
     overflow: scroll;
@@ -31,7 +31,7 @@
   display: table;
   position: fixed;
   z-index: 1;
-  width: 6em;
+  width: 5.5em;
 }
 footer { margin-top: 1em; font-style:italic; }
 code { font-family: inherit; }
